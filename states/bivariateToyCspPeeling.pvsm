@@ -37400,7 +37400,7 @@
         <Domain name="bool" id="11196.UseInputBounds.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ContinuousScatterplot" id="7105" servers="1">
+    <Proxy group="filters" type="ContinuousScatterPlot" id="7105" servers="1">
       <Property name="DebugLevel" id="7105.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="7105.DebugLevel.range"/>
@@ -37450,7 +37450,7 @@
         <Domain name="bool" id="7105.WithDummyValue.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ContinuousScatterplot" id="8322" servers="1">
+    <Proxy group="filters" type="ContinuousScatterPlot" id="8322" servers="1">
       <Property name="DebugLevel" id="8322.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="8322.DebugLevel.range"/>
@@ -41135,8 +41135,8 @@ id="5218.RestrictPowerOf2ImageSmaller" number_of_elements="1">
       <Item id="7827" name="FeatureEdges1"/>
       <Item id="11727" name="FeatureEdges2"/>
       <Item id="11196" name="ResampleToImage1"/>
-      <Item id="7105" name="TTKContinuousScatterplot1"/>
-      <Item id="8322" name="TTKContinuousScatterplot2"/>
+      <Item id="7105" name="TTKContinuousScatterPlot1"/>
+      <Item id="8322" name="TTKContinuousScatterPlot2"/>
       <Item id="6584" name="TTKGeometrySmoother1"/>
       <Item id="9214" name="TTKProjectionFromField1"/>
       <Item id="9582" name="TTKProjectionFromField2"/>
