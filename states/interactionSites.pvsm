@@ -22855,9 +22855,9 @@
         <Domain name="array_list" id="6490.SelectionCellFieldDataArrayName.array_list"/>
       </Property>
       <Property name="SelectionPointFieldDataArrayName" id="6490.SelectionPointFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.SelectionPointFieldDataArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
           <String text="Vertex Ids"/>
           <String text="log(Rho)"/>
@@ -22928,9 +22928,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.ColorArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
           <String text="Vertex Ids"/>
           <String text="log(Rho)"/>
@@ -23025,9 +23025,9 @@
         <Domain name="range" id="6490.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="6490.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.OSPRayScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
           <String text="Vertex Ids"/>
           <String text="log(Rho)"/>
@@ -23054,9 +23054,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.OpacityArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Vertex Ids"/>
           <String text="log(Rho)"/>
           <String text="log(s)"/>
@@ -23165,9 +23165,9 @@
         <Element index="0" value=""/>
       </Property>
       <Property name="SelectOrientationVectors" id="6490.SelectOrientationVectors" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.SelectOrientationVectors.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
           <String text="Normals"/>
           <String text="Vertex Ids"/>
@@ -23176,9 +23176,9 @@
         </Domain>
       </Property>
       <Property name="SelectScaleArray" id="6490.SelectScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.SelectScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
           <String text="Normals"/>
           <String text="Vertex Ids"/>
@@ -23319,9 +23319,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6490.SetScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Vertex Ids"/>
           <String text="log(Rho)"/>
           <String text="log(s)"/>
@@ -25345,9 +25345,9 @@ number_of_elements="1">
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6316.SelectInputScalars.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Vertex Ids"/>
           <String text="log(Rho)"/>
           <String text="log(s)"/>

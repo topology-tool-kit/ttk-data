@@ -11490,9 +11490,9 @@
         <Domain name="array_list" id="6235.SelectionCellFieldDataArrayName.array_list"/>
       </Property>
       <Property name="SelectionPointFieldDataArrayName" id="6235.SelectionPointFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.SelectionPointFieldDataArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
         </Domain>
       </Property>
@@ -11560,9 +11560,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.ColorArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
         </Domain>
         <Domain name="field_list" id="6235.ColorArrayName.field_list">
@@ -11650,9 +11650,9 @@
         <Domain name="range" id="6235.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="6235.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.OSPRayScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
         </Domain>
       </Property>
@@ -11676,9 +11676,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.OpacityArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="OpacityByArray" id="6235.OpacityByArray" number_of_elements="1">
@@ -11768,17 +11768,17 @@
         <Element index="0" value=""/>
       </Property>
       <Property name="SelectOrientationVectors" id="6235.SelectOrientationVectors" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.SelectOrientationVectors.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
           <String text="Normals"/>
         </Domain>
       </Property>
       <Property name="SelectScaleArray" id="6235.SelectScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.SelectScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
           <String text="Normals"/>
         </Domain>
@@ -11916,9 +11916,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="6235.SetScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="ShaderPreset" id="6235.ShaderPreset" number_of_elements="1">
@@ -14193,9 +14193,9 @@
         <Domain name="array_list" id="5560.SelectionCellFieldDataArrayName.array_list"/>
       </Property>
       <Property name="SelectionPointFieldDataArrayName" id="5560.SelectionPointFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.SelectionPointFieldDataArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
         </Domain>
       </Property>
@@ -14263,9 +14263,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.ColorArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
         </Domain>
         <Domain name="field_list" id="5560.ColorArrayName.field_list">
@@ -14353,9 +14353,9 @@
         <Domain name="range" id="5560.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="5560.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.OSPRayScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="Normals"/>
         </Domain>
       </Property>
@@ -14379,9 +14379,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.OpacityArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="OpacityByArray" id="5560.OpacityByArray" number_of_elements="1">
@@ -14471,17 +14471,17 @@
         <Element index="0" value=""/>
       </Property>
       <Property name="SelectOrientationVectors" id="5560.SelectOrientationVectors" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.SelectOrientationVectors.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
           <String text="Normals"/>
         </Domain>
       </Property>
       <Property name="SelectScaleArray" id="5560.SelectScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.SelectScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
           <String text="Normals"/>
         </Domain>
@@ -14619,9 +14619,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="5560.SetScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="ShaderPreset" id="5560.ShaderPreset" number_of_elements="1">
@@ -21865,9 +21865,9 @@
         <Domain name="array_list" id="5390.SelectionCellFieldDataArrayName.array_list"/>
       </Property>
       <Property name="SelectionPointFieldDataArrayName" id="5390.SelectionPointFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5390.SelectionPointFieldDataArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="SelectionVisibility" id="5390.SelectionVisibility" number_of_elements="1">
@@ -21936,7 +21936,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="5390.ColorArrayName.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
         <Domain name="field_list" id="5390.ColorArrayName.field_list">
           <Entry value="0" text="Point Data"/>
@@ -22026,9 +22026,9 @@
         <Domain name="range" id="5390.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="5390.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5390.OSPRayScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="OSPRayScaleFunction" id="5390.OSPRayScaleFunction" number_of_elements="1">
@@ -22051,9 +22051,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="5390.OpacityArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="OpacityByArray" id="5390.OpacityByArray" number_of_elements="1">
@@ -22158,16 +22158,16 @@
         <Element index="0" value=""/>
       </Property>
       <Property name="SelectOrientationVectors" id="5390.SelectOrientationVectors" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5390.SelectOrientationVectors.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
         </Domain>
       </Property>
       <Property name="SelectScaleArray" id="5390.SelectScaleArray" number_of_elements="1">
-        <Element index="0" value="Critical Type"/>
+        <Element index="0" value="CriticalIndex"/>
         <Domain name="array_list" id="5390.SelectScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
           <String text="None"/>
         </Domain>
       </Property>
@@ -22304,9 +22304,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="Critical Type"/>
+        <Element index="4" value="CriticalIndex"/>
         <Domain name="array_list" id="5390.SetScaleArray.array_list">
-          <String text="Critical Type"/>
+          <String text="CriticalIndex"/>
         </Domain>
       </Property>
       <Property name="ShaderPreset" id="5390.ShaderPreset" number_of_elements="1">
