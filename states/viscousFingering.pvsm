@@ -50412,8 +50412,8 @@
         </Domain>
       </Property>
       <Property name="ThresholdBetween" id="9793.ThresholdBetween" number_of_elements="2">
-        <Element index="0" value="4"/>
-        <Element index="1" value="4"/>
+        <Element index="0" value="1"/>
+        <Element index="1" value="1"/>
         <Domain name="range" id="9793.ThresholdBetween.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="9793.UseContinuousCellRange" number_of_elements="1">
@@ -51696,8 +51696,8 @@
         </Domain>
       </Property>
       <Property name="ThresholdBetween" id="7409.ThresholdBetween" number_of_elements="2">
-        <Element index="0" value="1"/>
-        <Element index="1" value="1"/>
+        <Element index="0" value="4"/>
+        <Element index="1" value="4"/>
         <Domain name="range" id="7409.ThresholdBetween.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="7409.UseContinuousCellRange" number_of_elements="1">
@@ -55039,7 +55039,7 @@ number_of_elements="1">
       <Item id="9244" name="Finger0"/>
       <Item id="9427" name="Finger2"/>
       <Item id="9610" name="Finger3"/>
-      <Item id="9793" name="Finger4"/>
+      <Item id="9793" name="Finger1"/>
       <Item id="9976" name="Finger5"/>
       <Item id="15979" name="GenerateSurfaceNormals1"/>
       <Item id="7442" name="GenerateSurfaceNormals2"/>
