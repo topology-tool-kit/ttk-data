@@ -6,55 +6,65 @@ This archive contains the data-sets and ParaView state files required to
 reproduce the examples provided on the TTK website (gallery and tutorials).
 
 {
-  name = "bivariateToy.vtu",
-  acknowledgement = "Julien Tierny",
-  url = "https://github.com/topology-tool-kit/ttk-data"
+  "name": "bivariateToy.vtu",
+  "description": "",
+  "acknowledgement": "Julien Tierny",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
-  name = "BuiltinExample1.vti",
-  acknowledgement = "Gerris",
-  url = "http://gfs.sourceforge.net/examples/examples/cylinder.html"
+  "name": "BuiltinExample1.vti",
+  "description": "",
+  "acknowledgement": "Gerris",
+  "url": "http://gfs.sourceforge.net/examples/examples/cylinder.html"
 }
 
 {
-  name = "BuiltinExample2.vti",
-  acknowledgement = "Roberto Alvarez Boto",
-  url = "https://github.com/topology-tool-kit/ttk-data""
+  "name": "BuiltinExample2.vti",
+  "description": "",
+  "acknowledgement": "Roberto Alvarez Boto",
+  "url": "https://github.com/topology-tool-kit/ttk-data""
 }
 
 {
-  name = "BuiltinExample3.vti",
-  acknowledgement = "Gerris",
-  url = "http://gfs.sourceforge.net/examples/examples/cylinder.html"
+  "name": "BuiltinExample3.vti",
+  "description": "",
+  "acknowledgement": "Gerris",
+  "url": "http://gfs.sourceforge.net/examples/examples/cylinder.html"
 }
 
 {
-  name = "dragon.vtu",
-  acknowledgement = "AIM@SHAPE",
-  url = "http://visionair.ge.imati.cnr.it/ontologies/shapes/"
+  "name": "dragon.vtu",
+  "description": "",
+  "acknowledgement": "AIM@SHAPE",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/"
 }
 
 {
-  name = "mechanical.vtu",
-  acknowledgement = "Robert Geist and Joshua A. Levine",
-  url = "https://github.com/topology-tool-kit/ttk-data"
+  "name": "mechanical.vtu",
+  "description": "",
+  "acknowledgement": "Robert Geist and Joshua A. Levine",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
-  name = "noisyTerrain.vtu",
-  acknowledgement = "Julien Tierny",
-  url = "https://github.com/topology-tool-kit/ttk-data"
+  "name": "noisyTerrain.vtu",
+  "description": "",
+  "acknowledgement": "Julien Tierny",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
-  name = "uncertainStartingVortex.vti",
-  acknowledgement = "Gerris",
-  url = "http://gerris.dalembert.upmc.fr/gerris/examples/examples/starting.html"
+  "name": "uncertainStartingVortex.vti",
+  "description": "",
+  "acknowledgement": "Gerris",
+  "url": 
+"http://gerris.dalembert.upmc.fr/gerris/examples/examples/starting.html"
 }
 
 {
-  name = "viscousFingering.vti",
-  acknowledgement = "Berk Geveci and Christoph Garth",
-  url = "http://www.uni-kl.de/sciviscontest/"
+  "name": "viscousFingering.vti",
+  "description": "",
+  "acknowledgement": "Berk Geveci and Christoph Garth",
+  "url": "http://www.uni-kl.de/sciviscontest/"
 }
