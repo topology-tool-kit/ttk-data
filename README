@@ -55,7 +55,7 @@ reproduce the examples provided on the TTK website (gallery and tutorials).
 }
 
 {
-  "name": "oceanVortices.nc",
+  "name": "oceanVortices.vtu",
   "description": "Sea surface height",
   "acknowledgement": "Lionel Guez",
   "url": "http://www.lmd.jussieu.fr/~lguez/index.html"
