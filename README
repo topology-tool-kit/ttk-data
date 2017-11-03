@@ -7,63 +7,70 @@ reproduce the examples provided on the TTK website (gallery and tutorials).
 
 {
   "name": "bivariateToy.vtu",
-  "description": "",
+  "description": "Simple bivariate example using X and Y coordinates",
   "acknowledgement": "Julien Tierny",
   "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
   "name": "BuiltinExample1.vti",
-  "description": "",
+  "description": "2D von Karman vortex street",
   "acknowledgement": "Gerris",
   "url": "http://gfs.sourceforge.net/examples/examples/cylinder.html"
 }
 
 {
   "name": "BuiltinExample2.vti",
-  "description": "",
+  "description": "Electron density and reduced gradient, Ethane-Diol molecule",
   "acknowledgement": "Roberto Alvarez Boto",
   "url": "https://github.com/topology-tool-kit/ttk-data""
 }
 
 {
   "name": "BuiltinExample3.vti",
-  "description": "",
+  "description": "Uncertain 2D von Karman vortex street",
   "acknowledgement": "Gerris",
   "url": "http://gfs.sourceforge.net/examples/examples/cylinder.html"
 }
 
 {
   "name": "dragon.vtu",
-  "description": "",
+  "description": "Scanned dragon model",
   "acknowledgement": "AIM@SHAPE",
   "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/"
 }
 
 {
   "name": "mechanical.vtu",
-  "description": "",
+  "description": "Magnitudes of flow velocity and vorticity in a mechanical piece",
   "acknowledgement": "Robert Geist and Joshua A. Levine",
   "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
   "name": "noisyTerrain.vtu",
-  "description": "",
+  "description": "Surface of a noisy terrain",
   "acknowledgement": "Julien Tierny",
   "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
+  "name": "tribute.png",
+  "description": "Microscoy of cell sheet morphogenesis (tribute to Edelsbrunner & Harer's book, page 217)",
+  "acknowledgement": "Daniel P. Kiehart, Catherine G. Galbraith, Kevin A. Edwards, Wayne L. Rickoll, Ruth A. Montague ",
+  "url": "http://jcb.rupress.org/content/149/2/471",
+}
+
+{
   "name": "uncertainStartingVortex.vti",
-  "description": "",
+  "description": "Starting vortex behind an airplane wing (2D, uncertain data)",
   "acknowledgement": "Gerris",
   "url": "http://gerris.dalembert.upmc.fr/gerris/examples/examples/starting.html"
 }
 
 {
   "name": "viscousFingering.vti",
-  "description": "",
+  "description": "Density of salt in water during viscous fingering",
   "acknowledgement": "Berk Geveci and Christoph Garth",
   "url": "http://www.uni-kl.de/sciviscontest/"
 }
