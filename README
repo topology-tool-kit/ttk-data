@@ -62,6 +62,13 @@ reproduce the examples provided on the TTK website (gallery and tutorials).
 }
 
 {
+  "name": "tectonicPuzzle.vtu",
+  "description": "Tectonic plate viscosity",
+  "acknowledgement": "Nicolas Coltice",
+  "url": "http://univ-lyon1.academia.edu/NicolasColtice"
+}
+
+{
   "name": "tribute.png",
   "description": "Microscoy of cell sheet morphogenesis (tribute to Edelsbrunner & Harer's book, page 217)",
   "acknowledgement": "Daniel P. Kiehart, Catherine G. Galbraith, Kevin A. Edwards, Wayne L. Rickoll, Ruth A. Montague ",

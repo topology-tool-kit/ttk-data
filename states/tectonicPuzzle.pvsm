@@ -76436,11 +76436,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLUnstructuredGridReader" id="4888" servers="1">
       <Property name="FileName" id="4888.FileName" number_of_elements="1">
-        <Element index="0" value="SM_YS150_1000000.vtu"/>
+        <Element index="0" value="tectonicPuzzle.vtu"/>
         <Domain name="files" id="4888.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="4888.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="SM_YS150_1000000.vtu"/>
+        <Element index="0" value="tectonicPuzzle.vtu"/>
       </Property>
       <Property name="TimestepValues" id="4888.TimestepValues"/>
       <Property name="CellArrayInfo" id="4888.CellArrayInfo"/>
@@ -80719,7 +80719,7 @@
       <Item id="8321" name="PERSISTENT_MINIMA_AND_LARGE_MAXIMA"/>
       <Item id="6503" name="PersistenceThreshold"/>
       <Item id="8823" name="SADDLE_VALUE_THRESHOLD"/>
-      <Item id="4888" name="SM_YS150_1000000.vtu"/>
+      <Item id="4888" name="tectonicPuzzle.vtu"/>
       <Item id="11281" name="TTKIdentifierRandomizer1"/>
       <Item id="6743" name="TTKMorseSmaleComplex1"/>
       <Item id="9096" name="TTKMorseSmaleComplex2"/>
