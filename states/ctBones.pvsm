@@ -106,7 +106,7 @@
         <Element index="0" value="1"/>
       </Property>
       <Layout number_of_elements="7">
-        <Item direction="2" fraction="0.580083" view="0"/>
+        <Item direction="2" fraction="0.637344" view="0"/>
         <Item direction="0" fraction="0.5" view="6875"/>
         <Item direction="1" fraction="0.5" view="0"/>
         <Item direction="0" fraction="0.5" view="0"/>
@@ -40039,7 +40039,7 @@
       </Property>
       <Property name="ValueRenderingModeGet" id="6875.ValueRenderingModeGet"/>
       <Property name="ViewSize" id="6875.ViewSize" number_of_elements="2">
-        <Element index="0" value="693"/>
+        <Element index="0" value="651"/>
         <Element index="1" value="867"/>
       </Property>
       <Property name="ViewTime" id="6875.ViewTime" number_of_elements="1">
@@ -40538,7 +40538,7 @@
       </Property>
       <Property name="ValueRenderingModeGet" id="8835.ValueRenderingModeGet"/>
       <Property name="ViewSize" id="8835.ViewSize" number_of_elements="2">
-        <Element index="0" value="500"/>
+        <Element index="0" value="368"/>
         <Element index="1" value="415"/>
       </Property>
       <Property name="ViewTime" id="8835.ViewTime" number_of_elements="1">
@@ -40546,29 +40546,29 @@
         <Domain name="range" id="8835.ViewTime.range"/>
       </Property>
       <Property name="CameraFocalPoint" id="8835.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="121.129085523851"/>
-        <Element index="1" value="115.775282006383"/>
+        <Element index="0" value="97.6538449081972"/>
+        <Element index="1" value="130.109594922231"/>
         <Element index="2" value="0"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="8835.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="121.129085523851"/>
-        <Element index="1" value="115.775282006383"/>
+        <Element index="0" value="97.6538449081972"/>
+        <Element index="1" value="130.109594922231"/>
         <Element index="2" value="0"/>
       </Property>
       <Property name="CameraParallelScale" id="8835.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="150.66644619074"/>
+        <Element index="0" value="187.492365734508"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="8835.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="150.66644619074"/>
+        <Element index="0" value="187.492365734508"/>
       </Property>
       <Property name="CameraPosition" id="8835.CameraPosition" number_of_elements="3">
-        <Element index="0" value="121.129085523851"/>
-        <Element index="1" value="115.775282006383"/>
+        <Element index="0" value="97.6538449081972"/>
+        <Element index="1" value="130.109594922231"/>
         <Element index="2" value="10000"/>
       </Property>
       <Property name="CameraPositionInfo" id="8835.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="121.129085523851"/>
-        <Element index="1" value="115.775282006383"/>
+        <Element index="0" value="97.6538449081972"/>
+        <Element index="1" value="130.109594922231"/>
         <Element index="2" value="10000"/>
       </Property>
       <Property name="CameraViewAngle" id="8835.CameraViewAngle" number_of_elements="1">
@@ -41032,7 +41032,7 @@
       </Property>
       <Property name="ValueRenderingModeGet" id="9694.ValueRenderingModeGet"/>
       <Property name="ViewSize" id="9694.ViewSize" number_of_elements="2">
-        <Element index="0" value="500"/>
+        <Element index="0" value="368"/>
         <Element index="1" value="414"/>
       </Property>
       <Property name="ViewTime" id="9694.ViewTime" number_of_elements="1">
@@ -41040,14 +41040,14 @@
         <Domain name="range" id="9694.ViewTime.range"/>
       </Property>
       <Property name="CameraFocalPoint" id="9694.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="190.486305551558"/>
-        <Element index="1" value="145.737577592794"/>
-        <Element index="2" value="107.282048400176"/>
+        <Element index="0" value="71.1086303627937"/>
+        <Element index="1" value="166.530320737749"/>
+        <Element index="2" value="162.555083107376"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="9694.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="190.486305551558"/>
-        <Element index="1" value="145.737577592794"/>
-        <Element index="2" value="107.282048400176"/>
+        <Element index="0" value="71.1086303627937"/>
+        <Element index="1" value="166.530320737749"/>
+        <Element index="2" value="162.555083107376"/>
       </Property>
       <Property name="CameraParallelScale" id="9694.CameraParallelScale" number_of_elements="1">
         <Element index="0" value="220.836477965032"/>
@@ -41056,14 +41056,14 @@
         <Element index="0" value="220.836477965032"/>
       </Property>
       <Property name="CameraPosition" id="9694.CameraPosition" number_of_elements="3">
-        <Element index="0" value="-248.641640279454"/>
-        <Element index="1" value="221.982522186187"/>
-        <Element index="2" value="289.836395655764"/>
+        <Element index="0" value="-368.019315468219"/>
+        <Element index="1" value="242.775265331142"/>
+        <Element index="2" value="345.109430362964"/>
       </Property>
       <Property name="CameraPositionInfo" id="9694.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="-248.641640279454"/>
-        <Element index="1" value="221.982522186187"/>
-        <Element index="2" value="289.836395655764"/>
+        <Element index="0" value="-368.019315468219"/>
+        <Element index="1" value="242.775265331142"/>
+        <Element index="2" value="345.109430362964"/>
       </Property>
       <Property name="CameraViewAngle" id="9694.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
