@@ -5,6 +5,15 @@ https://topology-tool-kit.github.io/
 This archive contains the data-sets and ParaView state files required to 
 reproduce the examples provided on the TTK website (gallery and tutorials).
 
+To run these examples, from the current directory, enter the following command
+(omit the '$' character):
+$ paraview --state=states/<example demo state file .pvsm>
+
+See the TTK tutorial page for more details:
+https://topology-tool-kit.github.io/tutorials.html
+
+Data specs
+=
 {
   "name": "bivariateToy.vtu",
   "description": "Simple bivariate example using X and Y coordinates",
