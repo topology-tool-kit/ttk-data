@@ -34,6 +34,13 @@ reproduce the examples provided on the TTK website (gallery and tutorials).
 }
 
 {
+  "name": "ctBones.vti",
+  "description": "Rotational C-arm x-ray scan of a human foot",
+  "acknowledgement": "Philips Research, Hamburg, Germany",
+  "url": "http://cdn.klacansky.com/open-scivis-datasets/"
+}
+
+{
   "name": "dragon.vtu",
   "description": "Scanned dragon model",
   "acknowledgement": "AIM@SHAPE",
