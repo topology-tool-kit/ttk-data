@@ -57,6 +57,27 @@ Data specs
 }
 
 {
+  "name": "manifoldCheck0.vtu",
+  "description": "Toy example for 0-dimensional manifold check",
+  "acknowledgement": "Julien Tierny",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
+  "name": "manifoldCheck1.vtu",
+  "description": "Toy example for 1-dimensional manifold check",
+  "acknowledgement": "Julien Tierny",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
+  "name": "manifoldCheck2.vtu",
+  "description": "Toy example for 2-dimensional manifold check",
+  "acknowledgement": "Julien Tierny",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
   "name": "mechanical.vtu",
   "description": "Magnitudes of flow velocity and vorticity in a mechanical piece",
   "acknowledgement": "Robert Geist and Joshua A. Levine",
