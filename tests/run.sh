@@ -29,7 +29,6 @@ function createOutputs(){
 }
 
 function compareOutputs(){
-
   for testDir in tests/$1Outputs/*; do
     case=${testDir/tests\//}
     case=${case/${1}Outputs\//}
@@ -74,6 +73,7 @@ else
     rm test.log
   fi
   echo "Generating test outputs..."
+  rm -R tests/testOutputs 2> /dev/null
   createOutputs "test" $debugLevel
   echo -e "\n\n\nComparing outputs..."
   compareOutputs "reference" "test"
