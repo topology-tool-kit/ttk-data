@@ -3,7 +3,7 @@
 from paraview.simple import *
 
 if len(sys.argv) >= 2:
-    inputFileBase = sys.argv[1]
+    outputDirectory = sys.argv[1] + "/"
     if len(sys.argv) == 3:
         debugLevel = sys.argv[2]
     else:
@@ -12,10 +12,6 @@ else:
     print("Missing state file name")
     sys.exit()
 
-outputDirectory = "tests/referenceOutputs/" + inputFileBase + "/"
-
-print("Loading state '" + inputFileBase + "'...")
-print("Output directory '" + outputDirectory + "'...")
 if debugLevel != 0:
     print("  Debug level: " + debugLevel)
 
