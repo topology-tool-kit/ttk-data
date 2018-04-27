@@ -1,3 +1,15 @@
+from paraview.simple import *
+if len(sys.argv) >= 2:
+	outputDirectory = sys.argv[1] + '/'
+	if len(sys.argv) == 3:
+		debugLevel = sys.argv[2]
+	else:
+		debugLevel = 0
+else:
+	print('Missing output directory')
+	sys.exit()
+if debugLevel != 0:
+	print('  Debug level: ' + debugLevel)
 # state file generated using paraview version 5.5.0
 
 # ----------------------------------------------------------------
@@ -716,4 +728,43 @@ segmentationIdPWF.ScalarRangeInitialized = 1
 # ----------------------------------------------------------------
 # finally, restore active source
 SetActiveSource(None)
-# ----------------------------------------------------------------
+# ----------------------------------------------------------------tTKPersistenceDiagram1.DebugLevel = int(debugLevel)
+if tTKPersistenceDiagram1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKPersistenceDiagram1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKPersistenceDiagram1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKPersistenceDiagram1, i)))
+else:
+	SaveData(outputDirectory + 'tTKPersistenceDiagram1.vtu',
+		CleantoGrid(OutputPort(tTKPersistenceDiagram1)))
+tTKTopologicalSimplification1.DebugLevel = int(debugLevel)
+if tTKTopologicalSimplification1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKTopologicalSimplification1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKTopologicalSimplification1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKTopologicalSimplification1, i)))
+else:
+	SaveData(outputDirectory + 'tTKTopologicalSimplification1.vtu',
+		CleantoGrid(OutputPort(tTKTopologicalSimplification1)))
+tTKMergeandContourTreeFTM1.DebugLevel = int(debugLevel)
+if tTKMergeandContourTreeFTM1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKMergeandContourTreeFTM1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKMergeandContourTreeFTM1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKMergeandContourTreeFTM1, i)))
+else:
+	SaveData(outputDirectory + 'tTKMergeandContourTreeFTM1.vtu',
+		CleantoGrid(OutputPort(tTKMergeandContourTreeFTM1)))
+tTKGeometrySmoother1.DebugLevel = int(debugLevel)
+if tTKGeometrySmoother1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKGeometrySmoother1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKGeometrySmoother1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKGeometrySmoother1, i)))
+else:
+	SaveData(outputDirectory + 'tTKGeometrySmoother1.vtu',
+		CleantoGrid(OutputPort(tTKGeometrySmoother1)))
+tTKSphereFromPoint1.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint1, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint1.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint1)))

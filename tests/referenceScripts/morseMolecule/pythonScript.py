@@ -1,3 +1,15 @@
+from paraview.simple import *
+if len(sys.argv) >= 2:
+	outputDirectory = sys.argv[1] + '/'
+	if len(sys.argv) == 3:
+		debugLevel = sys.argv[2]
+	else:
+		debugLevel = 0
+else:
+	print('Missing output directory')
+	sys.exit()
+if debugLevel != 0:
+	print('  Debug level: ' + debugLevel)
 # state file generated using paraview version 5.5.0
 
 # ----------------------------------------------------------------
@@ -2006,4 +2018,67 @@ integrationTimePWF.ScalarRangeInitialized = 1
 # ----------------------------------------------------------------
 # finally, restore active source
 SetActiveSource(None)
-# ----------------------------------------------------------------
+# ----------------------------------------------------------------tTKMorseSmaleComplex1.DebugLevel = int(debugLevel)
+if tTKMorseSmaleComplex1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKMorseSmaleComplex1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKMorseSmaleComplex1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKMorseSmaleComplex1, i)))
+else:
+	SaveData(outputDirectory + 'tTKMorseSmaleComplex1.vtu',
+		CleantoGrid(OutputPort(tTKMorseSmaleComplex1)))
+tTKSphereFromPoint2.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint2, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint2.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint2)))
+tTKSphereFromPoint1.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint1, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint1.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint1)))
+tTKGeometrySmoother1.DebugLevel = int(debugLevel)
+if tTKGeometrySmoother1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKGeometrySmoother1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKGeometrySmoother1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKGeometrySmoother1, i)))
+else:
+	SaveData(outputDirectory + 'tTKGeometrySmoother1.vtu',
+		CleantoGrid(OutputPort(tTKGeometrySmoother1)))
+tTKGeometrySmoother2.DebugLevel = int(debugLevel)
+if tTKGeometrySmoother2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKGeometrySmoother2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKGeometrySmoother2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKGeometrySmoother2, i)))
+else:
+	SaveData(outputDirectory + 'tTKGeometrySmoother2.vtu',
+		CleantoGrid(OutputPort(tTKGeometrySmoother2)))
+tTKGeometrySmoother4.DebugLevel = int(debugLevel)
+if tTKGeometrySmoother4.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKGeometrySmoother4.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKGeometrySmoother4_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKGeometrySmoother4, i)))
+else:
+	SaveData(outputDirectory + 'tTKGeometrySmoother4.vtu',
+		CleantoGrid(OutputPort(tTKGeometrySmoother4)))
+tTKSphereFromPoint3.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint3, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint3.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint3)))
+tTKGeometrySmoother3.DebugLevel = int(debugLevel)
+if tTKGeometrySmoother3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKGeometrySmoother3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKGeometrySmoother3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKGeometrySmoother3, i)))
+else:
+	SaveData(outputDirectory + 'tTKGeometrySmoother3.vtu',
+		CleantoGrid(OutputPort(tTKGeometrySmoother3)))

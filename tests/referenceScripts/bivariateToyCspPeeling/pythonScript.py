@@ -1,3 +1,15 @@
+from paraview.simple import *
+if len(sys.argv) >= 2:
+	outputDirectory = sys.argv[1] + '/'
+	if len(sys.argv) == 3:
+		debugLevel = sys.argv[2]
+	else:
+		debugLevel = 0
+else:
+	print('Missing output directory')
+	sys.exit()
+if debugLevel != 0:
+	print('  Debug level: ' + debugLevel)
 # state file generated using paraview version 5.5.0
 
 # ----------------------------------------------------------------
@@ -1130,4 +1142,67 @@ edgeTypePWF.ScalarRangeInitialized = 1
 # ----------------------------------------------------------------
 # finally, restore active source
 SetActiveSource(None)
-# ----------------------------------------------------------------
+# ----------------------------------------------------------------tTKContinuousScatterPlot1.DebugLevel = int(debugLevel)
+if tTKContinuousScatterPlot1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKContinuousScatterPlot1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKContinuousScatterPlot1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKContinuousScatterPlot1, i)))
+else:
+	SaveData(outputDirectory + 'tTKContinuousScatterPlot1.vtu',
+		CleantoGrid(OutputPort(tTKContinuousScatterPlot1)))
+tTKReebSpace1.DebugLevel = int(debugLevel)
+if tTKReebSpace1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKReebSpace1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKReebSpace1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKReebSpace1, i)))
+else:
+	SaveData(outputDirectory + 'tTKReebSpace1.vtu',
+		CleantoGrid(OutputPort(tTKReebSpace1)))
+tTKProjectionFromField3.DebugLevel = int(debugLevel)
+if tTKProjectionFromField3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKProjectionFromField3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKProjectionFromField3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKProjectionFromField3, i)))
+else:
+	SaveData(outputDirectory + 'tTKProjectionFromField3.vtu',
+		CleantoGrid(OutputPort(tTKProjectionFromField3)))
+tTKProjectionFromField2.DebugLevel = int(debugLevel)
+if tTKProjectionFromField2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKProjectionFromField2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKProjectionFromField2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKProjectionFromField2, i)))
+else:
+	SaveData(outputDirectory + 'tTKProjectionFromField2.vtu',
+		CleantoGrid(OutputPort(tTKProjectionFromField2)))
+tTKProjectionFromField4.DebugLevel = int(debugLevel)
+if tTKProjectionFromField4.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKProjectionFromField4.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKProjectionFromField4_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKProjectionFromField4, i)))
+else:
+	SaveData(outputDirectory + 'tTKProjectionFromField4.vtu',
+		CleantoGrid(OutputPort(tTKProjectionFromField4)))
+tTKContinuousScatterPlot2.DebugLevel = int(debugLevel)
+if tTKContinuousScatterPlot2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKContinuousScatterPlot2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKContinuousScatterPlot2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKContinuousScatterPlot2, i)))
+else:
+	SaveData(outputDirectory + 'tTKContinuousScatterPlot2.vtu',
+		CleantoGrid(OutputPort(tTKContinuousScatterPlot2)))
+tTKGeometrySmoother1.DebugLevel = int(debugLevel)
+if tTKGeometrySmoother1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKGeometrySmoother1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKGeometrySmoother1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKGeometrySmoother1, i)))
+else:
+	SaveData(outputDirectory + 'tTKGeometrySmoother1.vtu',
+		CleantoGrid(OutputPort(tTKGeometrySmoother1)))
+tTKProjectionFromField1.DebugLevel = int(debugLevel)
+if tTKProjectionFromField1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKProjectionFromField1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKProjectionFromField1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKProjectionFromField1, i)))
+else:
+	SaveData(outputDirectory + 'tTKProjectionFromField1.vtu',
+		CleantoGrid(OutputPort(tTKProjectionFromField1)))

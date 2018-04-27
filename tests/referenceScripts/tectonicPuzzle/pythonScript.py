@@ -1,3 +1,15 @@
+from paraview.simple import *
+if len(sys.argv) >= 2:
+	outputDirectory = sys.argv[1] + '/'
+	if len(sys.argv) == 3:
+		debugLevel = sys.argv[2]
+	else:
+		debugLevel = 0
+else:
+	print('Missing output directory')
+	sys.exit()
+if debugLevel != 0:
+	print('  Debug level: ' + debugLevel)
 # state file generated using paraview version 5.5.0
 
 # ----------------------------------------------------------------
@@ -849,4 +861,115 @@ logViscosityPWF.ScalarRangeInitialized = 1
 # ----------------------------------------------------------------
 # finally, restore active source
 SetActiveSource(None)
-# ----------------------------------------------------------------
+# ----------------------------------------------------------------tTKPersistenceDiagram1.DebugLevel = int(debugLevel)
+if tTKPersistenceDiagram1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKPersistenceDiagram1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKPersistenceDiagram1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKPersistenceDiagram1, i)))
+else:
+	SaveData(outputDirectory + 'tTKPersistenceDiagram1.vtu',
+		CleantoGrid(OutputPort(tTKPersistenceDiagram1)))
+tTKSphereFromPoint1.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint1, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint1.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint1)))
+tTKTopologicalSimplification1.DebugLevel = int(debugLevel)
+if tTKTopologicalSimplification1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKTopologicalSimplification1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKTopologicalSimplification1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKTopologicalSimplification1, i)))
+else:
+	SaveData(outputDirectory + 'tTKTopologicalSimplification1.vtu',
+		CleantoGrid(OutputPort(tTKTopologicalSimplification1)))
+tTKMorseSmaleComplex1.DebugLevel = int(debugLevel)
+if tTKMorseSmaleComplex1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKMorseSmaleComplex1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKMorseSmaleComplex1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKMorseSmaleComplex1, i)))
+else:
+	SaveData(outputDirectory + 'tTKMorseSmaleComplex1.vtu',
+		CleantoGrid(OutputPort(tTKMorseSmaleComplex1)))
+tTKSphereFromPoint2.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint2, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint2.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint2)))
+tTKTopologicalSimplification2.DebugLevel = int(debugLevel)
+if tTKTopologicalSimplification2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKTopologicalSimplification2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKTopologicalSimplification2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKTopologicalSimplification2, i)))
+else:
+	SaveData(outputDirectory + 'tTKTopologicalSimplification2.vtu',
+		CleantoGrid(OutputPort(tTKTopologicalSimplification2)))
+tTKPersistenceDiagram2.DebugLevel = int(debugLevel)
+if tTKPersistenceDiagram2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKPersistenceDiagram2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKPersistenceDiagram2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKPersistenceDiagram2, i)))
+else:
+	SaveData(outputDirectory + 'tTKPersistenceDiagram2.vtu',
+		CleantoGrid(OutputPort(tTKPersistenceDiagram2)))
+tTKSphereFromPoint3.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint3, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint3.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint3)))
+tTKTopologicalSimplification3.DebugLevel = int(debugLevel)
+if tTKTopologicalSimplification3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKTopologicalSimplification3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKTopologicalSimplification3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKTopologicalSimplification3, i)))
+else:
+	SaveData(outputDirectory + 'tTKTopologicalSimplification3.vtu',
+		CleantoGrid(OutputPort(tTKTopologicalSimplification3)))
+tTKPersistenceDiagram3.DebugLevel = int(debugLevel)
+if tTKPersistenceDiagram3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKPersistenceDiagram3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKPersistenceDiagram3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKPersistenceDiagram3, i)))
+else:
+	SaveData(outputDirectory + 'tTKPersistenceDiagram3.vtu',
+		CleantoGrid(OutputPort(tTKPersistenceDiagram3)))
+tTKSphereFromPoint5.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint5.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint5.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint5_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint5, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint5.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint5)))
+tTKMorseSmaleComplex2.DebugLevel = int(debugLevel)
+if tTKMorseSmaleComplex2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKMorseSmaleComplex2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKMorseSmaleComplex2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKMorseSmaleComplex2, i)))
+else:
+	SaveData(outputDirectory + 'tTKMorseSmaleComplex2.vtu',
+		CleantoGrid(OutputPort(tTKMorseSmaleComplex2)))
+tTKSphereFromPoint4.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint4.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint4.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint4_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint4, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint4.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint4)))
+tTKIdentifierRandomizer1.DebugLevel = int(debugLevel)
+if tTKIdentifierRandomizer1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKIdentifierRandomizer1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKIdentifierRandomizer1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKIdentifierRandomizer1, i)))
+else:
+	SaveData(outputDirectory + 'tTKIdentifierRandomizer1.vtu',
+		CleantoGrid(OutputPort(tTKIdentifierRandomizer1)))

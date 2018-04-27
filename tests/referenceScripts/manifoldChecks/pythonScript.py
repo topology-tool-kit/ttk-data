@@ -1,3 +1,15 @@
+from paraview.simple import *
+if len(sys.argv) >= 2:
+	outputDirectory = sys.argv[1] + '/'
+	if len(sys.argv) == 3:
+		debugLevel = sys.argv[2]
+	else:
+		debugLevel = 0
+else:
+	print('Missing output directory')
+	sys.exit()
+if debugLevel != 0:
+	print('  Debug level: ' + debugLevel)
 # state file generated using paraview version 5.5.0
 
 # ----------------------------------------------------------------
@@ -875,4 +887,67 @@ tube5Display.PolarAxes.SecondaryRadialAxesTextFontFile = ''
 # ----------------------------------------------------------------
 # finally, restore active source
 SetActiveSource(None)
-# ----------------------------------------------------------------
+# ----------------------------------------------------------------tTKManifoldCheck3.DebugLevel = int(debugLevel)
+if tTKManifoldCheck3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKManifoldCheck3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKManifoldCheck3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKManifoldCheck3, i)))
+else:
+	SaveData(outputDirectory + 'tTKManifoldCheck3.vtu',
+		CleantoGrid(OutputPort(tTKManifoldCheck3)))
+tTKIdentifiers1.DebugLevel = int(debugLevel)
+if tTKIdentifiers1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKIdentifiers1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKIdentifiers1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKIdentifiers1, i)))
+else:
+	SaveData(outputDirectory + 'tTKIdentifiers1.vtu',
+		CleantoGrid(OutputPort(tTKIdentifiers1)))
+tTKManifoldCheck2.DebugLevel = int(debugLevel)
+if tTKManifoldCheck2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKManifoldCheck2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKManifoldCheck2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKManifoldCheck2, i)))
+else:
+	SaveData(outputDirectory + 'tTKManifoldCheck2.vtu',
+		CleantoGrid(OutputPort(tTKManifoldCheck2)))
+tTKManifoldCheck1.DebugLevel = int(debugLevel)
+if tTKManifoldCheck1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKManifoldCheck1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKManifoldCheck1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKManifoldCheck1, i)))
+else:
+	SaveData(outputDirectory + 'tTKManifoldCheck1.vtu',
+		CleantoGrid(OutputPort(tTKManifoldCheck1)))
+tTKSphereFromPoint1.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint1.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint1.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint1_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint1, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint1.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint1)))
+tTKSphereFromPoint4.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint4.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint4.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint4_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint4, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint4.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint4)))
+tTKSphereFromPoint3.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint3.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint3.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint3_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint3, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint3.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint3)))
+tTKSphereFromPoint2.DebugLevel = int(debugLevel)
+if tTKSphereFromPoint2.GetNumberOfOutputPorts() != 1:
+	for i in range(0, tTKSphereFromPoint2.GetNumberOfOutputPorts()):
+		SaveData(outputDirectory + 'tTKSphereFromPoint2_' + str(i) + '.vtu',
+			CleantoGrid(OutputPort(tTKSphereFromPoint2, i)))
+else:
+	SaveData(outputDirectory + 'tTKSphereFromPoint2.vtu',
+		CleantoGrid(OutputPort(tTKSphereFromPoint2)))
