@@ -9,7 +9,7 @@ if len(sys.argv) >= 2:
     else:
         debugLevel = 0;
 else:
-    print("Missing state file name")
+    print("Missing output directory")
     sys.exit()
 
 if debugLevel != 0:
