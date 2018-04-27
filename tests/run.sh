@@ -17,14 +17,16 @@ function createOutputs(){
   fi
 
   for testDir in tests/referenceScripts/*; do 
-    case=${testDir/tests\//}
-    case=${case/referenceScripts\//}
-    outputDir=tests/${1}Outputs/${case}
-    echo -e "\n\n\nConsidering test case '${case}'"
-    if [ ! -e "${outputDir}" ]; then
-      mkdir "${outputDir}"
+    if [ -d $testDir ]; then
+      case=${testDir/tests\//}
+      case=${case/referenceScripts\//}
+      outputDir=tests/${1}Outputs/${case}
+      echo -e "\n\n\nConsidering test case '${case}'"
+      if [ ! -e "${outputDir}" ]; then
+        mkdir "${outputDir}"
+      fi
+      pvpython ${testDir}/pythonScript.py ${outputDir} $2
     fi
-    pvpython ${testDir}/pythonScript.py ${outputDir} $2
   done
 }
 

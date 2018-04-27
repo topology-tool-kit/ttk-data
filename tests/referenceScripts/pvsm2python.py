@@ -18,8 +18,6 @@ LoadState(stateFile)
 if not os.path.exists(outputDir):
     os.makedirs(outputDir)
 
-SaveState("test.pvsm")
-
 f = open(outputDir + "/pythonScript.py", 'w')
 f.write(vtkSMTrace.GetState(1, 1))
 f.close()
