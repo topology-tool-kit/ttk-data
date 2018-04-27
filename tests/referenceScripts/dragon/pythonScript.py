@@ -24,7 +24,15 @@ tTKGeometrySmoother1 = TTKGeometrySmoother(Input=dragonvtu)
 # save the output
 cleantoGrid_1 = CleantoGrid(Input=tTKGeometrySmoother1)
 tTKGeometrySmoother1.DebugLevel = int(debugLevel)
-SaveData(outputDirectory + "geometrySmoother1.vtu", proxy=cleantoGrid_1)
+if tTKGeometrySmoother1.GetNumberOfOutputPorts() != 1:
+    for i in range(0, tTKGeometrySmoother1.GetNumberOfOutputPorts()):
+        SaveData(outputDirectory + "geometrySmoother1_" + str(i) + ".vtu", 
+            CleantoGrid(OutputPort(tTKGeometrySmoother1, i)))
+else:
+    SaveData(outputDirectory + "geometrySmoother1.vtu", 
+        CleantoGrid(OutputPort(tTKGeometrySmoother1)))
+
+#SaveData(outputDirectory + "geometrySmoother1.vtu", proxy=cleantoGrid_1)
 
 # create a new 'Calculator'
 elevation = Calculator(Input=tTKGeometrySmoother1)
@@ -51,10 +59,9 @@ tTKPersistenceCurve1.ScalarField = 'Elevation'
 tTKPersistenceCurve1.InputOffsetField = ''
 tTKPersistenceCurve1.DebugLevel = int(debugLevel)
 
-SaveData(outputDirectory + "persistenceCurve1_0.vtk", OutputPort(tTKPersistenceCurve1, 0))
-SaveData(outputDirectory + "persistenceCurve1_1.vtk", OutputPort(tTKPersistenceCurve1, 1))
-SaveData(outputDirectory + "persistenceCurve1_2.vtk", OutputPort(tTKPersistenceCurve1, 2))
-SaveData(outputDirectory + "persistenceCurve1_3.vtk", OutputPort(tTKPersistenceCurve1, 3))
+for i in range(0, tTKPersistenceCurve1.GetNumberOfOutputPorts()):
+    SaveData(outputDirectory + "persistenceCurve1_" + str(i) + ".vtk", 
+        OutputPort(tTKPersistenceCurve1, i))
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=pairs)

@@ -24,7 +24,7 @@ function createOutputs(){
     if [ ! -e "${outputDir}" ]; then
       mkdir "${outputDir}"
     fi
-    ${testDir}/pythonScript.py ${outputDir} $2
+    pvpython ${testDir}/pythonScript.py ${outputDir} $2
   done
 }
 

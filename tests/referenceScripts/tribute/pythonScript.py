@@ -218,7 +218,7 @@ tTKSphereFromPoint3.Radius = 1.0
 tTKMorseSmaleComplex2_1 = FindSource('TTKMorseSmaleComplex2')
 
 # create a new 'TTK IdentifierRandomizer'
-tTKIdentifierRandomizer2 = TTKIdentifierRandomizer(Input=OutputPort(tTKMorseSmaleComplex2_1,3))
+tTKIdentifierRandomizer2 = TTKIdentifierRandomizer(OutputPort(tTKMorseSmaleComplex2,3))
 tTKIdentifierRandomizer2.ScalarField = 'AscendingManifold'
 
 # create a new 'Clean to Grid'
@@ -240,7 +240,7 @@ calculator3.Function = 'iHat*coordsX+coordsY*jHat+0*kHat'
 tTKMorseSmaleComplex2_2 = FindSource('TTKMorseSmaleComplex2')
 
 # create a new 'Threshold'
-threshold4 = Threshold(Input=OutputPort(tTKMorseSmaleComplex2_2,1))
+threshold4 = Threshold(Input=OutputPort(tTKMorseSmaleComplex2,1))
 threshold4.Scalars = ['CELLS', 'CriticalPointIndex']
 
 # create a new 'Extract Surface'
