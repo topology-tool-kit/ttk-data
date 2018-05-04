@@ -58077,8 +58077,8 @@
         </Domain>
       </Property>
       <Property name="ThresholdBetween" id="8213.ThresholdBetween" number_of_elements="2">
-        <Element index="0" value="77"/>
-        <Element index="1" value="78"/>
+        <Element index="0" value="73"/>
+        <Element index="1" value="74"/>
         <Domain name="range" id="8213.ThresholdBetween.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="8213.UseContinuousCellRange" number_of_elements="1">
@@ -58119,8 +58119,8 @@
         </Domain>
       </Property>
       <Property name="ThresholdBetween" id="8396.ThresholdBetween" number_of_elements="2">
-        <Element index="0" value="78"/>
-        <Element index="1" value="80"/>
+        <Element index="0" value="75"/>
+        <Element index="1" value="76"/>
         <Domain name="range" id="8396.ThresholdBetween.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="8396.UseContinuousCellRange" number_of_elements="1">
@@ -58346,8 +58346,8 @@
         </Domain>
       </Property>
       <Property name="ThresholdBetween" id="11508.ThresholdBetween" number_of_elements="2">
-        <Element index="0" value="22"/>
-        <Element index="1" value="22"/>
+        <Element index="0" value="2"/>
+        <Element index="1" value="2"/>
         <Domain name="range" id="11508.ThresholdBetween.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="11508.UseContinuousCellRange" number_of_elements="1">
