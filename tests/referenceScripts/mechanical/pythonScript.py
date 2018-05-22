@@ -196,7 +196,8 @@ extractSurface5 = ExtractSurface(Input=a3sheetIdselectionthreshold)
 tTKGeometrySmoother1 = TTKGeometrySmoother(Input=extractSurface5)
 tTKGeometrySmoother1.IterationNumber = 2
 
-# ----------------------------------------------------------------tTKReebSpace1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKReebSpace1.DebugLevel = int(debugLevel)
 if tTKReebSpace1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKReebSpace1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKReebSpace1_' + str(i) + '.vtu',

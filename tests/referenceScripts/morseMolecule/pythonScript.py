@@ -204,7 +204,8 @@ contour1.ComputeScalars = 1
 contour1.Isosurfaces = [1.0]
 contour1.PointMergeMethod = 'Uniform Binning'
 
-# ----------------------------------------------------------------tTKMorseSmaleComplex1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKMorseSmaleComplex1.DebugLevel = int(debugLevel)
 if tTKMorseSmaleComplex1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKMorseSmaleComplex1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKMorseSmaleComplex1_' + str(i) + '.vtu',

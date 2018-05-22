@@ -152,7 +152,8 @@ tube3.Scalars = ['POINTS', 'CellDimension']
 tube3.Vectors = [None, '']
 tube3.Radius = 0.005
 
-# ----------------------------------------------------------------tTKScalarFieldSmoother1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKScalarFieldSmoother1.DebugLevel = int(debugLevel)
 if tTKScalarFieldSmoother1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKScalarFieldSmoother1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKScalarFieldSmoother1_' + str(i) + '.vtu',

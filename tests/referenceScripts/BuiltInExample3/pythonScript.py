@@ -216,7 +216,8 @@ transform1.Transform = 'Transform'
 # init the 'Transform' selected for 'Transform'
 transform1.Transform.Translate = [0.0, 0.0, 0.0001]
 
-# ----------------------------------------------------------------tTKPersistenceDiagram2.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKPersistenceDiagram2.DebugLevel = int(debugLevel)
 if tTKPersistenceDiagram2.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKPersistenceDiagram2.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKPersistenceDiagram2_' + str(i) + '.vtu',
