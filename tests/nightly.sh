@@ -3,8 +3,6 @@
 
 function create_sample_configuration(){
 
-  echo "file: $1"
-
   echo "TTK_SOURCE_DIR='path to TTK source dir'" > "$1"
   echo "TTK_DATA_DIR='path to TTK data dir'" >> "$1"
 }
@@ -13,16 +11,18 @@ function print_usage(){
 
   echo "Usage:"
   echo "  $0"
-  echo "  -c <full path to configuration file>"
+  echo "  -c <absolute path to configuration file>"
   exit
 }
 
 function update_source(){
   
   currentDir=`pwd`
-  echo "Updating source repository..." | tee -a $2
+  echo "Updating source repository '$1'..." | tee -a $2
   cd $1
   git pull | tee -a $2
+  rm -R build 2> /dev/null | tee -a $2
+  mkdir build | tee -a $2
   cd $currentDir
 }
 
@@ -31,9 +31,6 @@ function update_build(){
   currentDir=`pwd`
   cd $1
   echo "Building sources..." | tee -a $2
-  rm -R build 2> /dev/null | tee -a $2
-  mkdir build | tee -a $2
-  cd build | tee -a $2
   cmake ../ -G Ninja | tee -a $2
   ninja install | tee -a $2
   cd $currentDir 
@@ -42,8 +39,8 @@ function update_build(){
 function update_data(){
   
   currentDir=`pwd`
-  echo "Updating data repository..." | tee -a $2
-  cd $1 | tee -a $2
+  echo "Updating data repository '$1'..." | tee -a $2
+  cd $1 
   git pull | tee -a $2
   cd $currentDir
 }
@@ -52,7 +49,7 @@ function run_tests(){
 
   currentDir=`pwd`
   echo "Running tests..." | tee -a $2
-  cd $1 | tee -a $2
+  cd $1
   tests/run.sh  | tee -a $2
   cd $currentDir | tee -a $2
 }
@@ -80,9 +77,9 @@ fi
 
 source $configFile
 currentDate=`date`
-logFile="ttk-nightly-check-${currentDate// /_}.log"
+logFile="`pwd`/ttk-nightly-check-${currentDate// /_}.log"
 
 update_source $TTK_SOURCE_DIR $logFile
-upadte_build $TTK_SOURCE_DIR $logFile
+update_build $TTK_SOURCE_DIR/build $logFile
 update_data $TTK_DATA_DIR $logFile
 run_tests $TTK_DATA_DIR $logFile
