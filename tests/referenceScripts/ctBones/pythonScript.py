@@ -110,7 +110,8 @@ tube2.Radius = 1.5
 tTKSphereFromPoint1 = TTKSphereFromPoint(Input=persistenceThreshold)
 tTKSphereFromPoint1.Radius = 5.0
 
-# ----------------------------------------------------------------tTKPersistenceDiagram1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKPersistenceDiagram1.DebugLevel = int(debugLevel)
 if tTKPersistenceDiagram1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKPersistenceDiagram1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKPersistenceDiagram1_' + str(i) + '.vtu',

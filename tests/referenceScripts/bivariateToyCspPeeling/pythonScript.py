@@ -172,7 +172,8 @@ tube3.Scalars = ['POINTS', 'v']
 tube3.Vectors = [None, '']
 tube3.Radius = 0.015
 
-# ----------------------------------------------------------------tTKContinuousScatterPlot1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKContinuousScatterPlot1.DebugLevel = int(debugLevel)
 if tTKContinuousScatterPlot1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKContinuousScatterPlot1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKContinuousScatterPlot1_' + str(i) + '.vtu',

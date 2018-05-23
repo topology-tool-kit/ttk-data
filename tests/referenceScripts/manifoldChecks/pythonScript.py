@@ -135,7 +135,8 @@ threshold1 = Threshold(Input=tTKSphereFromPoint2)
 threshold1.Scalars = ['POINTS', 'VertexLinkComponentNumber']
 threshold1.ThresholdRange = [2.0, 2.0]
 
-# ----------------------------------------------------------------tTKManifoldCheck3.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKManifoldCheck3.DebugLevel = int(debugLevel)
 if tTKManifoldCheck3.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKManifoldCheck3.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKManifoldCheck3_' + str(i) + '.vtu',

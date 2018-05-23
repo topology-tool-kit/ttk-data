@@ -240,7 +240,8 @@ extractSurface5 = ExtractSurface(Input=cleantoGrid2)
 # create a new 'Generate Surface Normals'
 generateSurfaceNormals1 = GenerateSurfaceNormals(Input=extractSurface5)
 
-# ----------------------------------------------------------------tTKPersistenceDiagram1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKPersistenceDiagram1.DebugLevel = int(debugLevel)
 if tTKPersistenceDiagram1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKPersistenceDiagram1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKPersistenceDiagram1_' + str(i) + '.vtu',

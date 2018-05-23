@@ -128,7 +128,8 @@ tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tetrahedralize1)
 tTKPersistenceCurve1.ScalarField = 'myVorticity'
 tTKPersistenceCurve1.InputOffsetField = ''
 
-# ----------------------------------------------------------------tTKScalarFieldNormalizer1.DebugLevel = int(debugLevel)
+# ----------------------------------------------------------------
+tTKScalarFieldNormalizer1.DebugLevel = int(debugLevel)
 if tTKScalarFieldNormalizer1.GetNumberOfOutputPorts() != 1:
 	for i in range(0, tTKScalarFieldNormalizer1.GetNumberOfOutputPorts()):
 		SaveData(outputDirectory + 'tTKScalarFieldNormalizer1_' + str(i) + '.vtu',
