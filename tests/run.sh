@@ -5,8 +5,9 @@ function print_usage(){
 
   echo "Usage:"
   echo "  $0"
-  echo "  -d <debug level>"
-  echo "  -g [generate the reference outputs]"
+  echo "  [-d <debug level>]"
+  echo "  [-g <generate the reference outputs>]"
+  echo "  [-p <absolute path to pvpython>]" 
   exit
 }
 
@@ -25,7 +26,7 @@ function createOutputs(){
       if [ ! -e "${outputDir}" ]; then
         mkdir "${outputDir}"
       fi
-      pvpython ${testDir}/pythonScript.py ${outputDir} $2
+      $pvPython ${testDir}/pythonScript.py ${outputDir} $2
     fi
   done
 }
@@ -45,8 +46,9 @@ function compareOutputs(){
 
 debugLevel="0"
 generateRef="0"
+pvPython=""
 
-while getopts "d:gh" option
+while getopts "d:ghp:" option
 do
   case $option in
     d)
@@ -58,8 +60,24 @@ do
     h)
       print_usage
       ;;
+    p)
+      pvPython=$OPTARG
+      ;;
   esac
 done
+
+if [ -z "$pvPython" ]; then
+  echo "Querying path variable for pvpython..."
+  pvPython=`which pvpython`
+fi
+
+if [ -z "$pvPython" ]; then
+  echo "Error!"
+  echo "Could not find pvpython!"
+  exit
+fi
+
+echo "Path to pvpython executable: '$pvPython'"
 
 if [ $generateRef -eq "1" ]; then
   echo "Generating reference outputs..."

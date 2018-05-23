@@ -5,6 +5,7 @@ function create_sample_configuration(){
 
   echo "TTK_SOURCE_DIR='path to TTK source dir'" > "$1"
   echo "TTK_DATA_DIR='path to TTK data dir'" >> "$1"
+  echo "PVPYTHON='path to pvpython'" >> "$1"
 }
 
 function print_usage(){
@@ -50,7 +51,7 @@ function run_tests(){
   currentDir=`pwd`
   echo "Running tests..." | tee -a $2
   cd $1
-  tests/run.sh  | tee -a $2
+  tests/run.sh -p $PVPYTHON | tee -a $2
   cd $currentDir | tee -a $2
 }
 
@@ -79,6 +80,7 @@ source $configFile
 currentDate=`date`
 logFile="`pwd`/ttk-nightly-check-${currentDate// /_}.log"
 
+echo "Starting nightly check... " >> $logFile
 update_source $TTK_SOURCE_DIR $logFile
 update_build $TTK_SOURCE_DIR/build $logFile
 update_data $TTK_DATA_DIR $logFile
