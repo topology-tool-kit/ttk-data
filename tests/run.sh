@@ -38,7 +38,7 @@ function compareOutputs(){
     for file in tests/$1Outputs/${case}/*; do
       file=${file/tests\//}
       file=${file/${1}Outputs\//}
-      diff tests/$1Outputs/$file tests/$2Outputs/$file | tee -a test.log
+      diff tests/$1Outputs/$file tests/$2Outputs/$file 
     done
   done
 }
@@ -70,9 +70,6 @@ else
     echo "Could not find directory 'tests/referenceOutputs/'..."
     echo "Please make sure that reference outputs have been generated first."
     print_usage
-  fi
-  if [ -e test.log ]; then
-    rm test.log
   fi
   echo "Generating test outputs..."
   rm -R tests/testOutputs 2> /dev/null
