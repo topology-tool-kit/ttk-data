@@ -67,8 +67,8 @@ do
 done
 
 if [ -z "$pvPython" ]; then
-  echo "Querying path variable for pvpython..."
-  pvPython=`which pvpython`
+  echo "Assuming pvpython is accessible from the path variable..."
+  pvPython="pvpython"
 fi
 
 if [ -z "$pvPython" ]; then
