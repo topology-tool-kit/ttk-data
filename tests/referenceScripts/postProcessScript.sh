@@ -26,7 +26,7 @@ function insert_header(){
 }
 
 function write_out(){
-  echo ""
+  echo -e "\n"
   echo "$1.DebugLevel = int(debugLevel)"
   echo "if $1.GetNumberOfOutputPorts() != 1:"
   echo -e "\tfor i in range(0, $1.GetNumberOfOutputPorts()):"
