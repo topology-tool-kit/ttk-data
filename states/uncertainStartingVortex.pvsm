@@ -36042,9 +36042,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5470.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5470.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5470.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="5470.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5470.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceDiagram" id="9327" servers="1">
@@ -36087,9 +36087,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="9327.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="9327.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="9327.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="9327.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="9327.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="ScalarFieldCriticalPoints" id="5853" servers="1">
@@ -36433,9 +36433,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5676.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5676.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5676.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="5676.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5676.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="VertexIdentifierScalarField" id="5676.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>
@@ -36496,9 +36496,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="9360.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="9360.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="9360.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="9360.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="9360.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="VertexIdentifierScalarField" id="9360.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>

@@ -39189,9 +39189,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5147.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5147.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5147.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="5147.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5147.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceDiagram" id="4892" servers="1">
@@ -39231,9 +39231,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4892.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="4892.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="4892.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="4892.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="4892.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="SphereFromPoint" id="7557" servers="1">
@@ -39329,9 +39329,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4925.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="4925.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="4925.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="4925.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="4925.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="VertexIdentifierScalarField" id="4925.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>
