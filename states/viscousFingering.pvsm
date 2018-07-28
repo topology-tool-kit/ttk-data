@@ -53427,9 +53427,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="14822.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="14822.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="14822.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="14822.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="14822.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceDiagram" id="5919" servers="1">
@@ -53475,9 +53475,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5919.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5919.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5919.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="5919.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5919.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="ScalarFieldCriticalPoints" id="6333" servers="1">

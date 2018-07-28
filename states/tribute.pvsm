@@ -59229,9 +59229,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5699.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5699.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5699.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="5699.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5699.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceDiagram" id="5355" servers="1">
@@ -59271,9 +59271,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5355.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5355.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5355.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="5355.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5355.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="SphereFromPoint" id="10554" servers="1">
@@ -59463,9 +59463,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5443.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="5443.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="5443.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="5443.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="5443.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="VertexIdentifierScalarField" id="5443.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>

@@ -37040,9 +37040,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="6631.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="6631.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="6631.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="6631.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="6631.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceCurve" id="9038" servers="1">
@@ -37079,9 +37079,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="9038.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="9038.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="9038.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="9038.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="9038.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceDiagram" id="4858" servers="1">
@@ -37122,9 +37122,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4858.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="4858.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="4858.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="4858.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="4858.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="ScalarFieldCriticalPoints" id="5434" servers="1">
@@ -37389,9 +37389,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4891.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="4891.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="4891.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="4891.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="4891.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="VertexIdentifierScalarField" id="4891.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>

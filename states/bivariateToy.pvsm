@@ -61322,9 +61322,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="14414.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="14414.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="14414.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="14414.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="14414.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="Fiber" id="6959" servers="1">

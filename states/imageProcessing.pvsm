@@ -51351,9 +51351,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="14239.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="14239.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="14239.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="1"/>
-        <Domain name="bool" id="14239.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="14239.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="PersistenceDiagram" id="14195" servers="1">
@@ -51394,9 +51394,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="14195.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="14195.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="14195.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="14195.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="14195.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="SphereFromPoint" id="15631" servers="1">
@@ -51493,9 +51493,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="14228.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="14228.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="14228.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="14228.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="14228.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="VertexIdentifierScalarField" id="14228.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>
