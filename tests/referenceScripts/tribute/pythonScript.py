@@ -91,7 +91,6 @@ tetrahedralize2 = Tetrahedralize(Input=warpByScalar1)
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex2 = TTKMorseSmaleComplex(Input=tetrahedralize2)
 tTKMorseSmaleComplex2.ScalarField = 'originalData'
-tTKMorseSmaleComplex2.UseInputOffsetField = 1
 
 # create a new 'TTK SphereFromPoint'
 tTKSphereFromPoint4 = TTKSphereFromPoint(Input=tTKMorseSmaleComplex2)

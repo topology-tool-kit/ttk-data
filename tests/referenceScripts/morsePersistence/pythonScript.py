@@ -118,7 +118,6 @@ tTKTopologicalSimplification1.InputOffsetField = ''
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = 'Blend'
-tTKMorseSmaleComplex1.UseInputOffsetField = 1
 tTKMorseSmaleComplex1.SaddleConnectors = 0
 tTKMorseSmaleComplex1.AscendingSegmentation = 0
 tTKMorseSmaleComplex1.DescendingSegmentation = 0

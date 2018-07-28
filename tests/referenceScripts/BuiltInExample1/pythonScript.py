@@ -107,7 +107,6 @@ tube2.Radius = 0.015
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=warpByScalar1)
 tTKScalarFieldCriticalPoints1.ScalarField = 'myVorticity'
-tTKScalarFieldCriticalPoints1.UseInputOffsetField = 1
 
 # create a new 'TTK SphereFromPoint'
 tTKSphereFromPoint2 = TTKSphereFromPoint(Input=tTKScalarFieldCriticalPoints1)

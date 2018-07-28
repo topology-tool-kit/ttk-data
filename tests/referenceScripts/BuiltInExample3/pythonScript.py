@@ -137,7 +137,6 @@ tTKTopologicalSimplification1.InputOffsetField = ''
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=tTKTopologicalSimplification1)
 tTKScalarFieldCriticalPoints1.ScalarField = 'lowerBoundField'
-tTKScalarFieldCriticalPoints1.UseInputOffsetField = 1
 tTKScalarFieldCriticalPoints1.Withvertexidentifiers = 0
 tTKScalarFieldCriticalPoints1.Withvertexscalars = 0
 
@@ -178,7 +177,6 @@ tTKTopologicalSimplification2.InputOffsetField = ''
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints2 = TTKScalarFieldCriticalPoints(Input=tTKTopologicalSimplification2)
 tTKScalarFieldCriticalPoints2.ScalarField = 'upperBoundField'
-tTKScalarFieldCriticalPoints2.UseInputOffsetField = 1
 
 # create a new 'TTK SphereFromPoint'
 tTKSphereFromPoint4 = TTKSphereFromPoint(Input=tTKScalarFieldCriticalPoints2)

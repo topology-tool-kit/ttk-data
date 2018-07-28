@@ -79,7 +79,6 @@ SaveData(outputDirectory + "topologicalSimplification1.vtu", CleantoGrid(tTKTopo
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=tTKTopologicalSimplification1)
 tTKScalarFieldCriticalPoints1.ScalarField = 'Elevation'
-tTKScalarFieldCriticalPoints1.UseInputOffsetField = 1
 tTKScalarFieldCriticalPoints1.Withvertexidentifiers = 0
 tTKScalarFieldCriticalPoints1.Withvertexscalars = 0
 tTKScalarFieldCriticalPoints1.DebugLevel = int(debugLevel)
@@ -103,7 +102,6 @@ generateSurfaceNormals1 = GenerateSurfaceNormals(Input=extractSurface3)
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKContourTree1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKContourTree1.ScalarField = 'Elevation'
-tTKContourTree1.UseInputOffsetScalarField = 1
 tTKContourTree1.InputOffset = 'OutputOffsetScalarField'
 tTKContourTree1.ArcSampling = 30
 tTKContourTree1.DebugLevel = int(debugLevel)

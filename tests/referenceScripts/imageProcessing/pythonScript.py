@@ -70,7 +70,6 @@ tTKTopologicalSimplification1.InputOffsetField = ''
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = 'gradient'
-tTKMorseSmaleComplex1.UseInputOffsetField = 1
 
 # find source
 tTKMorseSmaleComplex1_1 = FindSource('TTKMorseSmaleComplex1')

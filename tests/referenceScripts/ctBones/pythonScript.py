@@ -74,7 +74,6 @@ tTKTopologicalSimplification1.InputOffsetField = ''
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKMergeandContourTreeFTM1.ScalarField = 'Scalars_'
-tTKMergeandContourTreeFTM1.UseInputOffsetScalarField = 1
 tTKMergeandContourTreeFTM1.InputOffset = 'OutputOffsetScalarField'
 tTKMergeandContourTreeFTM1.TreeType = 'Split   Tree'
 
