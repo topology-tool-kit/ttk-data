@@ -39,7 +39,6 @@ contour1.PointMergeMethod = 'Uniform Binning'
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=ctBonesvti)
 tTKPersistenceDiagram1.ScalarField = 'Scalars_'
-tTKPersistenceDiagram1.InputOffsetField = ''
 
 # create a new 'Threshold'
 threshold4 = Threshold(Input=tTKPersistenceDiagram1)
@@ -69,14 +68,11 @@ persistenceThreshold.ThresholdRange = [180.0, 255.0]
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=ctBonesvti,
     Constraints=persistenceThreshold)
 tTKTopologicalSimplification1.ScalarField = 'Scalars_'
-tTKTopologicalSimplification1.InputOffsetField = ''
 
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKMergeandContourTreeFTM1.ScalarField = 'Scalars_'
-tTKMergeandContourTreeFTM1.UseInputOffsetScalarField = 1
-tTKMergeandContourTreeFTM1.InputOffset = 'OutputOffsetScalarField'
-tTKMergeandContourTreeFTM1.TreeType = 'Split   Tree'
+tTKMergeandContourTreeFTM1.TreeType = 'Split Tree'
 
 # find source
 tTKMergeandContourTreeFTM1_1 = FindSource('TTKMergeandContourTreeFTM1')
