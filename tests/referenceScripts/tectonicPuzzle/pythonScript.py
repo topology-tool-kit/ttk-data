@@ -81,7 +81,6 @@ tTKTopologicalSimplification1.InputOffsetField = ''
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = 'logViscosity'
-tTKMorseSmaleComplex1.UseInputOffsetField = 1
 
 # create a new 'TTK SphereFromPoint'
 tTKSphereFromPoint2 = TTKSphereFromPoint(Input=tTKMorseSmaleComplex1)
@@ -104,12 +103,10 @@ pERSISTENT_MINIMA_AND_LARGE_MAXIMA = AppendDatasets(Input=[pERSISTENT_MINIMA, lA
 tTKTopologicalSimplification2 = TTKTopologicalSimplification(Domain=tTKTopologicalSimplification1,
     Constraints=pERSISTENT_MINIMA_AND_LARGE_MAXIMA)
 tTKTopologicalSimplification2.ScalarField = 'logViscosity'
-tTKTopologicalSimplification2.UseInputOffsetField = 1
 
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram2 = TTKPersistenceDiagram(Input=tTKTopologicalSimplification2)
 tTKPersistenceDiagram2.ScalarField = 'logViscosity'
-tTKPersistenceDiagram2.UseInputOffsetField = 1
 
 # create a new 'Threshold'
 threshold4 = Threshold(Input=tTKPersistenceDiagram2)
@@ -146,12 +143,10 @@ lARGE_MAXIMA_LOW_SADDLE_AND_PERSISTENT_MINIMA = AppendDatasets(Input=[pERSISTENT
 tTKTopologicalSimplification3 = TTKTopologicalSimplification(Domain=tTKTopologicalSimplification2,
     Constraints=lARGE_MAXIMA_LOW_SADDLE_AND_PERSISTENT_MINIMA)
 tTKTopologicalSimplification3.ScalarField = 'logViscosity'
-tTKTopologicalSimplification3.UseInputOffsetField = 1
 
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=tTKTopologicalSimplification3)
 tTKPersistenceDiagram3.ScalarField = 'logViscosity'
-tTKPersistenceDiagram3.UseInputOffsetField = 1
 
 # create a new 'Threshold'
 threshold7 = Threshold(Input=tTKPersistenceDiagram3)
@@ -202,7 +197,6 @@ tube2.Radius = 0.05
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex2 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification3)
 tTKMorseSmaleComplex2.ScalarField = 'logViscosity'
-tTKMorseSmaleComplex2.UseInputOffsetField = 1
 
 # find source
 tTKMorseSmaleComplex2_1 = FindSource('TTKMorseSmaleComplex2')

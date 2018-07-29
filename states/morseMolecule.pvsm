@@ -57842,9 +57842,9 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4507.UseAllCores.bool"/>
       </Property>
-      <Property name="UseInputOffsetScalarField" id="4507.UseInputOffsetScalarField" number_of_elements="1">
+      <Property name="ForceInputOffsetScalarField" id="4507.ForceInputOffsetScalarField" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="bool" id="4507.UseInputOffsetScalarField.bool"/>
+        <Domain name="bool" id="4507.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
     <Proxy group="filters" type="SphereFromPoint" id="5200" servers="1">
