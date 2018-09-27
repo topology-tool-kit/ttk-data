@@ -28510,7 +28510,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15601.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -28584,9 +28584,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15601.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="15601.BumpMapInputDataArray.field_list">
@@ -28611,7 +28611,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="15601.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -28707,7 +28707,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15601.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -28738,7 +28738,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15601.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -28927,7 +28927,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15601.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -28954,7 +28954,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15601.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -29094,7 +29094,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15601.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -29106,7 +29106,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15601.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -29262,7 +29262,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15601.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -29435,7 +29435,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16691.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -29509,9 +29509,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="16691.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="16691.BumpMapInputDataArray.field_list">
@@ -29536,7 +29536,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="16691.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -29632,7 +29632,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16691.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -29663,7 +29663,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16691.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -29852,7 +29852,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16691.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -29879,7 +29879,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16691.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -30019,7 +30019,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16691.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -30031,7 +30031,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16691.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -30187,7 +30187,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16691.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -30353,9 +30353,9 @@
         <Domain name="array_list" id="15871.SelectionCellFieldDataArrayName.array_list"/>
       </Property>
       <Property name="SelectionPointFieldDataArrayName" id="15871.SelectionPointFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="NodeType"/>
+        <Element index="0" value="CriticalType"/>
         <Domain name="array_list" id="15871.SelectionPointFieldDataArrayName.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -30430,9 +30430,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15871.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="15871.BumpMapInputDataArray.field_list">
@@ -30453,9 +30453,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15871.ColorArrayName.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -30546,9 +30546,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15871.ExtrusionInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -30573,9 +30573,9 @@
         <Domain name="bool" id="15871.GenerateNoiseTexture.bool"/>
       </Property>
       <Property name="GlyphTableIndexArray" id="15871.GlyphTableIndexArray" number_of_elements="1">
-        <Element index="0" value="NodeType"/>
+        <Element index="0" value="CriticalType"/>
         <Domain name="array_list" id="15871.GlyphTableIndexArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
@@ -30760,9 +30760,9 @@
         <Domain name="string_list" id="15871.OSPRayMaterial.string_list"/>
       </Property>
       <Property name="OSPRayScaleArray" id="15871.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="NodeType"/>
+        <Element index="0" value="CriticalType"/>
         <Domain name="array_list" id="15871.OSPRayScaleArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -30787,9 +30787,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15871.OpacityArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -30921,18 +30921,18 @@
         <Element index="0" value=""/>
       </Property>
       <Property name="SelectOrientationVectors" id="15871.SelectOrientationVectors" number_of_elements="1">
-        <Element index="0" value="NodeType"/>
+        <Element index="0" value="CriticalType"/>
         <Domain name="array_list" id="15871.SelectOrientationVectors.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
       <Property name="SelectScaleArray" id="15871.SelectScaleArray" number_of_elements="1">
-        <Element index="0" value="NodeType"/>
+        <Element index="0" value="CriticalType"/>
         <Domain name="array_list" id="15871.SelectScaleArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
@@ -31083,9 +31083,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15871.SetScaleArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="Normals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -31259,7 +31259,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16139.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -31333,9 +31333,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="16139.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="16139.BumpMapInputDataArray.field_list">
@@ -31360,7 +31360,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="16139.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -31456,7 +31456,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16139.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -31487,7 +31487,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16139.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -31676,7 +31676,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16139.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -31703,7 +31703,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16139.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -31843,7 +31843,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16139.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -31855,7 +31855,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16139.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -32011,7 +32011,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16139.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -32184,7 +32184,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16959.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -32259,9 +32259,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="16959.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="16959.BumpMapInputDataArray.field_list">
@@ -32286,7 +32286,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="16959.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -32383,7 +32383,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16959.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -32415,7 +32415,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16959.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
@@ -32606,7 +32606,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16959.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -32634,7 +32634,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16959.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -32776,7 +32776,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16959.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
@@ -32789,7 +32789,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16959.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
@@ -32946,7 +32946,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16959.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="TubeNormals"/>
           <String text="VertexIdentifier"/>
         </Domain>
@@ -41558,7 +41558,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="14787.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -41632,9 +41632,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="14787.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="14787.BumpMapInputDataArray.field_list">
@@ -41659,7 +41659,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="14787.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -41759,7 +41759,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="14787.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -41790,7 +41790,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="14787.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -41979,7 +41979,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="14787.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -42006,7 +42006,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="14787.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -42168,7 +42168,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="14787.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -42180,7 +42180,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="14787.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -42336,7 +42336,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="14787.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -42515,7 +42515,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16423.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -42589,9 +42589,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="16423.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="16423.BumpMapInputDataArray.field_list">
@@ -42616,7 +42616,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="16423.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -42716,7 +42716,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16423.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -42747,7 +42747,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16423.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -42936,7 +42936,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16423.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -42963,7 +42963,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16423.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -43125,7 +43125,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16423.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -43137,7 +43137,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="16423.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -43293,7 +43293,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="16423.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -43472,7 +43472,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15060.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -43546,9 +43546,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15060.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="15060.BumpMapInputDataArray.field_list">
@@ -43573,7 +43573,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="15060.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -43673,7 +43673,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15060.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -43704,7 +43704,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15060.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -43893,7 +43893,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15060.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -43920,7 +43920,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15060.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -44082,7 +44082,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15060.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -44094,7 +44094,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15060.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -44250,7 +44250,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15060.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -44429,7 +44429,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15333.SelectionPointFieldDataArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -44503,9 +44503,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="15333.BumpMapInputDataArray.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
         <Domain name="field_list" id="15333.BumpMapInputDataArray.field_list">
@@ -44530,7 +44530,7 @@
         <Element index="4" value=""/>
         <Domain name="array_list" id="15333.ColorArrayName.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -44630,7 +44630,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15333.ExtrusionInputDataArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -44661,7 +44661,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15333.GlyphTableIndexArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -44850,7 +44850,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15333.OSPRayScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -44877,7 +44877,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15333.OpacityArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -45039,7 +45039,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15333.SelectOrientationVectors.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -45051,7 +45051,7 @@
         <Element index="0" value="Coordinates"/>
         <Domain name="array_list" id="15333.SelectScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="None"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
@@ -45207,7 +45207,7 @@
         <Element index="4" value="Coordinates"/>
         <Domain name="array_list" id="15333.SetScaleArray.array_list">
           <String text="Coordinates"/>
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -51500,7 +51500,7 @@
       <Property name="VertexIdentifierScalarField" id="14228.VertexIdentifierScalarField" number_of_elements="1">
         <Element index="0" value="VertexIdentifier"/>
         <Domain name="array_list" id="14228.VertexIdentifierScalarField.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -51525,7 +51525,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="PairIdentifier"/>
         <Domain name="array_list" id="14206.SelectInputScalars.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -51564,7 +51564,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="PairIdentifier"/>
         <Domain name="array_list" id="16169.SelectInputScalars.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -51665,9 +51665,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="NodeType"/>
+        <Element index="4" value="CriticalType"/>
         <Domain name="array_list" id="16721.SelectInputScalars.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
         </Domain>
       </Property>
@@ -51730,7 +51730,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="Persistence"/>
         <Domain name="array_list" id="14217.SelectInputScalars.array_list">
-          <String text="NodeType"/>
+          <String text="CriticalType"/>
           <String text="VertexIdentifier"/>
           <String text="PairIdentifier"/>
           <String text="PairType"/>
@@ -53721,14 +53721,14 @@
     <ProxyCollection name="lookup_tables">
       <Item id="19714" name="AscendingManifold.PVLookupTable"/>
       <Item id="19033" name="DescendingManifold.PVLookupTable"/>
-      <Item id="15768" name="NodeType.PVLookupTable"/>
+      <Item id="15768" name="CriticalType.PVLookupTable"/>
       <Item id="13214" name="PNGImage.PVLookupTable"/>
       <Item id="17125" name="gradient.PVLookupTable"/>
     </ProxyCollection>
     <ProxyCollection name="piecewise_functions">
       <Item id="19713" name="AscendingManifold.PiecewiseFunction"/>
       <Item id="19032" name="DescendingManifold.PiecewiseFunction"/>
-      <Item id="15767" name="NodeType.PiecewiseFunction"/>
+      <Item id="15767" name="CriticalType.PiecewiseFunction"/>
       <Item id="13213" name="PNGImage.PiecewiseFunction"/>
       <Item id="17124" name="gradient.PiecewiseFunction"/>
     </ProxyCollection>
