@@ -22048,9 +22048,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="15532.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="15532.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22135,7 +22135,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22231,7 +22231,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22358,7 +22358,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22373,7 +22373,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22612,9 +22612,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="10488.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="10488.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22699,7 +22699,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22795,7 +22795,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22922,7 +22922,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -22937,7 +22937,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23176,9 +23176,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="14390.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="14390.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23263,7 +23263,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23359,7 +23359,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23486,7 +23486,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23501,7 +23501,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23740,9 +23740,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="9285.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="9285.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23825,7 +23825,7 @@
         <Domain name="array_list" id="9285.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -23920,7 +23920,7 @@
         <Domain name="array_list" id="9285.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24046,7 +24046,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24060,7 +24060,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24299,9 +24299,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="9453.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="9453.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24386,7 +24386,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24482,7 +24482,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24609,7 +24609,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24624,7 +24624,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24863,9 +24863,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="14547.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="14547.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -24950,7 +24950,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -25046,7 +25046,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -25173,7 +25173,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -25188,7 +25188,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -25960,9 +25960,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="15689.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="15689.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26047,7 +26047,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26143,7 +26143,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26270,7 +26270,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26285,7 +26285,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26524,9 +26524,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="10817.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="10817.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26611,7 +26611,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26707,7 +26707,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26834,7 +26834,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -26849,7 +26849,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -28184,9 +28184,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="11131.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11131.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -28262,7 +28262,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="11131.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -28351,9 +28351,9 @@
         <Domain name="range" id="11131.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="11131.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11131.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -28472,7 +28472,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11131.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -28482,7 +28482,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11131.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -31462,9 +31462,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="6430.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="6430.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -31547,7 +31547,7 @@
         <Domain name="array_list" id="6430.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -31642,7 +31642,7 @@
         <Domain name="array_list" id="6430.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -31768,7 +31768,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -31782,7 +31782,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -33047,9 +33047,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="6598.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="6598.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -33134,7 +33134,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -33230,7 +33230,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -33357,7 +33357,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -33372,7 +33372,7 @@
           <String text="CellId"/>
           <String text="None"/>
           <String text="TubeNormals"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -34158,9 +34158,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="7668.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7668.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34236,7 +34236,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="SeparatrixId"/>
         <Domain name="array_list" id="7668.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34326,9 +34326,9 @@
         <Domain name="range" id="7668.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="7668.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7668.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34447,7 +34447,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7668.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34457,7 +34457,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7668.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34691,9 +34691,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="7836.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7836.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34769,7 +34769,7 @@
         <Element index="3" value="0"/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="7836.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34858,9 +34858,9 @@
         <Domain name="range" id="7836.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="7836.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7836.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34979,7 +34979,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7836.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -34989,7 +34989,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7836.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35223,9 +35223,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="13747.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="13747.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35301,7 +35301,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="13747.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35390,9 +35390,9 @@
         <Domain name="range" id="13747.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="13747.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="13747.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35511,7 +35511,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="13747.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35521,7 +35521,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="13747.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35755,9 +35755,9 @@
         <Element index="6" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="15046.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="15046.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35833,7 +35833,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="15046.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -35922,9 +35922,9 @@
         <Domain name="range" id="15046.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="15046.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="15046.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -36043,7 +36043,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="15046.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -36053,7 +36053,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="15046.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -41383,9 +41383,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="11314.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11314.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -41461,7 +41461,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="11314.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -41554,9 +41554,9 @@
         <Domain name="range" id="11314.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="11314.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11314.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -41690,7 +41690,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11314.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -41700,7 +41700,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11314.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -41936,9 +41936,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="7317.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7317.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42014,7 +42014,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="SeparatrixId"/>
         <Domain name="array_list" id="7317.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42108,9 +42108,9 @@
         <Domain name="range" id="7317.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="7317.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7317.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42245,7 +42245,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7317.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42255,7 +42255,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7317.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42491,9 +42491,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="7500.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7500.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42569,7 +42569,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="SeparatrixId"/>
         <Domain name="array_list" id="7500.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42663,9 +42663,9 @@
         <Domain name="range" id="7500.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="7500.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7500.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42800,7 +42800,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7500.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -42810,7 +42810,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7500.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43046,9 +43046,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="11497.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11497.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43124,7 +43124,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="11497.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43217,9 +43217,9 @@
         <Domain name="range" id="11497.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="11497.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11497.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43353,7 +43353,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11497.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43363,7 +43363,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11497.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43599,9 +43599,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="11680.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11680.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43677,7 +43677,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="11680.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43770,9 +43770,9 @@
         <Domain name="range" id="11680.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="11680.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11680.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43906,7 +43906,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11680.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -43916,7 +43916,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11680.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -45864,7 +45864,7 @@
       <Property name="SelectionCellFieldDataArrayName" id="10660.SelectionCellFieldDataArrayName" number_of_elements="1">
         <Element index="0" value="vtkOriginalCellIds"/>
         <Domain name="array_list" id="10660.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -45947,7 +45947,7 @@
         <Domain name="array_list" id="10660.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46046,7 +46046,7 @@
         <Domain name="array_list" id="10660.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46187,7 +46187,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46201,7 +46201,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46444,7 +46444,7 @@
       <Property name="SelectionCellFieldDataArrayName" id="8019.SelectionCellFieldDataArrayName" number_of_elements="1">
         <Element index="0" value="vtkOriginalCellIds"/>
         <Domain name="array_list" id="8019.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46527,7 +46527,7 @@
         <Domain name="array_list" id="8019.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46626,7 +46626,7 @@
         <Domain name="array_list" id="8019.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46767,7 +46767,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -46781,7 +46781,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -47022,9 +47022,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="4851.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="4851.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -47107,7 +47107,7 @@
         <Domain name="array_list" id="4851.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -47206,7 +47206,7 @@
         <Domain name="array_list" id="4851.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -47347,7 +47347,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -47361,7 +47361,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -47602,9 +47602,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="11863.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11863.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -47680,7 +47680,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="11863.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -47773,9 +47773,9 @@
         <Domain name="range" id="11863.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="11863.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="11863.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -47909,7 +47909,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11863.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -47919,7 +47919,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="11863.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -48155,9 +48155,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="8202.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="8202.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48240,7 +48240,7 @@
         <Domain name="array_list" id="8202.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48339,7 +48339,7 @@
         <Domain name="array_list" id="8202.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48480,7 +48480,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48494,7 +48494,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48735,9 +48735,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="8385.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="8385.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48820,7 +48820,7 @@
         <Domain name="array_list" id="8385.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -48919,7 +48919,7 @@
         <Domain name="array_list" id="8385.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49060,7 +49060,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49074,7 +49074,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49315,9 +49315,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="8568.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="8568.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49400,7 +49400,7 @@
         <Domain name="array_list" id="8568.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49499,7 +49499,7 @@
         <Domain name="array_list" id="8568.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49640,7 +49640,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49654,7 +49654,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49895,9 +49895,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="8751.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="8751.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -49980,7 +49980,7 @@
         <Domain name="array_list" id="8751.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50079,7 +50079,7 @@
         <Domain name="array_list" id="8751.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50220,7 +50220,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50234,7 +50234,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50475,9 +50475,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="8934.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="8934.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50560,7 +50560,7 @@
         <Domain name="array_list" id="8934.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50659,7 +50659,7 @@
         <Domain name="array_list" id="8934.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50800,7 +50800,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -50814,7 +50814,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -51055,9 +51055,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="9117.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="9117.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -51140,7 +51140,7 @@
         <Domain name="array_list" id="9117.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -51239,7 +51239,7 @@
         <Domain name="array_list" id="9117.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -51380,7 +51380,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -51394,7 +51394,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -51635,9 +51635,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="12046.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="12046.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -51713,7 +51713,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="12046.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -51806,9 +51806,9 @@
         <Domain name="range" id="12046.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="12046.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="12046.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -51942,7 +51942,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="12046.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -51952,7 +51952,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="12046.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52188,9 +52188,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="12229.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="12229.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52266,7 +52266,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="12229.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52359,9 +52359,9 @@
         <Domain name="range" id="12229.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="12229.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="12229.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52495,7 +52495,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="12229.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52505,7 +52505,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="12229.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52741,9 +52741,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="16018.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="16018.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52819,7 +52819,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="16018.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -52912,9 +52912,9 @@
         <Domain name="range" id="16018.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="16018.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="16018.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53048,7 +53048,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="16018.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53058,7 +53058,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="16018.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53296,7 +53296,7 @@
       <Property name="SelectionCellFieldDataArrayName" id="5023.SelectionCellFieldDataArrayName" number_of_elements="1">
         <Element index="0" value="vtkOriginalCellIds"/>
         <Domain name="array_list" id="5023.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53372,7 +53372,7 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="5023.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53465,9 +53465,9 @@
         <Domain name="range" id="5023.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="5023.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="5023.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53601,7 +53601,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="5023.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53611,7 +53611,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="5023.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -53847,9 +53847,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="5542.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="5542.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -53932,7 +53932,7 @@
         <Domain name="array_list" id="5542.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54031,7 +54031,7 @@
         <Domain name="array_list" id="5542.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54172,7 +54172,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54186,7 +54186,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54427,9 +54427,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="5725.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="5725.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54512,7 +54512,7 @@
         <Domain name="array_list" id="5725.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54611,7 +54611,7 @@
         <Domain name="array_list" id="5725.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54752,7 +54752,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -54766,7 +54766,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55007,9 +55007,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="6079.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="6079.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55092,7 +55092,7 @@
         <Domain name="array_list" id="6079.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55191,7 +55191,7 @@
         <Domain name="array_list" id="6079.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55332,7 +55332,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55346,7 +55346,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55587,9 +55587,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="6262.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="6262.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55672,7 +55672,7 @@
         <Domain name="array_list" id="6262.ColorArrayName.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55771,7 +55771,7 @@
         <Domain name="array_list" id="6262.OSPRayScaleArray.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55912,7 +55912,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -55926,7 +55926,7 @@
           <String text="CellDimension"/>
           <String text="CellId"/>
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -56737,9 +56737,9 @@
         <Element index="7" value="Wireframe"/>
       </Property>
       <Property name="SelectionCellFieldDataArrayName" id="7134.SelectionCellFieldDataArrayName" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7134.SelectionCellFieldDataArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -56815,7 +56815,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="SeparatrixId"/>
         <Domain name="array_list" id="7134.ColorArrayName.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -56909,9 +56909,9 @@
         <Domain name="range" id="7134.NonlinearSubdivisionLevel.range"/>
       </Property>
       <Property name="OSPRayScaleArray" id="7134.OSPRayScaleArray" number_of_elements="1">
-        <Element index="0" value="CriticalPointIndex"/>
+        <Element index="0" value="SeparatrixType"/>
         <Domain name="array_list" id="7134.OSPRayScaleArray.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -57046,7 +57046,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7134.SelectOrientationVectors.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -57056,7 +57056,7 @@
         <Element index="0" value="None"/>
         <Domain name="array_list" id="7134.SelectScaleArray.array_list">
           <String text="None"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -58022,7 +58022,7 @@
         <Domain name="array_list" id="5370.SelectInputScalars.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -58064,7 +58064,7 @@
         <Domain name="array_list" id="8213.SelectInputScalars.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -58106,7 +58106,7 @@
         <Domain name="array_list" id="8396.SelectInputScalars.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -58144,11 +58144,11 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="1"/>
-        <Element index="4" value="CriticalPointIndex"/>
+        <Element index="4" value="SeparatrixType"/>
         <Domain name="array_list" id="5553.SelectInputScalars.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -58223,9 +58223,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="1"/>
-        <Element index="4" value="CriticalPointIndex"/>
+        <Element index="4" value="SeparatrixType"/>
         <Domain name="array_list" id="6960.SelectInputScalars.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -58260,9 +58260,9 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="1"/>
-        <Element index="4" value="CriticalPointIndex"/>
+        <Element index="4" value="SeparatrixType"/>
         <Domain name="array_list" id="11142.SelectInputScalars.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -58299,7 +58299,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="NumberOfCriticalPointsOnBoundary"/>
         <Domain name="array_list" id="11325.SelectInputScalars.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -58336,7 +58336,7 @@
         <Element index="3" value="1"/>
         <Element index="4" value="SeparatrixId"/>
         <Domain name="array_list" id="11508.SelectInputScalars.array_list">
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixId"/>
           <String text="SourceId"/>
@@ -58371,11 +58371,11 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="1"/>
-        <Element index="4" value="CriticalPointIndex"/>
+        <Element index="4" value="SeparatrixType"/>
         <Domain name="array_list" id="7847.SelectInputScalars.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
@@ -58417,7 +58417,7 @@
         <Domain name="array_list" id="8030.SelectInputScalars.array_list">
           <String text="CellDimension"/>
           <String text="CellId"/>
-          <String text="CriticalPointIndex"/>
+          <String text="SeparatrixType"/>
           <String text="DestinationId"/>
           <String text="NumberOfCriticalPointsOnBoundary"/>
           <String text="SeparatrixFunctionDifference"/>
