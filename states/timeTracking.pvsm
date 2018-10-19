@@ -62390,11 +62390,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLImageDataReader" id="13151" servers="1">
       <Property name="FileName" id="13151.FileName" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/svn/data/total/ldav18/vortex-street_mini.vti"/>
+        <Element index="0" value="timeTracking.vti"/>
         <Domain name="files" id="13151.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="13151.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/svn/data/total/ldav18/vortex-street_mini.vti"/>
+        <Element index="0" value="timeTracking.vti"/>
       </Property>
       <Property name="TimestepValues" id="13151.TimestepValues"/>
       <Property name="CellArrayInfo" id="13151.CellArrayInfo" number_of_elements="2">
@@ -63891,7 +63891,7 @@
       <Item id="16246" name="Transform2"/>
       <Item id="19895" name="Tube1"/>
       <Item id="20431" name="Tube2"/>
-      <Item id="13151" name="vortex-street_mini.vti"/>
+      <Item id="13151" name="timeTracking.vti"/>
     </ProxyCollection>
     <ProxyCollection name="timekeeper">
       <Item id="259" name="TimeKeeper1"/>
