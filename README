@@ -43,6 +43,41 @@ Data specs
 }
 
 {
+  "name": "clustering0.csv",
+  "description": "Two dimensional point cloud, clustering toy example",
+  "acknowledgement": "scikit-learn",
+  "url": "http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"
+}
+
+{
+  "name": "clustering1.csv",
+  "description": "Two dimensional point cloud, clustering toy example",
+  "acknowledgement": "scikit-learn",
+  "url": "http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"
+}
+
+{
+  "name": "clustering2.csv",
+  "description": "Two dimensional point cloud, clustering toy example",
+  "acknowledgement": "scikit-learn",
+  "url": "http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"
+}
+
+{
+  "name": "clustering3.csv",
+  "description": "Two dimensional point cloud, clustering toy example",
+  "acknowledgement": "scikit-learn",
+  "url": "http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"
+}
+
+{
+  "name": "clustering4.csv",
+  "description": "Two dimensional point cloud, clustering toy example",
+  "acknowledgement": "scikit-learn",
+  "url": "http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"
+}
+
+{
   "name": "ctBones.vti",
   "description": "Rotational C-arm x-ray scan of a human foot",
   "acknowledgement": "Philips Research, Hamburg, Germany",
@@ -85,6 +120,13 @@ Data specs
 }
 
 {
+  "name": "naturalImage.png",
+  "description": "Photograph of a building",
+  "acknowledgement": "IPOL LSD demo",
+  "url": "http://demo.ipol.im/demo/gjmr_line_segment_detector/input_select?le-piree.x=79&le-piree.y=37"
+}
+
+{
   "name": "noisyTerrain.vtu",
   "description": "Surface of a noisy terrain",
   "acknowledgement": "Julien Tierny",
@@ -99,10 +141,24 @@ Data specs
 }
 
 {
+  "name": "pointCloud.csv",
+  "description": "Three dimensional point cloud, manifold learning example",
+  "acknowledgement": "scikit-learn",
+  "url": "http://scikit-learn.org/stable/auto_examples/manifold/plot_compare_methods.html"
+}
+
+{
   "name": "tectonicPuzzle.vtu",
   "description": "Tectonic plate viscosity",
   "acknowledgement": "Nicolas Coltice",
   "url": "http://univ-lyon1.academia.edu/NicolasColtice"
+}
+
+{
+  "name": "timeTracking.vti",
+  "description": "Time-varying 2D von Karman vortex street",
+  "acknowledgement": "Gerris",
+  "url": "http://gfs.sourceforge.net/examples/examples/cylinder.html"
 }
 
 {
