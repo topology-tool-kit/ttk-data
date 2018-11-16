@@ -117,8 +117,6 @@ tTKContourTree1_1 = FindSource('TTKContourTree1')
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother2 = TTKGeometrySmoother(Input=OutputPort(tTKContourTree1,1))
 tTKGeometrySmoother2.IterationNumber = 40
-tTKGeometrySmoother2.UseInputMaskField = 1
-tTKGeometrySmoother2.InputMaskField = 'RegularMask'
 tTKGeometrySmoother2.DebugLevel = int(debugLevel)
 SaveData(outputDirectory + "geometrySmoother2.vtu", CleantoGrid(tTKGeometrySmoother2))
 
