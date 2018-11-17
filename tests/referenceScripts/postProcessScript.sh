@@ -59,4 +59,11 @@ for object in `cat ${1} | grep "= TTK"`; do
   fi
 done
 
+# remove rendering instructions
+cat tmp.py | grep -v renderView > $1
+mv  $1 tmp.py
+
+cat tmp.py | grep -v Display > $1
+mv  $1 tmp.py
+
 mv tmp.py $1
