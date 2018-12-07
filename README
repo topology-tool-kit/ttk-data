@@ -181,3 +181,17 @@ Data specs
   "acknowledgement": "Berk Geveci and Christoph Garth",
   "url": "http://www.uni-kl.de/sciviscontest/"
 }
+
+{
+  "name": "GroundWater.cdb",
+  "description": "The dataset contains a limestone ground sample from south Florida, and streamlines that represent the flow of water through the cavities.",
+  "acknowledgement": "Data courtesy of Sadé Garcia, Michael Sukop, Florida International University; Kevin Cunningham, United States Geological Survey.",
+  "url": "https://www.researchgate.net/figure/a-d-Limestone-samples-and-macropore-types-for-which-high-resolution-X-ray-CT-scans-were_fig4_258816440"
+}
+
+{
+  "name": "ViscousFingers.cdb",
+  "description": "Two simulation runs of the viscous finger dataset form the 2016 scientific visualization contest. The data has been processed based on the paper 'Nested Tracking Graphs' by Lukasczyk et al.",
+  "acknowledgement": "Berk Geveci, Christoph Garth, Garrett Aldrich, and Jonas Lukasczyk",
+  "url": "https://jluk.de/resources/papers/NestedTrackingGraphs2017.pdf"
+}
