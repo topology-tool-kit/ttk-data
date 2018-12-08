@@ -25734,11 +25734,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLPolyDataReader" id="15448" servers="1">
       <Property name="FileName" id="15448.FileName" number_of_elements="1">
-        <Element index="0" value="/run/media/jones/Data/ttk-data/GroundWater.cdb/stone.vtp"/>
+        <Element index="0" value="GroundWater.cdb/stone.vtp"/>
         <Domain name="files" id="15448.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="15448.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/run/media/jones/Data/ttk-data/GroundWater.cdb/stone.vtp"/>
+        <Element index="0" value="GroundWater.cdb/stone.vtp"/>
       </Property>
       <Property name="TimestepValues" id="15448.TimestepValues"/>
       <Property name="CellArrayInfo" id="15448.CellArrayInfo"/>
@@ -25752,11 +25752,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLPolyDataReader" id="16627" servers="1">
       <Property name="FileName" id="16627.FileName" number_of_elements="1">
-        <Element index="0" value="/run/media/jones/Data/ttk-data/GroundWater.cdb/streamlines.vtp"/>
+        <Element index="0" value="GroundWater.cdb/streamlines.vtp"/>
         <Domain name="files" id="16627.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="16627.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/run/media/jones/Data/ttk-data/GroundWater.cdb/streamlines.vtp"/>
+        <Element index="0" value="GroundWater.cdb/streamlines.vtp"/>
       </Property>
       <Property name="TimestepValues" id="16627.TimestepValues"/>
       <Property name="CellArrayInfo" id="16627.CellArrayInfo"/>

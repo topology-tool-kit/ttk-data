@@ -3218,7 +3218,7 @@
     </Proxy>
     <Proxy group="sources" type="CinemaReader" id="15431" servers="1">
       <Property name="DatabasePath" id="15431.DatabasePath" number_of_elements="1">
-        <Element index="0" value="/run/media/jones/Data/ttk-data/ViscousFingers.cdb"/>
+        <Element index="0" value="ViscousFingers.cdb"/>
         <Domain name="files" id="15431.DatabasePath.files"/>
       </Property>
       <Property name="DebugLevel" id="15431.DebugLevel" number_of_elements="1">
