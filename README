@@ -92,6 +92,13 @@ Data specs
 }
 
 {
+  "name": "HAPPI_historicalAtmosTasEnsmean.nc",
+  "description": "Atmoshperic data (ensemble mean)",
+  "acknowledgement": "The HAPPI project",
+  "url": "http://www.happimip.org/"
+}
+
+{
   "name": "manifoldCheck0.vtu",
   "description": "Toy example for 0-dimensional manifold check",
   "acknowledgement": "Julien Tierny",
@@ -145,6 +152,13 @@ Data specs
   "description": "Three dimensional point cloud, manifold learning example",
   "acknowledgement": "scikit-learn",
   "url": "http://scikit-learn.org/stable/auto_examples/manifold/plot_compare_methods.html"
+}
+
+{
+  "name": "seaLandMask.vtr",
+  "description": "Binary mask for atmoshperic data (ensemble mean)",
+  "acknowledgement": "The HAPPI project",
+  "url": "http://www.happimip.org/"
 }
 
 {
