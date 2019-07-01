@@ -35488,7 +35488,7 @@
     </Proxy>
     <Proxy group="sources" type="netCDFReader" id="19976" servers="1">
       <Property name="FileName" id="19976.FileName" number_of_elements="1">
-        <Element index="0" value="/home/kappe/git/devel/ttk-data/HAPPI_historicalAtmosTasEnsmean.nc"/>
+        <Element index="0" value="HAPPI_historicalAtmosTasEnsmean.nc"/>
         <Domain name="files" id="19976.FileName.files"/>
       </Property>
       <Property name="TimestepValues" id="19976.TimestepValues" number_of_elements="109">
@@ -36189,11 +36189,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLUnstructuredGridReader" id="23353" servers="1">
       <Property name="FileName" id="23353.FileName" number_of_elements="1">
-        <Element index="0" value="/home/kappe/git/devel/ttk-data/noisyTerrain.vtu"/>
+        <Element index="0" value="noisyTerrain.vtu"/>
         <Domain name="files" id="23353.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="23353.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/kappe/git/devel/ttk-data/noisyTerrain.vtu"/>
+        <Element index="0" value="noisyTerrain.vtu"/>
       </Property>
       <Property name="TimestepValues" id="23353.TimestepValues"/>
       <Property name="CellArrayInfo" id="23353.CellArrayInfo"/>
@@ -36234,7 +36234,7 @@
     </Proxy>
     <Proxy group="sources" type="netCDFReader" id="19257" servers="1">
       <Property name="FileName" id="19257.FileName" number_of_elements="1">
-        <Element index="0" value="/home/kappe/git/devel/ttk-data/seaLandMask.nc"/>
+        <Element index="0" value="seaLandMask.nc"/>
         <Domain name="files" id="19257.FileName.files"/>
       </Property>
       <Property name="TimestepValues" id="19257.TimestepValues"/>
