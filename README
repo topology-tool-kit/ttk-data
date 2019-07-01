@@ -92,7 +92,7 @@ Data specs
 }
 
 {
-  "name": "HAPPI_historicalAtmosTasEnsmean.nc",
+  "name": "HAPPI_historicalAtmosTasEnsmean.vti",
   "description": "Atmoshperic data (ensemble mean)",
   "acknowledgement": "The HAPPI project",
   "url": "http://www.happimip.org/"
