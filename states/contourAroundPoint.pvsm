@@ -40274,11 +40274,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLImageDataReader" id="20640" servers="1">
       <Property name="FileName" id="20640.FileName" number_of_elements="1">
-        <Element index="0" value="/data/julien/Pro/git/github/tierny/private/ttk-data/HAPPI_historicalAtmosTasEnsmean.vti"/>
+        <Element index="0" value="HAPPI_historicalAtmosTasEnsmean.vti"/>
         <Domain name="files" id="20640.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="20640.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/data/julien/Pro/git/github/tierny/private/ttk-data/HAPPI_historicalAtmosTasEnsmean.vti"/>
+        <Element index="0" value="HAPPI_historicalAtmosTasEnsmean.vti"/>
       </Property>
       <Property name="TimestepValues" id="20640.TimestepValues"/>
       <Property name="CellArrayInfo" id="20640.CellArrayInfo"/>
@@ -40883,11 +40883,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLRectilinearGridReader" id="17655" servers="1">
       <Property name="FileName" id="17655.FileName" number_of_elements="1">
-        <Element index="0" value="/data/julien/Pro/git/github/tierny/private/ttk-data/seaLandMask.vtr"/>
+        <Element index="0" value="seaLandMask.vtr"/>
         <Domain name="files" id="17655.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="17655.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/data/julien/Pro/git/github/tierny/private/ttk-data/seaLandMask.vtr"/>
+        <Element index="0" value="seaLandMask.vtr"/>
       </Property>
       <Property name="TimestepValues" id="17655.TimestepValues"/>
       <Property name="CellArrayInfo" id="17655.CellArrayInfo"/>
