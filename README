@@ -148,10 +148,24 @@ Data specs
 }
 
 {
+  "name": "pegasus.vtu",
+  "description": "Scanned pegasus statue",
+  "acknowledgement": "AIM@SHAPE",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/"
+}
+
+{
   "name": "pointCloud.csv",
   "description": "Three dimensional point cloud, manifold learning example",
   "acknowledgement": "scikit-learn",
   "url": "http://scikit-learn.org/stable/auto_examples/manifold/plot_compare_methods.html"
+}
+
+{
+  "name": "rockerArm.vtu",
+  "description": "Scanned rocker arm",
+  "acknowledgement": "AIM@SHAPE",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/"
 }
 
 {
