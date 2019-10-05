@@ -92,10 +92,33 @@ Data specs
 }
 
 {
+  "name": "GroundWater.cdb",
+  "description": "The dataset contains a limestone ground sample from south Florida, and streamlines that represent the flow of water through the cavities.",
+  "acknowledgement": "Data courtesy of Sadé Garcia, Michael Sukop, Florida International University; Kevin Cunningham, United States Geological Survey.",
+  "url": "https://www.researchgate.net/figure/a-d-Limestone-samples-and-macropore-types-for-which-high-resolution-X-ray-CT-scans-were_fig4_258816440"
+}
+
+{
   "name": "HAPPI_historicalAtmosTasEnsmean.vti",
   "description": "Atmoshperic data (ensemble mean)",
   "acknowledgement": "The HAPPI project",
   "url": "http://www.happimip.org/"
+}
+
+{
+  "name": "isabel.vti",
+  "description": "Volume ensemble of 12 members, showing key time steps (formation, drift and landfall) in the simulation of the Isabel hurricane (wind velocity magnitude)",
+  "acknowledgement": "Weather Research and Forecast (WRF) model, courtesy of NCAR and the U.S. National Science Foundation (NSF).",
+  "url": "https://www.earthsystemgrid.org/dataset/isabeldata.html"
+}
+
+{
+  "name": "karhunenLoveDigits64Dimensions.csv",
+  "description": "High-dimensional point cloud (2000 points, 64 dimensions)
+  given by the Karhunen-Love coefficients of scanned images of hand-written 
+  digits (10 classes of 200 samples)."
+  "acknowledgement": "Robert P.W. Duin",
+  "url": "http://archive.ics.uci.edu/ml/datasets/multiple+features"
 }
 
 {
@@ -211,22 +234,8 @@ Data specs
 }
 
 {
-  "name": "GroundWater.cdb",
-  "description": "The dataset contains a limestone ground sample from south Florida, and streamlines that represent the flow of water through the cavities.",
-  "acknowledgement": "Data courtesy of Sadé Garcia, Michael Sukop, Florida International University; Kevin Cunningham, United States Geological Survey.",
-  "url": "https://www.researchgate.net/figure/a-d-Limestone-samples-and-macropore-types-for-which-high-resolution-X-ray-CT-scans-were_fig4_258816440"
-}
-
-{
   "name": "ViscousFingers.cdb",
   "description": "Two simulation runs of the viscous finger dataset form the 2016 scientific visualization contest. The data has been processed based on the paper 'Nested Tracking Graphs' by Lukasczyk et al.",
   "acknowledgement": "Berk Geveci, Christoph Garth, Garrett Aldrich, and Jonas Lukasczyk",
   "url": "https://jluk.de/resources/papers/NestedTrackingGraphs2017.pdf"
-}
-
-{
-  "name": "isabel.vti",
-  "description": "Volume ensemble of 12 members, showing key time steps (formation, drift and landfall) in the simulation of the Isabel hurricane (wind velocity magnitude)",
-  "acknowledgement": "Weather Research and Forecast (WRF) model, courtesy of NCAR and the U.S. National Science Foundation (NSF).",
-  "url": "https://www.earthsystemgrid.org/dataset/isabeldata.html"
 }
