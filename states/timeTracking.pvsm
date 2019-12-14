@@ -17150,24 +17150,6 @@
         <Element index="0" value=".%04d"/>
       </Property>
     </Proxy>
-    <Proxy group="animation_writers" type="OggTheora" id="18443" servers="16">
-      <Property name="FrameRate" id="18443.FrameRate" number_of_elements="1">
-        <Element index="0" value="15"/>
-        <Domain name="range" id="18443.FrameRate.range"/>
-      </Property>
-      <Property name="Quality" id="18443.Quality" number_of_elements="1">
-        <Element index="0" value="2"/>
-        <Domain name="enum" id="18443.Quality.enum">
-          <Entry value="0" text="0"/>
-          <Entry value="1" text="1"/>
-          <Entry value="2" text="2"/>
-        </Domain>
-      </Property>
-      <Property name="UseSubsampling" id="18443.UseSubsampling" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18443.UseSubsampling.bool"/>
-      </Property>
-    </Proxy>
     <Proxy group="animation_writers" type="PNG" id="18444" servers="1">
       <Property name="CompressionLevel" id="18444.CompressionLevel" number_of_elements="1">
         <Element index="0" value="5"/>
@@ -17217,24 +17199,6 @@
       </Property>
       <Property name="SuffixFormat" id="18447.SuffixFormat" number_of_elements="1">
         <Element index="0" value=".%04d"/>
-      </Property>
-    </Proxy>
-    <Proxy group="animation_writers" type="OggTheora" id="18448" servers="16">
-      <Property name="FrameRate" id="18448.FrameRate" number_of_elements="1">
-        <Element index="0" value="15"/>
-        <Domain name="range" id="18448.FrameRate.range"/>
-      </Property>
-      <Property name="Quality" id="18448.Quality" number_of_elements="1">
-        <Element index="0" value="2"/>
-        <Domain name="enum" id="18448.Quality.enum">
-          <Entry value="0" text="0"/>
-          <Entry value="1" text="1"/>
-          <Entry value="2" text="2"/>
-        </Domain>
-      </Property>
-      <Property name="UseSubsampling" id="18448.UseSubsampling" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18448.UseSubsampling.bool"/>
       </Property>
     </Proxy>
     <Proxy group="animation_writers" type="PNG" id="18449" servers="1">
@@ -17288,24 +17252,6 @@
         <Element index="0" value=".%04d"/>
       </Property>
     </Proxy>
-    <Proxy group="animation_writers" type="OggTheora" id="18453" servers="16">
-      <Property name="FrameRate" id="18453.FrameRate" number_of_elements="1">
-        <Element index="0" value="15"/>
-        <Domain name="range" id="18453.FrameRate.range"/>
-      </Property>
-      <Property name="Quality" id="18453.Quality" number_of_elements="1">
-        <Element index="0" value="2"/>
-        <Domain name="enum" id="18453.Quality.enum">
-          <Entry value="0" text="0"/>
-          <Entry value="1" text="1"/>
-          <Entry value="2" text="2"/>
-        </Domain>
-      </Property>
-      <Property name="UseSubsampling" id="18453.UseSubsampling" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18453.UseSubsampling.bool"/>
-      </Property>
-    </Proxy>
     <Proxy group="animation_writers" type="PNG" id="18454" servers="1">
       <Property name="CompressionLevel" id="18454.CompressionLevel" number_of_elements="1">
         <Element index="0" value="5"/>
@@ -17355,24 +17301,6 @@
       </Property>
       <Property name="SuffixFormat" id="18457.SuffixFormat" number_of_elements="1">
         <Element index="0" value=".%04d"/>
-      </Property>
-    </Proxy>
-    <Proxy group="animation_writers" type="OggTheora" id="18458" servers="16">
-      <Property name="FrameRate" id="18458.FrameRate" number_of_elements="1">
-        <Element index="0" value="15"/>
-        <Domain name="range" id="18458.FrameRate.range"/>
-      </Property>
-      <Property name="Quality" id="18458.Quality" number_of_elements="1">
-        <Element index="0" value="2"/>
-        <Domain name="enum" id="18458.Quality.enum">
-          <Entry value="0" text="0"/>
-          <Entry value="1" text="1"/>
-          <Entry value="2" text="2"/>
-        </Domain>
-      </Property>
-      <Property name="UseSubsampling" id="18458.UseSubsampling" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18458.UseSubsampling.bool"/>
       </Property>
     </Proxy>
     <Proxy group="animation_writers" type="PNG" id="18459" servers="1">
