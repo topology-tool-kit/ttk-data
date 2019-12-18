@@ -58605,11 +58605,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLImageDataReader" id="14421" servers="1">
       <Property name="FileName" id="14421.FileName" number_of_elements="1">
-        <Element index="0" value="/data/julien/Pro/git/github/tierny/private/ttk-data/timeTracking.vti"/>
+        <Element index="0" value="timeTracking.vti"/>
         <Domain name="files" id="14421.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="14421.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/data/julien/Pro/git/github/tierny/private/ttk-data/timeTracking.vti"/>
+        <Element index="0" value="timeTracking.vti"/>
       </Property>
       <Property name="TimestepValues" id="14421.TimestepValues"/>
       <Property name="CellArrayInfo" id="14421.CellArrayInfo" number_of_elements="2">
