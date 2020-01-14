@@ -17527,26 +17527,10 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="16534.Debug_UseAllCores.bool"/>
       </Property>
-      <Property name="InputTable0" id="16534.InputTable0" number_of_elements="1">
+      <Property name="InputTable" id="16534.InputTable0" number_of_elements="1">
         <Proxy value="16523" output_port="0"/>
         <Domain name="groups" id="16534.InputTable0.groups"/>
         <Domain name="input_type" id="16534.InputTable0.input_type"/>
-      </Property>
-      <Property name="InputTable1" id="16534.InputTable1">
-        <Domain name="groups" id="16534.InputTable1.groups"/>
-        <Domain name="input_type" id="16534.InputTable1.input_type"/>
-      </Property>
-      <Property name="InputTable2" id="16534.InputTable2">
-        <Domain name="groups" id="16534.InputTable2.groups"/>
-        <Domain name="input_type" id="16534.InputTable2.input_type"/>
-      </Property>
-      <Property name="InputTable3" id="16534.InputTable3">
-        <Domain name="groups" id="16534.InputTable3.groups"/>
-        <Domain name="input_type" id="16534.InputTable3.input_type"/>
-      </Property>
-      <Property name="InputTable4" id="16534.InputTable4">
-        <Domain name="groups" id="16534.InputTable4.groups"/>
-        <Domain name="input_type" id="16534.InputTable4.input_type"/>
       </Property>
       <Property name="SQLStatement" id="16534.SQLStatement" number_of_elements="1">
         <Element index="0" value="SELECT * FROM InputTable0&#xa;WHERE Sim=&#x27;run01&#x27;&#xa;ORDER BY Time&#xa;LIMIT 100 OFFSET 20"/>
