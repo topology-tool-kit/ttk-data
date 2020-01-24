@@ -24658,7 +24658,6 @@
       <Item id="14148" name="RenderView1"/>
       <Item id="15759" name="RenderView2"/>
     </ProxyCollection>
-    <CustomProxyDefinitions/>
     <Links>
       <GlobalPropertyLink global_name="BackgroundColor" proxy="15759" property="Background"/>
       <GlobalPropertyLink global_name="EdgeColor" proxy="14375" property="EdgeColor"/>

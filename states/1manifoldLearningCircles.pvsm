@@ -64888,7 +64888,6 @@
       <Item id="18358" name="RenderView13"/>
       <Item id="17775" name="RenderView14"/>
     </ProxyCollection>
-    <CustomProxyDefinitions/>
     <Links>
       <CameraLink name="CameraLink10">
         <Proxy direction="input" id="22658"/>
