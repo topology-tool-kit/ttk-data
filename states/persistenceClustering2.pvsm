@@ -37893,7 +37893,6 @@
       <Item id="15481" name="RenderView13"/>
       <Item id="15030" name="RenderView14"/>
     </ProxyCollection>
-    <CustomProxyDefinitions/>
     <Links>
       <CameraLink name="CameraLink10">
         <Proxy direction="input" id="16569"/>

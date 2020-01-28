@@ -53346,7 +53346,6 @@
       <Item id="19510" name="RenderView3"/>
       <Item id="17345" name="RenderView4"/>
     </ProxyCollection>
-    <CustomProxyDefinitions/>
     <Links>
       <GlobalPropertyLink global_name="BackgroundColor" proxy="18172" property="Background"/>
       <GlobalPropertyLink global_name="BackgroundColor" proxy="19510" property="Background"/>

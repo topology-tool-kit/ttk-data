@@ -45133,7 +45133,6 @@
       <Item id="16409" name="RenderView1"/>
       <Item id="18018" name="RenderView2"/>
     </ProxyCollection>
-    <CustomProxyDefinitions/>
     <Links>
       <GlobalPropertyLink global_name="BackgroundColor" proxy="16409" property="Background"/>
       <GlobalPropertyLink global_name="BackgroundColor" proxy="18018" property="Background"/>
