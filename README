@@ -43,6 +43,13 @@ Data specs
 }
 
 {
+  "name": "cells.vti",
+  "description": "Microscope of cell nuclei (Allium Cepa)",
+  "acknowledgement": "S. Shanti",
+  "url": "https://doi.org/doi:10.7295/W9CIL43552"
+}
+
+{
   "name": "clustering0.csv",
   "description": "Two dimensional point cloud, clustering toy example",
   "acknowledgement": "scikit-learn",
