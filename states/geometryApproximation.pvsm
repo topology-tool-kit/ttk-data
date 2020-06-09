@@ -25690,7 +25690,7 @@
         <Domain name="range" id="16805.RowGap.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="IcoSphereFromObject" id="16570" servers="1">
+    <Proxy group="filters" type="IcosphereFromObject" id="16570" servers="1">
       <Property name="Debug_DebugLevel" id="16570.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16570.Debug_DebugLevel.range"/>
@@ -25715,7 +25715,7 @@
         <Element index="0" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="IcoSphereFromPoint" id="17927" servers="1">
+    <Proxy group="filters" type="IcospheresFromPoints" id="17927" servers="1">
       <Property name="CopyPointData" id="17927.CopyPointData" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="17927.CopyPointData.bool"/>
@@ -27475,37 +27475,37 @@
       <Item id="17606" name="ScaleTransferFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.17897">
-      <Item id="17687" name="DataAxesGrid" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
-      <Item id="17735" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
-      <Item id="17746" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
-      <Item id="17757" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
-      <Item id="17768" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
-      <Item id="17779" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
-      <Item id="17790" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
-      <Item id="17801" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
-      <Item id="17812" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
-      <Item id="17823" name="OSPRayScaleFunction" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
-      <Item id="17824" name="OpacityTransferFunction" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
-      <Item id="17724" name="PolarAxes" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
-      <Item id="17825" name="ScaleTransferFunction" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
+      <Item id="17687" name="DataAxesGrid" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
+      <Item id="17735" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
+      <Item id="17746" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
+      <Item id="17757" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
+      <Item id="17768" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
+      <Item id="17779" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
+      <Item id="17790" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
+      <Item id="17801" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
+      <Item id="17812" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
+      <Item id="17823" name="OSPRayScaleFunction" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
+      <Item id="17824" name="OpacityTransferFunction" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
+      <Item id="17724" name="PolarAxes" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
+      <Item id="17825" name="ScaleTransferFunction" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.17927">
       <Item id="18850" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18137">
-      <Item id="17916" name="DataAxesGrid" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
-      <Item id="17975" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
-      <Item id="17986" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
-      <Item id="17997" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
-      <Item id="18008" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
-      <Item id="18019" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
-      <Item id="18030" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
-      <Item id="18041" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
-      <Item id="18052" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
-      <Item id="18063" name="OSPRayScaleFunction" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
-      <Item id="18064" name="OpacityTransferFunction" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
-      <Item id="17964" name="PolarAxes" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
-      <Item id="18065" name="ScaleTransferFunction" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
+      <Item id="17916" name="DataAxesGrid" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
+      <Item id="17975" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
+      <Item id="17986" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
+      <Item id="17997" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
+      <Item id="18008" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
+      <Item id="18019" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
+      <Item id="18030" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
+      <Item id="18041" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
+      <Item id="18052" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
+      <Item id="18063" name="OSPRayScaleFunction" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
+      <Item id="18064" name="OpacityTransferFunction" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
+      <Item id="17964" name="PolarAxes" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
+      <Item id="18065" name="ScaleTransferFunction" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18149">
       <Item id="17019" name="AxesGrid"/>
@@ -27526,34 +27526,34 @@
       <Item id="18310" name="ScaleTransferFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18601">
-      <Item id="18391" name="DataAxesGrid" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
-      <Item id="18439" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
-      <Item id="18450" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
-      <Item id="18461" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
-      <Item id="18472" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
-      <Item id="18483" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
-      <Item id="18494" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
-      <Item id="18505" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
-      <Item id="18516" name="GlyphType" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
-      <Item id="18527" name="OSPRayScaleFunction" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
-      <Item id="18528" name="OpacityTransferFunction" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
-      <Item id="18428" name="PolarAxes" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
-      <Item id="18529" name="ScaleTransferFunction" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
+      <Item id="18391" name="DataAxesGrid" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
+      <Item id="18439" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
+      <Item id="18450" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
+      <Item id="18461" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
+      <Item id="18472" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
+      <Item id="18483" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
+      <Item id="18494" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
+      <Item id="18505" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
+      <Item id="18516" name="GlyphType" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
+      <Item id="18527" name="OSPRayScaleFunction" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
+      <Item id="18528" name="OpacityTransferFunction" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
+      <Item id="18428" name="PolarAxes" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
+      <Item id="18529" name="ScaleTransferFunction" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18830">
-      <Item id="18620" name="DataAxesGrid" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
-      <Item id="18668" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
-      <Item id="18679" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
-      <Item id="18690" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
-      <Item id="18701" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
-      <Item id="18712" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
-      <Item id="18723" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
-      <Item id="18734" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
-      <Item id="18745" name="GlyphType" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
-      <Item id="18756" name="OSPRayScaleFunction" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
-      <Item id="18757" name="OpacityTransferFunction" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
-      <Item id="18657" name="PolarAxes" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
-      <Item id="18758" name="ScaleTransferFunction" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
+      <Item id="18620" name="DataAxesGrid" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
+      <Item id="18668" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
+      <Item id="18679" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
+      <Item id="18690" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
+      <Item id="18701" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
+      <Item id="18712" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
+      <Item id="18723" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
+      <Item id="18734" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
+      <Item id="18745" name="GlyphType" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
+      <Item id="18756" name="OSPRayScaleFunction" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
+      <Item id="18757" name="OpacityTransferFunction" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
+      <Item id="18657" name="PolarAxes" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/PolarAxes/PolarAxesRepresentation"/>
+      <Item id="18758" name="ScaleTransferFunction" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18842">
       <Item id="18157" name="AxesGrid"/>
@@ -27617,11 +27617,11 @@
       <Item id="17662" name="GeometryRepresentation8"/>
       <Item id="16999" name="GeometryRepresentation9" logname="TTKGridLayout1(GeometryRepresentation)"/>
       <Item id="19400" name="UnstructuredGridRepresentation1" logname="TTKDepthImageBasedGeometryApproximation1(UnstructuredGridRepresentation)"/>
-      <Item id="17897" name="UnstructuredGridRepresentation2" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)"/>
-      <Item id="18601" name="UnstructuredGridRepresentation3" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)"/>
+      <Item id="17897" name="UnstructuredGridRepresentation2" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)"/>
+      <Item id="18601" name="UnstructuredGridRepresentation3" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)"/>
       <Item id="19629" name="UnstructuredGridRepresentation4" logname="TTKDepthImageBasedGeometryApproximation1(UnstructuredGridRepresentation)"/>
-      <Item id="18137" name="UnstructuredGridRepresentation5" logname="TTKIcoSphereFromPoint1(UnstructuredGridRepresentation)"/>
-      <Item id="18830" name="UnstructuredGridRepresentation6" logname="TTKIcoSphereFromObject1(UnstructuredGridRepresentation)"/>
+      <Item id="18137" name="UnstructuredGridRepresentation5" logname="TTKIcospheresFromPoints1(UnstructuredGridRepresentation)"/>
+      <Item id="18830" name="UnstructuredGridRepresentation6" logname="TTKIcosphereFromObject1(UnstructuredGridRepresentation)"/>
       <Item id="19870" name="UnstructuredGridRepresentation7" logname="Threshold1(UnstructuredGridRepresentation)"/>
     </ProxyCollection>
     <ProxyCollection name="scalar_bars">
@@ -27636,8 +27636,8 @@
       <Item id="16581" name="TTKCinemaImaging1" logname="TTKCinemaImaging1"/>
       <Item id="19169" name="TTKDepthImageBasedGeometryApproximation1" logname="TTKDepthImageBasedGeometryApproximation1"/>
       <Item id="16805" name="TTKGridLayout1" logname="TTKGridLayout1"/>
-      <Item id="16570" name="TTKIcoSphereFromObject1" logname="TTKIcoSphereFromObject1"/>
-      <Item id="17927" name="TTKIcoSphereFromPoint1" logname="TTKIcoSphereFromPoint1"/>
+      <Item id="16570" name="TTKIcosphereFromObject1" logname="TTKIcosphereFromObject1"/>
+      <Item id="17927" name="TTKIcospheresFromPoints1" logname="TTKIcospheresFromPoints1"/>
       <Item id="19640" name="Threshold1" logname="Threshold1"/>
       <Item id="16548" name="stone.vtp"/>
       <Item id="17253" name="streamlines.vtp"/>
