@@ -55631,7 +55631,7 @@
       </Property>
       <Property name="ThresholdBetween" id="20770.ThresholdBetween" number_of_elements="2">
         <Element index="0" value="-0.1"/>
-        <Element index="1" value="108"/>
+        <Element index="1" value="99999"/>
         <Domain name="range" id="20770.ThresholdBetween.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="20770.UseContinuousCellRange" number_of_elements="1">
