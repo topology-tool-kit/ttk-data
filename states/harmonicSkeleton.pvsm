@@ -44742,9 +44742,13 @@
         <Domain name="input_scalars" id="18242.Input.input_scalars"/>
         <Domain name="input_type" id="18242.Input.input_type"/>
       </Property>
-      <Property name="Scalar Field" id="18242.Scalar Field" number_of_elements="1">
-        <Element index="0" value="ScaledHarmonic"/>
-        <Domain name="array_list" id="18242.Scalar Field.array_list">
+      <Property name="ScalarFieldNew" id="18242.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+￼     <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="ScaledHarmonic"/>
+        <Domain name="array_list" id="18242.ScalarFieldNew.array_list">
           <String text="Elevation"/>
           <String text="OutputHarmonicField"/>
           <String text="ScaledHarmonic"/>

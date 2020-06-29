@@ -27169,9 +27169,13 @@
         <Domain name="input_scalars" id="9687.Input.input_scalars"/>
         <Domain name="input_type" id="9687.Input.input_type"/>
       </Property>
-      <Property name="Scalar Field" id="9687.Scalar Field" number_of_elements="1">
-        <Element index="0" value="myVorticity"/>
-        <Domain name="array_list" id="9687.Scalar Field.array_list">
+      <Property name="ScalarFieldNew" id="9687.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="myVorticity"/>
+        <Domain name="array_list" id="9687.ScalarFieldNew.array_list">
           <String text="myVorticity"/>
         </Domain>
       </Property>

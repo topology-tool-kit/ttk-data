@@ -45015,9 +45015,13 @@
         <Domain name="input_scalars" id="10777.Input.input_scalars"/>
         <Domain name="input_type" id="10777.Input.input_type"/>
       </Property>
-      <Property name="Scalar Field" id="10777.Scalar Field" number_of_elements="1">
-        <Element index="0" value="log(s)"/>
-        <Domain name="array_list" id="10777.Scalar Field.array_list">
+      <Property name="ScalarFieldNew" id="10777.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="log(s)"/>
+        <Domain name="array_list" id="10777.ScalarFieldNew.array_list">
           <String text="log(Rho)"/>
           <String text="log(s)"/>
         </Domain>
