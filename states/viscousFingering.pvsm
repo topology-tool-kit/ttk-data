@@ -61940,9 +61940,13 @@
         <Element index="0" value="SeedIdentifier"/>
         <Domain name="array_list" id="16541.OffsetScalarFieldName.array_list"/>
       </Property>
-      <Property name="ScalarField" id="16541.ScalarField" number_of_elements="1">
-        <Element index="0" value="OutputDistanceField"/>
-        <Domain name="array_list" id="16541.ScalarField.array_list"/>
+      <Property name="ScalarFieldNew" id="16541.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>      
+        <Element index="4" value="OutputDistanceField"/>
+        <Domain name="array_list" id="16541.ScalarFieldNew.array_list"/>
       </Property>
       <Property name="Seeds" id="16541.Seeds" number_of_elements="1">
         <Proxy value="16167" output_port="0"/>
