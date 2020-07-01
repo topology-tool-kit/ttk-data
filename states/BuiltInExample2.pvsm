@@ -42471,16 +42471,24 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="8536.ProjectImageSupport.bool"/>
       </Property>
-      <Property name="ScalarField1" id="8536.ScalarField1" number_of_elements="1">
-        <Element index="0" value="log(Rho)"/>
-        <Domain name="array_list" id="8536.ScalarField1.array_list">
+      <Property name="ScalarField1New" id="8536.ScalarField1New" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>  
+        <Element index="4" value="log(Rho)"/>
+        <Domain name="array_list" id="8536.ScalarField1New.array_list">
           <String text="log(Rho)"/>
           <String text="log(s)"/>
         </Domain>
       </Property>
-      <Property name="ScalarField2" id="8536.ScalarField2" number_of_elements="1">
-        <Element index="0" value="log(s)"/>
-        <Domain name="array_list" id="8536.ScalarField2.array_list">
+      <Property name="ScalarField2New" id="8536.ScalarField2New" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>      
+        <Element index="4" value="log(s)"/>
+        <Domain name="array_list" id="8536.ScalarField2New.array_list">
           <String text="log(Rho)"/>
           <String text="log(s)"/>
         </Domain>
