@@ -22118,9 +22118,13 @@
         <Element index="0" value="6"/>
         <Domain name="range" id="11954.NumberOfIterations.range"/>
       </Property>
-      <Property name="Scalar Field" id="11954.Scalar Field" number_of_elements="1">
-        <Element index="0" value="RandomPointScalars"/>
-        <Domain name="array_list" id="11954.Scalar Field.array_list">
+      <Property name="ScalarFieldNew" id="11954.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="RandomPointScalars"/>
+        <Domain name="array_list" id="11954.ScalarNewField.array_list">
           <String text="RandomPointScalars"/>
         </Domain>
       </Property>
