@@ -61384,9 +61384,13 @@
         <Domain name="input_scalars" id="18084.Input.input_scalars"/>
         <Domain name="input_type" id="18084.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldName" id="18084.InputOffsetScalarFieldName" number_of_elements="1">
-        <Element index="0" value="SplatterValues"/>
-        <Domain name="array_list" id="18084.InputOffsetScalarFieldName.array_list">
+      <Property name="Offset Field" id="18084.Offset Field" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="SplatterValues"/>
+        <Domain name="array_list" id="18084.Offset Field.array_list">
           <String text="SplatterValues"/>
           <String text="ttkOffsetScalarField"/>
         </Domain>
@@ -61411,9 +61415,13 @@
         <Element index="0" value="0"/>
         <Domain name="range" id="18084.SaddleConnectorsPersistenceThreshold.range"/>
       </Property>
-      <Property name="ScalarField" id="18084.ScalarField" number_of_elements="1">
-        <Element index="0" value="SplatterValues"/>
-        <Domain name="array_list" id="18084.ScalarField.array_list">
+      <Property name="Scalar Field" id="18084.Scalar Field" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="SplatterValues"/>
+        <Domain name="array_list" id="18084.Scalar Field.array_list">
           <String text="SplatterValues"/>
           <String text="ttkOffsetScalarField"/>
         </Domain>
