@@ -39671,16 +39671,24 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="6077.ProjectImageSupport.bool"/>
       </Property>
-      <Property name="ScalarField1" id="6077.ScalarField1" number_of_elements="1">
-        <Element index="0" value="magnitude"/>
-        <Domain name="array_list" id="6077.ScalarField1.array_list">
+      <Property name="ScalarField1New" id="6077.ScalarField1New" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="magnitude"/>
+        <Domain name="array_list" id="6077.ScalarField1New.array_list">
           <String text="curl"/>
           <String text="magnitude"/>
         </Domain>
       </Property>
-      <Property name="ScalarField2" id="6077.ScalarField2" number_of_elements="1">
-        <Element index="0" value="curl"/>
-        <Domain name="array_list" id="6077.ScalarField2.array_list">
+      <Property name="ScalarField2New" id="6077.ScalarField2New" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="curl"/>
+        <Domain name="array_list" id="6077.ScalarField2New.array_list">
           <String text="curl"/>
           <String text="magnitude"/>
         </Domain>
@@ -39721,9 +39729,13 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="7288.ProjectImageSupport.bool"/>
       </Property>
-      <Property name="ScalarField1" id="7288.ScalarField1" number_of_elements="1">
-        <Element index="0" value="magnitude"/>
-        <Domain name="array_list" id="7288.ScalarField1.array_list">
+      <Property name="ScalarField1New" id="7288.ScalarField1New" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="magnitude"/>
+        <Domain name="array_list" id="7288.ScalarField1New.array_list">
           <String text="3-SheetDomainVolume"/>
           <String text="3-SheetHyperVolume"/>
           <String text="3-SheetId"/>
@@ -39735,9 +39747,13 @@
           <String text="3-SheetId"/>
         </Domain>
       </Property>
-      <Property name="ScalarField2" id="7288.ScalarField2" number_of_elements="1">
-        <Element index="0" value="curl"/>
-        <Domain name="array_list" id="7288.ScalarField2.array_list">
+      <Property name="ScalarField2New" id="7288.ScalarField2New" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Element index="1" value="0"/>
+        <Element index="2" value="0"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="curl"/>
+        <Domain name="array_list" id="7288.ScalarField2New.array_list">
           <String text="3-SheetDomainVolume"/>
           <String text="3-SheetHyperVolume"/>
           <String text="3-SheetId"/>
