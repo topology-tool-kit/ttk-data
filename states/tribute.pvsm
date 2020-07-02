@@ -66423,8 +66423,12 @@
         <Domain name="input_scalars" id="9675.Input.input_scalars"/>
         <Domain name="input_type" id="9675.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldName" id="9675.InputOffsetScalarFieldName" number_of_elements="1">
-        <Element index="0" value="OutputOffsetScalarField"/>
+      <Property name="Offset Field" id="9675.InputOffsetScalarFieldName" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="OutputOffsetScalarField"/>
         <Domain name="array_list" id="9675.InputOffsetScalarFieldName.array_list">
           <String text="OutputOffsetScalarField"/>
           <String text="originalData"/>
@@ -66442,8 +66446,12 @@
         <Element index="0" value="0"/>
         <Domain name="range" id="9675.SaddleConnectorsPersistenceThreshold.range"/>
       </Property>
-      <Property name="ScalarField" id="9675.ScalarField" number_of_elements="1">
-        <Element index="0" value="originalData"/>
+      <Property name="Scalar Field" id="9675.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="originalData"/>
         <Domain name="array_list" id="9675.ScalarField.array_list">
           <String text="OutputOffsetScalarField"/>
           <String text="originalData"/>
