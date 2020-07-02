@@ -50682,8 +50682,12 @@
         <Domain name="input_scalars" id="10030.Input.input_scalars"/>
         <Domain name="input_type" id="10030.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldName" id="10030.InputOffsetScalarFieldName" number_of_elements="1">
-        <Element index="0" value="Result"/>
+      <Property name="Offset Field" id="10030.InputOffsetScalarFieldName" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Result"/>
         <Domain name="array_list" id="10030.InputOffsetScalarFieldName.array_list">
           <String text="Result"/>
           <String text="ttkOffsetScalarField"/>
@@ -50701,8 +50705,12 @@
         <Element index="0" value="0"/>
         <Domain name="range" id="10030.SaddleConnectorsPersistenceThreshold.range"/>
       </Property>
-      <Property name="ScalarField" id="10030.ScalarField" number_of_elements="1">
-        <Element index="0" value="Result"/>
+      <Property name="Scalar Field" id="10030.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Result"/>
         <Domain name="array_list" id="10030.ScalarField.array_list">
           <String text="Result"/>
           <String text="ttkOffsetScalarField"/>
