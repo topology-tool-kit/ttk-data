@@ -44842,8 +44842,12 @@
         <Domain name="input_scalars" id="12840.Input.input_scalars"/>
         <Domain name="input_type" id="12840.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldName" id="12840.InputOffsetScalarFieldName" number_of_elements="1">
-        <Element index="0" value="OutputOffsetScalarField"/>
+      <Property name="Offset Field" id="12840.InputOffsetScalarFieldName" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="OutputOffsetScalarField"/>
         <Domain name="array_list" id="12840.InputOffsetScalarFieldName.array_list">
           <String text="OutputOffsetScalarField"/>
           <String text="PNGImage"/>
@@ -44870,8 +44874,12 @@
         <Element index="0" value="0"/>
         <Domain name="range" id="12840.SaddleConnectorsPersistenceThreshold.range"/>
       </Property>
-      <Property name="ScalarField" id="12840.ScalarField" number_of_elements="1">
-        <Element index="0" value="gradient"/>
+      <Property name="Scalar Field" id="12840.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="gradient"/>
         <Domain name="array_list" id="12840.ScalarField.array_list">
           <String text="OutputOffsetScalarField"/>
           <String text="PNGImage"/>
