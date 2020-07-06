@@ -44559,15 +44559,23 @@
         <Element index="0" value="0"/>
         <Domain name="bool" id="17936.ForceConstraintIdentifiers.bool"/>
       </Property>
-      <Property name="InputConstraintFieldName" id="17936.InputConstraintFieldName" number_of_elements="1">
-        <Element index="0" value="Elevation"/>
+      <Property name="Scalar Field" id="17936.InputConstraintFieldName" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Elevation"/>
         <Domain name="array_list" id="17936.InputConstraintFieldName.array_list">
           <String text="Elevation"/>
           <String text="ttkVertexScalarField"/>
         </Domain>
       </Property>
-      <Property name="InputIdentifiersFieldName" id="17936.InputIdentifiersFieldName" number_of_elements="1">
-        <Element index="0" value="Elevation"/>
+      <Property name="Constraint Vertices Identifiers" id="17936.InputIdentifiersFieldName" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Elevation"/>
         <Domain name="array_list" id="17936.InputIdentifiersFieldName.array_list">
           <String text="Elevation"/>
           <String text="ttkVertexScalarField"/>
