@@ -50491,9 +50491,9 @@
         <Element index="0" value="1"/>
         <Domain name="range" id="13195.ThreadNumber.range"/>
       </Property>
-      <Property name="UseAllCores" id="13195.UseAllCores" number_of_elements="1">
-        <Element index="0" value="1"/>
-        <Domain name="bool" id="13195.UseAllCores.bool"/>
+      <Property name="Debug_UseAllCores" id="13195.Debug_UseAllCores" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="13195.Debug_UseAllCores.bool"/>
       </Property>
       <Property name="iso_EigenSolver" id="13195.iso_EigenSolver" number_of_elements="1">
         <Element index="0" value="auto"/>
