@@ -57403,17 +57403,17 @@
           <String text="upperBoundField"/>
         </Domain>
       </Property>
-      <Property name="PeriodicBoundaryConditions" id="9295.PeriodicBoundaryConditions" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="9295.PeriodicBoundaryConditions.bool"/>
-      </Property>
       <Property name="SaddleConnectors" id="9295.SaddleConnectors" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="9295.SaddleConnectors.bool"/>
       </Property>
-      <Property name="ScalarField" id="9295.ScalarField" number_of_elements="1">
-        <Element index="0" value="lowerBoundField"/>
-        <Domain name="array_list" id="9295.ScalarField.array_list">
+      <Property name="ScalarFieldNew" id="9295.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="lowerBoundField"/>
+        <Domain name="array_list" id="9295.ScalarFieldNew.array_list">
           <String text="lowerBoundField"/>
           <String text="upperBoundField"/>
         </Domain>
@@ -57453,17 +57453,17 @@
           <String text="upperBoundField"/>
         </Domain>
       </Property>
-      <Property name="PeriodicBoundaryConditions" id="10495.PeriodicBoundaryConditions" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="10495.PeriodicBoundaryConditions.bool"/>
-      </Property>
       <Property name="SaddleConnectors" id="10495.SaddleConnectors" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="10495.SaddleConnectors.bool"/>
       </Property>
-      <Property name="ScalarField" id="10495.ScalarField" number_of_elements="1">
-        <Element index="0" value="upperBoundField"/>
-        <Domain name="array_list" id="10495.ScalarField.array_list">
+      <Property name="ScalarFieldNew" id="10495.ScalarFieldNew" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="upperBoundField"/>
+        <Domain name="array_list" id="10495.ScalarFieldNew.array_list">
           <String text="lowerBoundField"/>
           <String text="upperBoundField"/>
         </Domain>
