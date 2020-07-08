@@ -40332,9 +40332,13 @@
         <Element index="0" value="67"/>
         <Domain name="range" id="18296.ui_extension.range"/>
       </Property>
-      <Property name="ui_scalars" id="18296.ui_scalars" number_of_elements="1">
-        <Element index="0" value="tas"/>
-        <Domain name="array_list" id="18296.ui_scalars.array_list">
+      <Property name="ScalarAttribute" id="18296.ScalarAttribute" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="tas"/>
+        <Domain name="array_list" id="18296.ScalarAttribute.array_list">
           <String text="tas"/>
           <String text="ttkOffsetScalarField"/>
         </Domain>
@@ -40379,9 +40383,13 @@
         <Element index="0" value="67"/>
         <Domain name="range" id="17333.ui_extension.range"/>
       </Property>
-      <Property name="ui_scalars" id="17333.ui_scalars" number_of_elements="1">
-        <Element index="0" value="Blend"/>
-        <Domain name="array_list" id="17333.ui_scalars.array_list">
+      <Property name="ScalarAttribute" id="17333.ScalarAttribute" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Blend"/>
+        <Domain name="array_list" id="17333.ScalarAttribute.array_list">
           <String text="Blend"/>
           <String text="DistanceField"/>
           <String text="RandomPointScalars"/>
