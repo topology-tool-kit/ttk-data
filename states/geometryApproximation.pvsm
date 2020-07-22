@@ -26395,7 +26395,7 @@
         <Domain name="range" id="13787.ScalarRange.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="CinemaImaging" id="13809" servers="1">
+    <Proxy group="filters" type="ttkCinemaImaging" id="13809" servers="1">
       <Property name="CamAngle" id="13809.CamAngle" number_of_elements="1">
         <Element index="0" value="90"/>
         <Domain name="range" id="13809.CamAngle.range"/>
@@ -26463,7 +26463,7 @@
         <Domain name="input_type" id="13809.SamplingGrid.input_type"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="DepthImageBasedGeometryApproximation" id="14257" servers="1">
+    <Proxy group="filters" type="ttkDepthImageBasedGeometryApproximation" id="14257" servers="1">
       <Property name="Debug_DebugLevel" id="14257.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="14257.Debug_DebugLevel.range"/>
@@ -26495,7 +26495,7 @@
         <Domain name="input_type" id="14257.Input.input_type"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GridLayout" id="14033" servers="1">
+    <Proxy group="filters" type="ttkGridLayout" id="14033" servers="1">
       <Property name="ColAxis" id="14033.ColAxis" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="14033.ColAxis.enum">
@@ -26542,7 +26542,7 @@
         <Domain name="range" id="14033.RowGap.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="IcosphereFromObject" id="13798" servers="1">
+    <Proxy group="filters" type="ttkIcosphereFromObject" id="13798" servers="1">
       <Property name="Debug_DebugLevel" id="13798.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13798.Debug_DebugLevel.range"/>
@@ -26567,7 +26567,7 @@
         <Element index="0" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="IcospheresFromPoints" id="15396" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="15396" servers="1">
       <Property name="ComputeNormals" id="15396.ComputeNormals" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="15396.ComputeNormals.bool"/>

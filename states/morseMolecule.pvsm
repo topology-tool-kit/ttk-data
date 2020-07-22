@@ -57680,7 +57680,7 @@
         <Domain name="range" id="12585.TerminalSpeed.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="5907" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="5907" servers="1">
       <Property name="DebugLevel" id="5907.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="5907.DebugLevel.range"/>
@@ -57703,7 +57703,7 @@
         <Domain name="bool" id="5907.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="7679" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="7679" servers="1">
       <Property name="DebugLevel" id="7679.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="7679.DebugLevel.range"/>
@@ -57726,7 +57726,7 @@
         <Domain name="bool" id="7679.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="12057" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="12057" servers="1">
       <Property name="DebugLevel" id="12057.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="12057.DebugLevel.range"/>
@@ -57749,7 +57749,7 @@
         <Domain name="bool" id="12057.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="8945" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="8945" servers="1">
       <Property name="DebugLevel" id="8945.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="8945.DebugLevel.range"/>
@@ -57772,7 +57772,7 @@
         <Domain name="bool" id="8945.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="MorseSmaleComplex" id="4507" servers="1">
+    <Proxy group="filters" type="ttkMorseSmaleComplex" id="4507" servers="1">
       <Property name="ComputeAscendingSegmentation" id="4507.ComputeAscendingSegmentation" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="4507.ComputeAscendingSegmentation.bool"/>
@@ -57855,7 +57855,7 @@
         <Domain name="bool" id="4507.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="5200" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="5200" servers="1">
       <Property name="DebugLevel" id="5200.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="5200.DebugLevel.range"/>
@@ -57902,7 +57902,7 @@
         <Domain name="bool" id="5200.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="6609" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="6609" servers="1">
       <Property name="DebugLevel" id="6609.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="6609.DebugLevel.range"/>
@@ -57949,7 +57949,7 @@
         <Domain name="bool" id="6609.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="13257" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="13257" servers="1">
       <Property name="DebugLevel" id="13257.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13257.DebugLevel.range"/>
