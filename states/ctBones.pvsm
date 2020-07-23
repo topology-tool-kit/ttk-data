@@ -41867,7 +41867,7 @@
         <Domain name="bool" id="12227.UseContinuousCellRange.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="13586" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="13586" servers="1">
       <Property name="DebugLevel" id="13586.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13586.DebugLevel.range"/>
@@ -41900,7 +41900,7 @@
         <Domain name="bool" id="13586.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ftmtree" id="12471" servers="1">
+    <Proxy group="filters" type="ttkftmtree" id="12471" servers="1">
       <Property name="AdvancedStats" id="12471.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="12471.AdvancedStats.bool"/>
@@ -41958,7 +41958,7 @@
         <Domain name="bool" id="12471.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="12205" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="12205" servers="1">
       <Property name="DebugLevel" id="12205.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="12205.DebugLevel.range"/>
@@ -42006,7 +42006,7 @@
         <Domain name="bool" id="12205.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="14892" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="14892" servers="1">
       <Property name="DebugLevel" id="14892.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="14892.DebugLevel.range"/>
@@ -42053,7 +42053,7 @@
         <Domain name="bool" id="14892.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TopologicalSimplification" id="12238" servers="1">
+    <Proxy group="filters" type="ttkTopologicalSimplification" id="12238" servers="1">
       <Property name="AddPerturbation" id="12238.AddPerturbation" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="12238.AddPerturbation.bool"/>

@@ -57559,7 +57559,7 @@
         <Domain name="bool" id="17068.UseContinuousCellRange.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="15392" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="15392" servers="1">
       <Property name="DebugLevel" id="15392.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15392.DebugLevel.range"/>
@@ -57611,7 +57611,7 @@
         <Domain name="bool" id="15392.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="19203" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="19203" servers="1">
       <Property name="DebugLevel" id="19203.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19203.DebugLevel.range"/>
@@ -57663,7 +57663,7 @@
         <Domain name="bool" id="19203.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PointDataSelector" id="15150" servers="1">
+    <Proxy group="filters" type="ttkPointDataSelector" id="15150" servers="1">
       <Property name="DebugLevel" id="15150.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15150.DebugLevel.range"/>
@@ -57828,7 +57828,7 @@
         <Domain name="bool" id="15150.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PointDataSelector" id="18236" servers="1">
+    <Proxy group="filters" type="ttkPointDataSelector" id="18236" servers="1">
       <Property name="DebugLevel" id="18236.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="18236.DebugLevel.range"/>
@@ -57932,7 +57932,7 @@
         <Domain name="bool" id="18236.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PointDataSelector" id="18963" servers="1">
+    <Proxy group="filters" type="ttkPointDataSelector" id="18963" servers="1">
       <Property name="DebugLevel" id="18963.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="18963.DebugLevel.range"/>
@@ -58036,7 +58036,7 @@
         <Domain name="bool" id="18963.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="15872" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="15872" servers="1">
       <Property name="DebugLevel" id="15872.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15872.DebugLevel.range"/>
@@ -58083,7 +58083,7 @@
         <Domain name="bool" id="15872.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="19683" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="19683" servers="1">
       <Property name="DebugLevel" id="19683.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19683.DebugLevel.range"/>
@@ -58130,7 +58130,7 @@
         <Domain name="bool" id="19683.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TrackingFromFields" id="16588" servers="1">
+    <Proxy group="filters" type="ttkTrackingFromFields" id="16588" servers="1">
       <Property name="Assignment method" id="16588.Assignment method" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="16588.Assignment method.enum">

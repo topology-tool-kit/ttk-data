@@ -42453,7 +42453,7 @@
         <Domain name="bool" id="15994.Splitting.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ContinuousScatterPlot" id="8536" servers="1">
+    <Proxy group="filters" type="ttkContinuousScatterPlot" id="8536" servers="1">
       <Property name="DebugLevel" id="8536.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="8536.DebugLevel.range"/>
@@ -42511,7 +42511,7 @@
         <Domain name="bool" id="8536.WithDummyValue.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="FiberSurface" id="14741" servers="1">
+    <Proxy group="filters" type="ttkFiberSurface" id="14741" servers="1">
       <Property name="DataUComponent" id="14741.DataUComponent" number_of_elements="1">
         <Element index="0" value="log(Rho)"/>
         <Domain name="array_list" id="14741.DataUComponent.array_list">
@@ -42601,7 +42601,7 @@
         <Domain name="bool" id="14741.WithTetIds.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="FiberSurface" id="14920" servers="1">
+    <Proxy group="filters" type="ttkFiberSurface" id="14920" servers="1">
       <Property name="DataUComponent" id="14920.DataUComponent" number_of_elements="1">
         <Element index="0" value="log(Rho)"/>
         <Domain name="array_list" id="14920.DataUComponent.array_list">
@@ -42691,7 +42691,7 @@
         <Domain name="bool" id="14920.WithTetIds.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="FiberSurface" id="15099" servers="1">
+    <Proxy group="filters" type="ttkFiberSurface" id="15099" servers="1">
       <Property name="DataUComponent" id="15099.DataUComponent" number_of_elements="1">
         <Element index="0" value="log(Rho)"/>
         <Domain name="array_list" id="15099.DataUComponent.array_list">
@@ -42781,7 +42781,7 @@
         <Domain name="bool" id="15099.WithTetIds.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="FiberSurface" id="15278" servers="1">
+    <Proxy group="filters" type="ttkFiberSurface" id="15278" servers="1">
       <Property name="DataUComponent" id="15278.DataUComponent" number_of_elements="1">
         <Element index="0" value="log(Rho)"/>
         <Domain name="array_list" id="15278.DataUComponent.array_list">
@@ -42871,7 +42871,7 @@
         <Domain name="bool" id="15278.WithTetIds.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="JacobiSet" id="13081" servers="1">
+    <Proxy group="filters" type="ttkJacobiSet" id="13081" servers="1">
       <Property name="DebugLevel" id="13081.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13081.DebugLevel.range"/>
@@ -42931,7 +42931,7 @@
         <Domain name="bool" id="13081.With vertex scalars.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="8942" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="8942" servers="1">
       <Property name="Debug_DebugLevel" id="8942.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="8942.Debug_DebugLevel.range"/>
@@ -42979,7 +42979,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="9495" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="9495" servers="1">
       <Property name="Debug_DebugLevel" id="9495.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="9495.Debug_DebugLevel.range"/>
@@ -43027,7 +43027,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="13276" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="13276" servers="1">
       <Property name="Debug_DebugLevel" id="13276.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13276.Debug_DebugLevel.range"/>
@@ -43077,7 +43077,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="RangePolygon" id="10240" servers="1">
+    <Proxy group="filters" type="ttkRangePolygon" id="10240" servers="1">
       <Property name="ClosePolygon" id="10240.ClosePolygon" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="10240.ClosePolygon.bool"/>
@@ -43104,7 +43104,7 @@
         <Domain name="bool" id="10240.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="RangePolygon" id="10999" servers="1">
+    <Proxy group="filters" type="ttkRangePolygon" id="10999" servers="1">
       <Property name="ClosePolygon" id="10999.ClosePolygon" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="10999.ClosePolygon.bool"/>
@@ -43131,7 +43131,7 @@
         <Domain name="bool" id="10999.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="RangePolygon" id="11758" servers="1">
+    <Proxy group="filters" type="ttkRangePolygon" id="11758" servers="1">
       <Property name="ClosePolygon" id="11758.ClosePolygon" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="11758.ClosePolygon.bool"/>
@@ -43158,7 +43158,7 @@
         <Domain name="bool" id="11758.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="RangePolygon" id="12517" servers="1">
+    <Proxy group="filters" type="ttkRangePolygon" id="12517" servers="1">
       <Property name="ClosePolygon" id="12517.ClosePolygon" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="12517.ClosePolygon.bool"/>

@@ -40505,7 +40505,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ContourAroundPoint" id="16035" servers="1">
+    <Proxy group="filters" type="ttkContourAroundPoint" id="16035" servers="1">
       <Property name="Arcs" id="16035.Arcs" number_of_elements="1">
         <Proxy value="16024" output_port="1"/>
         <Domain name="groups" id="16035.Arcs.groups"/>
@@ -40561,7 +40561,7 @@
         <Domain name="bool" id="16035.ui_spherical.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ContourAroundPoint" id="15454" servers="1">
+    <Proxy group="filters" type="ttkContourAroundPoint" id="15454" servers="1">
       <Property name="Arcs" id="15454.Arcs" number_of_elements="1">
         <Proxy value="14740" output_port="1"/>
         <Domain name="groups" id="15454.Arcs.groups"/>
@@ -40620,7 +40620,7 @@
         <Domain name="bool" id="15454.ui_spherical.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ftmtree" id="16024" servers="1">
+    <Proxy group="filters" type="ttkftmtree" id="16024" servers="1">
       <Property name="AdvancedStats" id="16024.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="16024.AdvancedStats.bool"/>
@@ -40682,7 +40682,7 @@
         <Domain name="bool" id="16024.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ftmtree" id="14740" servers="1">
+    <Proxy group="filters" type="ttkftmtree" id="14740" servers="1">
       <Property name="AdvancedStats" id="14740.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="14740.AdvancedStats.bool"/>
@@ -40750,7 +40750,7 @@
         <Domain name="bool" id="14740.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="15991" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="15991" servers="1">
       <Property name="Debug_DebugLevel" id="15991.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15991.Debug_DebugLevel.range"/>
@@ -40803,7 +40803,7 @@
         <Domain name="bool" id="15991.ShowInsideDomain.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="14020" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="14020" servers="1">
       <Property name="Debug_DebugLevel" id="14020.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="14020.Debug_DebugLevel.range"/>
@@ -40862,7 +40862,7 @@
         <Domain name="bool" id="14020.ShowInsideDomain.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TopologicalSimplification" id="14500" servers="1">
+    <Proxy group="filters" type="ttkTopologicalSimplification" id="14500" servers="1">
       <Property name="AddPerturbation" id="14500.AddPerturbation" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="14500.AddPerturbation.bool"/>
@@ -40941,7 +40941,7 @@
         <Domain name="bool" id="14500.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TopologicalSimplification" id="18328" servers="1">
+    <Proxy group="filters" type="ttkTopologicalSimplification" id="18328" servers="1">
       <Property name="AddPerturbation" id="18328.AddPerturbation" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="18328.AddPerturbation.bool"/>

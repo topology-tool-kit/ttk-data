@@ -70571,7 +70571,7 @@
         <Domain name="bool" id="18747.NonManifoldEdges.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ftmtree" id="24517" servers="1">
+    <Proxy group="filters" type="ttkftmtree" id="24517" servers="1">
       <Property name="AdvancedStats" id="24517.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="24517.AdvancedStats.bool"/>
@@ -70633,7 +70633,7 @@
         <Domain name="bool" id="24517.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="Fiber" id="16586" servers="1">
+    <Proxy group="filters" type="ttkFiber" id="16586" servers="1">
       <Property name="Debug_DebugLevel" id="16586.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16586.Debug_DebugLevel.range"/>
@@ -70682,7 +70682,7 @@
         <Element index="0" value="0.25"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="Fiber" id="16944" servers="1">
+    <Proxy group="filters" type="ttkFiber" id="16944" servers="1">
       <Property name="Debug_DebugLevel" id="16944.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16944.Debug_DebugLevel.range"/>
@@ -70731,7 +70731,7 @@
         <Element index="0" value="0.6"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="Fiber" id="17302" servers="1">
+    <Proxy group="filters" type="ttkFiber" id="17302" servers="1">
       <Property name="Debug_DebugLevel" id="17302.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="17302.Debug_DebugLevel.range"/>
@@ -70780,7 +70780,7 @@
         <Element index="0" value="0.75"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="Fiber" id="17660" servers="1">
+    <Proxy group="filters" type="ttkFiber" id="17660" servers="1">
       <Property name="Debug_DebugLevel" id="17660.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="17660.Debug_DebugLevel.range"/>
@@ -70829,7 +70829,7 @@
         <Element index="0" value="0.825"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="24116" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="24116" servers="1">
       <Property name="Debug_DebugLevel" id="24116.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="24116.Debug_DebugLevel.range"/>
@@ -70875,7 +70875,7 @@
         <Domain name="range" id="24116.NumberOfIterations.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="25221" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="25221" servers="1">
       <Property name="Debug_DebugLevel" id="25221.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="25221.Debug_DebugLevel.range"/>
@@ -70919,7 +70919,7 @@
         <Domain name="range" id="25221.NumberOfIterations.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="JacobiSet" id="15075" servers="1">
+    <Proxy group="filters" type="ttkJacobiSet" id="15075" servers="1">
       <Property name="DebugLevel" id="15075.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15075.DebugLevel.range"/>
@@ -70979,7 +70979,7 @@
         <Domain name="bool" id="15075.With vertex scalars.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="20050" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="20050" servers="1">
       <Property name="DebugLevel" id="20050.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="20050.DebugLevel.range"/>
@@ -71018,7 +71018,7 @@
         <Domain name="array_list" id="20050.VComponentNew.array_list"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="19853" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="19853" servers="1">
       <Property name="DebugLevel" id="19853.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19853.DebugLevel.range"/>
@@ -71057,7 +71057,7 @@
         <Domain name="array_list" id="19853.VComponentNew.array_list"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="20603" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="20603" servers="1">
       <Property name="DebugLevel" id="20603.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="20603.DebugLevel.range"/>
@@ -71106,7 +71106,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="21156" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="21156" servers="1">
       <Property name="DebugLevel" id="21156.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21156.DebugLevel.range"/>
@@ -71161,7 +71161,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="21530" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="21530" servers="1">
       <Property name="DebugLevel" id="21530.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21530.DebugLevel.range"/>
@@ -71210,7 +71210,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="21888" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="21888" servers="1">
       <Property name="DebugLevel" id="21888.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21888.DebugLevel.range"/>
@@ -71259,7 +71259,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="22246" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="22246" servers="1">
       <Property name="DebugLevel" id="22246.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22246.DebugLevel.range"/>
@@ -71308,7 +71308,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ProjectionFromField" id="22604" servers="1">
+    <Proxy group="filters" type="ttkProjectionFromField" id="22604" servers="1">
       <Property name="DebugLevel" id="22604.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22604.DebugLevel.range"/>
@@ -71357,7 +71357,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ReebSpace" id="15837" servers="1">
+    <Proxy group="filters" type="ttkReebSpace" id="15837" servers="1">
       <Property name="0-scalar" id="15837.0-scalar" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="15837.0-scalar.bool"/>
@@ -71517,7 +71517,7 @@
         <Domain name="bool" id="15837.With predefined offset.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ScalarFieldCriticalPoints" id="19300" servers="1">
+    <Proxy group="filters" type="ttkScalarFieldCriticalPoints" id="19300" servers="1">
       <Property name="Debug_DebugLevel" id="19300.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19300.Debug_DebugLevel.range"/>
@@ -71576,7 +71576,7 @@
         <Domain name="bool" id="19300.With vertex scalars.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="19495" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="19495" servers="1">
       <Property name="DebugLevel" id="19495.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19495.DebugLevel.range"/>
@@ -71623,7 +71623,7 @@
         <Domain name="bool" id="19495.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="21351" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="21351" servers="1">
       <Property name="DebugLevel" id="21351.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21351.DebugLevel.range"/>
@@ -71670,7 +71670,7 @@
         <Domain name="bool" id="21351.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="21709" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="21709" servers="1">
       <Property name="DebugLevel" id="21709.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21709.DebugLevel.range"/>
@@ -71717,7 +71717,7 @@
         <Domain name="bool" id="21709.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="22067" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="22067" servers="1">
       <Property name="DebugLevel" id="22067.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22067.DebugLevel.range"/>
@@ -71764,7 +71764,7 @@
         <Domain name="bool" id="22067.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="22425" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="22425" servers="1">
       <Property name="DebugLevel" id="22425.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22425.DebugLevel.range"/>
@@ -71811,7 +71811,7 @@
         <Domain name="bool" id="22425.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="22783" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="22783" servers="1">
       <Property name="DebugLevel" id="22783.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22783.DebugLevel.range"/>
@@ -71858,7 +71858,7 @@
         <Domain name="bool" id="22783.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="25917" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="25917" servers="1">
       <Property name="DebugLevel" id="25917.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="25917.DebugLevel.range"/>
@@ -71905,7 +71905,7 @@
         <Domain name="bool" id="25917.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TextureMapFromField" id="15630" servers="1">
+    <Proxy group="filters" type="ttkTextureMapFromField" id="15630" servers="1">
       <Property name="DebugLevel" id="15630.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15630.DebugLevel.range"/>

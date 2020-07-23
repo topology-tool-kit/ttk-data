@@ -10129,19 +10129,19 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="sources" type="TopologicalCompressionReader" id="15315" servers="1">
+    <Proxy group="sources" type="ttkTopologicalCompressionReader" id="15315" servers="1">
       <Property name="FileName" id="15315.FileName" number_of_elements="1">
         <Element index="0" value="naturalImage_persistence10.ttk"/>
         <Domain name="files" id="15315.FileName.files"/>
       </Property>
     </Proxy>
-    <Proxy group="sources" type="TopologicalCompressionReader" id="15615" servers="1">
+    <Proxy group="sources" type="ttkTopologicalCompressionReader" id="15615" servers="1">
       <Property name="FileName" id="15615.FileName" number_of_elements="1">
         <Element index="0" value="naturalImage_persistence10_zfp1.ttk"/>
         <Domain name="files" id="15615.FileName.files"/>
       </Property>
     </Proxy>
-    <Proxy group="sources" type="TopologicalCompressionReader" id="15013" servers="1">
+    <Proxy group="sources" type="ttkTopologicalCompressionReader" id="15013" servers="1">
       <Property name="FileName" id="15013.FileName" number_of_elements="1">
         <Element index="0" value="naturalImage_zfp1.ttk"/>
         <Domain name="files" id="15013.FileName.files"/>

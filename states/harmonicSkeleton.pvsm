@@ -44506,7 +44506,7 @@
         <Domain name="bool" id="18827.Splitting.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="21697" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="21697" servers="1">
       <Property name="DebugLevel" id="21697.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21697.DebugLevel.range"/>
@@ -44539,7 +44539,7 @@
         <Domain name="bool" id="21697.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="HarmonicField" id="17936" servers="1">
+    <Proxy group="filters" type="ttkHarmonicField" id="17936" servers="1">
       <Property name="Constraints" id="17936.Constraints" number_of_elements="1">
         <Proxy value="17641" output_port="0"/>
         <Domain name="groups" id="17936.Constraints.groups"/>
@@ -44608,7 +44608,7 @@
         <Domain name="bool" id="17936.UseCotanWeights.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="Identifiers" id="17335" servers="1">
+    <Proxy group="filters" type="ttkIdentifiers" id="17335" servers="1">
       <Property name="CellFieldName" id="17335.CellFieldName" number_of_elements="1">
         <Element index="0" value="CellIdentifiers"/>
       </Property>
@@ -44633,7 +44633,7 @@
         <Element index="0" value="ttkVertexScalarField"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="19688" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="19688" servers="1">
       <Property name="DebugLevel" id="19688.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19688.DebugLevel.range"/>
@@ -44689,7 +44689,7 @@
         <Domain name="bool" id="19688.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="FTRGraph" id="20573" servers="1">
+    <Proxy group="filters" type="ttkFTRGraph" id="20573" servers="1">
       <Property name="ArcSampling" id="20573.ArcSampling" number_of_elements="1">
         <Element index="0" value="20"/>
         <Domain name="range" id="20573.ArcSampling.range"/>
@@ -44743,7 +44743,7 @@
         <Domain name="bool" id="20573.UseInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ScalarFieldNormalizer" id="18242" servers="1">
+    <Proxy group="filters" type="ttkScalarFieldNormalizer" id="18242" servers="1">
       <Property name="DebugLevel" id="18242.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="18242.DebugLevel.range"/>
@@ -44777,7 +44777,7 @@
         <Domain name="bool" id="18242.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="20584" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="20584" servers="1">
       <Property name="DebugLevel" id="20584.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="20584.DebugLevel.range"/>
@@ -44824,7 +44824,7 @@
         <Domain name="bool" id="20584.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TextureMapFromField" id="18253" servers="1">
+    <Proxy group="filters" type="ttkTextureMapFromField" id="18253" servers="1">
       <Property name="DebugLevel" id="18253.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="18253.DebugLevel.range"/>
@@ -44888,7 +44888,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TopologicalSimplification" id="20278" servers="1">
+    <Proxy group="filters" type="ttkTopologicalSimplification" id="20278" servers="1">
       <Property name="AddPerturbation" id="20278.AddPerturbation" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="20278.AddPerturbation.bool"/>

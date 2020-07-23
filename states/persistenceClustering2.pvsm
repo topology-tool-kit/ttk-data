@@ -34649,7 +34649,7 @@
         <Domain name="bool" id="13054.Triangulate the slice.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="DataSetInterpolator" id="16161" servers="1">
+    <Proxy group="filters" type="ttkDataSetInterpolator" id="16161" servers="1">
       <Property name="DebugLevel" id="16161.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16161.DebugLevel.range"/>
@@ -34674,7 +34674,7 @@
         <Domain name="bool" id="16161.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="GeometrySmoother" id="15926" servers="1">
+    <Proxy group="filters" type="ttkGeometrySmoother" id="15926" servers="1">
       <Property name="DebugLevel" id="15926.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15926.DebugLevel.range"/>
@@ -34710,7 +34710,7 @@
         <Domain name="bool" id="15926.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="MorseSmaleComplex" id="15273" servers="1">
+    <Proxy group="filters" type="ttkMorseSmaleComplex" id="15273" servers="1">
       <Property name="ComputeAscendingSegmentation" id="15273.ComputeAscendingSegmentation" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="15273.ComputeAscendingSegmentation.bool"/>
@@ -34812,7 +34812,7 @@
         <Domain name="bool" id="15273.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="PersistenceDiagram" id="13065" servers="1">
+    <Proxy group="filters" type="ttkPersistenceDiagram" id="13065" servers="1">
       <Property name="DebugLevel" id="13065.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13065.DebugLevel.range"/>
@@ -34860,7 +34860,7 @@
         <Domain name="bool" id="13065.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="16172" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="16172" servers="1">
       <Property name="DebugLevel" id="16172.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16172.DebugLevel.range"/>
@@ -34907,7 +34907,7 @@
         <Domain name="bool" id="16172.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="13752" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="13752" servers="1">
       <Property name="DebugLevel" id="13752.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13752.DebugLevel.range"/>
@@ -34954,7 +34954,7 @@
         <Domain name="bool" id="13752.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="12816" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="12816" servers="1">
       <Property name="DebugLevel" id="12816.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="12816.DebugLevel.range"/>
@@ -35001,7 +35001,7 @@
         <Domain name="bool" id="12816.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="SphereFromPoint" id="15284" servers="1">
+    <Proxy group="filters" type="ttkSphereFromPoint" id="15284" servers="1">
       <Property name="DebugLevel" id="15284.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15284.DebugLevel.range"/>
@@ -35048,7 +35048,7 @@
         <Domain name="bool" id="15284.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="TopologicalSimplification" id="15262" servers="1">
+    <Proxy group="filters" type="ttkTopologicalSimplification" id="15262" servers="1">
       <Property name="AddPerturbation" id="15262.AddPerturbation" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="bool" id="15262.AddPerturbation.bool"/>
