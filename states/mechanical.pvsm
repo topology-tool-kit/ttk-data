@@ -40326,12 +40326,20 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4662.OctreeAcceleration.bool"/>
       </Property>
-      <Property name="OffsetU" id="4662.OffsetU" number_of_elements="1">
-        <Element index="0" value=""/>
+      <Property name="U Offset Field" id="4662.OffsetU" number_of_elements="5">
+        <Element index="0" value="2"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value=""/>
         <Domain name="array_list" id="4662.OffsetU.array_list"/>
       </Property>
-      <Property name="OffsetV" id="4662.OffsetV" number_of_elements="1">
-        <Element index="0" value=""/>
+      <Property name="V Offset Field" id="4662.OffsetV" number_of_elements="5">
+        <Element index="0" value="3"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value=""/>
         <Domain name="array_list" id="4662.OffsetV.array_list"/>
       </Property>
       <Property name="SimplificationCriterion" id="4662.SimplificationCriterion" number_of_elements="1">
@@ -40350,8 +40358,12 @@
         <Element index="0" value="1"/>
         <Domain name="range" id="4662.ThreadNumber.range"/>
       </Property>
-      <Property name="U Component" id="4662.U Component" number_of_elements="1">
-        <Element index="0" value="magnitude"/>
+      <Property name="U Component" id="4662.U Component" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="magnitude"/>
         <Domain name="array_list" id="4662.U Component.array_list">
           <String text="curl"/>
           <String text="magnitude"/>
@@ -40361,8 +40373,12 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="4662.UseAllCores.bool"/>
       </Property>
-      <Property name="V Component" id="4662.V Component" number_of_elements="1">
-        <Element index="0" value="curl"/>
+      <Property name="V Component" id="4662.V Component" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="curl"/>
         <Domain name="array_list" id="4662.V Component.array_list">
           <String text="curl"/>
           <String text="magnitude"/>

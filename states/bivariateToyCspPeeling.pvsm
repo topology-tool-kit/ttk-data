@@ -37896,12 +37896,20 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5255.OctreeAcceleration.bool"/>
       </Property>
-      <Property name="OffsetU" id="5255.OffsetU" number_of_elements="1">
-        <Element index="0" value=""/>
+      <Property name="U Offset Field" id="5255.OffsetU" number_of_elements="5">
+        <Element index="0" value="2"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value=""/>
         <Domain name="array_list" id="5255.OffsetU.array_list"/>
       </Property>
-      <Property name="OffsetV" id="5255.OffsetV" number_of_elements="1">
-        <Element index="0" value=""/>
+      <Property name="V Offset Field" id="5255.OffsetV" number_of_elements="5">
+        <Element index="0" value="3"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value=""/>
         <Domain name="array_list" id="5255.OffsetV.array_list"/>
       </Property>
       <Property name="SimplificationCriterion" id="5255.SimplificationCriterion" number_of_elements="1">
@@ -37920,8 +37928,12 @@
         <Element index="0" value="1"/>
         <Domain name="range" id="5255.ThreadNumber.range"/>
       </Property>
-      <Property name="U Component" id="5255.U Component" number_of_elements="1">
-        <Element index="0" value="u"/>
+      <Property name="U Component" id="5255.U Component" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="u"/>
         <Domain name="array_list" id="5255.U Component.array_list">
           <String text="u"/>
           <String text="v"/>
@@ -37931,8 +37943,12 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="5255.UseAllCores.bool"/>
       </Property>
-      <Property name="V Component" id="5255.V Component" number_of_elements="1">
-        <Element index="0" value="v"/>
+      <Property name="V Component" id="5255.V Component" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="v"/>
         <Domain name="array_list" id="5255.V Component.array_list">
           <String text="u"/>
           <String text="v"/>
