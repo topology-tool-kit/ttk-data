@@ -43696,8 +43696,12 @@
         <Element index="0" value="0"/>
         <Domain name="bool" id="10119.PeriodicBoundaryConditions.bool"/>
       </Property>
-      <Property name="ScalarField" id="10119.ScalarField" number_of_elements="1">
-        <Element index="0" value="realization0"/>
+      <Property name="Scalar Field" id="10119.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="realization0"/>
         <Domain name="array_list" id="10119.ScalarField.array_list">
           <String text="RandomPointScalars"/>
           <String text="lowerBoundField"/>
@@ -43773,8 +43777,12 @@
         <Element index="0" value="0"/>
         <Domain name="bool" id="14102.PeriodicBoundaryConditions.bool"/>
       </Property>
-      <Property name="ScalarField" id="14102.ScalarField" number_of_elements="1">
-        <Element index="0" value="realization1"/>
+      <Property name="Scalar Field" id="14102.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="realization1"/>
         <Domain name="array_list" id="14102.ScalarField.array_list">
           <String text="RandomPointScalars"/>
           <String text="lowerBoundField"/>

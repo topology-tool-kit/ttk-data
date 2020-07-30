@@ -49699,8 +49699,12 @@
         <Element index="0" value="0"/>
         <Domain name="bool" id="9790.PeriodicBoundaryConditions.bool"/>
       </Property>
-      <Property name="ScalarField" id="9790.ScalarField" number_of_elements="1">
-        <Element index="0" value="SplatterValues"/>
+      <Property name="Scalar Field" id="9790.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="SplatterValues"/>
         <Domain name="array_list" id="9790.ScalarField.array_list">
           <String text="SplatterValues"/>
         </Domain>

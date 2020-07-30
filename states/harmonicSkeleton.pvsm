@@ -44946,8 +44946,12 @@
       <Property name="OutputOffsetScalarFieldName" id="20278.OutputOffsetScalarFieldName" number_of_elements="1">
         <Element index="0" value=""/>
       </Property>
-      <Property name="ScalarField" id="20278.ScalarField" number_of_elements="1">
-        <Element index="0" value="ScaledHarmonic"/>
+      <Property name="Scalar Field" id="20278.ScalarField" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="ScaledHarmonic"/>
         <Domain name="array_list" id="20278.ScalarField.array_list">
           <String text="Elevation"/>
           <String text="OutputHarmonicField"/>
