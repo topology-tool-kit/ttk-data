@@ -40639,8 +40639,12 @@
         <Domain name="input_scalars" id="16024.Input.input_scalars"/>
         <Domain name="input_type" id="16024.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldName" id="16024.InputOffsetScalarFieldName" number_of_elements="1">
-        <Element index="0" value="tas"/>
+      <Property name="Input Offset Field" id="16024.InputOffsetScalarFieldName" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="tas"/>
         <Domain name="array_list" id="16024.InputOffsetScalarFieldName.array_list">
           <String text="tas"/>
           <String text="ttkOffsetScalarField"/>
@@ -40654,8 +40658,12 @@
         <Element index="0" value="0"/>
         <Domain name="bool" id="16024.PeriodicBoundaryConditions.bool"/>
       </Property>
-      <Property name="Scalar Field" id="16024.Scalar Field" number_of_elements="1">
-        <Element index="0" value="tas"/>
+      <Property name="Scalar Field" id="16024.Scalar Field" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="tas"/>
         <Domain name="array_list" id="16024.Scalar Field.array_list">
           <String text="tas"/>
           <String text="ttkOffsetScalarField"/>
@@ -40701,8 +40709,12 @@
         <Domain name="input_scalars" id="14740.Input.input_scalars"/>
         <Domain name="input_type" id="14740.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldName" id="14740.InputOffsetScalarFieldName" number_of_elements="1">
-        <Element index="0" value="Blend"/>
+      <Property name="Input Offset Field" id="14740.InputOffsetScalarFieldName" number_of_elements="5">
+        <Element index="0" value="1"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Blend"/>
         <Domain name="array_list" id="14740.InputOffsetScalarFieldName.array_list">
           <String text="Blend"/>
           <String text="DistanceField"/>
@@ -40719,8 +40731,12 @@
         <Element index="0" value="0"/>
         <Domain name="bool" id="14740.PeriodicBoundaryConditions.bool"/>
       </Property>
-      <Property name="Scalar Field" id="14740.Scalar Field" number_of_elements="1">
-        <Element index="0" value="Blend"/>
+      <Property name="Scalar Field" id="14740.Scalar Field" number_of_elements="5">
+        <Element index="0" value="0"/>
+        <Element index="1" value=""/>
+        <Element index="2" value=""/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="Blend"/>
         <Domain name="array_list" id="14740.Scalar Field.array_list">
           <String text="Blend"/>
           <String text="DistanceField"/>
