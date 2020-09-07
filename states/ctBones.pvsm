@@ -41910,7 +41910,7 @@
         <Domain name="range" id="12471.DebugLevel.range"/>
       </Property>
       <Property name="ForceInputOffsetScalarField" id="12471.ForceInputOffsetScalarField" number_of_elements="1">
-        <Element index="0" value="1"/>
+        <Element index="0" value="0"/>
         <Domain name="bool" id="12471.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="Input" id="12471.Input" number_of_elements="1">
