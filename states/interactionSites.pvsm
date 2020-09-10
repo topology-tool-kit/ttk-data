@@ -44737,7 +44737,7 @@
         <Domain name="range" id="18863.DebugLevel.range"/>
       </Property>
       <Property name="ForceInputOffsetScalarField" id="18863.ForceInputOffsetScalarField" number_of_elements="1">
-        <Element index="0" value="1"/>
+        <Element index="0" value="0"/>
         <Domain name="bool" id="18863.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="Input" id="18863.Input" number_of_elements="1">
@@ -45165,7 +45165,7 @@
         <Domain name="input_type" id="16991.Domain.input_type"/>
       </Property>
       <Property name="ForceInputOffsetScalarField" id="16991.ForceInputOffsetScalarField" number_of_elements="1">
-        <Element index="0" value="1"/>
+        <Element index="0" value="0"/>
         <Domain name="bool" id="16991.ForceInputOffsetScalarField.bool"/>
       </Property>
       <Property name="ForceInputVertexScalarField" id="16991.ForceInputVertexScalarField" number_of_elements="1">

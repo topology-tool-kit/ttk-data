@@ -43372,7 +43372,7 @@
         <Domain name="bool" id="10318.With boundary mask.bool"/>
       </Property>
       <Property name="With predefined offset" id="10318.With predefined offset" number_of_elements="1">
-        <Element index="0" value="1"/>
+        <Element index="0" value="0"/>
         <Domain name="bool" id="10318.With predefined offset.bool"/>
       </Property>
       <Property name="With vertex identifiers" id="10318.With vertex identifiers" number_of_elements="1">
@@ -43437,7 +43437,7 @@
         <Domain name="bool" id="14301.With boundary mask.bool"/>
       </Property>
       <Property name="With predefined offset" id="14301.With predefined offset" number_of_elements="1">
-        <Element index="0" value="1"/>
+        <Element index="0" value="0"/>
         <Domain name="bool" id="14301.With predefined offset.bool"/>
       </Property>
       <Property name="With vertex identifiers" id="14301.With vertex identifiers" number_of_elements="1">
