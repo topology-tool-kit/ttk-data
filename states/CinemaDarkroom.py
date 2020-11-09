@@ -110,10 +110,10 @@ tTKExtract3.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
 tTKExtract3.InputArray = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomColorMapping'
-ttkCinemaDarkroomColorMapping2 = ttkCinemaDarkroomColorMapping(Input=tTKExtract3)
-ttkCinemaDarkroomColorMapping2.ScalarArray = ['POINTS', 'Elevation']
-ttkCinemaDarkroomColorMapping2.NANColor = [1.0, 1.0, 1.0]
-ttkCinemaDarkroomColorMapping2.SolidColor = [0.0, 0.6666666666666666, 1.0]
+colorMapping2 = TTKCDColorMapping(Input=tTKExtract3)
+colorMapping2.Scalars = ['POINTS', 'Elevation']
+colorMapping2.NANColor = [1.0, 1.0, 1.0]
+colorMapping2.FixedColor = [0.0, 0.6666666666666666, 1.0]
 
 # create a new 'TTK CinemaImaging'
 tTKCinemaImaging1 = TTKCinemaImaging(Dataset=elevation2,
@@ -134,45 +134,45 @@ tTKExtract2.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
 tTKExtract2.InputArray = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomColorMapping'
-ttkCinemaDarkroomColorMapping1 = ttkCinemaDarkroomColorMapping(Input=tTKExtract2)
-ttkCinemaDarkroomColorMapping1.ScalarArray = ['POINTS', 'Elevation']
-ttkCinemaDarkroomColorMapping1.ColorMap = 'OrRd'
-ttkCinemaDarkroomColorMapping1.NANColor = [1.0, 1.0, 1.0]
+colorMapping1 = TTKCDColorMapping(Input=tTKExtract2)
+colorMapping1.Scalars = ['POINTS', 'Elevation']
+colorMapping1.ColorMap = 'OrRd'
+colorMapping1.NANColor = [1.0, 1.0, 1.0]
 
 # create a new 'ttkCinemaDarkroomCompositing'
-ttkCinemaDarkroomCompositing1 = ttkCinemaDarkroomCompositing(Input=[ttkCinemaDarkroomColorMapping2, ttkCinemaDarkroomColorMapping1])
-ttkCinemaDarkroomCompositing1.DepthArray = ['POINTS', 'Depth']
+compositing = TTKCDCompositing(Input=[colorMapping2, colorMapping1])
+compositing.Depth = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomSSAO'
-ttkCinemaDarkroomSSAO1 = ttkCinemaDarkroomSSAO(Input=ttkCinemaDarkroomCompositing1)
-ttkCinemaDarkroomSSAO1.Depth = ['POINTS', 'Depth']
-ttkCinemaDarkroomSSAO1.Radius = 0.02
+ssao = TTKCDSSAO(Input=compositing)
+ssao.Depth = ['POINTS', 'Depth']
+ssao.Radius = 0.02
 
 # create a new 'ttkCinemaDarkroomSSSAO'
-ttkCinemaDarkroomSSSAO1 = ttkCinemaDarkroomSSSAO(Input=ttkCinemaDarkroomSSAO1)
-ttkCinemaDarkroomSSSAO1.Depth = ['POINTS', 'Depth']
-ttkCinemaDarkroomSSSAO1.Samples = 242
-ttkCinemaDarkroomSSSAO1.Radius = 0.1
+sssao = TTKCDSSSAO(Input=ssao)
+sssao.Depth = ['POINTS', 'Depth']
+sssao.Samples = 242
+sssao.Radius = 0.1
 
 # create a new 'ttkCinemaDarkroomIBS'
-ttkCinemaDarkroomIBS1 = ttkCinemaDarkroomIBS(Input=ttkCinemaDarkroomSSSAO1)
-ttkCinemaDarkroomIBS1.Color = ['POINTS', 'Diffuse']
-ttkCinemaDarkroomIBS1.Depth = ['POINTS', 'Depth']
-ttkCinemaDarkroomIBS1.AO = ['POINTS', 'SSSAO']
-ttkCinemaDarkroomIBS1.Strength = 2000.0
-ttkCinemaDarkroomIBS1.Luminance = 0.78
+ibs = TTKCDIBS(Input=sssao)
+ibs.Color = ['POINTS', 'Diffuse']
+ibs.Depth = ['POINTS', 'Depth']
+ibs.AO = ['POINTS', 'SSSAO']
+ibs.Strength = 2000.0
+ibs.Luminance = 0.78
 
 # create a new 'ttkCinemaDarkroomSSDoF'
-ttkCinemaDarkroomSSDoF1 = ttkCinemaDarkroomSSDoF(Input=ttkCinemaDarkroomIBS1)
-ttkCinemaDarkroomSSDoF1.Color = ['POINTS', 'IBS']
-ttkCinemaDarkroomSSDoF1.Depth = ['POINTS', 'Depth']
-ttkCinemaDarkroomSSDoF1.Radius = 0.1
-ttkCinemaDarkroomSSDoF1.Distance = 0.91
-ttkCinemaDarkroomSSDoF1.MaxBlur = 0.32
+ssdof = TTKCDSSDoF(Input=ibs)
+ssdof.Color = ['POINTS', 'IBS']
+ssdof.Depth = ['POINTS', 'Depth']
+ssdof.Radius = 0.1
+ssdof.FocalDepth = 0.91
+ssdof.MaxBlur = 0.32
 
 # create a new 'ttkCinemaDarkroomFXAA'
-ttkCinemaDarkroomFXAA1 = ttkCinemaDarkroomFXAA(Input=ttkCinemaDarkroomSSDoF1)
-ttkCinemaDarkroomFXAA1.Color = ['POINTS', 'IBS']
+fxaa = TTKCDFXAA(Input=ssdof)
+fxaa.Color = ['POINTS', 'IBS']
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
@@ -239,8 +239,8 @@ elevation1Display.PolarAxes = 'PolarAxesRepresentation'
 # setup the visualization in view 'renderView2'
 # ----------------------------------------------------------------
 
-# show data from ttkCinemaDarkroomFXAA1
-ttkCinemaDarkroomFXAA1Display = Show(ttkCinemaDarkroomFXAA1, renderView2, 'GeometryRepresentation')
+# show data from fxaa
+fxaaDisplay = Show(fxaa, renderView2, 'GeometryRepresentation')
 
 # get color transfer function/color map for 'FXAA'
 fXAALUT = GetColorTransferFunction('FXAA')
@@ -248,32 +248,32 @@ fXAALUT.RGBPoints = [0.0, 0.231373, 0.298039, 0.752941, 220.83647796503186, 0.86
 fXAALUT.ScalarRangeInitialized = 1.0
 
 # trace defaults for the display properties.
-ttkCinemaDarkroomFXAA1Display.Representation = 'Surface'
-ttkCinemaDarkroomFXAA1Display.ColorArrayName = ['POINTS', 'FXAA']
-ttkCinemaDarkroomFXAA1Display.LookupTable = fXAALUT
-ttkCinemaDarkroomFXAA1Display.MapScalars = 0
-ttkCinemaDarkroomFXAA1Display.Ambient = 1.0
-ttkCinemaDarkroomFXAA1Display.Diffuse = 0.0
-ttkCinemaDarkroomFXAA1Display.OSPRayScaleArray = 'Depth'
-ttkCinemaDarkroomFXAA1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-ttkCinemaDarkroomFXAA1Display.SelectOrientationVectors = 'Depth'
-ttkCinemaDarkroomFXAA1Display.ScaleFactor = 102.30000000000001
-ttkCinemaDarkroomFXAA1Display.SelectScaleArray = 'Depth'
-ttkCinemaDarkroomFXAA1Display.GlyphType = 'Arrow'
-ttkCinemaDarkroomFXAA1Display.GlyphTableIndexArray = 'Depth'
-ttkCinemaDarkroomFXAA1Display.GaussianRadius = 5.115
-ttkCinemaDarkroomFXAA1Display.SetScaleArray = ['POINTS', 'Depth']
-ttkCinemaDarkroomFXAA1Display.ScaleTransferFunction = 'PiecewiseFunction'
-ttkCinemaDarkroomFXAA1Display.OpacityArray = ['POINTS', 'Depth']
-ttkCinemaDarkroomFXAA1Display.OpacityTransferFunction = 'PiecewiseFunction'
-ttkCinemaDarkroomFXAA1Display.DataAxesGrid = 'GridAxesRepresentation'
-ttkCinemaDarkroomFXAA1Display.PolarAxes = 'PolarAxesRepresentation'
+fxaaDisplay.Representation = 'Surface'
+fxaaDisplay.ColorArrayName = ['POINTS', 'FXAA']
+fxaaDisplay.LookupTable = fXAALUT
+fxaaDisplay.MapScalars = 0
+fxaaDisplay.Ambient = 1.0
+fxaaDisplay.Diffuse = 0.0
+fxaaDisplay.OSPRayScaleArray = 'Depth'
+fxaaDisplay.OSPRayScaleFunction = 'PiecewiseFunction'
+fxaaDisplay.SelectOrientationVectors = 'Depth'
+fxaaDisplay.ScaleFactor = 102.30000000000001
+fxaaDisplay.SelectScaleArray = 'Depth'
+fxaaDisplay.GlyphType = 'Arrow'
+fxaaDisplay.GlyphTableIndexArray = 'Depth'
+fxaaDisplay.GaussianRadius = 5.115
+fxaaDisplay.SetScaleArray = ['POINTS', 'Depth']
+fxaaDisplay.ScaleTransferFunction = 'PiecewiseFunction'
+fxaaDisplay.OpacityArray = ['POINTS', 'Depth']
+fxaaDisplay.OpacityTransferFunction = 'PiecewiseFunction'
+fxaaDisplay.DataAxesGrid = 'GridAxesRepresentation'
+fxaaDisplay.PolarAxes = 'PolarAxesRepresentation'
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-ttkCinemaDarkroomFXAA1Display.ScaleTransferFunction.Points = [0.89214026927948, 0.0, 0.5, 0.0, 1.0, 1.0, 0.5, 0.0]
+fxaaDisplay.ScaleTransferFunction.Points = [0.89214026927948, 0.0, 0.5, 0.0, 1.0, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-ttkCinemaDarkroomFXAA1Display.OpacityTransferFunction.Points = [0.89214026927948, 0.0, 0.5, 0.0, 1.0, 1.0, 0.5, 0.0]
+fxaaDisplay.OpacityTransferFunction.Points = [0.89214026927948, 0.0, 0.5, 0.0, 1.0, 1.0, 0.5, 0.0]
 
 # ----------------------------------------------------------------
 # setup color maps and opacity mapes used in the visualization
@@ -290,5 +290,5 @@ elevationPWF.ScalarRangeInitialized = 1
 # ----------------------------------------------------------------
 # finally, restore active source
 SetActiveView(renderView2)
-SetActiveSource(ttkCinemaDarkroomFXAA1)
+SetActiveSource(fxaa)
 # ----------------------------------------------------------------
