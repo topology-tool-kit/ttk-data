@@ -9,9 +9,9 @@ renderView1.ViewSize = [783, 460]
 renderView1.AxesGrid = 'GridAxes3DActor'
 renderView1.CenterOfRotation = [0.05099499225616455, 0.007758498191833496, -0.00749649852514267]
 renderView1.StereoType = 'Crystal Eyes'
-renderView1.CameraPosition = [0.8539705454414804, -0.024920842240718458, -0.8002740272761396]
-renderView1.CameraFocalPoint = [0.08626552246541902, -0.009835400685793486, 0.02561075275148361]
+renderView1.CameraPosition = [0.7207324836026598, -0.02230270775597941, -0.6569386522300231]
 renderView1.CameraViewUp = [-0.01977908845568779, 0.9991329306701646, -0.036635699942954535]
+renderView1.CameraFocalPoint = [0.08626552246541902, -0.009835400685793486, 0.02561075275148361]
 renderView1.CameraFocalDisk = 1.0
 renderView1.CameraParallelScale = 0.6342075582553577
 
@@ -73,27 +73,15 @@ elevation2 = Elevation(Input=tTKCinemaProductReader2)
 elevation2.LowPoint = [-0.3657500147819519, 0.007758498191833496, -0.00749649852514267]
 elevation2.HighPoint = [0.467739999294281, 0.007758498191833496, -0.00749649852514267]
 
-# create a new 'TTK IcosphereFromObject'
-tTKIcosphereFromObject1 = TTKIcosphereFromObject(Object=elevation2)
-tTKIcosphereFromObject1.Scale = 2.0
-
-# create a new 'TTK Identifiers'
-tTKIdentifiers1 = TTKIdentifiers(Input=tTKIcosphereFromObject1)
-
-# create a new 'TTK Extract'
-tTKExtract1 = TTKExtract(Input=tTKIdentifiers1)
-tTKExtract1.ExtractionMode = 'Geometry'
-tTKExtract1.Expression = '8'
-tTKExtract1.InputArray = ['POINTS', 'ttkVertexScalarField']
-
-# create a new 'Calculator'
-calculator1 = Calculator(Input=tTKExtract1)
-calculator1.ResultArrayName = 'CamUp'
-calculator1.Function = 'jHat'
+# create CD Camera
+camera = TTKCDCamera()
+camera.Position = renderView1.CameraPosition
+camera.Up = renderView1.CameraViewUp
+camera.Focus = renderView1.CameraFocalPoint
 
 # create a new 'TTK CinemaImaging'
 tTKCinemaImaging2 = TTKCinemaImaging(Dataset=elevation1,
-    SamplingGrid=calculator1)
+    SamplingGrid=camera)
 tTKCinemaImaging2.Resolution = [2048, 1024]
 tTKCinemaImaging2.ProjectionMode = 'Perspective'
 tTKCinemaImaging2.CamAngle = 30.0
@@ -107,17 +95,17 @@ tTKExtract3 = TTKExtract(Input=tTKCinemaImaging2)
 tTKExtract3.Expression = '0'
 tTKExtract3.OutputType = 'vtkImageData'
 tTKExtract3.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
-tTKExtract3.InputArray = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomColorMapping'
 colorMapping2 = TTKCDColorMapping(Input=tTKExtract3)
 colorMapping2.Scalars = ['POINTS', 'Elevation']
+colorMapping2.ColorMap = 'Single'
+colorMapping2.SingleColor = [0.0, 0.6666666666666666, 1.0]
 colorMapping2.NANColor = [1.0, 1.0, 1.0]
-colorMapping2.FixedColor = [0.0, 0.6666666666666666, 1.0]
 
 # create a new 'TTK CinemaImaging'
 tTKCinemaImaging1 = TTKCinemaImaging(Dataset=elevation2,
-    SamplingGrid=calculator1)
+    SamplingGrid=camera)
 tTKCinemaImaging1.Resolution = [2048, 1024]
 tTKCinemaImaging1.ProjectionMode = 'Perspective'
 tTKCinemaImaging1.CamAngle = 30.0
@@ -131,7 +119,6 @@ tTKExtract2 = TTKExtract(Input=tTKCinemaImaging1)
 tTKExtract2.Expression = '0'
 tTKExtract2.OutputType = 'vtkImageData'
 tTKExtract2.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
-tTKExtract2.InputArray = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomColorMapping'
 colorMapping1 = TTKCDColorMapping(Input=tTKExtract2)
@@ -140,7 +127,7 @@ colorMapping1.ColorMap = 'OrRd'
 colorMapping1.NANColor = [1.0, 1.0, 1.0]
 
 # create a new 'ttkCinemaDarkroomCompositing'
-compositing = TTKCDCompositing(Input=[colorMapping2, colorMapping1])
+compositing = TTKCDCompositing(Input=[colorMapping1, colorMapping2])
 compositing.Depth = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomSSAO'
