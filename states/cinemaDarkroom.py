@@ -74,7 +74,7 @@ elevation2.LowPoint = [-0.3657500147819519, 0.007758498191833496, -0.00749649852
 elevation2.HighPoint = [0.467739999294281, 0.007758498191833496, -0.00749649852514267]
 
 # create CD Camera
-camera = TTKCDCamera()
+camera = TTKDarkroomCamera()
 camera.Position = renderView1.CameraPosition
 camera.Up = renderView1.CameraViewUp
 camera.Focus = renderView1.CameraFocalPoint
@@ -97,7 +97,7 @@ tTKExtract3.OutputType = 'vtkImageData'
 tTKExtract3.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
 
 # create a new 'ttkCinemaDarkroomColorMapping'
-colorMapping2 = TTKCDColorMapping(Input=tTKExtract3)
+colorMapping2 = TTKDarkroomColorMapping(Input=tTKExtract3)
 colorMapping2.Scalars = ['POINTS', 'Elevation']
 colorMapping2.ColorMap = 'Single'
 colorMapping2.SingleColor = [0.0, 0.6666666666666666, 1.0]
@@ -121,36 +121,37 @@ tTKExtract2.OutputType = 'vtkImageData'
 tTKExtract2.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
 
 # create a new 'ttkCinemaDarkroomColorMapping'
-colorMapping1 = TTKCDColorMapping(Input=tTKExtract2)
+colorMapping1 = TTKDarkroomColorMapping(Input=tTKExtract2)
 colorMapping1.Scalars = ['POINTS', 'Elevation']
 colorMapping1.ColorMap = 'OrRd'
 colorMapping1.NANColor = [1.0, 1.0, 1.0]
 
 # create a new 'ttkCinemaDarkroomCompositing'
-compositing = TTKCDCompositing(Input=[colorMapping1, colorMapping2])
+compositing = TTKDarkroomCompositing(Input=[colorMapping1, colorMapping2])
 compositing.Depth = ['POINTS', 'Depth']
 
 # create a new 'ttkCinemaDarkroomSSAO'
-ssao = TTKCDSSAO(Input=compositing)
+ssao = TTKDarkroomSSAO(Input=compositing)
 ssao.Depth = ['POINTS', 'Depth']
 ssao.Radius = 0.02
 
 # create a new 'ttkCinemaDarkroomSSSAO'
-sssao = TTKCDSSSAO(Input=ssao)
+sssao = TTKDarkroomSSSAO(Input=ssao)
 sssao.Depth = ['POINTS', 'Depth']
 sssao.Samples = 242
 sssao.Radius = 0.1
 
 # create a new 'ttkCinemaDarkroomIBS'
-ibs = TTKCDIBS(Input=sssao)
+ibs = TTKDarkroomIBS(Input=sssao)
 ibs.Color = ['POINTS', 'Diffuse']
 ibs.Depth = ['POINTS', 'Depth']
 ibs.AO = ['POINTS', 'SSSAO']
 ibs.Strength = 2000.0
 ibs.Luminance = 0.78
+ibs.Ambient = 0.2
 
 # create a new 'ttkCinemaDarkroomSSDoF'
-ssdof = TTKCDSSDoF(Input=ibs)
+ssdof = TTKDarkroomSSDoF(Input=ibs)
 ssdof.Color = ['POINTS', 'IBS']
 ssdof.Depth = ['POINTS', 'Depth']
 ssdof.Radius = 0.1
@@ -158,8 +159,12 @@ ssdof.FocalDepth = 0.91
 ssdof.MaxBlur = 0.32
 
 # create a new 'ttkCinemaDarkroomFXAA'
-fxaa = TTKCDFXAA(Input=ssdof)
-fxaa.Color = ['POINTS', 'IBS']
+fxaa = TTKDarkroomFXAA(Input=ssdof)
+fxaa.Color = ['POINTS', 'SSDoF']
+
+# create a new 'PassArrays'
+passArrays1 = PassArrays(Input=fxaa)
+passArrays1.PointDataArrays = ['Depth', 'Diffuse', 'Elevation', 'FXAA', 'IBS', 'SSAO', 'SSDoF', 'SSSAO']
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
@@ -207,6 +212,7 @@ elevation1Display.Representation = 'Surface'
 elevation1Display.AmbientColor = [0.0, 0.6666666666666666, 1.0]
 elevation1Display.ColorArrayName = ['POINTS', '']
 elevation1Display.DiffuseColor = [0.0, 0.6666666666666666, 1.0]
+elevation1Display.LookupTable = elevationLUT
 elevation1Display.OSPRayScaleArray = 'Elevation'
 elevation1Display.OSPRayScaleFunction = 'PiecewiseFunction'
 elevation1Display.SelectOrientationVectors = 'Elevation'
@@ -226,56 +232,15 @@ elevation1Display.PolarAxes = 'PolarAxesRepresentation'
 # setup the visualization in view 'renderView2'
 # ----------------------------------------------------------------
 
-# show data from fxaa
-fxaaDisplay = Show(fxaa, renderView2, 'GeometryRepresentation')
+# show data from passArrays1
+passArrays1Display = Show(passArrays1, renderView2, 'UniformGridRepresentation')
 
-# get color transfer function/color map for 'FXAA'
-fXAALUT = GetColorTransferFunction('FXAA')
-fXAALUT.RGBPoints = [0.0, 0.231373, 0.298039, 0.752941, 220.83647796503186, 0.865003, 0.865003, 0.865003, 441.6729559300637, 0.705882, 0.0156863, 0.14902]
-fXAALUT.ScalarRangeInitialized = 1.0
-
-# trace defaults for the display properties.
-fxaaDisplay.Representation = 'Surface'
-fxaaDisplay.ColorArrayName = ['POINTS', 'FXAA']
-fxaaDisplay.LookupTable = fXAALUT
-fxaaDisplay.MapScalars = 0
-fxaaDisplay.Ambient = 1.0
-fxaaDisplay.Diffuse = 0.0
-fxaaDisplay.OSPRayScaleArray = 'Depth'
-fxaaDisplay.OSPRayScaleFunction = 'PiecewiseFunction'
-fxaaDisplay.SelectOrientationVectors = 'Depth'
-fxaaDisplay.ScaleFactor = 102.30000000000001
-fxaaDisplay.SelectScaleArray = 'Depth'
-fxaaDisplay.GlyphType = 'Arrow'
-fxaaDisplay.GlyphTableIndexArray = 'Depth'
-fxaaDisplay.GaussianRadius = 5.115
-fxaaDisplay.SetScaleArray = ['POINTS', 'Depth']
-fxaaDisplay.ScaleTransferFunction = 'PiecewiseFunction'
-fxaaDisplay.OpacityArray = ['POINTS', 'Depth']
-fxaaDisplay.OpacityTransferFunction = 'PiecewiseFunction'
-fxaaDisplay.DataAxesGrid = 'GridAxesRepresentation'
-fxaaDisplay.PolarAxes = 'PolarAxesRepresentation'
-
-# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-fxaaDisplay.ScaleTransferFunction.Points = [0.89214026927948, 0.0, 0.5, 0.0, 1.0, 1.0, 0.5, 0.0]
-
-# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-fxaaDisplay.OpacityTransferFunction.Points = [0.89214026927948, 0.0, 0.5, 0.0, 1.0, 1.0, 0.5, 0.0]
-
-# ----------------------------------------------------------------
-# setup color maps and opacity mapes used in the visualization
-# note: the Get..() functions create a new object, if needed
-# ----------------------------------------------------------------
-
-# get opacity transfer function/opacity map for 'FXAA'
-fXAAPWF = GetOpacityTransferFunction('FXAA')
-
-# get opacity transfer function/opacity map for 'Elevation'
-elevationPWF = GetOpacityTransferFunction('Elevation')
-elevationPWF.ScalarRangeInitialized = 1
+passArrays1Display.Representation = 'Slice'
+passArrays1Display.ColorArrayName = ['POINTS', 'FXAA']
+passArrays1Display.MapScalars = 0
 
 # ----------------------------------------------------------------
 # finally, restore active source
-SetActiveView(renderView2)
-SetActiveSource(fxaa)
 # ----------------------------------------------------------------
+
+SetActiveSource(passArrays1)
