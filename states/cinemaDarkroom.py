@@ -1,32 +1,39 @@
+#### import the simple module from the paraview
 from paraview.simple import *
-
 #### disable automatic camera reset on 'Show'
 paraview.simple._DisableFirstRenderCameraReset()
 
+# get the material library
+materialLibrary1 = GetMaterialLibrary()
+
 # Create a new 'Render View'
 renderView1 = CreateView('RenderView')
-renderView1.ViewSize = [783, 460]
+renderView1.ViewSize = [735, 551]
 renderView1.AxesGrid = 'GridAxes3DActor'
-renderView1.CenterOfRotation = [0.05099499225616455, 0.007758498191833496, -0.00749649852514267]
 renderView1.StereoType = 'Crystal Eyes'
-renderView1.CameraPosition = [0.7207324836026598, -0.02230270775597941, -0.6569386522300231]
-renderView1.CameraViewUp = [-0.01977908845568779, 0.9991329306701646, -0.036635699942954535]
-renderView1.CameraFocalPoint = [0.08626552246541902, -0.009835400685793486, 0.02561075275148361]
+renderView1.CameraPosition = [1.0398357716009758, -0.01795783025812699, -0.46122550265265816]
+renderView1.CameraFocalPoint = [0.16902173604025894, -0.004361312755364503, 0.018754563656392977]
+renderView1.CameraViewUp = [0.0210861737723549, 0.9997282828918428, 0.009936481357587061]
 renderView1.CameraFocalDisk = 1.0
-renderView1.CameraParallelScale = 0.6342075582553577
+renderView1.BackEnd = 'OSPRay raycaster'
+renderView1.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView2 = CreateView('RenderView')
-renderView2.ViewSize = [783, 459]
+renderView2.ViewSize = [736, 551]
 renderView2.InteractionMode = '2D'
 renderView2.AxesGrid = 'GridAxes3DActor'
 renderView2.OrientationAxesVisibility = 0
-renderView2.CenterOfRotation = [1011.3609848022461, 502.6661043167114, -0.007495880126953125]
+renderView2.CenterOfRotation = [1023.5, 511.5, 0.0]
 renderView2.StereoType = 'Crystal Eyes'
-renderView2.CameraPosition = [1011.203164778182, 456.03516378044503, 4478.569583624059]
-renderView2.CameraFocalPoint = [1011.203164778182, 456.03516378044503, -0.007495880126953125]
+renderView2.CameraPosition = [956.8623929885804, 526.5127215086243, 4420.833889881707]
+renderView2.CameraFocalPoint = [956.8623929885804, 526.5127215086243, 0.0]
 renderView2.CameraFocalDisk = 1.0
-renderView2.CameraParallelScale = 540.7478513266177
+renderView2.CameraParallelScale = 645.8688162225527
+renderView2.BackEnd = 'OSPRay raycaster'
+renderView2.OSPRayMaterialLibrary = materialLibrary1
+
+SetActiveView(None)
 
 # ----------------------------------------------------------------
 # setup view layouts
@@ -34,213 +41,177 @@ renderView2.CameraParallelScale = 540.7478513266177
 
 # create new layout object 'Layout #1'
 layout1 = CreateLayout(name='Layout #1')
-layout1.SplitVertical(0, 0.500000)
-layout1.AssignView(1, renderView1)
-layout1.AssignView(2, renderView2)
+layout1.SplitHorizontal(0, 0.500000)
+layout1.AssignView(1, renderView2)
+layout1.AssignView(2, renderView1)
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
 # ----------------------------------------------------------------
 
 # create a new 'TTK CinemaReader'
-tTKCinemaReader1 = TTKCinemaReader(DatabasePath='GroundWater.cdb')
+cinemaReader = TTKCinemaReader(DatabasePath='GroundWater.cdb')
 
 # create a new 'TTK CinemaQuery'
-tTKCinemaQuery2 = TTKCinemaQuery(InputTable=tTKCinemaReader1)
-tTKCinemaQuery2.SQLStatement = """SELECT * FROM InputTable0
-WHERE Description="Stone"
+cinemaQuery = TTKCinemaQuery(InputTable=cinemaReader)
+cinemaQuery.SQLStatement = """SELECT * FROM InputTable0
+ORDER BY Description
 """
-
 # create a new 'TTK CinemaProductReader'
-tTKCinemaProductReader2 = TTKCinemaProductReader(Input=tTKCinemaQuery2)
-
-# create a new 'TTK CinemaQuery'
-tTKCinemaQuery1 = TTKCinemaQuery(InputTable=tTKCinemaReader1)
-tTKCinemaQuery1.SQLStatement = """SELECT * FROM InputTable0
-WHERE Description="Streamlines"
-"""
-
-# create a new 'TTK CinemaProductReader'
-tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaQuery1)
+cinemaProductReader = TTKCinemaProductReader(Input=cinemaQuery)
 
 # create a new 'Elevation'
-elevation1 = Elevation(Input=tTKCinemaProductReader1)
-elevation1.LowPoint = [0.051649510860443115, -0.13051000237464905, -0.02352450042963028]
-elevation1.HighPoint = [0.051649510860443115, 0.15952299535274506, -0.02352450042963028]
+elevation = Elevation(Input=cinemaProductReader)
+elevation.LowPoint = [-0.3657500147819519, 0.007758498191833496, -0.00749649852514267]
+elevation.HighPoint = [0.467739999294281, 0.007758498191833496, -0.00749649852514267]
 
-# create a new 'Elevation'
-elevation2 = Elevation(Input=tTKCinemaProductReader2)
-elevation2.LowPoint = [-0.3657500147819519, 0.007758498191833496, -0.00749649852514267]
-elevation2.HighPoint = [0.467739999294281, 0.007758498191833496, -0.00749649852514267]
-
-# create CD Camera
-camera = TTKDarkroomCamera()
-camera.Position = renderView1.CameraPosition
-camera.Up = renderView1.CameraViewUp
-camera.Focus = renderView1.CameraFocalPoint
+# create a new 'TTK Darkroom Camera'
+darkroomCamera1 = TTKDarkroomCamera()
+darkroomCamera1.Position = [1.0340093061551408, -0.01662681994245655, -0.47183399527637365]
+darkroomCamera1.Up = [0.0210861737723549, 0.9997282828918428, 0.009936481357587061]
+darkroomCamera1.FocalPoint = [0.1631952705944235, -0.0030303024396940645, 0.008146071032677569]
 
 # create a new 'TTK CinemaImaging'
-tTKCinemaImaging2 = TTKCinemaImaging(Dataset=elevation1,
-    SamplingGrid=camera)
-tTKCinemaImaging2.Resolution = [2048, 1024]
-tTKCinemaImaging2.ProjectionMode = 'Perspective'
-tTKCinemaImaging2.CamAngle = 30.0
-tTKCinemaImaging2.AutoCamNearFar = 0
-tTKCinemaImaging2.CamNearFar = [0.1, 2.0]
-tTKCinemaImaging2.AutoCamFocus = 0
-tTKCinemaImaging2.CamFocus = [0.2, 0.0, 0.0]
+cinemaImaging = TTKCinemaImaging(Dataset=elevation,
+    SamplingGrid=darkroomCamera1)
+cinemaImaging.Resolution = [2048, 1024]
+cinemaImaging.ProjectionMode = 'Perspective'
+cinemaImaging.Angle = 50.0
 
 # create a new 'TTK Extract'
-tTKExtract3 = TTKExtract(Input=tTKCinemaImaging2)
-tTKExtract3.Expression = '0'
-tTKExtract3.OutputType = 'vtkImageData'
-tTKExtract3.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
+extract1 = TTKExtract(Input=cinemaImaging)
+extract1.Expression = '1'
+extract1.OutputType = 'vtkMultiBlockDataSet'
+extract1.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
+extract1.InputArray = ['POINTS', 'Depth']
 
-# create a new 'ttkCinemaDarkroomColorMapping'
-colorMapping2 = TTKDarkroomColorMapping(Input=tTKExtract3)
-colorMapping2.Scalars = ['POINTS', 'Elevation']
-colorMapping2.ColorMap = 'Single'
-colorMapping2.SingleColor = [0.0, 0.6666666666666666, 1.0]
-colorMapping2.NANColor = [1.0, 1.0, 1.0]
-
-# create a new 'TTK CinemaImaging'
-tTKCinemaImaging1 = TTKCinemaImaging(Dataset=elevation2,
-    SamplingGrid=camera)
-tTKCinemaImaging1.Resolution = [2048, 1024]
-tTKCinemaImaging1.ProjectionMode = 'Perspective'
-tTKCinemaImaging1.CamAngle = 30.0
-tTKCinemaImaging1.AutoCamNearFar = 0
-tTKCinemaImaging1.CamNearFar = [0.1, 2.0]
-tTKCinemaImaging1.AutoCamFocus = 0
-tTKCinemaImaging1.CamFocus = [0.2, 0.0, 0.0]
+# create a new 'TTK Darkroom ColorMapping'
+darkroomColorMapping1 = TTKDarkroomColorMapping(Input=extract1)
+darkroomColorMapping1.SingleColor = [0.0, 0.6666666666666666, 1.0]
+darkroomColorMapping1.Scalars = ['POINTS', 'Elevation']
+darkroomColorMapping1.ColorMap = 'Single'
 
 # create a new 'TTK Extract'
-tTKExtract2 = TTKExtract(Input=tTKCinemaImaging1)
-tTKExtract2.Expression = '0'
-tTKExtract2.OutputType = 'vtkImageData'
-tTKExtract2.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
+extract2 = TTKExtract(Input=cinemaImaging)
+extract2.Expression = '0'
+extract2.OutputType = 'vtkMultiBlockDataSet'
+extract2.ImageBounds = [0.0, 255.0, 0.0, 255.0, 0.0, 0.0]
+extract2.InputArray = ['POINTS', 'Depth']
 
-# create a new 'ttkCinemaDarkroomColorMapping'
-colorMapping1 = TTKDarkroomColorMapping(Input=tTKExtract2)
-colorMapping1.Scalars = ['POINTS', 'Elevation']
-colorMapping1.ColorMap = 'OrRd'
-colorMapping1.NANColor = [1.0, 1.0, 1.0]
+# create a new 'TTK Darkroom ColorMapping'
+darkroomColorMapping2 = TTKDarkroomColorMapping(Input=extract2)
+darkroomColorMapping2.Scalars = ['POINTS', 'Elevation']
+darkroomColorMapping2.ColorMap = 'OrRd'
 
-# create a new 'ttkCinemaDarkroomCompositing'
-compositing = TTKDarkroomCompositing(Input=[colorMapping1, colorMapping2])
-compositing.Depth = ['POINTS', 'Depth']
+# create a new 'TTK Darkroom Compositing'
+darkroomCompositing1 = TTKDarkroomCompositing(Input=[darkroomColorMapping1, darkroomColorMapping2])
+darkroomCompositing1.Depth = ['POINTS', 'Depth']
 
-# create a new 'ttkCinemaDarkroomSSAO'
-ssao = TTKDarkroomSSAO(Input=compositing)
-ssao.Depth = ['POINTS', 'Depth']
-ssao.Radius = 0.02
+# create a new 'TTK Darkroom SSAO'
+darkroomSSAO1 = TTKDarkroomSSAO(Input=darkroomCompositing1)
+darkroomSSAO1.Depth = ['POINTS', 'Depth']
 
-# create a new 'ttkCinemaDarkroomSSSAO'
-sssao = TTKDarkroomSSSAO(Input=ssao)
-sssao.Depth = ['POINTS', 'Depth']
-sssao.Samples = 242
-sssao.Radius = 0.1
+# create a new 'TTK Darkroom SSSAO'
+darkroomSSSAO1 = TTKDarkroomSSSAO(Input=darkroomSSAO1)
+darkroomSSSAO1.Depth = ['POINTS', 'Depth']
+darkroomSSSAO1.Samples = 128
+darkroomSSSAO1.Radius = 0.1
 
-# create a new 'ttkCinemaDarkroomIBS'
-ibs = TTKDarkroomIBS(Input=sssao)
-ibs.Color = ['POINTS', 'Diffuse']
-ibs.Depth = ['POINTS', 'Depth']
-ibs.AO = ['POINTS', 'SSSAO']
-ibs.Strength = 2000.0
-ibs.Luminance = 0.78
-ibs.Ambient = 0.2
+# create a new 'TTK Darkroom IBS'
+darkroomIBS1 = TTKDarkroomIBS(Input=darkroomSSSAO1)
+darkroomIBS1.Color = ['POINTS', 'Diffuse']
+darkroomIBS1.Depth = ['POINTS', 'Depth']
+darkroomIBS1.AO = ['POINTS', 'SSSAO']
+darkroomIBS1.Strength = 500.0
+darkroomIBS1.Luminance = 0.1
+darkroomIBS1.Ambient = 0.5
 
-# create a new 'ttkCinemaDarkroomSSDoF'
-ssdof = TTKDarkroomSSDoF(Input=ibs)
-ssdof.Color = ['POINTS', 'IBS']
-ssdof.Depth = ['POINTS', 'Depth']
-ssdof.Radius = 0.1
-ssdof.FocalDepth = 0.91
-ssdof.MaxBlur = 0.32
+# create a new 'TTK Darkroom SSDoF'
+darkroomSSDoF1 = TTKDarkroomSSDoF(Input=darkroomIBS1)
+darkroomSSDoF1.Color = ['POINTS', 'IBS']
+darkroomSSDoF1.Depth = ['POINTS', 'Depth']
+darkroomSSDoF1.Aperture = 0.2
+darkroomSSDoF1.FocalDepth = 0.36
+darkroomSSDoF1.MaxBlur = 0.08
 
-# create a new 'ttkCinemaDarkroomFXAA'
-fxaa = TTKDarkroomFXAA(Input=ssdof)
-fxaa.Color = ['POINTS', 'SSDoF']
+# create a new 'TTK Darkroom FXAA'
+darkroomFXAA1 = TTKDarkroomFXAA(Input=darkroomSSDoF1)
+darkroomFXAA1.Color = ['POINTS', 'SSDoF']
 
-# create a new 'PassArrays'
-passArrays1 = PassArrays(Input=fxaa)
-passArrays1.PointDataArrays = ['Depth', 'Diffuse', 'Elevation', 'FXAA', 'IBS', 'SSAO', 'SSDoF', 'SSSAO']
+# create a new 'TTK Extract'
+extract3 = TTKExtract(Input=darkroomFXAA1)
+extract3.Expression = '0'
+extract3.OutputType = 'vtkImageData'
+extract3.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
+extract3.InputArray = ['POINTS', 'FXAA']
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
 # ----------------------------------------------------------------
 
-# show data from elevation2
-elevation2Display = Show(elevation2, renderView1, 'GeometryRepresentation')
-
-# get color transfer function/color map for 'Elevation'
-elevationLUT = GetColorTransferFunction('Elevation')
-elevationLUT.RGBPoints = [0.0, 1.0, 0.968627, 0.92549, 0.05882349999999992, 0.998155, 0.940946, 0.859054, 0.12156849999999997, 0.996186, 0.911419, 0.788189, 0.18431350000000002, 0.994218, 0.872587, 0.706159, 0.24705899999999992, 0.992249, 0.833218, 0.623483, 0.30980399999999997, 0.992157, 0.784468, 0.570827, 0.372549, 0.992157, 0.735256, 0.519646, 0.43529399999999996, 0.990265, 0.646321, 0.436309, 0.49803921500000004, 0.988297, 0.555771, 0.351665, 0.5607845, 0.963445, 0.476663, 0.316601, 0.6235295000000001, 0.937855, 0.397924, 0.283137, 0.6862745, 0.891119, 0.294195, 0.203537, 0.7490195, 0.843875, 0.189865, 0.12283, 0.8117645, 0.773379, 0.095225, 0.061499, 0.87451, 0.702514, 0.000738, 0.000477, 0.937255, 0.6004, 0.0, 0.0, 1.0, 0.498039, 0.0, 0.0]
-elevationLUT.ColorSpace = 'Lab'
-elevationLUT.ScalarRangeInitialized = 1.0
+# show data from elevation
+elevationDisplay = Show(elevation, renderView1, 'GeometryRepresentation')
 
 # trace defaults for the display properties.
-elevation2Display.Representation = 'Surface'
-elevation2Display.ColorArrayName = ['POINTS', 'Elevation']
-elevation2Display.LookupTable = elevationLUT
-elevation2Display.OSPRayScaleArray = 'Elevation'
-elevation2Display.OSPRayScaleFunction = 'PiecewiseFunction'
-elevation2Display.SelectOrientationVectors = 'Elevation'
-elevation2Display.ScaleFactor = 0.0833490014076233
-elevation2Display.SelectScaleArray = 'Elevation'
-elevation2Display.GlyphType = 'Arrow'
-elevation2Display.GlyphTableIndexArray = 'Elevation'
-elevation2Display.GaussianRadius = 0.004167450070381165
-elevation2Display.SetScaleArray = ['POINTS', 'Elevation']
-elevation2Display.ScaleTransferFunction = 'PiecewiseFunction'
-elevation2Display.OpacityArray = ['POINTS', 'Elevation']
-elevation2Display.OpacityTransferFunction = 'PiecewiseFunction'
-elevation2Display.DataAxesGrid = 'GridAxesRepresentation'
-elevation2Display.PolarAxes = 'PolarAxesRepresentation'
+elevationDisplay.Representation = 'Surface'
+elevationDisplay.ColorArrayName = ['POINTS', '']
+elevationDisplay.OSPRayScaleArray = 'Elevation'
+elevationDisplay.OSPRayScaleFunction = 'PiecewiseFunction'
+elevationDisplay.SelectOrientationVectors = 'Elevation'
+elevationDisplay.ScaleFactor = 0.0833490014076233
+elevationDisplay.SelectScaleArray = 'Elevation'
+elevationDisplay.GlyphType = 'Arrow'
+elevationDisplay.GlyphTableIndexArray = 'Elevation'
+elevationDisplay.GaussianRadius = 0.004167450070381165
+elevationDisplay.SetScaleArray = ['POINTS', 'Elevation']
+elevationDisplay.ScaleTransferFunction = 'PiecewiseFunction'
+elevationDisplay.OpacityArray = ['POINTS', 'Elevation']
+elevationDisplay.OpacityTransferFunction = 'PiecewiseFunction'
+elevationDisplay.DataAxesGrid = 'GridAxesRepresentation'
+elevationDisplay.PolarAxes = 'PolarAxesRepresentation'
+
+# show data from darkroomCamera1
+darkroomCamera1Display = Show(darkroomCamera1, renderView1, 'UnstructuredGridRepresentation')
+
+# trace defaults for the display properties.
+darkroomCamera1Display.Representation = 'Surface'
+darkroomCamera1Display.ColorArrayName = [None, '']
+darkroomCamera1Display.OSPRayScaleArray = 'CamFocalPoint'
+darkroomCamera1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+darkroomCamera1Display.SelectOrientationVectors = 'CamFocalPoint'
+darkroomCamera1Display.ScaleFactor = 0.1
+darkroomCamera1Display.SelectScaleArray = 'CamFocalPoint'
+darkroomCamera1Display.GlyphType = 'Arrow'
+darkroomCamera1Display.GlyphTableIndexArray = 'CamFocalPoint'
+darkroomCamera1Display.GaussianRadius = 0.005
+darkroomCamera1Display.SetScaleArray = ['POINTS', 'CamFocalPoint']
+darkroomCamera1Display.ScaleTransferFunction = 'PiecewiseFunction'
+darkroomCamera1Display.OpacityArray = ['POINTS', 'CamFocalPoint']
+darkroomCamera1Display.OpacityTransferFunction = 'PiecewiseFunction'
+darkroomCamera1Display.DataAxesGrid = 'GridAxesRepresentation'
+darkroomCamera1Display.PolarAxes = 'PolarAxesRepresentation'
+darkroomCamera1Display.ScalarOpacityUnitDistance = 0.0
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-elevation2Display.ScaleTransferFunction.Points = [0.045205097645521164, 0.0, 0.5, 0.0, 0.9571114182472229, 1.0, 0.5, 0.0]
+darkroomCamera1Display.ScaleTransferFunction.Points = [0.0531746282763316, 0.0, 0.5, 0.0, 0.05318225920200348, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-elevation2Display.OpacityTransferFunction.Points = [0.045205097645521164, 0.0, 0.5, 0.0, 0.9571114182472229, 1.0, 0.5, 0.0]
-
-# show data from elevation1
-elevation1Display = Show(elevation1, renderView1, 'GeometryRepresentation')
-
-# trace defaults for the display properties.
-elevation1Display.Representation = 'Surface'
-elevation1Display.AmbientColor = [0.0, 0.6666666666666666, 1.0]
-elevation1Display.ColorArrayName = ['POINTS', '']
-elevation1Display.DiffuseColor = [0.0, 0.6666666666666666, 1.0]
-elevation1Display.LookupTable = elevationLUT
-elevation1Display.OSPRayScaleArray = 'Elevation'
-elevation1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-elevation1Display.SelectOrientationVectors = 'Elevation'
-elevation1Display.ScaleFactor = 0.08308770060539246
-elevation1Display.SelectScaleArray = 'Elevation'
-elevation1Display.GlyphType = 'Arrow'
-elevation1Display.GlyphTableIndexArray = 'Elevation'
-elevation1Display.GaussianRadius = 0.004154385030269623
-elevation1Display.SetScaleArray = ['POINTS', 'Elevation']
-elevation1Display.ScaleTransferFunction = 'PiecewiseFunction'
-elevation1Display.OpacityArray = ['POINTS', 'Elevation']
-elevation1Display.OpacityTransferFunction = 'PiecewiseFunction'
-elevation1Display.DataAxesGrid = 'GridAxesRepresentation'
-elevation1Display.PolarAxes = 'PolarAxesRepresentation'
+darkroomCamera1Display.OpacityTransferFunction.Points = [0.0531746282763316, 0.0, 0.5, 0.0, 0.05318225920200348, 1.0, 0.5, 0.0]
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView2'
 # ----------------------------------------------------------------
 
-# show data from passArrays1
-passArrays1Display = Show(passArrays1, renderView2, 'UniformGridRepresentation')
+# show data from extract3
+extract3Display = Show(extract3, renderView2, 'UniformGridRepresentation')
 
-passArrays1Display.Representation = 'Slice'
-passArrays1Display.ColorArrayName = ['POINTS', 'FXAA']
-passArrays1Display.MapScalars = 0
+# trace defaults for the display properties.
+extract3Display.ColorArrayName = ['POINTS', 'FXAA']
+extract3Display.Representation = 'Slice'
+extract3Display.MapScalars = 0
 
 # ----------------------------------------------------------------
 # finally, restore active source
+SetActiveSource(extract3)
+SetActiveView(renderView2)
 # ----------------------------------------------------------------
-
-SetActiveSource(passArrays1)
