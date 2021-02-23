@@ -88,33 +88,30 @@ SetActiveView(renderView2)
 # ----------------------------------------------------------------
 
 # create a new 'TTK CinemaReader'
-tTKCinemaReader1 = TTKCinemaReader(registrationName='TTKCinemaReader1', DatabasePath='ViscousFingers.cdb')
+ttkCinemaReader1 = TTKCinemaReader(registrationName='TTKCinemaReader1', DatabasePath='ViscousFingers.cdb')
 
 # create a new 'TTK CinemaQuery'
-tTKCinemaQuery1 = TTKCinemaQuery(registrationName='TTKCinemaQuery1', InputTable=tTKCinemaReader1)
-tTKCinemaQuery1.SQLStatement = """SELECT * FROM InputTable0
+ttkCinemaQuery1 = TTKCinemaQuery(registrationName='TTKCinemaQuery1', InputTable=ttkCinemaReader1)
+ttkCinemaQuery1.SQLStatement = """SELECT * FROM InputTable0
 WHERE Sim='run01'
 ORDER BY Time"""
 
 # create a new 'TTK ForEach'
-tTKForEach1 = TTKForEach(registrationName='TTKForEach1', Input=tTKCinemaQuery1)
-tTKForEach1.InputArray = [None, '']
+ttkForEach1 = TTKForEach(registrationName='TTKForEach1', Input=ttkCinemaQuery1)
 
 # create a new 'TTK CinemaProductReader'
-tTKCinemaProductReader1 = TTKCinemaProductReader(registrationName='TTKCinemaProductReader1', Input=tTKForEach1)
+ttkCinemaProductReader1 = TTKCinemaProductReader(registrationName='TTKCinemaProductReader1', Input=ttkForEach1)
 
 # create a new 'TTK Extract'
-tTKExtract1 = TTKExtract(registrationName='TTKExtract1', Input=tTKCinemaProductReader1)
-tTKExtract1.Expression = '0'
-tTKExtract1.OutputType = 'vtkImageData'
-tTKExtract1.ImageBounds = [0.0, 63.0, 0.0, 63.0, 0.0, 63.0]
-tTKExtract1.InputArray = ['POINTS', 'ImageFile']
+ttkExtract1 = TTKExtract(registrationName='TTKExtract1', Input=ttkCinemaProductReader1)
+ttkExtract1.Expression = '0'
+ttkExtract1.OutputType = 'vtkImageData'
+ttkExtract1.ImageExtent = [0, 63, 0, 63, 0, 63]
 
 # create a new 'Clip'
-clip1 = Clip(registrationName='Clip1', Input=tTKExtract1)
+clip1 = Clip(registrationName='Clip1', Input=ttkExtract1)
 clip1.ClipType = 'Plane'
 clip1.HyperTreeGridClipper = 'Plane'
-clip1.Scalars = ['POINTS', 'ImageFile']
 clip1.Value = 38.38161849975586
 
 # init the 'Plane' selected for 'ClipType'
@@ -123,6 +120,7 @@ clip1.ClipType.Normal = [0.0, 0.0, 1.0]
 
 # create a new 'Threshold'
 threshold1 = Threshold(registrationName='Threshold1', Input=clip1)
+threshold1.Scalars = ['POINTS','NONE']
 threshold1.Scalars = ['POINTS', 'ImageFile']
 threshold1.ThresholdRange = [30.0, 2000.0]
 
@@ -130,44 +128,50 @@ threshold1.ThresholdRange = [30.0, 2000.0]
 connectivity1 = Connectivity(registrationName='Connectivity1', Input=threshold1)
 
 # create a new 'TTK TrackingFromOverlap'
-tTKTrackingFromOverlap1 = TTKTrackingFromOverlap(registrationName='TTKTrackingFromOverlap1', Input=connectivity1)
-tTKTrackingFromOverlap1.Labels = 'RegionId'
+ttkTrackingFromOverlap1 = TTKTrackingFromOverlap(registrationName='TTKTrackingFromOverlap1', Input=connectivity1)
+ttkTrackingFromOverlap1.Labels = 'NONE'
+ttkTrackingFromOverlap1.Labels = 'RegionId'
 
 # create a new 'TTK EndFor'
-tTKEndFor1 = TTKEndFor(registrationName='TTKEndFor1', Data=tTKTrackingFromOverlap1,
-    For=tTKForEach1)
+ttkEndFor1 = TTKEndFor(registrationName='TTKEndFor1', Data=ttkTrackingFromOverlap1,
+    For=ttkForEach1)
 
 # create a new 'TTK ArrayEditor'
-tTKArrayEditor1 = TTKArrayEditor(registrationName='TTKArrayEditor1', Target=tTKEndFor1,
+ttkArrayEditor1 = TTKArrayEditor(registrationName='TTKArrayEditor1', Target=ttkEndFor1,
     Source=None)
-tTKArrayEditor1.TargetArray = ['POINTS', 'BranchId']
+ttkArrayEditor1.TargetArray = ['POINTS','NONE']
+ttkArrayEditor1.TargetArray = ['POINTS', 'BranchId']
 
 # create a new 'Calculator'
-calculate_SizeCategory = Calculator(registrationName='Calculate_SizeCategory', Input=tTKEndFor1)
+calculate_SizeCategory = Calculator(registrationName='Calculate_SizeCategory', Input=ttkEndFor1)
 calculate_SizeCategory.ResultArrayName = 'SizeCategory'
 calculate_SizeCategory.Function = 'floor((Size/12000)*3+1)'
 
 # create a new 'TTK PlanarGraphLayout'
-tTKPlanarGraphLayout1 = TTKPlanarGraphLayout(registrationName='TTKPlanarGraphLayout1', Input=calculate_SizeCategory)
-tTKPlanarGraphLayout1.SequenceArray = ['POINTS', 'SequenceIndex']
-tTKPlanarGraphLayout1.UseSizes = 1
-tTKPlanarGraphLayout1.SizeArray = ['POINTS', 'SizeCategory']
-tTKPlanarGraphLayout1.UseBranches = 1
-tTKPlanarGraphLayout1.BranchArray = ['POINTS', 'BranchId']
-tTKPlanarGraphLayout1.LevelArray = ['POINTS', 'SizeCategory']
+ttkPlanarGraphLayout1 = TTKPlanarGraphLayout(registrationName='TTKPlanarGraphLayout1', Input=calculate_SizeCategory)
+ttkPlanarGraphLayout1.UseSequences = 1
+ttkPlanarGraphLayout1.SequenceArray = ['POINTS','NONE']
+ttkPlanarGraphLayout1.SequenceArray = ['POINTS', 'SequenceIndex']
+ttkPlanarGraphLayout1.UseSizes = 1
+ttkPlanarGraphLayout1.SizeArray = ['POINTS','NONE']
+ttkPlanarGraphLayout1.SizeArray = ['POINTS', 'SizeCategory']
+ttkPlanarGraphLayout1.UseBranches = 1
+ttkPlanarGraphLayout1.BranchArray = ['POINTS','NONE']
+ttkPlanarGraphLayout1.BranchArray = ['POINTS', 'BranchId']
 
 # create a new 'Calculator'
-calculate_Position = Calculator(registrationName='Calculate_Position', Input=tTKPlanarGraphLayout1)
+calculate_Position = Calculator(registrationName='Calculate_Position', Input=ttkPlanarGraphLayout1)
 calculate_Position.CoordinateResults = 1
 calculate_Position.Function = 'iHat*SequenceIndex+jHat*Layout_Y*0.4'
 
 # create a new 'TTK MeshGraph'
-tTKMeshGraph1 = TTKMeshGraph(registrationName='TTKMeshGraph1', Input=calculate_Position)
-tTKMeshGraph1.SizeArray = ['POINTS', 'SizeCategory']
-tTKMeshGraph1.SizeScale = 0.3
+ttkMeshGraph1 = TTKMeshGraph(registrationName='TTKMeshGraph1', Input=calculate_Position)
+ttkMeshGraph1.SizeArray = ['POINTS','NONE']
+ttkMeshGraph1.SizeArray = ['POINTS', 'SizeCategory']
+ttkMeshGraph1.SizeScale = 0.3
 
 # create a new 'Calculator'
-calculator_CorrectEdgeOverlap = Calculator(registrationName='Calculator_CorrectEdgeOverlap', Input=tTKMeshGraph1)
+calculator_CorrectEdgeOverlap = Calculator(registrationName='Calculator_CorrectEdgeOverlap', Input=ttkMeshGraph1)
 calculator_CorrectEdgeOverlap.CoordinateResults = 1
 calculator_CorrectEdgeOverlap.Function = 'iHat*coordsX+jHat*coordsY+kHat*(coordsZ+Size/100000)'
 
@@ -175,40 +179,40 @@ calculator_CorrectEdgeOverlap.Function = 'iHat*coordsX+jHat*coordsY+kHat*(coords
 # setup the visualization in view 'renderView1'
 # ----------------------------------------------------------------
 
-# show data from tTKExtract1
-tTKExtract1Display = Show(tTKExtract1, renderView1, 'UniformGridRepresentation')
+# show data from ttkExtract1
+ttkExtract1Display = Show(ttkExtract1, renderView1, 'UniformGridRepresentation')
 
 # trace defaults for the display properties.
-tTKExtract1Display.Representation = 'Outline'
-tTKExtract1Display.ColorArrayName = ['POINTS', '']
-tTKExtract1Display.OSPRayScaleArray = 'ImageFile'
-tTKExtract1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-tTKExtract1Display.SelectOrientationVectors = 'ImageFile'
-tTKExtract1Display.ScaleFactor = 6.300000000000001
-tTKExtract1Display.SelectScaleArray = 'ImageFile'
-tTKExtract1Display.GlyphType = 'Arrow'
-tTKExtract1Display.GlyphTableIndexArray = 'ImageFile'
-tTKExtract1Display.GaussianRadius = 0.315
-tTKExtract1Display.SetScaleArray = ['POINTS', 'ImageFile']
-tTKExtract1Display.ScaleTransferFunction = 'PiecewiseFunction'
-tTKExtract1Display.OpacityArray = ['POINTS', 'ImageFile']
-tTKExtract1Display.OpacityTransferFunction = 'PiecewiseFunction'
-tTKExtract1Display.DataAxesGrid = 'GridAxesRepresentation'
-tTKExtract1Display.PolarAxes = 'PolarAxesRepresentation'
-tTKExtract1Display.ScalarOpacityUnitDistance = 1.7320508075688774
-tTKExtract1Display.OpacityArrayName = [None, '']
-tTKExtract1Display.IsosurfaceValues = [38.38161849975586]
-tTKExtract1Display.SliceFunction = 'Plane'
-tTKExtract1Display.Slice = 31
+ttkExtract1Display.Representation = 'Outline'
+ttkExtract1Display.ColorArrayName = ['POINTS', '']
+ttkExtract1Display.OSPRayScaleArray = 'ImageFile'
+ttkExtract1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+ttkExtract1Display.SelectOrientationVectors = 'ImageFile'
+ttkExtract1Display.ScaleFactor = 6.300000000000001
+ttkExtract1Display.SelectScaleArray = 'ImageFile'
+ttkExtract1Display.GlyphType = 'Arrow'
+ttkExtract1Display.GlyphTableIndexArray = 'ImageFile'
+ttkExtract1Display.GaussianRadius = 0.315
+ttkExtract1Display.SetScaleArray = ['POINTS', 'ImageFile']
+ttkExtract1Display.ScaleTransferFunction = 'PiecewiseFunction'
+ttkExtract1Display.OpacityArray = ['POINTS', 'ImageFile']
+ttkExtract1Display.OpacityTransferFunction = 'PiecewiseFunction'
+ttkExtract1Display.DataAxesGrid = 'GridAxesRepresentation'
+ttkExtract1Display.PolarAxes = 'PolarAxesRepresentation'
+ttkExtract1Display.ScalarOpacityUnitDistance = 1.7320508075688774
+ttkExtract1Display.OpacityArrayName = [None, '']
+ttkExtract1Display.IsosurfaceValues = [38.38161849975586]
+ttkExtract1Display.SliceFunction = 'Plane'
+ttkExtract1Display.Slice = 31
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-tTKExtract1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 76.76323699951172, 1.0, 0.5, 0.0]
+ttkExtract1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 76.76323699951172, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-tTKExtract1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 76.76323699951172, 1.0, 0.5, 0.0]
+ttkExtract1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 76.76323699951172, 1.0, 0.5, 0.0]
 
-# show data from tTKEndFor1
-tTKEndFor1Display = Show(tTKEndFor1, renderView1, 'UnstructuredGridRepresentation')
+# show data from ttkEndFor1
+ttkEndFor1Display = Show(ttkEndFor1, renderView1, 'UnstructuredGridRepresentation')
 
 # get color transfer function/color map for 'BranchId'
 branchIdLUT = GetColorTransferFunction('BranchId')
@@ -228,64 +232,64 @@ branchIdPWF.Points = [0.0, 0.0, 0.5, 0.0, 18.0, 1.0, 0.5, 0.0]
 branchIdPWF.ScalarRangeInitialized = 1
 
 # trace defaults for the display properties.
-tTKEndFor1Display.Representation = 'Surface'
-tTKEndFor1Display.ColorArrayName = ['CELLS', 'BranchId']
-tTKEndFor1Display.LookupTable = branchIdLUT
-tTKEndFor1Display.LineWidth = 4.0
-tTKEndFor1Display.OSPRayScaleArray = 'BranchId'
-tTKEndFor1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-tTKEndFor1Display.SelectOrientationVectors = 'BranchId'
-tTKEndFor1Display.ScaleFactor = 4.69800934791565
-tTKEndFor1Display.SelectScaleArray = 'BranchId'
-tTKEndFor1Display.GlyphType = 'Arrow'
-tTKEndFor1Display.GlyphTableIndexArray = 'BranchId'
-tTKEndFor1Display.GaussianRadius = 0.23490046739578246
-tTKEndFor1Display.SetScaleArray = ['POINTS', 'BranchId']
-tTKEndFor1Display.ScaleTransferFunction = 'PiecewiseFunction'
-tTKEndFor1Display.OpacityArray = ['POINTS', 'BranchId']
-tTKEndFor1Display.OpacityTransferFunction = 'PiecewiseFunction'
-tTKEndFor1Display.DataAxesGrid = 'GridAxesRepresentation'
-tTKEndFor1Display.PolarAxes = 'PolarAxesRepresentation'
-tTKEndFor1Display.ScalarOpacityFunction = branchIdPWF
-tTKEndFor1Display.ScalarOpacityUnitDistance = 20.386356096541355
-tTKEndFor1Display.OpacityArrayName = [None, '']
+ttkEndFor1Display.Representation = 'Surface'
+ttkEndFor1Display.ColorArrayName = ['CELLS', 'BranchId']
+ttkEndFor1Display.LookupTable = branchIdLUT
+ttkEndFor1Display.LineWidth = 4.0
+ttkEndFor1Display.OSPRayScaleArray = 'BranchId'
+ttkEndFor1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+ttkEndFor1Display.SelectOrientationVectors = 'BranchId'
+ttkEndFor1Display.ScaleFactor = 4.69800934791565
+ttkEndFor1Display.SelectScaleArray = 'BranchId'
+ttkEndFor1Display.GlyphType = 'Arrow'
+ttkEndFor1Display.GlyphTableIndexArray = 'BranchId'
+ttkEndFor1Display.GaussianRadius = 0.23490046739578246
+ttkEndFor1Display.SetScaleArray = ['POINTS', 'BranchId']
+ttkEndFor1Display.ScaleTransferFunction = 'PiecewiseFunction'
+ttkEndFor1Display.OpacityArray = ['POINTS', 'BranchId']
+ttkEndFor1Display.OpacityTransferFunction = 'PiecewiseFunction'
+ttkEndFor1Display.DataAxesGrid = 'GridAxesRepresentation'
+ttkEndFor1Display.PolarAxes = 'PolarAxesRepresentation'
+ttkEndFor1Display.ScalarOpacityFunction = branchIdPWF
+ttkEndFor1Display.ScalarOpacityUnitDistance = 20.386356096541355
+ttkEndFor1Display.OpacityArrayName = [None, '']
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-tTKEndFor1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 18.0, 1.0, 0.5, 0.0]
+ttkEndFor1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 18.0, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-tTKEndFor1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 18.0, 1.0, 0.5, 0.0]
+ttkEndFor1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 18.0, 1.0, 0.5, 0.0]
 
-# show data from tTKArrayEditor1
-tTKArrayEditor1Display = Show(tTKArrayEditor1, renderView1, 'UnstructuredGridRepresentation')
+# show data from ttkArrayEditor1
+ttkArrayEditor1Display = Show(ttkArrayEditor1, renderView1, 'UnstructuredGridRepresentation')
 
 # trace defaults for the display properties.
-tTKArrayEditor1Display.Representation = 'Points'
-tTKArrayEditor1Display.ColorArrayName = [None, '']
-tTKArrayEditor1Display.PointSize = 10.0
-tTKArrayEditor1Display.RenderPointsAsSpheres = 1
-tTKArrayEditor1Display.OSPRayScaleArray = 'BranchId'
-tTKArrayEditor1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-tTKArrayEditor1Display.SelectOrientationVectors = 'BranchId'
-tTKArrayEditor1Display.ScaleFactor = 5.462362766265869
-tTKArrayEditor1Display.SelectScaleArray = 'BranchId'
-tTKArrayEditor1Display.GlyphType = 'Arrow'
-tTKArrayEditor1Display.GlyphTableIndexArray = 'BranchId'
-tTKArrayEditor1Display.GaussianRadius = 0.27311813831329346
-tTKArrayEditor1Display.SetScaleArray = ['POINTS', 'BranchId']
-tTKArrayEditor1Display.ScaleTransferFunction = 'PiecewiseFunction'
-tTKArrayEditor1Display.OpacityArray = ['POINTS', 'BranchId']
-tTKArrayEditor1Display.OpacityTransferFunction = 'PiecewiseFunction'
-tTKArrayEditor1Display.DataAxesGrid = 'GridAxesRepresentation'
-tTKArrayEditor1Display.PolarAxes = 'PolarAxesRepresentation'
-tTKArrayEditor1Display.ScalarOpacityUnitDistance = 11.589457544592316
-tTKArrayEditor1Display.OpacityArrayName = [None, '']
+ttkArrayEditor1Display.Representation = 'Points'
+ttkArrayEditor1Display.ColorArrayName = [None, '']
+ttkArrayEditor1Display.PointSize = 10.0
+ttkArrayEditor1Display.RenderPointsAsSpheres = 1
+ttkArrayEditor1Display.OSPRayScaleArray = 'BranchId'
+ttkArrayEditor1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+ttkArrayEditor1Display.SelectOrientationVectors = 'BranchId'
+ttkArrayEditor1Display.ScaleFactor = 5.462362766265869
+ttkArrayEditor1Display.SelectScaleArray = 'BranchId'
+ttkArrayEditor1Display.GlyphType = 'Arrow'
+ttkArrayEditor1Display.GlyphTableIndexArray = 'BranchId'
+ttkArrayEditor1Display.GaussianRadius = 0.27311813831329346
+ttkArrayEditor1Display.SetScaleArray = ['POINTS', 'BranchId']
+ttkArrayEditor1Display.ScaleTransferFunction = 'PiecewiseFunction'
+ttkArrayEditor1Display.OpacityArray = ['POINTS', 'BranchId']
+ttkArrayEditor1Display.OpacityTransferFunction = 'PiecewiseFunction'
+ttkArrayEditor1Display.DataAxesGrid = 'GridAxesRepresentation'
+ttkArrayEditor1Display.PolarAxes = 'PolarAxesRepresentation'
+ttkArrayEditor1Display.ScalarOpacityUnitDistance = 11.589457544592316
+ttkArrayEditor1Display.OpacityArrayName = [None, '']
 
 # init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-tTKArrayEditor1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 100.0, 1.0, 0.5, 0.0]
+ttkArrayEditor1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 100.0, 1.0, 0.5, 0.0]
 
 # init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-tTKArrayEditor1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 100.0, 1.0, 0.5, 0.0]
+ttkArrayEditor1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 100.0, 1.0, 0.5, 0.0]
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView2'
@@ -326,8 +330,8 @@ calculator_CorrectEdgeOverlapDisplay.OpacityTransferFunction.Points = [0.0, 0.0,
 # setup the visualization in view 'spreadSheetView1'
 # ----------------------------------------------------------------
 
-# show data from tTKCinemaQuery1
-tTKCinemaQuery1Display = Show(tTKCinemaQuery1, spreadSheetView1, 'SpreadSheetRepresentation')
+# show data from ttkCinemaQuery1
+ttkCinemaQuery1Display = Show(ttkCinemaQuery1, spreadSheetView1, 'SpreadSheetRepresentation')
 
 # ----------------------------------------------------------------
 # setup color maps and opacity mapes used in the visualization

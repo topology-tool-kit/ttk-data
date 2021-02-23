@@ -78,8 +78,6 @@ elevation1.HighPoint = [0.467739999294281, 0.007758498191833496, -0.007496498525
 # create a new 'TTK Extract'
 ttkExtract4 = TTKExtract(Input=elevation1)
 ttkExtract4.Expression = '0'
-ttkExtract4.ImageBounds = [-0.3657500147819519, 0.467739999294281, -0.17762300372123718, 0.19314000010490417, -0.1894879937171936, 0.17449499666690826]
-ttkExtract4.InputArray = ['POINTS', 'Elevation']
 
 # create a new 'TTK CinemaImaging'
 ttkCinemaImaging1 = TTKCinemaImaging(Dataset=elevation1,
@@ -92,8 +90,6 @@ ttkCinemaImaging1.Angle = 55.0
 ttkExtract2 = TTKExtract(Input=ttkCinemaImaging1)
 ttkExtract2.Expression = '0'
 ttkExtract2.OutputType = 'vtkMultiBlockDataSet'
-ttkExtract2.ImageBounds = [0.0, 255.0, 0.0, 255.0, 0.0, 0.0]
-ttkExtract2.InputArray = ['POINTS', '']
 
 # create a new 'TTK Darkroom ColorMapping'
 ttkDarkroomColorMapping2 = TTKDarkroomColorMapping(Input=ttkExtract2)
@@ -104,8 +100,6 @@ ttkDarkroomColorMapping2.ColorMap = 'OrRd'
 ttkExtract1 = TTKExtract(Input=ttkCinemaImaging1)
 ttkExtract1.Expression = '1'
 ttkExtract1.OutputType = 'vtkMultiBlockDataSet'
-ttkExtract1.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
-ttkExtract1.InputArray = ['POINTS', '']
 
 # create a new 'TTK Darkroom ColorMapping'
 ttkDarkroomColorMapping1 = TTKDarkroomColorMapping(Input=ttkExtract1)
@@ -123,8 +117,6 @@ ttkDarkroomSSAO1.Depth = ['POINTS', 'Depth']
 # create a new 'TTK Extract'
 ttkExtract5 = TTKExtract(Input=elevation1)
 ttkExtract5.Expression = '1'
-ttkExtract5.ImageBounds = [-0.3657500147819519, 0.467739999294281, -0.17762300372123718, 0.19314000010490417, -0.1894879937171936, 0.17449499666690826]
-ttkExtract5.InputArray = ['POINTS', 'Elevation']
 
 # create a new 'TTK Darkroom SSSAO'
 ttkDarkroomSSSAO1 = TTKDarkroomSSSAO(Input=ttkDarkroomSSAO1)
@@ -158,8 +150,7 @@ ttkDarkroomFXAA1.Color = ['POINTS', 'SSDoF']
 ttkExtract3 = TTKExtract(Input=ttkDarkroomFXAA1)
 ttkExtract3.Expression = '0'
 ttkExtract3.OutputType = 'vtkImageData'
-ttkExtract3.ImageBounds = [0.0, 2047.0, 0.0, 1023.0, 0.0, 0.0]
-ttkExtract3.InputArray = ['POINTS', '']
+ttkExtract3.ImageExtent = [0, 2047, 0, 1023, 0, 0]
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
