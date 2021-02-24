@@ -70,27 +70,25 @@ SetActiveView(renderView2)
 viscousFingerscdb = TTKCinemaReader(registrationName='ViscousFingers.cdb', DatabasePath='ViscousFingers.cdb')
 
 # create a new 'TTK CinemaQuery'
-tTKCinemaQuery1 = TTKCinemaQuery(registrationName='TTKCinemaQuery1', InputTable=viscousFingerscdb)
-tTKCinemaQuery1.SQLStatement = """SELECT * FROM InputTable0
+ttkCinemaQuery1 = TTKCinemaQuery(registrationName='TTKCinemaQuery1', InputTable=viscousFingerscdb)
+ttkCinemaQuery1.SQLStatement = """SELECT * FROM InputTable0
 WHERE Sim='run01'
 ORDER BY Time
 LIMIT 100 OFFSET 20"""
 
 # create a new 'TTK ForEach'
-tTKForEach1 = TTKForEach(registrationName='TTKForEach1', Input=tTKCinemaQuery1)
-tTKForEach1.InputArray = ['POINTS', '']
+ttkForEach1 = TTKForEach(registrationName='TTKForEach1', Input=ttkCinemaQuery1)
 
 # create a new 'TTK CinemaProductReader'
-tTKCinemaProductReader1 = TTKCinemaProductReader(registrationName='TTKCinemaProductReader1', Input=tTKForEach1)
+ttkCinemaProductReader1 = TTKCinemaProductReader(registrationName='TTKCinemaProductReader1', Input=ttkForEach1)
 
 # create a new 'Merge Blocks'
-mergeBlocks1 = MergeBlocks(registrationName='MergeBlocks1', Input=tTKCinemaProductReader1)
+mergeBlocks1 = MergeBlocks(registrationName='MergeBlocks1', Input=ttkCinemaProductReader1)
 
 # create a new 'Clip'
 clip1 = Clip(registrationName='Clip1', Input=mergeBlocks1)
 clip1.ClipType = 'Plane'
 clip1.HyperTreeGridClipper = 'Plane'
-clip1.Scalars = ['POINTS', 'ImageFile']
 clip1.Value = 38.38161849975586
 
 # init the 'Plane' selected for 'ClipType'
@@ -99,6 +97,7 @@ clip1.ClipType.Normal = [0.0, 0.0, 1.0]
 
 # create a new 'Threshold'
 threshold2 = Threshold(registrationName='Threshold2', Input=clip1)
+threshold2.Scalars = ['POINTS', 'NONE']
 threshold2.Scalars = ['POINTS', 'ImageFile']
 threshold2.ThresholdRange = [28.0, 2000.0]
 
@@ -106,11 +105,12 @@ threshold2.ThresholdRange = [28.0, 2000.0]
 connectivity2 = Connectivity(registrationName='Connectivity2', Input=threshold2)
 
 # create a new 'TTK BlockAggregator'
-tTKBlockAggregator6 = TTKBlockAggregator(registrationName='TTKBlockAggregator6', Input=connectivity2)
-tTKBlockAggregator6.ForceReset = 1
+ttkBlockAggregator6 = TTKBlockAggregator(registrationName='TTKBlockAggregator6', Input=connectivity2)
+ttkBlockAggregator6.ForceReset = 1
 
 # create a new 'Threshold'
 threshold3 = Threshold(registrationName='Threshold3', Input=clip1)
+threshold3.Scalars = ['POINTS', 'NONE']
 threshold3.Scalars = ['POINTS', 'ImageFile']
 threshold3.ThresholdRange = [32.0, 2000.0]
 
@@ -118,11 +118,12 @@ threshold3.ThresholdRange = [32.0, 2000.0]
 connectivity3 = Connectivity(registrationName='Connectivity3', Input=threshold3)
 
 # create a new 'TTK BlockAggregator'
-tTKBlockAggregator7 = TTKBlockAggregator(registrationName='TTKBlockAggregator7', Input=connectivity3)
-tTKBlockAggregator7.ForceReset = 1
+ttkBlockAggregator7 = TTKBlockAggregator(registrationName='TTKBlockAggregator7', Input=connectivity3)
+ttkBlockAggregator7.ForceReset = 1
 
 # create a new 'Threshold'
 threshold1 = Threshold(registrationName='Threshold1', Input=clip1)
+threshold1.Scalars = ['POINTS', 'NONE']
 threshold1.Scalars = ['POINTS', 'ImageFile']
 threshold1.ThresholdRange = [20.0, 2000.0]
 
@@ -130,57 +131,64 @@ threshold1.ThresholdRange = [20.0, 2000.0]
 connectivity1 = Connectivity(registrationName='Connectivity1', Input=threshold1)
 
 # create a new 'TTK BlockAggregator'
-tTKBlockAggregator5 = TTKBlockAggregator(registrationName='TTKBlockAggregator5', Input=connectivity1)
-tTKBlockAggregator5.ForceReset = 1
+ttkBlockAggregator5 = TTKBlockAggregator(registrationName='TTKBlockAggregator5', Input=connectivity1)
+ttkBlockAggregator5.ForceReset = 1
 
 # create a new 'TTK BlockAggregator'
-tTKBlockAggregator1 = TTKBlockAggregator(registrationName='TTKBlockAggregator1', Input=[tTKBlockAggregator5, tTKBlockAggregator6, tTKBlockAggregator7])
-tTKBlockAggregator1.ForceReset = 1
-tTKBlockAggregator1.FlattenInput = 0
+ttkBlockAggregator1 = TTKBlockAggregator(registrationName='TTKBlockAggregator1', Input=[ttkBlockAggregator5, ttkBlockAggregator6, ttkBlockAggregator7])
+ttkBlockAggregator1.ForceReset = 1
+ttkBlockAggregator1.FlattenInput = 0
 
 # create a new 'TTK ArrayEditor'
-tTKArrayEditor1 = TTKArrayEditor(registrationName='TTKArrayEditor1', Target=tTKBlockAggregator1,
-    Source=tTKCinemaProductReader1)
-tTKArrayEditor1.EditorMode = 'Add Arrays from Source'
-tTKArrayEditor1.TargetAttributeType = 'Field Data'
-tTKArrayEditor1.SourceFieldDataArrays = ['_ttk_IterationInfo']
-tTKArrayEditor1.TargetArray = ['POINTS', 'RegionId']
+ttkArrayEditor1 = TTKArrayEditor(registrationName='TTKArrayEditor1', Target=ttkBlockAggregator1,
+    Source=ttkCinemaProductReader1)
+ttkArrayEditor1.EditorMode = 'Add Arrays from Source'
+ttkArrayEditor1.TargetAttributeType = 'Field Data'
+ttkArrayEditor1.SourceFieldDataArrays = ['_ttk_IterationInfo']
 
 # create a new 'TTK TrackingFromOverlap'
-tTKTrackingFromOverlap1 = TTKTrackingFromOverlap(registrationName='TTKTrackingFromOverlap1', Input=tTKArrayEditor1)
-tTKTrackingFromOverlap1.Labels = 'RegionId'
+ttkTrackingFromOverlap1 = TTKTrackingFromOverlap(registrationName='TTKTrackingFromOverlap1', Input=ttkArrayEditor1)
+ttkTrackingFromOverlap1.Labels = 'NONE'
+ttkTrackingFromOverlap1.Labels = 'RegionId'
 
 # create a new 'TTK EndFor'
-tTKEndFor1 = TTKEndFor(registrationName='TTKEndFor1', Data=tTKTrackingFromOverlap1,
-    For=tTKForEach1)
+ttkEndFor1 = TTKEndFor(registrationName='TTKEndFor1', Data=ttkTrackingFromOverlap1,
+    For=ttkForEach1)
 
 # create a new 'Calculator'
-calculator1 = Calculator(registrationName='Calculator1', Input=tTKEndFor1)
+calculator1 = Calculator(registrationName='Calculator1', Input=ttkEndFor1)
 calculator1.ResultArrayName = 'Size'
 calculator1.Function = 'Size/6000'
 calculator1.ResultArrayType = 'Float'
 
 # create a new 'TTK PlanarGraphLayout'
-tTKPlanarGraphLayout1 = TTKPlanarGraphLayout(registrationName='TTKPlanarGraphLayout1', Input=calculator1)
-tTKPlanarGraphLayout1.SequenceArray = ['POINTS', 'SequenceIndex']
-tTKPlanarGraphLayout1.UseSizes = 1
-tTKPlanarGraphLayout1.SizeArray = ['POINTS', 'Size']
-tTKPlanarGraphLayout1.UseBranches = 1
-tTKPlanarGraphLayout1.BranchArray = ['POINTS', 'BranchId']
-tTKPlanarGraphLayout1.UseLevels = 1
-tTKPlanarGraphLayout1.LevelArray = ['POINTS', 'LevelIndex']
+ttkPlanarGraphLayout1 = TTKPlanarGraphLayout(registrationName='TTKPlanarGraphLayout1', Input=calculator1)
+ttkPlanarGraphLayout1.UseSequences = 1
+ttkPlanarGraphLayout1.SequenceArray = ['POINTS', 'NONE']
+ttkPlanarGraphLayout1.SequenceArray = ['POINTS', 'SequenceIndex']
+ttkPlanarGraphLayout1.UseSizes = 1
+ttkPlanarGraphLayout1.SizeArray = ['POINTS', 'NONE']
+ttkPlanarGraphLayout1.SizeArray = ['POINTS', 'Size']
+ttkPlanarGraphLayout1.UseBranches = 1
+ttkPlanarGraphLayout1.BranchArray = ['POINTS', 'NONE']
+ttkPlanarGraphLayout1.BranchArray = ['POINTS', 'BranchId']
+ttkPlanarGraphLayout1.UseLevels = 1
+ttkPlanarGraphLayout1.LevelArray = ['POINTS', 'NONE']
+ttkPlanarGraphLayout1.LevelArray = ['POINTS', 'LevelIndex']
 
 # create a new 'Calculator'
-calculator2 = Calculator(registrationName='Calculator2', Input=tTKPlanarGraphLayout1)
+calculator2 = Calculator(registrationName='Calculator2', Input=ttkPlanarGraphLayout1)
 calculator2.CoordinateResults = 1
 calculator2.Function = 'iHat*SequenceIndex+jHat*Layout_Y+kHat*LevelIndex'
 
 # create a new 'TTK MeshGraph'
-tTKMeshGraph1 = TTKMeshGraph(registrationName='TTKMeshGraph1', Input=calculator2)
-tTKMeshGraph1.SizeArray = ['POINTS', 'Size']
+ttkMeshGraph1 = TTKMeshGraph(registrationName='TTKMeshGraph1', Input=calculator2)
+ttkMeshGraph1.SizeArray = ['POINTS', 'NONE']
+ttkMeshGraph1.SizeArray = ['POINTS', 'Size']
 
 # create a new 'Threshold'
-threshold5 = Threshold(registrationName='Threshold5', Input=tTKMeshGraph1)
+threshold5 = Threshold(registrationName='Threshold5', Input=ttkMeshGraph1)
+threshold5.Scalars = ['POINTS', 'NONE']
 threshold5.Scalars = ['POINTS', 'LevelIndex']
 threshold5.ThresholdRange = [2.0, 2.0]
 
@@ -190,11 +198,13 @@ calculator3.CoordinateResults = 1
 calculator3.Function = 'coords+kHat*Size/100'
 
 # create a new 'Threshold'
-threshold4 = Threshold(registrationName='Threshold4', Input=tTKMeshGraph1)
+threshold4 = Threshold(registrationName='Threshold4', Input=ttkMeshGraph1)
+threshold4.Scalars = ['POINTS', 'NONE']
 threshold4.Scalars = ['POINTS', 'LevelIndex']
 
 # create a new 'Threshold'
-threshold6 = Threshold(registrationName='Threshold6', Input=tTKMeshGraph1)
+threshold6 = Threshold(registrationName='Threshold6', Input=ttkMeshGraph1)
+threshold6.Scalars = ['POINTS', 'NONE']
 threshold6.Scalars = ['POINTS', 'LevelIndex']
 threshold6.ThresholdRange = [1.0, 1.0]
 
@@ -299,8 +309,8 @@ calculator3Display.OpacityArrayName = [None, '']
 # setup the visualization in view 'renderView2'
 # ----------------------------------------------------------------
 
-# show data from tTKMeshGraph1
-tTKMeshGraph1Display = Show(tTKMeshGraph1, renderView2, 'UnstructuredGridRepresentation')
+# show data from ttkMeshGraph1
+ttkMeshGraph1Display = Show(ttkMeshGraph1, renderView2, 'UnstructuredGridRepresentation')
 
 # get color transfer function/color map for 'LevelIndex'
 levelIndexLUT = GetColorTransferFunction('LevelIndex')
@@ -319,27 +329,27 @@ levelIndexPWF.Points = [0.0, 0.0, 0.5, 0.0, 2.0, 1.0, 0.5, 0.0]
 levelIndexPWF.ScalarRangeInitialized = 1
 
 # trace defaults for the display properties.
-tTKMeshGraph1Display.Representation = 'Surface'
-tTKMeshGraph1Display.ColorArrayName = ['POINTS', 'LevelIndex']
-tTKMeshGraph1Display.LookupTable = levelIndexLUT
-tTKMeshGraph1Display.NonlinearSubdivisionLevel = 3
-tTKMeshGraph1Display.OSPRayScaleArray = 'BranchId'
-tTKMeshGraph1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-tTKMeshGraph1Display.SelectOrientationVectors = 'BranchId'
-tTKMeshGraph1Display.ScaleFactor = 7.800000000000001
-tTKMeshGraph1Display.SelectScaleArray = 'BranchId'
-tTKMeshGraph1Display.GlyphType = 'Arrow'
-tTKMeshGraph1Display.GlyphTableIndexArray = 'BranchId'
-tTKMeshGraph1Display.GaussianRadius = 0.39
-tTKMeshGraph1Display.SetScaleArray = ['POINTS', 'BranchId']
-tTKMeshGraph1Display.ScaleTransferFunction = 'PiecewiseFunction'
-tTKMeshGraph1Display.OpacityArray = ['POINTS', 'BranchId']
-tTKMeshGraph1Display.OpacityTransferFunction = 'PiecewiseFunction'
-tTKMeshGraph1Display.DataAxesGrid = 'GridAxesRepresentation'
-tTKMeshGraph1Display.PolarAxes = 'PolarAxesRepresentation'
-tTKMeshGraph1Display.ScalarOpacityFunction = levelIndexPWF
-tTKMeshGraph1Display.ScalarOpacityUnitDistance = 5.059614262060725
-tTKMeshGraph1Display.OpacityArrayName = [None, '']
+ttkMeshGraph1Display.Representation = 'Surface'
+ttkMeshGraph1Display.ColorArrayName = ['POINTS', 'LevelIndex']
+ttkMeshGraph1Display.LookupTable = levelIndexLUT
+ttkMeshGraph1Display.NonlinearSubdivisionLevel = 3
+ttkMeshGraph1Display.OSPRayScaleArray = 'BranchId'
+ttkMeshGraph1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+ttkMeshGraph1Display.SelectOrientationVectors = 'BranchId'
+ttkMeshGraph1Display.ScaleFactor = 7.800000000000001
+ttkMeshGraph1Display.SelectScaleArray = 'BranchId'
+ttkMeshGraph1Display.GlyphType = 'Arrow'
+ttkMeshGraph1Display.GlyphTableIndexArray = 'BranchId'
+ttkMeshGraph1Display.GaussianRadius = 0.39
+ttkMeshGraph1Display.SetScaleArray = ['POINTS', 'BranchId']
+ttkMeshGraph1Display.ScaleTransferFunction = 'PiecewiseFunction'
+ttkMeshGraph1Display.OpacityArray = ['POINTS', 'BranchId']
+ttkMeshGraph1Display.OpacityTransferFunction = 'PiecewiseFunction'
+ttkMeshGraph1Display.DataAxesGrid = 'GridAxesRepresentation'
+ttkMeshGraph1Display.PolarAxes = 'PolarAxesRepresentation'
+ttkMeshGraph1Display.ScalarOpacityFunction = levelIndexPWF
+ttkMeshGraph1Display.ScalarOpacityUnitDistance = 5.059614262060725
+ttkMeshGraph1Display.OpacityArrayName = [None, '']
 
 # setup the color legend parameters for each legend in this view
 
@@ -357,7 +367,7 @@ levelIndexLUTColorBar.LabelFontSize = 24
 levelIndexLUTColorBar.Visibility = 1
 
 # show color legend
-tTKMeshGraph1Display.SetScalarBarVisibility(renderView2, True)
+ttkMeshGraph1Display.SetScalarBarVisibility(renderView2, True)
 
 # ----------------------------------------------------------------
 # setup color maps and opacity mapes used in the visualization
