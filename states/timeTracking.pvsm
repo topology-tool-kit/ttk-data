@@ -58036,7 +58036,7 @@
         <Domain name="bool" id="18963.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="15872" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="15872" servers="1">
       <Property name="DebugLevel" id="15872.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15872.DebugLevel.range"/>
@@ -58083,7 +58083,7 @@
         <Domain name="bool" id="15872.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="19683" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="19683" servers="1">
       <Property name="DebugLevel" id="19683.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19683.DebugLevel.range"/>
@@ -60155,19 +60155,19 @@
       <Item id="21514" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.16068">
-      <Item id="15861" name="DataAxesGrid" logname="TTKSphereFromPoint1(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
-      <Item id="15920" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
-      <Item id="15931" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
-      <Item id="15942" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
-      <Item id="15953" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
-      <Item id="15964" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
-      <Item id="15975" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
-      <Item id="15986" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
-      <Item id="15997" name="GlyphType" logname="TTKSphereFromPoint1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
-      <Item id="16010" name="OSPRayScaleFunction" logname="TTKSphereFromPoint1(GeometryRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
-      <Item id="16011" name="OpacityTransferFunction" logname="TTKSphereFromPoint1(GeometryRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
-      <Item id="15909" name="PolarAxes" logname="TTKSphereFromPoint1(GeometryRepresentation)/PolarAxes/PolarAxesRepresentation"/>
-      <Item id="16012" name="ScaleTransferFunction" logname="TTKSphereFromPoint1(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
+      <Item id="15861" name="DataAxesGrid" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
+      <Item id="15920" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
+      <Item id="15931" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
+      <Item id="15942" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
+      <Item id="15953" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
+      <Item id="15964" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
+      <Item id="15975" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
+      <Item id="15986" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
+      <Item id="15997" name="GlyphType" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
+      <Item id="16010" name="OSPRayScaleFunction" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
+      <Item id="16011" name="OpacityTransferFunction" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
+      <Item id="15909" name="PolarAxes" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/PolarAxes/PolarAxesRepresentation"/>
+      <Item id="16012" name="ScaleTransferFunction" logname="TTKIcospheresFromPoints1(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.16098">
       <Item id="21515" name="RepresentationAnimationHelper"/>
@@ -60447,19 +60447,19 @@
       <Item id="21530" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19877">
-      <Item id="19672" name="DataAxesGrid" logname="TTKSphereFromPoint2(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
-      <Item id="19731" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
-      <Item id="19742" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
-      <Item id="19753" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
-      <Item id="19764" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
-      <Item id="19775" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
-      <Item id="19786" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
-      <Item id="19797" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
-      <Item id="19808" name="GlyphType" logname="TTKSphereFromPoint2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
-      <Item id="19819" name="OSPRayScaleFunction" logname="TTKSphereFromPoint2(GeometryRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
-      <Item id="19820" name="OpacityTransferFunction" logname="TTKSphereFromPoint2(GeometryRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
-      <Item id="19720" name="PolarAxes" logname="TTKSphereFromPoint2(GeometryRepresentation)/PolarAxes/PolarAxesRepresentation"/>
-      <Item id="19821" name="ScaleTransferFunction" logname="TTKSphereFromPoint2(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
+      <Item id="19672" name="DataAxesGrid" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
+      <Item id="19731" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ArrowSource"/>
+      <Item id="19742" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/ConeSource"/>
+      <Item id="19753" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CubeSource"/>
+      <Item id="19764" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/CylinderSource"/>
+      <Item id="19775" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/LineSource"/>
+      <Item id="19786" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/SphereSource"/>
+      <Item id="19797" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/GlyphSource2D"/>
+      <Item id="19808" name="GlyphType" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/Glyph3DRepresentation/GlyphType/PipelineConnection"/>
+      <Item id="19819" name="OSPRayScaleFunction" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/SurfaceRepresentation/OSPRayScaleFunction/PiecewiseFunction"/>
+      <Item id="19820" name="OpacityTransferFunction" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/PointGaussianRepresentation/OpacityTransferFunction/PiecewiseFunction"/>
+      <Item id="19720" name="PolarAxes" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/PolarAxes/PolarAxesRepresentation"/>
+      <Item id="19821" name="ScaleTransferFunction" logname="TTKIcospheresFromPoints2(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19907">
       <Item id="21531" name="RepresentationAnimationHelper"/>
@@ -60582,10 +60582,10 @@
       <Item id="16568" name="AxesGrid" logname="RenderView2/AxesGrid/GridAxes3DActor"/>
     </ProxyCollection>
     <ProxyCollection name="representations">
-      <Item id="16068" name="GeometryRepresentation1" logname="TTKSphereFromPoint1(GeometryRepresentation)"/>
+      <Item id="16068" name="GeometryRepresentation1" logname="TTKIcospheresFromPoints1(GeometryRepresentation)"/>
       <Item id="17982" name="GeometryRepresentation2" logname="ExtractSurface1(GeometryRepresentation)"/>
       <Item id="18206" name="GeometryRepresentation3" logname="Tube1(GeometryRepresentation)"/>
-      <Item id="19877" name="GeometryRepresentation4" logname="TTKSphereFromPoint2(GeometryRepresentation)"/>
+      <Item id="19877" name="GeometryRepresentation4" logname="TTKIcospheresFromPoints2(GeometryRepresentation)"/>
       <Item id="20581" name="GeometryRepresentation5" logname="ExtractSurface2(GeometryRepresentation)"/>
       <Item id="20805" name="GeometryRepresentation6" logname="Tube2(GeometryRepresentation)"/>
       <Item id="14880" name="StructuredGridRepresentation1" logname="Transform1(StructuredGridRepresentation)"/>
@@ -60625,8 +60625,8 @@
       <Item id="15150" name="TTKPointDataSelector1" logname="TTKPointDataSelector1"/>
       <Item id="18236" name="TTKPointDataSelector2" logname="TTKPointDataSelector2"/>
       <Item id="18963" name="TTKPointDataSelector3" logname="TTKPointDataSelector3"/>
-      <Item id="15872" name="TTKSphereFromPoint1" logname="TTKSphereFromPoint1"/>
-      <Item id="19683" name="TTKSphereFromPoint2" logname="TTKSphereFromPoint2"/>
+      <Item id="15872" name="TTKIcospheresFromPoints1" logname="TTKIcospheresFromPoints1"/>
+      <Item id="19683" name="TTKIcospheresFromPoints2" logname="TTKIcospheresFromPoints2"/>
       <Item id="16588" name="TTKTrackingFromFields1" logname="TTKTrackingFromFields1"/>
       <Item id="14910" name="Tetrahedralize1" logname="Tetrahedralize1"/>
       <Item id="18723" name="Tetrahedralize2" logname="Tetrahedralize2"/>

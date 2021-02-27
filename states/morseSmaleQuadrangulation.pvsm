@@ -50898,7 +50898,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="10957" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="10957" servers="1">
       <Property name="DebugLevel" id="10957.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="10957.DebugLevel.range"/>
@@ -50945,7 +50945,7 @@
         <Domain name="bool" id="10957.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="14455" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="14455" servers="1">
       <Property name="DebugLevel" id="14455.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="14455.DebugLevel.range"/>
@@ -52839,8 +52839,8 @@
       <Item id="9310" name="TTKPersistenceDiagram1"/>
       <Item id="12572" name="TTKQuadrangulationSubdivision1"/>
       <Item id="9070" name="TTKScalarFieldNormalizer1"/>
-      <Item id="10957" name="TTKSphereFromPoint1"/>
-      <Item id="14455" name="TTKSphereFromPoint2"/>
+      <Item id="10957" name="TTKIcospheresFromPoints1"/>
+      <Item id="14455" name="TTKIcospheresFromPoints2"/>
       <Item id="9790" name="TTKTopologicalSimplification1"/>
       <Item id="9550" name="Threshold1"/>
       <Item id="11647" name="Tube1"/>

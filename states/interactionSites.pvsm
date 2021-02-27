@@ -45109,7 +45109,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="22853" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="22853" servers="1">
       <Property name="Debug_DebugLevel" id="22853.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22853.Debug_DebugLevel.range"/>
@@ -45157,7 +45157,7 @@
         <Domain name="range" id="22853.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="17265" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="17265" servers="1">
       <Property name="Debug_DebugLevel" id="17265.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="17265.Debug_DebugLevel.range"/>
@@ -45205,7 +45205,7 @@
         <Domain name="range" id="17265.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="19481" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="19481" servers="1">
       <Property name="Debug_DebugLevel" id="19481.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19481.Debug_DebugLevel.range"/>
@@ -48145,9 +48145,9 @@
       <Item id="16634" name="TTKPersistenceDiagram1"/>
       <Item id="17254" name="TTKScalarFieldCriticalPoints1"/>
       <Item id="18313" name="TTKScalarFieldNormalizer1"/>
-      <Item id="22853" name="TTKSphereFromPoint1"/>
-      <Item id="17265" name="TTKSphereFromPoint3"/>
-      <Item id="19481" name="TTKSphereFromPoint4"/>
+      <Item id="22853" name="TTKIcospheresFromPoints1"/>
+      <Item id="17265" name="TTKIcospheresFromPoints3"/>
+      <Item id="19481" name="TTKIcospheresFromPoints4"/>
       <Item id="16667" name="TTKTopologicalSimplification1"/>
       <Item id="23273" name="Tetrahedralize1" logname="Tetrahedralize1"/>
       <Item id="16645" name="Threshold1"/>

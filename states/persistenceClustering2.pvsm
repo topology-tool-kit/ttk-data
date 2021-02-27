@@ -34860,7 +34860,7 @@
         <Domain name="bool" id="13065.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="16172" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="16172" servers="1">
       <Property name="DebugLevel" id="16172.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16172.DebugLevel.range"/>
@@ -34907,7 +34907,7 @@
         <Domain name="bool" id="16172.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="13752" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="13752" servers="1">
       <Property name="DebugLevel" id="13752.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13752.DebugLevel.range"/>
@@ -34954,7 +34954,7 @@
         <Domain name="bool" id="13752.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="12816" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="12816" servers="1">
       <Property name="DebugLevel" id="12816.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="12816.DebugLevel.range"/>
@@ -35001,7 +35001,7 @@
         <Domain name="bool" id="12816.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="15284" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="15284" servers="1">
       <Property name="DebugLevel" id="15284.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15284.DebugLevel.range"/>
@@ -37886,10 +37886,10 @@
       <Item id="15926" name="TTKGeometrySmoother1"/>
       <Item id="15273" name="TTKMorseSmaleComplex1"/>
       <Item id="13065" name="TTKPersistenceDiagram1"/>
-      <Item id="16172" name="TTKSphereFromPoint1"/>
-      <Item id="13752" name="TTKSphereFromPoint11"/>
-      <Item id="12816" name="TTKSphereFromPoint2"/>
-      <Item id="15284" name="TTKSphereFromPoint3"/>
+      <Item id="16172" name="TTKIcospheresFromPoints1"/>
+      <Item id="13752" name="TTKIcospheresFromPoints11"/>
+      <Item id="12816" name="TTKIcospheresFromPoints2"/>
+      <Item id="15284" name="TTKIcospheresFromPoints3"/>
       <Item id="15262" name="TTKTopologicalSimplification1"/>
       <Item id="12603" name="TableToPoints1"/>
       <Item id="13294" name="Threshold1"/>

@@ -44945,7 +44945,7 @@
         <Domain name="bool" id="12796.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="13957" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="13957" servers="1">
       <Property name="DebugLevel" id="13957.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13957.DebugLevel.range"/>
@@ -47752,7 +47752,7 @@
       <Item id="16832" name="TTKIdentifierRandomizer1"/>
       <Item id="12840" name="TTKMorseSmaleComplex1"/>
       <Item id="12796" name="TTKPersistenceDiagram1"/>
-      <Item id="13957" name="TTKSphereFromPoint1"/>
+      <Item id="13957" name="TTKIcospheresFromPoints1"/>
       <Item id="12829" name="TTKTopologicalSimplification1"/>
       <Item id="12807" name="Threshold1"/>
       <Item id="14385" name="Threshold2"/>

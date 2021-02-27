@@ -44336,7 +44336,7 @@
         <Domain name="bool" id="10592.ShowInsideDomain.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="13412" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="13412" servers="1">
       <Property name="Debug_DebugLevel" id="13412.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13412.Debug_DebugLevel.range"/>
@@ -46737,7 +46737,7 @@
       <Item id="12039" name="TTKGeometrySmoother1"/>
       <Item id="10869" name="TTKMergeandContourTreeFTM1"/>
       <Item id="10592" name="TTKPersistenceDiagram1"/>
-      <Item id="13412" name="TTKSphereFromPoint1"/>
+      <Item id="13412" name="TTKIcospheresFromPoints1"/>
       <Item id="10625" name="TTKTopologicalSimplification1"/>
       <Item id="15893" name="Tetrahedralize1" logname="Tetrahedralize1"/>
       <Item id="10603" name="Threshold1"/>

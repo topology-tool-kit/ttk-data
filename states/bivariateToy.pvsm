@@ -71616,7 +71616,7 @@
         <Domain name="bool" id="19300.With vertex scalars.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="19495" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="19495" servers="1">
       <Property name="DebugLevel" id="19495.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19495.DebugLevel.range"/>
@@ -71663,7 +71663,7 @@
         <Domain name="bool" id="19495.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="21351" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="21351" servers="1">
       <Property name="DebugLevel" id="21351.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21351.DebugLevel.range"/>
@@ -71710,7 +71710,7 @@
         <Domain name="bool" id="21351.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="21709" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="21709" servers="1">
       <Property name="DebugLevel" id="21709.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21709.DebugLevel.range"/>
@@ -71757,7 +71757,7 @@
         <Domain name="bool" id="21709.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="22067" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="22067" servers="1">
       <Property name="DebugLevel" id="22067.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22067.DebugLevel.range"/>
@@ -71804,7 +71804,7 @@
         <Domain name="bool" id="22067.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="22425" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="22425" servers="1">
       <Property name="DebugLevel" id="22425.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22425.DebugLevel.range"/>
@@ -71851,7 +71851,7 @@
         <Domain name="bool" id="22425.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="22783" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="22783" servers="1">
       <Property name="DebugLevel" id="22783.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="22783.DebugLevel.range"/>
@@ -71898,7 +71898,7 @@
         <Domain name="bool" id="22783.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="25917" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="25917" servers="1">
       <Property name="DebugLevel" id="25917.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="25917.DebugLevel.range"/>
@@ -75915,13 +75915,13 @@
       <Item id="22604" name="TTKProjectionFromField8"/>
       <Item id="15837" name="TTKReebSpace1"/>
       <Item id="19300" name="TTKScalarFieldCriticalPoints1"/>
-      <Item id="19495" name="TTKSphereFromPoint1"/>
-      <Item id="21351" name="TTKSphereFromPoint3"/>
-      <Item id="21709" name="TTKSphereFromPoint4"/>
-      <Item id="22067" name="TTKSphereFromPoint5"/>
-      <Item id="22425" name="TTKSphereFromPoint6"/>
-      <Item id="22783" name="TTKSphereFromPoint7"/>
-      <Item id="25917" name="TTKSphereFromPoint8"/>
+      <Item id="19495" name="TTKIcospheresFromPoints1"/>
+      <Item id="21351" name="TTKIcospheresFromPoints3"/>
+      <Item id="21709" name="TTKIcospheresFromPoints4"/>
+      <Item id="22067" name="TTKIcospheresFromPoints5"/>
+      <Item id="22425" name="TTKIcospheresFromPoints6"/>
+      <Item id="22783" name="TTKIcospheresFromPoints7"/>
+      <Item id="25917" name="TTKIcospheresFromPoints8"/>
       <Item id="15630" name="TTKTextureMapFromField1"/>
       <Item id="19105" name="Tetrahedralize1"/>
       <Item id="24295" name="Threshold1"/>

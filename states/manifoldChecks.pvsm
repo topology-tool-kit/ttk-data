@@ -57046,7 +57046,7 @@
         <Domain name="bool" id="10218.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="6589" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="6589" servers="1">
       <Property name="DebugLevel" id="6589.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="6589.DebugLevel.range"/>
@@ -57093,7 +57093,7 @@
         <Domain name="bool" id="6589.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="7419" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="7419" servers="1">
       <Property name="DebugLevel" id="7419.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="7419.DebugLevel.range"/>
@@ -57140,7 +57140,7 @@
         <Domain name="bool" id="7419.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="8457" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="8457" servers="1">
       <Property name="DebugLevel" id="8457.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="8457.DebugLevel.range"/>
@@ -57187,7 +57187,7 @@
         <Domain name="bool" id="8457.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="12286" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="12286" servers="1">
       <Property name="DebugLevel" id="12286.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="12286.DebugLevel.range"/>
@@ -59991,10 +59991,10 @@
       <Item id="6324" name="TTKManifoldCheck1"/>
       <Item id="8192" name="TTKManifoldCheck2"/>
       <Item id="10218" name="TTKManifoldCheck3"/>
-      <Item id="6589" name="TTKSphereFromPoint1"/>
-      <Item id="7419" name="TTKSphereFromPoint2"/>
-      <Item id="8457" name="TTKSphereFromPoint3"/>
-      <Item id="12286" name="TTKSphereFromPoint4"/>
+      <Item id="6589" name="TTKIcospheresFromPoints1"/>
+      <Item id="7419" name="TTKIcospheresFromPoints2"/>
+      <Item id="8457" name="TTKIcospheresFromPoints3"/>
+      <Item id="12286" name="TTKIcospheresFromPoints4"/>
       <Item id="6061" name="Tetrahedralize1"/>
       <Item id="7929" name="Tetrahedralize2"/>
       <Item id="9955" name="Tetrahedralize3"/>

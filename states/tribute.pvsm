@@ -68365,7 +68365,7 @@
         <Domain name="bool" id="14480.ShowInsideDomain.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="20158" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="20158" servers="1">
       <Property name="Debug_DebugLevel" id="20158.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="20158.Debug_DebugLevel.range"/>
@@ -68413,7 +68413,7 @@
         <Domain name="range" id="20158.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="15596" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="15596" servers="1">
       <Property name="Debug_DebugLevel" id="15596.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="15596.Debug_DebugLevel.range"/>
@@ -68461,7 +68461,7 @@
         <Domain name="range" id="15596.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="21089" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="21089" servers="1">
       <Property name="Debug_DebugLevel" id="21089.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21089.Debug_DebugLevel.range"/>
@@ -71898,9 +71898,9 @@
       <Item id="15343" name="TTKIdentifierRandomizer2"/>
       <Item id="14835" name="TTKMorseSmaleComplex2"/>
       <Item id="14480" name="TTKPersistenceDiagram1"/>
-      <Item id="20158" name="TTKSphereFromPoint2"/>
-      <Item id="15596" name="TTKSphereFromPoint3"/>
-      <Item id="21089" name="TTKSphereFromPoint4"/>
+      <Item id="20158" name="TTKIcospheresFromPoints2"/>
+      <Item id="15596" name="TTKIcospheresFromPoints3"/>
+      <Item id="21089" name="TTKIcospheresFromPoints4"/>
       <Item id="14568" name="TTKTopologicalSimplification1"/>
       <Item id="14240" name="Tetrahedralize1"/>
       <Item id="14824" name="Tetrahedralize2"/>

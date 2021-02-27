@@ -44785,7 +44785,7 @@
         <Domain name="bool" id="18242.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="20584" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="20584" servers="1">
       <Property name="DebugLevel" id="20584.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="20584.DebugLevel.range"/>
@@ -46576,7 +46576,7 @@
       <Item id="19688" name="TTKPersistenceDiagram1"/>
       <Item id="20573" name="TTKReebgraphFTR1"/>
       <Item id="18242" name="TTKScalarFieldNormalizer1"/>
-      <Item id="20584" name="TTKSphereFromPoint1"/>
+      <Item id="20584" name="TTKIcospheresFromPoints1"/>
       <Item id="18253" name="TTKTextureMapFromField1"/>
       <Item id="20278" name="TTKTopologicalSimplification1"/>
       <Item id="19983" name="Threshold1"/>

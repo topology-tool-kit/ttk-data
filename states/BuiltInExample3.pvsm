@@ -57611,7 +57611,7 @@
         <Domain name="bool" id="10734.With vertex scalars.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="9328" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="9328" servers="1">
       <Property name="DebugLevel" id="9328.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="9328.DebugLevel.range"/>
@@ -57658,7 +57658,7 @@
         <Domain name="bool" id="9328.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="9729" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="9729" servers="1">
       <Property name="DebugLevel" id="9729.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="9729.DebugLevel.range"/>
@@ -57705,7 +57705,7 @@
         <Domain name="bool" id="9729.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="10528" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="10528" servers="1">
       <Property name="DebugLevel" id="10528.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="10528.DebugLevel.range"/>
@@ -57752,7 +57752,7 @@
         <Domain name="bool" id="10528.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="10929" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="10929" servers="1">
       <Property name="DebugLevel" id="10929.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="10929.DebugLevel.range"/>
@@ -57799,7 +57799,7 @@
         <Domain name="bool" id="10929.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="17660" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="17660" servers="1">
       <Property name="DebugLevel" id="17660.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="17660.DebugLevel.range"/>
@@ -57846,7 +57846,7 @@
         <Domain name="bool" id="17660.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="18394" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="18394" servers="1">
       <Property name="DebugLevel" id="18394.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="18394.DebugLevel.range"/>
@@ -63575,12 +63575,12 @@
       <Item id="10495" name="TTKPersistenceDiagram2"/>
       <Item id="9534" name="TTKScalarFieldCriticalPoints1"/>
       <Item id="10734" name="TTKScalarFieldCriticalPoints2"/>
-      <Item id="9328" name="TTKSphereFromPoint1"/>
-      <Item id="9729" name="TTKSphereFromPoint2"/>
-      <Item id="10528" name="TTKSphereFromPoint3"/>
-      <Item id="10929" name="TTKSphereFromPoint4"/>
-      <Item id="17660" name="TTKSphereFromPoint5"/>
-      <Item id="18394" name="TTKSphereFromPoint6"/>
+      <Item id="9328" name="TTKIcospheresFromPoints1"/>
+      <Item id="9729" name="TTKIcospheresFromPoints2"/>
+      <Item id="10528" name="TTKIcospheresFromPoints3"/>
+      <Item id="10929" name="TTKIcospheresFromPoints4"/>
+      <Item id="17660" name="TTKIcospheresFromPoints5"/>
+      <Item id="18394" name="TTKIcospheresFromPoints6"/>
       <Item id="9339" name="TTKTopologicalSimplification1"/>
       <Item id="10539" name="TTKTopologicalSimplification2"/>
       <Item id="9100" name="Tetrahedralize1"/>

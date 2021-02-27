@@ -46054,7 +46054,7 @@
         <Domain name="bool" id="19817.With vertex scalars.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="18847" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="18847" servers="1">
       <Property name="Debug_DebugLevel" id="18847.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="18847.Debug_DebugLevel.range"/>
@@ -46102,7 +46102,7 @@
         <Domain name="range" id="18847.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="16029" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="16029" servers="1">
       <Property name="Debug_DebugLevel" id="16029.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16029.Debug_DebugLevel.range"/>
@@ -46150,7 +46150,7 @@
         <Domain name="range" id="16029.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="21675" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="21675" servers="1">
       <Property name="Debug_DebugLevel" id="21675.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="21675.Debug_DebugLevel.range"/>
@@ -46198,7 +46198,7 @@
         <Domain name="range" id="21675.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="20012" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="20012" servers="1">
       <Property name="Debug_DebugLevel" id="20012.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="20012.Debug_DebugLevel.range"/>
@@ -50099,10 +50099,10 @@
       <Item id="19585" name="TTKPersistenceDiagram2"/>
       <Item id="15834" name="TTKScalarFieldCriticalPoints1"/>
       <Item id="19817" name="TTKScalarFieldCriticalPoints2"/>
-      <Item id="18847" name="TTKSphereFromPoint1"/>
-      <Item id="16029" name="TTKSphereFromPoint2"/>
-      <Item id="21675" name="TTKSphereFromPoint3"/>
-      <Item id="20012" name="TTKSphereFromPoint4"/>
+      <Item id="18847" name="TTKIcospheresFromPoints1"/>
+      <Item id="16029" name="TTKIcospheresFromPoints2"/>
+      <Item id="21675" name="TTKIcospheresFromPoints3"/>
+      <Item id="20012" name="TTKIcospheresFromPoints4"/>
       <Item id="15635" name="TTKTopologicalSimplification1"/>
       <Item id="19618" name="TTKTopologicalSimplification2"/>
       <Item id="17926" name="Threshold1"/>

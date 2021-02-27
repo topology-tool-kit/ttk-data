@@ -57855,7 +57855,7 @@
         <Domain name="bool" id="4507.ForceInputOffsetScalarField.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="5200" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="5200" servers="1">
       <Property name="DebugLevel" id="5200.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="5200.DebugLevel.range"/>
@@ -57902,7 +57902,7 @@
         <Domain name="bool" id="5200.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="6609" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="6609" servers="1">
       <Property name="DebugLevel" id="6609.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="6609.DebugLevel.range"/>
@@ -57949,7 +57949,7 @@
         <Domain name="bool" id="6609.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="13257" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="13257" servers="1">
       <Property name="DebugLevel" id="13257.DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="13257.DebugLevel.range"/>
@@ -61823,9 +61823,9 @@
       <Item id="12057" name="TTKGeometrySmoother3"/>
       <Item id="8945" name="TTKGeometrySmoother4"/>
       <Item id="4507" name="TTKMorseSmaleComplex1"/>
-      <Item id="5200" name="TTKSphereFromPoint1"/>
-      <Item id="6609" name="TTKSphereFromPoint2"/>
-      <Item id="13257" name="TTKSphereFromPoint3"/>
+      <Item id="5200" name="TTKIcospheresFromPoints1"/>
+      <Item id="6609" name="TTKIcospheresFromPoints2"/>
+      <Item id="13257" name="TTKIcospheresFromPoints3"/>
       <Item id="7328" name="Tetrahedralize1"/>
       <Item id="11874" name="Tetrahedralize2"/>
       <Item id="5370" name="Threshold1"/>

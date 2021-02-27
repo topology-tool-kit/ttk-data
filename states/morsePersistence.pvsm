@@ -24017,7 +24017,7 @@
         </Domain>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="19942" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="19942" servers="1">
       <Property name="Debug_DebugLevel" id="19942.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="19942.Debug_DebugLevel.range"/>
@@ -24065,7 +24065,7 @@
         <Domain name="range" id="19942.ThetaResolution.range"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkSphereFromPoint" id="17677" servers="1">
+    <Proxy group="filters" type="ttkIcospheresFromPoints" id="17677" servers="1">
       <Property name="Debug_DebugLevel" id="17677.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="17677.Debug_DebugLevel.range"/>
@@ -26613,8 +26613,8 @@
       <Item id="18772" name="TTKPersistenceCurve1"/>
       <Item id="16702" name="TTKPersistenceDiagram1"/>
       <Item id="16444" name="TTKScalarFieldSmoother1"/>
-      <Item id="19942" name="TTKSphereFromPoint1"/>
-      <Item id="17677" name="TTKSphereFromPoint2"/>
+      <Item id="19942" name="TTKIcospheresFromPoints1"/>
+      <Item id="17677" name="TTKIcospheresFromPoints2"/>
       <Item id="16735" name="TTKTopologicalSimplification1"/>
       <Item id="20722" name="Tetrahedralize2" logname="Tetrahedralize2"/>
       <Item id="16713" name="Threshold1"/>
