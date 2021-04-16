@@ -10677,11 +10677,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLImageDataReader" id="9103" servers="1">
       <Property name="FileName" id="9103.FileName" number_of_elements="1">
-        <Element index="0" value="/home/pierre/Projects/ttk/ttk-data/naturalImage_original.vti"/>
+        <Element index="0" value="naturalImage_original.vti"/>
         <Domain name="files" id="9103.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="9103.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/pierre/Projects/ttk/ttk-data/naturalImage_original.vti"/>
+        <Element index="0" value="naturalImage_original.vti"/>
       </Property>
       <Property name="TimestepValues" id="9103.TimestepValues"/>
       <Property name="CellArrayInfo" id="9103.CellArrayInfo"/>
@@ -10709,19 +10709,19 @@
     </Proxy>
     <Proxy group="sources" type="ttkTopologicalCompressionReader" id="9743" servers="1">
       <Property name="FileName" id="9743.FileName" number_of_elements="1">
-        <Element index="0" value="/home/pierre/Projects/ttk/ttk-data/naturalImage_persistence10.ttk"/>
+        <Element index="0" value="naturalImage_persistence10.ttk"/>
         <Domain name="files" id="9743.FileName.files"/>
       </Property>
     </Proxy>
     <Proxy group="sources" type="ttkTopologicalCompressionReader" id="10032" servers="1">
       <Property name="FileName" id="10032.FileName" number_of_elements="1">
-        <Element index="0" value="/home/pierre/Projects/ttk/ttk-data/naturalImage_persistence10_zfp50.ttk"/>
+        <Element index="0" value="naturalImage_persistence10_zfp50.ttk"/>
         <Domain name="files" id="10032.FileName.files"/>
       </Property>
     </Proxy>
     <Proxy group="sources" type="ttkTopologicalCompressionReader" id="9454" servers="1">
       <Property name="FileName" id="9454.FileName" number_of_elements="1">
-        <Element index="0" value="/home/pierre/Projects/ttk/ttk-data/naturalImage_zfp50.ttk"/>
+        <Element index="0" value="naturalImage_zfp50.ttk"/>
         <Domain name="files" id="9454.FileName.files"/>
       </Property>
     </Proxy>
