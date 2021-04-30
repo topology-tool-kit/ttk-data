@@ -14,7 +14,7 @@ materialLibrary1 = GetMaterialLibrary()
 
 # Create a new 'Render View'
 renderView1 = CreateView('RenderView')
-renderView1.ViewSize = [678, 402]
+renderView1.ViewSize = [678, 506]
 renderView1.AxesGrid = 'GridAxes3DActor'
 renderView1.StereoType = 'Crystal Eyes'
 renderView1.CameraPosition = [0.055230719568613376, 0.9258039835776175, 5.617192129740201]
@@ -27,7 +27,7 @@ renderView1.OSPRayMaterialLibrary = materialLibrary1
 
 # Create a new 'Render View'
 renderView2 = CreateView('RenderView')
-renderView2.ViewSize = [677, 402]
+renderView2.ViewSize = [677, 506]
 renderView2.AxesGrid = 'GridAxes3DActor'
 renderView2.StereoType = 'Crystal Eyes'
 renderView2.CameraPosition = [-2.1956880750963, 1.1012529795769979, 2.8984371371228597]
@@ -48,67 +48,62 @@ layout1 = CreateLayout(name='Layout #1')
 layout1.SplitHorizontal(0, 0.500000)
 layout1.AssignView(1, renderView1)
 layout1.AssignView(2, renderView2)
-layout1.SetSize(1356, 402)
+layout1.SetSize(1356, 506)
 
 # ----------------------------------------------------------------
 # restore active view
-SetActiveView(renderView1)
+SetActiveView(renderView2)
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
 # setup the data processing pipelines
 # ----------------------------------------------------------------
-
-ttkIcosphere1 = TTKIcosphere(registrationName='TTKIcosphere1')
-ttkIdentifiers1 = TTKIdentifiers(registrationName='TTKIdentifiers1', Input=ttkIcosphere1)
-ttkWebSocketIO1 = TTKWebSocketIO(registrationName='TTKWebSocketIO1', Input=ttkIdentifiers1)
+tTKIcosphere1 = TTKIcosphere(registrationName='TTKIcosphere1')
+generateIds1 = GenerateIds(registrationName='GenerateIds1', Input=tTKIcosphere1)
+tTKWebSocketIO1 = TTKWebSocketIO(registrationName='TTKWebSocketIO1', Input=generateIds1)
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
 # ----------------------------------------------------------------
 
-# show data from ttkIdentifiers1
-ttkIdentifiers1Display = Show(ttkIdentifiers1, renderView1, 'GeometryRepresentation')
+# show data from generateIds1
+generateIds1Display = Show(generateIds1, renderView1, 'GeometryRepresentation')
 
-# get color transfer function/color map for 'ttkVertexScalarField'
-ttkVertexScalarFieldLUT = GetColorTransferFunction('ttkVertexScalarField')
-ttkVertexScalarFieldLUT.RGBPoints = [0.0, 0.231373, 0.298039, 0.752941, 5.5, 0.865003, 0.865003, 0.865003, 11.0, 0.705882, 0.0156863, 0.14902]
-ttkVertexScalarFieldLUT.ScalarRangeInitialized = 1.0
+# get color transfer function/color map for 'PointIds'
+pointIdsLUT = GetColorTransferFunction('PointIds')
+pointIdsLUT.RGBPoints = [0.0, 0.231373, 0.298039, 0.752941, 5.5, 0.865003, 0.865003, 0.865003, 11.0, 0.705882, 0.0156863, 0.14902]
+pointIdsLUT.ScalarRangeInitialized = 1.0
 
 # trace defaults for the display properties.
-ttkIdentifiers1Display.Representation = 'Surface'
-ttkIdentifiers1Display.ColorArrayName = ['POINTS', 'ttkVertexScalarField']
-ttkIdentifiers1Display.LookupTable = ttkVertexScalarFieldLUT
-ttkIdentifiers1Display.SelectTCoordArray = 'None'
-ttkIdentifiers1Display.SelectNormalArray = 'None'
-ttkIdentifiers1Display.SelectTangentArray = 'None'
-ttkIdentifiers1Display.OSPRayScaleArray = 'ttkVertexScalarField'
-ttkIdentifiers1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-ttkIdentifiers1Display.SelectOrientationVectors = 'None'
-ttkIdentifiers1Display.ScaleFactor = 0.17013015747070315
-ttkIdentifiers1Display.SelectScaleArray = 'None'
-ttkIdentifiers1Display.GlyphType = 'Arrow'
-ttkIdentifiers1Display.GlyphTableIndexArray = 'None'
-ttkIdentifiers1Display.GaussianRadius = 0.008506507873535156
-ttkIdentifiers1Display.SetScaleArray = ['POINTS', 'ttkVertexScalarField']
-ttkIdentifiers1Display.ScaleTransferFunction = 'PiecewiseFunction'
-ttkIdentifiers1Display.OpacityArray = ['POINTS', 'ttkVertexScalarField']
-ttkIdentifiers1Display.OpacityTransferFunction = 'PiecewiseFunction'
-ttkIdentifiers1Display.DataAxesGrid = 'GridAxesRepresentation'
-ttkIdentifiers1Display.PolarAxes = 'PolarAxesRepresentation'
-
-# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-ttkIdentifiers1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 11.0, 1.0, 0.5, 0.0]
-
-# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-ttkIdentifiers1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 11.0, 1.0, 0.5, 0.0]
+generateIds1Display.Representation = 'Surface'
+generateIds1Display.ColorArrayName = ['POINTS', 'PointIds']
+generateIds1Display.LookupTable = pointIdsLUT
+generateIds1Display.SelectTCoordArray = 'None'
+generateIds1Display.SelectNormalArray = 'None'
+generateIds1Display.SelectTangentArray = 'None'
+generateIds1Display.OSPRayScaleArray = 'ttkVertexScalarField'
+generateIds1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+generateIds1Display.SelectOrientationVectors = 'None'
+generateIds1Display.ScaleFactor = 0.17013015747070315
+generateIds1Display.SelectScaleArray = 'None'
+generateIds1Display.GlyphType = 'Arrow'
+generateIds1Display.GlyphTableIndexArray = 'None'
+generateIds1Display.GaussianRadius = 0.008506507873535156
+generateIds1Display.SetScaleArray = ['POINTS', 'ttkVertexScalarField']
+generateIds1Display.ScaleTransferFunction = 'PiecewiseFunction'
+generateIds1Display.OpacityArray = ['POINTS', 'ttkVertexScalarField']
+generateIds1Display.OpacityTransferFunction = 'PiecewiseFunction'
+generateIds1Display.DataAxesGrid = 'GridAxesRepresentation'
+generateIds1Display.PolarAxes = 'PolarAxesRepresentation'
+generateIds1Display.ScaleTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 11.0, 1.0, 0.5, 0.0]
+generateIds1Display.OpacityTransferFunction.Points = [0.0, 0.0, 0.5, 0.0, 11.0, 1.0, 0.5, 0.0]
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView2'
 # ----------------------------------------------------------------
 
-# show data from ttkWebSocketIO1
-ttkWebSocketIO1Display = Show(ttkWebSocketIO1, renderView2, 'UnstructuredGridRepresentation')
+# show data from tTKWebSocketIO1
+tTKWebSocketIO1Display = Show(tTKWebSocketIO1, renderView2, 'UnstructuredGridRepresentation')
 
 # get color transfer function/color map for 'ExamplePointDataArray'
 examplePointDataArrayLUT = GetColorTransferFunction('ExamplePointDataArray')
@@ -121,43 +116,30 @@ examplePointDataArrayPWF.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
 examplePointDataArrayPWF.ScalarRangeInitialized = 1
 
 # trace defaults for the display properties.
-ttkWebSocketIO1Display.Representation = 'Surface'
-ttkWebSocketIO1Display.ColorArrayName = ['POINTS', 'ExamplePointDataArray']
-ttkWebSocketIO1Display.LookupTable = examplePointDataArrayLUT
-ttkWebSocketIO1Display.SelectTCoordArray = 'None'
-ttkWebSocketIO1Display.SelectNormalArray = 'None'
-ttkWebSocketIO1Display.SelectTangentArray = 'None'
-ttkWebSocketIO1Display.OSPRayScaleArray = 'ExamplePointDataArray'
-ttkWebSocketIO1Display.OSPRayScaleFunction = 'PiecewiseFunction'
-ttkWebSocketIO1Display.SelectOrientationVectors = 'None'
-ttkWebSocketIO1Display.ScaleFactor = 0.2
-ttkWebSocketIO1Display.SelectScaleArray = 'ExamplePointDataArray'
-ttkWebSocketIO1Display.GlyphType = 'Arrow'
-ttkWebSocketIO1Display.GlyphTableIndexArray = 'ExamplePointDataArray'
-ttkWebSocketIO1Display.GaussianRadius = 0.01
-ttkWebSocketIO1Display.SetScaleArray = ['POINTS', 'ExamplePointDataArray']
-ttkWebSocketIO1Display.ScaleTransferFunction = 'PiecewiseFunction'
-ttkWebSocketIO1Display.OpacityArray = ['POINTS', 'ExamplePointDataArray']
-ttkWebSocketIO1Display.OpacityTransferFunction = 'PiecewiseFunction'
-ttkWebSocketIO1Display.DataAxesGrid = 'GridAxesRepresentation'
-ttkWebSocketIO1Display.PolarAxes = 'PolarAxesRepresentation'
-ttkWebSocketIO1Display.ScalarOpacityFunction = examplePointDataArrayPWF
-ttkWebSocketIO1Display.ScalarOpacityUnitDistance = 1.774768329877785
-ttkWebSocketIO1Display.OpacityArrayName = ['POINTS', 'ExamplePointDataArray']
-ttkWebSocketIO1Display.ExtractedBlockIndex = 1
+tTKWebSocketIO1Display.Representation = 'Surface'
+tTKWebSocketIO1Display.ColorArrayName = ['POINTS', 'ExamplePointDataArray']
+tTKWebSocketIO1Display.LookupTable = examplePointDataArrayLUT
+tTKWebSocketIO1Display.SelectTCoordArray = 'None'
+tTKWebSocketIO1Display.SelectNormalArray = 'None'
+tTKWebSocketIO1Display.SelectTangentArray = 'None'
+tTKWebSocketIO1Display.OSPRayScaleArray = 'ExamplePointDataArray'
+tTKWebSocketIO1Display.OSPRayScaleFunction = 'PiecewiseFunction'
+tTKWebSocketIO1Display.SelectOrientationVectors = 'None'
+tTKWebSocketIO1Display.ScaleFactor = 0.2
+tTKWebSocketIO1Display.SelectScaleArray = 'ExamplePointDataArray'
+tTKWebSocketIO1Display.GlyphType = 'Arrow'
+tTKWebSocketIO1Display.GlyphTableIndexArray = 'ExamplePointDataArray'
+tTKWebSocketIO1Display.GaussianRadius = 0.01
+tTKWebSocketIO1Display.SetScaleArray = ['POINTS', 'ExamplePointDataArray']
+tTKWebSocketIO1Display.ScaleTransferFunction = 'PiecewiseFunction'
+tTKWebSocketIO1Display.OpacityArray = ['POINTS', 'ExamplePointDataArray']
+tTKWebSocketIO1Display.OpacityTransferFunction = 'PiecewiseFunction'
+tTKWebSocketIO1Display.DataAxesGrid = 'GridAxesRepresentation'
+tTKWebSocketIO1Display.PolarAxes = 'PolarAxesRepresentation'
+tTKWebSocketIO1Display.ScalarOpacityFunction = examplePointDataArrayPWF
+tTKWebSocketIO1Display.ScalarOpacityUnitDistance = 1.774768329877785
+tTKWebSocketIO1Display.OpacityArrayName = ['POINTS', 'ExamplePointDataArray']
+tTKWebSocketIO1Display.ExtractedBlockIndex = 1
+tTKWebSocketIO1Display.ScaleTransferFunction.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
+tTKWebSocketIO1Display.OpacityTransferFunction.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
 
-# init the 'PiecewiseFunction' selected for 'ScaleTransferFunction'
-ttkWebSocketIO1Display.ScaleTransferFunction.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
-
-# init the 'PiecewiseFunction' selected for 'OpacityTransferFunction'
-ttkWebSocketIO1Display.OpacityTransferFunction.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
-
-# ----------------------------------------------------------------
-# setup color maps and opacity mapes used in the visualization
-# note: the Get..() functions create a new object, if needed
-# ----------------------------------------------------------------
-
-# get opacity transfer function/opacity map for 'ttkVertexScalarField'
-ttkVertexScalarFieldPWF = GetOpacityTransferFunction('ttkVertexScalarField')
-ttkVertexScalarFieldPWF.Points = [0.0, 0.0, 0.5, 0.0, 11.0, 1.0, 0.5, 0.0]
-ttkVertexScalarFieldPWF.ScalarRangeInitialized = 1
