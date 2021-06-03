@@ -63,7 +63,7 @@ def main(gen_ref=False, only_comp=False):
             threshold = THRESHOLD
             if img.name == "harmonicSkeleton_1.png":
                 # Reeb Graph depends on non stable Harmonic Field output
-                threshold = 50
+                threshold = 150
             out_im = pathlib.Path(f"{OUTPUT_DIR}/{img.name}")
             if not out_im.exists():
                 print(f"{out_im} does not exists, skipping...")
