@@ -4,6 +4,7 @@ import argparse
 import multiprocessing
 import os
 import pathlib
+import resource
 import time
 
 from paraview import simple
@@ -40,7 +41,13 @@ def run_one(state_file, dest):
     {".pvsm": process_pvsm, ".py": process_py}[state_file.suffix](state_file, dest)
 
     duration = round(time.time() - start_time, 3)
-    print(f"Processed {state_file.name} (took {duration}s)")
+    mem = round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1000)
+    # pretty-print memory usage
+    if mem > 1000:
+        mem = f"{round(mem / 1000, 2)} GB"
+    else:
+        mem = f"{mem} MB"
+    print(f"Processed {state_file.name} (took {duration} s, {mem})")
 
 
 def run_all(dest):
