@@ -72,6 +72,9 @@ def main(gen_ref=False, only_comp=False):
             if not ident:
                 print(f"Error for {img.name}: {err}")
                 passed = False
+            elif not only_comp:
+                # keep only the modified screenshots
+                out_im.unlink()
 
         if passed:
             print("Validation passed!")
