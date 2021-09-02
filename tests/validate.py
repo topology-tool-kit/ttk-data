@@ -39,7 +39,7 @@ def compare_screenshots(png0, png1, threshold):
     return (True, err)
 
 
-def main(gen_ref=False, only_comp=False):
+def main(gen_ref=False, only_comp=False, keep_identical=False):
     # change working directory to ttk-data root folder
     p = pathlib.Path(os.path.realpath(__file__)).parents[1]
     os.chdir(p)
@@ -72,6 +72,9 @@ def main(gen_ref=False, only_comp=False):
             if not ident:
                 print(f"Error for {img.name}: {err}")
                 passed = False
+            elif not keep_identical:
+                # keep only the modified screenshots
+                out_im.unlink()
 
         if passed:
             print("Validation passed!")
@@ -93,6 +96,12 @@ if __name__ == "__main__":
         action="store_true",
         help="Only compare already generated screenshots",
     )
+    parser.add_argument(
+        "-k",
+        "--keep_identical",
+        action="store_true",
+        help="Keep generated screenshots that are identical to reference",
+    )
     args = parser.parse_args()
 
-    main(args.generate_reference, args.only_compare)
+    main(args.generate_reference, args.only_compare, args.keep_identical)
