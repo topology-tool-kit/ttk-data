@@ -39,3 +39,4 @@ As a consequence, to reproduce the current reference, the following is required:
   `-DPARAVIEW_USE_QT=OFF -DVTK_USE_X=OFF -DVTK_OPENGL_HAS_OSMESA=ON`)
 * a GCC11-built TTK
 * a pip-installed Scikit-Learn
+* see [the automatic test yml script](https://github.com/topology-tool-kit/ttk/blob/dev/.github/workflows/test.yml) for installation examples.
