@@ -21,22 +21,25 @@ To generate a new reference, use `python3 validate.py -r`. Please note
 that the reference is dependent on the following factors:
 * to be independent of the display resolution, an offscreen ParaView
   renderer (OSMesa on Linux) is recommended.
-* the C++ random generator used in the TTKIdentifierRandomizer filter
-  to color segmentations in several states is dependent on the
-  compiler version. The current reference has been generated with
-  GCC11 (not compatible with neither Clang nor GCC≤10).
+* macOS'offscreen renderer has some inconsistencies with Linux'.
+* Windows segfaults during offscreen rendering.
 * the TTKDimensionReduction filter ouput depends on the version of the
   Scikit-learn Python package. Please use a recent Scikit-learn (use
   pip on Ubuntu, the system package on ArchLinux).
-* The HarmonicSkeleton state file depends on the
+* the HarmonicSkeleton state file depends on the
   `Eigen::ConjugateGradient` iterative solver, which is
   non-deterministic. The image comparison threshold has been increased
   for this state file accordingly.
+* some filters, such as FTMTree, may have a non-deterministic output
+  when used in a highly parallel context. Reducing the parallelism by
+  setting UseAllCores to `false` in the affected state files might be
+  necessary to ensure a deterministic output.
 
 As a consequence, to reproduce the current reference, the following is required:
 * a Linux OS
 * an OSMesa installation of ParaView (configured with
   `-DPARAVIEW_USE_QT=OFF -DVTK_USE_X=OFF -DVTK_OPENGL_HAS_OSMESA=ON`)
-* a GCC11-built TTK
 * a pip-installed Scikit-Learn
-* see [the automatic test yml script](https://github.com/topology-tool-kit/ttk/blob/dev/.github/workflows/test.yml) for installation examples.
+* see [the automatic test yml
+  script](https://github.com/topology-tool-kit/ttk/blob/dev/.github/workflows/test.yml)
+  for installation examples.

@@ -13279,8 +13279,8 @@
     <ProxyCollection name="views">
       <Item id="15265" name="Original" logname="RenderView1"/>
       <Item id="15793" name="TDA (p=10%)" logname="RenderView3"/>
-      <Item id="16057" name="TDA (p=10%) + ZFP (tol=50)" logname="RenderView4"/>
-      <Item id="15529" name="ZFP (tol=50)" logname="RenderView2"/>
+      <Item id="16057" name="TDA (p=10%) + ZFP (tol=50%)" logname="RenderView4"/>
+      <Item id="15529" name="ZFP (tol=50%)" logname="RenderView2"/>
     </ProxyCollection>
     <CustomProxyDefinitions/>
     <Links>
