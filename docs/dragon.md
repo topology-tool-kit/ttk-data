@@ -20,7 +20,7 @@ The simplified persistence diagram is then used as a constraint for the [Topolog
 This simplified data is then used as the input of the computation of [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) and the [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) (bottom left view, above screenshot).
 
 ## ParaView
-To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
+To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
 $ paraview states/dragon.pvsm
 ```
