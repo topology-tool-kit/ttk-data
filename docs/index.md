@@ -3,7 +3,7 @@
 This website hosts a list of data analysis pipelines exemplifying the usage of [TTK](https://topology-tool-kit.github.io/) with
 [ParaView](http://paraview.org) and its Python API `pvpython`.
 
-The website is targeting novice users would are not power users of [ParaView](http://paraview.org) but who would like to get started with topological data analysis with [TTK](https://topology-tool-kit.github.io/) in Python.
+This website is targeting novice users who are not power users of [ParaView](http://paraview.org) but who would like to get started with topological data analysis with [TTK](https://topology-tool-kit.github.io/) in Python.
 
 Each example includes:
 
