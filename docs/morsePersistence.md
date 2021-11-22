@@ -1,4 +1,4 @@
-# Dragon example
+# Morse persistence example
 
 <!--[![Dragon example video tutorial](https://topology-tool-kit.github.io/img/gallery/dragon.jpg)](https://youtu.be/YVk9vRKIEX8)-->
 
