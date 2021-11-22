@@ -1,7 +1,20 @@
 site_name: TTK Examples
 
+#theme:
+    #name: material
+    #palette:
+      #primary: indigo
+      #scheme: default
+
 theme:
-    name: material
+  name: material
+  palette: #
+    #- scheme: slate #
+      primary: teal
+      accent: teal
+      #display.background_color: grey
+      #background-color: grey
+
 
 markdown_extensions:
     - attr_list
