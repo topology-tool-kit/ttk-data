@@ -54,7 +54,7 @@ Please find below generic recommendations for setting up your fork of TTK's data
 - Edit the automatically generated (and verbose) script:
   - Insert the following line at the top: `#!/usr/bin/env python`
   - After the line `from paraview.simple import *`, remove all the lines *before* and *after* the section entitled ```#setup the data processing pipelines``` (see the automatically generated comments). The main idea here is to provide a minimalist and simple Python script which only includes the loading of the input data and the key steps of the data analysis pipeline.
-  - Insert new lines at the end of the script to store the outputs of the pipeline with `SaveData()`.
+  - Insert new lines at the end of the script to store the outputs of the pipeline with `SaveData()` (see other pre-existing Python scripts).
 
 ## c. MkDocs file
 - This file should be located in the `docs/` directory and have the same name as the state file and the Python script, but with the `md` extension (instead of `pvsm` or `py`).
