@@ -53,7 +53,7 @@ Please find below generic recommendations for setting up your fork of TTK's data
   - Once the state file is opened in ParaView, click on `File`, `Save State...` and make sure to select the entry `Python state file (*.py)` from the extension drop down menu.
 - Edit the automatically generated (and verbose) script:
   - Insert the following line at the top: `#!/usr/bin/env python`
-  - After the line `from paraview.simple import *`, remove all the lines *before* and *after* the section entitled ```#setup the data processing pipelines``` (see the automatically generated comments). The main idea is to provide a minimalist and simple Python script which only includes the loading of the input data and the key steps of the data analysis pipeline.
+  - After the line `from paraview.simple import *`, remove all the lines *before* and *after* the section entitled ```#setup the data processing pipelines``` (see the automatically generated comments). The main idea here is to provide a minimalist and simple Python script which only includes the loading of the input data and the key steps of the data analysis pipeline.
   - Insert new lines at the end of the script to store the outputs of the pipeline with `SaveData()`.
 
 ## c. MkDocs file
