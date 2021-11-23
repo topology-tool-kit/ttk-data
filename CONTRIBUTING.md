@@ -69,4 +69,5 @@ Please find below generic recommendations for setting up your fork of TTK's data
   - A quick description of the pipeline outputs
   - Pointers to the Doxygen documentation of all the TTK filters involved in the example.
   - Note that the output webpage can be visualized locally by entering the command `mkdocs serve` in the [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory.
-- In the three cases (`pvsm` state file, `py` script, MkDocs entry), we invite you to checkout the other examples already included in [ttk-data](https://github.com/topology-tool-kit/ttk-data) for inspiration.
+
+In the three cases (`pvsm` state file, `py` script, MkDocs entry), we invite you to checkout the other examples already included in [ttk-data](https://github.com/topology-tool-kit/ttk-data) for inspiration.
