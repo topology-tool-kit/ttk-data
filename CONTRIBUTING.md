@@ -36,7 +36,7 @@ Please find below generic recommendations for setting up your fork of TTK's data
     - When this feature is ready to be made public (e.g. after publication of the corresponding research), push the corresponding branch to your `@FORK`. This will enable you to open a pull-request (PR) to the [TTK's data repository](https://github.com/topology-tool-kit/ttk-data).
 
 # 1. Adding a new data set
-- If you add a new data set to the repository, please update its the README file by describing its provenance.
+- If you add a new data set to the repository, please update the README file by adding an entry for the data set, specifying its provenance.
 
 # 2. Adding a new example
 - If you develop some new features in TTK (either by creating a new module or extending an existing one), we strongly invite you to produce an entry in the [ttk-data](https://github.com/topology-tool-kit/ttk-data) repository (by pull request). Each entry should be provided as follows:
