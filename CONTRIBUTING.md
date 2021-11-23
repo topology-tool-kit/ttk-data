@@ -45,7 +45,7 @@ Please find below generic recommendations for setting up your fork of TTK's data
 
 ## a. ParaView `pvsm` state file
 - Please add the new state file in the `states/` directory.
-- Modify any full path to the input files to make them relative.
+- Edit the state file with a text editor and modify any full path to the input files to make them relative.
 
 ## b. Python script
 - This file should be located in the `python/` directory and have the same name as the state file, but with the `py` extension instead of the `pvsm` extension.
