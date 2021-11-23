@@ -9,7 +9,7 @@ allowfullscreen></iframe>
 ## Pipeline description
 This example first loads a triangle mesh from disk.
 In a pre-processing, the mesh is smoothed and an elevation function is computed on top of it.
-The elevation function will be considered as the input scalar data in the remainder
+The elevation function will be considered as the input scalar data in the remainder.
 
 Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) is computed and thresholds are applied base on persistence to maintain only the most persistent features. This results in a simplified persistence diagram (bottom right view in the above screenshot).
 
