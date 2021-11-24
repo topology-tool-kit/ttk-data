@@ -22,18 +22,6 @@ tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=elevation)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Elevation']
 
 # create a new 'Threshold'
-diagonal = Threshold(Input=tTKPersistenceDiagram1)
-diagonal.Scalars = ['CELLS', 'PairIdentifier']
-diagonal.ThresholdRange = [-1.0, -0.1]
-
-# create a new 'Extract Surface'
-extractSurface1 = ExtractSurface(Input=diagonal)
-
-# create a new 'Tube'
-tube1 = Tube(Input=extractSurface1)
-tube1.Scalars = ['POINTS', 'CriticalType']
-
-# create a new 'Threshold'
 pairs = Threshold(Input=tTKPersistenceDiagram1)
 pairs.Scalars = ['CELLS', 'PairIdentifier']
 pairs.ThresholdRange = [0.0, 1000.0]
@@ -56,31 +44,10 @@ tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'Elevation']
 tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tTKScalarFieldCriticalPoints1)
 tTKIcospheresFromPoints2.Radius = 1.5
 
-# create a new 'Clean to Grid'
-cleantoGrid1 = CleantoGrid(Input=tTKTopologicalSimplification1)
-
-# create a new 'Extract Surface'
-extractSurface3 = ExtractSurface(Input=cleantoGrid1)
-
-# create a new 'Generate Surface Normals'
-generateSurfaceNormals1 = GenerateSurfaceNormals(Input=extractSurface3)
-
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKContourTree1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKContourTree1.ScalarField = ['POINTS', 'Elevation']
 tTKContourTree1.ArcSampling = 30
-
-# create a new 'Extract Surface'
-extractSurface2 = ExtractSurface(Input=persistenceThreshold)
-
-# create a new 'Tube'
-tube2 = Tube(Input=extractSurface2)
-tube2.Scalars = ['POINTS', 'CriticalType']
-tube2.Radius = 0.893286056518555
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=persistenceThreshold)
-tTKIcospheresFromPoints1.Radius = 1.5
 
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother2 = TTKGeometrySmoother(Input=OutputPort(tTKContourTree1,1))
@@ -91,7 +58,6 @@ extractSurface4 = ExtractSurface(Input=tTKGeometrySmoother2)
 
 # create a new 'Tube'
 tube4 = Tube(Input=extractSurface4)
-tube4.Scalars = ['POINTS', 'RegularMask']
 tube4.NumberofSides = 12
 tube4.Radius = 0.75
 
