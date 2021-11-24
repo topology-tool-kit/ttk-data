@@ -10,7 +10,10 @@ Each example includes:
 - a screenshot (or a tutorial video)
 - a short description
 - the command line to reproduce the example with [ParaView](http://paraview.org)
-- the corresponding Python code (to process the input data and store the output of the analysis pipeline to disk)
+- the corresponding Python code, to:
+    - load the input data 
+    - execute the analysis pipeline
+    - store the output to disk (for later analysis or visualization, e.g. with [ParaView](http://paraview.org))
 - a description of the inputs and outputs
 - pointers to the corresponding C++/Python documentation
 
