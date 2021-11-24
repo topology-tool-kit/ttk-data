@@ -40,10 +40,6 @@ tTKTopologicalSimplification1.ScalarField = ['POINTS', 'Elevation']
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=tTKTopologicalSimplification1)
 tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'Elevation']
 
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tTKScalarFieldCriticalPoints1)
-tTKIcospheresFromPoints2.Radius = 1.5
-
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKContourTree1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKContourTree1.ScalarField = ['POINTS', 'Elevation']
