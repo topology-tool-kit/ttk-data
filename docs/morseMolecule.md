@@ -1,6 +1,6 @@
 # Morse molecule example
 
-<!--[![Dragon example video tutorial](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg)](https://youtu.be/Rdsfkb6SpK8)-->
+<!--[![Morse molecule example video tutorial](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg)](https://youtu.be/Rdsfkb6SpK8)-->
 
 <iframe width="100%" height="420"
 src="https://www.youtube.com/embed/Rdsfkb6SpK8" frameborder="0"
