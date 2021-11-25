@@ -3,7 +3,7 @@
 from paraview.simple import *
 
 # create a new 'XML Image Data Reader'
-isabelvti = XMLImageDataReader(registrationName='isabel.vti', FileName=['isabel.vti'])
+isabelvti = XMLImageDataReader(FileName=['isabel.vti'])
 
 all_JT_group = []
 all_ST_group = []
