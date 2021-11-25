@@ -40,7 +40,7 @@ mt_JT_all = GroupDatasets(Input=all_JT_group)
 mT_all = GroupDatasets(Input=all_ST_group)
 
 # create a new 'TTK MergeTreeClustering'
-tTKMergeTreeClustering1 = TTKMergeTreeClustering(registrationName='TTKMergeTreeClustering1', Input=mT_all,
+tTKMergeTreeClustering1 = TTKMergeTreeClustering(Input=mT_all,
     OptionalInputclustering=mt_JT_all)
 tTKMergeTreeClustering1.ComputeBarycenter = 1
 tTKMergeTreeClustering1.NumberOfClusters = 3
@@ -53,40 +53,25 @@ tTKMergeTreeClustering1.MinimumNumberofImportantPairs = 2
 tTKMergeTreeClustering1.ImportantPairsSpacing = 15.0
 tTKMergeTreeClustering1.NonImportantPairsProximity = 0.15
 
-# create a new 'Extract Block'
-arcs = ExtractBlock(registrationName='Arcs', Input=tTKMergeTreeClustering1)
-arcs.BlockIndices = [15, 33, 12, 27, 24, 9, 6, 21, 18, 36, 3, 30]
-
-# find source
-tTKMergeTreeClustering1_1 = FindSource('TTKMergeTreeClustering1')
-
-# create a new 'Extract Block'
-arcs_1 = ExtractBlock(registrationName='Arcs', Input=OutputPort(tTKMergeTreeClustering1_1,1))
-arcs_1.BlockIndices = [9, 6, 3]
-
-# create a new 'Extract Block'
-nodes = ExtractBlock(registrationName='Nodes', Input=OutputPort(tTKMergeTreeClustering1_1,1))
-nodes.BlockIndices = [8, 5, 2]
-
 # create a new 'Group Datasets'
-groupDatasets14 = GroupDatasets(registrationName='GroupDatasets14', Input=[tTKMergeTreeClustering1, OutputPort(tTKMergeTreeClustering1_1,1)])
+groupDatasets14 = GroupDatasets(Input=[tTKMergeTreeClustering1, OutputPort(tTKMergeTreeClustering1,1)])
 
 # create a new 'TTK FlattenMultiBlock'
-tTKFlattenMultiBlock2 = TTKFlattenMultiBlock(registrationName='TTKFlattenMultiBlock2', Input=groupDatasets14)
+tTKFlattenMultiBlock2 = TTKFlattenMultiBlock(Input=groupDatasets14)
 
 # create a new 'TTK MergeTreeDistanceMatrix'
-tTKMergeTreeDistanceMatrix2 = TTKMergeTreeDistanceMatrix(registrationName='TTKMergeTreeDistanceMatrix2', Input=tTKFlattenMultiBlock2)
+tTKMergeTreeDistanceMatrix2 = TTKMergeTreeDistanceMatrix(Input=tTKFlattenMultiBlock2)
 tTKMergeTreeDistanceMatrix2.PersistenceThreshold = 2.0
 
 # create a new 'TTK DimensionReduction'
-tTKDimensionReduction2 = TTKDimensionReduction(registrationName='TTKDimensionReduction2', Input=tTKMergeTreeDistanceMatrix2,
+tTKDimensionReduction2 = TTKDimensionReduction(Input=tTKMergeTreeDistanceMatrix2,
     ModulePath='default')
 tTKDimensionReduction2.InputColumns = ['Tree00', 'Tree01', 'Tree02', 'Tree03', 'Tree04', 'Tree05', 'Tree06', 'Tree07', 'Tree08', 'Tree09', 'Tree10', 'Tree11', 'Tree12', 'Tree13', 'Tree14']
 tTKDimensionReduction2.InputIsaDistanceMatrix = 1
 tTKDimensionReduction2.UseAllCores = 0
 
 # create a new 'Table To Points'
-tableToPoints1 = TableToPoints(registrationName='TableToPoints1', Input=tTKDimensionReduction2)
+tableToPoints1 = TableToPoints(Input=tTKDimensionReduction2)
 tableToPoints1.XColumn = 'Component_0'
 tableToPoints1.YColumn = 'Component_1'
 tableToPoints1.ZColumn = 'Component_0'
@@ -94,27 +79,27 @@ tableToPoints1.a2DPoints = 1
 tableToPoints1.KeepAllDataArrays = 1
 
 # create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(registrationName='TTKIcospheresFromPoints1', Input=tableToPoints1)
+tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=tableToPoints1)
 tTKIcospheresFromPoints1.Radius = 0.4
 
 # create a new 'Threshold'
-threshold33 = Threshold(registrationName='Threshold33', Input=tTKIcospheresFromPoints1)
+threshold33 = Threshold(Input=tTKIcospheresFromPoints1)
 threshold33.Scalars = ['POINTS', 'treeID']
 threshold33.ThresholdRange = [0.0, 11.0]
 
 # create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(registrationName='TTKIcospheresFromPoints2', Input=tableToPoints1)
+tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tableToPoints1)
 tTKIcospheresFromPoints2.Radius = 0.8
 
 # create a new 'Extract Block'
-nodes_1 = ExtractBlock(registrationName='Nodes', Input=tTKMergeTreeClustering1)
+nodes_1 = ExtractBlock(Input=tTKMergeTreeClustering1)
 nodes_1.BlockIndices = [14, 29, 8, 11, 26, 5, 20, 32, 23, 35, 2, 17]
 
 # create a new 'Threshold'
-threshold34 = Threshold(registrationName='Threshold34', Input=tTKIcospheresFromPoints2)
+threshold34 = Threshold(Input=tTKIcospheresFromPoints2)
 threshold34.Scalars = ['POINTS', 'treeID']
 threshold34.ThresholdRange = [12.0, 14.0]
 
 # save the output
-SaveData('MDS_trees.vtp', threshold33)
-SaveData('MDS_centroids.vtp', threshold34)
+SaveData('MDS_trees.vtu', threshold33)
+SaveData('MDS_centroids.vtu', threshold34)
