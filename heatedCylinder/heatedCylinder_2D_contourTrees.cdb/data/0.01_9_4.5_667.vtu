@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <UnstructuredGrid>
+    <FieldData>
+      <DataArray type="Float64" Name="persistence" NumberOfTuples="1" format="appended" RangeMin="0.01"                 RangeMax="0.01"                 offset="0"                   >
+      </DataArray>
+      <DataArray type="Float64" Name="sim" NumberOfTuples="1" format="appended" RangeMin="9"                    RangeMax="9"                    offset="48"                  >
+      </DataArray>
+      <DataArray type="Float64" Name="time" NumberOfTuples="1" format="appended" RangeMin="4.5"                  RangeMax="4.5"                  offset="92"                  >
+      </DataArray>
+      <DataArray type="Float64" Name="TimeValue" NumberOfTuples="1" format="appended" RangeMin="667"                  RangeMax="667"                  offset="136"                 >
+      </DataArray>
+      <Array type="String" Name="FILE" NumberOfTuples="1" format="appended" offset="180"                 />
+    </FieldData>
+    <Piece NumberOfPoints="40"                   NumberOfCells="39"                  >
+      <PointData>
+        <DataArray type="Float32" Name="Scalar" format="appended" RangeMin="0"                    RangeMax="0.76178991795"        offset="332"                 >
+        </DataArray>
+        <DataArray type="Int8" Name="ttkMaskScalarField" format="appended" RangeMin="0"                    RangeMax="0"                    offset="584"                 >
+        </DataArray>
+      </PointData>
+      <CellData Scalars="SegmentationId">
+        <DataArray type="Int32" Name="SegmentationId" format="appended" RangeMin="0"                    RangeMax="38"                   offset="624"                 >
+        </DataArray>
+        <DataArray type="Int32" Name="upNodeId" format="appended" RangeMin="0"                    RangeMax="39"                   offset="748"                 >
+        </DataArray>
+        <DataArray type="Int32" Name="downNodeId" format="appended" RangeMin="1"                    RangeMax="39"                   offset="872"                 >
+        </DataArray>
+        <DataArray type="Int32" Name="RegionSize" format="appended" RangeMin="1"                    RangeMax="7008"                 offset="1000"                >
+        </DataArray>
+        <DataArray type="Float64" Name="RegionSpan" format="appended" RangeMin="1"                    RangeMax="137.29530218"         offset="1176"                >
+        </DataArray>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="appended" RangeMin="47"                   RangeMax="188.35073666"         offset="1552"                >
+          <InformationKey name="L2_NORM_FINITE_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              47
+            </Value>
+            <Value index="1">
+              188.35073666
+            </Value>
+          </InformationKey>
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              47
+            </Value>
+            <Value index="1">
+              188.35073666
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="1836"                />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="2044"                />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="2188"                />
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+  <AppendedData encoding="base64">
+   _AQAAAACAAAAIAAAAEAAAAA==eNqrFlnn/rCqxR4AEBwDow==AQAAAACAAAAIAAAADQAAAA==eNpjYAABJQcAAIwAYw==AQAAAACAAAAIAAAADQAAAA==eNpjYAABIQcAAGwAUw==AQAAAACAAAAIAAAADgAAAA==eNpjYACCGy0OAAPYAZ0=AQAAAACAAABkAAAAXgAAAA==eNotyjsKgDAQRVE3pJMIFtZuwT7EzEOFfCQZFV29IlaXA5eWFEAn5IYv5KS2fp1jQBTDViwtsAIeLr9GRm7ZuBQl7XnMQHkRNg9B43ii79e9Vqr7Y1RzyF49eygjiQ==AQAAAACAAACgAAAAqwAAAA==eNoBoABf/+CY5z6qBEM/65kuP5sNFD+8gRw/6WcXPyCdAj+psQ8/9ITAPjtwyD43UlE+F6OuPul6UD5l3Kw+ku5NPnGqWD4AAAAA/M1MPU6IAjoJsC099ucUOhwDvDwb69U6HzPuOvPq7zxGDSY7fLoiPNjoiD0ni4885esFPeHdpzygcbE9rQS/PLNoHj73ROE8Z3VXPsHMRT39buQ9vkymPsQMTT0yj0WGAQAAAACAAAAoAAAADAAAAA==eNpjYCAOAAAAKAABAQAAAACAAACcAAAASgAAAA==eNolwwsSgVAAAMAnEX1UKCER5f5HbGfamf2HEGYnf34d/fh2CKuNkVtjd+5NPHg0NfNl78nCp6UPa6/m3my9W9l59mLjAvfEAuY=AQAAAACAAACcAAAASgAAAA==eNotzEkKgAAMwMC674qIIIiIiPr/H5pDDnNoaRMRkSJDgRI1WvQYMWPBqs15x4ETF248SJB796HyrrH1ur9tdDYG/yd7P8nQAw8=AQAAAACAAACcAAAATAAAAA==eNotzTkKgEAUBNE/IIiIuDvOuO/3v6EVdPCSDrqcmTkkkiJDjgIlKjToMMAjIGLGih0nbrz66dHqb9S+4EKtxqfOpNaGAw9+0zADMw==AQAAAACAAACcAAAAcAAAAA==eNoTZmRg8GBgYGCBYg4gZgViJSDWAGKgNMMfJgaGtcIMDL85GRjKoOIOQCwGlVcAYlUgdgNiZiD+B9VvAjTIiIeBIR3I3gk0wwVIJ0gzMOgB2fxAjTpAvqA0xM4PQMt5gfR3oNw6oFwHkAYAQeEMTQ==AQAAAACAAAA4AQAABwEAAA==eNqLrvzu9t1Zz+GBoE3uuQx1hxVfps8uf8zowAABDjdz7p8p+yEA5YvA+ajiH+xbNK38b6i7OET+z7h48rafA4/Zxe3XJV0d3vN6fvxsrO1wYVei/QN5BYdyZs9ihUWqDpZ3kjfvD5FwOGtdnzZvwTf7P++SM42vSkH5Yg6LFm/mfRokDnfP8/zdvfP7zaD2qTjol+V/mpdl7PA46mXzLLVIB8f2pGNG95QcPmgq+3RKqjh8jkx00b4h4yAS0itbrJno0Pr+M1/JCVeI/gYgbfu2T+V/tIOT6PO207vioOZyOERDwwPC13LI8b0qJ6xq73DyxRXfNKY4h9MpBxRTGN0dAC/yeQw=AQAAAACAAADgAQAAwQAAAA==eNpjYGhzYmAQdWYAgy4gWwXKrgGyuZDY55wg7AYgfckJIX4Kif0Iyi4A0i+g7Awg/QnKrgDSP5DMiYCyQW7wgbJLkMQzkMQTgLQGElsFyV4RKNsGSoPAHyCbB+r+eUD2CajcCUcGBkWoOA9Q7ANU3AHJzSD7OaFqLIBsDii7B8i+4oQIq29Q9jQg/QXKTkFSn4BkTh+Se2YhiYPUq0HZIUC2EpS9wAnhzlVI8QIy8xmSO18ghe0/KHsLPBwAIHg4NQ==AQAAAACAAABwAgAAigAAAA==eNp10csOgjAQRuF6q4iIouINERWB939DFx4XnsTZfOmftpnMhPCpUfitMU5wqvMMI84xwQWmuMQMV5jjGjdY4BZ3uMcSDzof8YRnvb9ghVes8YYN3vGBT2zxhR32mmPU3Er19+1r0Pyi7tX6P1FeqK9e+aB9tMor7SdV3mhfmfJOc8r/5G9NOgYzAQAAAACAAAA4AQAAWAAAAA==eNotxdEGgwAAAMAkM5PJzGQyM5lJMslkkmQmM/3/5/TQ3cuFwSryxlvvHHvvxAcffXLqszNffPXNue9+uHDpyk/Xbvxy67c79x48+uOvJ//89+wFm5YGGQ==AQAAAACAAAAnAAAADAAAAA==eNpjZiYKAAAJSwB2
+  </AppendedData>
+</VTKFile>

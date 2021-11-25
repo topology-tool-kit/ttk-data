@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian" header_type="UInt32" compressor="vtkZLibDataCompressor">
+  <UnstructuredGrid>
+    <FieldData>
+      <DataArray type="Float64" Name="persistence" NumberOfTuples="1" format="appended" RangeMin="0.01"                 RangeMax="0.01"                 offset="0"                   >
+      </DataArray>
+      <DataArray type="Float64" Name="sim" NumberOfTuples="1" format="appended" RangeMin="19"                   RangeMax="19"                   offset="48"                  >
+      </DataArray>
+      <DataArray type="Float64" Name="time" NumberOfTuples="1" format="appended" RangeMin="4.4"                  RangeMax="4.4"                  offset="92"                  >
+      </DataArray>
+      <DataArray type="Float64" Name="TimeValue" NumberOfTuples="1" format="appended" RangeMin="667"                  RangeMax="667"                  offset="136"                 >
+      </DataArray>
+      <Array type="String" Name="FILE" NumberOfTuples="1" format="appended" offset="180"                 />
+    </FieldData>
+    <Piece NumberOfPoints="36"                   NumberOfCells="35"                  >
+      <PointData>
+        <DataArray type="Float32" Name="Scalar" format="appended" RangeMin="0"                    RangeMax="0.77141457796"        offset="332"                 >
+        </DataArray>
+        <DataArray type="Int8" Name="ttkMaskScalarField" format="appended" RangeMin="0"                    RangeMax="0"                    offset="564"                 >
+        </DataArray>
+      </PointData>
+      <CellData Scalars="SegmentationId">
+        <DataArray type="Int32" Name="SegmentationId" format="appended" RangeMin="0"                    RangeMax="34"                   offset="604"                 >
+        </DataArray>
+        <DataArray type="Int32" Name="upNodeId" format="appended" RangeMin="0"                    RangeMax="35"                   offset="720"                 >
+        </DataArray>
+        <DataArray type="Int32" Name="downNodeId" format="appended" RangeMin="1"                    RangeMax="35"                   offset="840"                 >
+        </DataArray>
+        <DataArray type="Int32" Name="RegionSize" format="appended" RangeMin="1"                    RangeMax="7239"                 offset="960"                 >
+        </DataArray>
+        <DataArray type="Float64" Name="RegionSpan" format="appended" RangeMin="1"                    RangeMax="128.31601615"         offset="1124"                >
+        </DataArray>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="appended" RangeMin="44.283179651"         RangeMax="210"                  offset="1480"                >
+          <InformationKey name="L2_NORM_FINITE_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              44.283179651
+            </Value>
+            <Value index="1">
+              210
+            </Value>
+          </InformationKey>
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              44.283179651
+            </Value>
+            <Value index="1">
+              210
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="1740"                />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="1932"                />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="2064"                />
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+  <AppendedData encoding="base64">
+   _AQAAAACAAAAIAAAAEAAAAA==eNqrFlnn/rCqxR4AEBwDow==AQAAAACAAAAIAAAADQAAAA==eNpjYAABYwcAAK4AdA==AQAAAACAAAAIAAAADQAAAA==eNqbNRMEBB0AFCsD6Q==AQAAAACAAAAIAAAADgAAAA==eNpjYACCGy0OAAPYAZ0=AQAAAACAAABkAAAAXgAAAA==eNotyksOQDAURmEb4koxMLYF86Z6/9CkD6mLsHoiRidfcmhJAXRCbviNrJTGuzkGRNFsxNACI+Dh8i4ysmJtU5S05zED24uweggqyxN9f9t1faP+6Lo6ZC8efHwjoQ==AQAAAACAAACQAAAAmwAAAA==eNoBkABv//RY2j5te0U/8THlPlp/Nz/bjQQ/Ad4ZP5eUDT+Hmhc/hFcSP9+vUD7xVa4+E2BQPnzgrD6QDU4+rspYPgAAAAAR0kw9JTFGObkq1jwkTgA6UckmPfuHOjv++hY8IIcaPBgmCT1opiI8jZKdPVXYQDyIpIs9wETCPHYXUD4U8Mk8pPEjPubaoz0v59g9uQRNPRJcOX4=AQAAAACAAAAkAAAACwAAAA==eNpjYCAMAAAkAAE=AQAAAACAAACMAAAAQwAAAA==eNolwwcOgkAAALATARFZ4mSP/z+SJjTpHkLYXF2cnRwdwuli5NXYxNSbmXdzfxaW/q3sfNj79mvj09qPL1sPsZgCVA==AQAAAACAAACMAAAASAAAAA==eNpNy0EKgDAMBdFYtWrVUqSLIiJF739HZ/GFLh4hJGNm5jDAY8aCFTsSDuRmFpy4cKPiwaTbi1Ftr73Tf1C7qfn7iA+XnAJ4AQAAAACAAACMAAAARgAAAA==eNotzUkKgDAUBNEfRAQRpzibwej972gtevG2Vc7MKtRopEWHHgMmeKzYsOPEjYiMosaMRc0DDqOan7oBCZceLx78lQQCdg==AQAAAACAAACMAAAAaQAAAA==eNrTYWRg8GNgYOAFYlYg5gJiJSDWAGKgFIMJMwODFDcDQxU/A0MmkJ8ClWMCYm0gdoDy2YFYGIir2BgYjgDVqgHZ3tIMDJJA+h7QIGugOe4yEH3NTBCzbVgYGIBKGayAcjFAAQASnghVAQAAAACAAAAYAQAA+AAAAA==eNqLrvzu9t1Zz6HrMbuU+F4Nh883VyzJ6BJ1YAADDgfLO8mb94dIONzMuX+m7IcAnIbIf7BvuxucMmO2k8ML/nrjs0puDjuEv3xYOjUMqk/DwcVq7voLrGYO7G/Xp/HXKTicta5Pm7fgm33BkbmWvWVyUHNE0GgOB49VWv2W4moOK75Mn13+2NDh3vQlYvMWhTjcM7n1z89Py8Fg24Ov8owJDg6GX0++arZw2CJkw5DlHuhwOuWAYgpjuINK8tOzMlwJcPMgtJ3D973tLZcXRDlsuh37eFq7rsPqxmWXzK7GOoQl3Hx7VNjVYabgx7LsQ7EOAGdla9g=AQAAAACAAACwAQAAsQAAAA==eNpjYGhxYmAQcmYAgw4gWxHKLgGyvzhB2A1Amg0qXgNk33JCqHmCpOYIEvuUE0L9DiTxCCi7DUj7IJkDE89AEk8A0hpIbBUkM0WgbAMgvcABwj7hyMAgD3WnDFD8FVTNH5A5UPE1QPY6qDjInmdQdheSm2OANDtUvQ2QzQplpyD5NwFJ7yQgzQFVswBJ/TwgWw7KXoHEBpmjAmWHIIV5C1KYdyGxHwFpAUcQCwAslTOWAQAAAACAAAAwAgAAfAAAAA==eNpd0MkSgjAURNGgCCIgODKIyPD//8iC6+ZmcyqVTtXrF8J+IjzgEWM8YYKp7mfM8II5FljiFSus8YZ3fOATX3p/673BFjvs8YMDfnHEH04446J9JJqj1Ryr9hkr9+8blKv1P1Nu1fy5coP6jsr16lMqt6j/pNwGk1QE3w==AQAAAACAAAAYAQAAUAAAAA==eNotxdEGgwAAAMAkSZJMJslMkkkyMzPJTNL/f1IP3b1cGJwix06cOnPuwheXvrpy7cY33926c++HB4+e/PTLb3/89ezFP/+9evPuA+bHBO0=AQAAAACAAAAjAAAACwAAAA==eNpjZiYIAAeFAGo=
+  </AppendedData>
+</VTKFile>
