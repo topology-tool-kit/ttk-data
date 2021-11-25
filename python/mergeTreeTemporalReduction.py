@@ -25,7 +25,6 @@ all_MT = GroupDatasets(Input=all_MT_group)
 # create a new 'TTK MergeTreeTemporalReductionEncoding'
 tTKMergeTreeTemporalReductionEncoding1 = TTKMergeTreeTemporalReductionEncoding(Input=all_MT)
 tTKMergeTreeTemporalReductionEncoding1.RemovalPercentage = 75.0
-tTKMergeTreeTemporalReductionEncoding1.TimeVariable = ['POINTS', 'SegmentationId']
 tTKMergeTreeTemporalReductionEncoding1.Epsilon1 = 0.0
 tTKMergeTreeTemporalReductionEncoding1.Epsilon2 = 100.0
 tTKMergeTreeTemporalReductionEncoding1.Epsilon3 = 100.0
