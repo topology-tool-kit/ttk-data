@@ -18,13 +18,19 @@ $ paraview states/manifoldChecks.pvsm
 
 ## Python code
 
+### Non-manifold Vertices
+
 ``` python  linenums="1"
 --8<-- "python/manifoldCheck0.py"
 ```
 
+### Non-manifold Edges
+
 ``` python  linenums="1"
 --8<-- "python/manifoldCheck1.py"
 ```
+
+### Non-manifold Faces
 
 ``` python  linenums="1"
 --8<-- "python/manifoldCheck2.py"
@@ -32,14 +38,14 @@ $ paraview states/manifoldChecks.pvsm
 
 ## Inputs
 
-- [manifoldCheck0.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/manifoldCheck0.vtu)
-- [manifoldCheck1.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/manifoldCheck1.vtu)
-- [manifoldCheck2.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/manifoldCheck2.vtu)
+- [manifoldCheck0.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/manifoldCheck0.vtu): example mesh with non-manifold vertices
+- [manifoldCheck1.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/manifoldCheck1.vtu): example mesh with non-manifold edges
+- [manifoldCheck2.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/manifoldCheck2.vtu): example mesh with non-manifold faces
 
 
 ## Outputs
 
-- `manifoldCheck0_check.vtu`, `manifoldCheck1_check.vtu`, `manifoldCheck2_check.vtu`: tetrhedralized input geometry with link numbers
+- `manifoldCheck0_check.vtu`, `manifoldCheck1_check.vtu`, `manifoldCheck2_check.vtu`: tetrhedralized geometry with link numbers
 - `manifoldCheck0_non_manifold.vtu`: non-manifold vertices in `manifoldCheck0.vtu`
 - `manifoldCheck1_non_manifold.vtu`: non-manifold edges in `manifoldCheck1.vtu`
 - `manifoldCheck2_non_manifold.vtu`: non-manifold faces in `manifoldCheck2.vtu`
