@@ -4,17 +4,15 @@ from paraview.simple import *
 
 # create a new 'XML Image Data Reader'
 isabelvti = XMLImageDataReader(registrationName='isabel.vti', FileName=['isabel.vti'])
-isabelvti.PointArrayStatus = ['velocityMag_02', 'velocityMag_03', 'velocityMag_04', 'velocityMag_05', 'velocityMag_30', 'velocityMag_31', 'velocityMag_32', 'velocityMag_33', 'velocityMag_45', 'velocityMag_46', 'velocityMag_47', 'velocityMag_48']
-isabelvti.TimeArray = 'None'
 
 all_JT_group = []
 all_ST_group = []
 
-for scalarField in isabelvti.PointArrayStatus:
+scalarFields = ['velocityMag_02', 'velocityMag_03', 'velocityMag_04', 'velocityMag_05', 'velocityMag_30', 'velocityMag_31', 'velocityMag_32', 'velocityMag_33', 'velocityMag_45', 'velocityMag_46', 'velocityMag_47', 'velocityMag_48']
+for scalarField in scalarFields:
   # create a new 'TTK Merge and Contour Tree (FTM)'
   tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=isabelvti)
   tTKMergeandContourTreeFTM1.ScalarField = ['POINTS', scalarField]
-  tTKMergeandContourTreeFTM1.InputOffsetField = ['POINTS', scalarField]
   tTKMergeandContourTreeFTM1.TreeType = 'Join Tree'
   
   # create a new 'Group Datasets'
@@ -25,7 +23,6 @@ for scalarField in isabelvti.PointArrayStatus:
   # create a new 'TTK Merge and Contour Tree (FTM)'
   tTKMergeandContourTreeFTM2 = TTKMergeandContourTreeFTM(Input=isabelvti)
   tTKMergeandContourTreeFTM2.ScalarField = ['POINTS', scalarField]
-  tTKMergeandContourTreeFTM2.InputOffsetField = ['POINTS', scalarField]
   tTKMergeandContourTreeFTM2.TreeType = 'Split Tree'
   
   # create a new 'Group Datasets'
@@ -74,29 +71,22 @@ tTKDimensionReduction2.UseAllCores = 0
 tableToPoints1 = TableToPoints(Input=tTKDimensionReduction2)
 tableToPoints1.XColumn = 'Component_0'
 tableToPoints1.YColumn = 'Component_1'
-tableToPoints1.ZColumn = 'Component_0'
 tableToPoints1.a2DPoints = 1
 tableToPoints1.KeepAllDataArrays = 1
 
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=tableToPoints1)
-tTKIcospheresFromPoints1.Radius = 0.4
+# create a new 'Mask Points' (to threshold on points)
+maskPoints1 = MaskPoints(Input=tableToPoints1)
+maskPoints1.OnRatio = 0
+maskPoints1.GenerateVertices = 1
+maskPoints1.SingleVertexPerCell = 1
 
 # create a new 'Threshold'
-threshold33 = Threshold(Input=tTKIcospheresFromPoints1)
+threshold33 = Threshold(Input=maskPoints1)
 threshold33.Scalars = ['POINTS', 'treeID']
 threshold33.ThresholdRange = [0.0, 11.0]
 
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tableToPoints1)
-tTKIcospheresFromPoints2.Radius = 0.8
-
-# create a new 'Extract Block'
-nodes_1 = ExtractBlock(Input=tTKMergeTreeClustering1)
-nodes_1.BlockIndices = [14, 29, 8, 11, 26, 5, 20, 32, 23, 35, 2, 17]
-
 # create a new 'Threshold'
-threshold34 = Threshold(Input=tTKIcospheresFromPoints2)
+threshold34 = Threshold(Input=maskPoints1)
 threshold34.Scalars = ['POINTS', 'treeID']
 threshold34.ThresholdRange = [12.0, 14.0]
 

@@ -6,7 +6,7 @@
 This example first loads an ensemble of scalar fields inside a single file from disk.
 Then, the [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) is computed on each scalar field for the Join Tree and the Split Tree.
 
-All these trees are passed to [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html) to compute a clustering of merge trees. Each input is considered as a tuple consisting of the Join Tree and the Split Tree of the corresponding scalar field. Each centroid is also a tuple of this kind and a distance between two tuples is the distance between their Join Tree plus the distance between their Split Trees.
+All these trees are passed to [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html) to compute a clustering in the metric space of merge trees. Each input is considered as a tuple consisting of the Join Tree and the Split Tree of the corresponding scalar field. Each centroid is also a tuple of this kind and a distance between two tuples is the distance between their Join Tree plus the distance between their Split Trees.
 
 Then, a distance matrix is computed with [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html) with the input trees and the 3 centroids.
 
@@ -31,10 +31,10 @@ $ paraview states/mergeTreeClustering.pvsm
 ```
 
 ## Inputs
-- [isabel.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/isabel.vti): a three-dimensional triangulation with 12 scalar fields.
+- [isabel.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/isabel.vti): a three-dimensional regular grid with 12 scalar fields.
 
 ## Outputs
--  `MDS_trees.vtu`: the output points in 2D MDS (MultiDimensional Scaling) corresponding to the input trees.
+-  `MDS_trees.vtu`: the output points in 2D MDS (MultiDimensional Scaling) corresponding to the input trees. The 'ClusterAssignment' array contains the clustering assignments.
 -  `MDS_centroids.vtu`: the output points in 2D MDS (MultiDimensional Scaling) corresponding to the centroids.
 
 
