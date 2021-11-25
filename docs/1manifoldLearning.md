@@ -9,7 +9,7 @@ This example first loads cloud of points with elevation values from disk.
 
 In a pre-processing, the [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttk_1_1DimensionReduction.html) is used to reduce the dimension of the input to 3D points. The data is then converted to a format understandable by Paraview using the TableToPoints filter. Gaussian Resampling is applied to the data (upper left view in the above screenshot). This filter has the effect of injecting input points to a structured data. For each injection, each point will "splat", or distribute values to nearby vertices.
 
-Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) of a slice of the obtained data is computed and thresholds are applied based on persistence to maintain only the most persistent features. This results in a simplified persistence diagram (bottom left view in the above screenshot).
+Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) of a slice of the obtained data is computed and thresholds are applied based on persistence to maintain only the most persistent features. This results in a simplified persistence diagram.
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data.
 
