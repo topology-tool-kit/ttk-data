@@ -31,7 +31,7 @@ $ paraview states/ctBones.pvsm
 ```
 
 ## Inputs
-- [ctBones.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/ctBones.vti): a three-dimensional regular grid encoding material density in a medical image data (CT scan).
+- [ctBones.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/ctBones.vti): a three-dimensional regular grid encoding material density in a medical image (CT scan).
 
 ## Outputs
 - `CTBonesOutputSegmentation.vtu`: the geometry of the volume of the bones of the toes, as extracted by the analysis pipeline (most persistent super-level set connected components).
