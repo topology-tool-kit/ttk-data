@@ -89,11 +89,8 @@ tTKReebgraphFTR1.ScalarField = ['POINTS', 'ScaledHarmonic']
 tTKReebgraphFTR1.InputOffsetField = ['POINTS', 'Elevation']
 tTKReebgraphFTR1.ArcSampling = 20
 
-# find source
-tTKReebgraphFTR1_1 = FindSource('TTKReebgraphFTR1')
-
 # create a new 'TTK GeometrySmoother' taking the reeb graph edges for input
-tTKGeometrySmoother1 = TTKGeometrySmoother(Input=OutputPort(tTKReebgraphFTR1_1,1))
+tTKGeometrySmoother1 = TTKGeometrySmoother(Input=OutputPort(tTKReebgraphFTR1,1))
 tTKGeometrySmoother1.IterationNumber = 20
 tTKGeometrySmoother1.InputMaskField = [None, '']
 
@@ -110,6 +107,5 @@ tube1.Radius = 0.75
 tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=tTKReebgraphFTR1)
 tTKIcospheresFromPoints1.Radius = 2.0
 
-SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
 SaveData('ReebGraphNodes.vtp', tTKIcospheresFromPoints1)
 SaveData('ReebGraphArcs.vtp', tube1)
