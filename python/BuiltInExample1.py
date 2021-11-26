@@ -38,20 +38,6 @@ tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tetrahedralize1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'myVorticity']
 
 # create a new 'Threshold'
-diagonal = Threshold(Input=tTKPersistenceDiagram1)
-diagonal.Scalars = ['CELLS', 'PairIdentifier']
-diagonal.ThresholdRange = [-1.0, -0.1]
-
-# create a new 'Extract Surface'
-extractSurface1 = ExtractSurface(Input=diagonal)
-
-# create a new 'Tube'
-tube1 = Tube(Input=extractSurface1)
-tube1.Scalars = ['POINTS', 'CriticalType']
-tube1.Vectors = [None, '']
-tube1.Radius = 0.02
-
-# create a new 'Threshold'
 persistencePairs = Threshold(Input=tTKPersistenceDiagram1)
 persistencePairs.Scalars = ['CELLS', 'PairIdentifier']
 persistencePairs.ThresholdRange = [-0.1, 957.0]
@@ -61,26 +47,13 @@ persistenceThreshold = Threshold(Input=persistencePairs)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
 persistenceThreshold.ThresholdRange = [0.02, 1.0]
 
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=persistenceThreshold)
-tTKIcospheresFromPoints1.Radius = 0.025
-
-# create a new 'Extract Surface'
-extractSurface2 = ExtractSurface(Input=persistenceThreshold)
-
-# create a new 'Tube'
-tube2 = Tube(Input=extractSurface2)
-tube2.Scalars = ['POINTS', 'CriticalType']
-tube2.Vectors = [None, '']
-tube2.Radius = 0.015
-
 # create a new 'TTK PersistenceCurve'
 tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tetrahedralize1)
 tTKPersistenceCurve1.ScalarField = ['POINTS', 'myVorticity']
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tetrahedralize1,
-    Constraints=tTKIcospheresFromPoints1)
+    Constraints=persistenceThreshold)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'myVorticity']
 
 # create a new 'Warp By Scalar'
