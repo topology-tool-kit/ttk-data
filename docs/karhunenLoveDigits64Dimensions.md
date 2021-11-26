@@ -1,4 +1,4 @@
-# Karhunen-Love Digits 64-Dimensions example
+# Karhunen-Love Digits 64-Dimensions 
 
 ![Karhunen-Love Digits 64-Dimensions screenshot](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg)
 

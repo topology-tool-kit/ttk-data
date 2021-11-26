@@ -1,4 +1,4 @@
-# Merge Tree Clustering example
+# Merge Tree Clustering 
 
 ![Merge Tree Clustering example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg)
 
