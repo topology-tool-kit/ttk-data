@@ -65,7 +65,7 @@ tTKDimensionReduction2 = TTKDimensionReduction(Input=tTKMergeTreeDistanceMatrix2
     ModulePath='default')
 tTKDimensionReduction2.InputColumns = ['Tree00', 'Tree01', 'Tree02', 'Tree03', 'Tree04', 'Tree05', 'Tree06', 'Tree07', 'Tree08', 'Tree09', 'Tree10', 'Tree11', 'Tree12', 'Tree13', 'Tree14']
 tTKDimensionReduction2.InputIsaDistanceMatrix = 1
-tTKDimensionReduction2.UseAllCores = 0
+tTKDimensionReduction2.UseAllCores = 0 # MDS is unstable in parallel mode
 
 # create a new 'Table To Points'
 tableToPoints1 = TableToPoints(Input=tTKDimensionReduction2)
@@ -91,5 +91,5 @@ threshold34.Scalars = ['POINTS', 'treeID']
 threshold34.ThresholdRange = [12.0, 14.0]
 
 # save the output
-SaveData('MDS_trees.vtu', threshold33)
-SaveData('MDS_centroids.vtu', threshold34)
+SaveData('MDS_trees.csv', threshold33)
+SaveData('MDS_centroids.csv', threshold34)
