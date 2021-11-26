@@ -53,11 +53,6 @@ tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=warpByScalar1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Blend']
 
 # create a new 'Threshold'
-threshold2 = Threshold(Input=tTKPersistenceDiagram1)
-threshold2.Scalars = ['CELLS', 'PairIdentifier']
-threshold2.ThresholdRange = [-1.0, -0.1]
-
-# create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
 threshold1.ThresholdRange = [0.0, 100000.0]
@@ -71,14 +66,10 @@ persistenceThreshold.ThresholdRange = [0.7, 10000.0]
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=warpByScalar1,
     Constraints=persistenceThreshold)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'Blend']
-tTKTopologicalSimplification1.InputOffsetField = ['POINTS', '']
-tTKTopologicalSimplification1.VertexIdentifierField = ['POINTS', '']
 
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'Blend']
-tTKMorseSmaleComplex1.OffsetField = ['POINTS', 'OutputOffsetScalarField']
-tTKMorseSmaleComplex1.SaddleConnectors = 0
 
 # save the ouput
 SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
