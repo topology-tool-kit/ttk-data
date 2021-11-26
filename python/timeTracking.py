@@ -4,7 +4,7 @@ from paraview.simple import *
 # create a new 'XML Image Data Reader'
 timeTrackingvti = XMLImageDataReader(FileName=['timeTracking.vti'])
 timeTrackingvti.CellArrayStatus = []
-# select data arrays 000, 002, 004, ...
+# select data arrays 000, 002, 004, ..., 118
 timeTrackingvti.PointArrayStatus = ['{:0>3}'.format(i) for i in range(0, 120, 2)] 
 
 # create a new 'TTK TrackingFromFields'
