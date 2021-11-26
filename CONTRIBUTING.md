@@ -58,7 +58,8 @@ Please find below generic recommendations for setting up your fork of TTK's data
 - Edit the automatically generated (and verbose) script:
   - Insert the following line at the top: `#!/usr/bin/env python`
   - After the line `from paraview.simple import *`, remove all the lines *before* and *after* the section entitled ```#setup the data processing pipelines``` (see the automatically generated comments). The main idea here is to provide a minimalist and simple Python script which only includes the loading of the input data and the key steps of the data analysis pipeline.
-  - Insert new lines at the end of the script to store the outputs of the pipeline with `SaveData()` (see other pre-existing Python scripts).
+  - Insert new lines at the end of the script to store the outputs of the pipeline with `SaveData()` (see other pre-existing Python scripts):
+    - Please prefer, when applicable, the `csv` extension, which is more versatile and convenient for post-processing by a novice python user.
   - Remove any verbose **optional** code which obscures the clear understanding of the script:
     - Remove the `regitrationName` option from the constructor of each Python object
     - Remove any optional property
