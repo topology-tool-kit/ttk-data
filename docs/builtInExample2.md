@@ -5,7 +5,7 @@
 <iframe src="https://www.youtube.com/embed/7mlUzUJKA78" allowfullscreen="" width="100%" height="420" frameborder="0"></iframe>
 
 ## Pipeline description
-This example demostrates how bivariate analysis can be used for the analysis of molecular data. The input to this pipeline are two fields: the electron density field denoted as `log(Rho)` and the [reduced density gradeint](https://www.tandfonline.com/doi/full/10.1080/00268976.2015.1123777) denoted by `log(s)`a simple molecule called 1,2-ethanediol.
+This example demostrates how bivariate analysis can be used for the analysis of molecular data. The input to this pipeline are two fields: the electron density field denoted as `log(Rho)` and the [reduced density gradeint](https://www.tandfonline.com/doi/full/10.1080/00268976.2015.1123777) denoted by `log(s)` for a simple molecule called 1,2-ethanediol.
 
 First usual univariate scalar field analysis method is used for the analysis. An isosurafce is extracted in `log(Rho)` field which helps in identification of the location of atoms in the molecule, see black surfaces in the lower left panel of the screenshot above. Similarly, An isosurafce in `log(s)` identifies the covalent bonds.
 

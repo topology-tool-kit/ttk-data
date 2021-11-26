@@ -1,21 +1,25 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
-# create a new 'XML Image Data Reader'
+# Load the scalar fields using 'XML Image Data Reader'
 example2vti = XMLImageDataReader(FileName=['BuiltInExample2.vti'])
 example2vti.PointArrayStatus = ['log(Rho)', 'log(s)']
 
-# create a new 'Contour'
+### Univariate data analysis using isosurfaces
+
+# create a new 'Contour' for 'log(Rho)' to identify atoms
 contour2 = Contour(Input=example2vti)
 contour2.ContourBy = ['POINTS', 'log(Rho)']
 contour2.Isosurfaces = [1.57]
 contour2.PointMergeMethod = 'Uniform Binning'
 
-# create a new 'Contour'
+# create a new 'Contour' for 'log(s)' to identify atoms
 contour3 = Contour(Input=example2vti)
 contour3.ContourBy = ['POINTS', 'log(s)']
 contour3.Isosurfaces = [-0.575]
 contour3.PointMergeMethod = 'Uniform Binning'
+
+### Bivariate data analysis using isosurfaces
 
 # create a new 'TTK ContinuousScatterPlot'
 tTKContinuousScatterPlot1 = TTKContinuousScatterPlot(Input=example2vti)
@@ -27,7 +31,7 @@ threshold1 = Threshold(Input=tTKContinuousScatterPlot1)
 threshold1.Scalars = ['POINTS', 'ValidPointMask']
 threshold1.ThresholdRange = [0.1, 1.0]
 
-# create a new 'TTK ProjectionFromField'
+# create a new 'TTK ProjectionFromField' to project the 'log(Rho)' contour onto the range space
 tTKProjectionFromField1 = TTKProjectionFromField(Input=contour2)
 tTKProjectionFromField1.UComponent = ['POINTS', 'log(Rho)']
 tTKProjectionFromField1.VComponent = ['POINTS', 'log(s)']
@@ -42,7 +46,7 @@ tube1.Scalars = ['POINTS', 'log(Rho)']
 tube1.Vectors = ['POINTS', 'Normals']
 tube1.Radius = 0.02
 
-# create a new 'TTK ProjectionFromField'
+# create a new 'TTK ProjectionFromField' to project the 'log(s)' contour onto the range space
 tTKProjectionFromField2 = TTKProjectionFromField(Input=contour3)
 tTKProjectionFromField2.UComponent = ['POINTS', 'log(Rho)']
 tTKProjectionFromField2.VComponent = ['POINTS', 'log(s)']
@@ -60,6 +64,8 @@ tube2.Radius = 0.02
 # create a new 'Tetrahedralize'
 tetrahedralize1 = Tetrahedralize(Input=example2vti)
 
+# Four manually created polylines in the range space to select regions corresponding to 
+# Oxygen and carbon atoms, followed by covalent and non-covalent bonds
 rangePolygonsCoordinates = [
     [1.89657, -0.278516, 0.0, 2.06003, -0.24493, 0.0, 2.15538, -0.278516, 0.0, 2.21441, -0.416216, 0.0],
     [1.3744, 0.000242441, 0.0, 1.51061, -0.00983316, 0.0, 1.65137, -0.0434185, 0.0, 1.70586, -0.181118, 0.0],
@@ -67,7 +73,10 @@ rangePolygonsCoordinates = [
     [-0.310174, -0.325535, 0.0, -0.0150337, -0.124023, 0.0, 0.216538, -0.140816, 0.0, 0.466272, -0.399423, 0.0]
 ]
 
+# Save the four range space control polygons
 polygonTubes = []
+
+# Save the corresponding four fiber surfaces
 fiberSurfaces = []
 
 for coords in rangePolygonsCoordinates:
@@ -108,7 +117,7 @@ for coords in rangePolygonsCoordinates:
     
     polygonTubes.append(tube3)
 
-# create a new 'TTK JacobiSet'
+# compute 'TTK JacobiSet' for the bivariate data
 tTKJacobiSet1 = TTKJacobiSet(Input=tetrahedralize1)
 tTKJacobiSet1.UComponent = ['POINTS', 'log(Rho)']
 tTKJacobiSet1.VComponent = ['POINTS', 'log(s)']
@@ -117,7 +126,7 @@ tTKJacobiSet1.VOffsetField = ['POINTS', '']
 tTKJacobiSet1.Withedgeidentifiers = 1
 tTKJacobiSet1.Withvertexscalars = 1
 
-# create a new 'TTK ProjectionFromField'
+# project the Jacobi set onto the range space using 'TTK ProjectionFromField'
 tTKProjectionFromField3 = TTKProjectionFromField(Input=tTKJacobiSet1)
 tTKProjectionFromField3.UComponent = ['POINTS', 'log(Rho)']
 tTKProjectionFromField3.VComponent = ['POINTS', 'log(s)']
