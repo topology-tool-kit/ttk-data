@@ -7,7 +7,6 @@ clusteringcsv = CSVReader(FileName=['clustering2.csv'])
 tableToPoints1 = TableToPoints(Input=clusteringcsv)
 tableToPoints1.XColumn = 'X'
 tableToPoints1.YColumn = 'Y'
-tableToPoints1.ZColumn = 'X'
 tableToPoints1.a2DPoints = 1
 tableToPoints1.KeepAllDataArrays = 1
 
@@ -17,10 +16,6 @@ gaussianResampling1.ResampleField = ['POINTS', 'ignore arrays']
 gaussianResampling1.ResamplingGrid = [256, 256, 3]
 gaussianResampling1.GaussianSplatRadius = 0.05
 gaussianResampling1.SplatAccumulationMode = 'Sum'
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tableToPoints1)
-tTKIcospheresFromPoints2.Radius = 0.05
 
 # create a new 'Slice'
 slice1 = Slice(Input=gaussianResampling1)
@@ -35,7 +30,6 @@ slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=slice1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'SplatterValues']
-tTKPersistenceDiagram1.InputOffsetField = [None, '']
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
@@ -47,46 +41,24 @@ persistenceThreshold0 = Threshold(Input=threshold1)
 persistenceThreshold0.Scalars = ['CELLS', 'Persistence']
 persistenceThreshold0.ThresholdRange = [5.0, 9999.0]
 
+# create a new 'Threshold'
+threshold12 = Threshold(Input=tTKPersistenceDiagram1)
+threshold12.Scalars = ['CELLS', 'PairIdentifier']
+threshold12.ThresholdRange = [-1.0, -0.1]
+
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=slice1,
     Constraints=persistenceThreshold0)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'SplatterValues']
-tTKTopologicalSimplification1.InputOffsetField = [None, '']
-tTKTopologicalSimplification1.VertexIdentifierField = [None, '']
 
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'SplatterValues']
-tTKMorseSmaleComplex1.OffsetField = ['POINTS', 'SplatterValues']
-
 
 # create a new 'Resample With Dataset'
 resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(tTKMorseSmaleComplex1,3),
     DestinationMesh=tableToPoints1)
 resampleWithDataset1.CellLocator = 'Static Cell Locator'
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=resampleWithDataset1)
-tTKIcospheresFromPoints1.Radius = 0.05
-
-# create a new 'Extract Surface'
-extractSurface6 = ExtractSurface(Input=persistenceThreshold0)
-
-# create a new 'Tube'
-tube6 = Tube(Input=extractSurface6)
-tube6.Scalars = ['POINTS', 'CriticalType']
-tube6.Vectors = ['POINTS', 'Coordinates']
-tube6.Radius = 1.5
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints3 = TTKIcospheresFromPoints(Input=tTKMorseSmaleComplex1)
-tTKIcospheresFromPoints3.Radius = 0.075
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints11 = TTKIcospheresFromPoints(Input=persistenceThreshold0)
-tTKIcospheresFromPoints11.Radius = 3.0
-
-
 
 # create a new 'Threshold'
 threshold2 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,1))
@@ -97,29 +69,5 @@ tTKGeometrySmoother1 = TTKGeometrySmoother(Input=threshold2)
 tTKGeometrySmoother1.IterationNumber = 10
 tTKGeometrySmoother1.InputMaskField = [None, '']
 
-# create a new 'Extract Surface'
-extractSurface1 = ExtractSurface(Input=tTKGeometrySmoother1)
-
-# create a new 'Tube'
-tube1 = Tube(Input=extractSurface1)
-tube1.Scalars = ['POINTS', 'CellDimension']
-tube1.Vectors = [None, '']
-tube1.Radius = 0.025
-
-# create a new 'Threshold'
-threshold12 = Threshold(Input=tTKPersistenceDiagram1)
-threshold12.Scalars = ['CELLS', 'PairIdentifier']
-threshold12.ThresholdRange = [-1.0, -0.1]
-
-# create a new 'Extract Surface'
-extractSurface7 = ExtractSurface(Input=threshold12)
-
-# create a new 'Tube'
-tube7 = Tube(Input=extractSurface7)
-tube7.Scalars = ['POINTS', 'CriticalType']
-tube7.Vectors = ['POINTS', 'Coordinates']
-tube7.Radius = 1.5
-
 # save the output(s)
-SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
-SaveData('Segmentation.vtp', OutputPort(tTKMorseSmaleComplex1, 3))
+SaveData('data2Resampled.csv', resampleWithDataset1)
