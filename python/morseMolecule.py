@@ -2,17 +2,12 @@ from paraview.simple import *
 
 # create a new 'XML Image Data Reader'
 builtInExamplevti = XMLImageDataReader(FileName=['BuiltInExample2.vti'])
-builtInExamplevti.PointArrayStatus = ['Rho', 'log(Rho)', 'log(s)']
 
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=builtInExamplevti)
 tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'log(Rho)']
-tTKMorseSmaleComplex1.OffsetField = ['POINTS', '']
 tTKMorseSmaleComplex1.Ascending2Separatrices = 1
 tTKMorseSmaleComplex1.Descending2Separatrices = 1
-
-# find source
-tTKMorseSmaleComplex1_1 = FindSource('TTKMorseSmaleComplex1')
 
 # Generate spheres for the critical points using 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=tTKMorseSmaleComplex1)
@@ -27,11 +22,8 @@ threshold3 = Threshold(Input=tTKIcospheresFromPoints2)
 threshold3.Scalars = ['POINTS', 'CellDimension']
 threshold3.ThresholdRange = [3.0, 3.0]
 
-# find source
-tTKMorseSmaleComplex1_2 = FindSource('TTKMorseSmaleComplex1')
-
 # create a new 'Threshold'
-threshold1 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1_2,1))
+threshold1 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,1))
 threshold1.Scalars = ['CELLS', 'NumberOfCriticalPointsOnBoundary']
 threshold1.ThresholdRange = [0.0, 0.0]
 
@@ -43,7 +35,6 @@ threshold2.ThresholdRange = [2.0, 2.0]
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother1 = TTKGeometrySmoother(Input=threshold2)
 tTKGeometrySmoother1.IterationNumber = 50
-tTKGeometrySmoother1.InputMaskField = [None, '']
 
 # create a new 'Clean to Grid'
 cleantoGrid1 = CleantoGrid(Input=tTKGeometrySmoother1)
@@ -54,11 +45,10 @@ extractSurface1 = ExtractSurface(Input=cleantoGrid1)
 # create a new 'Tube'
 tube1 = Tube(Input=extractSurface1)
 tube1.Scalars = ['POINTS', 'CellDimension']
-tube1.Vectors = [None, '']
 tube1.Radius = 1.25
 
 # create a new 'Threshold'
-threshold8 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1_2,1))
+threshold8 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,1))
 threshold8.Scalars = ['CELLS', 'SeparatrixType']
 threshold8.ThresholdRange = [1.0, 1.0]
 
@@ -86,7 +76,6 @@ cleantoGrid4 = CleantoGrid(Input=appendDatasets1)
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother4 = TTKGeometrySmoother(Input=cleantoGrid4)
 tTKGeometrySmoother4.IterationNumber = 10
-tTKGeometrySmoother4.InputMaskField = [None, '']
 
 # create a new 'Extract Surface'
 extractSurface3 = ExtractSurface(Input=tTKGeometrySmoother4)
@@ -94,11 +83,10 @@ extractSurface3 = ExtractSurface(Input=tTKGeometrySmoother4)
 # create a new 'Tube'
 tube2 = Tube(Input=extractSurface3)
 tube2.Scalars = ['POINTS', 'CellDimension']
-tube2.Vectors = [None, '']
 tube2.Radius = 0.75
 
 # create a new 'Threshold'
-threshold4 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1_1,2))
+threshold4 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,2))
 threshold4.Scalars = ['CELLS', 'SeparatrixType']
 threshold4.ThresholdRange = [1.0, 1.0]
 
@@ -114,10 +102,9 @@ extractSurface2 = ExtractSurface(Input=tetrahedralize1)
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother2 = TTKGeometrySmoother(Input=extractSurface2)
 tTKGeometrySmoother2.IterationNumber = 20
-tTKGeometrySmoother2.InputMaskField = [None, '']
 
 # select 2-separatrices using 'Threshold'
-threshold5 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1_1,2))
+threshold5 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,2))
 threshold5.Scalars = ['CELLS', 'SeparatrixType']
 threshold5.ThresholdRange = [2.0, 2.0]
 
@@ -140,7 +127,6 @@ tetrahedralize2 = Tetrahedralize(Input=cleantoGrid3)
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother3 = TTKGeometrySmoother(Input=tetrahedralize2)
 tTKGeometrySmoother3.IterationNumber = 20
-tTKGeometrySmoother3.InputMaskField = [None, '']
 
 # save the output
 SaveData('CriticalPoints.vtp', tTKIcospheresFromPoints1)
