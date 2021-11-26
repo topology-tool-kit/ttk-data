@@ -32,9 +32,8 @@ $ paraview states/BuiltInExample1.pvsm
 - [BuiltInExample1.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/BuiltInExample1.vti): a two-dimensional regular grid encoding flow magnitude of a Kármán vortex street.
 
 ## Outputs
-- `minima.vtu`: the warped minima vertices in VTK file format (middle view, above screenshot).
-- `maxima.vtu`: the warped maxima vertices in VTK file format (middle view, above screenshot).
 - `warpedInput.vtu`: the warped and tetrahedralized scalar field in VTK file format (middle view, above screenshot).
+- `CriticalPoints.csv`: the critical points of the warped scalar field in csv format (middle view, above screenshot).
 - `PersistenceCurve.csv`: the output persistence curve (top right view, above screenshot).
 - `PersistenceDiagram.vtu`: the output persistence diagram in VTK file format (bottom right view, above screenshot). You are free to change the `vtu` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 

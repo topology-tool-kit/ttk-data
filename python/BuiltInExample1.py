@@ -67,6 +67,6 @@ tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'myVorticity']
 
 # save the output
 SaveData('warpedInput.vtu', warpByScalar1)
-SaveData('CriticalPoints.vtp', tTKScalarFieldCriticalPoints1)
+SaveData('CriticalPoints.csv', tTKScalarFieldCriticalPoints1)
 SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
 SaveData('PersistenceCurve.csv', OutputPort(tTKPersistenceCurve1, 3))
