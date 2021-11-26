@@ -7,15 +7,14 @@ This example computes minima, maxima and the persistence diagram for 2D flow dat
 
 First, the data is transformed and preprocessed. 
 
-Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) and [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html) are computed and thresholds are applied to the diagram based on persistence to maintain only the most persistent features. 
-
-The diagonal, critical points and persistence pairs of the diagram are then converted to tubes and spheres to obtain a nicer rendering (bottom right view, above screenshot).
+Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) and [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html) are computed.
+To the persistence diagram, a threshold is applied to remove the diagonal.
+The output are the persistence pairs.
+These pairs are filtered based on persistence to maintain only the most persistent features.
 
 Next, the input data is simplified based on the selected persistent features, via [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) and the 2D domain is embedded into 3D space based on the scalar values.
 
-Then, the [Critical Points](https://topology-tool-kit.github.io/doc/html/classttkCriticalPoints.html) of the simplified and warped data are computed. 
-
-Finally, the minima and maxima are extracted from the critcal points.
+Finally, the [Critical Points](https://topology-tool-kit.github.io/doc/html/classttkCriticalPoints.html) of the simplified and warped data are computed.
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
