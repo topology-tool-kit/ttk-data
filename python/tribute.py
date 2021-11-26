@@ -15,7 +15,6 @@ tetrahedralize1 = Tetrahedralize(Input=calculator1)
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tetrahedralize1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'originalData']
-tTKPersistenceDiagram1.InputOffsetField = [None, '']
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
@@ -57,8 +56,6 @@ persistenceThreshold.UpperThreshold = 102.106426713382
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tetrahedralize1, Constraints=persistenceThreshold)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'originalData']
-tTKTopologicalSimplification1.InputOffsetField = [None, '']
-tTKTopologicalSimplification1.VertexIdentifierField = [None, '']
 
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex2 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
