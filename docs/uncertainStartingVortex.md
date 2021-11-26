@@ -33,14 +33,9 @@ $ paraview states/uncertainStartingVortex.pvsm
 ```
 
 ## Inputs
-- [uncertainStartingVortex.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/uncertainStartingVortex.vti): a two-dimensional triangulation.
+- [uncertainStartingVortex.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/uncertainStartingVortex.vti): two two-dimensional scalarfields.
 
 ## Outputs
-
-SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
-SaveData('CriticalPoints.vtp', tTKScalarFieldCriticalPoints1)
-SaveData('MandatoryCriticalMinima.csv', OutputPort(tTKMandatoryCriticalPoints1, 0))
-SaveData('MandatoryCriticalMaxima.csv', OutputPort(tTKMandatoryCriticalPoints1, 3))
 
 - `PersistenceDiagram.vtu`: the output persistence diagram in VTK file format (bottom right view, above screenshot). You are free to change the `vtu` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 - `CriticalPoints.vtp`: the output
