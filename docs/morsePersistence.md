@@ -18,7 +18,7 @@ The [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPers
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data.
 
-This simplified data is then used as the input of the computation of [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttk_1_1MorseSmaleComplex.html) (centrale view, above screenshot). This complex is composed of elements of 3 dimensions: dimension 0, which corresponds to the critical points of the Morse-Smale Complex, dimension 1, which corresponds to its edges (in grey on the screenshot) and dimension 2, which corresponds to its surfaces.
+This simplified data is then used as the input of the computation of [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttk_1_1MorseSmaleComplex.html) (center view, above screenshot). This complex is composed of elements of 3 dimensions: dimension 0, which corresponds to the critical points of the Morse-Smale Complex, dimension 1, which corresponds to its edges (in grey in the screenshot) and dimension 2, which corresponds to its surfaces.
 
 ## ParaView
 To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
@@ -38,9 +38,9 @@ $ paraview states/morsePersistence.pvsm
 ## Outputs
 - `PersistenceDiagram.vtu`: the output persistence diagram in VTK file format (bottom right view, above screenshot). You are free to change the `vtu` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 - `PersistenceCurve.csv`: the output persistence curve.
-- `MorseComplexeCriticalPoints.vtp`: the output critical points (or 0 dimensional elements) of the Morse Smale Complex in VTK file format (centrale view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
-- `MorseComplexeEdge.vtp`: cylinders, representing the edges (or 1 dimensional elements) of the output Morse Smale Complexe in VTK file format (centrale view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
-- `MorseComplexeSurface.vtp`: surfaces, representing the surfaces (or 2 dimensional elements) of the output Morse Smale Complexe in VTK file format (centrale view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
+- `MorseComplexeCriticalPoints.vtp`: the output critical points (or 0 dimensional elements) of the Morse Smale Complex in VTK file format (center view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
+- `MorseComplexe1Separatrices.vtp`: cylinders, representing the edges (or 1 dimensional elements) of the output Morse Smale Complexe in VTK file format (center view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
+- `MorseComplexeSegmentation.vtp`: surfaces, representing the segmentation  of the output Morse Smale Complexe in VTK file format (center view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 
 ## C++/Python API
 
@@ -48,7 +48,6 @@ $ paraview states/morsePersistence.pvsm
 
 [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
 
-[IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
 
 [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html)
 
