@@ -30,11 +30,11 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [Built-in example 1](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg) |
 | [Interaction site example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg) |
 | [Viscous fingering example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/viscousFingering.jpg) |
-| [Morse molecule example](dragon/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg) |
+| [Morse molecule example](morseMolecule/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg) |
 | [Tectonic puzzle example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg) |
 | [Ocean vortices example](dragon/) | !![ExampleImage](https://topology-tool-kit.github.io/img/gallery/climate.jpg) |
 | [Contour around point example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourAroundPoint.jpg) |
-| [CT bones example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg) |
+| [CT bones example](ctBones/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg) |
 | [Tribute example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg) |
 | [Image processing example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg) |
 | [Persistence driven compression example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg) |
@@ -62,7 +62,7 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 |:-:|:-:|
 | [Time tracking example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
 | [Merge tree feature tracking example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
-| [Merge tree temporal reduction example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
+| [Merge tree temporal reduction example](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
 | [Nested tracking graph example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
 
 ### Ensemble scalar data
@@ -84,7 +84,7 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [Persistence clustering2 example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering2.jpeg) |
 | [Persistence clustering3 example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering3.jpeg) |
 | [Persistence clustering4 example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering4.jpeg) |
-| [Karhunen-Love Digits 64-Dimensions example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg) |
+| [Karhunen-Love Digits 64-Dimensions example](karhunenLoveDigits64Dimensions/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg) |
 | [1-manifold learning example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearning.jpeg) |
 | [1-manifold learning circles  example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearningCircles.jpeg) |
 | [2-manifold learning example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/2manifoldLearning.jpeg) |
@@ -100,5 +100,5 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 
 | Name | Screenshot |
 |:-:|:-:|
-| [Manifold checks example](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
+| [Manifold checks example](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 
