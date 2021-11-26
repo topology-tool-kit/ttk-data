@@ -1,2 +1,4 @@
 # Linux file browser info
 .directory
+# virtual environment
+venv
