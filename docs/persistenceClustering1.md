@@ -37,7 +37,7 @@ $ paraview states/persistenceClustering1.pvsm
 ```
 
 ## Inputs
-- [clustering1.csv](https://github.com/topology-tool-kit/ttk-data/blob/dev/clustering1.csv): a table of 2 dimension points.
+- [clustering1.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/clustering1.csv): a table of 2 dimension points.
 
 ## Outputs
 - `data1Resampled.csv`: the output is the data resampled in CSV file format.

@@ -40,22 +40,10 @@ threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "PairIdentifier"]
 threshold1.ThresholdRange = [-0.1, 999.0]
 
-# create a new 'Extract Surface'
-extractSurface7 = ExtractSurface(Input=threshold12)
-
-# create a new 'Tube'
-tube7 = Tube(Input=extractSurface7)
-tube7.Scalars = ["POINTS", "CriticalType"]
-tube7.Vectors = ["POINTS", "Coordinates"]
-tube7.Radius = 0.75
-
 # create a new 'Threshold'
 persistenceThreshold0 = Threshold(Input=threshold1)
 persistenceThreshold0.Scalars = ["CELLS", "Persistence"]
 persistenceThreshold0.ThresholdRange = [10.0, 9999.0]
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints11 = TTKIcospheresFromPoints(Input=persistenceThreshold0)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
