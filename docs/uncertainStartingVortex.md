@@ -33,7 +33,7 @@ $ paraview states/uncertainStartingVortex.pvsm
 ```
 
 ## Inputs
-- [uncertainStartingVortex.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/uncertainStartingVortex.vti): two two-dimensional scalarfields.
+- [uncertainStartingVortex.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/uncertainStartingVortex.vti): two two-dimensional scalar fields.
 
 ## Outputs
 
