@@ -17,19 +17,20 @@ This alignment is a super tree of all contour trees and can be seen as a represe
 Unfortunately, the vtk object representing the alignment does not have any layout information attached.
 Therefore, we use the [PlanarGraphLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html) together with a paraview calculator to compute and apply the layout information.
 
+We now want to check which features of the original scalar fields have been matched onto each other.
+Therefore, we use the ExtractSeletion filter to extract one vertex and attach its segmentationIDs array to the multi block data set representing the segmentations of the contour trees.
+We also use a [Grid Layout](https://topology-tool-kit.github.io/doc/html/classttkGridLayout.html) to render the multi block in a comparable fashion (right view, above screenshot).
+
+As a last step, we use the [ForEach](https://topology-tool-kit.github.io/doc/html/classttkForEachhtml) and [EndFor](https://topology-tool-kit.github.io/doc/html/classttkEndFor.html) filters to iterate the multi block of segmentations and in each iteration, we extract the region of the scalar field that corresponds to the segmentation id from the selected vertex.
+The extraction is done using the [TTKExtract](https://topology-tool-kit.github.io/doc/html/classttkExtract.html) filter.
+
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
-``` bash
-$ paraview states/contourTreeAlignmentWithMatching.pvsm
-```
-
-To only get the left view, enter the following command instead:
 ``` bash
 $ paraview states/contourTreeAlignment.pvsm
 ```
 
 ## Python code
-The following python code will produce the alignment (left view, above screenshot) as a vtk file.
 
 ``` python  linenums="1"
 --8<-- "python/contourTreeAlignment.py"
@@ -40,6 +41,8 @@ The following python code will produce the alignment (left view, above screensho
 
 ## Outputs
 - `ContorTreeAlignment.vtu`: the output alignment in VTK file format (left view, above screenshot).
+- `Segmentations.vtm`: the segmentations of the input scalar fields in VTK multiblock format (right view, above screenshot).
+- `MatchedRegions.vtm`: the regions of the original fields that are represented by a selected vertex in VTK multiblock format (right view, abſove screenshot).
 
 
 ## C++/Python API
@@ -53,7 +56,15 @@ The following python code will produce the alignment (left view, above screensho
 
 [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
 
-[Alignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html)
+[ContourTreeAlignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html)
 
-[PlanarGraphLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+
+[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+
+[ForEach](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+
+[EndFor](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+
+[TTKExtract](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
 
