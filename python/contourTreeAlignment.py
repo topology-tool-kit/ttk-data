@@ -20,7 +20,6 @@ ttkTopologicalSimplificationByPersistence.PersistenceThreshold = 0.05
 # create a new 'TTK Merge and Contour Tree (FTM)'
 ttkMergeandContourTreeFTM = TTKMergeandContourTreeFTM(registrationName='TTKMergeandContourTreeFTM', Input=ttkTopologicalSimplificationByPersistence)
 ttkMergeandContourTreeFTM.ScalarField = ['POINTS', 'nrrd']
-ttkMergeandContourTreeFTM.InputOffsetField = ['POINTS', 'nrrd']
 
 # create a new 'TTK ContourTreeAlignment'
 contourTreeAlignment = TTKContourTreeAlignment(Input=OutputPort(ttkMergeandContourTreeFTM,1),
@@ -42,10 +41,6 @@ alignmentLayout.LevelArray = ['POINTS', 'BranchIDs']
 alignmentEdges = Calculator(Input=alignmentLayout)
 alignmentEdges.CoordinateResults = 1
 alignmentEdges.Function = 'iHat*Layout_Y+jHat*Scalar*3'
-
-# create a new 'Calculator'
-alignmentNodes = Calculator(Input=alignmentEdges)
-alignmentNodes.Function = ''
 
 # save the output
 SaveData('ContourTreeAlignment.vtu', alignmentEdges)

@@ -4,7 +4,6 @@ from paraview.simple import *
 
 # create a new 'XML Image Data Reader'
 builtInExamplevti = XMLImageDataReader(FileName=['BuiltInExample1.vti'])
-builtInExamplevti.PointArrayStatus = ['Vectors_']
 
 # create a new 'Transform'
 transform1 = Transform(Input=builtInExamplevti)
@@ -15,7 +14,7 @@ transform1.Transform.Rotate = [0.0, 0.0, -90.0]
 
 # create a new 'Compute Derivatives'
 computeDerivatives1 = ComputeDerivatives(Input=transform1)
-computeDerivatives1.Scalars = [None, '']
+#computeDerivatives1.Scalars = [None, '']
 computeDerivatives1.Vectors = ['POINTS', 'Vectors_']
 computeDerivatives1.OutputVectorType = 'Vorticity'
 
@@ -37,7 +36,6 @@ tetrahedralize1 = Tetrahedralize(Input=tTKScalarFieldNormalizer1)
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tetrahedralize1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'myVorticity']
-tTKPersistenceDiagram1.InputOffsetField = [None, '']
 
 # create a new 'Threshold'
 diagonal = Threshold(Input=tTKPersistenceDiagram1)
@@ -79,25 +77,20 @@ tube2.Radius = 0.015
 # create a new 'TTK PersistenceCurve'
 tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tetrahedralize1)
 tTKPersistenceCurve1.ScalarField = ['POINTS', 'myVorticity']
-tTKPersistenceCurve1.InputOffsetField = ['POINTS', '']
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tetrahedralize1,
     Constraints=tTKIcospheresFromPoints1)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'myVorticity']
-tTKTopologicalSimplification1.InputOffsetField = [None, '']
-tTKTopologicalSimplification1.VertexIdentifierField = [None, '']
 
 # create a new 'Warp By Scalar'
 warpByScalar1 = WarpByScalar(Input=tTKTopologicalSimplification1)
 warpByScalar1.Scalars = ['POINTS', 'myVorticity']
 warpByScalar1.ScaleFactor = 300.0
-warpByScalar1.UseNormal = 1
 
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=warpByScalar1)
 tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'myVorticity']
-tTKScalarFieldCriticalPoints1.InputOffsetField = ['POINTS', 'OutputOffsetScalarField']
 
 # create a new 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tTKScalarFieldCriticalPoints1)
