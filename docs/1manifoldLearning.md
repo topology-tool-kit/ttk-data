@@ -31,7 +31,7 @@ $ paraview states/1manifoldLearning.pvsm
 - [pointCloud.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/pointCloud.csv): a table containing point coordinates.
 
 ## Outputs
-- `OutputArc.vtu`: cylinders, representing the edges (or 1 dimensional elements) of the output Morse Smale Complexe that are not connected to any boundary critical point in VTK file format (right view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
+- `OutputArc.vtu`: cylinders, representing the edges (or 1 dimensional elements) of the output Morse Smale Complex that are not connected to any boundary critical point in VTK file format (right view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 
 
 ## C++/Python API
