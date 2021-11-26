@@ -31,4 +31,26 @@ tTKGridLayout1.ColumnGap = 8.0
 tTKGridLayout1.RowAxis = 'Z'
 tTKGridLayout1.NumberofRows = 1
 
-SaveData('ViscousFingers.vtm', tTKGridLayout1)
+# create a new 'TTK ForEach'
+tTKForEach1 = TTKForEach(Input=tTKGridLayout1)
+tTKForEach1.IterationMode = 'Block'
+tTKForEach1.InputArray = ['POINTS', 'ImageFile']
+tTKForEach1.OutputType = 'vtkPolyData'
+
+# create a new 'TTK ArrayEditor'
+tTKArrayEditor1 = TTKArrayEditor(Target=tTKForEach1,
+    Source=None)
+tTKArrayEditor1.TargetAttributeType = 'Field Data'
+tTKArrayEditor1.DataString = 'SampleInterval, 10'
+tTKArrayEditor1.TargetArray = ['POINTS', 'ImageFile']
+
+# create a new 'TTK CinemaWriter'
+tTKCinemaWriter1 = TTKCinemaWriter(Input=tTKArrayEditor1,
+    DatabasePath='ViscousFingersSampled.cdb')
+tTKCinemaWriter1.ScalarField = ['POINTS', 'ImageFile']
+
+# create a new 'TTK EndFor'
+tTKEndFor1 = TTKEndFor(Data=tTKCinemaWriter1,
+    For=tTKForEach1)
+
+UpdatePipeline()
