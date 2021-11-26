@@ -6,13 +6,13 @@ Image](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg)
 
 ## Pipeline description
 
-This example processes a black and white image (top left view on the
+This example processes a grayscale image (top left view on the
 above screenshot) to generate a segmentation. We will construct the
 segmentation from the image gradient.
 
 First, the image is loaded from disk. The gradient is computed with
-ParaView's ComputeDerivatives or Gradient filters. Since TTK only
-works on scalar field, a Calculator is used to compute the gradient
+ParaView's `ComputeDerivatives` or `Gradient` filters. Since TTK only
+works on scalar field, a `Calculator` is used to compute the gradient
 magnitude.
 
 From the gradient magnitude, a simplification step involving
@@ -23,15 +23,15 @@ helps removing the noise in the gradient (top right view).
 
 To segment the image, we use the
 [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
-filter. Since on the input image the objects correspond to low values
+filter. Since in the input image the objects correspond to low values
 in the gradient and their edges to high values, we are interested in
-the DescendingManifold scalar field of the Segmentation output, whose
+the `DescendingManifold` scalar field of the `Segmentation` output, whose
 cells represent regions of low scalar field values.
 
 The
 [IdentifierRandomizer](https://topology-tool-kit.github.io/doc/html/classttkIdentifierRandomizer.html)
-filter is eventually used to ensure that neighboring cells are colored
-differently (bottom right view on the above screenshot).
+filter is eventually used in order to color neighbor cells with a
+distinct color (bottom right view on the above screenshot).
 
 ## ParaView
 
@@ -51,7 +51,7 @@ $ paraview states/imageProcessing.pvsm
 
 ## Inputs
 - [naturalImage.png](https://github.com/topology-tool-kit/ttk-data/raw/dev/naturalImage.png):
-  a black and white PNG image.
+  a grayscale PNG picture.
 
 ## Outputs
 - `Segmentation.vti`: the image segmentation output.
