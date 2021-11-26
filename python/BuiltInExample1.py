@@ -65,23 +65,8 @@ warpByScalar1.ScaleFactor = 300.0
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=warpByScalar1)
 tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'myVorticity']
 
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tTKScalarFieldCriticalPoints1)
-tTKIcospheresFromPoints2.Radius = 5.0
-
-# create a new 'Threshold'
-minima = Threshold(Input=tTKIcospheresFromPoints2)
-minima.Scalars = ['POINTS', 'CriticalType']
-minima.ThresholdRange = [0.0, 0.1]
-
-# create a new 'Threshold'
-maxima = Threshold(Input=tTKIcospheresFromPoints2)
-maxima.Scalars = ['POINTS', 'CriticalType']
-maxima.ThresholdRange = [3.0, 3.0]
-
 # save the output
-SaveData('minima.vtu', minima)
-SaveData('maxmima.vtu', maxima)
 SaveData('warpedInput.vtu', warpByScalar1)
+SaveData('CriticalPoints.vtp', tTKScalarFieldCriticalPoints1)
 SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
 SaveData('PersistenceCurve.csv', OutputPort(tTKPersistenceCurve1, 3))
