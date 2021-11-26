@@ -1,12 +1,9 @@
 # Morse persistence example
-
-<!--[![Morse persistence example video tutorial](https://topology-tool-kit.github.io/img/gallery/morsePersistence.jpg)](https://www.youtube.com/watch?v=xjKh6YTq5RA)-->
-
 <iframe width="100%" height="420"
-src="https://www.youtube.com/watch?v=xjKh6YTq5RA" frameborder="0"
+src="https://www.youtube.com/embed/xjKh6YTq5RA" frameborder="0"
 allowfullscreen></iframe>
 
-![Morse Persistence example Image](https://topology-tool-kit.github.io/img/gallery/morsePersistence.jpg)
+<!-- ![Morse Persistence example Image](https://topology-tool-kit.github.io/img/gallery/morsePersistence.jpg) -->
 
 ## Pipeline description
 
