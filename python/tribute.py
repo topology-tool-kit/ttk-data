@@ -60,7 +60,6 @@ tTKTopologicalSimplification1.ScalarField = ['POINTS', 'originalData']
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex2 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex2.ScalarField = ['POINTS', 'originalData']
-tTKMorseSmaleComplex2.OffsetField = ['POINTS', 'OutputOffsetScalarField']
 
 # create a new 'TTK IdentifierRandomizer'
 tTKIdentifierRandomizer2 = TTKIdentifierRandomizer(Input=OutputPort(tTKMorseSmaleComplex2,3))
