@@ -19,9 +19,7 @@ Each example includes:
 
 This documentation assumes a default TTK installation (with the `pvpython` API support enabled) and that the repository [ttk-data](https://github.com/topology-tool-kit/ttk-data) has been downloaded locally.
 
-## List of available examples
-
-### Scalar data
+## Scalar data
 
 | Name | Screenshot |
 |:-:|:-:|
@@ -40,7 +38,7 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [Persistence driven compression](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg) |
 | [Morse-Smale quadrangulation](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 
-### Bivariate scalar data
+## Bivariate scalar data
 
 | Name | Screenshot |
 |:-:|:-:|
@@ -49,14 +47,14 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [Bivariate toy CSP peeling](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToyCspPeeling.jpg) |
 | [Mechanical](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mechanical.jpg) |
 
-### Uncertain scalar data
+## Uncertain scalar data
 
 | Name | Screenshot |
 |:-:|:-:|
 | [Built-in example 3](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample3.jpg) |
 | [Uncertain starting vortex](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/uncertainStartingVortex.jpg) |
 
-### Time-varying scalar data
+## Time-varying scalar data
 
 | Name | Screenshot |
 |:-:|:-:|
@@ -65,7 +63,7 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
 | [Nested tracking graph](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
 
-### Ensemble scalar data
+## Ensemble scalar data
 
 | Name | Screenshot |
 |:-:|:-:|
@@ -74,7 +72,7 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
 | [Contour tree alignment](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
 
-### High-dimensional / point cloud data
+## High-dimensional / point cloud data
 
 | Name | Screenshot |
 |:-:|:-:|
@@ -89,14 +87,14 @@ This documentation assumes a default TTK installation (with the `pvpython` API s
 | [1-manifold learning circles ](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearningCircles.jpeg) |
 | [2-manifold learning](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/2manifoldLearning.jpeg) |
 
-### In-situ features
+## In-situ features
 
 | Name | Screenshot |
 |:-:|:-:|
 | [Geometry approximation](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geometryApproximation.jpg) |
 | [Cinema darkroom](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cinemaDarkroom.jpg) |
 
-### Misc features
+## Misc features
 
 | Name | Screenshot |
 |:-:|:-:|
