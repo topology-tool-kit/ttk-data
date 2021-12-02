@@ -1,4 +1,4 @@
-# CinemaIO example
+# CinemaIO 
 
 ![Cinema IO Example Image](https://topology-tool-kit.github.io/img/gallery/cinemaReader.jpeg)
 
