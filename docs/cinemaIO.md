@@ -1,6 +1,10 @@
 # CinemaIO 
 
-![Cinema IO Example Image](https://topology-tool-kit.github.io/img/gallery/cinemaReader.jpeg)
+<iframe
+ width="100%" height="420"
+src="https://www.youtube.com/embed/yKyiRzPbs0U"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
 
 ## Pipeline description
 This example first loads a cinema database of a simulation from disk, consisting of three dimensional image files, using the [CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html). This outputs a vtkTable.
