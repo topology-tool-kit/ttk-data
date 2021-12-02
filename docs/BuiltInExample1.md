@@ -3,9 +3,9 @@
 ![Built in example 1 Image](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg)
 
 ## Pipeline description
-This example computes minima, maxima and the persistence diagram for 2D flow data.
+This example computes minima, maxima and the persistence diagram for 2D flow data (von Karman vortex street).
 
-First, the data is transformed and preprocessed. 
+First, the data is transformed and preprocessed to estimate the vorticity of the flow (via the orthogonal component of the curl). 
 
 Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) and [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html) are computed.
 To the persistence diagram, a threshold is applied to remove the diagonal.
