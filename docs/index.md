@@ -60,7 +60,7 @@ If you have any questions regarding these examples, please let us know by sendin
 
 | Name | Screenshot |
 |:-:|:-:|
-| [Time tracking](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
+| [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
 | [Merge tree feature tracking](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
 | [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
 | [Nested tracking graph](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
