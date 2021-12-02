@@ -21,11 +21,8 @@ gaussianResampling1.SplatAccumulationMode = 'Sum'
 # create a new 'Slice'
 slice1 = Slice(Input=gaussianResampling1)
 slice1.SliceType = 'Plane'
-slice1.HyperTreeGridSlicer = 'Plane'
-slice1.SliceOffsetValues = [0.0]
 
 # init the 'Plane' selected for 'SliceType'
-slice1.SliceType.Origin = [-0.0187499550000001, 0.0313220950000002, 0.0]
 slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 
 # create a new 'TTK PersistenceDiagram'
@@ -51,13 +48,20 @@ tTKTopologicalSimplification1.ScalarField = ['POINTS', 'SplatterValues']
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'SplatterValues']
 
+# create a new 'Threshold'
+threshold2 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,1))
+threshold2.Scalars = ['CELLS', 'SeparatrixType']
+threshold2.ThresholdRange = [1.0, 1.0]
+
+# create a new 'Threshold'
+threshold3 = Threshold(Input=threshold2)
+threshold3.Scalars = ['CELLS', 'SeparatrixFunctionMinimum']
+threshold3.ThresholdRange = [2.0, 999.0]
+
 # create a new 'Resample With Dataset'
 resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(tTKMorseSmaleComplex1,3),
     DestinationMesh=tableToPoints1)
-resampleWithDataset1.CellLocator = 'Static Cell Locator'
 
 # save the ouput
-SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
-SaveData('MorseComplexCriticalPoints.vtp', OutputPort(tTKMorseSmaleComplex1, 0))
-SaveData('MorseComplex1Separatrices.vtp', OutputPort(tTKMorseSmaleComplex1, 1))
-SaveData('MorseComplexSegmentation.vtp', OutputPort(tTKMorseSmaleComplex1, 3))
+SaveData('Clustering.csv', resampleWithDataset1)
+SaveData('Generators.vtu', threshold3)
