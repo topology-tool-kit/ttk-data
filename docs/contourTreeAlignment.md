@@ -12,13 +12,13 @@ In a pre-processing, the scalar fields are topologically simplified by persisten
 The filter is automatically applied to each member of the MultiBlockDataSet.
 Then, for each simplified member field, the contour tree is computed using the [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) module.
 
-The resulting MultiBlock of contour trees is then used as input for the [Alignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html) filter.
+The resulting MultiBlock of contour trees is then used as input for the [Contour Tree Alignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html) filter.
 This alignment is a super tree of all contour trees and can be seen as a representative of the topology of the whole ensemble.
 Unfortunately, the vtk object representing the alignment does not have any layout information attached.
 Therefore, we use the [PlanarGraphLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html) together with a paraview calculator to compute and apply the layout information.
 
 We now want to check which features of the original scalar fields have been matched onto each other.
-Therefore, we use the ExtractSeletion filter to extract one vertex and attach its segmentationIDs array to the multi block data set representing the segmentations of the contour trees.
+Therefore, we use the `ExtractSeletion` filter to extract one vertex and attach its `segmentationIDs` array to the multi block data set representing the segmentations of the contour trees.
 We also use a [Grid Layout](https://topology-tool-kit.github.io/doc/html/classttkGridLayout.html) to render the multi block in a comparable fashion (right view, above screenshot).
 
 As a last step, we use the [ForEach](https://topology-tool-kit.github.io/doc/html/classttkForEachhtml) and [EndFor](https://topology-tool-kit.github.io/doc/html/classttkEndFor.html) filters to iterate the multi block of segmentations and in each iteration, we extract the region of the scalar field that corresponds to the segmentation id from the selected vertex.
