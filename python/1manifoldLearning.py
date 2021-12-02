@@ -25,11 +25,8 @@ gaussianResampling2.SplatAccumulationMode = 'Sum'
 # create a new 'Slice'
 slice1 = Slice(Input=gaussianResampling2)
 slice1.SliceType = 'Plane'
-slice1.HyperTreeGridSlicer = 'Plane'
-slice1.SliceOffsetValues = [0.0]
 
 # init the 'Plane' selected for 'SliceType'
-slice1.SliceType.Origin = [-0.00547350355230147, 0.0452015383244153, 0.0]
 slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 
 # create a new 'TTK PersistenceDiagram'
@@ -66,6 +63,5 @@ threshold3.Scalars = ['CELLS', 'NumberOfCriticalPointsOnBoundary']
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother1 = TTKGeometrySmoother(Input=threshold3)
 tTKGeometrySmoother1.IterationNumber = 100
-tTKGeometrySmoother1.InputMaskField = [None, '']
 
 SaveData('OutputArc.vtu', tTKGeometrySmoother1)
