@@ -44,7 +44,7 @@ tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1
 tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'SplatterValues']
 
 # create a new 'Resample With Dataset'
-resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(TTKMorseSmaleComplex1,3),
+resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(tTKMorseSmaleComplex1,3),
     DestinationMesh=tableToPoints1)
 resampleWithDataset1.CellLocator = 'Static Cell Locator'
 

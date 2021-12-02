@@ -4,7 +4,7 @@
 
 ## Pipeline description
 This example performs a persistence driven clustering of a 2D toy data set, taken from the [scikit-learn examples](https://scikit-learn.org/stable/modules/clustering.html).
-Please check out the [Karhunen-Love Digits 64-Dimensions example](https://github.com/topology-tool-kit/ttk-data/pull/87/karhunenLoveDigits64Dimensions/) for an application of this pipeline to a real-life, high-dimensional, data set.
+Please check out the [Karhunen-Love Digits 64-Dimensions example](../karhunenLoveDigits64Dimensions/) for an application of this pipeline to a real-life, high-dimensional, data set.
 
 The pipeline starts by estimating the density of the input point cloud with a Gaussian kernel, by the `GaussianResampling`  filter, coupled with the `Slice` filter (to restrict the estimation to a 2D plane).
 
