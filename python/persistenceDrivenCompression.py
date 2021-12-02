@@ -21,3 +21,11 @@ naturalImage_persistence10ttk = TTKTopologicalCompressionReader(
 naturalImage_persistence10_zfp50ttk = TTKTopologicalCompressionReader(
     FileName="naturalImage_persistence10_zfp50.ttk",
 )
+
+# save outputs to VTI
+SaveData("uncompressed_naturalImage_zfp50.vti", naturalImage_zfp50ttk)
+SaveData("uncompressed_naturalImage_persistence10.vti", naturalImage_persistence10ttk)
+SaveData(
+    "uncompressed_naturalImage_persistence10_zfp50.vti",
+    naturalImage_persistence10_zfp50ttk,
+)

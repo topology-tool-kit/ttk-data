@@ -60,7 +60,9 @@ This script only loads the compressed data-sets.
 
 ## Outputs
 
-None for this state file.
+* `uncompressed_naturalImage_zfp50.vti`: the second input saved as a VTI file.
+* `uncompressed_naturalImage_persistence10.vti`: the third input saved as a VTI file.
+* `uncompressed_naturalImage_persistence10_zfp50.vti`: the last input saved as a VTI file.
 
 ## C++/Python API
 
