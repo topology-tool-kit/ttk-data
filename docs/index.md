@@ -100,5 +100,6 @@ If you have any questions regarding these examples, please let us know by sendin
 
 | Name | Screenshot |
 |:-:|:-:|
+| [Cinema IO](cinemaIO/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cinemaReader.jpeg) |
 | [Manifold checks](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 
