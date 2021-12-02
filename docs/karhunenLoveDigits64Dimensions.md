@@ -17,7 +17,7 @@ Next, the simplified persistence diagram is used as a constraint for the [Topolo
 The simplified density field then contains only 10 maxima and it is used as an input to the [Morse-Smale complex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) computation, for the separation of the 2D space into the output clusters (background color in the bottom right view, above screenshot). 
 
 Finally, the cluster identifier of each input point is given by the identifier of the 
-corresponding ascending manifold (`AscendingManifold`), with the `ResampleWithDataset` filter.
+corresponding ascending manifold of the Morse-Smale complex (`AscendingManifold`), with the `ResampleWithDataset` filter.
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
