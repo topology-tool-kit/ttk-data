@@ -1,4 +1,4 @@
-# Persistence-Driven Compression example
+# Persistence-Driven Compression
 
 ![Persistence-Driven Compression example
 Image](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg)
