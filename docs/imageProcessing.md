@@ -1,4 +1,4 @@
-# Image Processing example
+# Image Processing 
 
 ![Image Processing example
 Image](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg)

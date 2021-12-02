@@ -1,4 +1,4 @@
-# Contour Tree Alignment example
+# Contour Tree Alignment 
 
 ![CT bones example Image](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg)
 
