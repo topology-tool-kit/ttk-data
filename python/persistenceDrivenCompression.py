@@ -2,30 +2,25 @@
 
 from paraview.simple import *
 
-# create a new 'TTK TopologicalCompressionReader'
-naturalImage_zfp50ttk = TTKTopologicalCompressionReader(
-    FileName="naturalImage_zfp50.ttk"
+# read input VTI with 'XML Image Data Reader'
+naturalImage = XMLImageDataReader(FileName=["naturalImage_original.vti"])
+
+# compress & save to TTK Topological Compression format
+SaveData(
+    "naturalImage_persistence10_zfp50.ttk",
+    proxy=naturalImage,
+    ScalarField=["POINTS", "PNGImage"],
+    Topologicallosspersistencepercentage=10,  # Topological loss
+    ZFPRelativeErrorToleranceextra=50,  # ZFP Relative Error Tolerance
 )
 
-# create a new 'XML Image Data Reader'
-naturalImage_originalvti = XMLImageDataReader(FileName=["naturalImage_original.vti"])
-naturalImage_originalvti.PointArrayStatus = ["PNGImage"]
-naturalImage_originalvti.TimeArray = "None"
-
-# create a new 'TTK TopologicalCompressionReader'
-naturalImage_persistence10ttk = TTKTopologicalCompressionReader(
-    FileName="naturalImage_persistence10.ttk",
-)
-
-# create a new 'TTK TopologicalCompressionReader'
-naturalImage_persistence10_zfp50ttk = TTKTopologicalCompressionReader(
+# read the compressed file with 'TTK TopologicalCompressionReader'
+naturalImage_compressed = TTKTopologicalCompressionReader(
     FileName="naturalImage_persistence10_zfp50.ttk",
 )
 
-# save outputs to VTI
-SaveData("uncompressed_naturalImage_zfp50.vti", naturalImage_zfp50ttk)
-SaveData("uncompressed_naturalImage_persistence10.vti", naturalImage_persistence10ttk)
+# write compressed data-set to VTI
 SaveData(
     "uncompressed_naturalImage_persistence10_zfp50.vti",
-    naturalImage_persistence10_zfp50ttk,
+    naturalImage_compressed,
 )

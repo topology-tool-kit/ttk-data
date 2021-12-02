@@ -32,7 +32,15 @@ $ paraview states/persistenceDrivenCompression.pvsm
 
 ## Python code
 
-This script only loads the compressed data-sets.
+This script loads the uncompressed
+[naturalImage_original.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/naturalImage_original.vti)
+input file, saves it as in the TTK Topological Compressed Image Data
+file format, using
+[TopologicalCompressionWriter](https://topology-tool-kit.github.io/doc/html/classttkTopologicalCompressionWriter.html)
+under the hood. The produced file is then loaded with
+[TopologicalCompressionReader](https://topology-tool-kit.github.io/doc/html/classttkTopologicalCompressionWriter.html)
+and saved back to VTI. This demonstrates the use of the
+`TopologicalCompression` I/O modules.
 
 ``` python  linenums="1"
 --8<-- "python/persistenceDrivenCompression.py"
@@ -60,9 +68,8 @@ This script only loads the compressed data-sets.
 
 ## Outputs
 
-* `uncompressed_naturalImage_zfp50.vti`: the second input saved as a VTI file.
-* `uncompressed_naturalImage_persistence10.vti`: the third input saved as a VTI file.
-* `uncompressed_naturalImage_persistence10_zfp50.vti`: the last input saved as a VTI file.
+* `uncompressed_naturalImage_persistence10_zfp50.vti`: the first
+  input, compressed and saved as a VTI file.
 
 ## C++/Python API
 
