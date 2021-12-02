@@ -1,4 +1,4 @@
-# 1-Manifold Learning example
+# 1-Manifold Learning 
 
 ![1-Manifold Learning example Image](https://topology-tool-kit.github.io/img/gallery/1manifoldLearning.jpeg)
 
