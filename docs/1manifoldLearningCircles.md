@@ -1,4 +1,4 @@
-# 1-Manifold Learning Circles example
+# 1-Manifold Learning Circles 
 
 ![1-Manifold Learning Circles  example Image](https://topology-tool-kit.github.io/img/gallery/1manifoldLearningCircles.jpeg)
 
@@ -31,7 +31,7 @@ $ paraview states/1manifoldLearningCircles.pvsm
 - - [clustering0.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/clustering0.csv): a table containing 2D point coordinates arranged in concentric circles.
 
 ## Outputs
-- `Clustering.csv`: Resampled dataset to store the clustering. You are free to change the `vtu` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
+- `Clustering.csv`: Resampled dataset to store the clustering (field `AscendingManifold`). You are free to change the `vtu` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 - `Generators.vtu`: edges (or 1 dimensional elements) of the output Morse Smale Complex after passing through two thresholds in VTK file format (bottom right view, above screenshot). Only the edges connected to maximam with the field `SeparatrixFunctionMinimum` below 2 are saved in this file. You are free to change the `vtu` file extension to that of any other supported file format (e.g. `csv`) in the above python script. 
 
 ## C++/Python API
