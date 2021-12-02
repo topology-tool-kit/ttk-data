@@ -44,7 +44,6 @@ tTKMorseSmaleQuadrangulation1.DualQuadrangulation = 1
 
 # create a new 'TTK QuadrangulationSubdivision'
 tTKQuadrangulationSubdivision1 = TTKQuadrangulationSubdivision(
-    registrationName="TTKQuadrangulationSubdivision1",
     Triangulatedsurface=OutputPort(tTKMorseSmaleComplex1, 3),
     Coarsequadrangulation=tTKMorseSmaleQuadrangulation1,
 )
