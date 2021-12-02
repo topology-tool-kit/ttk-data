@@ -9,8 +9,8 @@ allowfullscreen></iframe>
 ## Pipeline description
 
 This example first loads a mecanical model as a 2D triangle mesh from
-disk. This mechanical model embeds a vector field with the output of
-the
+disk. This mechanical model embeds a collection of scalar fields that
+corresponds to the output of the
 [EigenField](https://topology-tool-kit.github.io/doc/html/classttkEigenField.html)
 module. This module generated a family of functions that are coupled
 to the form of the dataset (basically, they are eigenfunctions of the
