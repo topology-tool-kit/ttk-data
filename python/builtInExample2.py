@@ -3,7 +3,6 @@ from paraview.simple import *
 
 # Load the scalar fields using 'XML Image Data Reader'
 example2vti = XMLImageDataReader(FileName=['BuiltInExample2.vti'])
-example2vti.PointArrayStatus = ['log(Rho)', 'log(s)']
 
 ### Univariate data analysis using isosurfaces
 
@@ -35,7 +34,6 @@ threshold1.ThresholdRange = [0.1, 1.0]
 tTKProjectionFromField1 = TTKProjectionFromField(Input=contour2)
 tTKProjectionFromField1.UComponent = ['POINTS', 'log(Rho)']
 tTKProjectionFromField1.VComponent = ['POINTS', 'log(s)']
-tTKProjectionFromField1.a3DCoordinates = [None, '']
 
 # create a new 'Extract Edges'
 extractEdges1 = ExtractEdges(Input=tTKProjectionFromField1)
@@ -50,7 +48,6 @@ tube1.Radius = 0.02
 tTKProjectionFromField2 = TTKProjectionFromField(Input=contour3)
 tTKProjectionFromField2.UComponent = ['POINTS', 'log(Rho)']
 tTKProjectionFromField2.VComponent = ['POINTS', 'log(s)']
-tTKProjectionFromField2.a3DCoordinates = [None, '']
 
 # create a new 'Extract Edges'
 extractEdges2 = ExtractEdges(Input=tTKProjectionFromField2)
@@ -111,8 +108,6 @@ for coords in rangePolygonsCoordinates:
 
     # create a new 'Tube'
     tube3 = Tube(Input=extractSurface1)
-    tube3.Scalars = ['POINTS', 'Density']
-    tube3.Vectors = ['POINTS', '']
     tube3.Radius = 0.03
     
     polygonTubes.append(tube3)
@@ -121,8 +116,6 @@ for coords in rangePolygonsCoordinates:
 tTKJacobiSet1 = TTKJacobiSet(Input=tetrahedralize1)
 tTKJacobiSet1.UComponent = ['POINTS', 'log(Rho)']
 tTKJacobiSet1.VComponent = ['POINTS', 'log(s)']
-tTKJacobiSet1.UOffsetField = ['POINTS', '']
-tTKJacobiSet1.VOffsetField = ['POINTS', '']
 tTKJacobiSet1.Withedgeidentifiers = 1
 tTKJacobiSet1.Withvertexscalars = 1
 
@@ -130,7 +123,6 @@ tTKJacobiSet1.Withvertexscalars = 1
 tTKProjectionFromField3 = TTKProjectionFromField(Input=tTKJacobiSet1)
 tTKProjectionFromField3.UComponent = ['POINTS', 'log(Rho)']
 tTKProjectionFromField3.VComponent = ['POINTS', 'log(s)']
-tTKProjectionFromField3.a3DCoordinates = [None, '']
 
 # save the output
 SaveData('logRhoIsosurfaceAtoms.vtp', contour2)
