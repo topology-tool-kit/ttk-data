@@ -18,9 +18,9 @@ Next, a [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classt
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data, giving us a simplified data.
 
-Form there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) is computed (bottom right view in the above screenshot). Finally, by using the identifier of the 2-dimension cell of the Morse Smale complex where one point lands, a cluster identifier, encoded in the AscendingManifold field in the ouput, is given to it.
+From there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) is computed (bottom right view in the above screenshot). Finally, by using the identifier of the 2-dimension cell of the Morse Smale complex where one point lands, a cluster identifier, encoded in the AscendingManifold field in the ouput, is given to it.
 
-
+Please check out the [Karhunen-Love Digits 64-Dimensions](https://topology-tool-kit.github.io/examples/karhunenLoveDigits64Dimensions/) example for an application of this pipeline on a real-life data set.
 
 <!--This simplified data is then used as the input of the computation of [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) and the [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) (bottom left view, above screenshot).-->
 
