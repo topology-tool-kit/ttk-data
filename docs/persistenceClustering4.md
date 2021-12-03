@@ -20,8 +20,9 @@ Next, a [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classt
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data, giving us a simplified data.
 
-Form there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) is computed (bottom right view in the above screenshot) then smoothed. Finally, by using the identifier of the 2-dimension cell of the Morse Smale complex where one point lands, a cluster is given to it.
+From there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) is computed (bottom right view in the above screenshot). Finally, by using the identifier of the 2-dimension cell of the Morse Smale complex where one point lands, a cluster identifier, encoded in the AscendingManifold field in the ouput, is given to it.
 
+Please check out the [Karhunen-Love Digits 64-Dimensions](https://topology-tool-kit.github.io/examples/karhunenLoveDigits64Dimensions/) example for an application of this pipeline on a real-life data set.
 
 
 <!--This simplified data is then used as the input of the computation of [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) and the [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) (bottom left view, above screenshot).-->
@@ -42,7 +43,7 @@ $ paraview states/persistenceClustering4.pvsm
 - [clustering4.csv](https://github.com/topology-tool-kit/ttk-data/blob/dev/clustering4.csv): a table of 2 dimension points.
 
 ## Outputs
-- `data4Resampled.csv`: the output is the data resampled in CSV file format.
+- `data4Resampled.csv`: the output is the data resampled in CSV file format, the cluster identifier of a point is given in the AscendingManifold field.
 <!-- `Segmentation.vtp`: the output Morse Smale complex in VTK file format (bottom right view, above screenshot).-->
 
 
