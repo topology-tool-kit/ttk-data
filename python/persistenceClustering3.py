@@ -20,11 +20,8 @@ gaussianResampling1.SplatAccumulationMode = 'Sum'
 # create a new 'Slice'
 slice1 = Slice(Input=gaussianResampling1)
 slice1.SliceType = 'Plane'
-slice1.HyperTreeGridSlicer = 'Plane'
-slice1.SliceOffsetValues = [0.0]
 
 # init the 'Plane' selected for 'SliceType'
-slice1.SliceType.Origin = [-0.0187499550000001, 0.0313220950000002, 0.0]
 slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 
 # create a new 'TTK PersistenceDiagram'
@@ -43,7 +40,8 @@ persistenceThreshold0.ThresholdRange = [10.0, 9999.0]
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=slice1,
-    Constraints=persistenceThreshold0)
+    Constraints=persistenceThreshold0
+)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'SplatterValues']
 
 # create a new 'TTK MorseSmaleComplex'
@@ -52,22 +50,8 @@ tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'SplatterValues']
 
 # create a new 'Resample With Dataset'
 resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(tTKMorseSmaleComplex1,3),
-    DestinationMesh=tableToPoints1)
-resampleWithDataset1.CellLocator = 'Static Cell Locator'
-
-# create a new 'Threshold'
-threshold2 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,1))
-threshold2.Scalars = ['CELLS', 'SeparatrixType']
-
-# create a new 'Threshold'
-threshold12 = Threshold(registrationName='Threshold12', Input=tTKPersistenceDiagram1)
-threshold12.Scalars = ['CELLS', 'PairIdentifier']
-threshold12.ThresholdRange = [-1.0, -0.1]
-
-# create a new 'TTK GeometrySmoother'
-tTKGeometrySmoother1 = TTKGeometrySmoother(Input=threshold2)
-tTKGeometrySmoother1.IterationNumber = 10
+    DestinationMesh=tableToPoints1
+)
 
 # save the output(s)
 SaveData('data1Resampled.csv', resampleWithDataset1)
-SaveData('Seg3.vtp', resampleWithDataset1)
