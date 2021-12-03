@@ -19,21 +19,13 @@ gaussianResampling1.SplatAccumulationMode = "Sum"
 # create a new 'Slice'
 slice1 = Slice(Input=gaussianResampling1)
 slice1.SliceType = "Plane"
-slice1.HyperTreeGridSlicer = "Plane"
-slice1.SliceOffsetValues = [0.0]
 
 # init the 'Plane' selected for 'SliceType'
-slice1.SliceType.Origin = [-0.0187499550000001, 0.0313220950000002, 0.0]
 slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=slice1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
-
-# create a new 'Threshold'
-threshold12 = Threshold(Input=tTKPersistenceDiagram1)
-threshold12.Scalars = ["CELLS", "PairIdentifier"]
-threshold12.ThresholdRange = [-1.0, -0.1]
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
@@ -60,7 +52,6 @@ resampleWithDataset1 = ResampleWithDataset(
     SourceDataArrays=OutputPort(tTKMorseSmaleComplex1, 3),
     DestinationMesh=tableToPoints1,
 )
-resampleWithDataset1.CellLocator = "Static Cell Locator"
 
 # save the output(s)
 SaveData('data1Resampled.csv', resampleWithDataset1)
