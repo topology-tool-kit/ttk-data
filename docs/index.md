@@ -19,185 +19,87 @@ Each example includes:
 
 This documentation assumes a default TTK installation (with the `pvpython` API support enabled) and that the repository [ttk-data](https://github.com/topology-tool-kit/ttk-data) has been downloaded locally.
 
-## List of available examples
-
-### Scalar data
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/dragon.jpg)
-
-* [Dragon example](dragon/)
-
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morsePersistence.jpg)
-
-* [Morse persistence example](morsePersistence/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg)
-
-* [Built-in example 1](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg)
-
-* [Interaction site example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/viscousFingering.jpg)
-
-* [Viscous fingering example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg)
-
-* [Morse molecule example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg)
-
-* [Tectonic puzzle example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/climate.jpg)
-
-* [Ocean vortices example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourAroundPoint.jpg)
-
-* [Contour around point example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg)
-
-* [CT bones example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg)
-
-* [Tribute example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg)
-
-* [Image processing example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg)
-
-* [Persistence driven compression example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg)
-
-* [Morse-Smale quadrangulation example](dragon/)
-
-### Bivariate scalar data
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample2.jpg)
-
-* [Built-in example 2](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToy.jpg)
-
-* [Bivariate toy example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToyCspPeeling.jpg)
-
-* [Bivariate toy CSP peeling example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mechanical.jpg)
-
-* [Mechanical example](dragon/)
-
-
-### Uncertain scalar data
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample3.jpg)
-
-* [Built-in example 3](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/uncertainStartingVortex.jpg)
-
-* [Uncertain starting vortex example](dragon/)
-
-
-### Time-varying scalar data
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg)
-
-* [Time tracking example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg)
-
-* [Merge tree feature tracking example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg)
-
-* [Merge tree temporal reduction example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg)
-
-* [Nested tracking graph example](dragon/)
-
-### Ensemble scalar data
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg)
-
-* [Persistence diagram distance example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg)
-
-* [Persistence diagram clustering example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg)
-
-* [Merge tree clustering example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg)
-
-* [Contour tree alignment example](dragon/)
-
-### High-dimensional / point cloud data
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClusteringGallery.jpeg)
-
-* [Persistence clustering gallery example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering0.jpeg)
-
-* [Persistence clustering0 example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering1.jpeg)
-
-* [Persistence clustering1 example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering2.jpeg)
-
-* [Persistence clustering2 example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering3.jpeg)
-
-* [Persistence clustering3 example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering4.jpeg)
-
-* [Persistence clustering4 example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg)
-
-* [Karhunen-Love Digits 64-Dimensions example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearning.jpeg)
-
-* [1-manifold learning example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearningCircles.jpeg)
-
-* [1-manifold learning circles  example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/2manifoldLearning.jpeg)
-
-* [2-manifold learning example](dragon/)
-
-### In-situ features
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geometryApproximation.jpg)
-
-* [Geometry approximation example](dragon/)
-
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cinemaDarkroom.jpg)
-
-* [Cinema darkroom example](dragon/)
-
-### Misc features
-![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg)
-
-* [Manifold checks example](dragon/)
+If you have any questions regarding these examples, please let us know by sending an email to the [TTK user mailing list](mailto:ttk-users@googlegroups.com)!
+
+## Scalar data
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Dragon](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/dragon.jpg) |
+| [Morse persistence](morsePersistence/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morsePersistence.jpg) |
+| [Built-in example 1](BuiltInExample1/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg) |
+| [Interaction site](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg) |
+| [Viscous fingering](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/viscousFingering.jpg) |
+| [Morse molecule](morseMolecule/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg) |
+| [Tectonic puzzle](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg) |
+| [Ocean vortices](dragon/) | !![ExampleImage](https://topology-tool-kit.github.io/img/gallery/climate.jpg) |
+| [Contour around point](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourAroundPoint.jpg) |
+| [CT bones](ctBones/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg) |
+| [Tribute](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg) |
+| [Image processing](imageProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg) |
+| [Persistence driven compression](persistenceDrivenCompression/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg) |
+| [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
+
+## Bivariate scalar data
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Built-in example 2](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample2.jpg) |
+| [Bivariate toy](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToy.jpg) |
+| [Bivariate toy CSP peeling](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToyCspPeeling.jpg) |
+| [Mechanical](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mechanical.jpg) |
+
+## Uncertain scalar data
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Built-in example 3](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample3.jpg) |
+| [Uncertain starting vortex](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/uncertainStartingVortex.jpg) |
+
+## Time-varying scalar data
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
+| [Merge tree feature tracking](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
+| [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
+| [Nested tracking graph](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
+
+## Ensemble scalar data
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Persistence diagram distance](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg) |
+| [Persistence diagram clustering](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg) |
+| [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
+| [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
+
+## High-dimensional / point cloud data
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Persistence clustering gallery](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClusteringGallery.jpeg) |
+| [Persistence clustering0](persistenceClustering0/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering0.jpeg) |
+| [Persistence clustering1](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering1.jpeg) |
+| [Persistence clustering2](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering2.jpeg) |
+| [Persistence clustering3](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering3.jpeg) |
+| [Persistence clustering4](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering4.jpeg) |
+| [Karhunen-Love Digits 64-Dimensions](karhunenLoveDigits64Dimensions/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg) |
+| [1-manifold learning](1manifoldLearning/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearning.jpeg) |
+| [1-manifold learning circles ](1manifoldLearningCircles/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearningCircles.jpeg) |
+| [2-manifold learning](2manifoldLearning/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/2manifoldLearning.jpeg) |
+
+## In-situ features
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Geometry approximation](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geometryApproximation.jpg) |
+| [Cinema darkroom](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cinemaDarkroom.jpg) |
+
+## Misc features
+
+| Name | Screenshot |
+|:-:|:-:|
+| [Cinema IO](cinemaIO/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/yKyiRzPbs0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
+| [Manifold checks](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 
