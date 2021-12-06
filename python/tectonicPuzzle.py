@@ -4,7 +4,6 @@ from paraview.simple import *
 
 # create a new 'XML Unstructured Grid Reader'
 tectonicPuzzlevtu = XMLUnstructuredGridReader(FileName=["tectonicPuzzle.vtu"])
-tectonicPuzzlevtu.PointArrayStatus = ["Viscosity"]
 
 # create a new 'Extract Surface'
 extractSurface1 = ExtractSurface(Input=tectonicPuzzlevtu)
@@ -55,7 +54,6 @@ tTKTopologicalSimplification1.ScalarField = ["POINTS", "logViscosity"]
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex1 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification1)
 tTKMorseSmaleComplex1.ScalarField = ["POINTS", "logViscosity"]
-tTKMorseSmaleComplex1.OffsetField = ["POINTS", "OutputOffsetScalarField"]
 
 # create a new 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints2 = TTKIcospheresFromPoints(Input=tTKMorseSmaleComplex1)
@@ -89,7 +87,6 @@ tTKTopologicalSimplification2.ScalarField = ["POINTS", "logViscosity"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram2 = TTKPersistenceDiagram(Input=tTKTopologicalSimplification2)
 tTKPersistenceDiagram2.ScalarField = ["POINTS", "logViscosity"]
-tTKPersistenceDiagram2.InputOffsetField = ["POINTS", "OutputOffsetScalarField"]
 
 # create a new 'Threshold'
 threshold4 = Threshold(Input=tTKPersistenceDiagram2)
@@ -135,7 +132,6 @@ tTKTopologicalSimplification3.ScalarField = ["POINTS", "logViscosity"]
 # create a new 'TTK MorseSmaleComplex'
 tTKMorseSmaleComplex2 = TTKMorseSmaleComplex(Input=tTKTopologicalSimplification3)
 tTKMorseSmaleComplex2.ScalarField = ["POINTS", "logViscosity"]
-tTKMorseSmaleComplex2.OffsetField = ["POINTS", "OutputOffsetScalarField"]
 
 # create a new 'TTK IdentifierRandomizer'
 tTKIdentifierRandomizer1 = TTKIdentifierRandomizer(
