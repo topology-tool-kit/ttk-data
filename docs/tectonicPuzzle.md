@@ -1,4 +1,4 @@
-# Tectonic Puzzle example
+# Tectonic Puzzle 
 
 ![Tectonic Puzzle example
 Image](https://topology-tool-kit.github.io/img/gallery/geology.jpg)

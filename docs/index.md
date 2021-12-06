@@ -31,7 +31,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Interaction site](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg) |
 | [Viscous fingering](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/viscousFingering.jpg) |
 | [Morse molecule](morseMolecule/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg) |
-| [Tectonic puzzle](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg) |
+| [Tectonic puzzle](tectonicPuzzle/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg) |
 | [Ocean vortices](dragon/) | !![ExampleImage](https://topology-tool-kit.github.io/img/gallery/climate.jpg) |
 | [Contour around point](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourAroundPoint.jpg) |
 | [CT bones](ctBones/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg) |
