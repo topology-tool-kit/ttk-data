@@ -4,7 +4,6 @@ from paraview.simple import *
 
 # create a new 'XML Image Data Reader'
 uncertainStartingVortexvti = XMLImageDataReader(FileName=['uncertainStartingVortex.vti'])
-uncertainStartingVortexvti.PointArrayStatus = ['lowerBoundField', 'upperBoundField']
 
 # create a new 'TTK MandatoryCriticalPoints'
 tTKMandatoryCriticalPoints1 = TTKMandatoryCriticalPoints(Input=uncertainStartingVortexvti)
@@ -27,7 +26,6 @@ randomAttributes1 = RandomAttributes(Input=uncertainStartingVortexvti)
 randomAttributes1.DataType = 'Double'
 randomAttributes1.ComponentRange = [0.0, 0.999]
 randomAttributes1.GeneratePointScalars = 1
-randomAttributes1.GenerateCellVectors = 0
 
 # create a new 'Calculator'
 calculator1 = Calculator(Input=randomAttributes1)
@@ -37,7 +35,6 @@ calculator1.Function = 'lowerBoundField+(upperBoundField-lowerBoundField)*Random
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'realization0']
-tTKPersistenceDiagram1.InputOffsetField = [None, '']
 
 # create a new 'Threshold'
 threshold2 = Threshold(Input=tTKPersistenceDiagram1)
@@ -53,14 +50,10 @@ persistenceThreshold1.ThresholdRange = [0.05, 1.75475390406744]
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=calculator1,
     Constraints=persistenceThreshold1)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'realization0']
-tTKTopologicalSimplification1.InputOffsetField = [None, '']
-tTKTopologicalSimplification1.VertexIdentifierField = [None, '']
 
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=tTKTopologicalSimplification1)
 tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'realization0']
-tTKScalarFieldCriticalPoints1.InputOffsetField = ['POINTS', 'OutputOffsetScalarField']
-tTKScalarFieldCriticalPoints1.Withvertexscalars = 0
 
 SaveData('PersistenceDiagram.vtu', tTKPersistenceDiagram1)
 SaveData('CriticalPoints.vtp', tTKScalarFieldCriticalPoints1)
