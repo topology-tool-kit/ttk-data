@@ -5,7 +5,6 @@ from paraview.simple import *
 
 # load the pegasus dataset by creating a'XML Unstructured Grid Reader'
 pegasusvtu = XMLUnstructuredGridReader(FileName=['pegasus.vtu'])
-pegasusvtu.PointArrayStatus = []
 
 # create a new 'Elevation' on the dataset
 elevation1 = Elevation(Input=pegasusvtu)
@@ -15,7 +14,6 @@ elevation1.HighPoint = [-27.56680371810648, 70.65296514617846, -1072.75924719297
 # create a new 'Generate Ids'
 generateIds1 = GenerateIds(Input=elevation1)
 generateIds1.PointIdsArrayName = 'ttkVertexScalarField'
-generateIds1.CellIdsArrayName = 'CellIdentifiers'
 
 # create a new 'Resample With Dataset'
 resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=elevation1,
@@ -69,7 +67,6 @@ tTKScalarFieldNormalizer1.ScalarField = ['POINTS', 'ScaledHarmonic']
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldNormalizer1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'ScaledHarmonic']
-tTKPersistenceDiagram1.InputOffsetField = [None, '']
 tTKPersistenceDiagram1.EmbedinDomain = 1
 
 # create a new 'Threshold'
@@ -80,27 +77,21 @@ threshold1.ThresholdRange = [0.001, 0.9999999999999999]
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tTKScalarFieldNormalizer1, Constraints=threshold1)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'ScaledHarmonic']
-tTKTopologicalSimplification1.InputOffsetField = [None, '']
-tTKTopologicalSimplification1.VertexIdentifierField = [None, '']
 
 # create a new 'TTK Reeb graph (FTR)'
 tTKReebgraphFTR1 = TTKReebgraphFTR(Input=tTKTopologicalSimplification1)
 tTKReebgraphFTR1.ScalarField = ['POINTS', 'ScaledHarmonic']
-tTKReebgraphFTR1.InputOffsetField = ['POINTS', 'Elevation']
 tTKReebgraphFTR1.ArcSampling = 20
 
 # create a new 'TTK GeometrySmoother' taking the reeb graph edges for input
 tTKGeometrySmoother1 = TTKGeometrySmoother(Input=OutputPort(tTKReebgraphFTR1,1))
 tTKGeometrySmoother1.IterationNumber = 20
-tTKGeometrySmoother1.InputMaskField = [None, '']
 
 # create a new 'Extract Surface'
 extractSurface2 = ExtractSurface(Input=tTKGeometrySmoother1)
 
 # create a new 'Tube' representing the reep graph edges
 tube1 = Tube(Input=extractSurface2)
-tube1.Scalars = ['POINTS', 'ttkMaskScalarField']
-tube1.Vectors = [None, '']
 tube1.Radius = 0.75
 
 # create a new 'TTK IcospheresFromPoints' representing the reeb graph nodes
