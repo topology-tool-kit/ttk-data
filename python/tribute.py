@@ -19,19 +19,17 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'originalData']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.LowerThreshold = -0.1
-threshold1.UpperThreshold = 3560.0
+threshold1.ThresholdRange = [-0.1, 3560.0]
 
 # create a new 'Threshold'
 minimumPairs = Threshold(Input=threshold1)
 minimumPairs.Scalars = ['CELLS', 'PairType']
-minimumPairs.LowerThreshold = -1.0
+minimumPairs.ThresholdRange = [-1.0, 0.0]
 
 # create a new 'Threshold'
 maximumPairs = Threshold(Input=threshold1)
 maximumPairs.Scalars = ['CELLS', 'PairType']
-maximumPairs.LowerThreshold = 1.0
-maximumPairs.UpperThreshold = 1.0
+maximumPairs.ThresholdRange = [1.0, 1.0]
 
 # create a new 'Calculator'
 calculator2 = Calculator(Input=maximumPairs)
@@ -41,8 +39,7 @@ calculator2.Function = 'coordsX'
 # create a new 'Threshold'
 birthThreshold = Threshold(Input=calculator2)
 birthThreshold.Scalars = ['POINTS', 'Birth']
-birthThreshold.LowerThreshold = 257.390747070312
-birthThreshold.UpperThreshold = 297.0
+birthThreshold.ThresholdRange = [257.390747070312, 297.0]
 
 # create a new 'Append Datasets'
 appendDatasets1 = AppendDatasets(Input=[minimumPairs, birthThreshold])
@@ -50,8 +47,7 @@ appendDatasets1 = AppendDatasets(Input=[minimumPairs, birthThreshold])
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=appendDatasets1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold.LowerThreshold = 8.5
-persistenceThreshold.UpperThreshold = 102.106426713382
+persistenceThreshold.ThresholdRange = [8.5, 102.106426713382]
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tetrahedralize1, Constraints=persistenceThreshold)
