@@ -1,4 +1,4 @@
-# Persistence Clustering 4 Example
+# Persistence Clustering 4 
 
 <!--[![Dragon example video tutorial](https://topology-tool-kit.github.io/img/gallery/dragon.jpg)](https://youtu.be/YVk9vRKIEX8)-->
 

@@ -1,4 +1,4 @@
-# Interaction sites example
+# Interaction sites 
 
 ![Interaction sites example screenshot](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg)
 
@@ -39,11 +39,16 @@ $ paraview states/interactionSites.pvsm
 Note that you are free to change the VTK file extensions to that of any other supported file format (e.g. `csv`) in the above python script.
 
 ## C++/Python API
-- [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html)
-- [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html)
-- [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
-- [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html)
-- [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
-- [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
-- [IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
+[ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
 
+[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
+
+[IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
+
+[PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html)
+
+[PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
+
+[ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html)
+
+[TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html)

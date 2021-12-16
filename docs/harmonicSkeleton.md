@@ -1,4 +1,4 @@
-# Harmonic Skeleton example
+# Harmonic Skeleton 
 
 ![Harmonic Skeleton Image](https://topology-tool-kit.github.io/img/gallery/harmonicSkeleton.jpg)
 
