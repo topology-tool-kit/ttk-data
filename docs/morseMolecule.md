@@ -44,7 +44,10 @@ Note that you are free to change the VTK file extensions to that of any other su
 
 
 ## C++/Python API
-- [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
-- [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
-- [IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
+[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
+
+[IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
+
+[MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
+
 
