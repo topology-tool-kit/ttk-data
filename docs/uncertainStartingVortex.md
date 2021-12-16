@@ -17,7 +17,7 @@ As this process introduces noise, a [PersistenceDiagram](https://topology-tool-k
 
 From it, first all point pairs are extracted, then retrieving a persistence threshold that is used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) to filter the introduced noise.
 
-At last, the [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) are computed for the smoothed realization (both left views show them as spheres). The critial points extracted from this random realization are indeed located within the regions predicted by the [MandatoryCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkMandatoryCriticalPoints.html)
+At last, the [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) are computed for the smoothed realization (both left views show them as spheres). The critial points extracted from this random realization are indeed located within the regions predicted by the [MandatoryCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkMandatoryCriticalPoints.html).
 
 
 ## ParaView
