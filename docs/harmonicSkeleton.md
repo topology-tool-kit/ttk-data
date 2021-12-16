@@ -14,7 +14,7 @@ The harmonic field is then normalized using the [ScalarFieldNormalizer](https://
 
 Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) is computed on the normalized field, extracting a threshold that is used to simplify the harmonic field using [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html).
 
-Finally, the [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttk_1_1ftr_1_1FTRGraph.html) is constructed, extracting its nodes and arcs afterwards (right view shows them). The arcs of the [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttk_1_1ftr_1_1FTRGraph.html) are smoothed with the [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html) to produce the final, output shape skeleton.
+Finally, the [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttkFTRGraph.html) is constructed, extracting its nodes and arcs afterwards (right view shows them). The arcs of the [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttkFTRGraph.html) are smoothed with the [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html) to produce the final, output shape skeleton.
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
@@ -32,13 +32,13 @@ $ paraview states/harmonicSkeleton.pvsm
 - [pegasus.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/pegasus.vtu): a two-dimensional triangulation.
 
 ## Outputs
-- `ReebGraphNodes.vtp`: spheres, representing the nodes of the output [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttk_1_1ftr_1_1FTRGraph.html)
+- `ReebGraphNodes.vtp`: spheres, representing the nodes of the output [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttkFTRGraph.html)
 in VTK file format (bottom right view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
-- `ReebGraphArcs.vtp`: cylinders (the output skeleton of the input shape), representing the arcs of the output [ReebGraph]((https://topology-tool-kit.github.io/doc/html/classttk_1_1ftr_1_1FTRGraph.html))
+- `ReebGraphArcs.vtp`: cylinders (the output skeleton of the input shape), representing the arcs of the output [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttkFTRGraph.html)
 in VTK file format (bottom right view, above screenshot). You are free to change the `vtp` file extension to that of any other supported file format (e.g. `csv`) in the above python script.
 
 ## C++/Python API
-[FTRGraph](https://topology-tool-kit.github.io/doc/html/classttk_1_1ftr_1_1FTRGraph.html)
+[FTRGraph](https://topology-tool-kit.github.io/doc/html/classttkFTRGraph.html)
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
