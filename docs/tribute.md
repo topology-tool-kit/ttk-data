@@ -4,13 +4,15 @@
 
 ## Pipeline description
 
-This example loads a PNG image from disk, from which a triangle mesh with gray-scale scalar values is created.
+This example loads a PNG microscopy image from disk, from which gray-scale scalar values are created.
 
 Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) is computed and thresholds are applied base on persistence to maintain only the most persistent features. This results in a simplified persistence diagram (top right; non-simplified persistence diagram shown in gray).
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data.
 
 This simplified data is then used as the input of the computation of the [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html). Its ascending manifolds, separatrices and critical points are shown in the bottom views (with scalar value mapped to height in the bottom right view). The separatrices are also shown, as overlay over the original scalar data, in the top left view.
+
+In this example, the [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) segments the input microscopy data into biological cells.
 
 ## ParaView
 
@@ -34,8 +36,6 @@ $ paraview states/tribute.pvsm
 - `triubute_segmentation.vtu`: segmentation of `tribute.png` into cells (Morse&ndash;Smale complex; data array `AscendingManifold`)
 
 ## C++/Python API
-
-[IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html) 
 
 [IdentifierRandomizer](https://topology-tool-kit.github.io/doc/html/classttkIdentifierRandomizer.html) 
 

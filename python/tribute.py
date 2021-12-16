@@ -9,17 +9,14 @@ calculator1 = Calculator(Input=tributepng)
 calculator1.ResultArrayName = 'originalData'
 calculator1.Function = 'sqrt(PNGImage_X*PNGImage_X+PNGImage_Y*PNGImage_Y)'
 
-# create a new 'Tetrahedralize'
-tetrahedralize1 = Tetrahedralize(Input=calculator1)
-
 # create a new 'TTK PersistenceDiagram'
-tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tetrahedralize1)
+tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'originalData']
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.ThresholdRange = [-0.1, 3560.0]
+threshold1.ThresholdRange = [-0.1, 999999.0]
 
 # create a new 'Threshold'
 minimumPairs = Threshold(Input=threshold1)
@@ -47,10 +44,10 @@ appendDatasets1 = AppendDatasets(Input=[minimumPairs, birthThreshold])
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=appendDatasets1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold.ThresholdRange = [8.5, 102.106426713382]
+persistenceThreshold.ThresholdRange = [8.5, 9999]
 
 # create a new 'TTK TopologicalSimplification'
-tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tetrahedralize1, Constraints=persistenceThreshold)
+tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=calculator1, Constraints=persistenceThreshold)
 tTKTopologicalSimplification1.ScalarField = ['POINTS', 'originalData']
 
 # create a new 'TTK MorseSmaleComplex'
@@ -62,4 +59,4 @@ tTKIdentifierRandomizer2 = TTKIdentifierRandomizer(Input=OutputPort(tTKMorseSmal
 tTKIdentifierRandomizer2.ScalarField = ['POINTS', 'AscendingManifold']
 
 # save the output
-SaveData('tribute_segmentation.vtu', tTKIdentifierRandomizer2)
+SaveData('tribute_segmentation.vti', tTKIdentifierRandomizer2)
