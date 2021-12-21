@@ -1,4 +1,4 @@
-# Morse molecule example
+# Morse molecule 
 
 <!--[![Morse molecule example video tutorial](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg)](https://youtu.be/Rdsfkb6SpK8)-->
 

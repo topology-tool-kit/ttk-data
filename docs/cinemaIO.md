@@ -1,13 +1,17 @@
-# CinemaIO example
+# CinemaIO 
 
-![Cinema IO Example Image](https://topology-tool-kit.github.io/img/gallery/cinemaReader.jpeg)
+<iframe
+ width="100%" height="420"
+src="https://www.youtube.com/embed/yKyiRzPbs0U"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
 
 ## Pipeline description
 This example first loads a cinema database of a simulation from disk, consisting of three dimensional image files, using the [CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html). This outputs a vtkTable.
 
-The database is queried for a selection of images, using [CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html), which supports SQL queries on vtkTables (bottom view shows query result in a spreadsheet view).
+The database is queried for a selection of images, using [CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html), which supports SQL queries on `vtkTables` (bottom view shows query result in a spreadsheet view).
 
-Each selected entry in the database is read by the [CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html), which outputs a vtkMultiBlock of the images.
+Each selected entry in the database is read by the [CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html), which outputs a `vtkMultiBlock` of the images.
 
 The images are sliced with a plane, and each slice is visualized side-by-side using the [GridLayout](https://topology-tool-kit.github.io/doc/html/classttkGridLayout.html) (top view in screenshot).
 

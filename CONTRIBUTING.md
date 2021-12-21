@@ -83,9 +83,23 @@ Please find below generic recommendations for setting up your fork of TTK's data
     - Each input should contain a link to the actual file on [ttk-data](https://github.com/topology-tool-kit/ttk-data)
   - A quick description of the pipeline outputs
   - Pointers to the Doxygen documentation of all the TTK filters involved in the example.
-- Note that the output webpage can be visualized locally by entering the command `mkdocs serve` in the [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory.
+- Note that the output webpage can be visualized locally by entering the command `mkdocs serve` in the [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory (installation instructions for pip users are included below, otherwise please refer to your system's package manager).
 - Once your example is merged to [ttk-data](https://github.com/topology-tool-kit/ttk-data), please open a pull request to the main [ttk](https://github.com/topology-tool-kit/ttk) repository, to insert pointers to your example in the doxygen documentation and ParaView documentation of all the TTK filters involved in your example. See for instance the section "Online examples" in:
   - https://github.com/topology-tool-kit/ttk/blob/dev/core/vtk/ttkPersistenceDiagram/ttkPersistenceDiagram.h
   - https://github.com/topology-tool-kit/ttk/blob/dev/paraview/xmls/PersistenceDiagram.xml
 
 - In the three cases above (`pvsm` ParaView state file, `py` Python script, `.md` MkDocs entry), we invite you to checkout the other examples already included in [ttk-data](https://github.com/topology-tool-kit/ttk-data) for inspiration.
+
+### Running mkdocs locally (pip users)
+
+Set up and activate a virtual environment:
+```bash
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run local server, which updates automatically on change; by default it runs on http://localhost:8000/
+```bash
+mkdocs serve
+```

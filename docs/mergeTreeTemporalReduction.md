@@ -1,4 +1,4 @@
-# Merge Tree Temporal Reduction example
+# Merge Tree Temporal Reduction
 
 ![Merge Tree Temporal Reduction example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg)
 

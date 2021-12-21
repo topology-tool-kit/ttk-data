@@ -1,4 +1,4 @@
-# CT bones example
+# CT bones 
 
 ![CT bones example Image](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg)
 
