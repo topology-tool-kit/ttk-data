@@ -3,10 +3,7 @@
 from paraview.simple import *
 
 # create a new 'XML PolyData Reader'
-streamlinesvtp = XMLPolyDataReader(FileName=['/home/emma/ttk/ttk-source/ttk-data-emmwel/GroundWater.cdb/streamlines.vtp'])
-
-# create a new 'XML PolyData Reader'
-stonevtp = XMLPolyDataReader(FileName=['/home/emma/ttk/ttk-source/ttk-data-emmwel/GroundWater.cdb/stone.vtp'])
+stonevtp = XMLPolyDataReader(FileName=['GroundWater.cdb/stone.vtp'])
 
 # create a new 'Elevation'
 fakeShadow = Elevation(Input=stonevtp)
@@ -29,12 +26,5 @@ threshold1 = Threshold(Input=tTKDepthImageBasedGeometryApproximation1)
 threshold1.Scalars = ['CELLS', 'TriangleDistortion']
 threshold1.ThresholdRange = [0.0, 0.02]
 
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=tTKIcosphereFromObject1)
-tTKIcospheresFromPoints1.Subdivisions = 1
-tTKIcospheresFromPoints1.Radius = 0.01
-tTKIcospheresFromPoints1.ComputeNormals = 0
-
-SaveData('CameraNodes.vtp', tTKIcospheresFromPoints1)
 SaveData('CinemaImages.vtm', tTKCinemaImaging1)
 SaveData('GeometryApproximatedStone.vtm', threshold1)
