@@ -4,11 +4,11 @@
 
 The Persistence Clustering Gallery is composed of the following examples (from left to right):
 
-- [Persistence clustering0](https://topology-tool-kit.github.io/examples/persistenceClustering0/)
-- [Persistence clustering1](https://topology-tool-kit.github.io/examples/persistenceClustering1/)
-- [Persistence clustering2](https://topology-tool-kit.github.io/examples/persistenceClustering2/)
-- [Persistence clustering3](https://topology-tool-kit.github.io/examples/persistenceClustering3/)
-- [Persistence clustering4](https://topology-tool-kit.github.io/examples/persistenceClustering4/)
+- [Persistence clustering0](/persistenceClustering0/)
+- [Persistence clustering1](/persistenceClustering1/)
+- [Persistence clustering2](/persistenceClustering2/)
+- [Persistence clustering3](/persistenceClustering3/)
+- [Persistence clustering4](/persistenceClustering4/)
 
 Each example is explained in more details in its own documentation and is shown in the above screenshot in a pair of images, one showing the dataset (upper half), the other showing the results of the pipeline (bottom half).
 
@@ -29,6 +29,40 @@ To reproduce the above screenshot, go to your `ttk-data`  directory and enter th
 ``` bash
 $ paraview states/persistenceClusteringGallery.pvsm
 ```
+
+## Python code
+
+### Persistence clusering 0
+
+``` python  linenums="1"
+--8<-- "python/persistenceClustering0.py"
+```
+
+### Persistence clusering 1
+
+``` python  linenums="1"
+--8<-- "python/persistenceClustering1.py"
+```
+
+### Persistence clusering 2
+
+``` python  linenums="1"
+--8<-- "python/persistenceClustering2.py"
+```
+
+### Persistence clusering 3
+
+``` python  linenums="1"
+--8<-- "python/persistenceClustering3.py"
+```
+
+### Persistence clusering 4
+
+
+``` python  linenums="1"
+--8<-- "python/persistenceClustering4.py"
+```
+
 
 ## C++/Python API
 
