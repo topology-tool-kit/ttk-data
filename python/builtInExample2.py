@@ -10,13 +10,11 @@ example2vti = XMLImageDataReader(FileName=['BuiltInExample2.vti'])
 contour2 = Contour(Input=example2vti)
 contour2.ContourBy = ['POINTS', 'log(Rho)']
 contour2.Isosurfaces = [1.57]
-contour2.PointMergeMethod = 'Uniform Binning'
 
 # create a new 'Contour' for 'log(s)' to identify atoms
 contour3 = Contour(Input=example2vti)
 contour3.ContourBy = ['POINTS', 'log(s)']
 contour3.Isosurfaces = [-0.575]
-contour3.PointMergeMethod = 'Uniform Binning'
 
 ### Bivariate data analysis using isosurfaces
 
@@ -38,12 +36,6 @@ tTKProjectionFromField1.VComponent = ['POINTS', 'log(s)']
 # create a new 'Extract Edges'
 extractEdges1 = ExtractEdges(Input=tTKProjectionFromField1)
 
-# create a new 'Tube'
-tube1 = Tube(Input=extractEdges1)
-tube1.Scalars = ['POINTS', 'log(Rho)']
-tube1.Vectors = ['POINTS', 'Normals']
-tube1.Radius = 0.02
-
 # create a new 'TTK ProjectionFromField' to project the 'log(s)' contour onto the range space
 tTKProjectionFromField2 = TTKProjectionFromField(Input=contour3)
 tTKProjectionFromField2.UComponent = ['POINTS', 'log(Rho)']
@@ -51,15 +43,6 @@ tTKProjectionFromField2.VComponent = ['POINTS', 'log(s)']
 
 # create a new 'Extract Edges'
 extractEdges2 = ExtractEdges(Input=tTKProjectionFromField2)
-
-# create a new 'Tube'
-tube2 = Tube(Input=extractEdges2)
-tube2.Scalars = ['POINTS', 'log(Rho)']
-tube2.Vectors = ['POINTS', 'Normals']
-tube2.Radius = 0.02
-
-# create a new 'Tetrahedralize'
-tetrahedralize1 = Tetrahedralize(Input=example2vti)
 
 # Four manually created polylines in the range space to select regions corresponding to 
 # Oxygen and carbon atoms, followed by covalent and non-covalent bonds
@@ -71,7 +54,7 @@ rangePolygonsCoordinates = [
 ]
 
 # Save the four range space control polygons
-polygonTubes = []
+polygons = []
 
 # Save the corresponding four fiber surfaces
 fiberSurfaces = []
@@ -84,13 +67,12 @@ for coords in rangePolygonsCoordinates:
     # create a new 'Resample With Dataset'
     resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=tTKContinuousScatterPlot1,
         DestinationMesh=polyLineSource1)
-    resampleWithDataset1.CellLocator = 'Static Cell Locator'
-
+        
     # create a new 'Tetrahedralize'
     tetrahedralize2 = Tetrahedralize(Input=resampleWithDataset1)
-
+    
     # create a new 'TTK FiberSurface'
-    tTKFiberSurface1 = TTKFiberSurface(InputDomain=tetrahedralize1,
+    tTKFiberSurface1 = TTKFiberSurface(InputDomain=example2vti,
         RangePolygon=tetrahedralize2)
     tTKFiberSurface1.DomainUComponent = ['POINTS', 'log(Rho)']
     tTKFiberSurface1.DomainVComponent = ['POINTS', 'log(s)']
@@ -105,15 +87,11 @@ for coords in rangePolygonsCoordinates:
 
     # create a new 'Extract Surface'
     extractSurface1 = ExtractSurface(Input=resampleWithDataset1)
-
-    # create a new 'Tube'
-    tube3 = Tube(Input=extractSurface1)
-    tube3.Radius = 0.03
     
-    polygonTubes.append(tube3)
+    polygons.append(extractSurface1)
 
 # compute 'TTK JacobiSet' for the bivariate data
-tTKJacobiSet1 = TTKJacobiSet(Input=tetrahedralize1)
+tTKJacobiSet1 = TTKJacobiSet(Input=example2vti)
 tTKJacobiSet1.UComponent = ['POINTS', 'log(Rho)']
 tTKJacobiSet1.VComponent = ['POINTS', 'log(s)']
 tTKJacobiSet1.Withedgeidentifiers = 1
@@ -129,12 +107,12 @@ SaveData('logRhoIsosurfaceAtoms.vtp', contour2)
 SaveData('logSIsosurfaceBonds.vtp', contour3)
 
 SaveData('ContinuousScatterPlot.vtu', threshold1)
-SaveData('logRhoIsosurfaceRangeProjection.vtp', tube1)
-SaveData('logSIsosurfaceRangeProjection.vtp', tube2)
-SaveData('OxygenAtomsRangePolygon.vtp', polygonTubes[0])
-SaveData('CarbonAtomsRangePolygon.vtp', polygonTubes[1])
-SaveData('CovalentBondsRangePolygon.vtp', polygonTubes[2])
-SaveData('NonCovalentIntercationSiteRangePolygon.vtp', polygonTubes[3])
+SaveData('logRhoIsosurfaceRangeProjection.vtp', extractEdges1)
+SaveData('logSIsosurfaceRangeProjection.vtp', extractEdges2)
+SaveData('OxygenAtomsRangePolygon.vtp', polygons[0])
+SaveData('CarbonAtomsRangePolygon.vtp', polygons[1])
+SaveData('CovalentBondsRangePolygon.vtp', polygons[2])
+SaveData('NonCovalentIntercationSiteRangePolygon.vtp', polygons[3])
 
 SaveData('OxygenAtomsFiberSurface.vtp', fiberSurfaces[0])
 SaveData('CarbonAtomsFiberSurface.vtp', fiberSurfaces[1])
