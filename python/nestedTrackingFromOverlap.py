@@ -33,20 +33,20 @@ clip1.ClipType.Normal = [0.0, 0.0, 1.0]
 # create a new 'Threshold'
 threshold1 = Threshold(Input=clip1)
 threshold1.Scalars = ['POINTS', 'ImageFile']
-threshold1.ThresholdMethod = "Above Upper Threshold"
-threshold1.UpperThreshold = 20.0
+try: threshold1.ThresholdRange = [20, 9999]
+except: threshold1.ThresholdMethod = "Above Upper Threshold"; threshold1.UpperThreshold = 20.0
 
 # create a new 'Threshold'
 threshold2 = Threshold(Input=clip1)
 threshold2.Scalars = ['POINTS', 'ImageFile']
-threshold2.ThresholdMethod = "Above Upper Threshold"
-threshold2.UpperThreshold = 28.0
+try: threshold2.ThresholdRange = [28, 9999]
+except: threshold2.ThresholdMethod = "Above Upper Threshold"; threshold2.UpperThreshold = 28.0
 
 # create a new 'Threshold'
 threshold3 = Threshold(Input=clip1)
 threshold3.Scalars = ['POINTS', 'ImageFile']
-threshold3.ThresholdMethod = "Above Upper Threshold"
-threshold3.UpperThreshold = 32.0
+try: threshold3.ThresholdRange = [32, 9999]
+except: threshold3.ThresholdMethod = "Above Upper Threshold"; threshold3.UpperThreshold = 32.0
 
 # create a new 'Connectivity'
 connectivity1 = Connectivity(Input=threshold1)
