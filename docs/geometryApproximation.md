@@ -1,4 +1,4 @@
-# Geometry Approximation example
+# Geometry Approximation 
 
 ![Geometry Approximation Example Image](https://topology-tool-kit.github.io/img/gallery/geometryApproximation.jpg)
 

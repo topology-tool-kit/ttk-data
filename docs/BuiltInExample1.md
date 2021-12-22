@@ -1,4 +1,4 @@
-# Built in example 1
+# Builtin example 1
 
 ![Built in example 1 Image](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg)
 
