@@ -1,5 +1,8 @@
 # Nested Tracking From Overlap
 
+![Nested tracking graph
+screenshot](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg)
+
 ## Pipeline description
 This example first opens the viscous fingering cinema database via the `ttkCinemaReader`, and then queries all entries of one specific simulation run ordered by time via the `ttkCinemaQuery` filter.
 Then the pipeline iterates over the resulting database entries via the `ttkForEach` and `ttkEndFor` filters, and loads the corresponding data product of each iteration with the `ttkCinemaProductReader`.
@@ -13,7 +16,7 @@ Finally the `ttkMeshGraph` filter generates a `vtkUnstructuredGrid` of the NTG w
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview states/nestedTrackingFromOverlap.py
+$ paraview --state=states/nestedTrackingFromOverlap.py
 ```
 
 ## Python code
