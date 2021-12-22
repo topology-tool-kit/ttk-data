@@ -3,7 +3,7 @@
 ![Geometry Approximation Example Image](https://topology-tool-kit.github.io/img/gallery/geometryApproximation.jpg)
 
 ## Pipeline description
-This example loads two geometric structures: the streamlines of a section of ground water and its surrounding stone.
+This example first loads the geometry of a stone.
 
 A fake shadow is put on the stone mesh to give the mesh depth values. The stone object is placed within a sphere using [IcosphereFromObject](https://topology-tool-kit.github.io/doc/html/classttkIcosphereFromObject.html). The object and the icosphere is then given to the [CinemaImaging](https://topology-tool-kit.github.io/doc/html/classttkCinemaImaging.html) filter. It generates multiple images of the stone object, and the images are taken from cameras placed on the vertices of the icosphere.
 
