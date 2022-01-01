@@ -18,7 +18,7 @@ def ThresholdAt(threshold, value):
         threshold.ThresholdRange = [value, value]
     except:
         # paraview 5.10
-        threshold.ThresholdMethod = "Below Lower Threshold"
+        threshold.ThresholdMethod = "Between"
         threshold.LowerThreshold = value
         threshold.UpperThreshold = value
 

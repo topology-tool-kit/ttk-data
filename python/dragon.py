@@ -2,6 +2,17 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 999999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+# end of comphatibility ========================================================
+
 # create a new 'XML Unstructured Grid Reader'
 dragonvtu = XMLUnstructuredGridReader(FileName=['dragon.vtu'])
 
@@ -24,12 +35,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Elevation']
 # create a new 'Threshold'
 pairs = Threshold(Input=tTKPersistenceDiagram1)
 pairs.Scalars = ['CELLS', 'PairIdentifier']
-pairs.ThresholdRange = [0.0, 1000.0]
+ThresholdAbove(pairs, 0.0)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=pairs)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold.ThresholdRange = [5.0, 1000.0]
+ThresholdAbove(persistenceThreshold, 5.0)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=elevation,

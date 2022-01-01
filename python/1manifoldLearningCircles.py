@@ -2,7 +2,7 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility
+# paraview 5.9 VS 5.10 compatibility ===========================================
 def ThresholdAbove(threshold, value):
     try:
         # paraview 5.9
@@ -18,11 +18,10 @@ def ThresholdAt(threshold, value):
         threshold.ThresholdRange = [value, value]
     except:
         # paraview 5.10
-        threshold.ThresholdMethod = "Below Lower Threshold"
+        threshold.ThresholdMethod = "Between"
         threshold.LowerThreshold = value
         threshold.UpperThreshold = value
-
-# end of comphatibility
+# end of comphatibility ========================================================
 
 # create a new 'CSV Reader'
 clustering0csv = CSVReader(FileName=['clustering0.csv'])
