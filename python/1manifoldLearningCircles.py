@@ -6,7 +6,7 @@ from paraview.simple import *
 def ThresholdAbove(threshold, value):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [value, 9999999]
+        threshold.ThresholdRange = [value, 999999999]
     except:
         # paraview 5.10
         threshold.ThresholdMethod = "Above Upper Threshold"
