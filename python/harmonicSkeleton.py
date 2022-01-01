@@ -3,6 +3,17 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 999999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+# end of comphatibility ========================================================
+
 # load the pegasus dataset by creating a'XML Unstructured Grid Reader'
 pegasusvtu = XMLUnstructuredGridReader(FileName=['pegasus.vtu'])
 
@@ -72,7 +83,7 @@ tTKPersistenceDiagram1.EmbedinDomain = 1
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'Persistence']
-threshold1.ThresholdRange = [0.001, 0.9999999999999999]
+ThresholdAbove(threshold1, 0.001)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=tTKScalarFieldNormalizer1, Constraints=threshold1)
