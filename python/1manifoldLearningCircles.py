@@ -2,6 +2,28 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 9999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+
+def ThresholdAt(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, value]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Below Lower Threshold"
+        threshold.LowerThreshold = value
+        threshold.UpperThreshold = value
+
+# end of comphatibility
+
 # create a new 'CSV Reader'
 clustering0csv = CSVReader(FileName=['clustering0.csv'])
 
@@ -32,12 +54,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'SplatterValues']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.ThresholdRange = [-0.1, 999.0]
+ThresholdAbove(threshold1, -0.1)
 
 # create a new 'Threshold'
 persistenceThreshold0 = Threshold(Input=threshold1)
 persistenceThreshold0.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold0.ThresholdRange = [10.0, 9999.0]
+ThresholdAbove(persistenceThreshold0, 10.0)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=slice1,
@@ -51,12 +73,12 @@ tTKMorseSmaleComplex1.ScalarField = ['POINTS', 'SplatterValues']
 # create a new 'Threshold'
 threshold2 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1,1))
 threshold2.Scalars = ['CELLS', 'SeparatrixType']
-threshold2.ThresholdRange = [1.0, 1.0]
+ThresholdAt(threshold2, 1.0)
 
 # create a new 'Threshold'
 threshold3 = Threshold(Input=threshold2)
 threshold3.Scalars = ['CELLS', 'SeparatrixFunctionMinimum']
-threshold3.ThresholdRange = [2.0, 999.0]
+ThresholdAbove(threshold3, 2.0)
 
 # create a new 'Resample With Dataset'
 resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(tTKMorseSmaleComplex1,3),
