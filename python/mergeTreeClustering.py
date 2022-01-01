@@ -2,6 +2,18 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [lower, upper]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
+
 # create a new 'XML Image Data Reader'
 isabelvti = XMLImageDataReader(FileName=['isabel.vti'])
 
@@ -83,12 +95,12 @@ maskPoints1.SingleVertexPerCell = 1
 # create a new 'Threshold'
 threshold33 = Threshold(Input=maskPoints1)
 threshold33.Scalars = ['POINTS', 'treeID']
-threshold33.ThresholdRange = [0.0, 11.0]
+ThresholdBetween(threshold33, 0.0, 11.0)
 
 # create a new 'Threshold'
 threshold34 = Threshold(Input=maskPoints1)
 threshold34.Scalars = ['POINTS', 'treeID']
-threshold34.ThresholdRange = [12.0, 14.0]
+ThresholdBetween(threshold34, 12.0, 14.0)
 
 # save the output
 SaveData('MDS_trees.csv', threshold33)
