@@ -2,15 +2,17 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility
-def ThresholdAbove(threshold, value):
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [value, 9999999]
+        threshold.ThresholdRange = [value, value]
     except:
         # paraview 5.10
-        threshold.ThresholdMethod = "Above Upper Threshold"
-        threshold.UpperThreshold = value
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
 
 # create a new 'CSV Reader'
 pointCloudcsv = CSVReader(FileName=['pointCloud.csv'])
@@ -33,12 +35,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'SplatterValues']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-ThresholdAbove(threshold1, -0.1)
+ThresholdBetween(threshold1, -0.1, 999999999)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=threshold1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-ThresholdAbove(persistenceThreshold, 0.01)
+ThresholdBetween(persistenceThreshold, 0.01, 999999)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=gaussianResampling1,
