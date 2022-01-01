@@ -1,6 +1,27 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 999999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+
+def ThresholdAt(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, value]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = value
+        threshold.UpperThreshold = value
+# end of comphatibility ========================================================
+
 # create a new 'XML Image Data Reader'
 builtInExamplevti = XMLImageDataReader(FileName=['BuiltInExample2.vti'])
 
@@ -27,12 +48,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'log(s)']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.ThresholdRange = [-0.1, 117.0]
+ThresholdAbove(threshold1, 0)
 
 # remove low persistence critical points using 'Threshold'
 persistenceThreshold = Threshold(Input=threshold1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold.ThresholdRange = [0.5, 3.62385640499735]
+ThresholdAbove(persistenceThreshold, 0.5)
 
 # simplify the field using 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=builtInExamplevti,
@@ -67,7 +88,7 @@ threshold6.Scalars = ['POINTS', 'RegionType']
 # create a new 'Threshold'
 threshold7 = Threshold(Input=threshold6)
 threshold7.Scalars = ['POINTS', 'SegmentationId']
-threshold7.ThresholdRange = [13.0, 13.0]
+ThresholdAt(threshold7, 13.0)
 
 # create a new 'Extract Surface'
 extractSurface5 = ExtractSurface(Input=threshold7)
