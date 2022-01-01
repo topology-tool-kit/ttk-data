@@ -3,14 +3,15 @@
 from paraview.simple import *
 
 # paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdAbove(threshold, value):
+def ThresholdBetween(threshold, lower, upper):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [value, 999999999]
+        threshold.ThresholdRange = [lower, upper]
     except:
         # paraview 5.10
-        threshold.ThresholdMethod = "Above Upper Threshold"
-        threshold.UpperThreshold = value
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
 # end of comphatibility ========================================================
 
 # create a new 'XML Unstructured Grid Reader'
@@ -35,12 +36,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Elevation']
 # create a new 'Threshold'
 pairs = Threshold(Input=tTKPersistenceDiagram1)
 pairs.Scalars = ['CELLS', 'PairIdentifier']
-ThresholdAbove(pairs, 0.0)
+ThresholdBetween(pairs, 0.0, 999999999)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=pairs)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-ThresholdAbove(persistenceThreshold, 5.0)
+ThresholdBetween(persistenceThreshold, 5.0, 999999999)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=elevation,

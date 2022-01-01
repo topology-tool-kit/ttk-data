@@ -6,7 +6,7 @@ from paraview.simple import *
 def ThresholdBetween(threshold, lower, upper):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [value, value]
+        threshold.ThresholdRange = [lower, upper]
     except:
         # paraview 5.10
         threshold.ThresholdMethod = "Between"

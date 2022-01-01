@@ -3,14 +3,15 @@
 from paraview.simple import *
 
 # paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBelow(threshold, value):
+def ThresholdBetween(threshold, lower, upper):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [-999999999, value]
+        threshold.ThresholdRange = [lower, upper]
     except:
         # paraview 5.10
-        threshold.ThresholdMethod = "Below Lower Threshold"
-        threshold.LowerThreshold = value
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
 # end of comphatibility ========================================================
 
 # create a new 'XML PolyData Reader'
@@ -35,7 +36,7 @@ tTKDepthImageBasedGeometryApproximation1.DepthArray = ['POINTS', 'Depth']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKDepthImageBasedGeometryApproximation1)
 threshold1.Scalars = ['CELLS', 'TriangleDistortion']
-ThresholdBelow(threshold1, 0.02)
+ThresholdBetween(threshold1, -999999999, 0.02)
 
 SaveData('CinemaImages.vtm', tTKCinemaImaging1)
 SaveData('GeometryApproximatedStone.vtm', threshold1)

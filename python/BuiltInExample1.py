@@ -2,15 +2,17 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility
-def ThresholdAbove(threshold, value):
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [value, 999999999]
+        threshold.ThresholdRange = [lower, upper]
     except:
         # paraview 5.10
-        threshold.ThresholdMethod = "Above Upper Threshold"
-        threshold.UpperThreshold = value
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
 
 # create a new 'XML Image Data Reader'
 builtInExamplevti = XMLImageDataReader(FileName=['BuiltInExample1.vti'])
@@ -50,12 +52,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'myVorticity']
 # create a new 'Threshold'
 persistencePairs = Threshold(Input=tTKPersistenceDiagram1)
 persistencePairs.Scalars = ['CELLS', 'PairIdentifier']
-ThresholdAbove(persistencePairs, -0.1)
+ThresholdBetween(persistencePairs, -0.1, 999999999)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=persistencePairs)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-ThresholdAbove(persistenceThreshold, 0.02)
+ThresholdBetween(persistenceThreshold, 0.02, 999999999)
 
 # create a new 'TTK PersistenceCurve'
 tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tetrahedralize1)
