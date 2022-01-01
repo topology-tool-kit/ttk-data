@@ -2,6 +2,27 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 999999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+
+def ThresholdAt(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, value]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = value
+        threshold.UpperThreshold = value
+# end of comphatibility ========================================================
+
 naturalImagepng = PNGSeriesReader(FileNames=["naturalImage.png"])
 
 # create a new 'Compute Derivatives'
@@ -23,12 +44,12 @@ tTKPersistenceDiagram1.ScalarField = ["POINTS", "gradient"]
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "PairIdentifier"]
-threshold1.ThresholdRange = [-0.1, 59608.0]
+ThresholdAbove(threshold1, 0)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=threshold1)
 persistenceThreshold.Scalars = ["CELLS", "Persistence"]
-persistenceThreshold.ThresholdRange = [6.0, 9999.0]
+ThresholdAbove(persistenceThreshold, 6.0)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
@@ -44,7 +65,7 @@ tTKMorseSmaleComplex1.ScalarField = ["POINTS", "gradient"]
 # create a new 'Threshold'
 threshold3 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1, 1))
 threshold3.Scalars = ["CELLS", "SeparatrixType"]
-threshold3.ThresholdRange = [1.0, 1.0]
+ThresholdAt(threshold3, 1.0)
 
 # create a new 'TTK IdentifierRandomizer'
 tTKIdentifierRandomizer1 = TTKIdentifierRandomizer(
