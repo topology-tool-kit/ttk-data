@@ -2,24 +2,15 @@
 from paraview.simple import *
 
 # paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdAbove(threshold, value):
+def ThresholdBetween(threshold, lower, upper):
     try:
         # paraview 5.9
-        threshold.ThresholdRange = [value, 999999999]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Above Upper Threshold"
-        threshold.UpperThreshold = value
-
-def ThresholdAt(threshold, value):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [value, value]
+        threshold.ThresholdRange = [lower, upper]
     except:
         # paraview 5.10
         threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = value
-        threshold.UpperThreshold = value
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
 # end of comphatibility ========================================================
 
 # create a new 'XML Image Data Reader'
@@ -48,12 +39,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'log(s)']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-ThresholdAbove(threshold1, 0)
+ThresholdBetween(threshold1, 0, 999999999)
 
 # remove low persistence critical points using 'Threshold'
 persistenceThreshold = Threshold(Input=threshold1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-ThresholdAbove(persistenceThreshold, 0.5)
+ThresholdBetween(persistenceThreshold, 0.5, 999999999)
 
 # simplify the field using 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=builtInExamplevti,
@@ -88,7 +79,7 @@ threshold6.Scalars = ['POINTS', 'RegionType']
 # create a new 'Threshold'
 threshold7 = Threshold(Input=threshold6)
 threshold7.Scalars = ['POINTS', 'SegmentationId']
-ThresholdAt(threshold7, 13.0)
+ThresholdBetween(threshold7, 13.0, 13.0)
 
 # create a new 'Extract Surface'
 extractSurface5 = ExtractSurface(Input=threshold7)
