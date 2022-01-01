@@ -2,6 +2,17 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 999999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+# end of comphatibility ========================================================
+
 # create a new 'CSV Reader'
 karhunenLoveDigits64Dimensionscsv = CSVReader(FileName=['karhunenLoveDigits64Dimensions.csv'])
 karhunenLoveDigits64Dimensionscsv.HaveHeaders = 0
@@ -38,7 +49,7 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'SplatterValues']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'Persistence']
-threshold1.ThresholdRange = [10.0, 99999.0]
+ThresholdAbove(threshold1, 10.0)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=slice1,
