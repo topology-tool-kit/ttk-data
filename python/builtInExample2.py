@@ -1,6 +1,16 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility
+def ThresholdAbove(threshold, value):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [value, 999999999]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Above Upper Threshold"
+        threshold.UpperThreshold = value
+
 # Load the scalar fields using 'XML Image Data Reader'
 example2vti = XMLImageDataReader(FileName=['BuiltInExample2.vti'])
 
@@ -26,7 +36,7 @@ tTKContinuousScatterPlot1.ScalarField2 = ['POINTS', 'log(s)']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKContinuousScatterPlot1)
 threshold1.Scalars = ['POINTS', 'ValidPointMask']
-threshold1.ThresholdRange = [0.1, 1.0]
+ThresholdAbove(threshold1, 0.1)
 
 # create a new 'TTK ProjectionFromField' to project the 'log(Rho)' contour onto the range space
 tTKProjectionFromField1 = TTKProjectionFromField(Input=contour2)
