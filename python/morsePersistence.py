@@ -2,6 +2,18 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [lower, upper]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
+
 # create a new 'Plane'
 plane1 = Plane()
 plane1.XResolution = 300
@@ -55,12 +67,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Blend']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.ThresholdRange = [0.0, 100000.0]
+ThresholdBetween(threshold1, 0.0, 100000.0)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=threshold1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold.ThresholdRange = [0.7, 10000.0]
+ThresholdBetween(persistenceThreshold, 0.7, 10000.0)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=warpByScalar1,
