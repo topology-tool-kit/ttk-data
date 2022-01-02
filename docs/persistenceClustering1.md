@@ -30,7 +30,7 @@ From there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/cl
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview states/persistenceClustering1.pvsm
+$ paraview --state=states/persistenceClustering1.pvsm
 ```
 
 ## Python code

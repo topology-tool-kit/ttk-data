@@ -22,7 +22,7 @@ corresponding ascending manifold of the Morse-Smale complex (`AscendingManifold`
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview states/karhunenLoveDigits64Dimensions.pvsm
+$ paraview --state=states/karhunenLoveDigits64Dimensions.pvsm
 ```
 
 ## Python code

@@ -20,7 +20,7 @@ Lastly, 2-separatrices incident on the covalent bonds (of `SeparatrixType = 1`) 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview states/morseMolecule.pvsm
+$ paraview --state=states/morseMolecule.pvsm
 ```
 
 ## Python code
