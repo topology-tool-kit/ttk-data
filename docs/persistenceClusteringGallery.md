@@ -4,11 +4,11 @@
 
 The Persistence Clustering Gallery is composed of the following examples (from left to right):
 
-- [Persistence clustering0](/persistenceClustering0/)
-- [Persistence clustering1](/persistenceClustering1/)
-- [Persistence clustering2](/persistenceClustering2/)
-- [Persistence clustering3](/persistenceClustering3/)
-- [Persistence clustering4](/persistenceClustering4/)
+- [Persistence clustering0](../persistenceClustering0/)
+- [Persistence clustering1](../persistenceClustering1/)
+- [Persistence clustering2](../persistenceClustering2/)
+- [Persistence clustering3](../persistenceClustering3/)
+- [Persistence clustering4](../persistenceClustering4/)
 
 Each example is explained in more details in its own documentation and is shown in the above screenshot in a pair of images, one showing the dataset (upper half), the other showing the results of the pipeline (bottom half).
 
