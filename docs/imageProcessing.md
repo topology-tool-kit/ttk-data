@@ -40,7 +40,7 @@ To reproduce the above screenshot, go to your
 and enter the following command:
 
 ``` bash
-$ paraview states/imageProcessing.pvsm
+$ paraview --state=states/imageProcessing.pvsm
 ```
 
 ## Python code

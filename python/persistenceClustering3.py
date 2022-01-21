@@ -1,5 +1,17 @@
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [lower, upper]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
+
 # create a new 'CSV Reader'
 clusteringcsv = CSVReader(FileName=['clustering3.csv'])
 
@@ -14,7 +26,6 @@ tableToPoints1.KeepAllDataArrays = 1
 gaussianResampling1 = GaussianResampling(Input=tableToPoints1)
 gaussianResampling1.ResampleField = ['POINTS', 'ignore arrays']
 gaussianResampling1.ResamplingGrid = [256, 256, 3]
-gaussianResampling1.GaussianSplatRadius = 0.05
 gaussianResampling1.SplatAccumulationMode = 'Sum'
 
 # create a new 'Slice'
@@ -31,12 +42,12 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'SplatterValues']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.ThresholdRange = [-0.1, 999.0]
+ThresholdBetween(threshold1, -0.1, 999999999)
 
 # create a new 'Threshold'
 persistenceThreshold0 = Threshold(Input=threshold1)
 persistenceThreshold0.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold0.ThresholdRange = [10.0, 9999.0]
+ThresholdBetween(persistenceThreshold0, 10.0, 999999999)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=slice1,
@@ -54,4 +65,4 @@ resampleWithDataset1 = ResampleWithDataset(SourceDataArrays=OutputPort(tTKMorseS
 )
 
 # save the output(s)
-SaveData('data1Resampled.csv', resampleWithDataset1)
+SaveData('OutputClustering.csv', resampleWithDataset1)

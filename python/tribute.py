@@ -1,6 +1,18 @@
 #!/usr/bin/env python
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [lower, upper]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
+
 # create a new 'PNG Series Reader'
 tributepng = PNGSeriesReader(FileNames=['tribute.png'])
 
@@ -16,17 +28,17 @@ tTKPersistenceDiagram1.ScalarField = ['POINTS', 'originalData']
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ['CELLS', 'PairIdentifier']
-threshold1.ThresholdRange = [-0.1, 999999.0]
+ThresholdBetween(threshold1, -0.1, 999999999)
 
 # create a new 'Threshold'
 minimumPairs = Threshold(Input=threshold1)
 minimumPairs.Scalars = ['CELLS', 'PairType']
-minimumPairs.ThresholdRange = [-1.0, 0.0]
+ThresholdBetween(minimumPairs, -1.0, 0.0)
 
 # create a new 'Threshold'
 maximumPairs = Threshold(Input=threshold1)
 maximumPairs.Scalars = ['CELLS', 'PairType']
-maximumPairs.ThresholdRange = [1.0, 1.0]
+ThresholdBetween(maximumPairs, 1.0, 1.0)
 
 # create a new 'Calculator'
 calculator2 = Calculator(Input=maximumPairs)
@@ -36,7 +48,7 @@ calculator2.Function = 'coordsX'
 # create a new 'Threshold'
 birthThreshold = Threshold(Input=calculator2)
 birthThreshold.Scalars = ['POINTS', 'Birth']
-birthThreshold.ThresholdRange = [257.390747070312, 297.0]
+ThresholdBetween(birthThreshold, 257.390747070312, 297.0)
 
 # create a new 'Append Datasets'
 appendDatasets1 = AppendDatasets(Input=[minimumPairs, birthThreshold])
@@ -44,7 +56,7 @@ appendDatasets1 = AppendDatasets(Input=[minimumPairs, birthThreshold])
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=appendDatasets1)
 persistenceThreshold.Scalars = ['CELLS', 'Persistence']
-persistenceThreshold.ThresholdRange = [8.5, 9999]
+ThresholdBetween(persistenceThreshold, 8.5, 999999999)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=calculator1, Constraints=persistenceThreshold)

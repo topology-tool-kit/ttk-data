@@ -2,6 +2,18 @@
 
 from paraview.simple import *
 
+# paraview 5.9 VS 5.10 compatibility ===========================================
+def ThresholdBetween(threshold, lower, upper):
+    try:
+        # paraview 5.9
+        threshold.ThresholdRange = [lower, upper]
+    except:
+        # paraview 5.10
+        threshold.ThresholdMethod = "Between"
+        threshold.LowerThreshold = lower
+        threshold.UpperThreshold = upper
+# end of comphatibility ========================================================
+
 # create a new 'XML Unstructured Grid Reader'
 tectonicPuzzlevtu = XMLUnstructuredGridReader(FileName=["tectonicPuzzle.vtu"])
 
@@ -20,7 +32,7 @@ connectivity1 = Connectivity(Input=tetrahedralize1)
 # create a new 'Threshold'
 threshold1 = Threshold(Input=connectivity1)
 threshold1.Scalars = ["POINTS", "RegionId"]
-threshold1.ThresholdRange = [1.0, 1.0]
+ThresholdBetween(threshold1, 1.0, 1.0)
 
 # create a new 'Calculator'
 calculator1 = Calculator(Input=threshold1)
@@ -34,12 +46,12 @@ tTKPersistenceDiagram1.ScalarField = ["POINTS", "logViscosity"]
 # create a new 'Threshold'
 threshold2 = Threshold(Input=tTKPersistenceDiagram1)
 threshold2.Scalars = ["CELLS", "PairIdentifier"]
-threshold2.ThresholdRange = [-0.1, 1269.0]
+ThresholdBetween(threshold2, -0.1, 999999999)
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=threshold2)
 persistenceThreshold.Scalars = ["CELLS", "Persistence"]
-persistenceThreshold.ThresholdRange = [0.5, 99.0]
+ThresholdBetween(persistenceThreshold, 0.5, 999999999)
 
 # create a new 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=persistenceThreshold)
@@ -62,12 +74,12 @@ tTKIcospheresFromPoints2.Radius = 0.1
 # create a new 'Threshold'
 threshold3 = Threshold(Input=tTKIcospheresFromPoints2)
 threshold3.Scalars = ["POINTS", "CellDimension"]
-threshold3.ThresholdRange = [2.0, 2.0]
+ThresholdBetween(threshold3, 2.0, 2.0)
 
 # create a new 'Threshold'
 lARGE_MAXIMA_THRESHOLD = Threshold(Input=threshold3)
 lARGE_MAXIMA_THRESHOLD.Scalars = ["POINTS", "ManifoldSize"]
-lARGE_MAXIMA_THRESHOLD.ThresholdRange = [75.0, 9999.0]
+ThresholdBetween(lARGE_MAXIMA_THRESHOLD, 75.0, 999999999)
 
 # create a new 'Threshold'
 pERSISTENT_MINIMA = Threshold(Input=tTKIcospheresFromPoints1)
@@ -91,12 +103,12 @@ tTKPersistenceDiagram2.ScalarField = ["POINTS", "logViscosity"]
 # create a new 'Threshold'
 threshold4 = Threshold(Input=tTKPersistenceDiagram2)
 threshold4.Scalars = ["CELLS", "PairIdentifier"]
-threshold4.ThresholdRange = [-0.1, 101.0]
+ThresholdBetween(threshold4, -0.1, 999999999)
 
 # create a new 'Threshold'
 threshold5 = Threshold(Input=threshold4)
 threshold5.Scalars = ["CELLS", "PairType"]
-threshold5.ThresholdRange = [1.0, 1.0]
+ThresholdBetween(threshold5, 1.0, 1.0)
 
 # create a new 'Calculator'
 calculator2 = Calculator(Input=threshold5)
@@ -106,7 +118,7 @@ calculator2.Function = "coordsX"
 # create a new 'Threshold'
 sADDLE_VALUE_THRESHOLD = Threshold(Input=calculator2)
 sADDLE_VALUE_THRESHOLD.Scalars = ["POINTS", "SaddleValue"]
-sADDLE_VALUE_THRESHOLD.ThresholdRange = [-0.2, 1.75]
+ThresholdBetween(sADDLE_VALUE_THRESHOLD, -0.2, 1.75)
 
 # create a new 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints3 = TTKIcospheresFromPoints(Input=sADDLE_VALUE_THRESHOLD)
@@ -115,7 +127,7 @@ tTKIcospheresFromPoints3.Radius = 0.5
 # create a new 'Threshold'
 lARGE_MAXIMA_LOW_SADDLE = Threshold(Input=tTKIcospheresFromPoints3)
 lARGE_MAXIMA_LOW_SADDLE.Scalars = ["POINTS", "CriticalType"]
-lARGE_MAXIMA_LOW_SADDLE.ThresholdRange = [3.0, 3.0]
+ThresholdBetween(lARGE_MAXIMA_LOW_SADDLE, 3.0, 3.0)
 
 # create a new 'Append Datasets'
 lARGE_MAXIMA_LOW_SADDLE_AND_PERSISTENT_MINIMA = AppendDatasets(

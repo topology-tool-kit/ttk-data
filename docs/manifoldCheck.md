@@ -13,7 +13,7 @@ On each of the three geometries, [ManifoldCheck](https://topology-tool-kit.githu
 
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview states/manifoldChecks.pvsm
+$ paraview --state=states/manifoldChecks.pvsm
 ```
 
 ## Python code

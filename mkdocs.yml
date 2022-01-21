@@ -9,11 +9,11 @@ site_name: TTK Examples
 theme:
   name: material
   palette: #
-    #- scheme: slate #
+    - scheme: slate #
       primary: teal
       accent: teal
-      #display.background_color: grey
-      #background-color: grey
+      display.background_color: grey
+      background-color: grey
 
 
 markdown_extensions:
