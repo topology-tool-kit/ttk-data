@@ -1,4 +1,4 @@
-# Morse-Smale Quandrangulation
+# Morse-Smale Quadrangulation
 
 <!--[![Morse-Smale Quadrangulation example video tutorial](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg)](https://www.youtube.com/watch?v=eNW8l5PlgpU)-->
 
