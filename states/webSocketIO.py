@@ -139,7 +139,5 @@ tTKWebSocketIO1Display.PolarAxes = 'PolarAxesRepresentation'
 tTKWebSocketIO1Display.ScalarOpacityFunction = examplePointDataArrayPWF
 tTKWebSocketIO1Display.ScalarOpacityUnitDistance = 1.774768329877785
 tTKWebSocketIO1Display.OpacityArrayName = ['POINTS', 'ExamplePointDataArray']
-tTKWebSocketIO1Display.ExtractedBlockIndex = 1
 tTKWebSocketIO1Display.ScaleTransferFunction.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
 tTKWebSocketIO1Display.OpacityTransferFunction.Points = [-5.0, 0.0, 0.5, 0.0, -1.0, 1.0, 0.5, 0.0]
-
