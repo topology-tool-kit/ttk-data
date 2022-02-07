@@ -54,6 +54,8 @@ def run_all(dest):
     p = pathlib.Path(os.path.realpath(__file__)).parents[1]
     os.chdir(p)
 
+    fails = []
+
     # create destination directory
     try:
         os.mkdir(dest)
@@ -70,6 +72,10 @@ def run_all(dest):
             )
             proc.start()
             proc.join()
+            if proc.exitcode != 0:
+                fails.append(state.name)
+
+    print(f"Failing cases: {fails}")
 
 
 def main():
