@@ -70,6 +70,15 @@ Please find below generic recommendations for setting up your fork of TTK's data
     - Remove the construction of graphical primitives (`tTKIcospheresFromPoints`, `Tube`, `GenerateSurfaceNormals`) which are not needed in batch mode. In batch mode, the raw data (input of these graphical primitives) is usually more convenient to handle.
     - The simplified script should be **straightforward to understand**
   - Run your python script and **double check** if its output is correct in ParaView!
+  - Format your Python script using
+    [Black](https://github.com/psf/black). You can also integrate it
+    into your local Git repository using [pre-commit
+    hooks](https://black.readthedocs.io/en/stable/integrations/source_version_control.html)
+    to ensure that only well-formatted Python code is commited.
+  - Run if possible the TTK CI to get the script output hashes and add
+    them to the corresponding platform file in the `python/hashes`
+    directory (more information in the relevant
+    [README](./python/README.md) file in the `python` directory).
 
 ## c. MkDocs file
 - This file should be located in the `docs/` directory and have the same name as the state file and the Python script, but with the `md` extension (instead of `pvsm` or `py`).
