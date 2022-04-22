@@ -12,10 +12,9 @@ import run
 
 REF_DIR = "tests/reference_screenshots"
 OUTPUT_DIR = run.OUTPUT_DIR
-THRESHOLD = 1
 
 
-def compare_screenshots(png0, png1, threshold):
+def compare_screenshots(png0, png1, threshold=0.0):
     # load the two input images
     img0 = vtk.vtkPNGReader()
     img0.SetFileName(png0)
@@ -60,15 +59,11 @@ def main(gen_ref=False, only_comp=False, keep_identical=False):
         # compare generated screenshots to reference
         p = p / REF_DIR
         for img in sorted(p.glob("*.png")):
-            threshold = THRESHOLD
-            if img.name == "harmonicSkeleton_1.png":
-                # Reeb Graph depends on non stable Harmonic Field output
-                threshold = 150
             out_im = pathlib.Path(f"{OUTPUT_DIR}/{img.name}")
             if not out_im.exists():
                 print(f"{out_im} does not exists, skipping...")
                 continue
-            ident, err = compare_screenshots(str(out_im), str(img), threshold)
+            ident, err = compare_screenshots(str(out_im), str(img))
             if not ident:
                 print(f"Error for {img.name}: {err}")
                 passed = False
