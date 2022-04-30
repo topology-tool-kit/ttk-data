@@ -12,6 +12,8 @@ def ThresholdBetween(threshold, lower, upper):
         threshold.ThresholdMethod = "Between"
         threshold.LowerThreshold = lower
         threshold.UpperThreshold = upper
+
+
 # end of comphatibility ========================================================
 
 # create a new 'XML Unstructured Grid Reader'
