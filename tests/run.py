@@ -63,9 +63,11 @@ def run_all(dest):
         pass
 
     p = p / "states"
+    timings = {}
     for gl in ["*.pvsm", "*.py"]:
         for state in sorted(p.glob(gl)):
             # keep instances isolated (fix segfaults)
+            start = time.time()
             proc = multiprocessing.Process(
                 target=run_one,
                 args=(state, dest),
@@ -75,7 +77,11 @@ def run_all(dest):
             if proc.exitcode != 0:
                 fails.append(state.name)
 
+            timings[state.name] = round(time.time() - start, 3)
+
     print(f"Failing cases: {fails}")
+    for k, v in timings.items():
+        print(f"- {k} took {v} s")
 
 
 def main():

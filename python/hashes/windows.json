@@ -1,7 +1,7 @@
 {
     "1manifoldLearningCircles_Clustering": "2761e5942fc48c48e6c65385b27e0638183a1846",
     "1manifoldLearningCircles_Generators": "d851a2503d5d06ab3fb0fe962552cb36abb2b5ff",
-    "1manifoldLearning_OutputArc": "364c1c2fa89357e73b470925d9483ca8023cc1a4",
+    "1manifoldLearning_OutputArc": "256a10c2d4a2319a19ef025d07cea28bfcea9513",
     "2manifoldLearning_OutputSurface": "18669b90a93f94802a08387826eb5784a0d7ef7f",
     "builtInExample1_CriticalPoints": "0428da64679ba7dc6e3ec7851e4e7c139ac4ea8e",
     "builtInExample1_PersistenceCurve": "7120aff7a6d2107d82bed0d41fc4fc6b5034a469",
@@ -64,7 +64,7 @@
     "interactionSites_logSJoinTreeCriticalPoints": "6471ef09b1a0bd7f628f461bcd63e6ebc0ec0c2e",
     "interactionSites_logSPersistenceCurve": "fee47a5b8370f5f508ee42883388284fb4bd3c0c",
     "interactionSites_logSPersistenceDiagram": "7026e2d3cf86b2ba05de1e14e552ab2554abb356",
-    "karhunenLoveDigits64Dimensions_OutputClustering": "5c4899f9918348a38cb0e4bfc20b4c2d805d5268",
+    "karhunenLoveDigits64Dimensions_OutputClustering": "f0ccd8d90ad8b18980e188aa500bd8318450ecf8",
     "manifoldCheck0_manifoldCheck0_check": "278c11ade32f43416b19721d54aaf3e7c33e425c",
     "manifoldCheck0_manifoldCheck0_non_manifold": "22d94288a3fb0b6f2c857cd109f39752ddfc92df",
     "manifoldCheck1_manifoldCheck1_check": "14bc4968b7f01ba3c177155f65dc51df56fbbdf5",
