@@ -15,6 +15,7 @@ OUTPUT_DIR = "tests/output_screenshots"
 def gen_screenshot(state, dest=OUTPUT_DIR, resFactor=1):
     for i, view in enumerate(simple.GetViews()):
         resX, resY = view.ViewSize
+        view.EnableRayTracing=1
         resX *= resFactor
         resY *= resFactor
         simple.SaveScreenshot(f"{dest}/{state.stem}_{i}.png", view, ImageResolution=[resX, resY])
@@ -22,9 +23,9 @@ def gen_screenshot(state, dest=OUTPUT_DIR, resFactor=1):
     simple.ResetSession()
 
 
-def process_pvsm(state, dest):
+def process_pvsm(state, dest, resFactor=1):
     simple.LoadState(str(state))
-    gen_screenshot(state, dest)
+    gen_screenshot(state, dest, resFactor)
 
 
 def process_py(state, dest, resFact=1):
