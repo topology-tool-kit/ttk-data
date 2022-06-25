@@ -117,6 +117,7 @@ tTKScalarFieldNormalizer1.ScalarField = ["POINTS", "ScaledHarmonic"]
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldNormalizer1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "ScaledHarmonic"]
 tTKPersistenceDiagram1.EmbedinDomain = 1
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

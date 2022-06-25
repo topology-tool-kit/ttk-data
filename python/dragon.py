@@ -34,6 +34,7 @@ tTKPersistenceCurve1.ScalarField = ["POINTS", "Elevation"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=elevation)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Elevation"]
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 pairs = Threshold(Input=tTKPersistenceDiagram1)
