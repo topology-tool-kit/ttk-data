@@ -33,7 +33,7 @@ randomAttributes1.GeneratePointScalars = 1
 # create a new 'TTK ScalarFieldSmoother'
 tTKScalarFieldSmoother1 = TTKScalarFieldSmoother(Input=randomAttributes1)
 tTKScalarFieldSmoother1.ScalarField = ["POINTS", "RandomPointScalars"]
-tTKScalarFieldSmoother1.IterationNumber = 6
+tTKScalarFieldSmoother1.IterationNumber = 7
 
 # create a new 'Calculator'
 sine = Calculator(Input=tTKScalarFieldSmoother1)
@@ -65,6 +65,7 @@ tTKPersistenceCurve1.ScalarField = ["POINTS", "Blend"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=warpByScalar1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Blend"]
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

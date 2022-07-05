@@ -38,8 +38,13 @@ gaussianResampling2.ResampleField = ["POINTS", "ignore arrays"]
 gaussianResampling2.ResamplingGrid = [128, 64, 3]
 gaussianResampling2.SplatAccumulationMode = "Sum"
 
+# create a new 'Python Calculator'
+pythonCalculator1 = PythonCalculator(Input=gaussianResampling2)
+pythonCalculator1.Expression = 'numpy.round_(inputs[0].PointData["SplatterValues"], 6)'
+pythonCalculator1.ArrayName = 'SplatterValues'
+
 # create a new 'Slice'
-slice1 = Slice(Input=gaussianResampling2)
+slice1 = Slice(Input=pythonCalculator1)
 slice1.SliceType = "Plane"
 
 # init the 'Plane' selected for 'SliceType'
@@ -48,6 +53,7 @@ slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=slice1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

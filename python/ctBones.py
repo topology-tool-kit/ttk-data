@@ -22,6 +22,7 @@ ctBonesvti = XMLImageDataReader(FileName=["ctBones.vti"])
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=ctBonesvti)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Scalars_"]
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

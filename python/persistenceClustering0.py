@@ -42,6 +42,7 @@ slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=slice1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 persistenceThreshold0 = Threshold(Input=tTKPersistenceDiagram1)

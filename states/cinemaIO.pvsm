@@ -7843,8 +7843,8 @@
         <Element index="0" value=""/>
         <Element index="1" value=""/>
         <Element index="2" value=""/>
-        <Element index="3" value="2"/>
-        <Element index="4" value="vtkBlockColors"/>
+        <Element index="3" value="0"/>
+        <Element index="4" value="ImageFile"/>
         <Domain name="array_list" id="36600.ColorArrayName.array_list">
           <String text="ImageFile"/>
           <String text="vtkCompositeIndex"/>
