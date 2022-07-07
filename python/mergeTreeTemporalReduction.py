@@ -2,44 +2,21 @@
 
 from paraview.simple import *
 
-# create a new 'XML Image Data Reader'
-isabelvti = XMLImageDataReader(FileName=["isabel.vti"])
+# create a new 'TTK CinemaReader'
+tTKCinemaReader1 = TTKCinemaReader(DatabasePath='./Isabel.cdb')
 
-all_MT_group = []
+# create a new 'TTK CinemaProductReader'
+tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
+tTKCinemaProductReader1.AddFieldDataRecursively = 1
 
-scalarFields = [
-    "velocityMag_02",
-    "velocityMag_03",
-    "velocityMag_04",
-    "velocityMag_05",
-    "velocityMag_30",
-    "velocityMag_31",
-    "velocityMag_32",
-    "velocityMag_33",
-    "velocityMag_45",
-    "velocityMag_46",
-    "velocityMag_47",
-    "velocityMag_48",
-]
-for scalarField in scalarFields:
-    # create a new 'TTK Merge and Contour Tree (FTM)'
-    tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=isabelvti)
-    tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", scalarField]
-    tTKMergeandContourTreeFTM1.TreeType = "Split Tree"
-
-    # create a new 'Group Datasets'
-    groupDatasets1 = GroupDatasets(
-        Input=[
-            tTKMergeandContourTreeFTM1,
-            OutputPort(tTKMergeandContourTreeFTM1, 1),
-            OutputPort(tTKMergeandContourTreeFTM1, 2),
-        ]
-    )
-
-    all_MT_group.append(groupDatasets1)
+# create a new 'TTK Merge and Contour Tree (FTM)'
+tTKMergeandContourTreeFTM26 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
+tTKMergeandContourTreeFTM26.ScalarField = ['POINTS', 'velocityMag']
+tTKMergeandContourTreeFTM26.InputOffsetField = ['POINTS', 'velocityMag']
+tTKMergeandContourTreeFTM26.TreeType = 'Split Tree'
 
 # create a new 'Group Datasets'
-all_MT = GroupDatasets(Input=all_MT_group)
+all_MT = GroupDatasets(Input=[tTKMergeandContourTreeFTM26, OutputPort(tTKMergeandContourTreeFTM26,1), OutputPort(tTKMergeandContourTreeFTM26,2)])
 
 # create a new 'TTK MergeTreeTemporalReductionEncoding'
 tTKMergeTreeTemporalReductionEncoding1 = TTKMergeTreeTemporalReductionEncoding(
