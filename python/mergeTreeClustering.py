@@ -16,64 +16,30 @@ def ThresholdBetween(threshold, lower, upper):
 
 # end of comphatibility ========================================================
 
-# create a new 'XML Image Data Reader'
-isabelvti = XMLImageDataReader(FileName=["isabel.vti"])
+# create a new 'TTK CinemaReader'
+tTKCinemaReader1 = TTKCinemaReader(DatabasePath='./Isabel.cdb')
 
-all_JT_group = []
-all_ST_group = []
+# create a new 'TTK CinemaProductReader'
+tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
+tTKCinemaProductReader1.AddFieldDataRecursively = 1
 
-scalarFields = [
-    "velocityMag_02",
-    "velocityMag_03",
-    "velocityMag_04",
-    "velocityMag_05",
-    "velocityMag_30",
-    "velocityMag_31",
-    "velocityMag_32",
-    "velocityMag_33",
-    "velocityMag_45",
-    "velocityMag_46",
-    "velocityMag_47",
-    "velocityMag_48",
-]
-for scalarField in scalarFields:
-    # create a new 'TTK Merge and Contour Tree (FTM)'
-    tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=isabelvti)
-    tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", scalarField]
-    tTKMergeandContourTreeFTM1.TreeType = "Join Tree"
-
-    # create a new 'Group Datasets'
-    groupDatasets1 = GroupDatasets(
-        Input=[
-            tTKMergeandContourTreeFTM1,
-            OutputPort(tTKMergeandContourTreeFTM1, 1),
-            OutputPort(tTKMergeandContourTreeFTM1, 2),
-        ]
-    )
-
-    all_JT_group.append(groupDatasets1)
-
-    # create a new 'TTK Merge and Contour Tree (FTM)'
-    tTKMergeandContourTreeFTM2 = TTKMergeandContourTreeFTM(Input=isabelvti)
-    tTKMergeandContourTreeFTM2.ScalarField = ["POINTS", scalarField]
-    tTKMergeandContourTreeFTM2.TreeType = "Split Tree"
-
-    # create a new 'Group Datasets'
-    groupDatasets2 = GroupDatasets(
-        Input=[
-            tTKMergeandContourTreeFTM2,
-            OutputPort(tTKMergeandContourTreeFTM2, 1),
-            OutputPort(tTKMergeandContourTreeFTM2, 2),
-        ]
-    )
-
-    all_ST_group.append(groupDatasets2)
+# create a new 'TTK Merge and Contour Tree (FTM)'
+tTKMergeandContourTreeFTM26 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
+tTKMergeandContourTreeFTM26.ScalarField = ['POINTS', 'velocityMag']
+tTKMergeandContourTreeFTM26.InputOffsetField = ['POINTS', 'velocityMag']
+tTKMergeandContourTreeFTM26.TreeType = 'Join Tree'
 
 # create a new 'Group Datasets'
-mt_JT_all = GroupDatasets(Input=all_JT_group)
+mt_JT_all = GroupDatasets(Input=[tTKMergeandContourTreeFTM26, OutputPort(tTKMergeandContourTreeFTM26,1), OutputPort(tTKMergeandContourTreeFTM26,2)])
+
+# create a new 'TTK Merge and Contour Tree (FTM)'
+tTKMergeandContourTreeFTM25 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
+tTKMergeandContourTreeFTM25.ScalarField = ['POINTS', 'velocityMag']
+tTKMergeandContourTreeFTM25.InputOffsetField = ['POINTS', 'velocityMag']
+tTKMergeandContourTreeFTM25.TreeType = 'Split Tree'
 
 # create a new 'Group Datasets'
-mT_all = GroupDatasets(Input=all_ST_group)
+mT_all = GroupDatasets(Input=[tTKMergeandContourTreeFTM25, OutputPort(tTKMergeandContourTreeFTM25,1), OutputPort(tTKMergeandContourTreeFTM25,2)])
 
 # create a new 'TTK MergeTreeClustering'
 tTKMergeTreeClustering1 = TTKMergeTreeClustering(
@@ -90,39 +56,48 @@ tTKMergeTreeClustering1.MinimumNumberofImportantPairs = 2
 tTKMergeTreeClustering1.ImportantPairsSpacing = 15.0
 tTKMergeTreeClustering1.NonImportantPairsProximity = 0.15
 
-# create a new 'Group Datasets'
-groupDatasets14 = GroupDatasets(
-    Input=[tTKMergeTreeClustering1, OutputPort(tTKMergeTreeClustering1, 1)]
-)
+# create a new 'Extract Block'
+nodes = ExtractBlock(Input=OutputPort(tTKMergeTreeClustering1,1))
+nodes.Selectors = ['/Root/Block0']
+
+# create a new 'Extract Block'
+nodes_1 = ExtractBlock(Input=tTKMergeTreeClustering1)
+nodes_1.Selectors = ['/Root/Block0']
+
+# create a new 'Extract Block'
+arcs = ExtractBlock(Input=OutputPort(tTKMergeTreeClustering1,1))
+arcs.Selectors = ['/Root/Block1']
+
+# create a new 'Extract Block'
+arcs_1 = ExtractBlock(Input=tTKMergeTreeClustering1)
+arcs_1.Selectors = ['/Root/Block1']
+
+# create a new 'TTK BlockAggregator'
+tTKBlockAggregator1 = TTKBlockAggregator(registrationName='TTKBlockAggregator1', Input=[nodes_1, nodes])
 
 # create a new 'TTK FlattenMultiBlock'
-tTKFlattenMultiBlock2 = TTKFlattenMultiBlock(Input=groupDatasets14)
+tTKFlattenMultiBlock1 = TTKFlattenMultiBlock(registrationName='TTKFlattenMultiBlock1', Input=tTKBlockAggregator1)
+
+# create a new 'TTK BlockAggregator'
+tTKBlockAggregator2 = TTKBlockAggregator(registrationName='TTKBlockAggregator2', Input=[arcs_1, arcs])
+
+# create a new 'TTK FlattenMultiBlock'
+tTKFlattenMultiBlock3 = TTKFlattenMultiBlock(registrationName='TTKFlattenMultiBlock3', Input=tTKBlockAggregator2)
+
+# create a new 'TTK BlockAggregator'
+tTKBlockAggregator3 = TTKBlockAggregator(registrationName='TTKBlockAggregator3', Input=[tTKFlattenMultiBlock1, tTKFlattenMultiBlock3])
+tTKBlockAggregator3.FlattenInput = 0
 
 # create a new 'TTK MergeTreeDistanceMatrix'
-tTKMergeTreeDistanceMatrix2 = TTKMergeTreeDistanceMatrix(Input=tTKFlattenMultiBlock2)
+tTKMergeTreeDistanceMatrix2 = TTKMergeTreeDistanceMatrix(Input=tTKBlockAggregator3)
 tTKMergeTreeDistanceMatrix2.PersistenceThreshold = 2.0
 
 # create a new 'TTK DimensionReduction'
 tTKDimensionReduction2 = TTKDimensionReduction(
     Input=tTKMergeTreeDistanceMatrix2, ModulePath="default"
 )
-tTKDimensionReduction2.InputColumns = [
-    "Tree00",
-    "Tree01",
-    "Tree02",
-    "Tree03",
-    "Tree04",
-    "Tree05",
-    "Tree06",
-    "Tree07",
-    "Tree08",
-    "Tree09",
-    "Tree10",
-    "Tree11",
-    "Tree12",
-    "Tree13",
-    "Tree14",
-]
+tTKDimensionReduction2.SelectFieldswithaRegexp = 1
+tTKDimensionReduction2.Regexp = 'Tree[0-9]+'
 tTKDimensionReduction2.InputIsaDistanceMatrix = 1
 tTKDimensionReduction2.UseAllCores = 0  # MDS is unstable in parallel mode
 
