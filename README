@@ -254,3 +254,45 @@ Data specs
   "acknowledgement": "Berk Geveci, Christoph Garth, Garrett Aldrich, and Jonas Lukasczyk",
   "url": "https://jluk.de/resources/papers/NestedTrackingGraphs2017.pdf"
 }
+
+{
+  "name": "at.vti",
+  "description": "Quantum chemistry dataset. Simulation of the electronic density in the Adenine-Thymine molecular complex",
+  "acknowledgement": "",
+  "url": ""
+}
+
+{
+  "name": "ferility.vtu",
+  "description": "2d triangulation of the *fertility* dataset. Scanning and reconstruction.",
+  "acknowledgement": "",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/view.jsp?id=670-fertility_-_watertight"
+}
+
+{
+  "name": "casting.vtu",
+  "description": "2d triangulation of the surface of a mechanical piece",
+  "acknowledgement": "",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/view.jsp?id=16-Casting"
+}
+
+{
+  "name": "skull.vtu",
+  "description": "3d triangulation of the shape of a skull",
+  "acknowledgement": "",
+  "url": ""
+}
+
+{
+  "name": "periodicPicture.cdb",
+  "description": "Cinema database containing 100 greyscale pictures with resolution 32x32, of a synthetic terrain, with 100 viewpoints arranged along a circle. Generated using ParaView",
+  "acknowledgement": "",
+  "url": ""
+}
+
+{
+  "name": "household_part1_ID_daily.csv",
+  "description": "Dataset adapted from daily measurements of electric power consumption in one household with a one-minute sampling rate over a period of 2 years. Different electrical quantities and some sub-metering values are available.",
+  "acknowledgement": "Georges Hebrail Alice Berard",
+  "url": "https://archive-beta.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption"
+}
