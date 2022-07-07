@@ -15,9 +15,9 @@ OUTPUT_DIR = "tests/output_screenshots"
 def gen_screenshot(state, dest=OUTPUT_DIR, resFactor=1):
     for i, view in enumerate(simple.GetViews()):
         resX, resY = view.ViewSize
-        view.EnableRayTracing=1
         resX *= resFactor
         resY *= resFactor
+
         simple.SaveScreenshot(f"{dest}/{state.stem}_{i}.png", view, ImageResolution=[resX, resY])
         print(f"{state}: view #{i} saved, with resolution {resX}x{resY}")
     simple.ResetSession()
@@ -93,8 +93,9 @@ def main():
         description="Run either one or all state files, generate a screenshot per view"
     )
     parser.add_argument(
-        "-r", "--res_factor", type=int, help="Resolution factor for output pics"
+        "-r", "--res_factor", type=int, help="Resolution factor for output pics",
     )
+    default=1
     parser.add_argument(
         "-i", "--input_state", type=pathlib.Path, help="State file to process"
     )
