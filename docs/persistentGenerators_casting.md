@@ -7,7 +7,7 @@ This example computes the infinitely persistent 1-cycles of the surface.
 These cycles smoothly capture the topological handles of the surface.
 
 The surface generators are extracted using the eigenfunctions of the Laplace-Beltrami operator. These eigenfunctions are computed with [EigenField](https://topology-tool-kit.github.io/doc/html/classttkEigenField.html)
-Generators are then computed on this smooth scalarfield using [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/ttkclassPersistentGenerators.html).
+Generators are then computed on this smooth scalarfield using [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html).
 
 Finally, the cycles are smoothed along the original surface using [SurfaceGeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkSurfaceGeometrySmoother.html)
 
