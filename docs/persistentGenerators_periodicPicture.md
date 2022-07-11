@@ -4,7 +4,7 @@
 
 ## Pipeline description
 
-This example shows the detection of a circular pattern in hiigh-dimensional data.
+This example shows the detection of a circular pattern in high-dimensional data.
 100 greyscale pictures of resolution 32x32 of a syntethic terrain were taken in ParaView, from 100 viewpoints arranged along a circle, and stored in a cinema database.
 
 The ParaView example starts by loading the database. The set of pictures and the corresponding viewpoints can be navigated using the time controls of ParaView.
@@ -43,11 +43,19 @@ $ paraview --state=states/persistentGenerators_periodicPicture.pvsm
 
 ## C++/Python API
 
-[TableDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkTableDistanceMatrix.html)
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
+
+[CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html)
+
+[DataSetToTable](https://topology-tool-kit.github.io/doc/html/classttkDataSetToTable.html)
 
 [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
 
-[RipsComplex](https://topology-tool-kit.github.io/doc/html/classttkRipsComplex.html)
+[MergeBlockTables](https://topology-tool-kit.github.io/doc/html/classttkMergeBlockTables.html)
 
 [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html)
+
+[RipsComplex](https://topology-tool-kit.github.io/doc/html/classttkRipsComplex.html)
+
+[TableDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkTableDistanceMatrix.html)
 

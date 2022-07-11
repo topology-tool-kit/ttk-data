@@ -4,7 +4,7 @@
 
 ## Pipeline description
 
-This example shows the detection of a circular pattern in hiigh-dimensional data.
+This example shows the detection of a circular pattern in high-dimensional data.
 The data contains seven mesurements of electric power consumption for a single household over two years, for a daily sampling.
 This can be interpreted as 700 points (on per day) in R^7.
 
@@ -43,11 +43,11 @@ $ paraview --state=states/persistentGenerators_householdAnalysis.pvsm
 
 ## C++/Python API
 
-[TableDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkTableDistanceMatrix.html)
-
 [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
+
+[PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html)
 
 [RipsComplex](https://topology-tool-kit.github.io/doc/html/classttkRipsComplex.html)
 
-[PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html)
+[TableDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkTableDistanceMatrix.html)
 

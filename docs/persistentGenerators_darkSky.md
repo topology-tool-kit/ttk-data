@@ -39,6 +39,9 @@ $ paraview --state=states/persistentGenerators_darkSky.pvsm
 
 ## C++/Python API
 
+[MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
+
 [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html)
 
-[MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
+[ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
+

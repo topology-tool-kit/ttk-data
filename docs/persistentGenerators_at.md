@@ -34,6 +34,6 @@ $ paraview --state=states/persistentGenerators_at.pvsm
 
 ## C++/Python API
 
-[PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html)
-
 [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
+
+[PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html)
