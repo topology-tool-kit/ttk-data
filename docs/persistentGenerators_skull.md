@@ -8,7 +8,7 @@ These cycles smoothly capture the topological handles of the surface.
 
 First the surface of the 3-dimensional triangulation is extracted.
 The surface generators are then extracted using the eigenfunctions of the Laplace-Beltrami operator. These eigenfunctions are computed with [EigenField](https://topology-tool-kit.github.io/doc/html/classttkEigenField.html)
-Generators are then computed on this smooth scalarfield using [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/ttkclassPersistentGenerators.html).
+Generators are then computed on this smooth scalarfield using [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html).
 
 Finally, the cycles are smoothed along the original surface using [SurfaceGeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkSurfaceGeometrySmoother.html)
 
