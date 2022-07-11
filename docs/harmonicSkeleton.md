@@ -44,6 +44,8 @@ in VTK file format (bottom right view, above screenshot). You are free to change
 
 [HarmonicField](https://topology-tool-kit.github.io/doc/html/classttkHarmonicField.html)
 
+[IcosphereFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
+
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
 
 [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)

@@ -41,13 +41,13 @@ $ paraview --state=states/morsePersistence.pvsm
 
 ## C++/Python API
 
-[ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
-
 [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
 
 
 [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html)
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
+
+[ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
 
 [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html)

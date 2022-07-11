@@ -46,25 +46,29 @@ $ paraview --state=states/contourTreeAlignment.pvsm
 
 
 ## C++/Python API
-[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
+[ArrayEditor](https://topology-tool-kit.github.io/doc/html/classttkArrayEditor.html)
 
-[CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html)
+[BlockAggregator](https://topology-tool-kit.github.io/doc/html/classttkBlockAggregator.html)
 
 [CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html)
 
-[TopologicalSimplificationByPersistence](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplificationByPersistence.html)
+[CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html)
+
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
 
 [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
 
 [ContourTreeAlignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html)
 
-[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[EndFor](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
 
-[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[Extract](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
 
 [ForEach](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
 
-[EndFor](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
 
-[TTKExtract](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[PlanarGraphLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+
+[TopologicalSimplificationByPersistence](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplificationByPersistence.html)
 
