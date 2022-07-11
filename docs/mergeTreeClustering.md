@@ -39,11 +39,21 @@ $ paraview --state=states/mergeTreeClustering.pvsm
 
 
 ## C++/Python API
+[BlockAggregator](https://topology-tool-kit.github.io/doc/html/classttkBlockAggregator.html)
+
+[CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html)
+
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
+
+[DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
+
+[FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
+
 [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+
+[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
 
 [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
 
 [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
-
-[DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
 
