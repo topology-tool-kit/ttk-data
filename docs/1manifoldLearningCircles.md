@@ -38,7 +38,7 @@ $ paraview --state=states/1manifoldLearningCircles.pvsm
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
-[MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttk_1_1MorseSmaleComplex.html)
+[MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
 
