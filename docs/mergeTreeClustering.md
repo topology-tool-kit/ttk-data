@@ -51,8 +51,6 @@ $ paraview --state=states/mergeTreeClustering.pvsm
 
 [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
 
-[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
-
 [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
 
 [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
