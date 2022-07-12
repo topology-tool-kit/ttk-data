@@ -16,6 +16,13 @@ https://topology-tool-kit.github.io/tutorials.html
 Data specs
 =
 {
+  "name": "at.vti",
+  "description": "Quantum chemistry dataset. Simulation of the electronic density in the Adenine-Thymine molecular complex",
+  "acknowledgement": "Roberto Alvarez Boto",
+  "url": ""
+}
+
+{
   "name": "bivariateToy.vtu",
   "description": "Simple bivariate example using X and Y coordinates",
   "acknowledgement": "Julien Tierny",
@@ -41,6 +48,13 @@ Data specs
   "description": "Uncertain 2D von Karman vortex street",
   "acknowledgement": "Gerris",
   "url": "http://gfs.sourceforge.net/examples/examples/cylinder.html"
+}
+
+{
+  "name": "casting.vtu",
+  "description": "2d triangulation of the surface of a mechanical piece",
+  "acknowledgement": "AIM@Shape",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/view.jsp?id=16-Casting"
 }
 
 {
@@ -100,6 +114,20 @@ Data specs
 }
 
 {
+  "name": "ds14_scivis_0128_e4_dt04_1.0000.vtp",
+  "description": "Point cloud dataset, one timestep of a simulation of density of dark matter in the universe",
+  "acknowledgement": "IEEE SciVis Contest 2015",
+  "url": "http://sciviscontest.ieeevis.org/2015/"
+}
+
+{
+  "name": "fertility.vtu",
+  "description": "2d triangulation of the *fertility* dataset. Scanning and reconstruction.",
+  "acknowledgement": "AIM@Shape",
+  "url": "http://visionair.ge.imati.cnr.it/ontologies/shapes/view.jsp?id=670-fertility_-_watertight"
+}
+
+{
   "name": "GroundWater.cdb",
   "description": "The dataset contains a limestone ground sample from south Florida, and streamlines that represent the flow of water through the cavities.",
   "acknowledgement": "Data courtesy of Sadé Garcia, Michael Sukop, Florida International University; Kevin Cunningham, United States Geological Survey.",
@@ -111,6 +139,13 @@ Data specs
   "description": "Atmoshperic data (ensemble mean)",
   "acknowledgement": "The HAPPI project",
   "url": "http://www.happimip.org/"
+}
+
+{
+  "name": "household_part1_ID_daily.csv",
+  "description": "Dataset adapted from daily measurements of electric power consumption in one household with a one-minute sampling rate over a period of 2 years. Different electrical quantities and some sub-metering values are available.",
+  "acknowledgement": "Georges Hebrail Alice Berard",
+  "url": "https://archive-beta.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption"
 }
 
 {
@@ -193,6 +228,13 @@ Data specs
 }
 
 {
+  "name": "periodicPicture.cdb",
+  "description": "Cinema database containing 100 greyscale pictures with resolution 32x32, of a synthetic terrain, with 100 viewpoints arranged along a circle. Generated using ParaView",
+  "acknowledgement": "Jules Vidal",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
   "name": "pointCloud.csv",
   "description": "Three dimensional point cloud, manifold learning example",
   "acknowledgement": "scikit-learn",
@@ -211,6 +253,13 @@ Data specs
   "description": "Binary mask for atmoshperic data (ensemble mean)",
   "acknowledgement": "The HAPPI project",
   "url": "http://www.happimip.org/"
+}
+
+{
+  "name": "skull.vtu",
+  "description": "3d triangulation of the shape of a skull",
+  "acknowledgement": "",
+  "url": ""
 }
 
 {

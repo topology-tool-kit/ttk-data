@@ -36,19 +36,21 @@ $ paraview --state=states/cinemaIO.pvsm
 - `ViscousFingersSampled.cdb`: a cinema database containing the sampled slices of the input cinema database.
 
 ## C++/Python API
-[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
-
-[CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html)
+[ArrayEditor](https://topology-tool-kit.github.io/doc/html/classttkArrayEditor.html)
 
 [CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html)
 
-[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkGridLayout.html)
+[CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html)
 
-[ForEach](https://topology-tool-kit.github.io/doc/html/classttkForEach.html)
-
-[ArrayEditor](https://topology-tool-kit.github.io/doc/html/classttkArrayEditor.html)
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
 
 [CinemaWriter](https://topology-tool-kit.github.io/doc/html/classttkCinemaWriter.html)
 
 [EndFor](https://topology-tool-kit.github.io/doc/html/classttkEndFor.html)
+
+[ForEach](https://topology-tool-kit.github.io/doc/html/classttkForEach.html)
+
+[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkGridLayout.html)
+
+
 

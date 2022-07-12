@@ -42,7 +42,10 @@ $ paraview --state=states/BuiltInExample1.pvsm
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
 
+[ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkCriticalPoints.html)
+
+[ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
+
 [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html)
 
-[Critical Points](https://topology-tool-kit.github.io/doc/html/classttkCriticalPoints.html)
 

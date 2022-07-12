@@ -39,6 +39,8 @@ $ paraview --state=states/karhunenLoveDigits64Dimensions.pvsm
 ## C++/Python API
 [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
 
+[IdentifierRandomizer](https://topology-tool-kit.github.io/doc/html/classttkIdentifierRandomizer.html)
+
 [Morse-Smale complex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)

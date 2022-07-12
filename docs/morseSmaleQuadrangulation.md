@@ -63,14 +63,15 @@ $ paraview --state=states/morseSmaleQuadrangulation.pvsm
 
 [EigenField](https://topology-tool-kit.github.io/doc/html/classttkEigenField.html)
 
-[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
-
-[PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
-
-[TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html)
-
 [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
 
 [MorseSmaleQuadrangulation](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleQuadrangulation.html)
 
+[PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
+
 [QuadrangulationSubdivision](https://topology-tool-kit.github.io/doc/html/classttkQuadrangulationSubdivision.html)
+
+[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
+
+[TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html)
+

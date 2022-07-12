@@ -3,7 +3,7 @@
 ![Merge Tree Clustering example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg)
 
 ## Pipeline description
-This example first loads an ensemble of scalar fields inside a single file from disk.
+This example first loads an ensemble of scalar fields inside a cinema database from disk.
 Then, the [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) is computed on each scalar field for the Join Tree and the Split Tree.
 
 All these trees are passed to [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html) to compute a clustering in the metric space of merge trees. Each input is considered as a tuple consisting of the Join Tree and the Split Tree of the corresponding scalar field. Each centroid is also a tuple of this kind and a distance between two tuples is the distance between their Join Tree plus the distance between their Split Trees.
@@ -31,7 +31,7 @@ $ paraview --state=states/mergeTreeClustering.pvsm
 ```
 
 ## Inputs
-- [isabel.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/isabel.vti): a three-dimensional regular grid with 12 scalar fields.
+- [Isabel.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/Isabel.cdb): a cinema database containing 12 regular grids.
 
 ## Outputs
 -  `MDS_trees.vtu`: the output points in 2D MDS (MultiDimensional Scaling) corresponding to the input trees. The 'ClusterAssignment' array contains the clustering assignments.
@@ -39,11 +39,21 @@ $ paraview --state=states/mergeTreeClustering.pvsm
 
 
 ## C++/Python API
+[BlockAggregator](https://topology-tool-kit.github.io/doc/html/classttkBlockAggregator.html)
+
+[CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html)
+
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
+
+[DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
+
+[FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
+
 [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+
+[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
 
 [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
 
 [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
-
-[DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
 

@@ -63,8 +63,12 @@ Note that you are free to change the VTK file extensions to that of any other su
 
 
 ## C++/Python API
-- [ContinuousScatterPlot](https://topology-tool-kit.github.io/doc/html/classttkContinuousScatterPlot.html)
-- [ProjectionFromField](https://topology-tool-kit.github.io/doc/html/classttkProjectionFromField.html)
-- [RangePolygon](https://topology-tool-kit.github.io/doc/html/classttkRangePolygon.html)
-- [FiberSurface](https://topology-tool-kit.github.io/doc/html/classttkFiberSurface.html)
-- [JacobiSet](https://topology-tool-kit.github.io/doc/html/classttkJacobiSet.html)
+[ContinuousScatterPlot](https://topology-tool-kit.github.io/doc/html/classttkContinuousScatterPlot.html)
+
+[FiberSurface](https://topology-tool-kit.github.io/doc/html/classttkFiberSurface.html)
+
+[JacobiSet](https://topology-tool-kit.github.io/doc/html/classttkJacobiSet.html)
+
+[ProjectionFromField](https://topology-tool-kit.github.io/doc/html/classttkProjectionFromField.html)
+
+
