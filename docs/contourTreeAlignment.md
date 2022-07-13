@@ -60,13 +60,13 @@ $ paraview --state=states/contourTreeAlignment.pvsm
 
 [ContourTreeAlignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html)
 
-[EndFor](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[EndFor](https://topology-tool-kit.github.io/doc/html/classttkEndFor.html)
 
-[Extract](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[Extract](https://topology-tool-kit.github.io/doc/html/classttkExtract.html)
 
-[ForEach](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[ForEach](https://topology-tool-kit.github.io/doc/html/classttkForEach.html)
 
-[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
+[GridLayout](https://topology-tool-kit.github.io/doc/html/classttkGridLayout.html)
 
 [PlanarGraphLayout](https://topology-tool-kit.github.io/doc/html/classttkPlanarGraphLayout.html)
 
