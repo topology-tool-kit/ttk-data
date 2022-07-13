@@ -15,7 +15,7 @@ The [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPers
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data.
 
-This simplified data is then used as the input of the computation of [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttk_1_1MorseSmaleComplex.html) (center view, above screenshot). This complex is composed of elements of 3 dimensions: dimension 0, which corresponds to the critical points of the Morse-Smale Complex, dimension 1, which corresponds to its edges (in grey in the screenshot) and dimension 2, which corresponds to its surfaces.
+This simplified data is then used as the input of the computation of [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) (center view, above screenshot). This complex is composed of elements of 3 dimensions: dimension 0, which corresponds to the critical points of the Morse-Smale Complex, dimension 1, which corresponds to its edges (in grey in the screenshot) and dimension 2, which corresponds to its surfaces.
 
 ## ParaView
 To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
