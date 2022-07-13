@@ -41,7 +41,7 @@ gaussianResampling2.SplatAccumulationMode = "Sum"
 # create a new 'Python Calculator'
 pythonCalculator1 = PythonCalculator(Input=gaussianResampling2)
 pythonCalculator1.Expression = 'numpy.round_(inputs[0].PointData["SplatterValues"], 6)'
-pythonCalculator1.ArrayName = 'SplatterValues'
+pythonCalculator1.ArrayName = "SplatterValues"
 
 # create a new 'Slice'
 slice1 = Slice(Input=pythonCalculator1)
