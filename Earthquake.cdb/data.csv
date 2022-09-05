@@ -1,0 +1,15 @@
+FILE,ClusterID,TimeStep
+data/earthquake_002700.vti,0,2700
+data/earthquake_002900.vti,0,2900
+data/earthquake_003100.vti,0,3100
+data/earthquake_003300.vti,0,3300
+data/earthquake_007700.vti,1,7700
+data/earthquake_007900.vti,1,7900
+data/earthquake_008100.vti,1,8100
+data/earthquake_008300.vti,1,8300
+data/earthquake_011700.vti,2,11700
+data/earthquake_011900.vti,2,11900
+data/earthquake_012100.vti,2,12100
+data/earthquake_012300.vti,2,12300
+
+
