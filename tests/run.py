@@ -18,7 +18,9 @@ def gen_screenshot(state, dest=OUTPUT_DIR, resFactor=1):
         resX *= resFactor
         resY *= resFactor
 
-        simple.SaveScreenshot(f"{dest}/{state.stem}_{i}.png", view, ImageResolution=[resX, resY])
+        simple.SaveScreenshot(
+            f"{dest}/{state.stem}_{i}.png", view, ImageResolution=[resX, resY]
+        )
         print(f"{state}: view #{i} saved, with resolution {resX}x{resY}")
     simple.ResetSession()
 
@@ -42,8 +44,9 @@ def run_one(state_file, dest, resFact=1):
     print(f"Processing {state_file.name}")
     start_time = time.time()
 
-
-    {".pvsm": process_pvsm, ".py": process_py}[state_file.suffix](state_file, dest, resFact)
+    {".pvsm": process_pvsm, ".py": process_py}[state_file.suffix](
+        state_file, dest, resFact
+    )
     duration = round(time.time() - start_time, 3)
     mem = round(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss / 1000)
     # pretty-print memory usage
@@ -93,9 +96,12 @@ def main():
         description="Run either one or all state files, generate a screenshot per view"
     )
     parser.add_argument(
-        "-r", "--res_factor", type=int, help="Resolution factor for output pics",
+        "-r",
+        "--res_factor",
+        type=int,
+        help="Resolution factor for output pics",
+        default=1,
     )
-    default=1
     parser.add_argument(
         "-i", "--input_state", type=pathlib.Path, help="State file to process"
     )
