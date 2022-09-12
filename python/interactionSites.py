@@ -37,7 +37,6 @@ tTKPersistenceCurve1.ScalarField = ["POINTS", "log(s)"]
 # compute the 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=builtInExamplevti)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "log(s)"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

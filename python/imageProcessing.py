@@ -33,7 +33,6 @@ calculator1.Function = "mag(ScalarGradient)"
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "gradient"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

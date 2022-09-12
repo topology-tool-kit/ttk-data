@@ -18,7 +18,6 @@ extractBlock1.Selectors = ["/Root/Block0", "/Root/Block10"]
 tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=extractBlock1)
 tTKPersistenceDiagram3.ScalarField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram3.InputOffsetField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram3.Backend = "FTM (IEEE TPSD 2019)"
 tTKPersistenceDiagram3.UseAllCores = 0
 
 # create a new 'Threshold'
