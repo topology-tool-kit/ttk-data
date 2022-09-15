@@ -23920,6 +23920,10 @@
           <Entry value="4" text="Persistent Simplex (Zomorodian 2010)"/>
         </Domain>
       </Property>
+      <Property name="Ignore Boundary" id="16702.Ignore Boundary" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="16702.Ignore Boundary.bool"/>
+      </Property>
       <Property name="Debug_DebugLevel" id="16702.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16702.Debug_DebugLevel.range"/>
