@@ -64678,6 +64678,25 @@
           <Entry value="4" text="Persistent Simplex (Zomorodian 2010)"/>
         </Domain>
       </Property>
+      <Property name="ComputeMinSad" id="16087.ComputeMinSad" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="16087.ComputeMinSad.bool"/>
+      </Property>
+      <Property name="ComputeSadMax" id="16087.ComputeSadMax" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="16087.ComputeSadMax.bool"/>
+      </Property>
+      <Property name="ComputeSadSad" id="16087.ComputeSadSad" number_of_elements="1">
+        <Element index="0" value="0"/>
+        <Domain name="bool" id="16087.ComputeSadSad.bool"/>
+      </Property>
+      <Property name="DMSDimensions" id="16087.DMSDimensions" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="enum" id="16087.DMSDimensions.enum">
+          <Entry value="0" text="All Dimensions"/>
+          <Entry value="1" text="Selected Dimensions (no infinite pairs)"/>
+        </Domain>
+      </Property>
       <Property name="Debug_DebugLevel" id="16087.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>
         <Domain name="range" id="16087.Debug_DebugLevel.range"/>
