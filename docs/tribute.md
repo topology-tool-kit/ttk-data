@@ -1,6 +1,8 @@
 # Tribute to Edelsbrunner and Harer's book
 
-![Tribute screenshot](https://topology-tool-kit.github.io/img/gallery/tribute.jpg)
+<iframe width="100%" height="420"
+src="https://www.youtube.com/embed/pOmI63FKUBw" frameborder="0"
+allowfullscreen></iframe>
 
 ## Pipeline description
 
