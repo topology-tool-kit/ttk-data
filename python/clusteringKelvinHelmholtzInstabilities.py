@@ -41,7 +41,6 @@ tTKScalarFieldNormalizer1.ScalarField = ['POINTS', 'Enstrophy']
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldNormalizer1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Enstrophy']
-#tTKPersistenceDiagram1.InputOffsetField = ['POINTS', 'Enstrophy']
 
 # create a new 'TTK PersistenceDiagramClustering'
 tTKPersistenceDiagramClustering1 = TTKPersistenceDiagramClustering(Input=tTKPersistenceDiagram1)
