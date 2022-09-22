@@ -41,7 +41,7 @@ tTKScalarFieldNormalizer1.ScalarField = ['POINTS', 'Enstrophy']
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldNormalizer1)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'Enstrophy']
-tTKPersistenceDiagram1.InputOffsetField = ['POINTS', 'Enstrophy']
+#tTKPersistenceDiagram1.InputOffsetField = ['POINTS', 'Enstrophy']
 
 # create a new 'TTK PersistenceDiagramClustering'
 tTKPersistenceDiagramClustering1 = TTKPersistenceDiagramClustering(Input=tTKPersistenceDiagram1)
@@ -71,8 +71,7 @@ tableToPoints2.a2DPoints = 1
 tableToPoints2.KeepAllDataArrays = 1
 
 # create a new 'K Means'
-kMeans1 = KMeans(Input=tableToPoints2,
-    ModelInput=None)
+kMeans1 = KMeans(Input=tableToPoints2, ModelInput=None)
 kMeans1.VariablesofInterest = ['Component_0', 'Component_1']
 kMeans1.k = 2
 
