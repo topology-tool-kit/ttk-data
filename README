@@ -172,6 +172,14 @@ Data specs
 }
 
 {
+  "name": "khi.cdb/",
+  "description": "Ensemble of periodic, 2D hydrodynamic turbulent flows (Kelvin
+  Helmoltz Instabilities, 32 members, 2 ground-truth classes)."
+  "acknowledgement": "Florent Nauleau",
+  "url": "https://arxiv.org/abs/2207.14080",
+}
+
+{
   "name": "manifoldCheck0.vtu",
   "description": "Toy example for 0-dimensional manifold check",
   "acknowledgement": "Julien Tierny",
