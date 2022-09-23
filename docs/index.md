@@ -29,11 +29,8 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Morse persistence](morsePersistence/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morsePersistence.jpg) |
 | [Built-in example 1](BuiltInExample1/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg) |
 | [Interaction site](interactionSites/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg) |
-| [Viscous fingering](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/viscousFingering.jpg) |
 | [Morse molecule](morseMolecule/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg) |
 | [Tectonic puzzle](tectonicPuzzle/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg) |
-| [Ocean vortices](dragon/) | !![ExampleImage](https://topology-tool-kit.github.io/img/gallery/climate.jpg) |
-| [Contour around point](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourAroundPoint.jpg) |
 | [CT bones](ctBones/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg) |
 | [Tribute](tribute/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg) |
 | [Image processing](imageProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg) |
@@ -47,15 +44,11 @@ If you have any questions regarding these examples, please let us know by sendin
 | Name | Screenshot |
 |:-:|:-:|
 | [Built-in example 2](builtInExample2/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample2.jpg) |
-| [Bivariate toy](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToy.jpg) |
-| [Bivariate toy CSP peeling](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/bivariateToyCspPeeling.jpg) |
-| [Mechanical](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mechanical.jpg) |
 
 ## Uncertain scalar data
 
 | Name | Screenshot |
 |:-:|:-:|
-| [Built-in example 3](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample3.jpg) |
 | [Uncertain starting vortex](uncertainStartingVortex/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/uncertainStartingVortex.jpg) |
 
 ## Time-varying scalar data
@@ -63,7 +56,6 @@ If you have any questions regarding these examples, please let us know by sendin
 | Name | Screenshot |
 |:-:|:-:|
 | [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
-| [Merge tree feature tracking](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
 | [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
 | [Nested tracking graph](nestedTrackingFromOverlap/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
 
@@ -101,7 +93,6 @@ If you have any questions regarding these examples, please let us know by sendin
 | Name | Screenshot |
 |:-:|:-:|
 | [Geometry approximation](geometryApproximation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geometryApproximation.jpg) |
-| [Cinema darkroom](dragon/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cinemaDarkroom.jpg) |
 
 ## Misc features
 
