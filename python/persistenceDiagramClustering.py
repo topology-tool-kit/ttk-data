@@ -18,7 +18,6 @@ tTKPersistenceDiagram13 = TTKPersistenceDiagram(
 )
 tTKPersistenceDiagram13.ScalarField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram13.InputOffsetField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram13.UseAllCores = 0
 
 # create a new 'TTK PersistenceDiagramClustering'
 tTKPersistenceDiagramClustering1 = TTKPersistenceDiagramClustering(

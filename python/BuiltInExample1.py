@@ -50,6 +50,7 @@ tetrahedralize1 = Tetrahedralize(Input=tTKScalarFieldNormalizer1)
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tetrahedralize1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "myVorticity"]
+tTKPersistenceDiagram1.IgnoreBoundary = True
 
 # create a new 'Threshold'
 persistencePairs = Threshold(Input=tTKPersistenceDiagram1)

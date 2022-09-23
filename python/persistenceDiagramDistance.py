@@ -18,7 +18,9 @@ extractBlock1.Selectors = ["/Root/Block0", "/Root/Block10"]
 tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=extractBlock1)
 tTKPersistenceDiagram3.ScalarField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram3.InputOffsetField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram3.UseAllCores = 0
+tTKPersistenceDiagram3.Dimensions = "Selected Dimensions (no infinite pairs)"
+tTKPersistenceDiagram3.Saddlesaddlediagramdimension1slowest = False
+tTKPersistenceDiagram3.IgnoreBoundary = False
 
 # create a new 'Threshold'
 threshold7 = Threshold(Input=tTKPersistenceDiagram3)
