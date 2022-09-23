@@ -42,8 +42,7 @@ tTKLDistanceMatrix1 = TTKLDistanceMatrix(Input=tTKCinemaProductReader1)
 tTKLDistanceMatrix1.ScalarField = ['POINTS', 'Enstrophy']
 
 # create a new 'TTK DimensionReduction'
-tTKDimensionReduction2 = TTKDimensionReduction(Input=tTKLDistanceMatrix1,
-    ModulePath='default')
+tTKDimensionReduction2 = TTKDimensionReduction(Input=tTKLDistanceMatrix1)
 tTKDimensionReduction2.Regexp = "Dataset.*"
 tTKDimensionReduction2.SelectFieldswithaRegexp = 1
 tTKDimensionReduction2.InputIsaDistanceMatrix = 1
@@ -61,8 +60,7 @@ kMeans1.VariablesofInterest = ['Component_0', 'Component_1']
 kMeans1.k = 2
 
 # create a new 'TTK DimensionReduction'
-tTKDimensionReduction1 = TTKDimensionReduction(Input=tTKPersistenceDiagramDistanceMatrix1,
-    ModulePath='default')
+tTKDimensionReduction1 = TTKDimensionReduction(Input=tTKPersistenceDiagramDistanceMatrix1)
 tTKDimensionReduction1.Regexp = "Diagram.*"
 tTKDimensionReduction1.SelectFieldswithaRegexp = 1
 tTKDimensionReduction1.InputIsaDistanceMatrix = 1
