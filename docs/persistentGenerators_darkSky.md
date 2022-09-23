@@ -21,7 +21,7 @@ The python script simply computes the most persistent generators and saves the r
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistentGenerators_darkSky.pvsm
+paraview --state=states/persistentGenerators_darkSky.pvsm
 ```
 
 ## Python code

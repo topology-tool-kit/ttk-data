@@ -15,7 +15,7 @@ The python script saves the information needed to reconstruct the trees removed 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/mergeTreeTemporalReduction.pvsm
+paraview --state=states/mergeTreeTemporalReduction.pvsm
 ```
 
 ## Python code

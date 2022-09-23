@@ -20,7 +20,7 @@ The images are sliced with a plane, and each slice is visualized side-by-side us
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/cinemaIO.pvsm
+paraview --state=states/cinemaIO.pvsm
 ```
 
 ## Python code

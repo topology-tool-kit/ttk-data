@@ -27,7 +27,7 @@ To reproduce the above screenshot, go to your
 and enter the following command:
 
 ``` bash
-$ paraview --state=states/persistenceDrivenCompression.pvsm
+paraview --state=states/persistenceDrivenCompression.pvsm
 ```
 
 ## Python code

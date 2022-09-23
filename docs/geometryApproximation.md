@@ -13,7 +13,7 @@ A fake shadow is put on the stone mesh to give the mesh depth values. The stone 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/geometryApproximation.pvsm
+paraview --state=states/geometryApproximation.pvsm
 ```
 
 ## Python code

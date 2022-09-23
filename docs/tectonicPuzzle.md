@@ -43,7 +43,7 @@ To reproduce the above screenshot, go to your
 and enter the following command:
 
 ``` bash
-$ paraview --state=states/tectonicPuzzle.pvsm
+paraview --state=states/tectonicPuzzle.pvsm
 ```
 
 ## Python code

@@ -23,7 +23,7 @@ The python script saves the resulting point cloud, Rips complex and output cycle
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistentGenerators_periodicPicture.pvsm
+paraview --state=states/persistentGenerators_periodicPicture.pvsm
 ```
 
 ## Python code

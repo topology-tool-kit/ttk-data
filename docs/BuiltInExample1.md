@@ -19,7 +19,7 @@ Finally, the [Critical Points](https://topology-tool-kit.github.io/doc/html/clas
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/BuiltInExample1.pvsm
+paraview --state=states/BuiltInExample1.pvsm
 ```
 
 ## Python code

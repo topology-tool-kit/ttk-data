@@ -20,7 +20,7 @@ In this example, the [MorseSmaleComplex](https://topology-tool-kit.github.io/doc
 
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/tribute.pvsm
+paraview --state=states/tribute.pvsm
 ```
 
 ## Python code
