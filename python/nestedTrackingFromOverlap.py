@@ -10,6 +10,8 @@ def ThresholdAbove(threshold, value):
         # paraview 5.10
         threshold.ThresholdMethod = "Above Upper Threshold"
         threshold.UpperThreshold = value
+
+
 # end of comphatibility =======================================================
 
 # create a new 'TTK CinemaReader'
