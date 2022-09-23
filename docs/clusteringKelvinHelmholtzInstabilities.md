@@ -1,6 +1,6 @@
-# Clustering Kelvin Helmoltz Instabilities
+# Clustering Kelvin Helmholtz Instabilities
 
-![Clustering Kelvin Helmoltz Instabilities example 
+![Clustering Kelvin Helmholtz Instabilities example 
 Image](https://topology-tool-kit.github.io/img/gallery/
 clusteringKelvinHelmholtzInstabilities.jpg)
 
@@ -12,8 +12,8 @@ along with the possibility to interactively explore the outcome of the analysis,
 with linked views (between the selection in the planar view -- top right -- and 
 the flow visualization -- top left).
 
-This example considers an ensemble of 32 periodic, 2D Kelvin Helmoltz 
-Instabilities in computational fluid dynamics obtained with various simulation 
+This example considers an ensemble of 32 periodic, 2D Kelvin Helmholtz 
+Instabilities in computational fluid dynamics, obtained with various simulation 
 parameters (different solvers, different numerical schemes, different 
 interpolation orders, etc.). 
 The scalar field of interest is the "Enstrophy". It is an established measure 
@@ -28,7 +28,9 @@ See this [publication](https://arxiv.org/abs/2207.14080) for
 further details.
 
 The goal of this example is to classify the 32 members of the ensemble into two 
-classes, whether they correspond to time steps at the beginning or the end of 
+classes, whether they 
+describe
+the beginning or the end of 
 the turbulence. This task is particularly challenging for traditional 
 clustering pipelines since turbulent flows are highly chaotic and two flows 
 belonging to the same ground truth class can be drastically different visually 
@@ -48,56 +50,58 @@ For visualization purposes, we will compute a 2D layout of the ensemble (right
 most columns, above screenshot) to inspect the resulting classification.
 
 First, the database of turbulent flows is loaded from disk with the 
-[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader
-.html) module (line 6 of the [Python](#python-code) script below). Then an SQL 
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
+module (line 6 of the [Python](#python-code) script below). Then an SQL 
 query is performed with 
-[CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery. 
-html) to select a relevant subset of this database (line 9). Finally the module 
-[CinemaProductReader](https://topology-tool-kit.github.io/doc/html/ 
-classttkCinemaProductReader.html) is used to read the actual regular grids 
-corresponding to the result of the previous SQL query. From this point one, the 
+[CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html)
+to select a relevant subset of this database (line 9). Finally the module 
+[CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html)
+is used to read the actual regular grids 
+corresponding to the result of the previous SQL query. From this point on, the 
 entire set of 32 turbulent flows will be organized as a 
-[vtkMultiBlockDatSet](https://vtk.org/doc/nightly/html/classvtkMultiBlockDataSet 
-. html) and each of these 32 members will be processed by the rest of the 
+[vtkMultiBlockDatSet](https://vtk.org/doc/nightly/html/classvtkMultiBlockDataSet.html)
+and each of these 32 members will be processed by the rest of the 
 analysis pipeline.
 
 Then for each of the 32 members of the ensemble, the first step consists in 
 marking periodicity boundary conditions with the 
-[TriangulationManager](https://topology-tool-kit.github.io/doc/html/
-classttkTriangulationManager.html) (line 21). Next, the "Enstrophy" field of 
+[TriangulationManager](https://topology-tool-kit.github.io/doc/html/classttkTriangulationManager.html) 
+(line 21). Next, the "Enstrophy" field of 
 each member is normalized (between 0 and 1) with the 
-[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/
-classttkScalarFieldNormalizer.html) to ease their comparison later. Finally 
-(line 28) the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/
-classttkPersistenceDiagram.html) is computed (for the saddle-maximum pairs) to 
-represent each of the 32 ensemble members by a diagram which encodes the 
-number and the strengths of the vortices via the persistence of the maxima of 
+[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
+to ease their comparison later. Finally 
+(line 28) the 
+[PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
+is computed (for the saddle-maximum pairs) to 
+represent each of the 32 ensemble members by a diagram which encodes the number 
+and the strengths of the vortices via the persistence of the maxima of 
 "Enstrophy".
 
 Next, the clustering of the persistence diagrams in the Wasserstein metric 
 space is performed with the module 
-[PersistenceDiagramClustering](https://topology-tool-kit.github.io/doc/html/
-classttkPersistenceDiagramClustering.html) (line 32).
+[PersistenceDiagramClustering](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagramClustering.html)
+(line 32).
 
 For visualization purposes, we will then compute a 2D layout of the ensemble, 
 where each ensemble member will be represented by a point and where the 2D 
 distance between 2 points will encode the Wasserstein distance between their 
-diagrams. For this, we will first compute a matrix of Wasserstein distances 
+diagrams. This will provide an intuitive planar overview of the ensemble.
+For this, we will first compute a matrix of Wasserstein distances 
 with the module 
-[PersistenceDiagramDistanceMatrix](https://topology-tool-kit.github.io/doc/html/
-classttkPersistenceDiagramDistanceMatrix.html) (line 39). The resulting 
+[PersistenceDiagramDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagramDistanceMatrix.html)
+(line 39). The resulting 
 distance matrix is visualized at the bottom of the middle column in the above 
 screenshot. There, it can be seen that the Wasserstein distance already 
 identifies two major clusters (large blue sub-matrices of low Wasserstein 
 distances).
 Next (line 67), 
 the module 
-[DimensionReduction](https://topology-tool-kit.github.io/doc/html/
-classttkDimensionReduction.html) is used to compute a 2D layout via 
+[DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
+is used to compute a 2D layout via 
 multidimensional scaling. Finally, the resulting table is turned into a 2D 
 point cloud which is ready to be visualized with
-[TableToPoints](https://kitware.github.io/paraview-docs/latest/python/paraview.
-simple.TableToPoints.html) (line 75). Then, the output is stored to a simple 
+[TableToPoints](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.TableToPoints.html)
+(line 75). Then, the output is stored to a simple 
 CSV file (line 81).
 
 In the above screenshot, the resulting point cloud is shown in the 2 views at  
@@ -110,23 +114,25 @@ and that, therefore, this topological clustering pipeline succeeded.
 For reference, a traditional pipeline based on the L2-distance between the 
 "Entrophy" fields is also provided in this example.
 For that, the module 
-[LDistanceMatrix](https://topology-tool-kit.github.io/doc/html/
-classttkLDistanceMatrix.html) is used (line 45) to compute a matrix of the L2 
+[LDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkLDistanceMatrix.html)
+is used (line 45) to compute a matrix of the L2 
 distances between each scalar field of the ensemble. 
 The resulting distance matrix is visualized at the top of the middle column 
 in the above screenshot. There, it can be seen that the L2 distance between the 
 scalar fields fails at identifying any clear clusters (there are no large blue 
 sub-matrices).
 Next (line 49), the module 
-[DimensionReduction](https://topology-tool-kit.github.io/doc/html/
-classttkDimensionReduction.html) is used to compute a 2D layout via 
+[DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
+is used to compute a 2D layout via 
 multidimensional scaling. The resulting table is turned into a 2D point cloud 
 with 
-[TableToPoints](https://kitware.github.io/paraview-docs/latest/python/paraview.
-simple.TableToPoints.html) (line 55). Finally, the k-means algorithm is run on 
+[TableToPoints](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.TableToPoints.html)
+(line 55). Finally, the k-means algorithm is run on 
 this 2D point cloud with the module 
-[KMeans](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.
-KMeans.html). The resulting clustering can be visualized with the two views at 
+[KMeans](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.KMeans.html).
+Then, the output is stored to a simple 
+CSV file (line 83).
+The resulting clustering can be visualized with the two views at 
 the top right corner of the above screenshot. The ground-truth classification 
 is provided by the color coding of the points in the second view (right) while 
 the classification computed with this traditional pipeline is shown in the 
@@ -136,7 +142,7 @@ algorithm. In particular, since all the metadata associated with each ensemble
 member travels down the analysis pipeline, one can select points in these 
 planar views to inspect the corresponding datasets and persistence diagrams 
 (left two columns of the screenshot). In particular, two members (red and 
-yello spheres) incorrectly marked as belonging to different classes are 
+yellow spheres) incorrectly marked as belonging to different classes are 
 visualized on the left. There, one can see that although the two flows have the 
 same "profile" of vortices (number and strengths), these are located in 
 drastically different spots of the field, due to the chaotic nature of 
@@ -159,7 +165,7 @@ paraview --state=states/clusteringKelvinHelmholtzInstabilities.pvsm
 ## Inputs
 - [khi.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/khi.cdb): a 
 cinema database containing 32 regular grids describing periodic, 2D Kelvin 
-Helmoltz Instabilities (computational fluid dynamics). 
+Helmholtz Instabilities (computational fluid dynamics). 
 The scalar field of interest is the "Enstrophy" (an established measure of 
 vorticity).
 The simulation parameters as well as the ground truth classification (two 
