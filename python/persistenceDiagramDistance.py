@@ -29,7 +29,7 @@ threshold7.UpperThreshold = 136.490955383565
 
 # create a new 'TTK PersistenceDiagramClustering'
 tTKPersistenceDiagramClustering1 = TTKPersistenceDiagramClustering(Input=threshold7)
-Show(tTKPersistenceDiagramClustering1)
+UpdatePipeline()
 
 # Get the data
 matchings_data = FetchData(OutputPort(tTKPersistenceDiagramClustering1, 2))[0]
@@ -39,7 +39,6 @@ field_data = matchings_data.GetBlock(0).GetFieldData()
 
 # Display the Wasserstein distance
 wasserstein_distance = field_data.GetArray("WassersteinDistance").GetValue(0)
-print("Wasserstein distance: ", wasserstein_distance)
 
 # Save the Wasserstein distance in a csv file
 np.savetxt("WassersteinDistance.csv", [wasserstein_distance])
