@@ -11,8 +11,6 @@ def ThresholdBetween(threshold, lower, upper):
         threshold.ThresholdMethod = "Between"
         threshold.LowerThreshold = lower
         threshold.UpperThreshold = upper
-
-
 # end of comphatibility ========================================================
 
 # Load the scalar fields using 'XML Image Data Reader'

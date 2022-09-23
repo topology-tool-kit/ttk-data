@@ -1,7 +1,7 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility
+# paraview 5.9 VS 5.10 compatibility ===========================================
 def ThresholdAbove(threshold, value):
     try:
         # paraview 5.9
@@ -10,7 +10,7 @@ def ThresholdAbove(threshold, value):
         # paraview 5.10
         threshold.ThresholdMethod = "Above Upper Threshold"
         threshold.UpperThreshold = value
-
+# end of comphatibility =======================================================
 
 # create a new 'TTK CinemaReader'
 ttkCinemaReader1 = TTKCinemaReader(DatabasePath="ViscousFingers.cdb")

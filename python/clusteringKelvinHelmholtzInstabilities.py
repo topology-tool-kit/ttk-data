@@ -2,20 +2,6 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'TTK CinemaReader'
 tTKCinemaReader1 = TTKCinemaReader(DatabasePath='khi.cdb')
 
