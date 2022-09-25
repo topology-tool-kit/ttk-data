@@ -91,6 +91,7 @@ tTKDimensionReduction1.InputColumns = [
     "Field 9",
 ]
 tTKDimensionReduction1.Method = "t-distributed Stochastic Neighbor Embedding"
+tTKDimensionReduction1.UseAllCores = False
 
 # create a new 'Table To Points'
 tableToPoints1 = TableToPoints(Input=tTKDimensionReduction1)

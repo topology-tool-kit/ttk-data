@@ -59,6 +59,7 @@ tTKJoinTree1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKJoinTree1.ScalarField = ["POINTS", "log(s)"]
 tTKJoinTree1.TreeType = "Join Tree"
 tTKJoinTree1.ArcSampling = 30
+tTKJoinTree1.UseAllCores = False
 
 # covert the critical points to spheres using 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints4 = TTKIcospheresFromPoints(Input=tTKJoinTree1)

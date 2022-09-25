@@ -133,6 +133,7 @@ tTKTopologicalSimplification1.ScalarField = ["POINTS", "ScaledHarmonic"]
 tTKReebgraphFTR1 = TTKReebgraphFTR(Input=tTKTopologicalSimplification1)
 tTKReebgraphFTR1.ScalarField = ["POINTS", "ScaledHarmonic"]
 tTKReebgraphFTR1.ArcSampling = 20
+tTKReebgraphFTR1.UseAllCores = False
 
 # create a new 'TTK GeometrySmoother' taking the reeb graph edges for input
 tTKGeometrySmoother1 = TTKGeometrySmoother(Input=OutputPort(tTKReebgraphFTR1, 1))

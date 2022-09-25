@@ -36,6 +36,7 @@ contour3.Isosurfaces = [-0.575]
 tTKContinuousScatterPlot1 = TTKContinuousScatterPlot(Input=example2vti)
 tTKContinuousScatterPlot1.ScalarField1 = ["POINTS", "log(Rho)"]
 tTKContinuousScatterPlot1.ScalarField2 = ["POINTS", "log(s)"]
+tTKContinuousScatterPlot1.UseAllCores = False
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKContinuousScatterPlot1)
