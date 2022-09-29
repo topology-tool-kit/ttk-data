@@ -38286,39 +38286,11 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="18878.Debug_UseAllCores.bool"/>
       </Property>
-      <Property name="ForceInputOffsetScalarField" id="18878.ForceInputOffsetScalarField" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18878.ForceInputOffsetScalarField.bool"/>
-      </Property>
       <Property name="Input" id="18878.Input" number_of_elements="1">
-        <Proxy value="15366" output_port="0"/>
+        <Proxy value="15563" output_port="0"/>
         <Domain name="groups" id="18878.Input.groups"/>
         <Domain name="input_scalars" id="18878.Input.input_scalars"/>
         <Domain name="input_type" id="18878.Input.input_type"/>
-      </Property>
-      <Property name="InputOffsetScalarFieldNameNew" id="18878.InputOffsetScalarFieldNameNew" number_of_elements="5">
-        <Element index="0" value="1"/>
-        <Element index="1" value=""/>
-        <Element index="2" value=""/>
-        <Element index="3" value="0"/>
-        <Element index="4" value=""/>
-        <Domain name="array_list" id="18878.InputOffsetScalarFieldNameNew.array_list">
-          <String text="Elevation"/>
-        </Domain>
-      </Property>
-      <Property name="SaddleConnectors" id="18878.SaddleConnectors" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18878.SaddleConnectors.bool"/>
-      </Property>
-      <Property name="ScalarFieldNew" id="18878.ScalarFieldNew" number_of_elements="5">
-        <Element index="0" value="0"/>
-        <Element index="1" value=""/>
-        <Element index="2" value=""/>
-        <Element index="3" value="0"/>
-        <Element index="4" value="Elevation"/>
-        <Domain name="array_list" id="18878.ScalarFieldNew.array_list">
-          <String text="Elevation"/>
-        </Domain>
       </Property>
     </Proxy>
     <Proxy group="filters" type="ttkPersistenceDiagram" id="15563" servers="1">

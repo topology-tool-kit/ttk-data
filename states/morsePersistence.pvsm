@@ -23868,45 +23868,11 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="18772.Debug_UseAllCores.bool"/>
       </Property>
-      <Property name="ForceInputOffsetScalarField" id="18772.ForceInputOffsetScalarField" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18772.ForceInputOffsetScalarField.bool"/>
-      </Property>
       <Property name="Input" id="18772.Input" number_of_elements="1">
-        <Proxy value="16499" output_port="0"/>
+        <Proxy value="16702" output_port="0"/>
         <Domain name="groups" id="18772.Input.groups"/>
         <Domain name="input_scalars" id="18772.Input.input_scalars"/>
         <Domain name="input_type" id="18772.Input.input_type"/>
-      </Property>
-      <Property name="InputOffsetScalarFieldNameNew" id="18772.InputOffsetScalarFieldNameNew" number_of_elements="5">
-        <Element index="0" value="1"/>
-        <Element index="1" value=""/>
-        <Element index="2" value=""/>
-        <Element index="3" value="0"/>
-        <Element index="4" value=""/>
-        <Domain name="array_list" id="18772.InputOffsetScalarFieldNameNew.array_list">
-          <String text="Blend"/>
-          <String text="DistanceField"/>
-          <String text="RandomPointScalars"/>
-          <String text="Sine"/>
-        </Domain>
-      </Property>
-      <Property name="SaddleConnectors" id="18772.SaddleConnectors" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="18772.SaddleConnectors.bool"/>
-      </Property>
-      <Property name="ScalarFieldNew" id="18772.ScalarFieldNew" number_of_elements="5">
-        <Element index="0" value="0"/>
-        <Element index="1" value=""/>
-        <Element index="2" value=""/>
-        <Element index="3" value="0"/>
-        <Element index="4" value="Blend"/>
-        <Domain name="array_list" id="18772.ScalarFieldNew.array_list">
-          <String text="Blend"/>
-          <String text="DistanceField"/>
-          <String text="RandomPointScalars"/>
-          <String text="Sine"/>
-        </Domain>
       </Property>
     </Proxy>
     <Proxy group="filters" type="ttkPersistenceDiagram" id="16702" servers="1">
