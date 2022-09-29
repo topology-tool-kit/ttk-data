@@ -63,8 +63,7 @@ persistenceThreshold.Scalars = ["CELLS", "Persistence"]
 ThresholdBetween(persistenceThreshold, 0.02, 999999999)
 
 # create a new 'TTK PersistenceCurve'
-tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tetrahedralize1)
-tTKPersistenceCurve1.ScalarField = ["POINTS", "myVorticity"]
+tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
