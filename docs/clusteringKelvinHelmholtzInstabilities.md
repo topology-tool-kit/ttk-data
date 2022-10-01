@@ -1,8 +1,8 @@
 # Clustering Kelvin Helmholtz Instabilities
 
-![Clustering Kelvin Helmholtz Instabilities example 
-Image](https://topology-tool-kit.github.io/img/gallery/
-clusteringKelvinHelmholtzInstabilities.jpg)
+<iframe width="100%" height="420"
+src="https://www.youtube.com/embed/EROXnZ5MuU0" frameborder="0"
+allowfullscreen></iframe>
 
 ## Pipeline description
 This example illustrates the capabilities of 
