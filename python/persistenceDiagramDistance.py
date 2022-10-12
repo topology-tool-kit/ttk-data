@@ -23,8 +23,6 @@ calculator1.Function = "-velocityMag"
 tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram3.ScalarField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram3.InputOffsetField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram3.Dimensions = "Selected Dimensions (no infinite pairs)"
-tTKPersistenceDiagram3.Saddlesaddlediagramdimension1slowest = False
 tTKPersistenceDiagram3.IgnoreBoundary = False
 
 # create a new 'Threshold'
