@@ -39698,7 +39698,7 @@
     </Proxy>
     <Proxy group="filters" type="ttkPersistenceDiagram" id="9489" servers="1">
       <Property name="BackEnd" id="9489.BackEnd" number_of_elements="1">
-        <Element index="0" value="0"/>
+        <Element index="0" value="2"/>
         <Domain name="enum" id="9489.BackEnd.enum">
           <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
@@ -39706,6 +39706,10 @@
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
           <Entry value="4" text="Persistent Simplex (Zomorodian 2010)"/>
         </Domain>
+      </Property>
+      <Property name="Ignore Boundary" id="9489.Ignore Boundary" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="9489.Ignore Boundary.bool"/>
       </Property>
       <Property name="Debug_DebugLevel" id="9489.Debug_DebugLevel" number_of_elements="1">
         <Element index="0" value="3"/>

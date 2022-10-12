@@ -50,6 +50,7 @@ tTKDimensionReduction2 = TTKDimensionReduction(Input=tTKLDistanceMatrix1)
 tTKDimensionReduction2.Regexp = "Dataset.*"
 tTKDimensionReduction2.SelectFieldswithaRegexp = 1
 tTKDimensionReduction2.InputIsaDistanceMatrix = 1
+tTKDimensionReduction2.UseAllCores = False
 
 # create a new 'Table To Points'
 tableToPoints2 = TableToPoints(Input=tTKDimensionReduction2)
@@ -70,6 +71,7 @@ tTKDimensionReduction1 = TTKDimensionReduction(
 tTKDimensionReduction1.Regexp = "Diagram.*"
 tTKDimensionReduction1.SelectFieldswithaRegexp = 1
 tTKDimensionReduction1.InputIsaDistanceMatrix = 1
+tTKDimensionReduction1.UseAllCores = False
 
 # create a new 'Table To Points'
 tableToPoints1 = TableToPoints(Input=tTKDimensionReduction1)

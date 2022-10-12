@@ -37,7 +37,6 @@ tTKPersistenceCurve1.ScalarField = ["POINTS", "log(s)"]
 # compute the 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=builtInExamplevti)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "log(s)"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
@@ -60,6 +59,7 @@ tTKJoinTree1 = TTKMergeandContourTreeFTM(Input=tTKTopologicalSimplification1)
 tTKJoinTree1.ScalarField = ["POINTS", "log(s)"]
 tTKJoinTree1.TreeType = "Join Tree"
 tTKJoinTree1.ArcSampling = 30
+tTKJoinTree1.UseAllCores = False
 
 # covert the critical points to spheres using 'TTK IcospheresFromPoints'
 tTKIcospheresFromPoints4 = TTKIcospheresFromPoints(Input=tTKJoinTree1)

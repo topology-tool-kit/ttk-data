@@ -19,10 +19,16 @@ def ThresholdBetween(threshold, lower, upper):
 # create a new 'XML Image Data Reader'
 ctBonesvti = XMLImageDataReader(FileName=["ctBones.vti"])
 
+# create a new 'Calculator'
+calculator1 = Calculator(Input=ctBonesvti)
+calculator1.ResultArrayName = "Scalars_"
+calculator1.Function = "-Scalars_"
+
 # create a new 'TTK PersistenceDiagram'
-tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=ctBonesvti)
+tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Scalars_"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.Dimensions = "Selected Dimensions (no infinite pairs)"
+tTKPersistenceDiagram1.Saddlesaddlediagramdimension1slowest = False
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
@@ -36,7 +42,7 @@ ThresholdBetween(persistenceThreshold, 180.0, 999999999)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
-    Domain=ctBonesvti, Constraints=persistenceThreshold
+    Domain=calculator1, Constraints=persistenceThreshold
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "Scalars_"]
 
@@ -45,11 +51,11 @@ tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(
     Input=tTKTopologicalSimplification1
 )
 tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", "Scalars_"]
-tTKMergeandContourTreeFTM1.TreeType = "Split Tree"
+tTKMergeandContourTreeFTM1.TreeType = "Join Tree"
 
 # create a new 'Threshold'
 threshold3 = Threshold(Input=OutputPort(tTKMergeandContourTreeFTM1, 2))
 threshold3.Scalars = ["POINTS", "RegionType"]
-ThresholdBetween(threshold3, 1.0, 1.0)
+ThresholdBetween(threshold3, 0.0, 0.0)
 
 SaveData("CTBonesOutputSegmentation.vtu", threshold3)

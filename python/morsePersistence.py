@@ -65,7 +65,7 @@ tTKPersistenceCurve1.ScalarField = ["POINTS", "Blend"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=warpByScalar1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Blend"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.IgnoreBoundary = False
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
