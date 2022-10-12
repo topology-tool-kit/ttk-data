@@ -14,8 +14,13 @@ tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 extractBlock1 = ExtractBlock(Input=tTKCinemaProductReader1)
 extractBlock1.Selectors = ["/Root/Block0", "/Root/Block10"]
 
+# create a new 'Calculator'
+calculator1 = Calculator(Input=extractBlock1)
+calculator1.ResultArrayName = "velocityMag"
+calculator1.Function = "-velocityMag"
+
 # create a new 'TTK PersistenceDiagram'
-tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=extractBlock1)
+tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram3.ScalarField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram3.InputOffsetField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram3.Dimensions = "Selected Dimensions (no infinite pairs)"
