@@ -30,13 +30,12 @@ tTKIcospheresFromPoints3.Radius = 3.0
 
 #### Topological analysis of 'log(s)'
 
-# compute the 'TTK PersistenceCurve'
-tTKPersistenceCurve1 = TTKPersistenceCurve(Input=builtInExamplevti)
-tTKPersistenceCurve1.ScalarField = ["POINTS", "log(s)"]
-
 # compute the 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=builtInExamplevti)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "log(s)"]
+
+# compute the 'TTK PersistenceCurve'
+tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
