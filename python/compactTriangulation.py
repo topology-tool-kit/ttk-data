@@ -18,7 +18,6 @@ tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(
     Input=tTKTriangulationManager1
 )
 tTKScalarFieldCriticalPoints1.ScalarField = ["POINTS", "Elevation"]
-tTKScalarFieldCriticalPoints1.InputOffsetField = ["POINTS", "Elevation"]
 
 # save the output
 SaveData("CompactTriangulation.vtu", tTKTriangulationManager1)
