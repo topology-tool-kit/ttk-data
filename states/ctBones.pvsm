@@ -48897,7 +48897,7 @@
         </Domain>
       </Property>
       <Property name="UpperThreshold" id="16000.UpperThreshold" number_of_elements="1">
-        <Element index="0" value="255"/>
+        <Element index="0" value="256"/>
         <Domain name="range" id="16000.UpperThreshold.range"/>
       </Property>
       <Property name="UseContinuousCellRange" id="16000.UseContinuousCellRange" number_of_elements="1">

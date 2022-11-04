@@ -23,6 +23,8 @@
     "builtInExample2_logSIsosurfaceRangeProjection": "8d91f08c314c490e244a803484fb721fb80e8aae",
     "clusteringKelvinHelmholtzInstabilities_L2dimensionReductionAndClustering": "e0fb76e40dc37ae496fa27dce8f5901e3b5fda88",
     "clusteringKelvinHelmholtzInstabilities_W2clusteringAndW2dimensionReduction": "2619a518559cb2b4c8b08f60c787fa008f3f282e",
+    "compactTriangulation_CompactTriangulation": "a15f6748a3da663116ca975f8995f12d653248e7",
+    "compactTriangulation_CriticalPoints": "0c1c629063e12e0303c4f5890d52292a46214150",
     "contourTreeAlignment_ContourTreeAlignment": "3e5ff6160ff2545e03b1ddbac7dfe1aa04705d4b",
     "contourTreeAlignment_MatchedRegions": "84dfdb403069dedbfba5910dcf2cb6e85970897b",
     "contourTreeAlignment_MatchedRegions_6_0": "cad26b0d8caf7458e40bba7e62657772ae9c8f4a",
