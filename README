@@ -156,13 +156,6 @@ Data specs
 }
 
 {
-  "name": "jet.vti",
-  "description": "Vorticity magnitude scalar field of a computational fluid dynamics simulation that models the injection of a jet into a medium at rest.",
-  "acknowledgement": "Christoph Garth (Technische Universität Kaiserslautern)",
-  "url": "https://ieee-dataport.org/open-access/simulation-jet-flow"
-}
-
-{
   "name": "karhunenLoveDigits64Dimensions.csv",
   "description": "High-dimensional point cloud (2000 points, 64 dimensions)
   given by the Karhunen-Love coefficients of scanned images of hand-written 
