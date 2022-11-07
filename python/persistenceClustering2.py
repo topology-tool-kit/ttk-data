@@ -1,19 +1,5 @@
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'CSV Reader'
 clusteringcsv = CSVReader(FileName=["clustering2.csv"])
 
@@ -46,12 +32,16 @@ tTKPersistenceDiagram1.IgnoreBoundary = False
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "PairIdentifier"]
-ThresholdBetween(threshold1, -0.1, 999999999)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = -0.1
+threshold1.UpperThreshold = 999999999
 
 # create a new 'Threshold'
 persistenceThreshold0 = Threshold(Input=threshold1)
 persistenceThreshold0.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(persistenceThreshold0, 5.0, 999999999)
+persistenceThreshold0.ThresholdMethod = "Between"
+persistenceThreshold0.LowerThreshold = 5.0
+persistenceThreshold0.UpperThreshold = 999999999
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
