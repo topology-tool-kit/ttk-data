@@ -23,6 +23,12 @@ paraview --state=states/timeTracking.pvsm
 --8<-- "python/timeTracking.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/timeTracking.py
+```
+
+
 ## Inputs
 
 - [timeTracking.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/timeTracking.vti): time-dependent vorticity of a 2D vortex street, with time steps represented by data arrays '000', '002', ..., '118'

@@ -46,6 +46,12 @@ and saved back to VTI. This demonstrates the use of the
 --8<-- "python/persistenceDrivenCompression.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceDrivenCompression.py
+```
+
+
 ## Inputs
 
 - [naturalImage_original.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/naturalImage_original.vti):

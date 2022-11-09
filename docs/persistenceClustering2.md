@@ -37,6 +37,12 @@ paraview --state=states/persistenceClustering2.pvsm
 --8<-- "python/persistenceClustering2.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering2.py
+```
+
+
 ## Inputs
 - [clustering2.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/clustering2.csv): a table of 2 dimension points.
 

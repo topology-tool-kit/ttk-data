@@ -52,6 +52,12 @@ paraview --state=states/morseSmaleQuadrangulation.pvsm
 --8<-- "python/morseSmaleQuadrangulation.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/morseSmaleQuadrangulation.py
+```
+
+
 ## Inputs
 - [rockerArm.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/rockerArm.vtu): a two-dimensional triangulated mechanical model.
 

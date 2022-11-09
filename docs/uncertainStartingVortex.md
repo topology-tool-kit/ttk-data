@@ -32,6 +32,12 @@ paraview --state=states/uncertainStartingVortex.pvsm
 --8<-- "python/uncertainStartingVortex.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/uncertainStartingVortex.py
+```
+
+
 ## Inputs
 - [uncertainStartingVortex.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/uncertainStartingVortex.vti): two two-dimensional scalar fields.
 

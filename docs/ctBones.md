@@ -30,6 +30,12 @@ paraview --state=states/ctBones.pvsm
 --8<-- "python/ctBones.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/ctBones.py
+```
+
+
 ## Inputs
 - [ctBones.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/ctBones.vti): a three-dimensional regular grid encoding material density in a medical image (CT scan).
 

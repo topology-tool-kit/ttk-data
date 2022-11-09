@@ -16,7 +16,7 @@ The simplified persistence diagram is then used as a constraint for the [Topolog
 This simplified data is then used as the input of the computation of [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) (bottom right view, above screenshot). This complex is composed of elements of 3 dimensions: dimension 0, which corresponds to the critical points of the Morse-Smale Complex, dimension 1, which corresponds to its edges and dimension 2, which corresponds to its surfaces. The generators of the clusters are edges of the Morse-Smale Complex. Not all edges of the Complex are useful: using thresholds, only the separatrices connected to maxima are kept (`Separatrix = 1`). Then the edges with the field `SeparatrixFunctionMinimum` below a certain value (here 2) are also discarded. This corresponds to the two green and yellow generators (bottom right view, above screenshot).
 
 ## ParaView
-To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
+To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data)  directory and enter the following command:
 ``` bash
 paraview --state=states/1manifoldLearningCircles.pvsm
 ```
@@ -26,6 +26,12 @@ paraview --state=states/1manifoldLearningCircles.pvsm
 ``` python  linenums="1"
 --8<-- "python/1manifoldLearningCircles.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/1manifoldLearningCircles.py
+```
+
 
 ## Inputs
 - - [clustering0.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/clustering0.csv): a table containing 2D point coordinates arranged in concentric circles.

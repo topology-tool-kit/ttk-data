@@ -25,6 +25,12 @@ paraview --state=states/persistentGenerators_casting.pvsm
 --8<-- "python/persistentGenerators_casting.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_casting.py
+```
+
+
 ## Inputs
 - [casting.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/casting.vtu): A 2-dimensionnal triangulation of the *casting* dataset, representing a mechanical piece.
 

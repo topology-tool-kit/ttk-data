@@ -29,6 +29,12 @@ paraview --state=states/cinemaIO.pvsm
 --8<-- "python/cinemaIO.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/cinemaIO.py
+```
+
+
 ## Inputs
 - [ViscousFingers.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/ViscousFingers.cdb): a cinema database of VTK Image files from a simulation.
 

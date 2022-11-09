@@ -24,17 +24,35 @@ paraview --state=states/manifoldChecks.pvsm
 --8<-- "python/manifoldCheck0.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/manifoldCheck0.py
+```
+
+
 ### Non-manifold Edges
 
 ``` python  linenums="1"
 --8<-- "python/manifoldCheck1.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/manifoldCheck1.py
+```
+
+
 ### Non-manifold Faces
 
 ``` python  linenums="1"
 --8<-- "python/manifoldCheck2.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/manifoldCheck2.py
+```
+
 
 ## Inputs
 

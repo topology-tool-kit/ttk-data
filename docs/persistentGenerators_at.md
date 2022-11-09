@@ -25,6 +25,12 @@ paraview --state=states/persistentGenerators_at.pvsm
 --8<-- "python/persistentGenerators_at.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_at.py
+```
+
+
 ## Inputs
 - [at.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/at.vti): A molecular dataset: a three-dimensional regular grid with 1 scalar field, the electronic density in the Adenine Thymine complex.
 

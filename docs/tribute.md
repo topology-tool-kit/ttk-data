@@ -29,6 +29,12 @@ paraview --state=states/tribute.pvsm
 --8<-- "python/tribute.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/tribute.py
+```
+
+
 ## Inputs
 
 - [tribute.png](https://github.com/topology-tool-kit/ttk-data/raw/dev/tribute.png): PNG image of a microscopy of cell sheet morphogenesis (from Edelsbrunner & Harer's book, page 217)

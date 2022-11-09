@@ -30,6 +30,13 @@ paraview --state=states/karhunenLoveDigits64Dimensions.pvsm
 ``` python  linenums="1"
 --8<-- "python/karhunenLoveDigits64Dimensions.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/karhunenLoveDigits64Dimensions.py
+```
+
+
 ## Inputs
 - [karhunenLoveDigits64Dimensions.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/karhunenLoveDigits64Dimensions.csv): an input high dimensional point cloud (2000 points in 64 dimensions).
 

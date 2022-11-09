@@ -29,6 +29,12 @@ paraview --state=states/morsePersistence.pvsm
 --8<-- "python/morsePersistence.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/morsePersistence.py
+```
+
+
 ## Inputs
 - None
 

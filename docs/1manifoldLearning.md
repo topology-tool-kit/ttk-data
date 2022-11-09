@@ -27,6 +27,11 @@ paraview --state=states/1manifoldLearning.pvsm
 --8<-- "python/1manifoldLearning.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/1manifoldLearning.py
+```
+
 ## Inputs
 - [pointCloud.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/pointCloud.csv): a table containing point coordinates.
 

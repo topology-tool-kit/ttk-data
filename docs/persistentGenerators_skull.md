@@ -26,6 +26,12 @@ paraview --state=states/persistentGenerators_skull.pvsm
 --8<-- "python/persistentGenerators_skull.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_skull.py
+```
+
+
 ## Inputs
 - [skull.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/skull.vtu): A 3-dimensionnal triangulation of the *skull* dataset.
 

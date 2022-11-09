@@ -36,6 +36,12 @@ paraview --state=states/contourTreeAlignment.pvsm
 --8<-- "python/contourTreeAlignment.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/contourTreeAlignment.py
+```
+
+
 ## Inputs
 - [heatedCylinder/heatedCylinder_2D_raw.cdb](https://github.com/topology-tool-kit/ttk-data/raw/dev/heatedCylinder/heatedCylinder_2D_raw.cdb): a cinema data base of 23x10 2D scalar fields.
 

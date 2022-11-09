@@ -24,6 +24,12 @@ paraview --state=states/persistenceDiagramDistance.pvsm
 --8<-- "python/persistenceDiagramDistance.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceDiagramDistance.py
+```
+
+
 ## Inputs
 - [Isabel.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/Isabel.cdb): a cinema database containing 12 scalarfields defined on a regular grid, corresponding to 12 timesteps of a hurricane simulation.
 

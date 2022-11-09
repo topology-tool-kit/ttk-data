@@ -28,6 +28,18 @@ paraview --state=states/BuiltInExample1.pvsm
 --8<-- "python/BuiltInExample1.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/BuiltInExample1.py
+```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/BuiltInExample1.py
+```
+
+
+
 ## Inputs
 - [BuiltInExample1.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/BuiltInExample1.vti): a two-dimensional regular grid encoding flow magnitude of a Kármán vortex street.
 
