@@ -74,6 +74,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistence diagram distance](persistenceDiagramDistance/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg) |
 | [Persistence diagram clustering](persistenceDiagramClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg) |
 | [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
+| [Merge tree principal geodesic analysis](mergeTreePGA/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
 | [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
 

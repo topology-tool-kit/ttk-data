@@ -1,6 +1,7 @@
 # Merge Tree Principal Geodesic Analysis 
 
-![Merge Tree Principal Geodesic Analysis example Image]()
+![Merge Tree Principal Geodesic Analysis example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg)
+
 
 ## Pipeline description
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
