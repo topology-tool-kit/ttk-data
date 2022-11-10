@@ -43,7 +43,7 @@ To reproduce the above screenshot, go to your
 and enter the following command:
 
 ``` bash
-$ paraview --state=states/tectonicPuzzle.pvsm
+paraview --state=states/tectonicPuzzle.pvsm
 ```
 
 ## Python code
@@ -51,6 +51,12 @@ $ paraview --state=states/tectonicPuzzle.pvsm
 ``` python  linenums="1"
 --8<-- "python/tectonicPuzzle.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/tectonicPuzzle.py
+```
+
 
 ## Inputs
 

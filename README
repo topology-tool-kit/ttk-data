@@ -156,19 +156,20 @@ Data specs
 }
 
 {
-  "name": "jet.vti",
-  "description": "Vorticity magnitude scalar field of a computational fluid dynamics simulation that models the injection of a jet into a medium at rest.",
-  "acknowledgement": "Christoph Garth (Technische Universität Kaiserslautern)",
-  "url": "https://ieee-dataport.org/open-access/simulation-jet-flow"
-}
-
-{
   "name": "karhunenLoveDigits64Dimensions.csv",
   "description": "High-dimensional point cloud (2000 points, 64 dimensions)
   given by the Karhunen-Love coefficients of scanned images of hand-written 
   digits (10 classes of 200 samples)."
   "acknowledgement": "Robert P.W. Duin",
   "url": "http://archive.ics.uci.edu/ml/datasets/multiple+features"
+}
+
+{
+  "name": "khi.cdb/",
+  "description": "Ensemble of periodic, 2D hydrodynamic turbulent flows (Kelvin
+  Helmoltz Instabilities, 32 members, 2 ground-truth classes)."
+  "acknowledgement": "Florent Nauleau",
+  "url": "https://arxiv.org/abs/2207.14080",
 }
 
 {

@@ -22,7 +22,7 @@ This simplified data is then used as the input of the computation of [ScalarFiel
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/dragon.pvsm
+paraview --state=states/dragon.pvsm
 ```
 
 ## Python code
@@ -30,6 +30,12 @@ $ paraview --state=states/dragon.pvsm
 ``` python  linenums="1"
 --8<-- "python/dragon.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/dragon.py
+```
+
 
 ## Inputs
 - [dragon.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/dragon.vtu): a two-dimensional triangulation.

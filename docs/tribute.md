@@ -1,6 +1,8 @@
 # Tribute to Edelsbrunner and Harer's book
 
-![Tribute screenshot](https://topology-tool-kit.github.io/img/gallery/tribute.jpg)
+<iframe width="100%" height="420"
+src="https://www.youtube.com/embed/pOmI63FKUBw" frameborder="0"
+allowfullscreen></iframe>
 
 ## Pipeline description
 
@@ -18,7 +20,7 @@ In this example, the [MorseSmaleComplex](https://topology-tool-kit.github.io/doc
 
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/tribute.pvsm
+paraview --state=states/tribute.pvsm
 ```
 
 ## Python code
@@ -26,6 +28,12 @@ $ paraview --state=states/tribute.pvsm
 ``` python  linenums="1"
 --8<-- "python/tribute.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/tribute.py
+```
+
 
 ## Inputs
 

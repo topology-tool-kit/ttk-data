@@ -117,6 +117,9 @@ def main():
 
     print(f"Failing cases: {fails}")
 
+    if len(fails) > 0:
+        sys.exit(1)
+
 
 if __name__ == "__main__":
     main()

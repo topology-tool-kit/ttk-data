@@ -16,7 +16,7 @@ Finally the `ttkMeshGraph` filter generates a `vtkUnstructuredGrid` of the NTG w
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/nestedTrackingFromOverlap.py
+paraview --state=states/nestedTrackingFromOverlap.py
 ```
 
 ## Python code
@@ -24,6 +24,12 @@ $ paraview --state=states/nestedTrackingFromOverlap.py
 ``` python  linenums="1"
 --8<-- "python/nestedTrackingFromOverlap.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/nestedTrackingFromOverlap.py
+```
+
 
 ## Inputs
 - [ViscousFingers.cdb](https://github.com/topology-tool-kit/ttk-data/ViscousFingers.cdb): a cinema database containing 3D volume data of salt concentrations.

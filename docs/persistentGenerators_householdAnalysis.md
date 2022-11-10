@@ -1,6 +1,9 @@
 # Persistent Generators Household Analysis
 
-![Persistent Generators Household Analysis example Image](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_householdAnalysis.jpg)
+<iframe width="100%" height="420"
+src="https://www.youtube.com/embed/mCPoIjG2URo" frameborder="0"
+allowfullscreen></iframe>
+
 
 ## Pipeline description
 
@@ -24,7 +27,7 @@ The python script saves the resulting point cloud, Rips complex and output cycle
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistentGenerators_householdAnalysis.pvsm
+paraview --state=states/persistentGenerators_householdAnalysis.pvsm
 ```
 
 ## Python code
@@ -32,6 +35,12 @@ $ paraview --state=states/persistentGenerators_householdAnalysis.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistentGenerators_householdAnalysis.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_householdAnalysis.py
+```
+
 
 ## Inputs
 - [household_part1_ID_daily.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/household_part1_ID_daily.csv): A csv file containing the high-dimensional data.

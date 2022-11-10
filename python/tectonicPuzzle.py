@@ -44,7 +44,6 @@ calculator1.Function = "log10(Viscosity)"
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "logViscosity"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold2 = Threshold(Input=tTKPersistenceDiagram1)
@@ -102,7 +101,6 @@ tTKTopologicalSimplification2.ScalarField = ["POINTS", "logViscosity"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram2 = TTKPersistenceDiagram(Input=tTKTopologicalSimplification2)
 tTKPersistenceDiagram2.ScalarField = ["POINTS", "logViscosity"]
-tTKPersistenceDiagram2.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold4 = Threshold(Input=tTKPersistenceDiagram2)

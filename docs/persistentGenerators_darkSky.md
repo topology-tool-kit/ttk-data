@@ -21,7 +21,7 @@ The python script simply computes the most persistent generators and saves the r
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistentGenerators_darkSky.pvsm
+paraview --state=states/persistentGenerators_darkSky.pvsm
 ```
 
 ## Python code
@@ -29,6 +29,12 @@ $ paraview --state=states/persistentGenerators_darkSky.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistentGenerators_darkSky.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_darkSky.py
+```
+
 
 ## Inputs
 - [ds14_scivis_0128_e4_dt04_1.0000.vtp](https://github.com/topology-tool-kit/ttk-data/raw/dev/ds14_scivis_0128_e4_dt04_1.0000.vtp): A point cloud dataset representing a simulation of the density of dark matter in the universe.

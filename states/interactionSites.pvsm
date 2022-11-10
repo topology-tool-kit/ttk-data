@@ -55469,46 +55469,16 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="24014.Debug_UseAllCores.bool"/>
       </Property>
-      <Property name="ForceInputOffsetScalarField" id="24014.ForceInputOffsetScalarField" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="24014.ForceInputOffsetScalarField.bool"/>
-      </Property>
       <Property name="Input" id="24014.Input" number_of_elements="1">
-        <Proxy value="18871" output_port="0"/>
+        <Proxy value="19081" output_port="0"/>
         <Domain name="groups" id="24014.Input.groups"/>
         <Domain name="input_scalars" id="24014.Input.input_scalars"/>
         <Domain name="input_type" id="24014.Input.input_type"/>
       </Property>
-      <Property name="InputOffsetScalarFieldNameNew" id="24014.InputOffsetScalarFieldNameNew" number_of_elements="5">
-        <Element index="0" value="1"/>
-        <Element index="1" value=""/>
-        <Element index="2" value=""/>
-        <Element index="3" value="0"/>
-        <Element index="4" value=""/>
-        <Domain name="array_list" id="24014.InputOffsetScalarFieldNameNew.array_list">
-          <String text="log(Rho)"/>
-          <String text="log(s)"/>
-        </Domain>
-      </Property>
-      <Property name="SaddleConnectors" id="24014.SaddleConnectors" number_of_elements="1">
-        <Element index="0" value="0"/>
-        <Domain name="bool" id="24014.SaddleConnectors.bool"/>
-      </Property>
-      <Property name="ScalarFieldNew" id="24014.ScalarFieldNew" number_of_elements="5">
-        <Element index="0" value="0"/>
-        <Element index="1" value=""/>
-        <Element index="2" value=""/>
-        <Element index="3" value="0"/>
-        <Element index="4" value="log(s)"/>
-        <Domain name="array_list" id="24014.ScalarFieldNew.array_list">
-          <String text="log(Rho)"/>
-          <String text="log(s)"/>
-        </Domain>
-      </Property>
     </Proxy>
     <Proxy group="filters" type="ttkPersistenceDiagram" id="19081" servers="1">
       <Property name="BackEnd" id="19081.BackEnd" number_of_elements="1">
-        <Element index="0" value="0"/>
+        <Element index="0" value="2"/>
         <Domain name="enum" id="19081.BackEnd.enum">
           <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>

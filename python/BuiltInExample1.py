@@ -50,7 +50,7 @@ tetrahedralize1 = Tetrahedralize(Input=tTKScalarFieldNormalizer1)
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tetrahedralize1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "myVorticity"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.IgnoreBoundary = True
 
 # create a new 'Threshold'
 persistencePairs = Threshold(Input=tTKPersistenceDiagram1)
@@ -63,8 +63,7 @@ persistenceThreshold.Scalars = ["CELLS", "Persistence"]
 ThresholdBetween(persistenceThreshold, 0.02, 999999999)
 
 # create a new 'TTK PersistenceCurve'
-tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tetrahedralize1)
-tTKPersistenceCurve1.ScalarField = ["POINTS", "myVorticity"]
+tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(

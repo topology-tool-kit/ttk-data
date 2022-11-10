@@ -58,14 +58,13 @@ warpByScalar1 = WarpByScalar(Input=extractSurface6)
 warpByScalar1.Scalars = ["POINTS", "Blend"]
 warpByScalar1.ScaleFactor = 0.05
 
-# create a new 'TTK PersistenceCurve'
-tTKPersistenceCurve1 = TTKPersistenceCurve(Input=warpByScalar1)
-tTKPersistenceCurve1.ScalarField = ["POINTS", "Blend"]
-
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=warpByScalar1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Blend"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.IgnoreBoundary = False
+
+# create a new 'TTK PersistenceCurve'
+tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)

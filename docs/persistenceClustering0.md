@@ -19,7 +19,7 @@ corresponding ascending manifold of the Morse-Smale complex (`AscendingManifold`
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistenceClustering0.pvsm
+paraview --state=states/persistenceClustering0.pvsm
 ```
 
 ## Python code
@@ -27,6 +27,13 @@ $ paraview --state=states/persistenceClustering0.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistenceClustering0.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering0.py
+```
+
+
 ## Inputs
 - [clustering0.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/karhunenLoveDigits64Dimensions.csv): a 2D point cloud taken from the [scikit-learn examples](https://scikit-learn.org/stable/modules/clustering.html).
 

@@ -33,7 +33,6 @@ gaussianResampling1.ResamplingGrid = [64, 64, 128]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=gaussianResampling1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
