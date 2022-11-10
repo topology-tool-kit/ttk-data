@@ -13,7 +13,7 @@ Then the filter [MergeTreePrincipalGeodesicsDecoding](https://topology-tool-kit.
 
 A distance matrix is then computed with [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html) with the trees of the grid. This distance matrix is used as input of [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html) to compute a MultiDimensional Scaling (MDS), performing a dimensionality reduction in 3D (and 2D with a second DimensionReduction filter) respecting the most the input distance matrix. 
 
-Finally the [PointSetToSurface](https://topology-tool-kit.github.io/doc/html/classttkPointSetToGrid.html) and [ProjectionFromTable](https://topology-tool-kit.github.io/doc/html/classttkProjectionFromTable.html) are used to create the 3D surface (and the 2D surface). The ProjectionFromTable allows to project the points (reconstructed trees, geodesic trees etc.) to the 3D (or 2D) surface.
+Finally the [PointSetToSurface](https://topology-tool-kit.github.io/doc/html/classttkPointSetToSurface.html) and [ProjectionFromTable](https://topology-tool-kit.github.io/doc/html/classttkProjectionFromTable.html) are used to create the 3D surface (and the 2D surface). The ProjectionFromTable allows to project the points (reconstructed trees, geodesic trees etc.) to the 3D (or 2D) surface.
 
 In terms of visualisation, a scalar field of each cluster is displayed with a zoom on their right of the important persistence pairs. The original trees are displayed alongside their reconstruction at their right. The persistence pairs of the trees are colored by ID to see what features they correspond to in the scalar field.
 
@@ -71,6 +71,8 @@ pvpython python/mergeTreePGA.py
 [MergeTreePrincipalGeodesicsDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesicsDecoding.html)
 
 [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
+
+[PointSetToCurve](https://topology-tool-kit.github.io/doc/html/classttkPointSetToCurve.html)
 
 [PointSetToSurface](https://topology-tool-kit.github.io/doc/html/classttkPointSetToSurface.html)
 
