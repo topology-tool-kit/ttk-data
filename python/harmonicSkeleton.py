@@ -3,20 +3,6 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # load the pegasus dataset by creating a'XML Unstructured Grid Reader'
 pegasusvtu = XMLUnstructuredGridReader(FileName=["pegasus.vtu"])
 
@@ -121,7 +107,9 @@ tTKPersistenceDiagram1.EmbedinDomain = 1
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(threshold1, 0.001, 999999999)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = 0.001
+threshold1.UpperThreshold = 999999999
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(

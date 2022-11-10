@@ -1,20 +1,6 @@
 #!/usr/bin/env python
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'PNG Series Reader'
 tributepng = PNGSeriesReader(FileNames=["tribute.png"])
 
@@ -30,12 +16,16 @@ tTKPersistenceDiagram1.ScalarField = ["POINTS", "originalData"]
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "PairIdentifier"]
-ThresholdBetween(threshold1, -0.1, 999999999)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = -0.1
+threshold1.UpperThreshold = 999999999
 
 # create a new 'Threshold'
 minimumPairs = Threshold(Input=threshold1)
 minimumPairs.Scalars = ["CELLS", "PairType"]
-ThresholdBetween(minimumPairs, -1.0, 0.0)
+minimumPairs.ThresholdMethod = "Between"
+minimumPairs.LowerThreshold = -1.0
+minimumPairs.UpperThreshold = 0.0
 
 # create a new 'Calculator'
 calculator6 = Calculator(Input=minimumPairs)
@@ -62,7 +52,9 @@ appendDatasets1 = AppendDatasets(Input=[deathThreshold, maximumPairs])
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=appendDatasets1)
 persistenceThreshold.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(persistenceThreshold, 8.5, 999999999)
+persistenceThreshold.ThresholdMethod = "Between"
+persistenceThreshold.LowerThreshold = 8.5
+persistenceThreshold.UpperThreshold = 999999999
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
