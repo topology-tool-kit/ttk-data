@@ -20,6 +20,7 @@ ttkTopologicalSimplificationByPersistence = TTKTopologicalSimplificationByPersis
 )
 ttkTopologicalSimplificationByPersistence.InputArray = ["POINTS", "nrrd"]
 ttkTopologicalSimplificationByPersistence.PersistenceThreshold = 0.05
+ttkTopologicalSimplificationByPersistence.ThresholdIsAbsolute = True
 
 # create a new 'TTK Merge and Contour Tree (FTM)'
 ttkMergeandContourTreeFTM = TTKMergeandContourTreeFTM(
