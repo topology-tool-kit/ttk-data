@@ -31,5 +31,14 @@ tTKMergeTreePrincipalGeodesics1.Epsilon3 = 34.0
 tTKMergeTreePrincipalGeodesics1.PersistenceThreshold = 1.0
 tTKMergeTreePrincipalGeodesics1.DeleteMultiPersistencePairs = 1
 
+# create a new 'TTK MergeTreePrincipalGeodesicsDecoding'
+tTKMergeTreePrincipalGeodesicsDecoding1 = TTKMergeTreePrincipalGeodesicsDecoding(Barycenter=tTKMergeTreePrincipalGeodesics1,
+    Coefficients=OutputPort(tTKMergeTreePrincipalGeodesics1,1),
+    GeodesicsVectors=OutputPort(tTKMergeTreePrincipalGeodesics1,2),
+    CorrelationMatrixoptionnal=None,
+    InputTreesoptionnal=None)
+
 # save the output
 SaveData("MT-PGA_coef.csv", OutputPort(tTKMergeTreePrincipalGeodesics1, 1))
+SaveData("MT-PGA_geodesics.csv", OutputPort(tTKMergeTreePrincipalGeodesics1, 2))
+SaveData("MT-PGA_reconstructed_trees.vtm", tTKMergeTreePrincipalGeodesicsDecoding1)

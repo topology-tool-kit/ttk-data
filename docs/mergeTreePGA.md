@@ -19,7 +19,7 @@ In terms of visualisation, a scalar field of each cluster is displayed with a zo
 
 The 3D and 2D surface are displayed with the persistence correlation view at the top right. The 12 scalar fields are colored by Cluster ID. Finally, a path drawn with PolyLineSource on the surface is drawn at the bottom right to show how we can interactivily explore the MT-PGA basis in user-defined location.
 
-The python script computes the MT-PGA and saves the resulting coefficients of the input trees.
+The python script computes the MT-PGA basis. It saves the resulting coefficients of the input trees and the geodesics of the basis. Finally it saves the reconstructed trees the input given the basis and the coordinates of the trees in the basis.
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
