@@ -46,6 +46,7 @@ tTKMorseSmaleComplex1.ScalarField = ["POINTS", "SplatterValues"]
 tTKMorseSmaleComplex1.Ascending2Separatrices = 1
 tTKMorseSmaleComplex1.ReturnSaddleConnectors = 1
 tTKMorseSmaleComplex1.SaddleConnectorsPersistenceThreshold = 0.01
+tTKMorseSmaleComplex1.ThresholdIsAbsolute = True
 
 # create a new 'Tetrahedralize'
 tetrahedralize1 = Tetrahedralize(Input=OutputPort(tTKMorseSmaleComplex1, 2))
