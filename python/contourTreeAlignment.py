@@ -36,6 +36,7 @@ contourTreeAlignment.ScalarField = ["POINTS", "Scalar"]
 contourTreeAlignment.Regionsizearray = ["CELLS", "RegionSize"]
 contourTreeAlignment.SegmentationIDarrayforCT = ["CELLS", "SegmentationId"]
 contourTreeAlignment.SegmentIDarrayforsegmentation = ["POINTS", "Scalar"]
+contourTreeAlignment.Seed = 35
 
 # create a new 'TTK PlanarGraphLayout'
 alignmentLayout = TTKPlanarGraphLayout(Input=contourTreeAlignment)
