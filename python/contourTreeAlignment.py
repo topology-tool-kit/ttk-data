@@ -52,6 +52,7 @@ alignmentEdges.CoordinateResults = 1
 alignmentEdges.Function = "iHat*Layout_Y+jHat*Scalar*3"
 
 # create a query selection
+Show()
 QuerySelect(
     QueryString="(id == 16)", Source=alignmentEdges, FieldType="POINT", InsideOut=0
 )
