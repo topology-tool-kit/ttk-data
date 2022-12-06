@@ -12,6 +12,9 @@ gaussianResampling1 = GaussianResampling(Input=ds14_scivis_0128_e4_dt04_06800vtp
 gaussianResampling1.ResampleField = ["POINTS", "DarkMatter_Phi"]
 gaussianResampling1.ResamplingGrid = [200, 200, 200]
 gaussianResampling1.GaussianSplatRadius = 0.008
+gaussianResampling1.ScaleSplats = 0
+gaussianResampling1.EllipticalSplats = 0
+gaussianResampling1.FillVolumeBoundary = 0
 
 # create a new 'TTK ScalarFieldSmoother'
 tTKScalarFieldSmoother1 = TTKScalarFieldSmoother(Input=gaussianResampling1)
