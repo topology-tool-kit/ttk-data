@@ -23,6 +23,7 @@ resampleWithDataset1.PassPointArrays = 1
 resampleWithDataset1.CellLocator = "Static Cell Locator"
 
 # create a new 'Extract Selection', creating its query first and clearing it afterwards
+Show()
 QuerySelect(
     QueryString="(ttkVertexScalarField == 29019)",
     FieldType="POINT",

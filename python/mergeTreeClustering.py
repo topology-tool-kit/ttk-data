@@ -14,7 +14,6 @@ tTKMergeandContourTreeFTM26 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductRe
 tTKMergeandContourTreeFTM26.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM26.InputOffsetField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM26.TreeType = "Join Tree"
-tTKMergeandContourTreeFTM26.UseAllCores = False
 
 # create a new 'Group Datasets'
 mt_JT_all = GroupDatasets(
@@ -30,7 +29,6 @@ tTKMergeandContourTreeFTM25 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductRe
 tTKMergeandContourTreeFTM25.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM25.InputOffsetField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM25.TreeType = "Split Tree"
-tTKMergeandContourTreeFTM25.UseAllCores = False
 
 # create a new 'Group Datasets'
 mT_all = GroupDatasets(
