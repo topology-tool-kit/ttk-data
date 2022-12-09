@@ -1,19 +1,5 @@
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility =======================================================
-
 # create a new 'XML Image Data Reader'
 builtInExamplevti = XMLImageDataReader(FileName=["BuiltInExample2.vti"])
 
@@ -34,17 +20,23 @@ tTKIcospheresFromPoints2.Radius = 3.0
 # Then select critical points of CellDimension 3 using 'Threshold' to select maxima
 threshold3 = Threshold(Input=tTKIcospheresFromPoints2)
 threshold3.Scalars = ["POINTS", "CellDimension"]
-ThresholdBetween(threshold3, 3.0, 3.0)
+threshold3.ThresholdMethod = "Between"
+threshold3.LowerThreshold = 3.0
+threshold3.UpperThreshold = 3.0
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1, 1))
 threshold1.Scalars = ["CELLS", "NumberOfCriticalPointsOnBoundary"]
-ThresholdBetween(threshold1, 0.0, 0.0)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = 0.0
+threshold1.UpperThreshold = 0.0
 
 # create a new 'Threshold'
 threshold2 = Threshold(Input=threshold1)
 threshold2.Scalars = ["CELLS", "SeparatrixType"]
-ThresholdBetween(threshold2, 2.0, 2.0)
+threshold2.ThresholdMethod = "Between"
+threshold2.LowerThreshold = 2.0
+threshold2.UpperThreshold = 2.0
 
 # create a new 'TTK GeometrySmoother'
 tTKGeometrySmoother1 = TTKGeometrySmoother(Input=threshold2)
@@ -64,22 +56,30 @@ tube1.Radius = 1.25
 # create a new 'Threshold'
 threshold8 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1, 1))
 threshold8.Scalars = ["CELLS", "SeparatrixType"]
-ThresholdBetween(threshold8, 1.0, 1.0)
+threshold8.ThresholdMethod = "Between"
+threshold8.LowerThreshold = 1.0
+threshold8.UpperThreshold = 1.0
 
 # create a new 'Threshold'
 threshold9 = Threshold(Input=threshold8)
 threshold9.Scalars = ["CELLS", "NumberOfCriticalPointsOnBoundary"]
-ThresholdBetween(threshold9, 1.0, 1.0)
+threshold9.ThresholdMethod = "Between"
+threshold9.LowerThreshold = 1.0
+threshold9.UpperThreshold = 1.0
 
 # create a new 'Threshold'
 threshold11 = Threshold(Input=threshold9)
 threshold11.Scalars = ["CELLS", "SeparatrixId"]
-ThresholdBetween(threshold11, 75.0, 76.0)
+threshold11.ThresholdMethod = "Between"
+threshold11.LowerThreshold = 75.0
+threshold11.UpperThreshold = 76.0
 
 # create a new 'Threshold'
 threshold10 = Threshold(Input=threshold9)
 threshold10.Scalars = ["CELLS", "SeparatrixId"]
-ThresholdBetween(threshold10, 73.0, 74.0)
+threshold10.ThresholdMethod = "Between"
+threshold10.LowerThreshold = 73.0
+threshold10.UpperThreshold = 74.0
 
 # create a new 'Append Datasets'
 appendDatasets1 = AppendDatasets(Input=[threshold10, threshold11])
@@ -102,7 +102,9 @@ tube2.Radius = 0.75
 # create a new 'Threshold'
 threshold4 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1, 2))
 threshold4.Scalars = ["CELLS", "SeparatrixType"]
-ThresholdBetween(threshold4, 1.0, 1.0)
+threshold4.ThresholdMethod = "Between"
+threshold4.LowerThreshold = 1.0
+threshold4.UpperThreshold = 1.0
 
 # create a new 'Clean to Grid'
 cleantoGrid2 = CleantoGrid(Input=threshold4)
@@ -120,17 +122,23 @@ tTKGeometrySmoother2.IterationNumber = 20
 # select 2-separatrices using 'Threshold'
 threshold5 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1, 2))
 threshold5.Scalars = ["CELLS", "SeparatrixType"]
-ThresholdBetween(threshold5, 2.0, 2.0)
+threshold5.ThresholdMethod = "Between"
+threshold5.LowerThreshold = 2.0
+threshold5.UpperThreshold = 2.0
 
 # create a new 'Threshold'
 threshold6 = Threshold(Input=threshold5)
 threshold6.Scalars = ["CELLS", "NumberOfCriticalPointsOnBoundary"]
-ThresholdBetween(threshold6, 4.0, 4.0)
+threshold6.ThresholdMethod = "Between"
+threshold6.LowerThreshold = 4.0
+threshold6.UpperThreshold = 4.0
 
 # select a particular 2-separatrix using 'Threshold'
 threshold7 = Threshold(Input=threshold6)
 threshold7.Scalars = ["CELLS", "SeparatrixId"]
-ThresholdBetween(threshold7, 2.0, 2.0)
+threshold7.ThresholdMethod = "Between"
+threshold7.LowerThreshold = 2.0
+threshold7.UpperThreshold = 2.0
 
 # create a new 'Clean to Grid'
 cleantoGrid3 = CleantoGrid(Input=threshold7)

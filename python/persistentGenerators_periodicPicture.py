@@ -19,7 +19,6 @@ tTKDataSetToTable1.DataAssociation = "Point"
 # create a new 'Transpose Table'
 transposeTable1 = TransposeTable(Input=tTKDataSetToTable1)
 transposeTable1.VariablesofInterest = ["Result"]
-transposeTable1.Addacolumnwithoriginalcolumnsname = 0
 
 # create a new 'TTK MergeBlockTables'
 tTKMergeBlockTables1 = TTKMergeBlockTables(Input=transposeTable1)
@@ -51,7 +50,6 @@ cellDatatoPointData1.CellDataArraytoprocess = ["Diameter"]
 # create a new 'TTK PersistentGenerators'
 tTKPersistentGenerators1 = TTKPersistentGenerators(Input=cellDatatoPointData1)
 tTKPersistentGenerators1.ScalarField = ["POINTS", "Diameter"]
-tTKPersistentGenerators1.InputOffsetField = ["POINTS", " angle"]
 
 # create a new 'Table To Points'
 tableToPoints1 = TableToPoints(Input=tTKDimensionReduction1)

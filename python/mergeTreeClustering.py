@@ -2,20 +2,6 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'TTK CinemaReader'
 tTKCinemaReader1 = TTKCinemaReader(DatabasePath="./Isabel.cdb")
 
@@ -28,7 +14,6 @@ tTKMergeandContourTreeFTM26 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductRe
 tTKMergeandContourTreeFTM26.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM26.InputOffsetField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM26.TreeType = "Join Tree"
-tTKMergeandContourTreeFTM26.UseAllCores = False
 
 # create a new 'Group Datasets'
 mt_JT_all = GroupDatasets(
@@ -44,7 +29,6 @@ tTKMergeandContourTreeFTM25 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductRe
 tTKMergeandContourTreeFTM25.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM25.InputOffsetField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM25.TreeType = "Split Tree"
-tTKMergeandContourTreeFTM25.UseAllCores = False
 
 # create a new 'Group Datasets'
 mT_all = GroupDatasets(
@@ -142,12 +126,16 @@ maskPoints1.SingleVertexPerCell = 1
 # create a new 'Threshold'
 threshold33 = Threshold(Input=maskPoints1)
 threshold33.Scalars = ["POINTS", "treeID"]
-ThresholdBetween(threshold33, 0.0, 11.0)
+threshold33.ThresholdMethod = "Between"
+threshold33.LowerThreshold = 0.0
+threshold33.UpperThreshold = 11.0
 
 # create a new 'Threshold'
 threshold34 = Threshold(Input=maskPoints1)
 threshold34.Scalars = ["POINTS", "treeID"]
-ThresholdBetween(threshold34, 12.0, 14.0)
+threshold34.ThresholdMethod = "Between"
+threshold34.LowerThreshold = 12.0
+threshold34.UpperThreshold = 14.0
 
 # save the output
 SaveData("MDS_trees.csv", threshold33)

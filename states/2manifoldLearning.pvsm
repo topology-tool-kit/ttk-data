@@ -37654,6 +37654,10 @@
         <Element index="0" value="1"/>
         <Domain name="bool" id="10790.ReturnSaddleConnectors.bool"/>
       </Property>
+      <Property name="ThresholdIsAbsolute" id="10790.ThresholdIsAbsolute" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="10790.ThresholdIsAbsolute.bool"/>
+      </Property>
       <Property name="SaddleConnectorsPersistenceThreshold" id="10790.SaddleConnectorsPersistenceThreshold" number_of_elements="1">
         <Element index="0" value="0.01"/>
         <Domain name="range" id="10790.SaddleConnectorsPersistenceThreshold.range"/>

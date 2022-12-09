@@ -20,6 +20,7 @@ ttkTopologicalSimplificationByPersistence = TTKTopologicalSimplificationByPersis
 )
 ttkTopologicalSimplificationByPersistence.InputArray = ["POINTS", "nrrd"]
 ttkTopologicalSimplificationByPersistence.PersistenceThreshold = 0.05
+ttkTopologicalSimplificationByPersistence.ThresholdIsAbsolute = True
 
 # create a new 'TTK Merge and Contour Tree (FTM)'
 ttkMergeandContourTreeFTM = TTKMergeandContourTreeFTM(
@@ -35,6 +36,7 @@ contourTreeAlignment.ScalarField = ["POINTS", "Scalar"]
 contourTreeAlignment.Regionsizearray = ["CELLS", "RegionSize"]
 contourTreeAlignment.SegmentationIDarrayforCT = ["CELLS", "SegmentationId"]
 contourTreeAlignment.SegmentIDarrayforsegmentation = ["POINTS", "Scalar"]
+contourTreeAlignment.Seed = 35
 
 # create a new 'TTK PlanarGraphLayout'
 alignmentLayout = TTKPlanarGraphLayout(Input=contourTreeAlignment)
@@ -50,6 +52,7 @@ alignmentEdges.CoordinateResults = 1
 alignmentEdges.Function = "iHat*Layout_Y+jHat*Scalar*3"
 
 # create a query selection
+Show()
 QuerySelect(
     QueryString="(id == 16)", Source=alignmentEdges, FieldType="POINT", InsideOut=0
 )

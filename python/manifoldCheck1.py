@@ -1,20 +1,6 @@
 #!/usr/bin/env python
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'XML Unstructured Grid Reader'
 manifoldCheck1vtu = XMLUnstructuredGridReader(FileName=["manifoldCheck1.vtu"])
 
@@ -31,7 +17,9 @@ extractEdges2 = ExtractEdges(Input=tTKManifoldCheck2)
 # this extracts non-manifold edges
 threshold2 = Threshold(Input=extractEdges2)
 threshold2.Scalars = ["POINTS", "EdgeLinkComponentNumber"]
-ThresholdBetween(threshold2, 2.0, 2.0)
+threshold2.ThresholdMethod = "Between"
+threshold2.LowerThreshold = 2.0
+threshold2.UpperThreshold = 2.0
 
 # save the output
 SaveData("manifoldCheck1_check.vtu", tTKManifoldCheck2)

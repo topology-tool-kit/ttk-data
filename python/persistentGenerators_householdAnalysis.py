@@ -65,7 +65,6 @@ threshold1.UpperThreshold = 17.38239404772305
 # create a new 'TTK PersistentGenerators'
 tTKPersistentGenerators1 = TTKPersistentGenerators(Input=threshold1)
 tTKPersistentGenerators1.ScalarField = ["POINTS", "Diameter"]
-tTKPersistentGenerators1.InputOffsetField = ["POINTS", "Component_0"]
 tTKPersistentGenerators1.PruneHandlesGenerators = 1
 
 SaveData("PersistentGeneratorsHouseholdAnalysis_cycle.vtp", tTKPersistentGenerators1)

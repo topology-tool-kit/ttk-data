@@ -2,20 +2,6 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'XML Image Data Reader'
 builtInExamplevti = XMLImageDataReader(FileName=["BuiltInExample1.vti"])
 
@@ -55,12 +41,16 @@ tTKPersistenceDiagram1.IgnoreBoundary = True
 # create a new 'Threshold'
 persistencePairs = Threshold(Input=tTKPersistenceDiagram1)
 persistencePairs.Scalars = ["CELLS", "PairIdentifier"]
-ThresholdBetween(persistencePairs, -0.1, 999999999)
+persistencePairs.ThresholdMethod = "Between"
+persistencePairs.LowerThreshold = -0.1
+persistencePairs.UpperThreshold = 999999999
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=persistencePairs)
 persistenceThreshold.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(persistenceThreshold, 0.02, 999999999)
+persistenceThreshold.ThresholdMethod = "Between"
+persistenceThreshold.LowerThreshold = 0.02
+persistenceThreshold.UpperThreshold = 999999999
 
 # create a new 'TTK PersistenceCurve'
 tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
