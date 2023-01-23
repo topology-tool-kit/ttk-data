@@ -14,7 +14,7 @@ tTKEigenField1.Numberofeigenfunctions = 50
 
 # create a new 'Calculator'
 calculator1 = Calculator(Input=tTKEigenField1)
-calculator1.Function = '"OutputEigenFunctions_22"'
+calculator1.Function = '-"OutputEigenFunctions_22"'
 
 # create a new 'TTK PersistentGenerators'
 tTKPersistentGenerators1 = TTKPersistentGenerators(Input=calculator1)

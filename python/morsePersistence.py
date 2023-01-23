@@ -66,9 +66,12 @@ persistenceThreshold.ThresholdMethod = "Between"
 persistenceThreshold.LowerThreshold = 0.7
 persistenceThreshold.UpperThreshold = 10000.0
 
+# create a new 'Tetrehedralize'
+tetrahedralize1 = Tetrahedralize(Input=warpByScalar1)
+
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
-    Domain=warpByScalar1, Constraints=persistenceThreshold
+    Domain=tetrahedralize1, Constraints=persistenceThreshold
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "Blend"]
 
@@ -81,4 +84,4 @@ SaveData("PersistenceDiagram.vtu", tTKPersistenceDiagram1)
 SaveData("PersistenceCurve.csv", OutputPort(tTKPersistenceCurve1, 3))
 SaveData("MorseComplexeCriticalPoints.vtp", OutputPort(tTKMorseSmaleComplex1, 0))
 SaveData("MorseComplexe1Separatrices.vtp", OutputPort(tTKMorseSmaleComplex1, 1))
-SaveData("MorseComplexeSegmentation.vtp", OutputPort(tTKMorseSmaleComplex1, 3))
+SaveData("MorseComplexeSegmentation.vtu", OutputPort(tTKMorseSmaleComplex1, 3))
