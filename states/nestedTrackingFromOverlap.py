@@ -5,20 +5,6 @@ from paraview.simple import *
 #### disable automatic camera reset on 'Show'
 paraview.simple._DisableFirstRenderCameraReset()
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # ----------------------------------------------------------------
 # setup views used in the visualization
 # ----------------------------------------------------------------
@@ -113,7 +99,9 @@ clip1.ClipType.Normal = [0.0, 0.0, 1.0]
 threshold2 = Threshold(registrationName='Threshold2', Input=clip1)
 threshold2.Scalars = ['POINTS', 'NONE']
 threshold2.Scalars = ['POINTS', 'ImageFile']
-ThresholdBetween(threshold2, 28.0, 2000.0)
+threshold2.ThresholdMethod = "Between"
+threshold2.LowerThreshold = 28.0
+threshold2.UpperThreshold = 2000.0
 
 # create a new 'Connectivity'
 connectivity2 = Connectivity(registrationName='Connectivity2', Input=threshold2)
@@ -126,7 +114,9 @@ ttkBlockAggregator6.ForceReset = 1
 threshold3 = Threshold(registrationName='Threshold3', Input=clip1)
 threshold3.Scalars = ['POINTS', 'NONE']
 threshold3.Scalars = ['POINTS', 'ImageFile']
-ThresholdBetween(threshold3, 32.0, 2000.0)
+threshold3.ThresholdMethod = "Between"
+threshold3.LowerThreshold = 32.0
+threshold3.UpperThreshold = 2000.0
 
 # create a new 'Connectivity'
 connectivity3 = Connectivity(registrationName='Connectivity3', Input=threshold3)
@@ -139,7 +129,9 @@ ttkBlockAggregator7.ForceReset = 1
 threshold1 = Threshold(registrationName='Threshold1', Input=clip1)
 threshold1.Scalars = ['POINTS', 'NONE']
 threshold1.Scalars = ['POINTS', 'ImageFile']
-ThresholdBetween(threshold1, 20.0, 2000.0)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = 20.0
+threshold1.UpperThreshold = 2000.0
 
 # create a new 'Connectivity'
 connectivity1 = Connectivity(registrationName='Connectivity1', Input=threshold1)
@@ -204,7 +196,9 @@ ttkMeshGraph1.SizeArray = ['POINTS', 'Size']
 threshold5 = Threshold(registrationName='Threshold5', Input=ttkMeshGraph1)
 threshold5.Scalars = ['POINTS', 'NONE']
 threshold5.Scalars = ['POINTS', 'LevelIndex']
-ThresholdBetween(threshold5, 2.0, 2.0)
+threshold5.ThresholdMethod = "Between"
+threshold5.LowerThreshold = 2.0
+threshold5.UpperThreshold = 2.0
 
 # create a new 'Calculator'
 calculator3 = Calculator(registrationName='Calculator3', Input=threshold5)
@@ -220,7 +214,9 @@ threshold4.Scalars = ['POINTS', 'LevelIndex']
 threshold6 = Threshold(registrationName='Threshold6', Input=ttkMeshGraph1)
 threshold6.Scalars = ['POINTS', 'NONE']
 threshold6.Scalars = ['POINTS', 'LevelIndex']
-ThresholdBetween(threshold6, 1.0, 1.0)
+threshold6.ThresholdMethod = "Between"
+threshold6.LowerThreshold = 1.0
+threshold6.UpperThreshold = 1.0
 
 # ----------------------------------------------------------------
 # setup the visualization in view 'renderView1'
