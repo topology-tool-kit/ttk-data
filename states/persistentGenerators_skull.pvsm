@@ -42630,7 +42630,7 @@
         <Domain name="bool" id="16601.CoordinateResults.bool"/>
       </Property>
       <Property name="Function" id="16601.Function" number_of_elements="1">
-        <Element index="0" value="&#x22;OutputEigenFunctions_22&#x22;"/>
+        <Element index="0" value="-&#x22;OutputEigenFunctions_22&#x22;"/>
       </Property>
       <Property name="FunctionParserType" id="16601.FunctionParserType" number_of_elements="1">
         <Element index="0" value="1"/>

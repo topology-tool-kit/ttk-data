@@ -1,20 +1,6 @@
 #### import the simple module from the paraview
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # Load the scalar fields using 'XML Image Data Reader'
 example2vti = XMLImageDataReader(FileName=["BuiltInExample2.vti"])
 
@@ -36,11 +22,14 @@ contour3.Isosurfaces = [-0.575]
 tTKContinuousScatterPlot1 = TTKContinuousScatterPlot(Input=example2vti)
 tTKContinuousScatterPlot1.ScalarField1 = ["POINTS", "log(Rho)"]
 tTKContinuousScatterPlot1.ScalarField2 = ["POINTS", "log(s)"]
+tTKContinuousScatterPlot1.UseAllCores = False
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKContinuousScatterPlot1)
 threshold1.Scalars = ["POINTS", "ValidPointMask"]
-ThresholdBetween(threshold1, 0.1, 999999999)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = 0.1
+threshold1.UpperThreshold = 999999999
 
 # create a new 'TTK ProjectionFromField' to project the 'log(Rho)' contour onto the range space
 tTKProjectionFromField1 = TTKProjectionFromField(Input=contour2)

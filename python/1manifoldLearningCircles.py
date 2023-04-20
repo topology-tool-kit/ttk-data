@@ -2,20 +2,6 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'CSV Reader'
 clustering0csv = CSVReader(FileName=["clustering0.csv"])
 
@@ -42,17 +28,21 @@ slice1.SliceType.Normal = [0.0, 0.0, 1.0]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=slice1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.IgnoreBoundary = True
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "PairIdentifier"]
-ThresholdBetween(threshold1, -0.1, 999999999)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = -0.1
+threshold1.UpperThreshold = 999999999
 
 # create a new 'Threshold'
 persistenceThreshold0 = Threshold(Input=threshold1)
 persistenceThreshold0.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(persistenceThreshold0, 10.0, 999999999)
+persistenceThreshold0.ThresholdMethod = "Between"
+persistenceThreshold0.LowerThreshold = 10.0
+persistenceThreshold0.UpperThreshold = 999999999
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
@@ -67,12 +57,16 @@ tTKMorseSmaleComplex1.ScalarField = ["POINTS", "SplatterValues"]
 # create a new 'Threshold'
 threshold2 = Threshold(Input=OutputPort(tTKMorseSmaleComplex1, 1))
 threshold2.Scalars = ["CELLS", "SeparatrixType"]
-ThresholdBetween(threshold2, 1.0, 1.0)
+threshold2.ThresholdMethod = "Between"
+threshold2.LowerThreshold = 1.0
+threshold2.UpperThreshold = 1.0
 
 # create a new 'Threshold'
 threshold3 = Threshold(Input=threshold2)
 threshold3.Scalars = ["CELLS", "SeparatrixFunctionMinimum"]
-ThresholdBetween(threshold3, 2.0, 999999999)
+threshold3.ThresholdMethod = "Between"
+threshold3.LowerThreshold = 2.0
+threshold3.UpperThreshold = 999999999
 
 # create a new 'Resample With Dataset'
 resampleWithDataset1 = ResampleWithDataset(

@@ -42147,7 +42147,7 @@
         </Domain>
       </Property>
       <Property name="Seed" id="18259.Seed" number_of_elements="1">
-        <Element index="0" value="37"/>
+        <Element index="0" value="35"/>
       </Property>
       <Property name="SegIdArray" id="18259.SegIdArray" number_of_elements="5">
         <Element index="0" value="2 0 0 1 SegmentationId"/>

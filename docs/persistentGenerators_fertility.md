@@ -16,7 +16,7 @@ The python script simply computes the cycles and saves the result as a .vtu file
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistentGenerators_fertility.pvsm
+paraview --state=states/persistentGenerators_fertility.pvsm
 ```
 
 ## Python code
@@ -24,6 +24,12 @@ $ paraview --state=states/persistentGenerators_fertility.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistentGenerators_fertility.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_fertility.py
+```
+
 
 ## Inputs
 - [fertility.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/fertility.vtu): A 2-dimensionnal triangulation of the *fertility* dataset.

@@ -20,7 +20,7 @@ Lastly, 2-separatrices incident on the covalent bonds (of `SeparatrixType = 1`) 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/morseMolecule.pvsm
+paraview --state=states/morseMolecule.pvsm
 ```
 
 ## Python code
@@ -28,6 +28,12 @@ $ paraview --state=states/morseMolecule.pvsm
 ``` python  linenums="1"
 --8<-- "python/morseMolecule.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/morseMolecule.py
+```
+
 
 ## Inputs
 - [BuiltInExample2.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/BuiltInExample2.vti): 3D scalar field corresponding to electron density distribution around a simple molecule.

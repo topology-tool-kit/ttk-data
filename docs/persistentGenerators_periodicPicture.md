@@ -23,7 +23,7 @@ The python script saves the resulting point cloud, Rips complex and output cycle
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistentGenerators_periodicPicture.pvsm
+paraview --state=states/persistentGenerators_periodicPicture.pvsm
 ```
 
 ## Python code
@@ -31,6 +31,12 @@ $ paraview --state=states/persistentGenerators_periodicPicture.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistentGenerators_periodicPicture.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistentGenerators_periodicPicture.py
+```
+
 
 ## Inputs
 - [periodicPicture.cdb](https://github.com/topology-tool-kit/ttk-data/raw/dev/periodicPicture.cdb): A cinema database containing all 100 pictures, with metadata (the associated camera angle).

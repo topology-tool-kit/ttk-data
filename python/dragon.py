@@ -2,20 +2,6 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'XML Unstructured Grid Reader'
 dragonvtu = XMLUnstructuredGridReader(FileName=["dragon.vtu"])
 
@@ -27,24 +13,27 @@ elevation = Calculator(Input=tTKGeometrySmoother1)
 elevation.ResultArrayName = "Elevation"
 elevation.Function = "coordsY"
 
-# create a new 'TTK PersistenceCurve'
-tTKPersistenceCurve1 = TTKPersistenceCurve(Input=elevation)
-tTKPersistenceCurve1.ScalarField = ["POINTS", "Elevation"]
-
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=elevation)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Elevation"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.IgnoreBoundary = True
+
+# create a new 'TTK PersistenceCurve'
+tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
 
 # create a new 'Threshold'
 pairs = Threshold(Input=tTKPersistenceDiagram1)
 pairs.Scalars = ["CELLS", "PairIdentifier"]
-ThresholdBetween(pairs, 0.0, 999999999)
+pairs.ThresholdMethod = "Between"
+pairs.LowerThreshold = 0.0
+pairs.UpperThreshold = 999999999
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=pairs)
 persistenceThreshold.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(persistenceThreshold, 5.0, 999999999)
+persistenceThreshold.ThresholdMethod = "Between"
+persistenceThreshold.LowerThreshold = 5.0
+persistenceThreshold.UpperThreshold = 999999999
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(

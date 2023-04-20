@@ -18,13 +18,18 @@ This simplified data is then used as the input of the computation of [MorseSmale
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/1manifoldLearning.pvsm
+paraview --state=states/1manifoldLearning.pvsm
 ```
 
 ## Python code
 
 ``` python  linenums="1"
 --8<-- "python/1manifoldLearning.py"
+```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/1manifoldLearning.py
 ```
 
 ## Inputs

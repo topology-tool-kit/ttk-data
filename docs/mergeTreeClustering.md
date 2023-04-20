@@ -21,7 +21,7 @@ The python script computes the MDS and saves the resulting 2D points (for input 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/mergeTreeClustering.pvsm
+paraview --state=states/mergeTreeClustering.pvsm
 ```
 
 ## Python code
@@ -29,6 +29,12 @@ $ paraview --state=states/mergeTreeClustering.pvsm
 ``` python  linenums="1"
 --8<-- "python/mergeTreeClustering.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/mergeTreeClustering.py
+```
+
 
 ## Inputs
 - [Isabel.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/Isabel.cdb): a cinema database containing 12 regular grids.

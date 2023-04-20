@@ -13,7 +13,7 @@ A fake shadow is put on the stone mesh to give the mesh depth values. The stone 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/geometryApproximation.pvsm
+paraview --state=states/geometryApproximation.pvsm
 ```
 
 ## Python code
@@ -21,6 +21,12 @@ $ paraview --state=states/geometryApproximation.pvsm
 ``` python  linenums="1"
 --8<-- "python/geometryApproximation.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/geometryApproximation.py
+```
+
 
 ## Inputs
 - [stone.vtp](https://github.com/topology-tool-kit/ttk-data/tree/dev/GroundWater.cdb/stone.vtp): a mesh of the stone around the ground water.

@@ -2,20 +2,6 @@
 
 from paraview.simple import *
 
-# paraview 5.9 VS 5.10 compatibility ===========================================
-def ThresholdBetween(threshold, lower, upper):
-    try:
-        # paraview 5.9
-        threshold.ThresholdRange = [lower, upper]
-    except:
-        # paraview 5.10
-        threshold.ThresholdMethod = "Between"
-        threshold.LowerThreshold = lower
-        threshold.UpperThreshold = upper
-
-
-# end of comphatibility ========================================================
-
 # create a new 'Plane'
 plane1 = Plane()
 plane1.XResolution = 300
@@ -58,28 +44,34 @@ warpByScalar1 = WarpByScalar(Input=extractSurface6)
 warpByScalar1.Scalars = ["POINTS", "Blend"]
 warpByScalar1.ScaleFactor = 0.05
 
-# create a new 'TTK PersistenceCurve'
-tTKPersistenceCurve1 = TTKPersistenceCurve(Input=warpByScalar1)
-tTKPersistenceCurve1.ScalarField = ["POINTS", "Blend"]
-
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=warpByScalar1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "Blend"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.IgnoreBoundary = False
+
+# create a new 'TTK PersistenceCurve'
+tTKPersistenceCurve1 = TTKPersistenceCurve(Input=tTKPersistenceDiagram1)
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
 threshold1.Scalars = ["CELLS", "PairIdentifier"]
-ThresholdBetween(threshold1, 0.0, 100000.0)
+threshold1.ThresholdMethod = "Between"
+threshold1.LowerThreshold = 0.0
+threshold1.UpperThreshold = 100000.0
 
 # create a new 'Threshold'
 persistenceThreshold = Threshold(Input=threshold1)
 persistenceThreshold.Scalars = ["CELLS", "Persistence"]
-ThresholdBetween(persistenceThreshold, 0.7, 10000.0)
+persistenceThreshold.ThresholdMethod = "Between"
+persistenceThreshold.LowerThreshold = 0.7
+persistenceThreshold.UpperThreshold = 10000.0
+
+# create a new 'Tetrehedralize'
+tetrahedralize1 = Tetrahedralize(Input=warpByScalar1)
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
-    Domain=warpByScalar1, Constraints=persistenceThreshold
+    Domain=tetrahedralize1, Constraints=persistenceThreshold
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "Blend"]
 
@@ -92,4 +84,4 @@ SaveData("PersistenceDiagram.vtu", tTKPersistenceDiagram1)
 SaveData("PersistenceCurve.csv", OutputPort(tTKPersistenceCurve1, 3))
 SaveData("MorseComplexeCriticalPoints.vtp", OutputPort(tTKMorseSmaleComplex1, 0))
 SaveData("MorseComplexe1Separatrices.vtp", OutputPort(tTKMorseSmaleComplex1, 1))
-SaveData("MorseComplexeSegmentation.vtp", OutputPort(tTKMorseSmaleComplex1, 3))
+SaveData("MorseComplexeSegmentation.vtu", OutputPort(tTKMorseSmaleComplex1, 3))

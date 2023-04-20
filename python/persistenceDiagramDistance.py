@@ -14,12 +14,16 @@ tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 extractBlock1 = ExtractBlock(Input=tTKCinemaProductReader1)
 extractBlock1.Selectors = ["/Root/Block0", "/Root/Block10"]
 
+# create a new 'Calculator'
+calculator1 = Calculator(Input=extractBlock1)
+calculator1.ResultArrayName = "velocityMag"
+calculator1.Function = "-velocityMag"
+
 # create a new 'TTK PersistenceDiagram'
-tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=extractBlock1)
+tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=calculator1)
 tTKPersistenceDiagram3.ScalarField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram3.InputOffsetField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram3.Backend = "FTM (IEEE TPSD 2019)"
-tTKPersistenceDiagram3.UseAllCores = 0
+tTKPersistenceDiagram3.IgnoreBoundary = False
 
 # create a new 'Threshold'
 threshold7 = Threshold(Input=tTKPersistenceDiagram3)
@@ -29,7 +33,7 @@ threshold7.UpperThreshold = 136.490955383565
 
 # create a new 'TTK PersistenceDiagramClustering'
 tTKPersistenceDiagramClustering1 = TTKPersistenceDiagramClustering(Input=threshold7)
-Show(tTKPersistenceDiagramClustering1)
+UpdatePipeline()
 
 # Get the data
 matchings_data = FetchData(OutputPort(tTKPersistenceDiagramClustering1, 2))[0]
@@ -39,7 +43,6 @@ field_data = matchings_data.GetBlock(0).GetFieldData()
 
 # Display the Wasserstein distance
 wasserstein_distance = field_data.GetArray("WassersteinDistance").GetValue(0)
-print("Wasserstein distance: ", wasserstein_distance)
 
 # Save the Wasserstein distance in a csv file
 np.savetxt("WassersteinDistance.csv", [wasserstein_distance])

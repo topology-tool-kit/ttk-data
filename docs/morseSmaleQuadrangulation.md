@@ -43,7 +43,7 @@ filter (right view on the above screenshot).
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/morseSmaleQuadrangulation.pvsm
+paraview --state=states/morseSmaleQuadrangulation.pvsm
 ```
 
 ## Python code
@@ -51,6 +51,12 @@ $ paraview --state=states/morseSmaleQuadrangulation.pvsm
 ``` python  linenums="1"
 --8<-- "python/morseSmaleQuadrangulation.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/morseSmaleQuadrangulation.py
+```
+
 
 ## Inputs
 - [rockerArm.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/rockerArm.vtu): a two-dimensional triangulated mechanical model.

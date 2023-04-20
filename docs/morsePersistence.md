@@ -20,7 +20,7 @@ This simplified data is then used as the input of the computation of [MorseSmale
 ## ParaView
 To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
 ``` bash
-$ paraview --state=states/morsePersistence.pvsm
+paraview --state=states/morsePersistence.pvsm
 ```
 
 ## Python code
@@ -28,6 +28,12 @@ $ paraview --state=states/morsePersistence.pvsm
 ``` python  linenums="1"
 --8<-- "python/morsePersistence.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/morsePersistence.py
+```
+
 
 ## Inputs
 - None

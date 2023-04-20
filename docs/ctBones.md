@@ -21,7 +21,7 @@ Each toe will be subdivided into two segments, precisely along the joints.
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/ctBones.pvsm
+paraview --state=states/ctBones.pvsm
 ```
 
 ## Python code
@@ -29,6 +29,12 @@ $ paraview --state=states/ctBones.pvsm
 ``` python  linenums="1"
 --8<-- "python/ctBones.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/ctBones.py
+```
+
 
 ## Inputs
 - [ctBones.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/ctBones.vti): a three-dimensional regular grid encoding material density in a medical image (CT scan).

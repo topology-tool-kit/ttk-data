@@ -19,7 +19,7 @@ Finally, the [ReebGraph](https://topology-tool-kit.github.io/doc/html/classttkFT
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/harmonicSkeleton.pvsm
+paraview --state=states/harmonicSkeleton.pvsm
 ```
 
 ## Python code
@@ -27,6 +27,12 @@ $ paraview --state=states/harmonicSkeleton.pvsm
 ``` python  linenums="1"
 --8<-- "python/harmonicSkeleton.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/harmonicSkeleton.py
+```
+
 
 ## Inputs
 - [pegasus.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/pegasus.vtu): a two-dimensional triangulation.

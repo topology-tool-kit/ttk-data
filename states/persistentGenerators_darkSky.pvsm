@@ -35924,6 +35924,10 @@
         <Element index="0" value="0.01"/>
         <Domain name="range" id="17874.SaddleConnectorsPersistenceThreshold.range"/>
       </Property>
+      <Property name="ThresholdIsAbsolute" id="17874.ThresholdIsAbsolute" number_of_elements="1">
+        <Element index="0" value="1"/>
+        <Domain name="bool" id="17874.ThresholdIsAbsolute.bool"/>
+      </Property>
       <Property name="Scalar Field" id="17874.Scalar Field" number_of_elements="5">
         <Element index="0" value="0"/>
         <Element index="1" value=""/>

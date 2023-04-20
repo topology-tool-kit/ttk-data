@@ -20,7 +20,7 @@ The images are sliced with a plane, and each slice is visualized side-by-side us
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/cinemaIO.pvsm
+paraview --state=states/cinemaIO.pvsm
 ```
 
 ## Python code
@@ -28,6 +28,12 @@ $ paraview --state=states/cinemaIO.pvsm
 ``` python  linenums="1"
 --8<-- "python/cinemaIO.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/cinemaIO.py
+```
+
 
 ## Inputs
 - [ViscousFingers.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/ViscousFingers.cdb): a cinema database of VTK Image files from a simulation.

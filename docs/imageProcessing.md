@@ -40,7 +40,7 @@ To reproduce the above screenshot, go to your
 and enter the following command:
 
 ``` bash
-$ paraview --state=states/imageProcessing.pvsm
+paraview --state=states/imageProcessing.pvsm
 ```
 
 ## Python code
@@ -48,6 +48,12 @@ $ paraview --state=states/imageProcessing.pvsm
 ``` python  linenums="1"
 --8<-- "python/imageProcessing.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/imageProcessing.py
+```
+
 
 ## Inputs
 - [naturalImage.png](https://github.com/topology-tool-kit/ttk-data/raw/dev/naturalImage.png):

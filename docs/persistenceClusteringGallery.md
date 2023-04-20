@@ -27,7 +27,7 @@ From there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/cl
 ## ParaView
 To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistenceClusteringGallery.pvsm
+paraview --state=states/persistenceClusteringGallery.pvsm
 ```
 
 ## Python code
@@ -38,11 +38,23 @@ $ paraview --state=states/persistenceClusteringGallery.pvsm
 --8<-- "python/persistenceClustering0.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering0.py
+```
+
+
 ### Persistence clusering 1
 
 ``` python  linenums="1"
 --8<-- "python/persistenceClustering1.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering1.py
+```
+
 
 ### Persistence clusering 2
 
@@ -50,11 +62,23 @@ $ paraview --state=states/persistenceClusteringGallery.pvsm
 --8<-- "python/persistenceClustering2.py"
 ```
 
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering2.py
+```
+
+
 ### Persistence clusering 3
 
 ``` python  linenums="1"
 --8<-- "python/persistenceClustering3.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering3.py
+```
+
 
 ### Persistence clusering 4
 
@@ -62,6 +86,12 @@ $ paraview --state=states/persistenceClusteringGallery.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistenceClustering4.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceClustering4.py
+```
+
 
 
 ## C++/Python API
