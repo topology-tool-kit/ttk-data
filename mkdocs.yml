@@ -8,6 +8,8 @@ site_name: TTK Examples
 
 theme:
   name: material
+  features:
+    - content.code.copy
   palette: #
     - scheme: slate #
       primary: teal
