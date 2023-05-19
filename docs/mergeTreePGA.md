@@ -1,6 +1,6 @@
 # Merge Tree Principal Geodesic Analysis 
 
-![Merge Tree Principal Geodesic Analysis example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg)
+![Merge Tree Principal Geodesic Analysis example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreePGA.jpg)
 
 
 ## Pipeline description
