@@ -12,7 +12,6 @@ tTKCinemaProductReader1.AddFieldDataRecursively = 1
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKMergeandContourTreeFTM26 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM26.ScalarField = ["POINTS", "velocityMag"]
-tTKMergeandContourTreeFTM26.InputOffsetField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM26.TreeType = "Split Tree"
 
 # create a new 'Group Datasets'
