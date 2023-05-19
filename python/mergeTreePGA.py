@@ -12,9 +12,7 @@ tTKCinemaProductReader1.AddFieldDataRecursively = 1
 # create a new 'TTK Merge and Contour Tree (FTM)'
 tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM1.ScalarField = ['POINTS', 'VectorMag']
-tTKMergeandContourTreeFTM1.InputOffsetField = ['POINTS', 'VectorMag']
 tTKMergeandContourTreeFTM1.TreeType = 'Split Tree'
-tTKMergeandContourTreeFTM1.UseAllCores = 0
 
 # create a new 'TTK BlockAggregator'
 tTKBlockAggregator1 = TTKBlockAggregator(Input=[tTKMergeandContourTreeFTM1, OutputPort(tTKMergeandContourTreeFTM1,1), OutputPort(tTKMergeandContourTreeFTM1,2)])
@@ -35,8 +33,8 @@ tTKMergeTreePrincipalGeodesics1.DeleteMultiPersistencePairs = 1
 tTKMergeTreePrincipalGeodesicsDecoding1 = TTKMergeTreePrincipalGeodesicsDecoding(Barycenter=tTKMergeTreePrincipalGeodesics1,
     Coefficients=OutputPort(tTKMergeTreePrincipalGeodesics1,1),
     GeodesicsVectors=OutputPort(tTKMergeTreePrincipalGeodesics1,2),
-    CorrelationMatrixoptionnal=None,
-    InputTreesoptionnal=None)
+    CorrelationMatrixoptional=None,
+    InputTreesoptional=None)
 
 # save the output
 SaveData("MT-PGA_coef.csv", OutputPort(tTKMergeTreePrincipalGeodesics1, 1))
