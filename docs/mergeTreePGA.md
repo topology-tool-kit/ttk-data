@@ -66,11 +66,11 @@ pvpython python/mergeTreePGA.py
 
 [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
 
+[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
+
 [MergeTreePrincipalGeodesics](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesics.html)
 
 [MergeTreePrincipalGeodesicsDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesicsDecoding.html)
-
-[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
 
 [PointSetToCurve](https://topology-tool-kit.github.io/doc/html/classttkPointSetToCurve.html)
 
