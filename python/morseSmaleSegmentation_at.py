@@ -37,7 +37,7 @@ tTKGeometrySmoother1 = TTKGeometrySmoother(
     registrationName="TTKGeometrySmoother1", Input=cleantoGrid1
 )
 tTKGeometrySmoother1.IterationNumber = 20
-tTKGeometrySmoother1.InputMaskField = ["CELLS", "MSCIds"]
+tTKGeometrySmoother1.InputMaskField = ["CELLS", "Hash"]
 
 # create a new 'TTK MarchingTetrahedra'
 tTKMarchingTetrahedra2 = TTKMarchingTetrahedra(
@@ -55,7 +55,7 @@ tTKGeometrySmoother2 = TTKGeometrySmoother(
     registrationName="TTKGeometrySmoother2", Input=cleantoGrid2
 )
 tTKGeometrySmoother2.IterationNumber = 20
-tTKGeometrySmoother2.InputMaskField = ["CELLS", "MSCIds"]
+tTKGeometrySmoother2.InputMaskField = ["CELLS", "Hash"]
 
 
 SaveData("descendingSegmentationAt.vtu", tTKGeometrySmoother1)
