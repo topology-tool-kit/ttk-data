@@ -1,4 +1,4 @@
-# MorseSmale Segmentation AT
+# Morse-Smale Segmentation AT
 
 ![MorseSmale Segmentation AT Example Image](https://topology-tool-kit.github.io/img/gallery/morseSmaleSegmentation_at.jpg)
 
@@ -9,12 +9,13 @@ The descending segmentation separators (red) represent the influence areas of ma
 The segmentations are computed using [PathCompression](https://topology-tool-kit.github.io/doc/html/classttkPathCompression.html).
 The separating geometry is generated using [MarchingTetrahedra](https://topology-tool-kit.github.io/doc/html/classttkMarchingTetrahedra.html)
 
-The python script simply computes the segmentation and saves the result as a .vtp file.
+The python script simply computes the segmentation and saves the separating
+surfaces as `.vtu` files.
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state=states/morseSmaleSegmentation_at.pvsm
+paraview --state= states/morseSmaleSegmentation_at.pvsm
 ```
 
 ## Python code
@@ -33,12 +34,15 @@ pvpython python/morseSmaleSegmentation_at.py
 - [at.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/at.vti): A molecular dataset: a three-dimensional regular grid with 1 scalar field, the electronic density in the Adenine Thymine complex.
 
 ## Outputs
--  `ascendingSegmentationAt.pvd`: the ascending separator geometry.
--  `descendingSegmentationAt.pvd`: the descending separator geometry.
+-  `ascendingSeparatorAt.vtu`: the ascending separator geometry.
+-  `descendingSeparatorAt.vtu`: the descending separator geometry.
 
 
 ## C++/Python API
 
-[PathCompression](https://topology-tool-kit.github.io/doc/html/classttkPathCompression.html)
+[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
 [MarchingTetrahedra](https://topology-tool-kit.github.io/doc/html/classttkMarchingTetrahedra.html)
+
+[PathCompression](https://topology-tool-kit.github.io/doc/html/classttkPathCompression.html)
+
