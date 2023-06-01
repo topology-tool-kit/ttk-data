@@ -22,7 +22,7 @@ This simplified data is then used as the input of the computation of [ScalarFiel
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state=states/dragon.pvsm
+paraview --state= states/dragon.pvsm
 ```
 
 ## Python code
