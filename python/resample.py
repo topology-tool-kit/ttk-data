@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Resample a VTI dataset. 
+# Resample a VTI dataset.
 # Julien Tierny <julien.tierny@sorbonne-universite.fr>, 2023.
 # argv[1]: input file
 # argv[2]: xDim
