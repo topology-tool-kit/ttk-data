@@ -4,8 +4,6 @@ from paraview.simple import *
 
 # create a new 'XML Image Data Reader'
 atvti = XMLImageDataReader(FileName=["at.vti"])
-atvti.PointArrayStatus = ["density"]
-atvti.TimeArray = "None"
 
 # create a new 'Calculator'
 calculator1 = Calculator(registrationName="Calculator1", Input=atvti)
@@ -17,9 +15,6 @@ tTKPathCompression1 = TTKPathCompression(
     registrationName="TTKPathCompression1", Input=calculator1
 )
 tTKPathCompression1.ScalarField = ["POINTS", "negdensity"]
-tTKPathCompression1.OffsetField = ["POINTS", "negdensity"]
-tTKPathCompression1.AscendingSegmentation = 0
-tTKPathCompression1.DescendingSegmentation = 0
 
 # create a new 'TTK MarchingTetrahedra'
 tTKMarchingTetrahedra1 = TTKMarchingTetrahedra(
@@ -57,10 +52,5 @@ tTKGeometrySmoother2 = TTKGeometrySmoother(
 tTKGeometrySmoother2.IterationNumber = 20
 tTKGeometrySmoother2.InputMaskField = ["CELLS", "Hash"]
 
-
-SaveData("descendingSegmentationAt.vtu", tTKGeometrySmoother1)
-SaveData("ascendingSegmentationAt.vtu", tTKGeometrySmoother2)
-
-if __name__ == "__main__":
-    # generate extracts
-    SaveExtracts(ExtractsOutputDirectory="extracts")
+SaveData("descendingSeparatorAt.vtu", tTKGeometrySmoother1)
+SaveData("ascendingSeparatorAt.vtu", tTKGeometrySmoother2)
