@@ -16,7 +16,7 @@ Using topological analysis of `log(s)`, we identify an outlying minimum which is
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state=states/interactionSites.pvsm
+paraview --state= states/interactionSites.pvsm
 ```
 
 ## Python code
