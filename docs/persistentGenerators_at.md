@@ -16,7 +16,7 @@ The python script simply computes the generators and saves the result as a .vtp 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/persistentGenerators_at.pvsm
+paraview states/persistentGenerators_at.pvsm
 ```
 
 ## Python code

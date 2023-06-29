@@ -15,7 +15,7 @@ The python script computes the distance and prints it in the terminal output. Ad
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/persistenceDiagramDistance.pvsm
+paraview states/persistenceDiagramDistance.pvsm
 ```
 
 ## Python code

@@ -16,7 +16,7 @@ The python script computes the matchings and saves the result (for each pair of 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/mergeTreeFeatureTracking.pvsm
+paraview states/mergeTreeFeatureTracking.pvsm
 ```
 
 ## Python code

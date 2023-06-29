@@ -27,7 +27,7 @@ The extraction is done using the [TTKExtract](https://topology-tool-kit.github.i
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/contourTreeAlignment.pvsm
+paraview states/contourTreeAlignment.pvsm
 ```
 
 ## Python code

@@ -1,4 +1,4 @@
-# Welcome to the TTK Examples!
+# Welcome to the TTK Online Example Database!
 
 This website hosts a list of data analysis pipelines exemplifying the usage of [TTK](https://topology-tool-kit.github.io/) with
 [ParaView](http://paraview.org) and its Python API `pvpython`.
@@ -17,7 +17,7 @@ Each example includes:
 - a description of the inputs and outputs
 - pointers to the corresponding C++/Python documentation
 
-This documentation assumes a default TTK installation (with the `pvpython` API support enabled) and that the repository [ttk-data](https://github.com/topology-tool-kit/ttk-data) has been downloaded locally.
+This documentation assumes a default installation of the latest version of TTK (with the `pvpython` API support enabled) and that the repository [ttk-data](https://github.com/topology-tool-kit/ttk-data) has been downloaded locally.
 
 If you have any questions regarding these examples, please let us know by sending an email to the [TTK user mailing list](mailto:ttk-users@googlegroups.com)!
 

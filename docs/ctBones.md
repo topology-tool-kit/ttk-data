@@ -21,7 +21,7 @@ Each toe will be subdivided into two segments, precisely along the joints.
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/ctBones.pvsm
+paraview states/ctBones.pvsm
 ```
 
 ## Python code

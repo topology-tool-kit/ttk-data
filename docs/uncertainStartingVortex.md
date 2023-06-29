@@ -23,7 +23,7 @@ At last, the [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/uncertainStartingVortex.pvsm
+paraview states/uncertainStartingVortex.pvsm
 ```
 
 ## Python code

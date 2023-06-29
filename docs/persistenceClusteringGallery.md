@@ -27,7 +27,7 @@ From there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/cl
 ## ParaView
 To reproduce the above screenshot, go to your `ttk-data`  directory and enter the following command:
 ``` bash
-paraview --state= states/persistenceClusteringGallery.pvsm
+paraview states/persistenceClusteringGallery.pvsm
 ```
 
 ## Python code

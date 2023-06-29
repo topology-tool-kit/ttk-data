@@ -16,7 +16,7 @@ Finally the `ttkMeshGraph` filter generates a `vtkUnstructuredGrid` of the NTG w
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/nestedTrackingFromOverlap.py
+paraview states/nestedTrackingFromOverlap.py
 ```
 
 ## Python code

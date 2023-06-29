@@ -24,7 +24,7 @@ The python script computes the MT-PGA basis. It saves the resulting coefficients
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/mergeTreePGA.pvsm
+paraview states/mergeTreePGA.pvsm
 ```
 
 ## Python code

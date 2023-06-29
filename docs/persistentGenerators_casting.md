@@ -16,7 +16,7 @@ The python script simply computes the cycles and saves the result as a .vtp file
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/persistentGenerators_casting.pvsm
+paraview states/persistentGenerators_casting.pvsm
 ```
 
 ## Python code

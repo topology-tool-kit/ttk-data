@@ -14,7 +14,7 @@ The state file further contains an animation of the critical points over time.
 
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state= states/timeTracking.pvsm
+paraview states/timeTracking.pvsm
 ```
 
 ## Python code
