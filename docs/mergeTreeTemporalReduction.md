@@ -6,7 +6,7 @@
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
 Then, the [Split Tree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) is computed on each scalar field.
 
-All these trees are passed to [MergeTreeTemporalReductionEncoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeTemporalReductionEncoding.html) to compute a subsampling of a sequence of merge trees. The algorithm greedily removes trees in the sequence that can be accurately reconstructed by the geodesic computation. The remaining trees are called the key frames.
+All these trees are passed to [MergeTreeTemporalReduction](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeTemporalReduction.html) to compute a subsampling of a sequence of merge trees. The algorithm greedily removes trees in the sequence that can be accurately reconstructed by the geodesic computation. The remaining trees are called the key frames.
 
 In terms of visualisation, the three key frames trees and two reconstructed trees are visualized with a planar layout along with their corresponding scalar fields.
 
@@ -44,5 +44,5 @@ pvpython python/mergeTreeTemporalReduction.py
 
 [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
 
-[MergeTreeTemporalReductionEncoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeTemporalReductionEncoding.html)
+[MergeTreeTemporalReduction](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeTemporalReduction.html)
 
