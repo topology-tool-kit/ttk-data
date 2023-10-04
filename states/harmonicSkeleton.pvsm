@@ -40536,7 +40536,7 @@
         <Domain name="bool" id="17048.ShowInsideDomain.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkFTRGraph" id="17768" servers="1">
+    <Proxy group="filters" type="ttkReebGraph" id="17768" servers="1">
       <Property name="ArcSampling" id="17768.ArcSampling" number_of_elements="1">
         <Element index="0" value="20"/>
         <Domain name="range" id="17768.ArcSampling.range"/>
