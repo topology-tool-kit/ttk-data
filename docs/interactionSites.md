@@ -9,7 +9,7 @@ First a VTI file is loaded which contains two scalar fields namely `log(Rho)` an
 
 Next, we analyse `log(s)`, the reduced gradient scalar field. Here, the [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html) is computed (top right view in the above screenshot). Then, the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) for `log(s)` is computed and thresholds are applied based on persistence to maintain only the most persistent features. This results in a simplified persistence diagram (bottom right view in the above screenshot).
 
-The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data. The simplified data is then used as input to [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) to compute the join tree for the data. The join tree captures the topological changes in sub-level sets of the scalar field and therefore consists of leaves corresponding to minima and internal nodes corresponding to saddles, the points where sublevel sets merge. The nodes of this join tree are selected and highlighted as smaller opaque blue and white spheres using [IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html). Similarly, the arcs of the join tree are also extracted and shown as thin grey tubes in the screenshot above.
+The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data. The simplified data is then used as input to [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html) to compute the join tree for the data. The join tree captures the topological changes in sub-level sets of the scalar field and therefore consists of leaves corresponding to minima and internal nodes corresponding to saddles, the points where sublevel sets merge. The nodes of this join tree are selected and highlighted as smaller opaque blue and white spheres using [IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html). Similarly, the arcs of the join tree are also extracted and shown as thin grey tubes in the screenshot above.
 
 Using topological analysis of `log(s)`, we identify an outlying minimum which is not close to the atom locations. This corresponds to a non-covalent interaction site in the molecule which is not identifiable using direct toplogical analysis of electron density field `Rho`. Lastly, we extract the segmented region corresponding to this particular minimum (shown as transluscent blue surface in the screenshot). 
 
@@ -45,7 +45,7 @@ pvpython python/interactionSites.py
 Note that you are free to change the VTK file extensions to that of any other supported file format (e.g. `csv`) in the above python script.
 
 ## C++/Python API
-[ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html)
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 

@@ -38023,7 +38023,7 @@
         <Domain name="bool" id="15585.UseContinuousCellRange.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkftmtree" id="17270" servers="1">
+    <Proxy group="filters" type="ttkMergeAndContourTree" id="17270" servers="1">
       <Property name="AdvancedStats" id="17270.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="17270.AdvancedStats.bool"/>

@@ -58675,7 +58675,7 @@
         <Element index="0" value="2"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkftmtree" id="17936" servers="1">
+    <Proxy group="filters" type="ttkMergeAndContourTree" id="17936" servers="1">
       <Property name="AdvancedStats" id="17936.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="17936.AdvancedStats.bool"/>

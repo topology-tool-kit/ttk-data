@@ -9,8 +9,8 @@ tTKCinemaReader1 = TTKCinemaReader(DatabasePath="./Isabel.cdb")
 tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 tTKCinemaProductReader1.AddFieldDataRecursively = 1
 
-# create a new 'TTK Merge and Contour Tree (FTM)'
-tTKMergeandContourTreeFTM26 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
+# create a new 'TTK Merge and Contour Tree'
+tTKMergeandContourTreeFTM26 = TTKMergeAndContourTree(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM26.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM26.TreeType = "Join Tree"
 
@@ -23,8 +23,8 @@ mt_JT_all = GroupDatasets(
     ]
 )
 
-# create a new 'TTK Merge and Contour Tree (FTM)'
-tTKMergeandContourTreeFTM25 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
+# create a new 'TTK Merge and Contour Tree'
+tTKMergeandContourTreeFTM25 = TTKMergeAndContourTree(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM25.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM25.TreeType = "Split Tree"
 
