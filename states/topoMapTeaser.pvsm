@@ -35870,11 +35870,11 @@
     </Proxy>
     <Proxy group="sources" type="CSVReader" id="11570" servers="1">
       <Property name="FileName" id="11570.FileName" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/git/github/ttk-data-tierny/2cavities.csv"/>
+        <Element index="0" value="2cavities.csv"/>
         <Domain name="files" id="11570.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="11570.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/git/github/ttk-data-tierny/2cavities.csv"/>
+        <Element index="0" value="2cavities.csv"/>
       </Property>
       <Property name="TimestepValues" id="11570.TimestepValues"/>
       <Property name="AddTabFieldDelimiter" id="11570.AddTabFieldDelimiter" number_of_elements="1">
@@ -35903,11 +35903,11 @@
     </Proxy>
     <Proxy group="sources" type="CSVReader" id="9943" servers="1">
       <Property name="FileName" id="9943.FileName" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/git/github/ttk-data-tierny/3blobs.csv"/>
+        <Element index="0" value="3blobs.csv"/>
         <Domain name="files" id="9943.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="9943.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/git/github/ttk-data-tierny/3blobs.csv"/>
+        <Element index="0" value="3blobs.csv"/>
       </Property>
       <Property name="TimestepValues" id="9943.TimestepValues"/>
       <Property name="AddTabFieldDelimiter" id="9943.AddTabFieldDelimiter" number_of_elements="1">
@@ -35936,11 +35936,11 @@
     </Proxy>
     <Proxy group="sources" type="CSVReader" id="10808" servers="1">
       <Property name="FileName" id="10808.FileName" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/git/github/ttk-data-tierny/3rings.csv"/>
+        <Element index="0" value="3rings.csv"/>
         <Domain name="files" id="10808.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="10808.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/julien/Pro/git/github/ttk-data-tierny/3rings.csv"/>
+        <Element index="0" value="3rings.csv"/>
       </Property>
       <Property name="TimestepValues" id="10808.TimestepValues"/>
       <Property name="AddTabFieldDelimiter" id="10808.AddTabFieldDelimiter" number_of_elements="1">
