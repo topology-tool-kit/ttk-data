@@ -23,7 +23,7 @@ ttkTopologicalSimplificationByPersistence.PersistenceThreshold = 0.05
 ttkTopologicalSimplificationByPersistence.ThresholdIsAbsolute = True
 
 # create a new 'TTK Merge and Contour Tree ()'
-ttkMergeandContourTree = TTKMergeAndContourTree(
+ttkMergeandContourTree = TTKContourTree(
     Input=ttkTopologicalSimplificationByPersistence
 )
 ttkMergeandContourTree.ScalarField = ["POINTS", "nrrd"]

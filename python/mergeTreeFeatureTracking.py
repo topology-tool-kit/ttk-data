@@ -14,7 +14,7 @@ WHERE TimeStep == 2 or TimeStep == 32"""
 tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaQuery1)
 
 # create a new 'TTK Merge and Contour Tree'
-tTKMergeandContourTreeFTM4 = TTKMergeAndContourTree(Input=tTKCinemaProductReader1)
+tTKMergeandContourTreeFTM4 = TTKMergeTree(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM4.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM4.TreeType = "Split Tree"
 
@@ -53,7 +53,7 @@ tTKCinemaProductReader2 = TTKCinemaProductReader(Input=tTKCinemaQuery2)
 tTKCinemaProductReader2.AddFieldDataRecursively = 1
 
 # create a new 'TTK Merge and Contour Tree'
-tTKMergeandContourTreeFTM5 = TTKMergeAndContourTree(Input=tTKCinemaProductReader2)
+tTKMergeandContourTreeFTM5 = TTKMergeTree(Input=tTKCinemaProductReader2)
 tTKMergeandContourTreeFTM5.ScalarField = ["POINTS", "velocityMag"]
 tTKMergeandContourTreeFTM5.TreeType = "Split Tree"
 

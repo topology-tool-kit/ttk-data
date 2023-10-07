@@ -5,7 +5,7 @@
 
 ## Pipeline description
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
-Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html) is computed on each scalar field to compute the Split Tree.
+Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) is computed on each scalar field to compute the Split Tree.
 
 All these trees are passed to [MergeTreePrincipalGeodesics](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesics.html) to compute principal geodesic analysis in the metric space of merge trees. 
 
@@ -58,7 +58,7 @@ pvpython python/mergeTreePGA.py
 
 [FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
 
-[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 

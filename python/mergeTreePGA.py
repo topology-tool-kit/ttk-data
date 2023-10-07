@@ -10,7 +10,7 @@ tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 tTKCinemaProductReader1.AddFieldDataRecursively = 1
 
 # create a new 'TTK Merge and Contour Tree'
-tTKMergeandContourTreeFTM1 = TTKMergeAndContourTree(Input=tTKCinemaProductReader1)
+tTKMergeandContourTreeFTM1 = TTKMergeTree(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", "VectorMag"]
 tTKMergeandContourTreeFTM1.TreeType = "Split Tree"
 
