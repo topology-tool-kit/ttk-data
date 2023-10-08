@@ -4,7 +4,7 @@
 
 ## Pipeline description
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
-Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html) is computed on each scalar field.
+Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) is computed on each scalar field.
 
 All these trees are passed to [MergeTreeTemporalReductionEncoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeTemporalReductionEncoding.html) to compute a subsampling of a sequence of merge trees. The algorithm greedily removes trees in the sequence that can be accurately reconstructed by the geodesic computation. The remaining trees are called the key frames.
 
@@ -42,7 +42,7 @@ pvpython python/mergeTreeTemporalReduction.py
 
 [CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
 
-[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
 [MergeTreeTemporalReductionEncoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeTemporalReductionEncoding.html)
 

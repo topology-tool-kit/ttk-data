@@ -37,7 +37,7 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "Scalars_"]
 
 # create a new 'TTK Merge and Contour Tree ()'
-tTKMergeandContourTree1 = TTKMergeAndContourTree(
+tTKMergeandContourTree1 = TTKMergeTree(
     Input=tTKTopologicalSimplification1
 )
 tTKMergeandContourTree1.ScalarField = ["POINTS", "Scalars_"]

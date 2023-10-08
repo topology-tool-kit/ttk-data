@@ -44,7 +44,7 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "log(s)"]
 
 # create a new 'TTK Merge and Contour Tree' to compute the join tree
-tTKJoinTree1 = TTKMergeAndContourTree(Input=tTKTopologicalSimplification1)
+tTKJoinTree1 = TTKMergeTree(Input=tTKTopologicalSimplification1)
 tTKJoinTree1.ScalarField = ["POINTS", "log(s)"]
 tTKJoinTree1.TreeType = "Join Tree"
 tTKJoinTree1.ArcSampling = 30

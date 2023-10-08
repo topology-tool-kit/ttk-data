@@ -5,7 +5,7 @@
 ## Pipeline description
 This example first loads two pairs of timesteps of an ensemble of scalar fields inside a cinema database from disk.
 
-Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html) is computed on each scalar field for the Split Tree.
+Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) is computed on each scalar field for the Split Tree.
 
 These two pairs of timesteps are given respectively to two [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html) filters to compute a distance between them.
 
@@ -47,7 +47,7 @@ pvpython python/mergeTreeFeatureTracking.py
 
 [CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
 
-[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeAndContourTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
 [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
 
