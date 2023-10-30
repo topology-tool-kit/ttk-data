@@ -17364,11 +17364,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLImageDataReader" id="18688" servers="1">
       <Property name="FileName" id="18688.FileName" number_of_elements="1">
-        <Element index="0" value="/Users/mswill/Documents/phd/ttk-data/at.vti"/>
+        <Element index="0" value="at.vti"/>
         <Domain name="files" id="18688.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="18688.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/Users/mswill/Documents/phd/ttk-data/at.vti"/>
+        <Element index="0" value="at.vti"/>
       </Property>
       <Property name="TimestepValues" id="18688.TimestepValues"/>
       <Property name="CellArrayInfo" id="18688.CellArrayInfo"/>
