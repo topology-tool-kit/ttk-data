@@ -74312,7 +74312,7 @@
         <Domain name="bool" id="18905.NonManifoldEdges.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkftmtree" id="24675" servers="1">
+    <Proxy group="filters" type="ContourTree" id="24675" servers="1">
       <Property name="AdvancedStats" id="24675.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="24675.AdvancedStats.bool"/>

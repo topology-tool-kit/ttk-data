@@ -22,15 +22,15 @@ ttkTopologicalSimplificationByPersistence.InputArray = ["POINTS", "nrrd"]
 ttkTopologicalSimplificationByPersistence.PersistenceThreshold = 0.05
 ttkTopologicalSimplificationByPersistence.ThresholdIsAbsolute = True
 
-# create a new 'TTK Merge and Contour Tree (FTM)'
-ttkMergeandContourTreeFTM = TTKMergeandContourTreeFTM(
+# create a new 'TTK Merge and Contour Tree ()'
+ttkMergeandContourTree = TTKContourTree(
     Input=ttkTopologicalSimplificationByPersistence
 )
-ttkMergeandContourTreeFTM.ScalarField = ["POINTS", "nrrd"]
+ttkMergeandContourTree.ScalarField = ["POINTS", "nrrd"]
 
 # create a new 'TTK ContourTreeAlignment'
 contourTreeAlignment = TTKContourTreeAlignment(
-    Input=OutputPort(ttkMergeandContourTreeFTM, 1), ExportPath=""
+    Input=OutputPort(ttkMergeandContourTree, 1), ExportPath=""
 )
 contourTreeAlignment.ScalarField = ["POINTS", "Scalar"]
 contourTreeAlignment.Regionsizearray = ["CELLS", "RegionSize"]
@@ -61,7 +61,7 @@ QuerySelect(
 selectedVertex = ExtractSelection(Input=alignmentEdges)
 
 # create a new 'TTK GridLayout'
-segmentationsGrid = TTKGridLayout(Input=OutputPort(ttkMergeandContourTreeFTM, 2))
+segmentationsGrid = TTKGridLayout(Input=OutputPort(ttkMergeandContourTree, 2))
 segmentationsGrid.ColumnGap = 10.0
 segmentationsGrid.RowGap = 10.0
 

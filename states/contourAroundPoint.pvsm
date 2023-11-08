@@ -40620,7 +40620,7 @@
         <Domain name="bool" id="15454.ui_spherical.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkftmtree" id="16024" servers="1">
+    <Proxy group="filters" type="ContourTree" id="16024" servers="1">
       <Property name="AdvancedStats" id="16024.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="16024.AdvancedStats.bool"/>
@@ -40690,7 +40690,7 @@
         <Domain name="bool" id="16024.UseAllCores.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="filters" type="ttkftmtree" id="14740" servers="1">
+    <Proxy group="filters" type="ContourTree" id="14740" servers="1">
       <Property name="AdvancedStats" id="14740.AdvancedStats" number_of_elements="1">
         <Element index="0" value="1"/>
         <Domain name="bool" id="14740.AdvancedStats.bool"/>

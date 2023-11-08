@@ -32978,9 +32978,9 @@
       <Property name="SelectionPointFieldDataArrayName" id="16796.SelectionPointFieldDataArrayName" number_of_elements="1">
         <Element index="0" value="negdensity"/>
         <Domain name="array_list" id="16796.SelectionPointFieldDataArrayName.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -33112,9 +33112,9 @@
         <Element index="3" value=""/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="16796.ColorArray2Name.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -33127,9 +33127,9 @@
         <Element index="3" value="0"/>
         <Element index="4" value=""/>
         <Domain name="array_list" id="16796.ColorArrayName.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -33249,9 +33249,9 @@
       <Property name="GlyphTableIndexArray" id="16796.GlyphTableIndexArray" number_of_elements="1">
         <Element index="0" value="negdensity"/>
         <Domain name="array_list" id="16796.GlyphTableIndexArray.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="None"/>
           <String text="density"/>
           <String text="negdensity"/>
@@ -33453,9 +33453,9 @@
       <Property name="OSPRayScaleArray" id="16796.OSPRayScaleArray" number_of_elements="1">
         <Element index="0" value="negdensity"/>
         <Domain name="array_list" id="16796.OSPRayScaleArray.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -33492,9 +33492,9 @@
         <Element index="3" value="0"/>
         <Element index="4" value="negdensity"/>
         <Domain name="array_list" id="16796.OpacityArray.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -33513,9 +33513,9 @@
         <Element index="3" value="0"/>
         <Element index="4" value="negdensity"/>
         <Domain name="array_list" id="16796.OpacityArrayName.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -33672,9 +33672,9 @@
       <Property name="SelectScaleArray" id="16796.SelectScaleArray" number_of_elements="1">
         <Element index="0" value="negdensity"/>
         <Domain name="array_list" id="16796.SelectScaleArray.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="None"/>
           <String text="density"/>
           <String text="negdensity"/>
@@ -33840,9 +33840,9 @@
         <Element index="3" value="0"/>
         <Element index="4" value="negdensity"/>
         <Domain name="array_list" id="16796.SetScaleArray.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -38911,11 +38911,11 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="DescendingSegmentation"/>
+        <Element index="4" value="negdensity_DescendingManifold"/>
         <Domain name="array_list" id="16826.Scalar Field.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>
@@ -38959,11 +38959,11 @@
         <Element index="1" value=""/>
         <Element index="2" value=""/>
         <Element index="3" value="0"/>
-        <Element index="4" value="AscendingSegmentation"/>
+        <Element index="4" value="negdensity_AscendingManifold"/>
         <Domain name="array_list" id="17815.Scalar Field.array_list">
-          <String text="AscendingSegmentation"/>
-          <String text="DescendingSegmentation"/>
-          <String text="MorseSmaleSegmentation"/>
+          <String text="negdensity_AscendingManifold"/>
+          <String text="negdensity_DescendingManifold"/>
+          <String text="negdensity_MorseSmaleManifold"/>
           <String text="density"/>
           <String text="negdensity"/>
           <String text="negdensity_Order"/>

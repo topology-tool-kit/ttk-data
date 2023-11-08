@@ -20,7 +20,7 @@ tTKPathCompression1.ScalarField = ["POINTS", "negdensity"]
 tTKMarchingTetrahedra1 = TTKMarchingTetrahedra(
     registrationName="TTKMarchingTetrahedra1", Input=tTKPathCompression1
 )
-tTKMarchingTetrahedra1.ScalarField = ["POINTS", "DescendingSegmentation"]
+tTKMarchingTetrahedra1.ScalarField = ["POINTS", "negdensity_DescendingManifold"]
 
 # create a new 'Clean to Grid'
 cleantoGrid1 = CleantoGrid(
@@ -37,7 +37,7 @@ tTKGeometrySmoother1.IterationNumber = 20
 tTKMarchingTetrahedra2 = TTKMarchingTetrahedra(
     registrationName="TTKMarchingTetrahedra2", Input=tTKPathCompression1
 )
-tTKMarchingTetrahedra2.ScalarField = ["POINTS", "AscendingSegmentation"]
+tTKMarchingTetrahedra2.ScalarField = ["POINTS", "negdensity_AscendingManifold"]
 
 # create a new 'Clean to Grid'
 cleantoGrid2 = CleantoGrid(

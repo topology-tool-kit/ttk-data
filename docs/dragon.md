@@ -17,7 +17,7 @@ The [PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPers
 
 The simplified persistence diagram is then used as a constraint for the [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html) of the input scalar data.
 
-This simplified data is then used as the input of the computation of [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) and the [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) (bottom left view, above screenshot).
+This simplified data is then used as the input of the computation of [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) and the [ContourTree](https://topology-tool-kit.github.io/doc/html/classttkContourTree.html) (bottom left view, above screenshot).
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
@@ -53,7 +53,7 @@ in VTK file format (bottom right view, above screenshot). You are free to change
 
 
 ## C++/Python API
-[ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+[ContourTree](https://topology-tool-kit.github.io/doc/html/classttkContourTree.html)
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
