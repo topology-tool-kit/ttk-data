@@ -1,5 +1,8 @@
 # Merge Trees via ExTreeM
 
+![Merge Tree via ExTreeM example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeExTreeM.jpg)
+
+
 ## Pipeline description
 This example computes the merge tree and the join tree from an electronic density of the Adenine-Thymine molecular complex.
 
