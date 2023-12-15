@@ -8,13 +8,13 @@ This example illustrates the [TopoMap](https://arxiv.org/abs/2009.01512) dimensi
 
 Technically, [TopoMap](https://arxiv.org/abs/2009.01512) provides the guarantee that the 0-dimensional persistent diagram of the Rips filtration of its output is strictly equal to that of its input. Alternatively, [TopoMap](https://arxiv.org/abs/2009.01512) guarantees that the hierarchical clustering (with single linkage) of its output is strictly identical to that of its input. 
 
-Three toys examples are provided as CSV ASCII files (one line per point, one column per dimension). These are point clouds in 3D, which [TopoMap](https://arxiv.org/abs/2009.01512) projects down to 2D. Each of these point clouds illustrates a specific topological behavior.
+Three toy examples are provided as CSV ASCII files (one line per point, one column per dimension). These are point clouds in 3D, which [TopoMap](https://arxiv.org/abs/2009.01512) projects down to 2D. Each of these point clouds illustrates a specific topological/geometrical behavior.
 
-The dataset [3blobs.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/3blobs.csv) contains 3 main clusters (one color per cluster in the above screenshot, top left), shaped like blobs.
+The dataset [3blobs.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/3blobs.csv) contains 3 main clusters (one color per cluster in the above screenshot, top left view), shaped like blobs.
 
-The dataset [3rings.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/3rings.csv) contains 3 main clusters (one color per cluster in the above screenshot, top center), shaped as interleaved rings.
+The dataset [3rings.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/3rings.csv) contains 3 main clusters (one color per cluster in the above screenshot, top center view), shaped as interleaved rings.
 
-The dataset [2cavities.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/2cavities.csv) contains 2 main clusters (one color per cluster in the above screenshot, top right), one (in red) completely enclosed by the other (in blue).
+The dataset [2cavities.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/2cavities.csv) contains 2 main clusters (one color per cluster in the above screenshot, top right view), one (in red) completely enclosed by the other (in blue).
 
 For each of these datasets, [TopoMap](https://arxiv.org/abs/2009.01512) computes a 2D projection (corresponding bottom views in the above screenshot), which separates well the ground truth clusters (shown with colors).
 
