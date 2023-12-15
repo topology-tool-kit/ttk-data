@@ -12642,8 +12642,8 @@
         <Domain name="bool" id="18521.UseLogScale.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20340" servers="16">
-      <Property name="Source" id="20340.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20332" servers="16">
+      <Property name="Source" id="20332.Source" number_of_elements="1">
         <Proxy value="18628"/>
       </Property>
     </Proxy>
@@ -12812,8 +12812,8 @@
         <Proxy value="18639"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20332" servers="16">
-      <Property name="Source" id="20332.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20334" servers="16">
+      <Property name="Source" id="20334.Source" number_of_elements="1">
         <Proxy value="18650"/>
       </Property>
     </Proxy>
@@ -16526,13 +16526,13 @@
         <Domain name="bool" id="18116.ZTitleShadow.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20334" servers="16">
-      <Property name="Source" id="20334.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20335" servers="16">
+      <Property name="Source" id="20335.Source" number_of_elements="1">
         <Proxy value="19360"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20335" servers="16">
-      <Property name="Source" id="20335.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20336" servers="16">
+      <Property name="Source" id="20336.Source" number_of_elements="1">
         <Proxy value="19371"/>
       </Property>
     </Proxy>
@@ -17640,8 +17640,8 @@
         <Domain name="bool" id="19509.UseLogScale.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20336" servers="16">
-      <Property name="Source" id="20336.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20337" servers="16">
+      <Property name="Source" id="20337.Source" number_of_elements="1">
         <Proxy value="19606"/>
       </Property>
     </Proxy>
@@ -19146,13 +19146,13 @@
         <Domain name="bool" id="19340.ZTitleShadow.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20337" servers="16">
-      <Property name="Source" id="20337.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20338" servers="16">
+      <Property name="Source" id="20338.Source" number_of_elements="1">
         <Proxy value="19852"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20338" servers="16">
-      <Property name="Source" id="20338.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20339" servers="16">
+      <Property name="Source" id="20339.Source" number_of_elements="1">
         <Proxy value="19863"/>
       </Property>
     </Proxy>
@@ -20260,8 +20260,8 @@
         <Domain name="bool" id="20001.UseLogScale.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20339" servers="16">
-      <Property name="Source" id="20339.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20340" servers="16">
+      <Property name="Source" id="20340.Source" number_of_elements="1">
         <Proxy value="20098"/>
       </Property>
     </Proxy>
@@ -39799,9 +39799,9 @@
         <Domain name="bool" id="16888.CenterAxesVisibility.bool"/>
       </Property>
       <Property name="CenterOfRotation" id="16888.CenterOfRotation" number_of_elements="3">
-        <Element index="0" value="-3.1619499999999996"/>
-        <Element index="1" value="3.0955"/>
-        <Element index="2" value="0.03785000000000005"/>
+        <Element index="0" value="-3.161949999999999"/>
+        <Element index="1" value="3.0954999999999995"/>
+        <Element index="2" value="0.03785000000000016"/>
       </Property>
       <Property name="CollectGeometryThreshold" id="16888.CollectGeometryThreshold" number_of_elements="1">
         <Element index="0" value="100"/>
@@ -40164,7 +40164,7 @@
         <Domain name="bool" id="16888.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="16888.ViewSize" number_of_elements="2">
-        <Element index="0" value="839"/>
+        <Element index="0" value="888"/>
         <Element index="1" value="918"/>
       </Property>
       <Property name="ViewTime" id="16888.ViewTime" number_of_elements="1">
@@ -40190,30 +40190,30 @@
         <Element index="0" value="0"/>
       </Property>
       <Property name="CameraFocalPoint" id="16888.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="-3.1477609106497177"/>
-        <Element index="1" value="2.6153880599689"/>
-        <Element index="2" value="0.15888702055018394"/>
+        <Element index="0" value="-3.161949999999999"/>
+        <Element index="1" value="3.0954999999999995"/>
+        <Element index="2" value="0.03785000000000016"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="16888.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="-3.1477609106497177"/>
-        <Element index="1" value="2.6153880599689"/>
-        <Element index="2" value="0.15888702055018394"/>
+        <Element index="0" value="-3.161949999999999"/>
+        <Element index="1" value="3.0954999999999995"/>
+        <Element index="2" value="0.03785000000000016"/>
       </Property>
       <Property name="CameraParallelScale" id="16888.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="7.8803530235009145"/>
+        <Element index="0" value="8.31360818903279"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="16888.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="7.8803530235009145"/>
+        <Element index="0" value="8.31360818903279"/>
       </Property>
       <Property name="CameraPosition" id="16888.CameraPosition" number_of_elements="3">
-        <Element index="0" value="-15.813520687564457"/>
-        <Element index="1" value="9.031248078477555"/>
-        <Element index="2" value="27.09318020456252"/>
+        <Element index="0" value="-16.495258121609993"/>
+        <Element index="1" value="9.84950765517536"/>
+        <Element index="2" value="28.391713991228745"/>
       </Property>
       <Property name="CameraPositionInfo" id="16888.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="-15.813520687564457"/>
-        <Element index="1" value="9.031248078477555"/>
-        <Element index="2" value="27.09318020456252"/>
+        <Element index="0" value="-16.495258121609993"/>
+        <Element index="1" value="9.84950765517536"/>
+        <Element index="2" value="28.391713991228745"/>
       </Property>
       <Property name="CameraViewAngle" id="16888.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -40750,7 +40750,7 @@
         <Domain name="bool" id="18108.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="18108.ViewSize" number_of_elements="2">
-        <Element index="0" value="835"/>
+        <Element index="0" value="884"/>
         <Element index="1" value="918"/>
       </Property>
       <Property name="ViewTime" id="18108.ViewTime" number_of_elements="1">
@@ -40776,30 +40776,30 @@
         <Element index="0" value="0"/>
       </Property>
       <Property name="CameraFocalPoint" id="18108.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="-0.1197457954772687"/>
-        <Element index="1" value="-0.08135955003087124"/>
-        <Element index="2" value="-0.07739821395391772"/>
+        <Element index="0" value="0.003550000000000164"/>
+        <Element index="1" value="0.04015000000000013"/>
+        <Element index="2" value="0"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="18108.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="-0.1197457954772687"/>
-        <Element index="1" value="-0.08135955003087124"/>
-        <Element index="2" value="-0.07739821395391772"/>
+        <Element index="0" value="0.003550000000000164"/>
+        <Element index="1" value="0.04015000000000013"/>
+        <Element index="2" value="0"/>
       </Property>
       <Property name="CameraParallelScale" id="18108.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="9.905046110181415"/>
+        <Element index="0" value="5.948164103052448"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="18108.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="9.905046110181415"/>
+        <Element index="0" value="5.948164103052448"/>
       </Property>
       <Property name="CameraPosition" id="18108.CameraPosition" number_of_elements="3">
-        <Element index="0" value="-12.575914504362336"/>
-        <Element index="1" value="1.7697944309773688"/>
-        <Element index="2" value="16.859172739367118"/>
+        <Element index="0" value="-13.52717829085219"/>
+        <Element index="1" value="2.0509979683391997"/>
+        <Element index="2" value="18.397642574049442"/>
       </Property>
       <Property name="CameraPositionInfo" id="18108.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="-12.575914504362336"/>
-        <Element index="1" value="1.7697944309773688"/>
-        <Element index="2" value="16.859172739367118"/>
+        <Element index="0" value="-13.52717829085219"/>
+        <Element index="1" value="2.0509979683391997"/>
+        <Element index="2" value="18.397642574049442"/>
       </Property>
       <Property name="CameraViewAngle" id="18108.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -40971,9 +40971,9 @@
         <Domain name="bool" id="19332.CenterAxesVisibility.bool"/>
       </Property>
       <Property name="CenterOfRotation" id="19332.CenterOfRotation" number_of_elements="3">
-        <Element index="0" value="0.0034000000000000696"/>
-        <Element index="1" value="-0.015550000000000064"/>
-        <Element index="2" value="0.016800000000000037"/>
+        <Element index="0" value="0.0034000277519226074"/>
+        <Element index="1" value="-0.015549957752227783"/>
+        <Element index="2" value="-0.008199989795684814"/>
       </Property>
       <Property name="CollectGeometryThreshold" id="19332.CollectGeometryThreshold" number_of_elements="1">
         <Element index="0" value="100"/>
@@ -41338,7 +41338,7 @@
         <Domain name="bool" id="19332.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="19332.ViewSize" number_of_elements="2">
-        <Element index="0" value="835"/>
+        <Element index="0" value="884"/>
         <Element index="1" value="918"/>
       </Property>
       <Property name="ViewTime" id="19332.ViewTime" number_of_elements="1">
@@ -41364,30 +41364,30 @@
         <Element index="0" value="0"/>
       </Property>
       <Property name="CameraFocalPoint" id="19332.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="-0.1110928335333177"/>
-        <Element index="1" value="-0.1851503551233023"/>
-        <Element index="2" value="0.44580676800040003"/>
+        <Element index="0" value="0.0034000277519226074"/>
+        <Element index="1" value="-0.015549957752227783"/>
+        <Element index="2" value="-0.008199989795684814"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="19332.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="-0.1110928335333177"/>
-        <Element index="1" value="-0.1851503551233023"/>
-        <Element index="2" value="0.44580676800040003"/>
+        <Element index="0" value="0.0034000277519226074"/>
+        <Element index="1" value="-0.015549957752227783"/>
+        <Element index="2" value="-0.008199989795684814"/>
       </Property>
       <Property name="CameraParallelScale" id="19332.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="3.8993814189952127"/>
+        <Element index="0" value="2.3679811493129255"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="19332.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="3.8993814189952127"/>
+        <Element index="0" value="2.3679811493129255"/>
       </Property>
       <Property name="CameraPosition" id="19332.CameraPosition" number_of_elements="3">
-        <Element index="0" value="-2.5790088149384736"/>
-        <Element index="1" value="1.701505246585159"/>
-        <Element index="2" value="6.56957607747798"/>
+        <Element index="0" value="-3.27686183542084"/>
+        <Element index="1" value="2.4921222911635774"/>
+        <Element index="2" value="8.131285744767233"/>
       </Property>
       <Property name="CameraPositionInfo" id="19332.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="-2.5790088149384736"/>
-        <Element index="1" value="1.701505246585159"/>
-        <Element index="2" value="6.56957607747798"/>
+        <Element index="0" value="-3.27686183542084"/>
+        <Element index="1" value="2.4921222911635774"/>
+        <Element index="2" value="8.131285744767233"/>
       </Property>
       <Property name="CameraViewAngle" id="19332.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -41923,7 +41923,7 @@
         <Domain name="bool" id="17380.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="17380.ViewSize" number_of_elements="2">
-        <Element index="0" value="835"/>
+        <Element index="0" value="884"/>
         <Element index="1" value="917"/>
       </Property>
       <Property name="ViewTime" id="17380.ViewTime" number_of_elements="1">
@@ -41959,20 +41959,20 @@
         <Element index="2" value="1"/>
       </Property>
       <Property name="CameraParallelScale" id="17380.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="22.18825551490105"/>
+        <Element index="0" value="17.320961589826833"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="17380.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="22.18825551490105"/>
+        <Element index="0" value="17.320961589826833"/>
       </Property>
       <Property name="CameraPosition" id="17380.CameraPosition" number_of_elements="3">
         <Element index="0" value="-6.83945936200333"/>
         <Element index="1" value="9.966563044595866"/>
-        <Element index="2" value="86.23685709751429"/>
+        <Element index="2" value="81.784975184179"/>
       </Property>
       <Property name="CameraPositionInfo" id="17380.CameraPositionInfo" number_of_elements="3">
         <Element index="0" value="-6.83945936200333"/>
         <Element index="1" value="9.966563044595866"/>
-        <Element index="2" value="86.23685709751429"/>
+        <Element index="2" value="81.784975184179"/>
       </Property>
       <Property name="CameraViewAngle" id="17380.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -42508,7 +42508,7 @@
         <Domain name="bool" id="19824.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="19824.ViewSize" number_of_elements="2">
-        <Element index="0" value="837"/>
+        <Element index="0" value="886"/>
         <Element index="1" value="917"/>
       </Property>
       <Property name="ViewTime" id="19824.ViewTime" number_of_elements="1">
@@ -42544,20 +42544,20 @@
         <Element index="2" value="1"/>
       </Property>
       <Property name="CameraParallelScale" id="19824.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="12.518789896046718"/>
+        <Element index="0" value="9.773918570780648"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="19824.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="12.518789896046718"/>
+        <Element index="0" value="9.773918570780648"/>
       </Property>
       <Property name="CameraPosition" id="19824.CameraPosition" number_of_elements="3">
         <Element index="0" value="7.135092066714419"/>
         <Element index="1" value="2.0693887150437513"/>
-        <Element index="2" value="49.09779067582285"/>
+        <Element index="2" value="46.59201984426343"/>
       </Property>
       <Property name="CameraPositionInfo" id="19824.CameraPositionInfo" number_of_elements="3">
         <Element index="0" value="7.135092066714419"/>
         <Element index="1" value="2.0693887150437513"/>
-        <Element index="2" value="49.09779067582285"/>
+        <Element index="2" value="46.59201984426343"/>
       </Property>
       <Property name="CameraViewAngle" id="19824.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -43093,7 +43093,7 @@
         <Domain name="bool" id="20316.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="20316.ViewSize" number_of_elements="2">
-        <Element index="0" value="837"/>
+        <Element index="0" value="886"/>
         <Element index="1" value="917"/>
       </Property>
       <Property name="ViewTime" id="20316.ViewTime" number_of_elements="1">
@@ -43129,20 +43129,20 @@
         <Element index="2" value="1"/>
       </Property>
       <Property name="CameraParallelScale" id="20316.CameraParallelScale" number_of_elements="1">
-        <Element index="0" value="18.126687575848866"/>
+        <Element index="0" value="14.152227954578567"/>
       </Property>
       <Property name="CameraParallelScaleInfo" id="20316.CameraParallelScaleInfo" number_of_elements="1">
-        <Element index="0" value="18.126687575848866"/>
+        <Element index="0" value="14.152227954578567"/>
       </Property>
       <Property name="CameraPosition" id="20316.CameraPosition" number_of_elements="3">
         <Element index="0" value="-27.199428347515315"/>
         <Element index="1" value="72.82538785653905"/>
-        <Element index="2" value="70.64360228974994"/>
+        <Element index="2" value="67.01535024801736"/>
       </Property>
       <Property name="CameraPositionInfo" id="20316.CameraPositionInfo" number_of_elements="3">
         <Element index="0" value="-27.199428347515315"/>
         <Element index="1" value="72.82538785653905"/>
-        <Element index="2" value="70.64360228974994"/>
+        <Element index="2" value="67.01535024801736"/>
       </Property>
       <Property name="CameraViewAngle" id="20316.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -43383,7 +43383,7 @@
       <Item id="18521" name="ScaleTransferFunction" logname="Outline3(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18628">
-      <Item id="20340" name="RepresentationAnimationHelper"/>
+      <Item id="20332" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18639">
       <Item id="18618" name="ClipFunction" logname="Clip1/ClipFunction/Box"/>
@@ -43399,7 +43399,7 @@
       <Item id="20333" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18650">
-      <Item id="20332" name="RepresentationAnimationHelper"/>
+      <Item id="20334" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18855">
       <Item id="18607" name="DataAxesGrid" logname="TTKIcospheresFromPoints3(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -43450,10 +43450,10 @@
       <Item id="18116" name="AxesGrid" logname="RenderView3/AxesGrid/GridAxes3DActor"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19360">
-      <Item id="20334" name="RepresentationAnimationHelper"/>
+      <Item id="20335" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19371">
-      <Item id="20335" name="RepresentationAnimationHelper"/>
+      <Item id="20336" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19576">
       <Item id="19349" name="DataAxesGrid" logname="TableToPoints5(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -43471,7 +43471,7 @@
       <Item id="19509" name="ScaleTransferFunction" logname="TableToPoints5(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19606">
-      <Item id="20336" name="RepresentationAnimationHelper"/>
+      <Item id="20337" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19811">
       <Item id="19595" name="DataAxesGrid" logname="TTKIcospheresFromPoints5(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -43492,10 +43492,10 @@
       <Item id="19340" name="AxesGrid" logname="RenderView5/AxesGrid/GridAxes3DActor"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19852">
-      <Item id="20337" name="RepresentationAnimationHelper"/>
+      <Item id="20338" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19863">
-      <Item id="20338" name="RepresentationAnimationHelper"/>
+      <Item id="20339" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.20068">
       <Item id="19841" name="DataAxesGrid" logname="TableToPoints6(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -43513,7 +43513,7 @@
       <Item id="20001" name="ScaleTransferFunction" logname="TableToPoints6(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.20098">
-      <Item id="20339" name="RepresentationAnimationHelper"/>
+      <Item id="20340" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.20303">
       <Item id="20087" name="DataAxesGrid" logname="TTKIcospheresFromPoints6(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
