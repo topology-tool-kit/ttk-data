@@ -38411,7 +38411,7 @@
         <Domain name="range" id="16916.topomap_AngularSampleNb.range"/>
       </Property>
       <Property name="topomap_CheckMST" id="16916.topomap_CheckMST" number_of_elements="1">
-        <Element index="0" value="0"/>
+        <Element index="0" value="1"/>
         <Domain name="bool" id="16916.topomap_CheckMST.bool"/>
       </Property>
       <Property name="topomap_Strategy" id="16916.topomap_Strategy" number_of_elements="1">
@@ -38706,7 +38706,7 @@
         <Domain name="range" id="19360.topomap_AngularSampleNb.range"/>
       </Property>
       <Property name="topomap_CheckMST" id="19360.topomap_CheckMST" number_of_elements="1">
-        <Element index="0" value="0"/>
+        <Element index="0" value="1"/>
         <Domain name="bool" id="19360.topomap_CheckMST.bool"/>
       </Property>
       <Property name="topomap_Strategy" id="19360.topomap_Strategy" number_of_elements="1">
@@ -39001,7 +39001,7 @@
         <Domain name="range" id="19852.topomap_AngularSampleNb.range"/>
       </Property>
       <Property name="topomap_CheckMST" id="19852.topomap_CheckMST" number_of_elements="1">
-        <Element index="0" value="0"/>
+        <Element index="0" value="1"/>
         <Domain name="bool" id="19852.topomap_CheckMST.bool"/>
       </Property>
       <Property name="topomap_Strategy" id="19852.topomap_Strategy" number_of_elements="1">
@@ -40164,7 +40164,7 @@
         <Domain name="bool" id="16888.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="16888.ViewSize" number_of_elements="2">
-        <Element index="0" value="888"/>
+        <Element index="0" value="865"/>
         <Element index="1" value="918"/>
       </Property>
       <Property name="ViewTime" id="16888.ViewTime" number_of_elements="1">
@@ -40750,7 +40750,7 @@
         <Domain name="bool" id="18108.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="18108.ViewSize" number_of_elements="2">
-        <Element index="0" value="884"/>
+        <Element index="0" value="861"/>
         <Element index="1" value="918"/>
       </Property>
       <Property name="ViewTime" id="18108.ViewTime" number_of_elements="1">
@@ -41338,7 +41338,7 @@
         <Domain name="bool" id="19332.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="19332.ViewSize" number_of_elements="2">
-        <Element index="0" value="884"/>
+        <Element index="0" value="861"/>
         <Element index="1" value="918"/>
       </Property>
       <Property name="ViewTime" id="19332.ViewTime" number_of_elements="1">
@@ -41923,7 +41923,7 @@
         <Domain name="bool" id="17380.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="17380.ViewSize" number_of_elements="2">
-        <Element index="0" value="884"/>
+        <Element index="0" value="861"/>
         <Element index="1" value="917"/>
       </Property>
       <Property name="ViewTime" id="17380.ViewTime" number_of_elements="1">
@@ -42508,7 +42508,7 @@
         <Domain name="bool" id="19824.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="19824.ViewSize" number_of_elements="2">
-        <Element index="0" value="886"/>
+        <Element index="0" value="863"/>
         <Element index="1" value="917"/>
       </Property>
       <Property name="ViewTime" id="19824.ViewTime" number_of_elements="1">
@@ -43093,7 +43093,7 @@
         <Domain name="bool" id="20316.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="20316.ViewSize" number_of_elements="2">
-        <Element index="0" value="886"/>
+        <Element index="0" value="863"/>
         <Element index="1" value="917"/>
       </Property>
       <Property name="ViewTime" id="20316.ViewTime" number_of_elements="1">
