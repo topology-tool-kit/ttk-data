@@ -5,7 +5,7 @@ import paraview
 from paraview.simple import *
 
 # create a new 'TTK CinemaReader'
-tTKCinemaReader1 = TTKCinemaReader(DatabasePath='/home/keanu/ttk-data/Isabel.cdb')
+tTKCinemaReader1 = TTKCinemaReader(DatabasePath='./Isabel.cdb')
 
 # create a new 'TTK CinemaProductReader'
 tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
