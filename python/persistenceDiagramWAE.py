@@ -42,8 +42,8 @@ tTKMergeTreeAutoencoderDecoding1 = TTKMergeTreeAutoencoderDecoding(
 )
 
 # save the output
-SaveData("MT-WAE_processed_diagrams.vtm", OutputPort(tTKMergeTreeAutoencoder1, 0))
-SaveData("MT-WAE_origins.vtm", OutputPort(tTKMergeTreeAutoencoder1, 1))
-SaveData("MT-WAE_axes.vtm", OutputPort(tTKMergeTreeAutoencoder1, 2))
-SaveData("MT-WAE_coef.vtm", OutputPort(tTKMergeTreeAutoencoder1, 3))
-SaveData("MT-WAE_reconstructed_diagrams.vtm", tTKMergeTreeAutoencoderDecoding1)
+SaveData("PD-WAE_processed_diagrams.vtm", OutputPort(tTKMergeTreeAutoencoder1, 0))
+SaveData("PD-WAE_origins.vtm", OutputPort(tTKMergeTreeAutoencoder1, 1))
+SaveData("PD-WAE_axes.vtm", OutputPort(tTKMergeTreeAutoencoder1, 2))
+SaveData("PD-WAE_coef.vtm", OutputPort(tTKMergeTreeAutoencoder1, 3))
+SaveData("PD-WAE_reconstructed_diagrams.vtm", tTKMergeTreeAutoencoderDecoding1)
