@@ -1,0 +1,49 @@
+<VTKFile type="vtkMultiBlockDataSet" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <vtkMultiBlockDataSet>
+    <DataSet index="0" name="Coef0" file="Coefficients/Coefficients_0_0.vtt"/>
+    <DataSet index="1" name="Coef1" file="Coefficients/Coefficients_1_0.vtt"/>
+    <DataSet index="2" name="Coef2" file="Coefficients/Coefficients_2_0.vtt"/>
+    <DataSet index="3" name="Coef3" file="Coefficients/Coefficients_3_0.vtt"/>
+  </vtkMultiBlockDataSet>
+  <FieldData>
+    <DataArray type="Float64" Name="epsilon1" NumberOfTuples="1" format="binary" RangeMin="0.5" RangeMax="0.5">
+      CAAAAAAAAAAAAAAAAADgPw==
+    </DataArray>
+    <DataArray type="Float64" Name="epsilon2" NumberOfTuples="1" format="binary" RangeMin="35" RangeMax="35">
+      CAAAAAAAAAAAAAAAAIBBQA==
+    </DataArray>
+    <DataArray type="Float64" Name="epsilon3" NumberOfTuples="1" format="binary" RangeMin="34" RangeMax="34">
+      CAAAAAAAAAAAAAAAAABBQA==
+    </DataArray>
+    <DataArray type="Float64" Name="persistenceThreshold" NumberOfTuples="1" format="binary" RangeMin="2" RangeMax="2">
+      CAAAAAAAAAAAAAAAAAAAQA==
+    </DataArray>
+    <DataArray type="Float64" Name="branchDecomposition" NumberOfTuples="1" format="binary" RangeMin="1" RangeMax="1">
+      CAAAAAAAAAAAAAAAAADwPw==
+    </DataArray>
+    <DataArray type="Float64" Name="normalizedWasserstein" NumberOfTuples="1" format="binary" RangeMin="1" RangeMax="1">
+      CAAAAAAAAAAAAAAAAADwPw==
+    </DataArray>
+    <DataArray type="Float64" Name="keepSubtree" NumberOfTuples="1" format="binary" RangeMin="0" RangeMax="0">
+      CAAAAAAAAAAAAAAAAAAAAA==
+    </DataArray>
+    <DataArray type="Float64" Name="isPersistenceDiagram" NumberOfTuples="1" format="binary" RangeMin="0" RangeMax="0">
+      CAAAAAAAAAAAAAAAAAAAAA==
+    </DataArray>
+    <DataArray type="Float64" Name="deleteMultiPersPairs" NumberOfTuples="1" format="binary" RangeMin="1" RangeMax="1">
+      CAAAAAAAAAAAAAAAAADwPw==
+    </DataArray>
+    <DataArray type="Float64" Name="epsilon1UseFarthestSaddle" NumberOfTuples="1" format="binary" RangeMin="0" RangeMax="0">
+      CAAAAAAAAAAAAAAAAAAAAA==
+    </DataArray>
+    <DataArray type="Float64" Name="mixtureCoefficient" NumberOfTuples="1" format="binary" RangeMin="0" RangeMax="0">
+      CAAAAAAAAAAAAAAAAAAAAA==
+    </DataArray>
+    <DataArray type="Float64" Name="activate" NumberOfTuples="1" format="binary" RangeMin="1" RangeMax="1">
+      CAAAAAAAAAAAAAAAAADwPw==
+    </DataArray>
+    <DataArray type="Float64" Name="activationFunction" NumberOfTuples="1" format="binary" RangeMin="1" RangeMax="1">
+      CAAAAAAAAAAAAAAAAADwPw==
+    </DataArray>
+  </FieldData>
+</VTKFile>
