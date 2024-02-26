@@ -1,0 +1,160 @@
+<VTKFile type="Table" version="2.2" byte_order="LittleEndian" header_type="UInt64">
+  <Table>
+    <Piece NumberOfCols="67"                   NumberOfRows="12"                  >
+      <RowData>
+        <DataArray type="Int32" Name="TreeID" format="appended" RangeMin="0"                    RangeMax="11"                   offset="0"                   >
+        </DataArray>
+        <DataArray type="Float32" Name="T00" format="appended" RangeMin="-0.15469498932"       RangeMax="0.87801975012"        offset="56"                  >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT00" format="appended" RangeMin="-0.0015469498467"     RangeMax="0.87801975012"        offset="112"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm00" format="appended" RangeMin="-0.21311783791"       RangeMax="1.2096168995"         offset="168"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm00" format="appended" RangeMin="-0.0021311782766"     RangeMax="1.2096168995"         offset="224"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="T01" format="appended" RangeMin="-0.15610739589"       RangeMax="1.1968559027"         offset="280"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT01" format="appended" RangeMin="-0.0015610739356"     RangeMax="1.1968559027"         offset="336"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm01" format="appended" RangeMin="-0.1922544837"        RangeMax="1.4739911556"         offset="392"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm01" format="appended" RangeMin="-0.0019225449068"     RangeMax="1.4739911556"         offset="448"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="T02" format="appended" RangeMin="-0.16745848954"       RangeMax="1.0143412352"         offset="504"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT02" format="appended" RangeMin="-0.0016745848116"     RangeMax="1.0143412352"         offset="560"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm02" format="appended" RangeMin="-0.18029642105"       RangeMax="1.0921040773"         offset="616"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm02" format="appended" RangeMin="-0.001802964136"      RangeMax="1.0921040773"         offset="672"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="T03" format="appended" RangeMin="-0.163952142"         RangeMax="0.75005960464"        offset="728"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT03" format="appended" RangeMin="-0.0016395213315"     RangeMax="0.75005960464"        offset="784"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm03" format="appended" RangeMin="-0.20313976705"       RangeMax="0.92933785915"        offset="840"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm03" format="appended" RangeMin="-0.0020313975401"     RangeMax="0.92933785915"        offset="896"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="T04" format="appended" RangeMin="-0.14082342386"       RangeMax="1.064556241"          offset="952"                 >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT04" format="appended" RangeMin="-0.0014082342386"     RangeMax="1.064556241"          offset="1008"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm04" format="appended" RangeMin="-0.1622159332"        RangeMax="1.2262731791"         offset="1064"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm04" format="appended" RangeMin="-0.0016221593833"     RangeMax="1.2262731791"         offset="1120"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T05" format="appended" RangeMin="-0.15146404505"       RangeMax="0.99701219797"        offset="1176"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT05" format="appended" RangeMin="-0.0015146404039"     RangeMax="0.99701219797"        offset="1232"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm05" format="appended" RangeMin="-0.15636664629"       RangeMax="1.0292835236"         offset="1288"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm05" format="appended" RangeMin="-0.0015636663884"     RangeMax="1.0292835236"         offset="1344"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T06" format="appended" RangeMin="-0.1554467231"        RangeMax="1.0727885962"         offset="1400"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT06" format="appended" RangeMin="-0.0015544672497"     RangeMax="1.0727885962"         offset="1456"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm06" format="appended" RangeMin="-0.17401781678"       RangeMax="1.200953722"          offset="1512"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm06" format="appended" RangeMin="-0.0017401782097"     RangeMax="1.200953722"          offset="1568"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T07" format="appended" RangeMin="-0.15118123591"       RangeMax="1.100980401"          offset="1624"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT07" format="appended" RangeMin="-0.0015118123265"     RangeMax="1.100980401"          offset="1680"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm07" format="appended" RangeMin="-0.16288782656"       RangeMax="1.1862338781"         offset="1736"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm07" format="appended" RangeMin="-0.0016288782936"     RangeMax="1.1862338781"         offset="1792"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T08" format="appended" RangeMin="-0.11868993938"       RangeMax="1.0190140009"         offset="1848"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT08" format="appended" RangeMin="-0.0011868993752"     RangeMax="1.0190140009"         offset="1904"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm08" format="appended" RangeMin="-0.11405173689"       RangeMax="0.97919267416"        offset="1960"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm08" format="appended" RangeMin="-0.0011405174155"     RangeMax="0.97919267416"        offset="2016"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T09" format="appended" RangeMin="-0.14657852054"       RangeMax="0.87624633312"        offset="2072"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT09" format="appended" RangeMin="-0.0014657852007"     RangeMax="0.87624633312"        offset="2128"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm09" format="appended" RangeMin="-0.12062879652"       RangeMax="0.7211188674"         offset="2184"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm09" format="appended" RangeMin="-0.0012062879978"     RangeMax="0.7211188674"         offset="2240"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T10" format="appended" RangeMin="-0.14911656082"       RangeMax="0.86596828699"        offset="2296"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT10" format="appended" RangeMin="-0.0014911656035"     RangeMax="0.86596828699"        offset="2352"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm10" format="appended" RangeMin="-0.14534270763"       RangeMax="0.84405231476"        offset="2408"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm10" format="appended" RangeMin="-0.0014534271322"     RangeMax="0.84405231476"        offset="2464"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T11" format="appended" RangeMin="-0.16432881355"       RangeMax="0.92864239216"        offset="2520"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT11" format="appended" RangeMin="-0.0016432880657"     RangeMax="0.92864239216"        offset="2576"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm11" format="appended" RangeMin="-0.20819547772"       RangeMax="1.176538229"          offset="2632"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm11" format="appended" RangeMin="-0.0020819546189"     RangeMax="1.176538229"          offset="2688"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T12" format="appended" RangeMin="-0.0065206410363"     RangeMax="0.0092424890026"      offset="2744"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT12" format="appended" RangeMin="-6.5206411819e-05"    RangeMax="0.0092424890026"      offset="2800"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm12" format="appended" RangeMin="-0.013872077689"      RangeMax="0.01966256462"        offset="2856"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm12" format="appended" RangeMin="-0.00013872078853"    RangeMax="0.01966256462"        offset="2912"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T13" format="appended" RangeMin="-0.0061511495151"     RangeMax="0.013162948191"       offset="2968"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT13" format="appended" RangeMin="-6.1511491367e-05"    RangeMax="0.013162948191"       offset="3024"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm13" format="appended" RangeMin="-0.0139948586"        RangeMax="0.029947832227"       offset="3080"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm13" format="appended" RangeMin="-0.00013994857727"    RangeMax="0.029947832227"       offset="3136"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T14" format="appended" RangeMin="-0.0097549706697"     RangeMax="0.0030296663754"      offset="3192"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT14" format="appended" RangeMin="-9.7549702332e-05"    RangeMax="0.0030296663754"      offset="3248"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm14" format="appended" RangeMin="-0.023719603196"      RangeMax="0.0073667555116"      offset="3304"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm14" format="appended" RangeMin="-0.00023719602905"    RangeMax="0.0073667555116"      offset="3360"                >
+        </DataArray>
+        <DataArray type="Float32" Name="T15" format="appended" RangeMin="-0.016102105379"      RangeMax="0.005149283912"       offset="3416"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActT15" format="appended" RangeMin="-0.00016102104564"    RangeMax="0.005149283912"       offset="3472"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TNorm15" format="appended" RangeMin="-0.041815344244"      RangeMax="0.013372107409"       offset="3528"                >
+        </DataArray>
+        <DataArray type="Float32" Name="ActTNorm15" format="appended" RangeMin="-0.00041815344593"    RangeMax="0.013372107409"       offset="3584"                >
+        </DataArray>
+        <DataArray type="Int32" Name="ClusterAssignment" format="appended" RangeMin="0"                    RangeMax="2"                    offset="3640"                >
+        </DataArray>
+        <DataArray type="Int32" Name="treeNoNodes" format="appended" RangeMin="76"                   RangeMax="516"                  offset="3696"                >
+        </DataArray>
+      </RowData>
+    </Piece>
+  </Table>
+  <AppendedData encoding="raw">
+   _0                                   	   
+      0       ]hæÁ≈`? …Ωp±æ¡¿p=i>#~ß=?¸æ\€º9≠eüΩÃÀJ=q1=0       √ ∫Á≈`?$%Å∫¬Sæ∫¡¿p=i>#~ß=éä¬∫\€º9DL∫ÃÀJ=q1=0       ê;Zæ∫‘ö?∫ˇ
+æjŸLæ£÷•=2{W>≥øÊ=ÖbQæ::ãò€ΩH±ã=ﬁﬁs=0       =´ª∫‘ö?+Î±∫Åª£÷•=2{W>≥øÊ=ùª::óäå∫H±ã=ﬁﬁs=0       Ò<æsñæ¯?ßΩ∞¿ÒΩÍ¢·=ì2ô?1¶>û⁄æóÚ(;˘€sΩº‹æ=ı◊Á=0        ”´∫≤E¨∫pV∫¬∏ö∫Í¢·=ì2ô?1¶>ÛúÃ∫óÚ(;Á∫º‹æ=ı◊Á=0       =R%æx¿%æ˙ÕΩó›æ	Ò
+>æ´º?Õr.>\ﬁDæbP;´)ñΩíÎ=à√>0       wú”∫ê)‘∫G”É∫Fåæ∫	Ò
+>æ´º?Õr.>Á˝˚∫bP;V5@∫íÎ=à√>0       J	ælîæ˝ÄΩâB	æ◊…¥=
+cê>˙i>=z+æﬂa>Ô’Å?Æ\F>”õÄ>0       ≈Ü¥∫k˚ ∫™Á#∫S±Ø∫◊…¥=
+cê>˙i>æ}€∫ﬂa>Ô’Å?Æ\F>”õÄ>0       >ŸæÆº*æﬁâΩ`»æˆ•¬=¿tõ>∂Èz>†ü8æ‹¬> ã?≥ëU>‡wä>0       ¿]¬∫ã⁄∫ox0∫p)Ω∫ˆ•¬=¿tõ>∂Èz>pQÏ∫‹¬> ã?≥ëU>‡wä>0       Û!æ„'æµΩDÀæ;óD>°˙•>ÉÎ^>Ë@?Õ≈ñªœâΩ˚_ﬂ=ŸØ>0       %Œ∫5Â÷∫%≈g∫$-Ω∫;óD>°˙•>ÉÎ^>Ë@?/˝@∏él/∫˚_ﬂ=ŸØ>0       pãGæﬂPæY‡Ωö7æaîs>Ø¶Õ>€ä>Èm?eœ∫ªºŒ©Ωb
+>˝£%>0       Õjˇ∫2!ªpïè∫údÍ∫aîs>Ø¶Õ>€ä>Èm?Úo∏äZY∫b
+>˝£%>0       lëæ:™ æ®Ü€Ωó—˚Ω÷≥=&£‡=aCà?4æpp≥ºƒôΩ˚<,B<0       ©•≤∫Ó∞§∫$å∫˙)°∫÷≥=&£‡=aCà?Äî∏∫§ÆeπΩˆC∫˚<,B<0       ≈ æ·5æŒﬂ¸ΩI	æ€7Œ=âa>Öˆú?Ô&æ¶≤ŒºåZ∞Ω,ë=ªÄ_<0       …Õ∫õµΩ∫Í÷°∫|•π∫€7Œ=âa>Öˆú?£û‘∫`IÑπîªa∫,ë=ªÄ_<0       t≠æ`•æÇ"¡ΩW˙ΩW”=†X>Yp–=dæ1<?ltΩ°ç=¿3©=0       $c¨∫¬Å®∫i6w∫∑7†∫W”=†X>Yp–=ÊÜ∆∫1<?ﬁ9∫°ç=¿3©=0       l	æ9Ëæﬁb«Ω∑8æ8.⁄=IO>Ö/◊=î æêøÉ?|Ω~†ë=Ã≠Æ=0       ï˜±∫ˆ≠∫ﬁ6∫Pg•∫8.⁄=IO>Ö/◊=ÛÃ∫êøÉ?dH!∫~†ë=Ã≠Æ=0       'æU^æ¯µ∑Ω1\ÛΩI‹©=˜ÿ)>ÁüÚ=m-æUÈ“∫°⁄ÑΩ#Qâ?Ü≤≈=0       o™´∫”&®∫\&k∫¿õ∫I‹©=˜ÿ)>ÁüÚ=DøÀ∫ª˚Ü∑õ*∫#Qâ?Ü≤≈=0       Ë"ææö®ÕΩí7æQ'æ=ô#>>.Œ>∫12æﬂÏ∫⁄πîΩ⁄∏ô?ÏP›=0       ≠,¿∫ò=º∫üÉ∫ú[Æ∫Q'æ=ô#>>.Œ>±‰∫ó∑á^>∫⁄∏ô?ÏP›=0       WF˛ΩÚÌΩˇ}§Ωπ¨‡ΩÌÏå?èU>O’˝=Aœæ@È0ªÒ§KΩﬂ~π=XÃ‘=0       `º¢∫>±ó∫ÀåR∫¥ è∫ÌÏå?èU>O’˝=(∆∫=r‚∑U∫ﬂ~π=XÃ‘=0       o˚æj_ˇΩ¿:±Ω|ÚΩÉ÷ó?fÖe>ãæ>Ã&æ0ú>ª–i[Ω˙€«=≠FÂ=0       PVØ∫Cp£∫è⁄b∫Ìö∫É÷ó?fÖe>ãæ>Ä’∫˚Û∑Æl∫˙€«=≠FÂ=0       ∂ÛΩY®ŸΩû¶ΩΩ î”ΩÂE=t•µ=z=(˛‹Ω«TΩD+ïΩCg=oÇ?0       ºëõ∫Mã∫ ¿r∫
+iá∫ÂE=t•µ=z=voç∫|-∫≥Ô>∫Cg=oÇ?0       ıìÈΩ‰&—ΩX=∂Ω|OÀΩW)>=AåÆ=Vp=V[‘ΩovLΩ˘VèΩöT=_¨z?0       j}ï∫t€Ö∫GDi∫cÇ∫W)>=AåÆ=Vp=âËá∫(€∫êy7∫öT=_¨z?0       $æÆæ[~¬ΩÆQ`?á:=L>∂”=Ï¸ΩÉ+E:ã$ñΩË9d=∂£@=0       Wº∫ó¿∫ßÛx∫ÆQ`?á:=L>∂”=Ωﬁ°∫É+E:∆.@∫Ë9d=∂£@=0       œ.ÚΩ;˜Ωß†Ω?õ8?O"=T*÷=;Æ=F%–ΩÉC":¡wΩf“;=
+â=0       =ˇö∫Oû∫’‡L∫?õ8?O"=T*÷=;Æ=ì6Ö∫ÉC":Õ(∫f“;=
+â=0       ∞]?DBæ¢E¿Ω}BˇΩ˜-‚=Ê >d4‘=≤æ4µÇº≤SîΩ8˘Ç=Åàò=0       ∞]?à≥∫∞v∫¿]£∫˜-‚=Ê >d4‘=7s√∫WN'π≈€=∫8˘Ç=Åàò=0       –X?åµæÓgªΩ≤Ã¯Ωît‹=°t>å’Œ=∏‘æªÃ~º¥íêΩQQ=C¨î=0       –X?‹¸Æ∫0·o∫R;ü∫ît‹=°t>å’Œ=ÏÄæ∫c#π¥9∫QQ=C¨î=0       äÉ»Ωsz¯ΩÇªm?…ÆΩo >Í:g>e.3>–E(æo9<}~ûºë>°·'>0       /TÄ∫∞ü∫Çªm?‚€^∫o >Í:g>e.3>ôc◊∫o9<XﬂJπë>°·'>0       5
+˛ΩtgæŒòñ?˘ï‹Ω›˘8>Uzí>=c>21Uæ¡ ;<üÕ»º√Ä#>D≤T>0       ‰ï¢∫.z…∫Œòñ?»,ç∫›˘8>Uzí>=c>gqª¡ ;<ôÉÄπ√Ä#>D≤T>0       Í∑Ä:D0ô:)É:Í≤‰:Œ√Ô;œm<Ã§r∫´’ªµªGV:Kcœ∫ƒ¥ñª0       Í∑Ä:D0ô:)É:Í≤‰:Œ√Ô;œm<¿J∑møà∏Ç¥≠∑GV:m∫Ñ∑aÁ@∏0       Î;ãÚ";Ñ;¶Ds;
+<c°<˙ª∂Gcº4Zêª≤®„:zô\ªèN º0       Î;ãÚ";Ñ;¶Ds;
+<c°<T/•∑îuπa≈8∏≤®„:/∏Z1Õ∏0       ®};¬’∆;ÂXÜ;‡Ø;√\ø;m!◊;r,z;|Yªïè…ª∞FÂ∫ÄûW∫h©W<0       ®};¬’∆;ÂXÜ;‡Ø;√\ø;m!◊;r,z;Æ0∏ªˇÄ∏ôºí∑
+ˇ	∑h©W<0       ”™;‹0b<≤‘<~H<¨∞Y<x∫t<›K<h˜ª±Jeº˘hÇª¿Hı∫(Uı<0       ”™;‹0b<≤‘<~H<¨∞Y<x∫t<›K<Wû∏)øπ√Ï&∏\˚ú∑(Uı<0       ¿˜[ªËÅ:6æôª£ﬂ÷∫ë¬∑ªP”º®Ùª^çF;êEƒ:IF‚∫∑ˆøª{ﬂ¸ª0       Ö«∏ËÅ:Ç D∏„Ñâ∑|6k∏ôìÃ∏|îú∏^çF;êEƒ:“–ê∑¨∂u∏µ÷°∏0       ∑ºhµ¿:âÍ:ºRûÇªÚh_ºùO¬ºπîº”dÒ;ün;Üåâª?biºª∑ôº0       ≈'´∏hµ¿:Ø@Ô∏1'∏|˚π”∑xπÖ]>π”dÒ;ün;0∏ò]π7¬Dπ0       ÅR8Sª®;R5ªü_Å;CYä;oXõª}Òdª±]ß:êËÉº”Åªn—ª‰C†ª0       ÅR8Sª®;¶™¶∑ü_Å;CYä;ò◊F∏Ü∏±]ß:¬◊(πt'%∏¢œÖ∏≥#M∏0       ˜©9Ø[<n©ªÙ˚'<P£3<µIºç¢ºµPY;ëF+Ω®à'º9ΩáºePº0       ˜©9Ø[<;hX∏Ù˚'<P£3<∏π¥@æ∏µPY;õ;€πzq÷∏ ø-πU.π0                                               0       f   L   n   î   Ó    ÷  ¢  j  î  ‹  ∏  
+  </AppendedData>
+</VTKFile>
