@@ -1,0 +1,14 @@
+<VTKFile type="vtkMultiBlockDataSet" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <vtkMultiBlockDataSet>
+    <DataSet index="0" file="outlier/outlier_0_0.vti"/>
+    <DataSet index="1" file="outlier/outlier_1_0.vti"/>
+    <DataSet index="2" file="outlier/outlier_2_0.vti"/>
+    <DataSet index="3" file="outlier/outlier_3_0.vti"/>
+    <DataSet index="4" file="outlier/outlier_4_0.vti"/>
+    <DataSet index="5" file="outlier/outlier_5_0.vti"/>
+    <DataSet index="6" file="outlier/outlier_6_0.vti"/>
+    <DataSet index="7" file="outlier/outlier_7_0.vti"/>
+    <DataSet index="8" file="outlier/outlier_8_0.vti"/>
+    <DataSet index="9" file="outlier/outlier_9_0.vti"/>
+  </vtkMultiBlockDataSet>
+</VTKFile>
