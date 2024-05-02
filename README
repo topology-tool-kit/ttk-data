@@ -304,3 +304,10 @@ Data specs
   "acknowledgement": "Berk Geveci, Christoph Garth, Garrett Aldrich, and Jonas Lukasczyk",
   "url": "https://jluk.de/resources/papers/NestedTrackingGraphs2017.pdf"
 }
+
+{
+  "name": "bdied_outlier/",
+  "description": "A synthetic dataset that highlights the advantages of branch decomposition-independent edit distances for merge trees. It is a simplified version of the one generated for the experiments in this paper: https://doi.org/10.1111/cgf.14547",
+  "acknowledgement": "Florian Wetzels, Heike Leittge, and Christoph Garth",
+  "url": "https://github.com/scivislab/BDI-ED/tree/main/test_datasets/branchVSconstrained_outlier"
+}
