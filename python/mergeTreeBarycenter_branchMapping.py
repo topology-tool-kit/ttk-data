@@ -9,7 +9,7 @@ from paraview.simple import *
 # ----------------------------------------------------------------
 
 # create a new 'XML MultiBlock Data Reader'
-outliervtm = XMLMultiBlockDataReader(FileName=['/home/wetzels/ttk/ttk-data_wetzels/bdied_outlier/outlier.vtm'])
+outliervtm = XMLMultiBlockDataReader(FileName=['bdied_outlier/outlier.vtm'])
 outliervtm.CellArrayStatus = ['vtkGhostType']
 outliervtm.PointArrayStatus = ['test', 'vtkValidPointMask', 'vtkGhostType']
 outliervtm.TimeArray = 'None'
