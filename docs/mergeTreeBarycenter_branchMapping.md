@@ -34,7 +34,7 @@ pvpython python/mergeTreeBarycenter_branchMapping.py
 - [outlier.vtm](https://github.com/topology-tool-kit/ttk-data/tree/dev/bdied_outlier/outlier.vtm): a vtk multiblock containing 10 regular grids.
 
 ## Outputs
--  `merge_tree_barycenter.vtm`: the computed barycenter merge tree as a vtk multiblock.
+-  `merge_tree_mapping.vtm`: the computed branch mapping as a vtk multiblock.
 -  `distance_matrix.csv`: the distance matrix as a csv table.
 
 
