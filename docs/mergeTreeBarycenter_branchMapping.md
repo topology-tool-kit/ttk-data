@@ -4,7 +4,7 @@
 
 ## Pipeline description
 This example first loads a multi block of scalar fields from disk.
-Then, the  the Split Tree is computed on each scalar field using the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) module.
+Then, the Split Tree is computed on each scalar field using the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) module.
 
 All these trees are passed to [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html). It computes the distance and corresponding mapping between the first two trees in the metric space of merge trees defined by the branch mapping distance (thus, the underlying metric to the branch mapping distance). The [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html) module only computes one distance and one mapping because the actual barycenter computation is not possible with this metric.
 
