@@ -1439,14 +1439,9 @@
         <Domain name="bool" id="18374.UseLogScale.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20588" servers="16">
-      <Property name="Source" id="20588.Source" number_of_elements="1">
-        <Proxy value="18402"/>
-      </Property>
-    </Proxy>
     <Proxy group="misc" type="RepresentationAnimationHelper" id="20579" servers="16">
       <Property name="Source" id="20579.Source" number_of_elements="1">
-        <Proxy value="18413"/>
+        <Proxy value="18402"/>
       </Property>
     </Proxy>
     <Proxy group="misc" type="RepresentationAnimationHelper" id="20580" servers="16">
@@ -1456,6 +1451,11 @@
     </Proxy>
     <Proxy group="misc" type="RepresentationAnimationHelper" id="20581" servers="16">
       <Property name="Source" id="20581.Source" number_of_elements="1">
+        <Proxy value="18413"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20582" servers="16">
+      <Property name="Source" id="20582.Source" number_of_elements="1">
         <Proxy value="18413"/>
       </Property>
     </Proxy>
@@ -4788,8 +4788,8 @@
         <Domain name="range" id="19029.Origin.range"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20582" servers="16">
-      <Property name="Source" id="20582.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20583" servers="16">
+      <Property name="Source" id="20583.Source" number_of_elements="1">
         <Proxy value="19137"/>
       </Property>
     </Proxy>
@@ -5897,11 +5897,6 @@
         <Domain name="bool" id="19280.UseLogScale.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20583" servers="16">
-      <Property name="Source" id="20583.Source" number_of_elements="1">
-        <Proxy value="19366"/>
-      </Property>
-    </Proxy>
     <Proxy group="misc" type="RepresentationAnimationHelper" id="20584" servers="16">
       <Property name="Source" id="20584.Source" number_of_elements="1">
         <Proxy value="19366"/>
@@ -5909,6 +5904,11 @@
     </Proxy>
     <Proxy group="misc" type="RepresentationAnimationHelper" id="20585" servers="16">
       <Property name="Source" id="20585.Source" number_of_elements="1">
+        <Proxy value="19366"/>
+      </Property>
+    </Proxy>
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20586" servers="16">
+      <Property name="Source" id="20586.Source" number_of_elements="1">
         <Proxy value="19366"/>
       </Property>
     </Proxy>
@@ -9621,13 +9621,13 @@
         <Domain name="bool" id="18373.ZTitleShadow.bool"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20586" servers="16">
-      <Property name="Source" id="20586.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20587" servers="16">
+      <Property name="Source" id="20587.Source" number_of_elements="1">
         <Proxy value="20108"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="20587" servers="16">
-      <Property name="Source" id="20587.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="20588" servers="16">
+      <Property name="Source" id="20588.Source" number_of_elements="1">
         <Proxy value="20119"/>
       </Property>
     </Proxy>
@@ -19660,9 +19660,7 @@
       </Property>
       <Property name="OpacityArrayComponent" id="20061.OpacityArrayComponent" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="comps" id="20061.OpacityArrayComponent.comps">
-          <Entry value="0" text=""/>
-        </Domain>
+        <Domain name="comps" id="20061.OpacityArrayComponent.comps"/>
       </Property>
       <Property name="OpacityArrayName" id="20061.OpacityArrayName" number_of_elements="5">
         <Element index="0" value=""/>
@@ -19678,9 +19676,7 @@
       </Property>
       <Property name="OpacityComponent" id="20061.OpacityComponent" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="comps" id="20061.OpacityComponent.comps">
-          <Entry value="0" text=""/>
-        </Domain>
+        <Domain name="comps" id="20061.OpacityComponent.comps"/>
       </Property>
       <Property name="OpacityTransferFunction" id="20061.OpacityTransferFunction" number_of_elements="1">
         <Proxy value="19988"/>
@@ -19764,9 +19760,7 @@
       </Property>
       <Property name="ScaleArrayComponent" id="20061.ScaleArrayComponent" number_of_elements="1">
         <Element index="0" value="0"/>
-        <Domain name="comps" id="20061.ScaleArrayComponent.comps">
-          <Entry value="0" text=""/>
-        </Domain>
+        <Domain name="comps" id="20061.ScaleArrayComponent.comps"/>
       </Property>
       <Property name="ScaleByArray" id="20061.ScaleByArray" number_of_elements="1">
         <Element index="0" value="0"/>
@@ -22228,7 +22222,7 @@
         <Domain name="bool" id="19366.Deterministic.bool"/>
       </Property>
       <Property name="DimensionSpacing" id="19366.DimensionSpacing" number_of_elements="1">
-        <Element index="0" value="0.1"/>
+        <Element index="0" value="0.05"/>
       </Property>
       <Property name="DimensionToShift" id="19366.DimensionToShift" number_of_elements="1">
         <Element index="0" value="2"/>
@@ -22265,7 +22259,7 @@
         <Element index="0" value="0"/>
       </Property>
       <Property name="ImportantPairs" id="19366.ImportantPairs" number_of_elements="1">
-        <Element index="0" value="31"/>
+        <Element index="0" value="49"/>
         <Domain name="range" id="19366.ImportantPairs.range"/>
       </Property>
       <Property name="ImportantPairsSpacing" id="19366.ImportantPairsSpacing" number_of_elements="1">
@@ -23156,8 +23150,8 @@
         <Domain name="bool" id="20080.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="20080.ViewSize" number_of_elements="2">
-        <Element index="0" value="639"/>
-        <Element index="1" value="820"/>
+        <Element index="0" value="714"/>
+        <Element index="1" value="793"/>
       </Property>
       <Property name="ViewTime" id="20080.ViewTime" number_of_elements="1">
         <Element index="0" value="0"/>
@@ -23183,14 +23177,14 @@
         <Element index="0" value="0"/>
       </Property>
       <Property name="CameraFocalPoint" id="20080.CameraFocalPoint" number_of_elements="3">
-        <Element index="0" value="51.14097251503062"/>
-        <Element index="1" value="15.324229833988479"/>
-        <Element index="2" value="16.24523086440617"/>
+        <Element index="0" value="29.391265139380327"/>
+        <Element index="1" value="64.04871686921092"/>
+        <Element index="2" value="5.223073200259483"/>
       </Property>
       <Property name="CameraFocalPointInfo" id="20080.CameraFocalPointInfo" number_of_elements="3">
-        <Element index="0" value="51.14097251503062"/>
-        <Element index="1" value="15.324229833988479"/>
-        <Element index="2" value="16.24523086440617"/>
+        <Element index="0" value="29.391265139380327"/>
+        <Element index="1" value="64.04871686921092"/>
+        <Element index="2" value="5.223073200259483"/>
       </Property>
       <Property name="CameraParallelScale" id="20080.CameraParallelScale" number_of_elements="1">
         <Element index="0" value="590.5247432852285"/>
@@ -23199,14 +23193,14 @@
         <Element index="0" value="590.5247432852285"/>
       </Property>
       <Property name="CameraPosition" id="20080.CameraPosition" number_of_elements="3">
-        <Element index="0" value="443.8367291924001"/>
-        <Element index="1" value="384.36781386837237"/>
-        <Element index="2" value="711.5143935550531"/>
+        <Element index="0" value="172.8098319597908"/>
+        <Element index="1" value="302.5507826871624"/>
+        <Element index="2" value="416.4470381435841"/>
       </Property>
       <Property name="CameraPositionInfo" id="20080.CameraPositionInfo" number_of_elements="3">
-        <Element index="0" value="443.8367291924001"/>
-        <Element index="1" value="384.36781386837237"/>
-        <Element index="2" value="711.5143935550531"/>
+        <Element index="0" value="172.8098319597908"/>
+        <Element index="1" value="302.5507826871624"/>
+        <Element index="2" value="416.4470381435841"/>
       </Property>
       <Property name="CameraViewAngle" id="20080.CameraViewAngle" number_of_elements="1">
         <Element index="0" value="30"/>
@@ -23215,14 +23209,14 @@
         <Element index="0" value="30"/>
       </Property>
       <Property name="CameraViewUp" id="20080.CameraViewUp" number_of_elements="3">
-        <Element index="0" value="-0.15474584973410807"/>
-        <Element index="1" value="0.9061698831332241"/>
-        <Element index="2" value="-0.39358590535280613"/>
+        <Element index="0" value="-0.15495597987334478"/>
+        <Element index="1" value="0.877086677316289"/>
+        <Element index="2" value="-0.4546510802535982"/>
       </Property>
       <Property name="CameraViewUpInfo" id="20080.CameraViewUpInfo" number_of_elements="3">
-        <Element index="0" value="-0.15474584973410807"/>
-        <Element index="1" value="0.9061698831332241"/>
-        <Element index="2" value="-0.39358590535280613"/>
+        <Element index="0" value="-0.15495597987334478"/>
+        <Element index="1" value="0.877086677316289"/>
+        <Element index="2" value="-0.4546510802535982"/>
       </Property>
       <Property name="EyeAngle" id="20080.EyeAngle" number_of_elements="1">
         <Element index="0" value="2"/>
@@ -23736,8 +23730,8 @@
         <Domain name="bool" id="20577.UseToneMapping.bool"/>
       </Property>
       <Property name="ViewSize" id="20577.ViewSize" number_of_elements="2">
-        <Element index="0" value="638"/>
-        <Element index="1" value="820"/>
+        <Element index="0" value="713"/>
+        <Element index="1" value="793"/>
       </Property>
       <Property name="ViewTime" id="20577.ViewTime" number_of_elements="1">
         <Element index="0" value="0"/>
@@ -23838,12 +23832,12 @@
       <Item id="18374" name="vtkBlockColors.PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18402">
-      <Item id="20588" name="RepresentationAnimationHelper"/>
+      <Item id="20579" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18413">
-      <Item id="20579" name="RepresentationAnimationHelper"/>
       <Item id="20580" name="RepresentationAnimationHelper"/>
       <Item id="20581" name="RepresentationAnimationHelper"/>
+      <Item id="20582" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.18625">
       <Item id="18390" name="DataAxesGrid" logname="TTKMergeandContourTreeFTM1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -23892,7 +23886,7 @@
       <Item id="19029" name="SliceFunction" logname="TTKMergeandContourTreeFTM1(UniformGridRepresentation)/VolumeRepresentation/SliceFunction/Plane"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19137">
-      <Item id="20582" name="RepresentationAnimationHelper"/>
+      <Item id="20583" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19336">
       <Item id="19126" name="DataAxesGrid" logname="TTKBlockAggregator1(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -23910,9 +23904,9 @@
       <Item id="19280" name="ScaleTransferFunction" logname="TTKBlockAggregator1(GeometryRepresentation)/PointGaussianRepresentation/ScaleTransferFunction/PiecewiseFunction"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19366">
-      <Item id="20583" name="RepresentationAnimationHelper"/>
       <Item id="20584" name="RepresentationAnimationHelper"/>
       <Item id="20585" name="RepresentationAnimationHelper"/>
+      <Item id="20586" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.19578">
       <Item id="19355" name="DataAxesGrid" logname="TTKMergeTreeClustering1(UnstructuredGridRepresentation)/DataAxesGrid/GridAxesRepresentation"/>
@@ -23963,10 +23957,10 @@
       <Item id="18373" name="AxesGrid" logname="RenderView1/AxesGrid/GridAxes3DActor"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.20108">
-      <Item id="20586" name="RepresentationAnimationHelper"/>
+      <Item id="20587" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.20119">
-      <Item id="20587" name="RepresentationAnimationHelper"/>
+      <Item id="20588" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.20316">
       <Item id="20097" name="DataAxesGrid" logname="TTKMatrixToHeatMap1(GeometryRepresentation)/DataAxesGrid/GridAxesRepresentation"/>

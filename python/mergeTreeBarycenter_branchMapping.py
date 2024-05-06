@@ -43,12 +43,12 @@ tTKMergeTreeClustering1 = TTKMergeTreeClustering(
 )
 tTKMergeTreeClustering1.Backend = "Branch Mapping Distance (EuroVis 2022)"
 tTKMergeTreeClustering1.Deterministic = 1
-tTKMergeTreeClustering1.DimensionSpacing = 0.1
+tTKMergeTreeClustering1.DimensionSpacing = 0.05
 tTKMergeTreeClustering1.DimensionToshift = "Z"
 tTKMergeTreeClustering1.Epsilon1 = 0.0
 tTKMergeTreeClustering1.Epsilon2 = 100.0
 tTKMergeTreeClustering1.Epsilon3 = 100.0
-tTKMergeTreeClustering1.ImportantPairs = 31.0
+tTKMergeTreeClustering1.ImportantPairs = 49.0
 tTKMergeTreeClustering1.ImportantPairsSpacing = 32.0
 tTKMergeTreeClustering1.NonImportantPairsSpacing = 8.0
 
