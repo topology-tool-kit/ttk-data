@@ -1,7 +1,7 @@
 # Changes Flow Topology
 
-![Changes Flow Topology Image](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg)
-(Need to replace image link?)
+![Changes Flow Topology Image](../tests/reference_screenshots/ChangesExampleScreenshot.png)
+
 ## Pipeline description
 This example computes the critical points, separatrices, and segmentation of a simplified vector field assisted with an associated weight curve.
 
