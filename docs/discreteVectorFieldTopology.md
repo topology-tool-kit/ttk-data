@@ -42,15 +42,17 @@ pvpython python/discreteVectorFieldTopology.py
 - `WeightCurve.csv`: the plot of pairs according to weight and total number of critical points remaining in the simplified field.
 - `CriticalPoints.csv`: the critical points of the simplified [DiscreteVectorField](https://topology-tool-kit.github.io/doc/html/classttkDiscreteVectorField.html).
 - `Separatrices1.csv`: the output separatrices traced along the saddles (critical simplices of dimension 1) on the simplified field.
-- `Segmentation.vtu`: the output segmentation in VTK file format. The segmentation is stored as point data with segment numbers associated with common flow patterns(descending, ascending, and intersecting). 
+- `Segmentation.vtu`: the output segmentation in VTK file format. The segmentation is stored as point data with segment numbers associated with common flow patterns (descending, ascending, and intersecting). 
 
 ## C++/Python API
-[VectorWeightCurve](https://topology-tool-kit.github.io/doc/html/classttkVectorWeightCurve.html)
+[DiscreteVectorField](https://topology-tool-kit.github.io/doc/html/classttkDiscreteVectorField.html)
 
-[TopologicalSkeleton](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSkeleton.html)
+[IdentifierRandomizer](https://topology-tool-kit.github.io/doc/html/classttkIdentifierRandomizer.html)
 
 [VectorSimplification](https://topology-tool-kit.github.io/doc/html/classVectorSimplification.html)
 
-[DiscreteVectorField](https://topology-tool-kit.github.io/doc/html/classttkDiscreteVectorField.html)
+[VectorWeightCurve](https://topology-tool-kit.github.io/doc/html/classttkVectorWeightCurve.html)
+
+[TopologicalSkeleton](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSkeleton.html)
 
 
