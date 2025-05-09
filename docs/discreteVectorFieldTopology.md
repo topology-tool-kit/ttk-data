@@ -1,6 +1,6 @@
-# DiscreteVectorFieldTopology
+# Discrete Vector Field Topology
 
-![Discrete Vector Field Topology Result Image](../tests/reference_screenshots/discreteVectorFieldTopology.png)
+![Discrete Vector Field Topology Result Image](https://topology-tool-kit.github.io/img/gallery/discreteVectorFieldTopology.jpg)
 
 ## Pipeline description
 This example computes the critical points, separatrices, and segmentation of a simplified vector field with added noise and threshold determined by the associated weight curve.
@@ -9,12 +9,14 @@ First, the vector field data is added with a random vector of size 0.3.
 
 Then, the [VectorWeightCurve](https://topology-tool-kit.github.io/doc/html/classttkVectorWeightCurve.html) is computed.
 The output is the simplified pairs and the weight associated with each pair.
-We use this curve to determine stable/ flat regions to simplify to.
-Looking at the displayed weight curve(using log scales), we see a good(flat) spot to simplify to at 27 critical points.
+We use this curve to determine stable/flat regions to simplify to.
+Looking at the displayed weight curve (using log scales), we see a good (flat) spot to simplify to at 27 critical points.
 
-Next, the input data is simplified based on the selected threshold(27 critical points), via [TopologicalSkeleton](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSkeleton.html) and using [VectorSimplification](https://topology-tool-kit.github.io/doc/html/classVectorSimplification.html) on the backend.
+Next, the input data is simplified based on the selected threshold (27 critical points), via [TopologicalSkeleton](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSkeleton.html) and using [VectorSimplification](https://topology-tool-kit.github.io/doc/html/classVectorSimplification.html) on the backend.
 
-Finally, the Critical Points and Separatrices are computed then displayed.
+Finally, the Critical Points and Separatrices are computed then displayed and
+the `Intersecting Manifold` segmentation is shown (with a random color per
+manifold, by using [IdentifierRandomizer](https://topology-tool-kit.github.io/doc/html/classttkIdentifierRandomizer.html)).
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:

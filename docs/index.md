@@ -41,6 +41,11 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
 | [Topological Optimization Cosmic Web](topologicalOptimization_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png) |
 
+## Vector data
+| Name | Screenshot |
+|:-:|:-:|
+| [Discrete Vector Field Topology](discreteVectorFieldTopology/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/discreteVectorFieldTopology.jpg) |
+
 ## Bivariate scalar data
 
 | Name | Screenshot |
