@@ -65,7 +65,7 @@ Data specs
 }
 
 {
-  "name": "changes.vtu",
+  "name": "changes.vti",
   "description": "Vector Field of changing amount of curl",
   "acknowledgement": "T. Finken, J.A. Levine",
   "url": "https://arxiv.org/abs/2408.04769"
