@@ -3,12 +3,12 @@
 from paraview.simple import *
 
 # create a new 'XML Unstructured Grid Reader'
-changesvtu = XMLUnstructuredGridReader(FileName=['changes.vtu'])
-changesvtu.PointArrayStatus = ['VectorField']
-changesvtu.TimeArray = 'None'
+changesvti = XMLUnstructuredGridReader(FileName=['changes.vti'])
+changesvti.PointArrayStatus = ['VectorField']
+changesvti.TimeArray = 'None'
 
 # create a new 'Random Vectors'
-randomVectors1 = RandomVectors(Input=changesvtu)
+randomVectors1 = RandomVectors(Input=changesvti)
 randomVectors1.MaximumSpeed = 0.3
 
 # create a new 'Calculator'
