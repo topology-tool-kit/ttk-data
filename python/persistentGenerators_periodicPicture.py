@@ -36,6 +36,7 @@ tTKDimensionReduction1.SelectFieldswithaRegexp = 1
 tTKDimensionReduction1.Regexp = "Dist.*"
 tTKDimensionReduction1.Components = 3
 tTKDimensionReduction1.InputIsaDistanceMatrix = 1
+tTKDimensionReduction1.UseAllCores = 0
 
 # create a new 'TTK RipsComplex'
 tTKRipsComplex1 = TTKRipsComplex(Input=tTKDimensionReduction1)
