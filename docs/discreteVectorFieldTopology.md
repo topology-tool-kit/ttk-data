@@ -36,7 +36,7 @@ pvpython python/discreteVectorFieldTopology.py
 ```
 
 ## Inputs
-- [changes.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/changes.vtu): a two-dimensional regular grid encoding flow of a piecewise implicit function.
+- [changes.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/changes.vti): a two-dimensional regular grid encoding flow of a piecewise implicit function.
 
 ## Outputs
 - `WeightCurve.csv`: the plot of pairs according to weight and total number of critical points remaining in the simplified field.
