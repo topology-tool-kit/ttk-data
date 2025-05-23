@@ -40,7 +40,7 @@ Data specs
   "name": "BuiltinExample2.vti",
   "description": "Electron density and reduced gradient, Ethane-Diol molecule",
   "acknowledgement": "Roberto Alvarez Boto",
-  "url": "https://github.com/topology-tool-kit/ttk-data""
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
@@ -100,6 +100,13 @@ Data specs
 }
 
 {
+  "name": "coil20.csv",
+  "description": "The COIL-20 dataset in a csv file (1440 points, 1024 dimensions).",
+  "acknowledgement": "S.A. Nene, S.K. Nayar, and H. Murase",
+  "url": "https://cave.cs.columbia.edu/repository/COIL-20"
+}
+
+{
   "name": "ctBones.vti",
   "description": "Rotational C-arm x-ray scan of a human foot",
   "acknowledgement": "Philips Research, Hamburg, Germany",
@@ -156,10 +163,17 @@ Data specs
 }
 
 {
+  "name": "K4.csv",
+  "description": "Points sampled next to a tetrahedron (300 points, 3 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
   "name": "karhunenLoveDigits64Dimensions.csv",
   "description": "High-dimensional point cloud (2000 points, 64 dimensions)
   given by the Karhunen-Love coefficients of scanned images of hand-written 
-  digits (10 classes of 200 samples)."
+  digits (10 classes of 200 samples).",
   "acknowledgement": "Robert P.W. Duin",
   "url": "http://archive.ics.uci.edu/ml/datasets/multiple+features"
 }
@@ -167,7 +181,7 @@ Data specs
 {
   "name": "khi.cdb/",
   "description": "Ensemble of periodic, 2D hydrodynamic turbulent flows (Kelvin
-  Helmoltz Instabilities, 32 members, 2 ground-truth classes)."
+  Helmoltz Instabilities, 32 members, 2 ground-truth classes).",
   "acknowledgement": "Florent Nauleau",
   "url": "https://arxiv.org/abs/2207.14080",
 }
@@ -290,6 +304,13 @@ Data specs
   "description": "Microscoy of cell sheet morphogenesis (tribute to Edelsbrunner & Harer's book, page 217)",
   "acknowledgement": "Daniel P. Kiehart, Catherine G. Galbraith, Kevin A. Edwards, Wayne L. Rickoll, Ruth A. Montague ",
   "url": "http://jcb.rupress.org/content/149/2/471",
+}
+
+{
+  "name": "twistedEllipse.csv",
+  "description": "An ellipse which is twisted along its long axis (100 points, 3 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
