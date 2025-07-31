@@ -17,7 +17,7 @@ First, the data is loaded and the grid is resampled (to $128^3$ by default).
 
 Then, a global ordering of the vertices is computed using the filter [ArrayPreconditioning](https://topology-tool-kit.github.io/doc/html/classttkArrayPreconditioning.html) and its option `GlobalOrderArray`. This step will be triggered automatically if not explicitly called.
 
-Finally, the persistence diagram is computed via [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html) and more specifically the algorithm Distributed Discrete Morse Sandwich (specified in the choice of backend software).
+Finally, the persistence diagram is computed via [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html) and more specifically the algorithm Distributed Discrete Morse Sandwich (specified in the choice of software backend).
 
 ## ParaView
 
