@@ -41,7 +41,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Cosmic Web](cosmicWeb/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cosmicWeb.jpg) |
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
 | [Topological Optimization Cosmic Web](topologicalOptimization_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png) |
-| [Distributed Persistence Diagram](ddms/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg) |
+| [Distributed Persistence Diagram](distributedPersistenceDiagram/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg) |
 
 
 ## Bivariate scalar data

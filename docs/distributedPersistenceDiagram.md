@@ -2,7 +2,7 @@
 
 [DDMS example Image](https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg)
 
-This toy example illustrates the computation of a persistence diagram in a distributed-memory context with MPI using the Distributed Discrete Morse Sandwich algorithm. For more information on  the usage of TTK in a distributed-memory context, please see the example [MPI example](ddms/).
+This toy example illustrates the computation of a persistence diagram in a distributed-memory context with MPI using the Distributed Discrete Morse Sandwich algorithm. For more information on  the usage of TTK in a distributed-memory context, please see the example [MPI example](../mpiExample/).
 
 Please note both ParaView and TTK need to be compiled with MPI (using the CMake flags `PARAVIEW_USE_MPI=ON` and `TTK_ENABLE_MPI=ON` for ParaView and TTK respectively). TTK also requires to be compiled with OpenMP (using the CMake flag `TTK_ENABLE_OPENMP=ON`).
 For processing large-scale datasets (typically beyond $1024^3$), we recommend to build TTK with 64 bit identifiers (by setting the CMake flag `TTK_ENABLE_64BIT_IDS=ON`).
