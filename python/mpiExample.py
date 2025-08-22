@@ -122,5 +122,11 @@ tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=resampleWithD
 tTKScalarFieldCriticalPoints1.ScalarField = ["POINTS", "gradientMagnitude"]
 tTKScalarFieldCriticalPoints1.Backend = "Default generic backend"
 
-SaveData("integralLines.pvtu", tTKGeometrySmoother2)
-SaveData("criticalPoints.pvtp", tTKScalarFieldCriticalPoints1)
+UpdatePipeline()
+
+# To save the output to disk, uncomment the two lines below.
+#SaveData("integralLines.pvtu", tTKGeometrySmoother2)
+#SaveData("criticalPoints.pvtp", tTKScalarFieldCriticalPoints1)
+
+# WARNING: due to a reported ParaView issue, when saving the output to disk in
+# MPI mode, pvbatch will execute the pipeline twice in a row (instead of one).
