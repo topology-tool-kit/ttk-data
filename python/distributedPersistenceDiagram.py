@@ -23,4 +23,10 @@ tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKArrayPreconditioning)
 tTKPersistenceDiagram1.ScalarField = ['POINTS', 'ImageFile']
 tTKPersistenceDiagram1.Backend = 'Distributed Discrete Morse Sandwich'
 
-SaveData('diagram.pvtu', proxy=tTKPersistenceDiagram1)
+UpdatePipeline()
+
+# To save the output to disk, uncomment the line below.
+# SaveData('diagram.pvtu', proxy=tTKPersistenceDiagram1)
+
+# WARNING: due to a reported ParaView issue, when saving the output to disk in 
+# MPI mode, pvbatch will execute the pipeline twice in a row (instead of one).
