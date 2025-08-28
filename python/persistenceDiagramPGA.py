@@ -11,7 +11,7 @@ tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKCinemaProductReader1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPDS 2019)"
 
 # create a new 'TTK MergeTreePrincipalGeodesics'
 tTKMergeTreePrincipalGeodesics1 = TTKMergeTreePrincipalGeodesics(

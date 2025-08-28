@@ -24,7 +24,7 @@ Finally, the persistence diagram is computed via [PersistenceDiagram](https://to
 To reproduce the above screenshot on 2 processes and 4 threads, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 
 ``` bash
-OMPI_MPI_THREAD_LEVEL=3 OMP_NUM_THREADS=4 mpirun --oversubscribe -n 2 pvserver 
+OMPI_MPI_THREAD_LEVEL=3 OMP_NUM_THREADS=4 mpirun --bind-to none --map-by node -n 2 pvserver 
 ``` 
 In another command line enter the following command:
 ``` bash
@@ -40,13 +40,13 @@ Now, follow the procedure described in paragraph $8.2.2$ of the following [ParaV
 
 To run the above Python script using 4 threads and 2 processes, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-OMPI_MPI_THREAD_LEVEL=3 OMP_NUM_THREADS=4 mpirun --oversubscribe -n 2 pvbatch python/distributedPersistenceDiagram.py 
+OMPI_MPI_THREAD_LEVEL=3 OMP_NUM_THREADS=4 mpirun --bind-to none --map-by node -n 2 pvbatch python/distributedPersistenceDiagram.py 
 ```
 
 By default, the dataset is resampled to $128^3$. To resample to a higher dimension, for example $256^3$, enter the following command:
 
 ```bash
-OMPI_MPI_THREAD_LEVEL=3 OMP_NUM_THREADS=4 mpirun --oversubscribe -n 2 pvbatch python/distributedPersistenceDiagram.py 256
+OMPI_MPI_THREAD_LEVEL=3 OMP_NUM_THREADS=4 mpirun --bind-to none --map-by node -n 2 pvbatch python/distributedPersistenceDiagram.py 256
 ```
 Be aware that this may require too much memory to execute on a regular laptop.
 
