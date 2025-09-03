@@ -23,10 +23,16 @@ tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKArrayPreconditioning)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "ImageFile"]
 tTKPersistenceDiagram1.Backend = "Distributed Discrete Morse Sandwich"
 
+# remove the dummy pairs representing the diagonal
+threshold1 = Threshold(Input=tTKPersistenceDiagram1)
+threshold1.Scalars = ['CELLS', 'PairType']
+threshold1.UpperThreshold = 0.0
+threshold1.ThresholdMethod = 'Above Upper Threshold'
+
 UpdatePipeline()
 
 # To save the output to disk, uncomment the line below.
-# SaveData('diagram.pvtu', proxy=tTKPersistenceDiagram1)
+# SaveData('diagram.pvtu', proxy=threshold1)
 
 # WARNING: due to a reported ParaView issue, when saving the output to disk in
 # MPI mode, pvbatch will execute the pipeline twice in a row (instead of one).

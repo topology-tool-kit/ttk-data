@@ -9,9 +9,6 @@ For processing large-scale datasets (typically beyond $1024^3$), we recommend to
 
 The execution requires to set a thread support level of `MPI_THREAD_MULTIPLE` at runtime. For the library OpenMPI, this means setting the environment variable `OMPI_MPI_THREAD_LEVEL` to 3 (as shown in the examples below).
 
-Also, note that due to the usage of a communication thread (for communication-computation overlap), the number of threads should be set to a number not smaller than 2.
-
-
 ## Pipeline description
 
 The produced visualization captures the persistence diagrams of each dimension ($D_0$, $D_1$ and $D_2$, from left to right in the image).
@@ -20,10 +17,9 @@ First, the data is loaded and the grid is resampled (to $128^3$ by default).
 
 Then, a global ordering of the vertices is computed using the filter [ArrayPreconditioning](https://topology-tool-kit.github.io/doc/html/classttkArrayPreconditioning.html). This step will be triggered automatically if not explicitly called.
 
-Finally, the persistence diagram is computed via [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html) and more specifically the algorithm Distributed Discrete Morse Sandwich (specified in the choice of software backend).
-
-
-In the output, each MPI process will create a dummy pair modeling the diagonal, which you may want to remove prior to subsequent processing (e.g., Wasserstein distance computation) by Thresholding. TODO link + detailed instructions
+Finally, the persistence diagram is computed via [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html) and more specifically the
+[Distributed Discrete Morse Sandwich algorithm](https://arxiv.org/abs/2505.21266)
+(specified in the choice of software backend). Note that, in the output, each MPI process will create a dummy pair modeling the diagonal, which may need to be filtered out prior to subsequent processing (e.g., Wasserstein distance computation). This is achieved by the last step of the pipeline, involving thresholding (see the [Python code](#Python-code) below).
 
 ## ParaView
 
@@ -62,9 +58,10 @@ Be aware that this may require too much memory to execute on a regular laptop.
 The distributed computation of persistence diagram has been evaluated on Sorbonne Universite's supercomputers. Therefore, the parameters of our [algorithm](https://arxiv.org/abs/2505.21266) have been tuned for this system and they might yield slightly different performances on a different supercomputer. 
 
 ### Run configuration
-When using the above Python script with `pvbatch`, please make sure to adjust for your hardware the number of processes (`-n` option) and threads (`OMP_NUM_THREADS` variable, greater or equal to 2, to account for one communication thread).
+When using the above Python script with `pvbatch`, please make sure to adjust to your hardware the number of processes (`-n` option) and threads (`OMP_NUM_THREADS` variable). 
+Note that TTK will default to a minimum number of 2 threads (to account for one communication thread) if the variable `OMP_NUM_THREADS` is set to a value smaller than 2.
 
-For optimal performances, we recommend to use as many MPI processes as  compute nodes (mapping one MPI process per node, `--map-by node` option above), and as many threads as (virtual) cores per node (in conjunction with the `--bind-to none` option above).
+For optimal performances, we recommend to use as many MPI processes as  compute nodes (mapping one MPI process per node, see the `--map-by node` option in the above command line), and as many threads as (virtual) cores per node (in conjunction with the `--bind-to none` option in the above command line).
 
 ### Measuring time performance
 For a precise time performance measurement, TTK needs to be built with the advanced CMake option `TTK_ENABLE_MPI_TIME` enabled.
