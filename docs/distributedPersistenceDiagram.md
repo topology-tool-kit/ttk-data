@@ -61,9 +61,6 @@ Be aware that this may require too much memory to execute on a regular laptop.
 ### Disclaimer
 The distributed computation of persistence diagram has been evaluated on Sorbonne Universite's supercomputers. Therefore, the parameters of our [algorithm](https://arxiv.org/abs/2505.21266) have been tuned for this system and they might yield slightly different performances on a different supercomputer. 
 
-### Using another dataset
-To load another dataset, replace the string `backpack.vti` in the above Python script with the path to your input VTI file and run the script with `pvbatch` as described above.
-
 ### Run configuration
 When using the above Python script with `pvbatch`, please make sure to adjust for your hardware the number of processes (`-n` option) and threads (`OMP_NUM_THREADS` variable, greater or equal to 2, to account for one communication thread).
 
@@ -79,7 +76,8 @@ the full execution time of the distributed persistence computation (excluding IO
 - `[DiscreteGradient-0] Computation performed using 2 MPI processes lasted: 2.172824`
 - `[DiscreteMorseSandwichMPI-0] Computation of persistence pairs performed using 2 MPI processes lasted: 1.895776`
 
-
+### Using another dataset
+To load another dataset, replace the string `backpack.vti` in the above Python script with the path to your input VTI file and run the script with `pvbatch` as described above.
 
 ## Inputs
 - [backpack.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/backpack.vti):  A CT scan of a backpack filled with items.
