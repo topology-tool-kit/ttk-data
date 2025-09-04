@@ -17,7 +17,7 @@ First, the data is loaded and the grid is resampled (to $128^3$ by default).
 
 Then, a global ordering of the vertices is computed using the filter [ArrayPreconditioning](https://topology-tool-kit.github.io/doc/html/classttkArrayPreconditioning.html). This step will be triggered automatically if not explicitly called.
 
-Finally, the persistence diagram is computed via [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html) and more specifically the
+Then, the persistence diagram is computed via [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/PersistenceDiagram_8h.html) and more specifically the
 [Distributed Discrete Morse Sandwich algorithm](https://arxiv.org/abs/2505.21266)
 (specified in the choice of software backend). Note that, in the output, each MPI process will create a dummy pair modeling the diagonal, which may need to be filtered out prior to subsequent processing (e.g., Wasserstein distance computation). This is achieved by the last step of the pipeline, involving thresholding (see the [Python code](#Python-code) below).
 
