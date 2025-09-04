@@ -61,7 +61,7 @@ The distributed computation of persistence diagram has been evaluated on Sorbonn
 When using the above Python script with `pvbatch`, please make sure to adjust to your hardware the number of processes (`-n` option) and threads (`OMP_NUM_THREADS` variable). 
 Note that TTK will default to a minimum number of 2 threads (to account for one communication thread) if the variable `OMP_NUM_THREADS` is set to a value smaller than 2.
 
-For optimal performances, we recommend to use as many MPI processes as  compute nodes (mapping one MPI process per node, see the `--map-by node` option in the above command line), and as many threads as (virtual) cores per node (in conjunction with the `--bind-to none` option in the above command line).
+For optimal performances, we recommend to use as many MPI processes as  compute nodes (mapping one MPI process per node, see the `--map-by node` option in the above command line), and as many threads as (virtual) cores per node (in conjunction with the `--bind-to none` option in the above command line). Also, for load balancing purposes, we recommend to use a number of processes (`-n` option) which is a power of 2 (e.g., 2, 4, 8, 16, 32, 64, etc.).
 
 ### Measuring time performance
 For a precise time performance measurement, TTK needs to be built with the advanced CMake option `TTK_ENABLE_MPI_TIME` enabled.
