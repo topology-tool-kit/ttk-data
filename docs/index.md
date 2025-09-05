@@ -41,6 +41,9 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Cosmic Web](cosmicWeb/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cosmicWeb.jpg) |
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
 | [Topological Optimization Cosmic Web](topologicalOptimization_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png) |
+| [MPI Example](mpiExample) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mpiExample.jpg) |
+| [Distributed Persistence Diagram](distributedPersistenceDiagram/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg) |
+
 
 ## Bivariate scalar data
 
@@ -117,5 +120,3 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Manifold checks](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 | [Cinema IO](cinemaIO/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/yKyiRzPbs0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 | [Compact Triangulation](compactTriangulation/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/vDQRh_tuUSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
-| [MPI Example](mpiExample) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mpiExample.jpg) |
-

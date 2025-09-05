@@ -27,7 +27,7 @@ Finally, the critical points of the magnitude are computed on the smoothed geome
 To reproduce the above screenshot on 4 processes and 2 threads, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 
 ``` bash
-OMP_NUM_THREADS=2 mpirun -n 4 pvserver 
+OMP_NUM_THREADS=2 mpirun --bind-to none --map-by node -n 4 pvserver 
 ``` 
 In another command line enter the following command:
 ``` bash
@@ -44,13 +44,13 @@ Now, follow the procedure described in paragraph $7.2.2$ of the following [ParaV
 
 To run the above Python script using 2 threads and 4 processes, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-OMP_NUM_THREADS=2 mpirun -n 4 pvbatch python/mpiExample.py 
+OMP_NUM_THREADS=2 mpirun --bind-to none --map-by node -n 4 pvbatch python/mpiExample.py 
 ```
 
 By default, the dataset is resampled to $256^3$. To resample to a higher dimension, for example $2048^3$, enter the following command:
 
 ```bash
-OMP_NUM_THREADS=2 mpirun -n 4 pvbatch python/mpiExample.py 2048
+OMP_NUM_THREADS=2 mpirun --bind-to none --map-by node -n 4 pvbatch python/mpiExample.py 2048
 ```
 Be aware that this will require a lot of memory to execute and will most likely not be possible on a regular laptop.
 
