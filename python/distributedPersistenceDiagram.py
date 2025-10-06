@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 from paraview.simple import *
 
 if len(sys.argv) == 2:
