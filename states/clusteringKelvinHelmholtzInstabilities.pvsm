@@ -61437,7 +61437,11 @@
     <Proxy group="filters" type="ttkPersistenceDiagram" id="16962" servers="1">
       <Property name="BackEnd" id="16962.BackEnd" number_of_elements="1">
         <Element index="0" value="2"/>
+<<<<<<< HEAD
         <Domain name="enum" id="16962.BackEnd.enum">
+=======
+        <Domain name="enum" id="20385.BackEnd.enum">
+>>>>>>> 9ce8f1bd1ac63010f2b3715ab87ef91d69103e89
           <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
@@ -61564,7 +61568,11 @@
     <Proxy group="filters" type="ttkPersistenceDiagram" id="18026" servers="1">
       <Property name="BackEnd" id="18026.BackEnd" number_of_elements="1">
         <Element index="0" value="2"/>
+<<<<<<< HEAD
         <Domain name="enum" id="18026.BackEnd.enum">
+=======
+        <Domain name="enum" id="21445.BackEnd.enum">
+>>>>>>> 9ce8f1bd1ac63010f2b3715ab87ef91d69103e89
           <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
