@@ -1,4 +1,7 @@
-#### import the simple module from the paraview
+#!/usr/bin/env python
+
+import sys
+
 from paraview.simple import *
 
 # ----------------------------------------------------------------
