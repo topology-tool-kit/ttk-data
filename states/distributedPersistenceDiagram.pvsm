@@ -15831,7 +15831,7 @@
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
           <Entry value="4" text="Persistent Simplex (Zomorodian 2010)"/>
-          <Entry value="5" text="Distributed Discrete Morse Sandwich"/>
+          <Entry value="5" text="Distributed Discrete Morse Sandwich (IEEE TPDS 2025)"/>
         </Domain>
       </Property>
       <Property name="ClearDGCache" id="23316.ClearDGCache" number_of_elements="1">

@@ -23,7 +23,7 @@ tTKArrayPreconditioning.PointDataArrays = ["ImageFile"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKArrayPreconditioning)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "ImageFile"]
-tTKPersistenceDiagram1.Backend = "Distributed Discrete Morse Sandwich"
+tTKPersistenceDiagram1.Backend = "Distributed Discrete Morse Sandwich (IEEE TPDS 2025)"
 
 # remove the dummy pairs representing the diagonal
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
