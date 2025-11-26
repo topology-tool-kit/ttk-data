@@ -163,6 +163,13 @@ Data specs
 }
 
 {
+  "name": "hypersphere5D.csv",
+  "description": "Points sampled next to a 4-sphere (10000 points, 5 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
   "name": "isabel.vti",
   "description": "Volume ensemble of 12 members, showing key time steps (formation, drift and landfall) in the simulation of the Isabel hurricane (wind velocity magnitude)",
   "acknowledgement": "Weather Research and Forecast (WRF) model, courtesy of NCAR and the U.S. National Science Foundation (NSF).",

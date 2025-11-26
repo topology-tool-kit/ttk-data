@@ -40,9 +40,8 @@ pvpython python/topoAEppTeaser.py
 
 ## Outputs
 - `twistedEllipse_topoAE++.csv`: the output 2D projection of the [twistedEllipse.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/twistedEllipse.csv) dataset in CSV ASCII format (one line per point, one column per dimension).
-- `K4_topoAE++.csv`: the output 2D projection of the [K4.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/K4.csv) dataset in CSV ASCII form
-  at (one line per point, one column per dimension).
-- `coil20-1_topoAE++csv`: the output 2D projection of the first class of the [coil20.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/coil20.csv) dataset in CSV ASCII form at (one line per point, one column per dimension).
+- `K4_topoAE++.csv`: the output 2D projection of the [K4.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/K4.csv) dataset in CSV ASCII form at (one line per point, one column per dimension).
+- `coil20-1_topoAE++.csv`: the output 2D projection of the first class of the [coil20.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/coil20.csv) dataset in CSV ASCII form at (one line per point, one column per dimension).
 
 ## C++/Python API
 [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
