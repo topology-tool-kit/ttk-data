@@ -16,6 +16,13 @@ https://topology-tool-kit.github.io/tutorials.html
 Data specs
 =
 {
+  "name": "67P-Churyumov-Gerasimenko.stl",
+  "description": "3D model of Comet 67P/Churyumov–Gerasimenko, as captured by the Rosetta mission",
+  "acknowledgement": "European Space Agency",
+  "url": "https://commons.wikimedia.org/wiki/File:67P-Churyumov-Gerasimenko.stl"
+}
+
+{
   "name": "at.vti",
   "description": "Quantum chemistry dataset. Simulation of the electronic density in the Adenine-Thymine molecular complex",
   "acknowledgement": "Roberto Alvarez Boto",
