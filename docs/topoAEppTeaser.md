@@ -1,6 +1,6 @@
 # Topological Autoencoders++ Teaser
 
-![Topological Autoencoders++ Teaser screenshot](https://topology-tool-kit.github.io/img/gallery/topoAEppTeaser.jpg)
+![Topological Autoencoders++ Teaser screenshot](https://topology-tool-kit.github.io/img/gallery/topologicalAutoEncoderPlusPlus.jpg)
 
 ## Pipeline description
 This example illustrates the [Topological Autoencoders++](https://arxiv.org/abs/2502.20215) dimensionality reduction technique on two toy examples and one real-world example. [Topolocial Autoencoders](https://proceedings.mlr.press/v119/moor20a.html) used autoencoders with a topological regularization term that constrains the preservation of the 0-dimensional persistent homology. Topological Autoencoders++ proposes a regularization term and efficient algorithms to additionally constrain the preservation of 1-dimensional persistent homology.
