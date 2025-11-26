@@ -16,10 +16,10 @@ https://topology-tool-kit.github.io/tutorials.html
 Data specs
 =
 {
-  "name": "67P-Churyumov-Gerasimenko.stl",
+  "name": "67P-Churyumov-Gerasimenko.vtp",
   "description": "3D model of Comet 67P/Churyumov–Gerasimenko, as captured by the Rosetta mission",
   "acknowledgement": "European Space Agency",
-  "url": "https://commons.wikimedia.org/wiki/File:67P-Churyumov-Gerasimenko.stl"
+  "url": "https://commons.wikimedia.org/wiki/File:Comet_67P-Churyumov-Gerasimenko.stl"
 }
 
 {
