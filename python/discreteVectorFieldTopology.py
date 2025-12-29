@@ -5,7 +5,6 @@ from paraview.simple import *
 # create a new 'XML Unstructured Grid Reader'
 changesvti = XMLImageDataReader(FileName=["changes.vti"])
 changesvti.PointArrayStatus = ["VectorField"]
-changesvti.TimeArray = "None"
 
 # create a new 'Random Vectors'
 randomVectors1 = RandomVectors(Input=changesvti)
@@ -25,10 +24,6 @@ tTKTopologicalSkeleton1 = TTKTopologicalSkeleton(Input=calculator1)
 tTKTopologicalSkeleton1.VectorField = ["POINTS", "VectorsWithNoise"]
 tTKTopologicalSkeleton1.RunSimplification = 1
 tTKTopologicalSkeleton1.SimplificationThreshold = 27.0
-
-# create a new 'TTK IcospheresFromPoints'
-tTKIcospheresFromPoints1 = TTKIcospheresFromPoints(Input=tTKTopologicalSkeleton1)
-tTKIcospheresFromPoints1.Radius = 6.5
 
 # save the output
 SaveData("WeightCurve.csv", tTKVectorWeightCurve1)
