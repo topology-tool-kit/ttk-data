@@ -45,6 +45,11 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Distributed Persistence Diagram](distributedPersistenceDiagram/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg) |
 
 
+## Vector data
+| Name | Screenshot |
+|:-:|:-:|
+| [Discrete Vector Field Topology](discreteVectorFieldTopology/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/discreteVectorFieldTopology.jpg) |
+
 ## Bivariate scalar data
 
 | Name | Screenshot |
