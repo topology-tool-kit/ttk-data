@@ -16,6 +16,13 @@ https://topology-tool-kit.github.io/tutorials.html
 Data specs
 =
 {
+  "name": "67P-Churyumov-Gerasimenko.vtp",
+  "description": "3D model of Comet 67P/Churyumov–Gerasimenko, as captured by the Rosetta mission",
+  "acknowledgement": "European Space Agency",
+  "url": "https://commons.wikimedia.org/wiki/File:Comet_67P-Churyumov-Gerasimenko.stl"
+}
+
+{
   "name": "at.vti",
   "description": "Quantum chemistry dataset. Simulation of the electronic density in the Adenine-Thymine molecular complex",
   "acknowledgement": "Roberto Alvarez Boto",
@@ -160,6 +167,13 @@ Data specs
   "description": "Dataset adapted from daily measurements of electric power consumption in one household with a one-minute sampling rate over a period of 2 years. Different electrical quantities and some sub-metering values are available.",
   "acknowledgement": "Georges Hebrail Alice Berard",
   "url": "https://archive-beta.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption"
+}
+
+{
+  "name": "hypersphere5D.csv",
+  "description": "Points sampled next to a 4-sphere (10000 points, 5 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {

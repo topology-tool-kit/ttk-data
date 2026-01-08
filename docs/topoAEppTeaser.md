@@ -3,7 +3,7 @@
 ![Topological Autoencoders++ Teaser screenshot](https://topology-tool-kit.github.io/img/gallery/topologicalAutoEncoderPlusPlus.jpg)
 
 ## Pipeline description
-This example illustrates the [Topological Autoencoders++](https://arxiv.org/abs/2502.20215) dimensionality reduction technique on two toy examples and one real-world example. [Topolocial Autoencoders](https://proceedings.mlr.press/v119/moor20a.html) used autoencoders with a topological regularization term that constrains the preservation of the 0-dimensional persistent homology. Topological Autoencoders++ proposes a regularization term and efficient algorithms to additionally constrain the preservation of 1-dimensional persistent homology.
+This example illustrates the [Topological Autoencoders++](https://arxiv.org/abs/2502.20215) dimensionality reduction technique on two toy examples and one real-world example. [Topological Autoencoders](https://proceedings.mlr.press/v119/moor20a.html) used autoencoders with a topological regularization term that constrains the preservation of the 0-dimensional persistent homology. Topological Autoencoders++ proposes a regularization term and efficient algorithms to additionally constrain the preservation of 1-dimensional persistent homology.
 
 Three examples are provided as CSV ASCII files (one line per point, one column per dimension). These are two toy point clouds in 3D and one high-dimensional image dataset, which Topological Autoencoders++ projects down to 2D. Each of these point clouds features one or several significant 1-dimensional persistent homology class(es), that Topological Autoencoders++ aims to preserve when projecting down to 2D.
 
@@ -40,9 +40,8 @@ pvpython python/topoAEppTeaser.py
 
 ## Outputs
 - `twistedEllipse_topoAE++.csv`: the output 2D projection of the [twistedEllipse.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/twistedEllipse.csv) dataset in CSV ASCII format (one line per point, one column per dimension).
-- `K4_topoAE++.csv`: the output 2D projection of the [K4.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/K4.csv) dataset in CSV ASCII form
-  at (one line per point, one column per dimension).
-- `coil20-1_topoAE++csv`: the output 2D projection of the first class of the [coil20.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/coil20.csv) dataset in CSV ASCII form at (one line per point, one column per dimension).
+- `K4_topoAE++.csv`: the output 2D projection of the [K4.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/K4.csv) dataset in CSV ASCII form at (one line per point, one column per dimension).
+- `coil20-1_topoAE++.csv`: the output 2D projection of the first class of the [coil20.csv](https://github.com/topology-tool-kit/ttk-data/raw/dev/coil20.csv) dataset in CSV ASCII form at (one line per point, one column per dimension).
 
 ## C++/Python API
 [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html)
