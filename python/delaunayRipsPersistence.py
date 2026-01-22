@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import platform
+
 from paraview.simple import *
 
 comet67PChuryumovGerasimenkovtp = XMLPolyDataReader(
@@ -12,6 +14,10 @@ threshold1 = Threshold(Input=OutputPort(tTKDelaunayRipsPersistenceGenerators1, 2
 threshold1.Set(
     Scalars=["CELLS", "ClassPersistence"], LowerThreshold=1, UpperThreshold=2
 )
+
+if platform.system() == "Darwin":
+    # openmp/cgal issues on mac
+    tTKDelaunayRipsPersistenceGenerators1.UseAllCores = 0
 SaveData("67PChuryumovGerasimenko_generator.obj", threshold1)
 SaveData(
     "67PChuryumovGerasimenko_diagram.csv",
@@ -24,6 +30,9 @@ tableToPoints2.Set(XColumn="x", YColumn="y", ZColumn="z")
 tTKDelaunayRipsPersistenceGenerators2 = TTKDelaunayRipsPersistenceGenerators(
     Input=tableToPoints2
 )
+if platform.system() == "Darwin":
+    # openmp/cgal issues on mac
+    tTKDelaunayRipsPersistenceGenerators2.UseAllCores = 0
 SaveData("K4_diagram.csv", OutputPort(tTKDelaunayRipsPersistenceGenerators2, 0))
 
 hypersphere5Dcsv = CSVReader(FileName=["hypersphere5D.csv"])
