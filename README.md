@@ -10,7 +10,7 @@ This repository has multiple purposes:
   - Each entry is automatically tested by our continuous integration. At the moment, only code features which are used in [ttk-data](https://github.com/topology-tool-kit/ttk-data)'s state files are automatically tested upon code pull requests.
   - Each entry is described in detail in the [TTK Online Example Database](https://topology-tool-kit.github.io/examples), for novice users who want to get started with TTK and Python. Specifically, each entry contains a description of the use-case, a specification of the input/output, a screenshot, a ParaView state file, a Python script and links to the developer documentation.
 
-To contribute, please check out our [CONTRIBUTING.md](https://github.com/topology-tool-kit/ttk-data/CONTRIBUTING.md).
+To contribute, please check out our [CONTRIBUTING.md](https://github.com/topology-tool-kit/ttk-data/blob/dev/CONTRIBUTING.md).
 
 Data specs
 =
