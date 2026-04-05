@@ -3,7 +3,7 @@
 ![Delaunay-Rips persistence screenshot](https://topology-tool-kit.github.io/img/gallery/delaunayRipsPersistence.jpg)
 
 ## Pipeline description
-This example illustrates the use of the ``TTKDelaunayRipsPersistenceDiagram`` and ``TTKDelaunayRipsPersistenceGenerators`` filters to compute persistence diagrams (and associated persistent generators) of the Delaunay-Rips filtration of an input point set.
+This example illustrates the use of the ``TTKDelaunayRipsPersistenceDiagram`` and ``TTKDelaunayRipsPersistenceGenerators`` filters to compute persistence diagrams (and associated persistent generators) of the [Delaunay-Rips filtration](https://arxiv.org/abs/2512.17382) of an input point set.
 
 Three examples are provided. The first two are point sets in 3D (hence, with easily visualizable persistence generators) and the last is a point set in 5D given as a CSV ASCII file (one line per point, one column per dimension).
 
