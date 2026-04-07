@@ -46,7 +46,7 @@ pvpython python/molecularVibration.py
 
 ## Outputs
 
-- `bondOccurenceRates.vtm`: Extremum graph of each state with its bond occurrence rate on each 1-dimensional separatrix.
+- `bondOccurenceRates.vtm`: Extremum graph of for the equilibrium state, with its occurrence rate defined on each 1-dimensional separatrix.
 
 ## C++/Python API
 
