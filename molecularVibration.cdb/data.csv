@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d6db1cc6916c5658cba235770259e9803c819c7d7e8e0745985e8c6fba21e09
-size 3482
+FILE,ModeId,GeomID
+data/W6_prism_mp2/nonrel/PBE0/TZ2P/gridspacing0.05/normal_modes_tracking/calculations/rho/mode0/geom_0_mode_0/start_data.vti,0,0
+data/W6_prism_mp2/nonrel/PBE0/TZ2P/gridspacing0.05/normal_modes_tracking/calculations/rho/mode0/geom_10_mode_0/start_data.vti,0,10
+data/W6_prism_mp2/nonrel/PBE0/TZ2P/gridspacing0.05/normal_modes_tracking/calculations/rho/mode0/geom_20_mode_0/start_data.vti,0,20
