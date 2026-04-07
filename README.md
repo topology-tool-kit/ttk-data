@@ -2,19 +2,25 @@ The Topology ToolKit (TTK)
 =
 https://topology-tool-kit.github.io/
 
-This archive contains the data-sets and ParaView state files required to 
-reproduce the examples provided on the TTK website (gallery and tutorials).
+This repository contains the material for the [TTK Online Example Database](https://topology-tool-kit.github.io/examples/).
 
-To run these examples, from the current directory, enter the following command
-(omit the '$' character):
-$ paraview --state=states/<example demo state file .pvsm>
+It is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-See the TTK tutorial page for more details:
-https://topology-tool-kit.github.io/tutorials.html
+This repository has multiple purposes:
+  - Each entry is automatically tested by our continuous integration. At the moment, only code features which are used in [ttk-data](https://github.com/topology-tool-kit/ttk-data)'s state files are automatically tested upon code pull requests.
+  - Each entry is described in detail in the [TTK Online Example Database](https://topology-tool-kit.github.io/examples), for novice users who want to get started with TTK and Python. Specifically, each entry contains a description of the use-case, a specification of the input/output, a screenshot, a ParaView state file, a Python script and links to the developer documentation.
 
+To contribute, please check out our [CONTRIBUTING.md](https://github.com/topology-tool-kit/ttk-data/blob/dev/CONTRIBUTING.md).
 
 Data specs
 =
+{
+  "name": "67P-Churyumov-Gerasimenko.vtp",
+  "description": "3D model of Comet 67P/Churyumov–Gerasimenko, as captured by the Rosetta mission",
+  "acknowledgement": "European Space Agency",
+  "url": "https://commons.wikimedia.org/wiki/File:Comet_67P-Churyumov-Gerasimenko.stl"
+}
+
 {
   "name": "at.vti",
   "description": "Quantum chemistry dataset. Simulation of the electronic density in the Adenine-Thymine molecular complex",
@@ -40,7 +46,7 @@ Data specs
   "name": "BuiltinExample2.vti",
   "description": "Electron density and reduced gradient, Ethane-Diol molecule",
   "acknowledgement": "Roberto Alvarez Boto",
-  "url": "https://github.com/topology-tool-kit/ttk-data""
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
@@ -62,6 +68,13 @@ Data specs
   "description": "Microscope of cell nuclei (Allium Cepa)",
   "acknowledgement": "S. Shanti",
   "url": "https://doi.org/doi:10.7295/W9CIL43552"
+}
+
+{
+  "name": "changes.vti",
+  "description": "Vector Field of changing amount of curl",
+  "acknowledgement": "T. Finken, J.A. Levine",
+  "url": "https://arxiv.org/abs/2408.04769"
 }
 
 {
@@ -97,6 +110,13 @@ Data specs
   "description": "Two dimensional point cloud, clustering toy example",
   "acknowledgement": "scikit-learn",
   "url": "http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html"
+}
+
+{
+  "name": "coil20.csv",
+  "description": "The COIL-20 dataset in a csv file (1440 points, 1024 dimensions).",
+  "acknowledgement": "S.A. Nene, S.K. Nayar, and H. Murase",
+  "url": "https://cave.cs.columbia.edu/repository/COIL-20"
 }
 
 {
@@ -149,6 +169,13 @@ Data specs
 }
 
 {
+  "name": "hypersphere5D.csv",
+  "description": "Points sampled next to a 4-sphere (10000 points, 5 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
   "name": "isabel.vti",
   "description": "Volume ensemble of 12 members, showing key time steps (formation, drift and landfall) in the simulation of the Isabel hurricane (wind velocity magnitude)",
   "acknowledgement": "Weather Research and Forecast (WRF) model, courtesy of NCAR and the U.S. National Science Foundation (NSF).",
@@ -156,10 +183,17 @@ Data specs
 }
 
 {
+  "name": "K4.csv",
+  "description": "Points sampled next to a tetrahedron (300 points, 3 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
+}
+
+{
   "name": "karhunenLoveDigits64Dimensions.csv",
   "description": "High-dimensional point cloud (2000 points, 64 dimensions)
   given by the Karhunen-Love coefficients of scanned images of hand-written 
-  digits (10 classes of 200 samples)."
+  digits (10 classes of 200 samples).",
   "acknowledgement": "Robert P.W. Duin",
   "url": "http://archive.ics.uci.edu/ml/datasets/multiple+features"
 }
@@ -167,7 +201,7 @@ Data specs
 {
   "name": "khi.cdb/",
   "description": "Ensemble of periodic, 2D hydrodynamic turbulent flows (Kelvin
-  Helmoltz Instabilities, 32 members, 2 ground-truth classes)."
+  Helmoltz Instabilities, 32 members, 2 ground-truth classes).",
   "acknowledgement": "Florent Nauleau",
   "url": "https://arxiv.org/abs/2207.14080",
 }
@@ -290,6 +324,13 @@ Data specs
   "description": "Microscoy of cell sheet morphogenesis (tribute to Edelsbrunner & Harer's book, page 217)",
   "acknowledgement": "Daniel P. Kiehart, Catherine G. Galbraith, Kevin A. Edwards, Wayne L. Rickoll, Ruth A. Montague ",
   "url": "http://jcb.rupress.org/content/149/2/471",
+}
+
+{
+  "name": "twistedEllipse.csv",
+  "description": "An ellipse which is twisted along its long axis (100 points, 3 dimensions).",
+  "acknowledgement": "Mattéo Clémot",
+  "url": "https://github.com/topology-tool-kit/ttk-data"
 }
 
 {
