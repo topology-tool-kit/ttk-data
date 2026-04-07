@@ -1,22 +1,24 @@
-# Molecular vibration on the prism hexamer
+# Molecular Vibration
 
-![Molecular Vibration on Prism Hexamer example Image]
+![Molecular Vibration on Prism Hexamer example Image](https://topology-tool-kit.github.io/img/gallery/molecularVibration.jpg)
 
 ## Pipeline description
 
-This example computes the so-called *Bond Occurence Rate* from an ensemble of data-sets of electron density fields modeling a molecular system under a chemical perturbation. In this example, we visualize the *Molecular Vibration* of the *Prism Hexamer*. The datasets chosen in this example are extracted from (https://github.com/thom-dani/BondMatcher).
+This example computes the *Bond Occurrence Rate* from an ensemble of electron density fields modeling a molecular system (the so-called *Prism* water hexamer) under molecular vibration. 
+Specifically, this example partly reproduces the Figure 7 of the paper [BondMatcher: H-Bond Stability Analysis in Molecular Systems](https://arxiv.org/abs/2504.03205).
 
-First, we select the files in database of electron density field with the filters [CinemaReader1](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html), [CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html) and [CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html).
+The pipeline includes the following steps.
 
-Second, we compute the opposite of the density and we normalize the resulting scalar field (in between 0 and 1) with the filter [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html) to facilitate the subsequent processing steps.
+First, the appropriate datasets are read from disk using the filters [CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html), [CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html), and [CinemaProductReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaProductReader.html). Specifically, the dataset `GeomID=10` (top right) corresponds to the equilibrium state of the molecule, while the datasets `GeomID=0` (bottom left) and `GeomID=20` (top left) correspond to its most extreme vibrations.
 
-Third, we make a simplification with the filter [TopologicalSimplificationByPersistence](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplificationByPersistence.html) to remove the least significant extreama. We aim to obtain exactly 18 minima for each data-set corresponding to the 18 atoms of the molecular system.
+Second, for convenience, the opposite of the density is considered and normalized with the [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html) to facilitate the subsequent processing steps.
 
-The next step is to calculate the [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) of each scalar field. We use an algorithm to remove the least significant saddle connectors and we obtain the *Extremum Graph* of the molecular system in which each minima represent an atom and each *Unstable Set* (i.e 1_separatrices of type 0) represents a chemical interaction.
+Third, [TopologicalSimplificationByPersistence](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplificationByPersistence.html) is used to remove spurious extrema from the data, such that only 18 minima remains for each dataset (for the 18 atoms of the water hexamers).
 
-After we applied a Threshold on the 1_separatrices to only keep the *Unstable Set*, we apply the filter [SeparatrixStability] on to obtain the *Bond Occurence Rate* of each chemical interaction across the ensemble of data-sets.
+Next, for each scalar field, the [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) is computed. This complex is post-processed to cancel the least salient saddle-saddle pairs (see the checkbox `Return Saddle Connectors`). 
+At this stage, the 1-dimensional separatrices of the complex are filtered, to only keep the saddle-minimum separatrices. This yields an *Extremum Graph*, which includes the minima of the scalar field and which connects them according to the saddle-minimum separatrices (representing chemical interactions, e.g., an H-bond or a covalent bond).
 
-Finally the geometry of the 1-separatrices are slightly smoothed with the filter [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html) (`50` iterations each).
+Finally, the *Bond Occurrence Rate* is computed from this extremum graph with the filter [SeparatrixStability](https://topology-tool-kit.github.io/doc/html/classttkSeparatrixStability.html) and it is visualized for the equilibrium state (bottom right). For each chemical interactionn, this quantity documents the rate of its occurrence in the ensemble (see the publication [BondMatcher: H-Bond Stability Analysis in Molecular Systems](https://arxiv.org/abs/2504.03205) for the formalization of this measure). Specifically, each occurrence rate is saved as the `CellDataArray` named `Occurrence`, itself associated to the output extremum graphs.
 
 ## ParaView
 
@@ -40,11 +42,11 @@ pvpython python/molecularVibration.py
 
 ## Inputs
 
-- [vibrationPrism.cdb](https://github.com/thom-dani/BondMatcher): Prism hexamer under molecular vibration, one equilibrium state an 20 perturbed states.
+- [molecularVibration.cdb](https://github.com/topology-tool-kit/ttk-data/molecularVibration.cdb/): Prism hexamer under molecular vibration, one equilibrium state and 2 perturbed states.
 
 ## Outputs
 
-- `bondOccurenceRates.vtm`: Extremum graph of each state with the bond occurence rate on each 1_separatrices.
+- `bondOccurenceRates.vtm`: Extremum graph of each state with its bond occurrence rate on each 1-dimensional separatrix.
 
 ## C++/Python API
 
@@ -57,9 +59,11 @@ pvpython python/molecularVibration.py
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
+[IdentifierRandomizer](https://topology-tool-kit.github.io/doc/html/classttkIdentifierRandomizer.html)
+
 [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html)
 
-[SeparatrixStability]
+[SeparatrixStability](https://topology-tool-kit.github.io/doc/html/classttkSeparatrixStability.html)
 
 [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
 
