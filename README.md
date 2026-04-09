@@ -228,6 +228,14 @@ Data specs
 }
 
 {
+  "name": "molecularVibration.cdb",
+  "description": "Electron density for the equilibrium and two vibrated states of the Prism water hexamer. See the paper `BondMatcher: H-Bond Stability Analysis in Molecular Systems`",
+  "acknowledgement": "Thomas Daniel, Malgorzata Olejniczak, Julien Tierny",
+  "url": "https://github.com/thom-dani/BondMatcher"
+}
+
+
+{
   "name": "mechanical.vtu",
   "description": "Magnitudes of flow velocity and vorticity in a mechanical piece",
   "acknowledgement": "Robert Geist and Joshua A. Levine",
