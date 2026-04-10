@@ -36,7 +36,6 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Tribute](tribute/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg) |
 | [Image processing](imageProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg) |
 | [Persistence driven compression](persistenceDrivenCompression/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg) |
-| [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 | [Persistent Generators Molecule](persistentGenerators_at/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_at.jpg) |
 | [Cosmic Web](cosmicWeb/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cosmicWeb.jpg) |
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
@@ -87,6 +86,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Merge tree Wasserstein Auto-Encoding](mergeTreeWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeWAE.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
 | [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
+| [Molecular Vibration](molecularVibration/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/molecularVibration.jpg) |
 
 
 ## High-dimensional / point cloud data
@@ -119,6 +119,7 @@ If you have any questions regarding these examples, please let us know by sendin
 
 | Name | Screenshot |
 |:-:|:-:|
+| [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 | [Persistent Generators Casting](persistentGenerators_casting/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_casting.jpg) |
 | [Persistent Generators Fertility](persistentGenerators_fertility/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_fertility.jpg) |
 | [Persistent Generators Skull](persistentGenerators_skull/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_skull.jpg) |

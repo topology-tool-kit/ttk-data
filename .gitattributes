@@ -1,1 +1,2 @@
 jet.vti filter=lfs diff=lfs merge=lfs -text
+molecularVibration.cdb/** filter=lfs diff=lfs merge=lfs -text
