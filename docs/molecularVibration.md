@@ -55,7 +55,7 @@ pvpython python/molecularVibration.py
 
 [CinemaQuery](https://topology-tool-kit.github.io/doc/html/classttkCinemaQuery.html)
 
-[CinemaReader1](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
+[CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
