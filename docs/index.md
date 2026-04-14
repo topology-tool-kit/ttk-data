@@ -85,7 +85,6 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Merge tree principal geodesic analysis](mergeTreePGA/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreePGA.jpg) |
 | [Merge tree Wasserstein Auto-Encoding](mergeTreeWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeWAE.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
-| [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
 | [Molecular Vibration](molecularVibration/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/molecularVibration.jpg) |
 
 
@@ -96,6 +95,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Topological Autoencoders++ Teaser](topoAEppTeaser/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalAutoEncoderPlusPlus.jpg) |
 | [TopoMap Teaser](topoMapTeaser/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topoMapTeaser.jpg) |
 | [DelaunayRipsPersistence](delaunayRipsPersistence/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/delaunayRipsPersistence.jpg) |
+| [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
 | [Persistent Generators Household Analysis](persistentGenerators_householdAnalysis/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_householdAnalysis.jpg) |
 | [Karhunen-Love Digits 64-Dimensions](karhunenLoveDigits64Dimensions/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg) |
 | [Persistence clustering0](persistenceClustering0/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering0.jpeg) |
