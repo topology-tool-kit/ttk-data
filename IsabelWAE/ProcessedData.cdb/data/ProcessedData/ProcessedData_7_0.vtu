@@ -1,0 +1,132 @@
+<VTKFile type="UnstructuredGrid" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="50"                   NumberOfCells="26"                  >
+      <PointData>
+        <DataArray type="Int32" Name="ttkVertexScalarField" format="appended" RangeMin="-1"                   RangeMax="-1"                   offset="0"                   >
+        </DataArray>
+        <DataArray type="Int32" Name="CriticalType" format="appended" RangeMin="0"                    RangeMax="3"                    offset="208"                 >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates" format="appended" RangeMin="0"                    RangeMax="468.93978882"         offset="416"                 >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates_X" format="appended" RangeMin="0"                    RangeMax="492.98797607"         offset="824"                 >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates_Y" format="appended" RangeMin="4.0080323219"         RangeMax="496.9960022"          offset="1232"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates_Z" format="appended" RangeMin="0"                    RangeMax="92.938774109"         offset="1640"                >
+        </DataArray>
+        <DataArray type="Float64" Name="OriginPersPercent" format="appended" RangeMin="0"                    RangeMax="261.20199585"         offset="2048"                >
+        </DataArray>
+        <DataArray type="Float64" Name="OriginPersDiff" format="appended" RangeMin="-3.6032581329"        RangeMax="3.603304863"          offset="2456"                >
+        </DataArray>
+        <DataArray type="Float64" Name="CorrPers0" format="appended" RangeMin="-0.76166558125"       RangeMax="0.83140084456"        offset="2864"                >
+        </DataArray>
+        <DataArray type="Int32" Name="OriginTrueNodeId" format="appended" RangeMin="-1"                   RangeMax="109"                  offset="3272"                >
+        </DataArray>
+        <DataArray type="Int32" Name="OriginPersOrder" format="appended" RangeMin="-1"                   RangeMax="28"                   offset="3480"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Persistence" format="appended" RangeMin="3.7704963684"         RangeMax="74.30557251"          offset="3688"                >
+        </DataArray>
+        <DataArray type="Int32" Name="ClusterID" format="appended" RangeMin="0"                    RangeMax="0"                    offset="4096"                >
+        </DataArray>
+        <DataArray type="Int32" Name="TreeID" format="appended" RangeMin="7"                    RangeMax="7"                    offset="4304"                >
+        </DataArray>
+        <DataArray type="Int32" Name="TrueNodeId" format="appended" RangeMin="1"                    RangeMax="49"                   offset="4512"                >
+        </DataArray>
+        <DataArray type="Int32" Name="isImportantPair" format="appended" RangeMin="0"                    RangeMax="1"                    offset="4720"                >
+        </DataArray>
+        <DataArray type="Int32" Name="isMultiPersPairNode" format="appended" RangeMin="0"                    RangeMax="0"                    offset="4928"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TreeNodeId" format="appended" RangeMin="1"                    RangeMax="49"                   offset="5136"                >
+        </DataArray>
+        <DataArray type="Float32" Name="TreeNodeIdOrigin" format="appended" RangeMin="0"                    RangeMax="48"                   offset="5344"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Birth" format="appended" RangeMin="0"                    RangeMax="61.823532104"         offset="5552"                >
+        </DataArray>
+      </PointData>
+      <CellData>
+        <DataArray type="Float64" Name="ttkVertexScalarField" format="appended" RangeMin="-1"                   RangeMax="365545"               offset="5960"                >
+        </DataArray>
+        <DataArray type="Float64" Name="CriticalType" format="appended" RangeMin="-1"                   RangeMax="3"                    offset="6176"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates" format="appended" RangeMin="-1"                   RangeMax="468.93978882"         offset="6392"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates_X" format="appended" RangeMin="-1"                   RangeMax="492.98797607"         offset="6608"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates_Y" format="appended" RangeMin="-1"                   RangeMax="496.9960022"          offset="6824"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Coordinates_Z" format="appended" RangeMin="-1"                   RangeMax="92.938774109"         offset="7040"                >
+        </DataArray>
+        <DataArray type="Float64" Name="OriginPersPercent" format="appended" RangeMin="-1"                   RangeMax="261.20199585"         offset="7256"                >
+        </DataArray>
+        <DataArray type="Float64" Name="OriginPersDiff" format="appended" RangeMin="-3.6032581329"        RangeMax="3.603304863"          offset="7472"                >
+        </DataArray>
+        <DataArray type="Float64" Name="CorrPers0" format="appended" RangeMin="-1"                   RangeMax="0.83140084456"        offset="7688"                >
+        </DataArray>
+        <DataArray type="Int32" Name="OriginTrueNodeId" format="appended" RangeMin="-1"                   RangeMax="109"                  offset="7904"                >
+        </DataArray>
+        <DataArray type="Int32" Name="OriginPersOrder" format="appended" RangeMin="-1"                   RangeMax="28"                   offset="8016"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Persistence" format="appended" RangeMin="-1"                   RangeMax="74.30557251"          offset="8128"                >
+        </DataArray>
+        <DataArray type="Int32" Name="ClusterID" format="appended" RangeMin="0"                    RangeMax="0"                    offset="8344"                >
+        </DataArray>
+        <DataArray type="Int32" Name="DiagramID" format="appended" RangeMin="7"                    RangeMax="7"                    offset="8456"                >
+        </DataArray>
+        <DataArray type="Int32" Name="isImportantPair" format="appended" RangeMin="0"                    RangeMax="1"                    offset="8568"                >
+        </DataArray>
+        <DataArray type="Int32" Name="isMultiPersPairArc" format="appended" RangeMin="0"                    RangeMax="0"                    offset="8680"                >
+        </DataArray>
+        <DataArray type="Int32" Name="PairIdentifier" format="appended" RangeMin="-1"                   RangeMax="49"                   offset="8792"                >
+        </DataArray>
+        <DataArray type="Int32" Name="PairType" format="appended" RangeMin="-1"                   RangeMax="0"                    offset="8904"                >
+        </DataArray>
+        <DataArray type="Int32" Name="IsFinite" format="appended" RangeMin="0"                    RangeMax="1"                    offset="9016"                >
+        </DataArray>
+        <DataArray type="Float64" Name="Birth" format="appended" RangeMin="0"                    RangeMax="61.823532104"         offset="9128"                >
+        </DataArray>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="appended" RangeMin="0"                    RangeMax="92.624360949"         offset="9344"                >
+          <InformationKey name="L2_NORM_FINITE_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0
+            </Value>
+            <Value index="1">
+              92.624360949
+            </Value>
+          </InformationKey>
+          <InformationKey name="L2_NORM_RANGE" location="vtkDataArray" length="2">
+            <Value index="0">
+              0
+            </Value>
+            <Value index="1">
+              92.624360949
+            </Value>
+          </InformationKey>
+        </DataArray>
+      </Points>
+      <Cells>
+        <DataArray type="Int64" Name="connectivity" format="appended" RangeMin=""                     RangeMax=""                     offset="9952"                />
+        <DataArray type="Int64" Name="offsets" format="appended" RangeMin=""                     RangeMax=""                     offset="10376"               />
+        <DataArray type="UInt8" Name="types" format="appended" RangeMin=""                     RangeMax=""                     offset="10592"               />
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+  <AppendedData encoding="raw">
+   _È       ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÈ                                                                                                                                                                                       `	O}@   `	O}@   àÉq@   àÉq@   ÀªÊt@   ÀªÊt@    ¹Ìx@    ¹Ìx@   àhJt@   àhJt@   `œÈp@   `œÈp@    ±>8@    ±>8@                    ¦Žl@    ¦Žl@    H
+D@    H
+D@   ÀË)0@   ÀË)0@    ÚY@    ÚY@    ±>X@    ±>X@   €£Ér@   €£Ér@   €$I<@   €$I<@    #Ž{@    #Ž{@   €Ÿz@   €Ÿz@   `wLx@   `wLx@   €Vh@   €Vh@    ûLy@    ûLy@    90@    90@    ±>(@    ±>(@                   À>4T@   À>4T@          ]j@    ]j@   €Vh@   €Vh@    ¦Žl@    ¦Žl@   ÀÎÏ~@   ÀÎÏ~@                    ¹Ìx@    ¹Ìx@    l~@    l~@   €Ÿz@   €Ÿz@   À<Íy@   À<Íy@    9@    9@   €£Ér@   €£Ér@                   €ZHp@   €ZHp@   €Ÿj@   €Ÿj@   à­~@   à­~@    #Ž{@    #Ž{@   àd|@   àd|@   `‹u@   `‹u@   `ÀÍz@   `ÀÍz@    9p@    9p@    ‘‹f@    ‘‹f@   @Šc@   @Šc@    O~@    O~@   à‰Št@   à‰Št@    ¦Žl@    ¦Žl@         €Ÿj@   €Ÿj@   `Ä	s@   `Ä	s@   €£Ér@   €£Ér@   ÀÎÏ~@   ÀÎÏ~@    ï@    ï@    ûLy@    ûLy@    ¹Ìx@    ¹Ìx@   À<Íy@   À<Íy@   €~Mz@   €~Mz@   àd\@   àd\@   `wLx@   `wLx@   à­~@   à­~@   €Ÿj@   €Ÿj@    H
+t@    H
+t@    ûLy@    ûLy@   ày@   ày@   ày@   ày@    9@    9@   À<Íy@   À<Íy@   ÀóKw@   ÀóKw@   @˜Œh@   @˜Œh@   àÉq@   àÉq@    Úy@    Úy@    ‘‹v@    ‘‹v@    pKv@    pKv@          ±>(@    ±>(@   ÀË) @   ÀË) @   €$I<@   €$I<@   €h,Q@   €h,Q@    ^NN@    ^NN@                                                   €$I<@   €$I<@    ^NN@    ^NN@   ÀË)@   ÀË)@   À>44@   À>44@   ÀË)@   ÀË)@   ÀË) @   ÀË) @    ¢1S@    ¢1S@                   À>4D@   À>4D@    ëCJ@    ëCJ@    x9V@    x9V@    ±>(@    ±>(@   à<W@   à<W@   @/R@   @/R@   @/B@   @/B@                    ±>(@    ±>(@         à™ªY@   à™ªY@   à Y@   à Y@                   @R@   @R@                   `;Sp@   `;Sp@                                                   ` Y@   ` Y@                                                                                     Y@     Y@                    ?T@    ?T@                                                                                   ` Y@   ` Y@                          pÓü?    pÓü?      ?      ?                    yÓÀ    yÓÀ                   €‘Ó@   €‘Ó@                                                      ?      ?                                                                                      Ð>      Ð>                    Óü¿    Óü¿                                                                                      ÷>      ÷>                      r»§ñÕšê?r»§ñÕšê?¹b>_è¿¹b>_è¿-³&g˜É?-³&g˜É?‚Ú;ýGÛ¿‚Ú;ýGÛ¿‰Å
+?§õÇ?‰Å
+?§õÇ?SÂYÝ†×?SÂYÝ†×?™âG ‚¾¿™âG ‚¾¿                ‡ 33Í?‡ 33Í?JÂÂ–@è¿JÂÂ–@è¿ÓU¡ðÏª?ÓU¡ðÏª?                -:9jÔÖ?-:9jÔÖ?u#½ŒÔçÂ¿u#½ŒÔçÂ¿ÔIÚœmá?ÔIÚœmá?¡­§]\hÜ?¡­§]\hÜ?e7;4œ©Î¿e7;4œ©Î¿Ì7ºx`¥Õ¿Ì7ºx`¥Õ¿™£—uóÏ?™£—uóÏ?É)‚@ÑÉ?É)‚@ÑÉ?                ¯¡°Ý?¯¡°Ý?lØÇýÚ?lØÇýÚ?<>¹È¿<>¹È¿                È       m   m         -   -   	   	   A   A         =   =   ÿÿÿÿÿÿÿÿY   Y         Q   Q   ÿÿÿÿÿÿÿÿ      9   9               O   O         G   G   7   7   ÿÿÿÿÿÿÿÿ)   )   !   !         ÿÿÿÿÿÿÿÿÈ                                             	   	   ÿÿÿÿÿÿÿÿ
+   
+               ÿÿÿÿÿÿÿÿ                                                ÿÿÿÿÿÿÿÿ                  ÿÿÿÿÿÿÿÿ         €Ž“R@   €Ž“R@    ú»@    ú»@    {¬@    {¬@   @¦(0@   @¦(0@    © @    © @    Ö @    Ö @    ÔL@    ÔL@   @9@   @9@   @«H@   @«H@   Àmž1@   Àmž1@    ò8@    ò8@   À0n@   À0n@    î—@    î—@    ³¸@    ³¸@    ©è@    ©è@    ö "@    ö "@   ÀW@   ÀW@    "!@    "!@   €’m@   €’m@    ú)@    ú)@   €^@   €^@   €Ç¶@   €Ç¶@   @‡l@   @‡l@   €Ç@   €Ç@    O@    O@È                                                                                                                                                                                                               È                                                                                                                                                             È       1   1   -   -   +   +         )   )                           !   !               /   /   '   '   %   %   	   	                                                   #   #   È                                                                                                                                                                                                             È                                                                                                                                                                                                               È         DB  DB  4B  4B  ,B  ,B  ØA  ØA  $B  $B  PA  PA  à@  à@  ˆA  ˆA  @@  @@  B  B  ÈA  ÈA   @   @  <B  <B  B  B  B  B  A  A  €?  €?  ˜A  ˜A  øA  øA  èA  èA  pA  pA  ¨A  ¨A  0A  0A  ¸A  ¸A  B  BÈ         @B  @B  0B  0B  (B  (B  ÐA  ÐA   B   B  @A  @A  À@  À@  €A  €A   @   @   B   B  ÀA  ÀA  €@  €@  8B  8B  B  B  B  B   A   A          A  A  ðA  ðA  àA  àA  `A  `A   A   A   A   A  °A  °A  B  B                         `É7@@   `É7@@   €þ5@@   €þ5@@   @õâ3@   @õâ3@    ’·=@    ’·=@   €ë!@   €ë!@    X* @    X* @   à÷$@   à÷$@   àO@   àO@   @Å¨5@   @Å¨5@   @ñó/@   @ñó/@   Àg2@   Àg2@   €iéN@   €iéN@    wp=@    wp=@   `½¶8@   `½¶8@   €u;!@   €u;!@   ÀG£@   ÀG£@   Àè '@   Àè '@   À'Ö4@   À'Ö4@    ƒL4@    ƒL4@   àÿ!@   àÿ!@   @‘)@   @‘)@   @wê!@   @wê!@    óÐ,@    óÐ,@   ÀÈå6@   ÀÈå6@Ð            &ê@    Àëã@    pý@    Œ(A    ˜€A     ÚÈ@    €gÈ@    €ZÉ@    °îý@     	A    @,Û@    ðËö@    ÀÊÕ@    à*ä@    ØåA     É@    À¤A    @ÒA    ðÅA    €˜ì@    ¤OA    ÐµA    ð´A     "Æ@     Yì@      ð¿Ð             @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      @      ð¿Ð                  `	O}@   àÉq@   ÀªÊt@    ¹Ìx@   àhJt@   `œÈp@    ±>8@            ¦Žl@    H
+D@   ÀË)0@    ÚY@    ±>X@   €£Ér@   €$I<@    #Ž{@   €Ÿz@   `wLx@   €Vh@    ûLy@    90@    ±>(@           À>4T@      ð¿Ð           ]j@   €Vh@    ¦Žl@   ÀÎÏ~@            ¹Ìx@    l~@   €Ÿz@   À<Íy@    9@   €£Ér@           €ZHp@   €Ÿj@   à­~@    #Ž{@   àd|@   `‹u@   `ÀÍz@    9p@    ‘‹f@   @Šc@    O~@   à‰Št@    ¦Žl@      ð¿Ð          €Ÿj@   `Ä	s@   €£Ér@   ÀÎÏ~@    ï@    ûLy@    ¹Ìx@   À<Íy@   €~Mz@   àd\@   `wLx@   à­~@   €Ÿj@    H
+t@    ûLy@   ày@   ày@    9@   À<Íy@   ÀóKw@   @˜Œh@   àÉq@    Úy@    ‘‹v@    pKv@      ð¿Ð           ±>(@   ÀË) @   €$I<@   €h,Q@    ^NN@                           €$I<@    ^NN@   ÀË)@   À>44@   ÀË)@   ÀË) @    ¢1S@           À>4D@    ëCJ@    x9V@    ±>(@   à<W@   @/R@   @/B@            ±>(@      ð¿Ð          à™ªY@   à Y@           @R@           `;Sp@                           ` Y@                                             Y@            ?T@                                           ` Y@              ð¿Ð           pÓü?      ?            yÓÀ           €‘Ó@                              ?                                              Ð>            Óü¿                                              ÷>              ð¿Ð       r»§ñÕšê?¹b>_è¿-³&g˜É?‚Ú;ýGÛ¿‰Å
+?§õÇ?SÂYÝ†×?™âG ‚¾¿        ‡ 33Í?JÂÂ–@è¿ÓU¡ðÏª?        -:9jÔÖ?u#½ŒÔçÂ¿ÔIÚœmá?¡­§]\hÜ?e7;4œ©Î¿Ì7ºx`¥Õ¿™£—uóÏ?É)‚@ÑÉ?        ¯¡°Ý?lØÇýÚ?<>¹È¿              ð¿h       m      -   	   A      =   ÿÿÿÿY      Q   ÿÿÿÿ   9         O      G   7   ÿÿÿÿ)   !      ÿÿÿÿÿÿÿÿh                          	   ÿÿÿÿ
+         ÿÿÿÿ                        ÿÿÿÿ         ÿÿÿÿÿÿÿÿÐ          €Ž“R@    ú»@    {¬@   @¦(0@    © @    Ö @    ÔL@   @9@   @«H@   Àmž1@    ò8@   À0n@    î—@    ³¸@    ©è@    ö "@   ÀW@    "!@   €’m@    ú)@   €^@   €Ç¶@   @‡l@   €Ç@    O@      ð¿h                                                                                                               h                                                                                     h                                                                                                              h                                                                                                               h                   	                                    !   #   %   '   )   +   -   /   1   ÿÿÿÿh                                                                                                           ÿÿÿÿh                                                                                       Ð                  `É7@@   €þ5@@   @õâ3@    ’·=@   €ë!@    X* @   à÷$@   àO@   @Å¨5@   @ñó/@   Àg2@   €iéN@    wp=@   `½¶8@   €u;!@   ÀG£@   Àè '@   À'Ö4@    ƒL4@   àÿ!@   @‘)@   @wê!@    óÐ,@   ÀÈå6@        X                      tœ”B    K¾BK¾B    K¾BEzB    ô¯Bô¯B    ô¯Bo\B    ªŸAªŸA    ªŸAn.B    ¼íA¼íA    ¼íAšáB    ¼XA¼XA    ¼XA\cA    ÅRAÅRA    ÅRA†JA    ¿g A¿g A    ¿g AÈKaA    Ïxò@Ïxò@    Ïxò@¾Í5A    *F­A*F­A    *F­AÌB    ŠŸAŠŸA    ŠŸA©A A    >“ù@>“ù@    >“ù@b‚>A    LKwBLKwB    LKwBñ‰B    ¹ƒëA¹ƒëA    ¹ƒëA6žB    ëµÅAëµÅA    ëµÅA=‡çA    ¬Û	A¬Û	A    ¬Û	A®ñŒA    >å@>å@    >å@&é;A    F=AF=A    F=A+Ä¤A    >±¦A>±¦A    >±¦AcŒËA    d¢Ad¢A    d¢AŽÀA    üAüA    üA‰tYA    ªˆLAªˆLA    ªˆLAä±‰A    ºSAºSA    ºSA×YA    ˜‡fA˜‡fA    ˜‡fA[w—A    F.·AF.·A    F.·A~ÌãA                                                                    	                     
+                                                                                                                                                   !               #       "       %       $       '       &       )       (       +       *       -       ,       /       .       1       0                      Ð                                   
+                                                                                     "       $       &       (       *       ,       .       0       2       4              
+  </AppendedData>
+</VTKFile>

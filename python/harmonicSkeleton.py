@@ -118,8 +118,8 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "ScaledHarmonic"]
 
-# create a new 'TTK Reeb graph (FTR)'
-tTKReebgraphFTR1 = TTKReebgraphFTR(Input=tTKTopologicalSimplification1)
+# create a new 'TTK Reeb Graph'
+tTKReebgraphFTR1 = TTKReebGraph(Input=tTKTopologicalSimplification1)
 tTKReebgraphFTR1.ScalarField = ["POINTS", "ScaledHarmonic"]
 tTKReebgraphFTR1.ArcSampling = 20
 tTKReebgraphFTR1.UseAllCores = False

@@ -1,11 +1,5 @@
 # Persistence Clustering 2 
 
-<!--[![Dragon example video tutorial](https://topology-tool-kit.github.io/img/gallery/dragon.jpg)](https://youtu.be/YVk9vRKIEX8)-->
-
-<!--iframe width="100%" height="420"
-src="https://www.youtube.com/embed/YVk9vRKIEX8" frameborder="0"
-allowfullscreen></iframe-->
-
 ![Persistence Clustering 2 Image](https://topology-tool-kit.github.io/img/gallery/persistenceClustering2.jpeg)
 
 ## Pipeline description
@@ -22,8 +16,6 @@ The simplified persistence diagram is then used as a constraint for the [Topolog
 
 From there a [MorseSmaleComplex](https://topology-tool-kit.github.io/doc/html/classttkMorseSmaleComplex.html) is computed (bottom right view in the above screenshot). Finally, by using the identifier of the 2-dimension cell of the Morse Smale complex where one point lands, a cluster identifier, encoded in the AscendingManifold field in the ouput, is given to it.
 
-
-<!--This simplified data is then used as the input of the computation of [ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html) (top left view, above screenshot) and the [ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) (bottom left view, above screenshot).-->
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
@@ -52,10 +44,6 @@ pvpython python/persistenceClustering2.py
 
 
 ## C++/Python API
-
-<!--[ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)-->
-
-<!--[PersistenceCurve](https://topology-tool-kit.github.io/doc/html/classttkPersistenceCurve.html)-->
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
 

@@ -11,9 +11,9 @@ Then, only the 5 most persistent maxima are selected, corresponding to the toes 
 
 Next, the input data is simplified based on the selected persistent features, via [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html).
 
-Next, the [Split tree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) of the simplified data is computed. 
+Next, the [Split tree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) of the simplified data is computed. 
 
-Finally, the geometry of the bones of the toes is extracted by selecting the regions (in the 3D data) attached to the leaves (`RegionType` equals 1) of the [Split tree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) (center view, above screenshot).
+Finally, the geometry of the bones of the toes is extracted by selecting the regions (in the 3D data) attached to the leaves (`RegionType` equals 1) of the [Split tree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) (center view, above screenshot).
 
 To get a refined segmentation, change the persistence threshold from `180` down to `150`. 
 Each toe will be subdivided into two segments, precisely along the joints.
@@ -43,7 +43,7 @@ pvpython python/ctBones.py
 - `CTBonesOutputSegmentation.vtu`: the geometry of the volume of the bones of the toes, as extracted by the analysis pipeline (most persistent super-level set connected components).
 
 ## C++/Python API
-[ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
 

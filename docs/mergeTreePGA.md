@@ -5,11 +5,11 @@
 
 ## Pipeline description
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
-Then, the [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) is computed on each scalar field to compute the Split Tree.
+Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) is computed on each scalar field to compute the Split Tree.
 
 All these trees are passed to [MergeTreePrincipalGeodesics](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesics.html) to compute principal geodesic analysis in the metric space of merge trees. 
 
-Then the filter [MergeTreePrincipalGeodesicsDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesics.html) is used to reconstruct the input trees, to sample evenly trees along the principal geodesics and to sample a discrete grid of merge trees of the PGA basis. 
+Then the filter [MergeTreePrincipalGeodesicsDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesicsDecoding.html) is used to reconstruct the input trees, to sample evenly trees along the principal geodesics and to sample a discrete grid of merge trees of the PGA basis.
 
 A distance matrix is then computed with [MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html) with the trees of the grid. This distance matrix is used as input of [DimensionReduction](https://topology-tool-kit.github.io/doc/html/classttkDimensionReduction.html) to compute a MultiDimensional Scaling (MDS), performing a dimensionality reduction in 3D (and 2D with a second DimensionReduction filter) respecting the most the input distance matrix. 
 
@@ -43,6 +43,8 @@ pvpython python/mergeTreePGA.py
 
 ## Outputs
 -  `MT-PGA_coef.csv`: the coefficients of the input trees corresponding to their coordinates in the PGA basis.
+-  `MT-PGA_geodesics.csv`: the geodesics of the PGA basis.
+-  `MT-PGA_reconstructed_trees.vtm`: the reconstructed input trees.
 
 
 ## C++/Python API
@@ -58,7 +60,7 @@ pvpython python/mergeTreePGA.py
 
 [FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
 
-[FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 

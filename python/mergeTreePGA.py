@@ -9,8 +9,8 @@ tTKCinemaReader1 = TTKCinemaReader(DatabasePath="./Earthquake.cdb")
 tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 tTKCinemaProductReader1.AddFieldDataRecursively = 1
 
-# create a new 'TTK Merge and Contour Tree (FTM)'
-tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(Input=tTKCinemaProductReader1)
+# create a new 'TTK Merge and Contour Tree'
+tTKMergeandContourTreeFTM1 = TTKMergeTree(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", "VectorMag"]
 tTKMergeandContourTreeFTM1.TreeType = "Split Tree"
 

@@ -56,4 +56,10 @@ tTKGeometrySmoother2 = TTKGeometrySmoother(Input=tetrahedralize1)
 tTKGeometrySmoother2.IterationNumber = 20
 tTKGeometrySmoother2.InputMaskField = [None, ""]
 
-SaveData("OutputSurface.vtu", tTKGeometrySmoother2)
+# threshold the output surface
+threshold5 = Threshold(Input=tTKGeometrySmoother2)
+threshold5.Scalars = ['CELLS', 'SeparatrixFunctionMinimum']
+threshold5.LowerThreshold = 0.2
+threshold5.UpperThreshold = 1
+
+SaveData("OutputSurface.vtu", threshold5)

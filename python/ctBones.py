@@ -36,15 +36,15 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "Scalars_"]
 
-# create a new 'TTK Merge and Contour Tree (FTM)'
-tTKMergeandContourTreeFTM1 = TTKMergeandContourTreeFTM(
+# create a new 'TTK Merge and Contour Tree ()'
+tTKMergeandContourTree1 = TTKMergeTree(
     Input=tTKTopologicalSimplification1
 )
-tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", "Scalars_"]
-tTKMergeandContourTreeFTM1.TreeType = "Join Tree"
+tTKMergeandContourTree1.ScalarField = ["POINTS", "Scalars_"]
+tTKMergeandContourTree1.TreeType = "Join Tree"
 
 # create a new 'Threshold'
-threshold3 = Threshold(Input=OutputPort(tTKMergeandContourTreeFTM1, 2))
+threshold3 = Threshold(Input=OutputPort(tTKMergeandContourTree1, 2))
 threshold3.Scalars = ["POINTS", "RegionType"]
 threshold3.ThresholdMethod = "Between"
 threshold3.LowerThreshold = 0.0
