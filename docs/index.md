@@ -78,6 +78,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistence diagram distance](persistenceDiagramDistance/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg) |
 | [Persistence diagram clustering](persistenceDiagramClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg) |
 | [Clustering Kelvin Helmoltz Instabilities](clusteringKelvinHelmholtzInstabilities/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/clusteringKelvinHelmholtzInstabilities.jpg) |
+| [Persistence diagram dictionary](persistenceDiagramDictionary/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDictionary.jpg) |
 | [Persistence diagram Wasserstein Auto-Encoding](persistenceDiagramWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramWAE.jpg) |
 | [Merge feature tracking](mergeTreeFeatureTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
 | [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
