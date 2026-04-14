@@ -1,7 +1,5 @@
 #! /usr/bin/env/python
-import paraview
 
-#### import the simple module from the paraview
 from paraview.simple import *
 
 # create a new 'TTK CinemaReader'
@@ -26,12 +24,11 @@ tTKPersistenceDiagram1.ClearDiscreteGradientCache = 1
 
 # create a new 'TTK PersistenceDiagramDictionary'
 tTKPersistenceDiagramDictionary1 = TTKPersistenceDiagramDictionary(
-    Input=tTKPersistenceDiagram1, optionalinput=None
+    Input=tTKPersistenceDiagram1
 )
-tTKPersistenceDiagramDictionary1.percentthreshold = 1.0
+tTKPersistenceDiagramDictionary1.Percentthreshold = 1.0
 tTKPersistenceDiagramDictionary1.Compressionfactor = 5.0
 tTKPersistenceDiagramDictionary1.Progressiveapproach = 1
-tTKPersistenceDiagramDictionary1.ThreadNumber = 12
 
 SaveData("PD-Dictionary_dict.vtm", OutputPort(tTKPersistenceDiagramDictionary1, 0))
 
