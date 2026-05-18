@@ -23,7 +23,10 @@ threshold3.LowerThreshold = 3.0
 threshold3.UpperThreshold = 3.0
 
 # create a new 'Generate Ids'
-generateIds1 = GenerateIds(registrationName="GenerateIds1", Input=threshold3)
+if GetParaViewVersion() >= (6, 1):
+    generateIds1 = PointAndCellIds(registrationName="GenerateIds1", Input=threshold3)
+else:
+    generateIds1 = GenerateIds(registrationName="GenerateIds1", Input=threshold3)
 generateIds1.PointIdsArrayName = "VertexIdentifiers"
 generateIds1.CellIdsArrayName = "CellIdentifiers"
 
