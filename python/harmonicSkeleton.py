@@ -12,7 +12,10 @@ elevation1.LowPoint = [55.58376886060912, -88.42696707641238, -1166.765199953954
 elevation1.HighPoint = [-27.56680371810648, 70.65296514617846, -1072.7592471929715]
 
 # create a new 'Generate Ids'
-generateIds1 = GenerateIds(Input=elevation1)
+if GetParaViewVersion() >= (6, 1):
+    generateIds1 = PointAndCellIds(Input=elevation1)
+else:
+    generateIds1 = GenerateIds(Input=elevation1)
 generateIds1.PointIdsArrayName = "ttkVertexScalarField"
 
 # create a new 'Resample With Dataset'
