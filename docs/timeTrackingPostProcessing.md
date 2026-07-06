@@ -1,5 +1,7 @@
 # Time Tracking Post-Processing
 
+![Time tracking screenshot placeholder](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg)
+
 ## Pipeline description
 
 This example loads a 2D time-varying scalar field, where time steps are
@@ -80,5 +82,3 @@ pvpython python/timeTrackingPostProcessing.py
 ## C++/Python API
 
 [TrackingFromFields](https://topology-tool-kit.github.io/doc/html/classttkTrackingFromFields.html)
-
-PostProcessingTracking
