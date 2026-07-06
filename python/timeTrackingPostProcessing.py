@@ -4,42 +4,50 @@ import numpy as np
 from vtk.util import numpy_support as ns
 from paraview import servermanager as sm
 
+# physical constants
+SCALE = 3.5      # pixels per mm
+Y0 = 111.0       # crater origin (pixels)
+DT = 5.68e-6     # seconds per frame
+RHO = 1754.0     # kg/m^3
+
 # custom processing functions
-
-
 def export_crater_profile(source, filename="crater_profile.csv", bin_size=2):
-    by = ns.vtk_to_numpy(sm.Fetch(source).GetCellData().GetArray("by"))
+    cd = sm.Fetch(source).GetCellData()
+    by = ns.vtk_to_numpy(cd.GetArray("by"))
+    seg = ns.vtk_to_numpy(cd.GetArray("SegmentationMean"))
+    # mass per fragment: sphere of equivalent surface area (mg)
+    r_mm = np.sqrt(seg / (SCALE * SCALE) / (4.0 * np.pi))
+    mass_mg = RHO * (4.0 / 3.0) * np.pi * r_mm**3 * 1.0e-3
     start = np.floor(by.min() / bin_size) * bin_size
     end = np.ceil(by.max() / bin_size) * bin_size
     nbins = int(round((end - start) / bin_size))
     edges = start + np.arange(nbins + 1) * bin_size
     centers = start + (np.arange(nbins) + 0.5) * bin_size
-    counts, _ = np.histogram(by, bins=edges)
+    masses, _ = np.histogram(by, bins=edges, weights=mass_mg)
+    x_mm = -((centers - Y0) / SCALE)
     np.savetxt(
         filename,
-        np.column_stack([centers, -counts]),
+        np.column_stack([x_mm, -masses]),
         delimiter=",",
-        header="X,Counts_neg",
+        header="X_mm,Mass_neg_mg",
         comments="",
         fmt="%.6g",
     )
-
 
 def export_ejection_angle(source, filename="ejection_angle.csv"):
     cd = sm.Fetch(source).GetCellData()
     ax = ns.vtk_to_numpy(cd.GetArray("ax"))
     ay = ns.vtk_to_numpy(cd.GetArray("ay"))
-    axial = -ax
-    angle = np.degrees(np.arctan(ay / axial))
+    axial = -ax * 1.0e-3 / SCALE / DT  # px/frame -> m/s
+    angle = np.degrees(np.arctan(ay / -ax))
     np.savetxt(
         filename,
         np.column_stack([axial, angle]),
         delimiter=",",
-        header="axial_velocity,ejection_angle",
+        header="axial_velocity_ms,ejection_angle",
         comments="",
         fmt="%.6g",
     )
-
 
 # main pipeline
 
