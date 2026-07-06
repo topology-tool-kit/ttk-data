@@ -4209,18 +4209,18 @@
         <Proxy value="14004"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17526" servers="16">
-      <Property name="Source" id="17526.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17518" servers="16">
+      <Property name="Source" id="17518.Source" number_of_elements="1">
         <Proxy value="14015"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17527" servers="16">
-      <Property name="Source" id="17527.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17519" servers="16">
+      <Property name="Source" id="17519.Source" number_of_elements="1">
         <Proxy value="14026"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17528" servers="16">
-      <Property name="Source" id="17528.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17520" servers="16">
+      <Property name="Source" id="17520.Source" number_of_elements="1">
         <Proxy value="14040"/>
       </Property>
     </Proxy>
@@ -5521,8 +5521,8 @@
         <Element index="2" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17529" servers="16">
-      <Property name="Source" id="17529.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17521" servers="16">
+      <Property name="Source" id="17521.Source" number_of_elements="1">
         <Proxy value="14301"/>
       </Property>
     </Proxy>
@@ -6757,13 +6757,13 @@
         <Element index="2" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17530" servers="16">
-      <Property name="Source" id="17530.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17522" servers="16">
+      <Property name="Source" id="17522.Source" number_of_elements="1">
         <Proxy value="14562"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17533" servers="16">
-      <Property name="Source" id="17533.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17523" servers="16">
+      <Property name="Source" id="17523.Source" number_of_elements="1">
         <Proxy value="14573"/>
       </Property>
     </Proxy>
@@ -7998,8 +7998,8 @@
         <Element index="2" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17534" servers="16">
-      <Property name="Source" id="17534.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17524" servers="16">
+      <Property name="Source" id="17524.Source" number_of_elements="1">
         <Proxy value="14809"/>
       </Property>
     </Proxy>
@@ -12277,43 +12277,43 @@
         <Element index="2" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17518" servers="16">
-      <Property name="Source" id="17518.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17525" servers="16">
+      <Property name="Source" id="17525.Source" number_of_elements="1">
         <Proxy value="15550"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17519" servers="16">
-      <Property name="Source" id="17519.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17526" servers="16">
+      <Property name="Source" id="17526.Source" number_of_elements="1">
         <Proxy value="15561"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17520" servers="16">
-      <Property name="Source" id="17520.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17527" servers="16">
+      <Property name="Source" id="17527.Source" number_of_elements="1">
         <Proxy value="15572"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17521" servers="16">
-      <Property name="Source" id="17521.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17528" servers="16">
+      <Property name="Source" id="17528.Source" number_of_elements="1">
         <Proxy value="15583"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17522" servers="16">
-      <Property name="Source" id="17522.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17529" servers="16">
+      <Property name="Source" id="17529.Source" number_of_elements="1">
         <Proxy value="15594"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17523" servers="16">
-      <Property name="Source" id="17523.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17530" servers="16">
+      <Property name="Source" id="17530.Source" number_of_elements="1">
         <Proxy value="15605"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17524" servers="16">
-      <Property name="Source" id="17524.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17531" servers="16">
+      <Property name="Source" id="17531.Source" number_of_elements="1">
         <Proxy value="15616"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17525" servers="16">
-      <Property name="Source" id="17525.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17532" servers="16">
+      <Property name="Source" id="17532.Source" number_of_elements="1">
         <Proxy value="15627"/>
       </Property>
     </Proxy>
@@ -14779,8 +14779,8 @@
         <Element index="2" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17531" servers="16">
-      <Property name="Source" id="17531.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17533" servers="16">
+      <Property name="Source" id="17533.Source" number_of_elements="1">
         <Proxy value="16113"/>
       </Property>
     </Proxy>
@@ -19774,8 +19774,8 @@
         <Element index="2" value="1"/>
       </Property>
     </Proxy>
-    <Proxy group="misc" type="RepresentationAnimationHelper" id="17532" servers="16">
-      <Property name="Source" id="17532.Source" number_of_elements="1">
+    <Proxy group="misc" type="RepresentationAnimationHelper" id="17534" servers="16">
+      <Property name="Source" id="17534.Source" number_of_elements="1">
         <Proxy value="17097"/>
       </Property>
     </Proxy>
@@ -39272,7 +39272,7 @@
       </Property>
       <Property name="CustomLabels" id="16595.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="16595.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="16595.DataRangeMax" number_of_elements="1">
         <Element index="0" value="nan"/>
@@ -39383,7 +39383,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="16595.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="16595.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -39547,7 +39547,7 @@
       </Property>
       <Property name="CustomLabels" id="15530.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="15530.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="15530.DataRangeMax" number_of_elements="1">
         <Element index="0" value="1380"/>
@@ -39658,7 +39658,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="15530.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="15530.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -39822,7 +39822,7 @@
       </Property>
       <Property name="CustomLabels" id="13984.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="13984.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="13984.DataRangeMax" number_of_elements="1">
         <Element index="0" value="169"/>
@@ -39933,7 +39933,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="13984.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="13984.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -40097,7 +40097,7 @@
       </Property>
       <Property name="CustomLabels" id="14281.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="14281.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="14281.DataRangeMax" number_of_elements="1">
         <Element index="0" value="169"/>
@@ -40208,7 +40208,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="14281.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="14281.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -40372,7 +40372,7 @@
       </Property>
       <Property name="CustomLabels" id="14542.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="14542.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="14542.DataRangeMax" number_of_elements="1">
         <Element index="0" value="0.9998747292738699"/>
@@ -40483,7 +40483,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="14542.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="14542.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -40647,7 +40647,7 @@
       </Property>
       <Property name="CustomLabels" id="15865.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="15865.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="15865.DataRangeMax" number_of_elements="1">
         <Element index="0" value="0.9998747292738699"/>
@@ -40758,7 +40758,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="15865.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="15865.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -40922,7 +40922,7 @@
       </Property>
       <Property name="CustomLabels" id="15521.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="15521.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="15521.DataRangeMax" number_of_elements="1">
         <Element index="0" value="169"/>
@@ -41033,7 +41033,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="15521.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="15521.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -50286,13 +50286,13 @@
       <Item id="17517" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14015">
-      <Item id="17526" name="RepresentationAnimationHelper"/>
+      <Item id="17518" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14026">
-      <Item id="17527" name="RepresentationAnimationHelper"/>
+      <Item id="17519" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14040">
-      <Item id="17528" name="RepresentationAnimationHelper"/>
+      <Item id="17520" name="RepresentationAnimationHelper"/>
       <Item id="14037" name="Transform" logname="Transform1/Transform/Transform3"/>
       <Item id="14038" name="Transform" logname="Transform1/Transform/RotateAroundOriginTransform"/>
       <Item id="14039" name="Transform" logname="Transform1/Transform/GeoTransform"/>
@@ -50314,7 +50314,7 @@
       <Item id="14245" name="TextureTransform" logname="UnstructuredGridRepresentation10/SurfaceRepresentation/TextureTransform/Transform2"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14301">
-      <Item id="17529" name="RepresentationAnimationHelper"/>
+      <Item id="17521" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14526">
       <Item id="14290" name="DataAxesGrid" logname="UnstructuredGridRepresentation6/DataAxesGrid/GridAxesRepresentation"/>
@@ -50333,10 +50333,10 @@
       <Item id="14509" name="TextureTransform" logname="UnstructuredGridRepresentation6/SurfaceRepresentation/TextureTransform/Transform2"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14562">
-      <Item id="17530" name="RepresentationAnimationHelper"/>
+      <Item id="17522" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14573">
-      <Item id="17533" name="RepresentationAnimationHelper"/>
+      <Item id="17523" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14779">
       <Item id="14551" name="DataAxesGrid" logname="GeometryRepresentation2/DataAxesGrid/GridAxesRepresentation"/>
@@ -50355,7 +50355,7 @@
       <Item id="14778" name="TextureTransform" logname="GeometryRepresentation2/SurfaceRepresentation/TextureTransform/Transform2"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.14809">
-      <Item id="17534" name="RepresentationAnimationHelper"/>
+      <Item id="17524" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15015">
       <Item id="14798" name="DataAxesGrid" logname="GeometryRepresentation3/DataAxesGrid/GridAxesRepresentation"/>
@@ -50412,28 +50412,28 @@
       <Item id="15482" name="TextureTransform" logname="UniformGridRepresentation8/SurfaceRepresentation/TextureTransform/Transform2"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15550">
-      <Item id="17518" name="RepresentationAnimationHelper"/>
+      <Item id="17525" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15561">
-      <Item id="17519" name="RepresentationAnimationHelper"/>
+      <Item id="17526" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15572">
-      <Item id="17520" name="RepresentationAnimationHelper"/>
+      <Item id="17527" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15583">
-      <Item id="17521" name="RepresentationAnimationHelper"/>
+      <Item id="17528" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15594">
-      <Item id="17522" name="RepresentationAnimationHelper"/>
+      <Item id="17529" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15605">
-      <Item id="17523" name="RepresentationAnimationHelper"/>
+      <Item id="17530" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15616">
-      <Item id="17524" name="RepresentationAnimationHelper"/>
+      <Item id="17531" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15627">
-      <Item id="17525" name="RepresentationAnimationHelper"/>
+      <Item id="17532" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.15849">
       <Item id="15539" name="DataAxesGrid" logname="UnstructuredGridRepresentation9/DataAxesGrid/GridAxesRepresentation"/>
@@ -50468,7 +50468,7 @@
       <Item id="16079" name="TextureTransform" logname="GeometryRepresentation1/SurfaceRepresentation/TextureTransform/Transform2"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.16113">
-      <Item id="17531" name="RepresentationAnimationHelper"/>
+      <Item id="17533" name="RepresentationAnimationHelper"/>
       <Item id="16110" name="Transform" logname="Transform2/Transform/Transform3"/>
       <Item id="16111" name="Transform" logname="Transform2/Transform/RotateAroundOriginTransform"/>
       <Item id="16112" name="Transform" logname="Transform2/Transform/GeoTransform"/>
@@ -50538,7 +50538,7 @@
       <Item id="17050" name="TextureTransform" logname="UnstructuredGridRepresentation3/SurfaceRepresentation/TextureTransform/Transform2"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.17097">
-      <Item id="17532" name="RepresentationAnimationHelper"/>
+      <Item id="17534" name="RepresentationAnimationHelper"/>
     </ProxyCollection>
     <ProxyCollection name="pq_helper_proxies.17319">
       <Item id="17086" name="DataAxesGrid" logname="UnstructuredGridRepresentation4/DataAxesGrid/GridAxesRepresentation"/>
