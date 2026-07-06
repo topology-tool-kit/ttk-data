@@ -74,8 +74,8 @@ pvpython python/timeTrackingPostProcessing.py
 
 - `debrisTrajectories.vtu`: space-time trajectories of the selected debris
   fragments.
-- `crater_profile.csv`: debris count binned by vertical impact position.
-- `ejection_angle.csv`: ejection angle versus axial velocity per fragment.
+- `crater_profile.csv`: debris mass (mg) binned by centered vertical impact position (mm).
+- `ejection_angle.csv`: ejection angle (°) versus axial velocity (m/s) per fragment.
 
 ## C++/Python API
 
