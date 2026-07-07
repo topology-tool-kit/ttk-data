@@ -67,7 +67,7 @@ If you have any questions regarding these examples, please let us know by sendin
 |:-:|:-:|
 | [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
 | [Tracking from critical points](trackingFromCriticalPoints/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/trackingFromCriticalPoints.jpg) |
-| [Tracking post-processing](trackingPostProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
+| [Tracking post-processing](trackingPostProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/trackingPostProcessing.jpg) |
 <!--
 | [Nested tracking graph](nestedTrackingFromOverlap/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
 -->
