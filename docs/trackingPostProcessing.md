@@ -1,13 +1,13 @@
 # Tracking Post-Processing
 
-![Time tracking screenshot placeholder](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg)
+![Time tracking screenshot placeholder](https://topology-tool-kit.github.io/img/gallery/tracking.jpeg)
 
 ## Pipeline description
 
 This example loads a 2D time-varying scalar field, where time steps are
 stored as a sequence of data arrays, and tracks its extrema over time with
 [TrackingFromFields](https://topology-tool-kit.github.io/doc/html/classttkTrackingFromFields.html).
-As in the [Time Tracking](https://topology-tool-kit.github.io/examples/timeTracking/)
+As in the [Time Tracking](https://topology-tool-kit.github.io/examples/tracking/)
 and [Tracking From Critical Points](https://topology-tool-kit.github.io/examples/trackingFromCriticalPoints/)
 examples, each extremum is followed from one time step to the next by solving
 an optimal assignment problem between the persistence diagrams of consecutive
@@ -49,13 +49,13 @@ To reproduce the above screenshot, go to your
 the following command:
 
 ```
-paraview states/timeTrackingPostProcessing.pvsm
+paraview states/trackingPostProcessing.pvsm
 ```
 
 ## Python code
 
 ```python linenums="1"
---8<-- "python/timeTrackingPostProcessing.py"
+--8<-- "python/trackingPostProcessing.py"
 ```
 
 To run the above Python script, go to your
@@ -63,7 +63,7 @@ To run the above Python script, go to your
 the following command:
 
 ```
-pvpython python/timeTrackingPostProcessing.py
+pvpython python/trackingPostProcessing.py
 ```
 
 ## Inputs
