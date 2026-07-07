@@ -1,4 +1,4 @@
-# Time Tracking Post-Processing
+# Tracking Post-Processing
 
 ![Time tracking screenshot placeholder](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg)
 
