@@ -1,6 +1,6 @@
 # Tracking Post-Processing
 
-![Time tracking screenshot placeholder](https://topology-tool-kit.github.io/img/gallery/tracking.jpeg)
+![tracking post-processing screenshot](https://topology-tool-kit.github.io/img/gallery/trackingPostProcessing.jpg)
 
 ## Pipeline description
 
