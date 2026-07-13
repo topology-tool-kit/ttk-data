@@ -361,3 +361,10 @@ Data specs
   "acknowledgement": "Berk Geveci, Christoph Garth, Garrett Aldrich, and Jonas Lukasczyk",
   "url": "https://jluk.de/resources/papers/NestedTrackingGraphs2017.pdf"
 }
+
+{
+  "name": "hvi.vti",
+  "description": "Hypervelocity Impact on graphite material",
+  "acknowledgement": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
+}
+
