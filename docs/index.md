@@ -36,9 +36,18 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Tribute](tribute/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg) |
 | [Image processing](imageProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/imageProcessing.jpg) |
 | [Persistence driven compression](persistenceDrivenCompression/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDrivenCompression.jpg) |
-| [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 | [Persistent Generators Molecule](persistentGenerators_at/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_at.jpg) |
+| [Cosmic Web](cosmicWeb/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/cosmicWeb.jpg) |
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
+| [Topological Optimization Cosmic Web](topologicalOptimization_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png) |
+| [MPI Example](mpiExample) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mpiExample.jpg) |
+| [Distributed Persistence Diagram](distributedPersistenceDiagram/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/distributedPersistenceDiagram.jpg) |
+
+
+## Vector data
+| Name | Screenshot |
+|:-:|:-:|
+| [Discrete Vector Field Topology](discreteVectorFieldTopology/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/discreteVectorFieldTopology.jpg) |
 
 ## Bivariate scalar data
 
@@ -57,8 +66,11 @@ If you have any questions regarding these examples, please let us know by sendin
 | Name | Screenshot |
 |:-:|:-:|
 | [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
-| [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
+| [Tracking from critical points](trackingFromCriticalPoints/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/trackingFromCriticalPoints.jpg) |
+| [Tracking post-processing](trackingPostProcessing/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/trackingPostProcessing.jpg) |
+<!--
 | [Nested tracking graph](nestedTrackingFromOverlap/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
+-->
 
 ## Ensemble scalar data
 
@@ -67,17 +79,25 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistence diagram distance](persistenceDiagramDistance/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg) |
 | [Persistence diagram clustering](persistenceDiagramClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg) |
 | [Clustering Kelvin Helmoltz Instabilities](clusteringKelvinHelmholtzInstabilities/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/clusteringKelvinHelmholtzInstabilities.jpg) |
+| [Persistence diagram dictionary](persistenceDiagramDictionary/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDictionary.jpg) |
+| [Persistence diagram Wasserstein Auto-Encoding](persistenceDiagramWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramWAE.jpg) |
+| [Merge feature tracking](mergeTreeFeatureTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
+| [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
 | [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
 | [Merge tree principal geodesic analysis](mergeTreePGA/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreePGA.jpg) |
+| [Merge tree Wasserstein Auto-Encoding](mergeTreeWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeWAE.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
-| [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
+| [Molecular Vibration](molecularVibration/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/molecularVibration.jpg) |
 
 
 ## High-dimensional / point cloud data
 
 | Name | Screenshot |
 |:-:|:-:|
+| [Topological Autoencoders++ Teaser](topoAEppTeaser/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalAutoEncoderPlusPlus.jpg) |
 | [TopoMap Teaser](topoMapTeaser/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topoMapTeaser.jpg) |
+| [DelaunayRipsPersistence](delaunayRipsPersistence/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/delaunayRipsPersistence.jpg) |
+| [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
 | [Persistent Generators Household Analysis](persistentGenerators_householdAnalysis/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_householdAnalysis.jpg) |
 | [Karhunen-Love Digits 64-Dimensions](karhunenLoveDigits64Dimensions/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg) |
 | [Persistence clustering0](persistenceClustering0/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering0.jpeg) |
@@ -101,9 +121,12 @@ If you have any questions regarding these examples, please let us know by sendin
 
 | Name | Screenshot |
 |:-:|:-:|
+| [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 | [Persistent Generators Casting](persistentGenerators_casting/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_casting.jpg) |
 | [Persistent Generators Fertility](persistentGenerators_fertility/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_fertility.jpg) |
 | [Persistent Generators Skull](persistentGenerators_skull/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_skull.jpg) |
+| [Topological Optimization for Torus Genus Repair](topologicalOptimization_torus/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimizationTorus.jpg) |
+| [Topological Optimization for Pegasus Genus Repair](topologicalOptimization_pegasus/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimizationPegasus.jpg) |
 | [Manifold checks](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 | [Cinema IO](cinemaIO/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/yKyiRzPbs0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 | [Compact Triangulation](compactTriangulation/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/vDQRh_tuUSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |

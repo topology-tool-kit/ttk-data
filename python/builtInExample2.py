@@ -141,7 +141,10 @@ for coords in rangePolygonsCoordinates:
     tTKFiberSurface1.WithPointMerging = 1
 
     # create a new 'Generate Surface Normals'
-    generateSurfaceNormals1 = GenerateSurfaceNormals(Input=tTKFiberSurface1)
+    if GetParaViewVersion() >= (6, 1):
+        generateSurfaceNormals1 = SurfaceNormals(Input=tTKFiberSurface1)
+    else:
+        generateSurfaceNormals1 = GenerateSurfaceNormals(Input=tTKFiberSurface1)
 
     fiberSurfaces.append(generateSurfaceNormals1)
 

@@ -210774,7 +210774,7 @@
       <Property name="BackEnd" id="22267.BackEnd" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="22267.BackEnd.enum">
-          <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
+          <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
@@ -210882,7 +210882,7 @@
       <Property name="BackEnd" id="18057.BackEnd" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="18057.BackEnd.enum">
-          <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
+          <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
@@ -210990,7 +210990,7 @@
       <Property name="BackEnd" id="31944.BackEnd" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="31944.BackEnd.enum">
-          <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
+          <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
@@ -211098,7 +211098,7 @@
       <Property name="BackEnd" id="24874.BackEnd" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="24874.BackEnd.enum">
-          <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
+          <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
@@ -211206,7 +211206,7 @@
       <Property name="BackEnd" id="35746.BackEnd" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="35746.BackEnd.enum">
-          <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
+          <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
@@ -211314,7 +211314,7 @@
       <Property name="BackEnd" id="27297.BackEnd" number_of_elements="1">
         <Element index="0" value="0"/>
         <Domain name="enum" id="27297.BackEnd.enum">
-          <Entry value="0" text="FTM (IEEE TPSD 2019)"/>
+          <Entry value="0" text="FTM (IEEE TPDS 2019)"/>
           <Entry value="1" text="Progressive Approach (IEEE TVCG 2020)"/>
           <Entry value="2" text="Discrete Morse Sandwich (IEEE TVCG 2023)"/>
           <Entry value="3" text="Approximation Approach (IEEE LDAV 2021)"/>
