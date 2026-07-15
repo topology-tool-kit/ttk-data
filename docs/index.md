@@ -86,6 +86,8 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
 | [Merge tree principal geodesic analysis](mergeTreePGA/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreePGA.jpg) |
 | [Merge tree Wasserstein Auto-Encoding](mergeTreeWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeWAE.jpg) |
+| [Merge tree barycenter with branch mapping](mergeTreeBarycenter_branchMapping/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeBarycenter_branchMapping.jpg) |
+| [Merge tree barycenter with path mapping](mergeTreeBarycenter_pathMapping/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeBarycenter_pathMapping.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
 | [Molecular Vibration](molecularVibration/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/molecularVibration.jpg) |
 

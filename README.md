@@ -29,6 +29,13 @@ Data specs
 }
 
 {
+  "name": "bdied_outlier/",
+  "description": "A synthetic dataset that highlights the advantages of branch decomposition-independent edit distances for merge trees. It is a simplified version of the one generated for the experiments in this paper: https://doi.org/10.1111/cgf.14547",
+  "acknowledgement": "Florian Wetzels, Heike Leittge, and Christoph Garth",
+  "url": "https://github.com/scivislab/BDI-ED/tree/main/test_datasets/branchVSconstrained_outlier"
+}
+
+{
   "name": "bivariateToy.vtu",
   "description": "Simple bivariate example using X and Y coordinates",
   "acknowledgement": "Julien Tierny",
@@ -166,6 +173,12 @@ Data specs
   "description": "Dataset adapted from daily measurements of electric power consumption in one household with a one-minute sampling rate over a period of 2 years. Different electrical quantities and some sub-metering values are available.",
   "acknowledgement": "Georges Hebrail Alice Berard",
   "url": "https://archive-beta.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption"
+}
+
+{
+  "name": "hvi.vti",
+  "description": "Hypervelocity Impact on graphite material",
+  "acknowledgement": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
 }
 
 {
@@ -361,10 +374,3 @@ Data specs
   "acknowledgement": "Berk Geveci, Christoph Garth, Garrett Aldrich, and Jonas Lukasczyk",
   "url": "https://jluk.de/resources/papers/NestedTrackingGraphs2017.pdf"
 }
-
-{
-  "name": "hvi.vti",
-  "description": "Hypervelocity Impact on graphite material",
-  "acknowledgement": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
-}
-
