@@ -84764,7 +84764,7 @@
       </Property>
       <Property name="CustomLabels" id="18669.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="18669.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="18669.DataRangeMax" number_of_elements="1">
         <Element index="0" value="NaN"/>
@@ -84875,7 +84875,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="18669.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="18669.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -85038,7 +85038,7 @@
       </Property>
       <Property name="CustomLabels" id="24691.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="24691.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="24691.DataRangeMax" number_of_elements="1">
         <Element index="0" value="NaN"/>
@@ -85149,7 +85149,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="24691.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="24691.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -85312,7 +85312,7 @@
       </Property>
       <Property name="CustomLabels" id="24937.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="24937.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="24937.DataRangeMax" number_of_elements="1">
         <Element index="0" value="NaN"/>
@@ -85423,7 +85423,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="24937.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="24937.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -85586,7 +85586,7 @@
       </Property>
       <Property name="CustomLabels" id="19157.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="19157.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="19157.DataRangeMax" number_of_elements="1">
         <Element index="0" value="0"/>
@@ -85697,7 +85697,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="19157.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="19157.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
@@ -85861,7 +85861,7 @@
       </Property>
       <Property name="CustomLabels" id="19163.CustomLabels"/>
       <Property name="DataRangeLabelFormat" id="19163.DataRangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="DataRangeMax" id="19163.DataRangeMax" number_of_elements="1">
         <Element index="0" value="357.1064267133819"/>
@@ -85972,7 +85972,7 @@
         <Element index="1" value="0.02"/>
       </Property>
       <Property name="RangeLabelFormat" id="19163.RangeLabelFormat" number_of_elements="1">
-        <Element index="0" value="%-#6.1e"/>
+        <Element index="0" value="{:&#x3c;#6.1e}"/>
       </Property>
       <Property name="Repositionable" id="19163.Repositionable" number_of_elements="1">
         <Element index="0" value="1"/>
