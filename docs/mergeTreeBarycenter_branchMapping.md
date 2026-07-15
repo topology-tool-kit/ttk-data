@@ -1,6 +1,6 @@
 # Merge Tree Barycenter with Branch Mapping 
 
-![Branch Mapping and Distance Matrix example Image]()
+![Branch Mapping and Distance Matrix example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeBarycenter_branchMapping.jpg)
 
 ## Pipeline description
 This example first loads a multi block of scalar fields from disk.

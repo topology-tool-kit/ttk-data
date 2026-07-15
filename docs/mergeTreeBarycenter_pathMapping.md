@@ -1,6 +1,6 @@
 # Merge Tree Barycenter with Path Mapping 
 
-![Path Mapping Barycenter and Distance Matrix example Image]()
+![Path Mapping Barycenter and Distance Matrix example Image](https://topology-tool-kit.github.io/img/gallery/mergeTreeBarycenter_pathMapping.jpg)
 
 ## Pipeline description
 This example first loads a multi block of scalar fields from disk.
