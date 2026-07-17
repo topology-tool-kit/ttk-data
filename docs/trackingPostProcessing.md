@@ -4,7 +4,9 @@
 
 ## Pipeline description
 
-This example loads a 2D time-varying scalar field, where time steps are
+This example reproduces the debris tracking pipeline of the paper "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging"
+
+It loads a 2D time-varying scalar field, where time steps are
 stored as a sequence of data arrays, and tracks its extrema over time with
 [TrackingFromFields](https://topology-tool-kit.github.io/doc/html/classttkTrackingFromFields.html).
 As in the [Time Tracking](https://topology-tool-kit.github.io/examples/tracking/)
@@ -71,6 +73,11 @@ pvpython python/trackingPostProcessing.py
 - [hvi.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/hvi.vti):
   2D time-varying scalar field capturing debris fragments ejected by a
   hypervelocity impact, with each time step stored as a separate data array.
+  Note that, to comply with GitHub's file size limit, this dataset is a
+  reduced version of the one used in the original publication (removal of the
+  last 100 of the 500 initial time steps and conversion of the scalar values to
+  16-bit integers); the results shown here may therefore differ slightly from the
+  published ones.
 
 ## Outputs
 
