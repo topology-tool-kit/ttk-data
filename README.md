@@ -177,7 +177,7 @@ Data specs
 
 {
   "name": "hvi.vti",
-  "description": "Hypervelocity Impact on graphite material",
+  "description": "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging",
   "acknowledgement": "Commissariat à l'énergie atomique et aux énergies alternatives (CEA)",
 }
 

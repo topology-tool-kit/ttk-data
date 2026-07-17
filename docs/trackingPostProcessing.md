@@ -4,7 +4,9 @@
 
 ## Pipeline description
 
-This example loads a 2D time-varying scalar field, where time steps are
+This example reproduces the debris tracking pipeline of the paper "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging"
+
+It loads a 2D time-varying scalar field, where time steps are
 stored as a sequence of data arrays, and tracks its extrema over time with
 [TrackingFromFields](https://topology-tool-kit.github.io/doc/html/classttkTrackingFromFields.html).
 As in the [Time Tracking](https://topology-tool-kit.github.io/examples/tracking/)
