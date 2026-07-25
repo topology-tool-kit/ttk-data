@@ -4,7 +4,7 @@
 
 ## Pipeline description
 
-This example reproduces the debris tracking pipeline of the paper "DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging"
+This example reproduces the debris tracking pipeline of the paper [DebrisTracer: Reliable Tracking in Hypervelocity Impact Fast Imaging](https://arxiv.org/abs/2607.15986)
 
 It loads a 2D time-varying scalar field, where time steps are
 stored as a sequence of data arrays, and tracks its extrema over time with
