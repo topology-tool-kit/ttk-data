@@ -102,7 +102,7 @@ threshold4.Scalars = ["POINTS", "IsOnBoundary"]
 tTKIntegralLines1 = TTKIntegralLines(Domain=tTKArrayPreconditioning1, Seeds=threshold4)
 tTKIntegralLines1.ScalarField = ["POINTS", "density"]
 tTKIntegralLines1.Direction = "Backward"
-tTKIntegralLines1.Vertexidentifierfield = ["POINTS", "CriticalType"]
+tTKIntegralLines1.Seedidentifierfield = ["POINTS", "CriticalType"]
 tTKIntegralLines1.EnableForking = 1
 
 # create a new 'Clean to Grid'
