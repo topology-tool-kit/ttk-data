@@ -21,7 +21,7 @@ def gen_screenshot(state, dest=OUTPUT_DIR, resFactor=1):
         simple.SaveScreenshot(
             f"{dest}/{state.stem}_{i}.png", view, ImageResolution=[resX, resY]
         )
-        print(f"{state}: view #{i} saved, with resolution {resX}x{resY}")
+        print(f"{state}: view #{i} saved, with resolution {resX}x{resY}", flush=True)
     simple.ResetSession()
 
 
@@ -41,7 +41,7 @@ def run_one(state_file, dest, resFact=1):
     if not state_file.exists():
         raise FileNotFoundError
 
-    print(f"Processing {state_file.name}")
+    print(f"Processing {state_file.name}", flush=True)
     start_time = time.time()
 
     {".pvsm": process_pvsm, ".py": process_py}[state_file.suffix](
@@ -54,7 +54,7 @@ def run_one(state_file, dest, resFact=1):
         mem = f"{round(mem / 1000, 2)} GB"
     else:
         mem = f"{mem} MB"
-    print(f"Processed {state_file.name} (took {duration} s, {mem})")
+    print(f"Processed {state_file.name} (took {duration} s, {mem})", flush=True)
 
 
 def run_all(dest):
