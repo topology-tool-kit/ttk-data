@@ -128,10 +128,13 @@ multidimensional scaling. The resulting table is turned into a 2D point cloud
 with 
 [TableToPoints](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.TableToPoints.html)
 (line 55). Finally, the k-means algorithm is run on 
-this 2D point cloud with the module 
-[KMeans](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.KMeans.html).
+this 2D point cloud with 
+[scikit-learn's KMeans](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), 
+within a 
+[ProgrammableFilter](https://kitware.github.io/paraview-docs/latest/python/paraview.simple.ProgrammableFilter.html)
+(line 64).
 Then, the output is stored to a simple 
-CSV file (line 83).
+CSV file (line 91).
 The resulting clustering can be visualized with the two views at 
 the top right corner of the above screenshot. The ground-truth classification 
 is provided by the color coding of the points in the second view (right) while 
