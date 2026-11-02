@@ -59,10 +59,16 @@ tableToPoints2.YColumn = "Component_1"
 tableToPoints2.a2DPoints = 1
 tableToPoints2.KeepAllDataArrays = 1
 
-# create a new 'K Means'
-kMeans1 = KMeans(Input=tableToPoints2)
-kMeans1.VariablesofInterest = ["Component_0", "Component_1"]
-kMeans1.k = 2
+# create a new 'Programmable Filter' running scikit-learn's k-means
+# (ParaView's 'K Means' filter no longer assigns points to clusters)
+kMeans1 = ProgrammableFilter(Input=tableToPoints2)
+kMeans1.CopyArrays = 1
+kMeans1.Script = """
+from sklearn.cluster import KMeans
+points = inputs[0].PointData
+X = numpy.column_stack((points["Component_0"], points["Component_1"]))
+output.PointData.append(KMeans(n_clusters=2, random_state=0).fit_predict(X), "ClosestId(0)")
+"""
 
 # create a new 'TTK DimensionReduction'
 tTKDimensionReduction1 = TTKDimensionReduction(
@@ -82,4 +88,4 @@ tableToPoints1.KeepAllDataArrays = 1
 
 SaveData("W2clusteringAndW2dimensionReduction.csv", tableToPoints1)
 
-SaveData("L2dimensionReductionAndClustering.csv", OutputPort(kMeans1, 1))
+SaveData("L2dimensionReductionAndClustering.csv", kMeans1)
